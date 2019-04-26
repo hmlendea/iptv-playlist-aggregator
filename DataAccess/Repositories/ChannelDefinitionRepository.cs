@@ -7,22 +7,22 @@ using IptvPlaylistFetcher.DataAccess.DataObjects;
 
 namespace IptvPlaylistFetcher.DataAccess.Repositories
 {
-    public sealed class ChannelRepository : IChannelRepository
+    public sealed class ChannelDefinitionRepository : IChannelDefinitionRepository
     {
         const char CsvFieldSeparator = ',';
         const char CsvCollectionSeparator = '|';
 
         readonly ApplicationSettings settings;
 
-        public ChannelRepository(ApplicationSettings settings)
+        public ChannelDefinitionRepository(ApplicationSettings settings)
         {
             this.settings = settings;
         }
 
-        public IEnumerable<ChannelEntity> GetAll()
+        public IEnumerable<ChannelDefinitionEntity> GetAll()
         {
             IEnumerable<string> lines = File.ReadAllLines(settings.ChannelStorePath);
-            IList<ChannelEntity> entities = new List<ChannelEntity>();
+            IList<ChannelDefinitionEntity> entities = new List<ChannelDefinitionEntity>();
 
             foreach (string line in lines)
             {
@@ -31,18 +31,18 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
                     continue;
                 }
     
-                ChannelEntity entity = ReadEntity(line);
+                ChannelDefinitionEntity entity = ReadEntity(line);
                 entities.Add(entity);
             }
 
             return entities;
         }
 
-        public static ChannelEntity ReadEntity(string csvLine)
+        public static ChannelDefinitionEntity ReadEntity(string csvLine)
         {
             string[] fields = csvLine.Split(CsvFieldSeparator);
 
-            ChannelEntity entity = new ChannelEntity();
+            ChannelDefinitionEntity entity = new ChannelDefinitionEntity();
             entity.Id = fields[0];
             entity.Name = fields[1];
             entity.Aliases = fields[2].Split(CsvCollectionSeparator).ToList();

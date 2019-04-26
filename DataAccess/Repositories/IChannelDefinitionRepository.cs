@@ -4,8 +4,8 @@ using IptvPlaylistFetcher.DataAccess.DataObjects;
 
 namespace IptvPlaylistFetcher.DataAccess.Repositories
 {
-    public interface IChannelRepository
+    public interface IChannelDefinitionRepository
     {
-        IEnumerable<ChannelEntity> GetAll();
+        IEnumerable<ChannelDefinitionEntity> GetAll();
     }
 }
