@@ -1,1 +1,1 @@
-# iptv-m3u-fetcher
+# IPTV Playlist Fetcher
