@@ -1,10 +1,10 @@
 acasa_gold,Acasa Gold,Films,RO: Acasa Gold TV|Ro: Acasa Gold
 acasa_hd,Acasa HD,Films,RO: ACASA HD
-acasa,Acasa,Films,RO: Acasa Tv|Ro: Acasa TV|[ RO ] ACASA TV
+acasa,Acasa,Films,RO: Acasa Tv|Ro: Acasa TV|[ RO ] ACASA TV|ACASA TV
 accent,Accent,,RO:ACCENT TV
 actualitatea,Actualitatea,,RO: Actualitatea TV
 acum,Acum,,RO:ACUM TV|RO: Acum TV
-agro,Agro,News,RO: Agro TV|Ro: Agro Tv
+agrotv,Agro TV,News,RO: Agro TV|Ro: Agro Tv|AGRO TV
 alfa_omega,Alfa & Omega,Religious,RO:ALFA OMEGA|RO: ALFA OMEGA TV|Ro: Alfa & Omega
 amc_ro,AMC RO,Films,RO: AMC RO
 amc,AMC,Films,RO: AMC|[ RO ] AMC
@@ -12,24 +12,24 @@ animal_planet_hd,Animal Planet HD,Educational,RO: Animal Planet HD
 animal_planet,Animal Planet,Educational,RO: ANIMAL PLANET|Ro: Animal Planet|[ RO ] Animal Planet
 antena_monden,Antena Monden,,RO:ANTENA MONDEN
 antena_stars_hd,Antena Stars HD,General,RO: ANTENA STARS HD
-antena_stars,Antena Stars,General,RO:ANTENA STARS|RO: ANTENA STARS|RO: Antena Stars|Ro: Antena Stars|[ RO ] Antena Stars
+antena_stars,Antena Stars,General,RO:ANTENA STARS|RO: ANTENA STARS|RO: Antena Stars|Ro: Antena Stars|[ RO ] Antena Stars|ANTENA STARS
 antena1_hd,Antena 1 HD,General,RO: Antena 1 HD
-antena1,Antena 1,General,RO:ANTENA 1|RO: ANTENA 1|RO: Antena 1|Ro: Antena1|[ RO ] Antena 1
+antena1,Antena 1,General,RO:ANTENA 1|RO: ANTENA 1|RO: Antena 1|Ro: Antena1|[ RO ] Antena 1|ANTENA 1
 antena3_hd,Antena 3 HD,News,RO: ANTENA 3 HD
-antena3,Antena 3,News,RO: Antena 3|Ro: Antena 3|[ RO ] Antena 3
+antena3,Antena 3,News,RO: Antena 3|Ro: Antena 3|[ RO ] Antena 3|ANTENA 3
 auto_motor_sport,Auto Motor Sport,Sport,RO: Auto Motor Sport
 axn_black,AXN Black,Films,RO: AXN BLACK|Ro: AXN Black
 axn_hd,AXN HD,Films,RO: AXN HD
-axn_ro,AXN Romania,Films,RO: AXN ROMANIA|Ro: AXN Romania
+axn_ro,AXN Romania,Films,RO: AXN ROMANIA|Ro: AXN Romania|AXN ROMANIA
 axn_spin,AXN Spin,Films,RO: AXN SPIN
-axn_white,AXN White,Films,RO: AXN WHITE|RO: AXN White|Ro: AXN White
+axn_white,AXN White,Films,RO: AXN WHITE|RO: AXN White|Ro: AXN White|AXN WHITE
 axn_with,AXN With,Films,RO: AXN WITH
 axn,AXN,Films,RO: AXN
 b1tv,B1,News,RO: B1|RO: B1 Tv|Ro: B1|[ RO ] B1
 bbc_earth_hd,BBC Earth HD,Educational,RO: BBC Earth HD
 bollywood_classic,Bollywood Classic,Films,RO:BOLLYWOOD CLASSIC
 bollywood,Bollywood,Films,RO:BOLYWOOD TV
-boomerang,Boomerang,Kids,RO: BOOMERANG|RO: Boomerang|Ro: Boomerang|[ RO ] Boomerang
+boomerang,Boomerang,Kids,RO: BOOMERANG|RO: Boomerang|Ro: Boomerang|[ RO ] Boomerang|BOOMERANG
 canal2,Canal 2,,RO:CANAL 2 HD
 canal3,Canal 3,,RO:CANAL 3 HD
 cartoonnetwork,Cartoon Network,Kids,Ro: Cartoon Network
@@ -39,35 +39,35 @@ cinemax_hd_ro,CineMAX HD RO,Films,[ RO ] Cinemax HD RO
 cinemax_hd,CineMAX HD,Films,RO:CINEMAX HD
 cinemax_megamax_ro,CineMAX / Megamax RO,Films,[ RO ] Cinemax/Megamax RO
 cinemax2_hd,CineMAX 2 HD,Films,RO: Cinemax 2 HD
-cinemax2,CineMAX 2,Films,RO: Cinemax 2|Ro: Cinemax2|[ RO ] Cinemax 2
-cinemaxro,CineMAX RO,Films,Ro: Cinemax Ro
+cinemax2,CineMAX 2,Films,RO: Cinemax 2|Ro: Cinemax2|[ RO ] Cinemax 2|CINEMAX 2
+cinemaxro,CineMAX RO,Films,Ro: Cinemax Ro|CINEMAX RO
 cinethronix,Cinethronix,Films,Ro: Ciné Thronix
 comedycentral,Comedy Central,Films,RO: COMEDY CENTRAL|Ro: Comedy Central
 cromtel,Cromtel,Local,RO:CROMTEL TV
 dibitv,Dibi TV,Music,[ RO ]DIBI TV (Music) Balkan
 digi_animal_world_hd,Digi Animal World HD,Educational,RO: Digi Animal World HD
-digi_animal_world,Digi Animal World,Educational,RO:DIGI ANIMAL WORLD|RO: Digi Animal World|Ro: Digi Animal World|[ RO ] Digi Animal World
-digi_film,Digi Film,Films,RO:DIGI FILM|Ro: Digi Film
+digi_animal_world,Digi Animal World,Educational,RO:DIGI ANIMAL WORLD|RO: Digi Animal World|Ro: Digi Animal World|[ RO ] Digi Animal World|DIGI ANIMAL WORLD
+digi_film,Digi Film,Films,RO:DIGI FILM|Ro: Digi Film|DIGI FILM
 digi_life_hd,Digi Life HD,Educational,RO: Digi Life HD
-digi_life,Digi Life,Educational,RO:DIGI LIFE|RO: Digi Life|Ro: Digi Life|[ RO ] Digi Life
+digi_life,Digi Life,Educational,RO:DIGI LIFE|RO: Digi Life|Ro: Digi Life|[ RO ] Digi Life|DIGI LIFE
 digi_sport1_hd,Digi Sport 1,Sport,RO:DIGI SPORT 1 HD|RO: DIGI SPORT 1 HD
-digi_sport1,Digi Sport 1,Sport,RO:DIGI SPORT 1|RO: Digi Sport 1|RO: DIGI SPORT 1|[ RO ] DIGI Sport 1
+digi_sport1,Digi Sport 1,Sport,RO:DIGI SPORT 1|RO: Digi Sport 1|RO: DIGI SPORT 1|[ RO ] DIGI Sport 1|DIGI SPORT 1
 digi_sport2_hd,Digi Sport 2,Sport,RO:DIGI SPORT 2 HD|RO: DIGI SPORT 2 HD
-digi_sport2,Digi Sport 2,Sport,RO:DIGI SPORT 2|RO: Digi Sport 2|RO: DIGI SPORT 2|[ RO ] DIGI Sport 2
+digi_sport2,Digi Sport 2,Sport,RO:DIGI SPORT 2|RO: Digi Sport 2|RO: DIGI SPORT 2|[ RO ] DIGI Sport 2|DIGI SPORT 2
 digi_sport3_hd,Digi Sport 3,Sport,RO:DIGI SPORT 3 HD|RO: DIGI SPORT 3 HD
-digi_sport3,Digi Sport 3,Sport,RO:DIGI SPORT 3|RO: Digi Sport 3|RO: DIGI SPORT 3|[ RO ] DIGI Sport 3
+digi_sport3,Digi Sport 3,Sport,RO:DIGI SPORT 3|RO: Digi Sport 3|RO: DIGI SPORT 3|[ RO ] DIGI Sport 3|DIGI SPORT 3
 digi_sport4_hd,Digi Sport 4,Sport,RO:DIGI SPORT 4 HD|RO: DIGI SPORT 4 HD
-digi_sport4,Digi Sport 4,Sport,RO:DIGI SPORT 4|RO: Digi Sport 4|RO: DIGI SPORT 4|[ RO ] Digi Sport 4
+digi_sport4,Digi Sport 4,Sport,RO:DIGI SPORT 4|RO: Digi Sport 4|RO: DIGI SPORT 4|[ RO ] Digi Sport 4|DIGI SPORT 4
 digi_sports1,Digi Sports 1,Sport,[ RO ] DIGI SPORTS 1
 digi_sports2,Digi Sports 2,Sport,[ RO ] DIGI SPORTS 2
 digi_sports3,Digi Sports 3,Sport,[ RO ] DIGI SPORTS 3
 digi_sports4,Digi Sports 4,Sport,[ RO ] DIGI SPORTS 4
 digi_world_hd,Digi World HD,Educational,RO: Digi World HD
-digi_world,Digi World,Educational,RO:DIGI WORLD|RO: Digi World|Ro: Digi World|[ RO ] Digi World
+digi_world,Digi World,Educational,RO:DIGI WORLD|RO: Digi World|Ro: Digi World|[ RO ] Digi World|DIGI WORLD
 digi24_craiova,Digi24 Craiova,Local,[ RO ] DIGI 24 Craiova
 digi24_galati,Digi24 Galati,Local,[ RO ] DIGI 24 Galati
 digi24_hd,Digi24 HD,News,RO: DIGI 24 HD|RO: Digi 24 HD
-digi24,Digi24,News,RO:DIGI 24|RO: Digi 24|Ro: Digi 24|[ RO ] Digi 24
+digi24,Digi24,News,RO:DIGI 24|RO: Digi 24|Ro: Digi 24|[ RO ] Digi 24|DIGI 24
 discovery_channel,Discovery Channel,Educational,Ro: Discovery|[ RO ] Discovery channel
 discovery_hd_showcase,Discovery HD Showcase,Educational,RO: Discovery HD Showcase
 discovery_idx_hd,Discovery IDX HD,Educational,RO: ID Investigation Discovery HD
@@ -76,83 +76,85 @@ discovery_ro,Discovery RO,Educational,RO: DISCOVERY RO
 discovery_science_hd,Discovery Science HD,Educational,RO: Discovery Science HD
 discovery_science,Discovery Science,Educational,RO: Discovery science|Ro: Discovery Science|[ RO ] Discovery science
 disney_channel,Diney Channel,Kids,RO: DISNEY CHANNEL|RO: Disney Channel|[ RO ] Disney Channel
-disney_junior,Disney Junior,Kids,RO:DISNEY JUNIOR|RO: DISNEY JUNIOR|RO: Disney Junior|Ro: Disney Junior|[ RO ] Disney Junior
+disney_junior,Disney Junior,Kids,RO:DISNEY JUNIOR|RO: DISNEY JUNIOR|RO: Disney Junior|Ro: Disney Junior|[ RO ] Disney Junior|DISNEY JUNIOR
 diva,Diva,Films,RO: DIVA
 dolcesport1,Dolce Sport,Sport,RO:DOLCE SPORT 1|RO: Dolce Sport 1
 dtx_ro,DTX RO,,RO: DTX RO
 dtx,DTX,,Ro: DTX
 epic_drama,Epic Drama,Films,RO: Epic Drama
 etno_hd,Etno HD,Music,RO: ETNO TV HD|[ RO ] ETNO TV HD
-etno,Etno,Music,RO: Etno Tv|Ro: Etno Tv
+etno,Etno,Music,RO: Etno Tv|Ro: Etno Tv|ETNO TV
 eurosport1_hd_ro,EuroSport 1 HD RO,Sport,[ RO ] Eurosport 1 HD RO
 eurosport1_hd,EuroSport 1 HD,Sport,RO: EUROSPORT 1 HD|[ RO ] EUROSPORT 1 HD
-eurosport1,EuroSport 1,Sport,Ro: Eurosport|RO: Eurosport 1|[ RO ] Eurosport
+eurosport1,EuroSport 1,Sport,Ro: Eurosport|RO: Eurosport 1|[ RO ] Eurosport|EUROSPORT
 eurosport2_hd,EuroSport 2 HD,Sport,RO: EUROSPORT 2 HD|[ RO ] EUROSPORT 2 HD
 eurosport2_ro,EuroSport 2 RO,Sport,RO: EUROSPORT 2 RO
-eurosport2,EuroSport 2,Sport,Ro: Eurosport 2|RO: Eurosport 2|[ RO ] Eurosport 2
-favorit,Favorit,Music,RO: Favorit Tv|Ro: Favorit Tv
+eurosport2,EuroSport 2,Sport,Ro: Eurosport 2|RO: Eurosport 2|[ RO ] Eurosport 2|EUROSPORT 2
+favorit,Favorit,Music,RO: Favorit Tv|Ro: Favorit Tv|FAVORIT TV
 film_cafe,Film Cafe,Films,RO: FILM CAFE|RO: Film Cafe
 film_now_hd,Film NOW HD,Films,RO: Film NOW HD
-fishing_hunting,Fishing & Hunting,Lifestyle,Ro: Fishing&Hunting
-happy,Happy,Films,Ro: Happy|RO: Happy Channel|[ RO ] Happy Channel
+happy,Happy,Films,Ro: Happy|RO: Happy Channel|[ RO ] Happy Channel|HAPPY CHANNEL
+hbo_ro,HBO Romania,Films,Ro: HBO Romania|[ RO ] HBO Romania|HBO ROMANIA
 hbo1_hd,HBO 1,Films,RO:HBO HD|RO: HBO HD
 hbo1,HBO 1,Films,RO: HBO
 hbo2_hd,HBO 2,Films,RO:HBO 2 HD|RO: HBO 2 HD
 hbo2,HBO 2,Films,RO: HBO 2|Ro: Hbo 2|[ RO ] HBO 2
 hbo3_hd,HBO 3,Films,RO:HBO 3 HD|RO: HBO 3 HD
 hbo3,HBO 3,Films,RO: HBO 3|Ro: Hbo 3|[ RO ] HBO 3
-hboro,HBO Romania,Films,Ro: HBO Romania|[ RO ] HBO Romania
-history_channel,History Channel,Educational,RO: History Channel|Ro: History|[ RO ] History Channel
+history_channel,History Channel,Educational,RO: History Channel|Ro: History|[ RO ] History Channel|HISTORY CHANNEL
 history_hd,History HD,Educational,RO: History HD
 hit,HIT,Music,Ro: HIT
 kanald_hd,Kanal D HD,General,[ RO ] Canal D HD
-kanald,Kanal D,General,RO:KANAL D|RO: KANAL D|RO: Kanal D|Ro: Kanal D|[ RO ] Kanal D
-kiss,KissTV,Music,RO: KISS TV|RO: Kiss Tv|Ro: Kiss|[ RO ] Kiss TV
+kanald,Kanal D,General,RO:KANAL D|RO: KANAL D|RO: Kanal D|Ro: Kanal D|[ RO ] Kanal D|KANAL D
+kisstv,KissTV,Music,RO: KISS TV|RO: Kiss Tv|Ro: Kiss|[ RO ] Kiss TV|KISS TV
 look_hd,Look HD,Sport,RO: Look TV HD
-look_plus,Look Plus,Sport,RO: Look Plus|Ro: Look Plus
-look,Look,Sport,RO:LOOK TV|RO: LOOK PLUS|RO: Look TV|Ro: Look Tv
-megamax,Megamax,,RO:MEGAMAX|RO: MEGAMAX|RO: Megamax|Ro: Megamax
-minimax,Minimax,Kids,RO:MINIMAX|RO: MINIMAX|RO: Minimax|Ro: Minimax
+look_plus,Look Plus,Sport,RO: Look Plus|Ro: Look Plus|LOOK PLUS TV
+look,Look,Sport,RO:LOOK TV|RO: LOOK PLUS|RO: Look TV|Ro: Look Tv|LOOK TV
+megamax,Megamax,,RO:MEGAMAX|RO: MEGAMAX|RO: Megamax|Ro: Megamax|MEGAMAX
+minimax,Minimax,Kids,RO:MINIMAX|RO: MINIMAX|RO: Minimax|Ro: Minimax|MINIMAX
 moldova_sport_hd,Moldova Sport HD,Sport,RO: Moldova Sport HD
 mooz,MOOZ RO!,,RO:MOOZ RO!|RO: MOOZ RO
 mtv,MTV,Music,[ RO ] MTV
-music_channel_hu,Music Channel HU,Music,Ro: Music Channe hu
+music_channel_hu,Music Channel HU,Music,Ro: Music Channe hu|MUSIC CHANNEL.HU
 music_channel,Music Channel,Music,RO: Music Channel
 music_hits_17,Music Hits '17,Music,[ RO ] MUSIC HITS '17 (music only -  numai muzica)
 n24_plus,National 24 Plus,General,RO: National 24 Plus
 n24,National 24,,RO: National 24|Ro: N24|[ RO ] National 24
 natgeo_hd,National Geographic HD,Educational,RO: Nat Geo HD
 natgeo_wild_hd,National Geographic Wild HD,Educational,RO: Nat Geo Wild HD
-natgeo_wild,National Geographic Wild,Educational,RO: National Geo Wild|RO: Nat Geo Wild|Ro: NatGeoWild|[ RO ] Nat Geo Wild
+natgeo_wild,National Geographic Wild,Educational,RO: National Geo Wild|RO: Nat Geo Wild|Ro: NatGeoWild|[ RO ] Nat Geo Wild|NGC WILD
 natgeo,National Geographic,Educational,RO: National Geographic|Ro: Nat Geographic|[ RO ] National Geographic
-nationaltv,National TV,General,RO:NATIONAL TV|RO: NATIONAL TV|RO: National TV|Ro: National|[ RO ] National TV
+nationaltv,National TV,General,RO:NATIONAL TV|RO: NATIONAL TV|RO: National TV|Ro: National|[ RO ] National TV|NATIONAL TV
 neptuntv,NeptunTV,Local,RO: NeptunTV
 nest,Nest,,RO:NEST TV
+ngc,NGC,Educational,NGC
 nickelodeon_hd,Nickelodeon HD,Kids,RO: Nickelodeon HD
-nickelodeon,Nickelodeon,Kids,RO:NICKELODEON|RO: Nickelodeon|Ro: Nickelodeon|[ RO ] Nickelodeon
+nickelodeon,Nickelodeon,Kids,RO:NICKELODEON|RO: Nickelodeon|Ro: Nickelodeon|[ RO ] Nickelodeon|NICKELODEON
 nickjr,Nick Jr.,Kids,RO: Nick Jr.
 one_music,1 Music Channel,Music,RO: 1 Music Channel|Ro: 1 Music Channel|[ RO ] 1 Music Channel
 paprika,Paprika,Lifestyle,RO: TV PAPRIKA|RO: TV Paprika|Ro: Paprika
 paramount_ro,Paramount Channel RO,,RO: Paramount Channel RO|Ro: Paramount Channel RO|[ RO ] Paramount Channel
-paramount,Paramount Channel,,RO: Paramount Channel|Ro: Paramount Channel
+paramount,Paramount Channel,,RO: Paramount Channel|Ro: Paramount Channel|PARAMOUNT CHANNEL
 primatv_ro,Prima TV RO,General,RO: PRIMA TV RO
-primatv,Prima TV,General,RO:PRIMA TV|RO: Prima Tv|RO: Prima TV|Ro: Prima Tv
+primatv,Prima TV,General,RO:PRIMA TV|RO: Prima Tv|RO: Prima TV|Ro: Prima Tv|PRIMA TV
 pro2,Pro 2,Films,RO: PRO 2
-procinema,ProCinema,Films,Ro: ProCinema
+procinema,ProCinema,Films,Ro: ProCinema|PRO CINEMA
 progold,Pro Gold,Films,RO: PRO GOLD
 protv_hd,ProTV HD,General,[ RO ] PRO TV HD
 protv_international,General,ProTV International,RO: Pro Tv INTERNATIONAL
-protv,ProTV,General,RO:PRO TV|RO: PRO TV|RO: Pro TV|Ro: ProTV
+protv,ProTV,General,RO:PRO TV|RO: PRO TV|RO: Pro TV|Ro: ProTV|PRO TV
 prox_hd,ProX HD,General,RO: PRO X HD
-realitatea,Realitatea,News,RO:REALITATEA TV|RO: REALITATEA TV|RO: Realitatea Tv|Ro: Realitatea|[ RO ] Realitatea
-rtv,Romania TV,News,RO:ROMANIA TV|RO: Romania Tv|RO: Romania TV|Ro: Romania|[ RO ] Romania Tv
+pvtv,Pescuit si Vanatoare TV,Lifestyle,Ro: Fishing&Hunting|FISHING & HUNTING
+realitatea,Realitatea,News,RO:REALITATEA TV|RO: REALITATEA TV|RO: Realitatea Tv|Ro: Realitatea|[ RO ] Realitatea|REALITATEA
+rtv,Romania TV,News,RO:ROMANIA TV|RO: Romania Tv|RO: Romania TV|Ro: Romania|[ RO ] Romania Tv|ROMANIA TV
 somax,Somax,Local,RO:SOMAX TV
+sport_rosports,RO Sports,Sport,##### RO - SPORTS #####
 sport,Sport,Sport,RO: Sport
-sport.ro,Sport.RO,Sport,RO: Sport RO||RO: Sport.RO|Ro: Sport Ro|[ RO ] Sport RO
+sport.ro,Sport.RO,Sport,RO: Sport RO||RO: Sport.RO|Ro: Sport Ro|[ RO ] Sport RO|SPORT.RO
 stv,STV,,RO:STV
 sundance_hd,Sundance HD,,RO: Sundance TV HD
 taraf_hd,Taraf HD,Music,RO: TARAF TV HD|RO: Taraf TV HD
-taraf,Taraf,Music,RO:Taraf Tv|Ro: Taraf|[ RO ] Taraf TV
+taraf,Taraf,Music,RO:Taraf Tv|Ro: Taraf|[ RO ] Taraf TV|TARAF TV
 telekom_sport_1_hd,Telekom Sport 1 HD,Sport,RO: TELEKOM SPORT 1 HD|[ RO ] Telekom Sport 1 HD
 telekom_sport_2_hd,Telekom Sport 2 HD,Sport,RO: TELEKOM SPORT 2 HD|[ RO ] Telekom Sport 2 HD
 telekom_sport_3_hd,Telekom Sport 3 HD,Sport,RO: TELEKOM SPORT 3 HD|[ RO ] Telekom Sport 3 HD
@@ -166,19 +168,19 @@ tlc,TLC,Educational,RO: TLC|Ro: TLC
 tnt_hd,TNT HD,Films,RO: TNT HD
 tnt,TNT,Films,Ro: TNT
 travel_mix,Travel Mix,Lifestyle,RO: Travel Mix
-trinitas,Trinitas,Religious,Ro: Trinitas
+trinitas,Trinitas,Religious,Ro: Trinitas|TRINITAS
 tv_sud_est,TV Sud Est,Local,RO:TV Sud Est
 tv1000_hd,TV 1000 HD,Films,[ RO ] TV 1000 HD
 tv1000,TV 1000,Films,RO: TV 1000|Ro: TV1000
-tv5monde,TV5 Monde,Foreign,Ro: TV5 MONDE
+tv5monde,TV5 Monde,Foreign,Ro: TV5 MONDE|TV5 MONDE
 tvh20,TVH 20,,Ro: TVH 20
-tvr1,TVR1,General,RO:TVR1|RO: TVR 1|Ro: Tvr 1|[ RO ] TVR 1
-tvr2,TVR2,General,RO:TVR2|RO: TVR 2|Ro: Tvr 2|[ RO ] TVR 2
-tvr3,TVR3,General,RO:TVR3|RO: TVR 3|Ro: Tvr 3|[ RO ] TVR 3
+tvr1,TVR1,General,RO:TVR1|RO: TVR 1|Ro: Tvr 1|[ RO ] TVR 1|TVR 1
+tvr2,TVR2,General,RO:TVR2|RO: TVR 2|Ro: Tvr 2|[ RO ] TVR 2|TVR 2
+tvr3,TVR3,General,RO:TVR3|RO: TVR 3|Ro: Tvr 3|[ RO ] TVR 3|TVR 3
 tvrhd,TVR HD,General,RO: TVR HD
 utv,U TV,Music,RO:UTV|RO: U TV|Ro: U TV
 viasat_explorer,Viasat Explorer,Educational,RO: VIASAT EXPORER|RO: VIASAT EXPLORER
-viasat_history,Viasat History,Educational,RO: VIASAT HISTORY|RO: Viasat History|Ro: Viasat History|[ RO ] Viasat History
-viasat_nature,Viasat Nature,Educational,RO: Viasat Nature|Ro: Viasat Nature|[ RO ] Viasat Nature
+viasat_history,Viasat History,Educational,RO: VIASAT HISTORY|RO: Viasat History|Ro: Viasat History|[ RO ] Viasat History|VIASAT HISTORY
+viasat_nature,Viasat Nature,Educational,RO: Viasat Nature|Ro: Viasat Nature|[ RO ] Viasat Nature|VIASAT NATURE
 zu_hd,ZU HD,Music,RO: ZU TV HD
 zu,ZU,Music,Ro: ZU TV
