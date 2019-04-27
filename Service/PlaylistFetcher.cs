@@ -54,7 +54,6 @@ namespace IptvPlaylistFetcher.Service
             {
                 foreach (Playlist providerPlaylist in providerPlaylists)
                 {
-                    Console.Write(".");
                     Channel providerChannel = providerPlaylist.Channels
                         .FirstOrDefault(x => channelDef.Aliases.Contains(x.Name));
                     
@@ -72,7 +71,6 @@ namespace IptvPlaylistFetcher.Service
                         break;
                     }
                 }
-                Console.WriteLine();
             }
 
             playlist.Channels = playlist.Channels
