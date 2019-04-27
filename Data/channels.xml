@@ -1,40 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfChannelDefinitionEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ChannelDefinitionEntity>
-    <Id>acasa_gold</Id>
-    <Name>Acasa Gold</Name>
-    <Category>Films</Category>
-    <Aliases>
-      <string>RO: Acasa Gold TV</string>
-      <string>Ro: Acasa Gold</string>
-      <string>Acasa Gold</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>acasa_hd</Id>
     <Name>Acasa HD</Name>
     <Category>Films</Category>
+    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3e/Acasa_%281998-2003%2C_s_teni%29.png/revision/latest?cb=20170801234434</LogoUrl>
     <Aliases>
       <string>RO: ACASA HD</string>
       <string>Acasa HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>acasa</Id>
-    <Name>Acasa</Name>
-    <Category>Films</Category>
-    <Aliases>
-      <string>RO: Acasa Tv</string>
-      <string>Ro: Acasa TV</string>
-      <string>[ RO ] ACASA TV</string>
-      <string>ACASA TV</string>
-      <string>Acasa</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>accent</Id>
     <Name>Accent</Name>
     <Category>???</Category>
+    <LogoUrl>http://curentul.md/wp-content/uploads/2017/10/accent-tv.jpg</LogoUrl>
     <Aliases>
       <string>RO:ACCENT TV</string>
       <string>Accent</string>
@@ -44,6 +24,7 @@
     <Id>actualitatea</Id>
     <Name>Actualitatea</Name>
     <Category>???</Category>
+    <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mDf6sM1jeUpYJIiAxgFNuffuR4hxahEv0Fozg=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>RO: Actualitatea TV</string>
       <string>Actualitatea</string>
@@ -53,6 +34,7 @@
     <Id>acum</Id>
     <Name>Acum</Name>
     <Category>???</Category>
+    <LogoUrl>http://stvron.com/canale/mari/acum-tv.png</LogoUrl>
     <Aliases>
       <string>RO:ACUM TV</string>
       <string>RO: Acum TV</string>
@@ -63,6 +45,7 @@
     <Id>agrotv</Id>
     <Name>Agro TV</Name>
     <Category>News</Category>
+    <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mBVIV7H4CzzM1GbAZg4eaiZ9sEQUfwuR0qrYg=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>RO: Agro TV</string>
       <string>Ro: Agro Tv</string>
@@ -74,6 +57,7 @@
     <Id>alfa_omega</Id>
     <Name>Alfa &amp; Omega</Name>
     <Category>Religious</Category>
+    <LogoUrl>https://alfaomega.tv/images/alfaomega/sigla_aotv_600x400_transparent.png</LogoUrl>
     <Aliases>
       <string>RO:ALFA OMEGA</string>
       <string>RO: ALFA OMEGA TV</string>
@@ -85,6 +69,7 @@
     <Id>amc_ro</Id>
     <Name>AMC RO</Name>
     <Category>Films</Category>
+    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/5/50/AMC_2013.png/revision/latest?cb=20171217201039</LogoUrl>
     <Aliases>
       <string>RO: AMC RO</string>
       <string>AMC RO</string>
@@ -94,6 +79,7 @@
     <Id>amc</Id>
     <Name>AMC</Name>
     <Category>Films</Category>
+    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/5/50/AMC_2013.png/revision/latest?cb=20171217201039</LogoUrl>
     <Aliases>
       <string>RO: AMC</string>
       <string>[ RO ] AMC</string>
@@ -104,6 +90,7 @@
     <Id>animal_planet_hd</Id>
     <Name>Animal Planet HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://www.underconsideration.com/brandnew/archives/animal_planet_2018_logo.png</LogoUrl>
     <Aliases>
       <string>RO: Animal Planet HD</string>
       <string>Animal Planet HD</string>
@@ -113,6 +100,7 @@
     <Id>animal_planet</Id>
     <Name>Animal Planet</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://www.underconsideration.com/brandnew/archives/animal_planet_2018_logo.png</LogoUrl>
     <Aliases>
       <string>RO: ANIMAL PLANET</string>
       <string>Ro: Animal Planet</string>
@@ -124,6 +112,7 @@
     <Id>antena_monden</Id>
     <Name>Antena Monden</Name>
     <Category>???</Category>
+    <LogoUrl>https://assets.antenaplay.ro/2019/02/08/ASCEI8MhBY2ItX0av7KS.png</LogoUrl>
     <Aliases>
       <string>RO:ANTENA MONDEN</string>
       <string>Antena Monden</string>
@@ -133,6 +122,7 @@
     <Id>antena_stars_hd</Id>
     <Name>Antena Stars HD</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a9/Antena_Stars_logo_2013.png</LogoUrl>
     <Aliases>
       <string>RO: ANTENA STARS HD</string>
       <string>Antena Stars HD</string>
@@ -142,6 +132,7 @@
     <Id>antena_stars</Id>
     <Name>Antena Stars</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a9/Antena_Stars_logo_2013.png</LogoUrl>
     <Aliases>
       <string>RO:ANTENA STARS</string>
       <string>RO: ANTENA STARS</string>
@@ -156,6 +147,7 @@
     <Id>antena1_hd</Id>
     <Name>Antena 1 HD</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_Antena_1_%282010%29.svg/100px-Logo_Antena_1_%282010%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Antena 1 HD</string>
       <string>Antena 1 HD</string>
@@ -165,6 +157,7 @@
     <Id>antena1</Id>
     <Name>Antena 1</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_Antena_1_%282010%29.svg/100px-Logo_Antena_1_%282010%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO:ANTENA 1</string>
       <string>RO: ANTENA 1</string>
@@ -179,6 +172,7 @@
     <Id>antena3_hd</Id>
     <Name>Antena 3 HD</Name>
     <Category>News</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/2/23/Antena_3.jpg/180px-Antena_3.jpg</LogoUrl>
     <Aliases>
       <string>RO: ANTENA 3 HD</string>
       <string>Antena 3 HD</string>
@@ -188,6 +182,7 @@
     <Id>antena3</Id>
     <Name>Antena 3</Name>
     <Category>News</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/2/23/Antena_3.jpg/180px-Antena_3.jpg</LogoUrl>
     <Aliases>
       <string>RO: Antena 3</string>
       <string>Ro: Antena 3</string>
@@ -200,6 +195,7 @@
     <Id>auto_motor_sport</Id>
     <Name>Auto Motor Sport</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://fredrikstadavisa.files.wordpress.com/2017/11/img_5068.png?w=1078&amp;h=360</LogoUrl>
     <Aliases>
       <string>RO: Auto Motor Sport</string>
       <string>Auto Motor Sport</string>
@@ -209,6 +205,7 @@
     <Id>axn_black</Id>
     <Name>AXN Black</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/250px-AXN_Black_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN BLACK</string>
       <string>Ro: AXN Black</string>
@@ -219,6 +216,7 @@
     <Id>axn_hd</Id>
     <Name>AXN HD</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/250px-AXN_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN HD</string>
       <string>AXN HD</string>
@@ -228,6 +226,7 @@
     <Id>axn_ro</Id>
     <Name>AXN Romania</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/250px-AXN_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN ROMANIA</string>
       <string>Ro: AXN Romania</string>
@@ -239,6 +238,7 @@
     <Id>axn_spin</Id>
     <Name>AXN Spin</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AXN_Spin_logo_%282015%29.svg/250px-AXN_Spin_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN SPIN</string>
       <string>AXN Spin</string>
@@ -248,6 +248,7 @@
     <Id>axn_white</Id>
     <Name>AXN White</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/250px-AXN_White_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN WHITE</string>
       <string>RO: AXN White</string>
@@ -260,6 +261,7 @@
     <Id>axn_with</Id>
     <Name>AXN With</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/250px-AXN_White_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN WITH</string>
       <string>AXN With</string>
@@ -269,6 +271,7 @@
     <Id>axn</Id>
     <Name>AXN</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/250px-AXN_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN</string>
       <string>AXN</string>
@@ -278,6 +281,7 @@
     <Id>b1tv</Id>
     <Name>B1</Name>
     <Category>News</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/8/8b/Logo_B1_bw.jpg</LogoUrl>
     <Aliases>
       <string>RO: B1</string>
       <string>RO: B1 Tv</string>
@@ -290,15 +294,17 @@
     <Id>bbc_earth_hd</Id>
     <Name>BBC Earth HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/BBC_Earth.jpg/125px-BBC_Earth.jpg</LogoUrl>
     <Aliases>
       <string>RO: BBC Earth HD</string>
       <string>BBC Earth HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>bollywood_classic</Id>
-    <Name>Bollywood Classic</Name>
+    <Id>bollywood_clasic</Id>
+    <Name>Bollywood Clasic</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bollywood_Clasic.png/200px-Bollywood_Clasic.png</LogoUrl>
     <Aliases>
       <string>RO:BOLLYWOOD CLASSIC</string>
       <string>Bollywood Classic</string>
@@ -308,6 +314,7 @@
     <Id>bollywood</Id>
     <Name>Bollywood</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bollywood_HD_2018.png/200px-Bollywood_HD_2018.png</LogoUrl>
     <Aliases>
       <string>RO:BOLYWOOD TV</string>
       <string>Bollywood</string>
@@ -317,6 +324,7 @@
     <Id>boomerang</Id>
     <Name>Boomerang</Name>
     <Category>Kids</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/230px-Boomerang_2014_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: BOOMERANG</string>
       <string>RO: Boomerang</string>
@@ -330,6 +338,7 @@
     <Id>canal2</Id>
     <Name>Canal 2</Name>
     <Category>???</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/7/7f/Logo_Canal_2.png</LogoUrl>
     <Aliases>
       <string>RO:CANAL 2 HD</string>
       <string>Canal 2</string>
@@ -339,6 +348,7 @@
     <Id>canal3</Id>
     <Name>Canal 3</Name>
     <Category>???</Category>
+    <LogoUrl>http://www.frosat.net/images/logotv/original/Canal3_md.gif</LogoUrl>
     <Aliases>
       <string>RO:CANAL 3 HD</string>
       <string>Canal 3</string>
@@ -348,6 +358,7 @@
     <Id>cartoonnetwork</Id>
     <Name>Cartoon Network</Name>
     <Category>Kids</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/220px-Cartoon_Network_2010_logo.svg.png</LogoUrl>
     <Aliases>
       <string>Ro: Cartoon Network</string>
       <string>Cartoon Network</string>
@@ -357,6 +368,7 @@
     <Id>cbs_reality</Id>
     <Name>CBS Reality</Name>
     <Category>Lifestyle</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBS_Reality.png/200px-CBS_Reality.png</LogoUrl>
     <Aliases>
       <string>RO: CBS Reality</string>
       <string>CBS Reality</string>
@@ -366,6 +378,7 @@
     <Id>ci</Id>
     <Name>CI</Name>
     <Category>???</Category>
+    <LogoUrl></LogoUrl>
     <Aliases>
       <string>Ro: CI</string>
       <string>CI</string>
@@ -375,6 +388,7 @@
     <Id>cinemax_hd_ro</Id>
     <Name>CineMAX HD RO</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Cinemax HD RO</string>
       <string>CineMAX HD RO</string>
@@ -384,6 +398,7 @@
     <Id>cinemax_hd</Id>
     <Name>CineMAX HD</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
     <Aliases>
       <string>RO:CINEMAX HD</string>
       <string>CineMAX HD</string>
@@ -393,6 +408,7 @@
     <Id>cinemax_megamax_ro</Id>
     <Name>CineMAX / Megamax RO</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Cinemax/Megamax RO</string>
       <string>CineMAX / Megamax RO</string>
@@ -402,6 +418,7 @@
     <Id>cinemax2_hd</Id>
     <Name>CineMAX 2 HD</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/c/c3/Cinemax_2_%282016%29.png</LogoUrl>
     <Aliases>
       <string>RO: Cinemax 2 HD</string>
       <string>CineMAX 2 HD</string>
@@ -411,6 +428,7 @@
     <Id>cinemax2</Id>
     <Name>CineMAX 2</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/c/c3/Cinemax_2_%282016%29.png</LogoUrl>
     <Aliases>
       <string>RO: Cinemax 2</string>
       <string>Ro: Cinemax2</string>
@@ -423,6 +441,7 @@
     <Id>cinemaxro</Id>
     <Name>CineMAX RO</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
     <Aliases>
       <string>Ro: Cinemax Ro</string>
       <string>CINEMAX RO</string>
@@ -433,6 +452,7 @@
     <Id>cinethronix</Id>
     <Name>Cinethronix</Name>
     <Category>Films</Category>
+    <LogoUrl>https://3.bp.blogspot.com/-wtRpKNLeivE/XMHh516zQLI/AAAAAAAA3Ag/wei-MjbXj78PTHxhl9qboyCcRY5Eu_s-gCLcBGAs/s640/cinethronix%2Brcs%2Brds.jpg</LogoUrl>
     <Aliases>
       <string>Ro: Ciné Thronix</string>
       <string>Cinethronix</string>
@@ -442,6 +462,7 @@
     <Id>comedycentral</Id>
     <Name>Comedy Central</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/200px-Comedy_Central_2018.svg.png</LogoUrl>
     <Aliases>
       <string>RO: COMEDY CENTRAL</string>
       <string>Ro: Comedy Central</string>
@@ -452,6 +473,7 @@
     <Id>cromtel</Id>
     <Name>Cromtel</Name>
     <Category>Local</Category>
+    <LogoUrl>http://ik.imagekit.io/ulangotv/image/upload/469249_logo_cromtel_tv1.png</LogoUrl>
     <Aliases>
       <string>RO:CROMTEL TV</string>
       <string>Cromtel</string>
@@ -461,6 +483,7 @@
     <Id>dibitv</Id>
     <Name>Dibi TV</Name>
     <Category>Music</Category>
+    <LogoUrl>http://www.dibitv.ro/galerii/video/poze/2.jpg</LogoUrl>
     <Aliases>
       <string>[ RO ]DIBI TV (Music) Balkan</string>
       <string>Dibi TV</string>
@@ -470,6 +493,7 @@
     <Id>digi_animal_world_hd</Id>
     <Name>Digi Animal World HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Digi_animal_world_ro.png/200px-Digi_animal_world_ro.png</LogoUrl>
     <Aliases>
       <string>RO: Digi Animal World HD</string>
       <string>Digi Animal World HD</string>
@@ -479,6 +503,7 @@
     <Id>digi_animal_world</Id>
     <Name>Digi Animal World</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Digi_animal_world_ro.png/200px-Digi_animal_world_ro.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI ANIMAL WORLD</string>
       <string>RO: Digi Animal World</string>
@@ -489,9 +514,10 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>digi_film</Id>
-    <Name>Digi Film</Name>
+    <Id>film_now</Id>
+    <Name>Film Now</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_Film_Now_%282018%29.png/250px-Logo_Film_Now_%282018%29.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI FILM</string>
       <string>Ro: Digi Film</string>
@@ -503,6 +529,7 @@
     <Id>digi_life_hd</Id>
     <Name>Digi Life HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Digi_Life_logo.svg/200px-Digi_Life_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Digi Life HD</string>
       <string>Digi Life HD</string>
@@ -512,6 +539,7 @@
     <Id>digi_life</Id>
     <Name>Digi Life</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Digi_Life_logo.svg/200px-Digi_Life_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI LIFE</string>
       <string>RO: Digi Life</string>
@@ -525,6 +553,7 @@
     <Id>digi_sport1_hd</Id>
     <Name>Digi Sport 1</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI SPORT 1 HD</string>
       <string>RO: DIGI SPORT 1 HD</string>
@@ -535,6 +564,7 @@
     <Id>digi_sport1</Id>
     <Name>Digi Sport 1</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI SPORT 1</string>
       <string>RO: Digi Sport 1</string>
@@ -548,6 +578,7 @@
     <Id>digi_sport2_hd</Id>
     <Name>Digi Sport 2</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI SPORT 2 HD</string>
       <string>RO: DIGI SPORT 2 HD</string>
@@ -558,6 +589,7 @@
     <Id>digi_sport2</Id>
     <Name>Digi Sport 2</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI SPORT 2</string>
       <string>RO: Digi Sport 2</string>
@@ -571,6 +603,7 @@
     <Id>digi_sport3_hd</Id>
     <Name>Digi Sport 3</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI SPORT 3 HD</string>
       <string>RO: DIGI SPORT 3 HD</string>
@@ -581,6 +614,7 @@
     <Id>digi_sport3</Id>
     <Name>Digi Sport 3</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI SPORT 3</string>
       <string>RO: Digi Sport 3</string>
@@ -594,6 +628,7 @@
     <Id>digi_sport4_hd</Id>
     <Name>Digi Sport 4</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI SPORT 4 HD</string>
       <string>RO: DIGI SPORT 4 HD</string>
@@ -604,6 +639,7 @@
     <Id>digi_sport4</Id>
     <Name>Digi Sport 4</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI SPORT 4</string>
       <string>RO: Digi Sport 4</string>
@@ -617,6 +653,7 @@
     <Id>digi_sports1</Id>
     <Name>Digi Sports 1</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI SPORTS 1</string>
       <string>Digi Sports 1</string>
@@ -626,6 +663,7 @@
     <Id>digi_sports2</Id>
     <Name>Digi Sports 2</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI SPORTS 2</string>
       <string>Digi Sports 2</string>
@@ -635,6 +673,7 @@
     <Id>digi_sports3</Id>
     <Name>Digi Sports 3</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI SPORTS 3</string>
       <string>Digi Sports 3</string>
@@ -644,6 +683,7 @@
     <Id>digi_sports4</Id>
     <Name>Digi Sports 4</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e0/Logo-digisport.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI SPORTS 4</string>
       <string>Digi Sports 4</string>
@@ -653,6 +693,7 @@
     <Id>digi_world_hd</Id>
     <Name>Digi World HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Digi_World_logo.svg/200px-Digi_World_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Digi World HD</string>
       <string>Digi World HD</string>
@@ -662,6 +703,7 @@
     <Id>digi_world</Id>
     <Name>Digi World</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Digi_World_logo.svg/200px-Digi_World_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI WORLD</string>
       <string>RO: Digi World</string>
@@ -675,6 +717,7 @@
     <Id>digi24_craiova</Id>
     <Name>Digi24 Craiova</Name>
     <Category>Local</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Craiova</string>
       <string>Digi24 Craiova</string>
@@ -684,6 +727,7 @@
     <Id>digi24_galati</Id>
     <Name>Digi24 Galati</Name>
     <Category>Local</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Galati</string>
       <string>Digi24 Galati</string>
@@ -693,6 +737,7 @@
     <Id>digi24_hd</Id>
     <Name>Digi24 HD</Name>
     <Category>News</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: DIGI 24 HD</string>
       <string>RO: Digi 24 HD</string>
@@ -703,6 +748,7 @@
     <Id>digi24</Id>
     <Name>Digi24</Name>
     <Category>News</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI 24</string>
       <string>RO: Digi 24</string>
@@ -716,6 +762,7 @@
     <Id>discovery_channel</Id>
     <Name>Discovery Channel</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Discovery_Channel_International_logo.svg/200px-Discovery_Channel_International_logo.svg.png</LogoUrl>
     <Aliases>
       <string>Ro: Discovery</string>
       <string>[ RO ] Discovery channel</string>
@@ -723,27 +770,30 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>discovery_hd_showcase</Id>
-    <Name>Discovery HD Showcase</Name>
+    <Id>discovery_showcase_hd</Id>
+    <Name>Discovery Showcase HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>http://www.partner.ulango.tv/uploads/channels/3784471/logo_discovery%20showcase.png</LogoUrl>
     <Aliases>
       <string>RO: Discovery HD Showcase</string>
       <string>Discovery HD Showcase</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>discovery_idx_hd</Id>
-    <Name>Discovery IDX HD</Name>
+    <Id>discovery_investigation_hd</Id>
+    <Name>Discovery Investigation HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_id.png/175px-Logo_id.png</LogoUrl>
     <Aliases>
       <string>RO: ID Investigation Discovery HD</string>
       <string>Discovery IDX HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>discovery_idx</Id>
+    <Id>discovery_investigation</Id>
     <Name>Discovery IDX</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_id.png/175px-Logo_id.png</LogoUrl>
     <Aliases>
       <string>Ro: Discovery IDX</string>
       <string>Discovery IDX</string>
@@ -753,6 +803,7 @@
     <Id>discovery_ro</Id>
     <Name>Discovery RO</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Discovery_Channel_International_logo.svg/200px-Discovery_Channel_International_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: DISCOVERY RO</string>
       <string>Discovery RO</string>
@@ -762,6 +813,7 @@
     <Id>discovery_science_hd</Id>
     <Name>Discovery Science HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Discoveryscience.png/150px-Discoveryscience.png</LogoUrl>
     <Aliases>
       <string>RO: Discovery Science HD</string>
       <string>Discovery Science HD</string>
@@ -771,6 +823,7 @@
     <Id>discovery_science</Id>
     <Name>Discovery Science</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Discoveryscience.png/150px-Discoveryscience.png</LogoUrl>
     <Aliases>
       <string>RO: Discovery science</string>
       <string>Ro: Discovery Science</string>
@@ -782,6 +835,7 @@
     <Id>disney_channel</Id>
     <Name>Disney Channel</Name>
     <Category>Kids</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Disney_Channel_2014_HD.png/200px-Disney_Channel_2014_HD.png</LogoUrl>
     <Aliases>
       <string>RO: DISNEY CHANNEL</string>
       <string>RO: Disney Channel</string>
@@ -793,6 +847,7 @@
     <Id>disney_junior</Id>
     <Name>Disney Junior</Name>
     <Category>Kids</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/8/83/Disney_Junior_Logo.png/220px-Disney_Junior_Logo.png</LogoUrl>
     <Aliases>
       <string>RO:DISNEY JUNIOR</string>
       <string>RO: DISNEY JUNIOR</string>
@@ -807,6 +862,7 @@
     <Id>diva</Id>
     <Name>Diva</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Diva_logo.svg/200px-Diva_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: DIVA</string>
       <string>Diva</string>
@@ -816,6 +872,7 @@
     <Id>dolcesport1</Id>
     <Name>Dolce Sport</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Logo_Telekom_Sport_%282017%29.svg/200px-Logo_Telekom_Sport_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO:DOLCE SPORT 1</string>
       <string>RO: Dolce Sport 1</string>
@@ -826,6 +883,7 @@
     <Id>dtx_ro</Id>
     <Name>DTX RO</Name>
     <Category>???</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/DTX_Logo.png/320px-DTX_Logo.png</LogoUrl>
     <Aliases>
       <string>RO: DTX RO</string>
       <string>DTX RO</string>
@@ -835,6 +893,7 @@
     <Id>dtx</Id>
     <Name>DTX</Name>
     <Category>???</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/DTX_Logo.png/320px-DTX_Logo.png</LogoUrl>
     <Aliases>
       <string>Ro: DTX</string>
       <string>DTX</string>
@@ -844,6 +903,7 @@
     <Id>epic_drama</Id>
     <Name>Epic Drama</Name>
     <Category>Films</Category>
+    <LogoUrl>https://mediaexpres.ro/admin2/Images/15145.R.jpg</LogoUrl>
     <Aliases>
       <string>RO: Epic Drama</string>
       <string>Epic Drama</string>
@@ -853,6 +913,7 @@
     <Id>etno_hd</Id>
     <Name>Etno HD</Name>
     <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/1/1b/Logo_Etno_TV_%282014%29.svg/150px-Logo_Etno_TV_%282014%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: ETNO TV HD</string>
       <string>[ RO ] ETNO TV HD</string>
@@ -863,6 +924,7 @@
     <Id>etno</Id>
     <Name>Etno</Name>
     <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/1/1b/Logo_Etno_TV_%282014%29.svg/150px-Logo_Etno_TV_%282014%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Etno Tv</string>
       <string>Ro: Etno Tv</string>
@@ -874,6 +936,7 @@
     <Id>eurosport1_hd_ro</Id>
     <Name>EuroSport 1 HD RO</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://banner2.kisspng.com/20180628/rgw/kisspng-eurosport-2-logo-television-eurosport-1-bein-sports-1-5b3583a659f9e5.7369616915302337663686.jpg</LogoUrl>
     <Aliases>
       <string>[ RO ] Eurosport 1 HD RO</string>
       <string>EuroSport 1 HD RO</string>
@@ -883,6 +946,7 @@
     <Id>eurosport1_hd</Id>
     <Name>EuroSport 1 HD</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://banner2.kisspng.com/20180628/rgw/kisspng-eurosport-2-logo-television-eurosport-1-bein-sports-1-5b3583a659f9e5.7369616915302337663686.jpg</LogoUrl>
     <Aliases>
       <string>RO: EUROSPORT 1 HD</string>
       <string>[ RO ] EUROSPORT 1 HD</string>
@@ -893,6 +957,7 @@
     <Id>eurosport1</Id>
     <Name>EuroSport 1</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://banner2.kisspng.com/20180628/rgw/kisspng-eurosport-2-logo-television-eurosport-1-bein-sports-1-5b3583a659f9e5.7369616915302337663686.jpg</LogoUrl>
     <Aliases>
       <string>Ro: Eurosport</string>
       <string>RO: Eurosport 1</string>
@@ -905,6 +970,7 @@
     <Id>eurosport2_hd</Id>
     <Name>EuroSport 2 HD</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3d/ESP_2_GGS_RVB.png/revision/latest?cb=20120329095341</LogoUrl>
     <Aliases>
       <string>RO: EUROSPORT 2 HD</string>
       <string>[ RO ] EUROSPORT 2 HD</string>
@@ -915,6 +981,7 @@
     <Id>eurosport2_ro</Id>
     <Name>EuroSport 2 RO</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3d/ESP_2_GGS_RVB.png/revision/latest?cb=20120329095341</LogoUrl>
     <Aliases>
       <string>RO: EUROSPORT 2 RO</string>
       <string>EuroSport 2 RO</string>
@@ -924,6 +991,7 @@
     <Id>eurosport2</Id>
     <Name>EuroSport 2</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3d/ESP_2_GGS_RVB.png/revision/latest?cb=20120329095341</LogoUrl>
     <Aliases>
       <string>Ro: Eurosport 2</string>
       <string>RO: Eurosport 2</string>
@@ -936,6 +1004,7 @@
     <Id>favorit</Id>
     <Name>Favorit</Name>
     <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/ae/FavoritLogo.png</LogoUrl>
     <Aliases>
       <string>RO: Favorit Tv</string>
       <string>Ro: Favorit Tv</string>
@@ -947,6 +1016,7 @@
     <Id>film_cafe</Id>
     <Name>Film Cafe</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Film_cafe_hu.png/200px-Film_cafe_hu.png</LogoUrl>
     <Aliases>
       <string>RO: FILM CAFE</string>
       <string>RO: Film Cafe</string>
@@ -957,6 +1027,7 @@
     <Id>film_now_hd</Id>
     <Name>Film NOW HD</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_Film_Now_%282018%29.png/250px-Logo_Film_Now_%282018%29.png</LogoUrl>
     <Aliases>
       <string>RO: Film NOW HD</string>
       <string>Film NOW HD</string>
@@ -964,8 +1035,9 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>happy</Id>
-    <Name>Happy</Name>
+    <Name>Happy Channel</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/6/69/Euforia-logo.png</LogoUrl>
     <Aliases>
       <string>Ro: Happy</string>
       <string>RO: Happy Channel</string>
@@ -978,6 +1050,7 @@
     <Id>hbo_ro</Id>
     <Name>HBO Romania</Name>
     <Category>Films</Category>
+    <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>Ro: HBO Romania</string>
       <string>[ RO ] HBO Romania</string>
@@ -989,6 +1062,7 @@
     <Id>hbo1_hd</Id>
     <Name>HBO 1</Name>
     <Category>Films</Category>
+    <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO:HBO HD</string>
       <string>RO: HBO HD</string>
@@ -999,6 +1073,7 @@
     <Id>hbo1</Id>
     <Name>HBO 1</Name>
     <Category>Films</Category>
+    <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO: HBO</string>
       <string>HBO 1</string>
@@ -1008,6 +1083,7 @@
     <Id>hbo2_hd</Id>
     <Name>HBO 2</Name>
     <Category>Films</Category>
+    <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO:HBO 2 HD</string>
       <string>RO: HBO 2 HD</string>
@@ -1018,6 +1094,7 @@
     <Id>hbo2</Id>
     <Name>HBO 2</Name>
     <Category>Films</Category>
+    <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO: HBO 2</string>
       <string>Ro: Hbo 2</string>
@@ -1029,6 +1106,7 @@
     <Id>hbo3_hd</Id>
     <Name>HBO 3</Name>
     <Category>Films</Category>
+    <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO:HBO 3 HD</string>
       <string>RO: HBO 3 HD</string>
@@ -1039,6 +1117,7 @@
     <Id>hbo3</Id>
     <Name>HBO 3</Name>
     <Category>Films</Category>
+    <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO: HBO 3</string>
       <string>Ro: Hbo 3</string>
@@ -1050,6 +1129,7 @@
     <Id>history_channel</Id>
     <Name>History Channel</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/History_Logo.svg/200px-History_Logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: History Channel</string>
       <string>Ro: History</string>
@@ -1062,6 +1142,7 @@
     <Id>history_hd</Id>
     <Name>History HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/History_Logo.svg/200px-History_Logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: History HD</string>
       <string>History HD</string>
@@ -1071,6 +1152,7 @@
     <Id>hit</Id>
     <Name>HIT</Name>
     <Category>Music</Category>
+    <LogoUrl></LogoUrl>
     <Aliases>
       <string>Ro: HIT</string>
       <string>HIT</string>
@@ -1080,6 +1162,7 @@
     <Id>kanald_hd</Id>
     <Name>Kanal D HD</Name>
     <Category>General</Category>
+    <LogoUrl>https://growupromania.ro/wp-content/uploads/2017/12/Kanal-D-Logo.jpg</LogoUrl>
     <Aliases>
       <string>[ RO ] Canal D HD</string>
       <string>Kanal D HD</string>
@@ -1089,6 +1172,7 @@
     <Id>kanald</Id>
     <Name>Kanal D</Name>
     <Category>General</Category>
+    <LogoUrl>https://growupromania.ro/wp-content/uploads/2017/12/Kanal-D-Logo.jpg</LogoUrl>
     <Aliases>
       <string>RO:KANAL D</string>
       <string>RO: KANAL D</string>
@@ -1103,6 +1187,7 @@
     <Id>kisstv</Id>
     <Name>KissTV</Name>
     <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/3/38/Logo_Kiss_TV_%282014%29.png</LogoUrl>
     <Aliases>
       <string>RO: KISS TV</string>
       <string>RO: Kiss Tv</string>
@@ -1116,6 +1201,7 @@
     <Id>look_plus</Id>
     <Name>Look Plus</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Logo_LookPlus_HD_%282018%29.svg/200px-Logo_LookPlus_HD_%282018%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Look Plus</string>
       <string>Ro: Look Plus</string>
@@ -1127,6 +1213,7 @@
     <Id>look_sport_hd</Id>
     <Name>Look Sport HD</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Logo_LookSport_HD_%282018%29.svg/200px-Logo_LookSport_HD_%282018%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Look TV HD</string>
       <string>Look Sport HD</string>
@@ -1136,6 +1223,7 @@
     <Id>look_sport</Id>
     <Name>Look Sport</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Logo_LookSport_HD_%282018%29.svg/200px-Logo_LookSport_HD_%282018%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO:LOOK TV</string>
       <string>RO: LOOK PLUS</string>
@@ -1149,6 +1237,7 @@
     <Id>megamax</Id>
     <Name>Megamax</Name>
     <Category>Kids</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/d6/268453-logo-megamax.jpg/200px-268453-logo-megamax.jpg</LogoUrl>
     <Aliases>
       <string>RO:MEGAMAX</string>
       <string>RO: MEGAMAX</string>
@@ -1162,6 +1251,7 @@
     <Id>minimax</Id>
     <Name>Minimax</Name>
     <Category>Kids</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/d/df/MinimaxLogo.PNG</LogoUrl>
     <Aliases>
       <string>RO:MINIMAX</string>
       <string>RO: MINIMAX</string>
@@ -1175,6 +1265,7 @@
     <Id>moldova_sport_hd</Id>
     <Name>Moldova Sport HD</Name>
     <Category>Sport</Category>
+    <LogoUrl>http://live-tv.me/wp-content/uploads/2014/08/MOLDOVA-SPORT-TV.gif</LogoUrl>
     <Aliases>
       <string>RO: Moldova Sport HD</string>
       <string>Moldova Sport HD</string>
@@ -1184,6 +1275,7 @@
     <Id>mooz</Id>
     <Name>MOOZ RO!</Name>
     <Category>???</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/5/50/Dolce_mooz_ro.png/220px-Dolce_mooz_ro.png</LogoUrl>
     <Aliases>
       <string>RO:MOOZ RO!</string>
       <string>RO: MOOZ RO</string>
@@ -1194,6 +1286,7 @@
     <Id>mtv</Id>
     <Name>MTV</Name>
     <Category>Music</Category>
+    <LogoUrl>https://static.spin.com/files/2016/09/MTV-HD-Logo-640x441.jpg</LogoUrl>
     <Aliases>
       <string>[ RO ] MTV</string>
       <string>MTV</string>
@@ -1203,6 +1296,7 @@
     <Id>music_channel_hu</Id>
     <Name>Music Channel HU</Name>
     <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e4/1music.jpg</LogoUrl>
     <Aliases>
       <string>Ro: Music Channe hu</string>
       <string>MUSIC CHANNEL.HU</string>
@@ -1213,6 +1307,7 @@
     <Id>music_channel</Id>
     <Name>Music Channel</Name>
     <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e4/1music.jpg</LogoUrl>
     <Aliases>
       <string>RO: Music Channel</string>
       <string>Music Channel</string>
@@ -1222,35 +1317,31 @@
     <Id>music_hits_17</Id>
     <Name>Music Hits '17</Name>
     <Category>Music</Category>
+    <LogoUrl></LogoUrl>
     <Aliases>
       <string>[ RO ] MUSIC HITS '17 (music only -  numai muzica)</string>
       <string>Music Hits '17</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>n24_plus</Id>
-    <Name>National 24 Plus</Name>
-    <Category>General</Category>
-    <Aliases>
-      <string>RO: National 24 Plus</string>
-      <string>National 24 Plus</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>n24</Id>
     <Name>National 24</Name>
     <Category>???</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/3/35/Na%C8%9Bional_24_Plus.png</LogoUrl>
     <Aliases>
       <string>RO: National 24</string>
       <string>Ro: N24</string>
       <string>[ RO ] National 24</string>
       <string>National 24</string>
+      <string>RO: National 24 Plus</string>
+      <string>National 24 Plus</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>natgeo_hd</Id>
     <Name>National Geographic HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/National-Geographic-Logo.svg/220px-National-Geographic-Logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Nat Geo HD</string>
       <string>National Geographic HD</string>
@@ -1260,6 +1351,7 @@
     <Id>natgeo_wild_hd</Id>
     <Name>National Geographic Wild HD</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Logo_Nat_Geo_Wild.svg/220px-Logo_Nat_Geo_Wild.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Nat Geo Wild HD</string>
       <string>National Geographic Wild HD</string>
@@ -1269,6 +1361,7 @@
     <Id>natgeo_wild</Id>
     <Name>National Geographic Wild</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Logo_Nat_Geo_Wild.svg/220px-Logo_Nat_Geo_Wild.svg.png</LogoUrl>
     <Aliases>
       <string>RO: National Geo Wild</string>
       <string>RO: Nat Geo Wild</string>
@@ -1282,6 +1375,7 @@
     <Id>natgeo</Id>
     <Name>National Geographic</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/National-Geographic-Logo.svg/220px-National-Geographic-Logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: National Geographic</string>
       <string>Ro: Nat Geographic</string>
@@ -1294,6 +1388,7 @@
     <Id>nationaltv</Id>
     <Name>National TV</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Logo_Na%C8%9Bional_TV_%282006%29.svg/339px-Logo_Na%C8%9Bional_TV_%282006%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO:NATIONAL TV</string>
       <string>RO: NATIONAL TV</string>
@@ -1308,6 +1403,7 @@
     <Id>neptuntv</Id>
     <Name>NeptunTV</Name>
     <Category>Local</Category>
+    <LogoUrl>https://tudor-communication.ro/wp-content/uploads/2019/01/neptun-tv.png</LogoUrl>
     <Aliases>
       <string>RO: NeptunTV</string>
       <string>NeptunTV</string>
@@ -1317,6 +1413,7 @@
     <Id>nest</Id>
     <Name>Nest</Name>
     <Category>???</Category>
+    <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO:NEST TV</string>
       <string>Nest</string>
@@ -1326,6 +1423,7 @@
     <Id>nickelodeon_hd</Id>
     <Name>Nickelodeon HD</Name>
     <Category>Kids</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/200px-Nickelodeon_2009_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Nickelodeon HD</string>
       <string>Nickelodeon HD</string>
@@ -1335,6 +1433,7 @@
     <Id>nickelodeon</Id>
     <Name>Nickelodeon</Name>
     <Category>Kids</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/200px-Nickelodeon_2009_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO:NICKELODEON</string>
       <string>RO: Nickelodeon</string>
@@ -1345,9 +1444,10 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>nickjr</Id>
-    <Name>Nick Jr.</Name>
+    <Id>nickelodeon_junior</Id>
+    <Name>Nickelodeon Junior</Name>
     <Category>Kids</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/200px-Nickelodeon_2009_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Nick Jr.</string>
       <string>Nick Jr.</string>
@@ -1357,6 +1457,7 @@
     <Id>one_music</Id>
     <Name>1 Music Channel</Name>
     <Category>Music</Category>
+    <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO: 1 Music Channel</string>
       <string>Ro: 1 Music Channel</string>
@@ -1368,6 +1469,7 @@
     <Id>paprika</Id>
     <Name>Paprika</Name>
     <Category>Lifestyle</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/4/40/Paprika.icon.png</LogoUrl>
     <Aliases>
       <string>RO: TV PAPRIKA</string>
       <string>RO: TV Paprika</string>
@@ -1378,7 +1480,8 @@
   <ChannelDefinitionEntity>
     <Id>paramount_ro</Id>
     <Name>Paramount Channel RO</Name>
-    <Category>???</Category>
+    <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/d/d9/Paramount_channel_logo.png</LogoUrl>
     <Aliases>
       <string>RO: Paramount Channel RO</string>
       <string>Ro: Paramount Channel RO</string>
@@ -1389,7 +1492,8 @@
   <ChannelDefinitionEntity>
     <Id>paramount</Id>
     <Name>Paramount Channel</Name>
-    <Category>???</Category>
+    <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/d/d9/Paramount_channel_logo.png</LogoUrl>
     <Aliases>
       <string>RO: Paramount Channel</string>
       <string>Ro: Paramount Channel</string>
@@ -1401,6 +1505,7 @@
     <Id>primatv_ro</Id>
     <Name>Prima TV RO</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/f/f5/Prima_TV_logo_2015.png</LogoUrl>
     <Aliases>
       <string>RO: PRIMA TV RO</string>
       <string>Prima TV RO</string>
@@ -1410,6 +1515,7 @@
     <Id>primatv</Id>
     <Name>Prima TV</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/f/f5/Prima_TV_logo_2015.png</LogoUrl>
     <Aliases>
       <string>RO:PRIMA TV</string>
       <string>RO: Prima Tv</string>
@@ -1423,15 +1529,22 @@
     <Id>pro2</Id>
     <Name>Pro 2</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Logo_Pro_2_%282017%29.svg/234px-Logo_Pro_2_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: PRO 2</string>
       <string>Pro 2</string>
+      <string>RO: Acasa Tv</string>
+      <string>Ro: Acasa TV</string>
+      <string>[ RO ] ACASA TV</string>
+      <string>ACASA TV</string>
+      <string>Acasa</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>procinema</Id>
-    <Name>ProCinema</Name>
+    <Name>Pro Cinema</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Logo_Pro_Cinema_%282017%29.svg/234px-Logo_Pro_Cinema_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>Ro: ProCinema</string>
       <string>PRO CINEMA</string>
@@ -1442,15 +1555,20 @@
     <Id>progold</Id>
     <Name>Pro Gold</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Logo_Pro_Gold_%282017%29.svg/234px-Logo_Pro_Gold_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: PRO GOLD</string>
       <string>Pro Gold</string>
+      <string>RO: Acasa Gold TV</string>
+      <string>Ro: Acasa Gold</string>
+      <string>Acasa Gold</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>protv_hd</Id>
-    <Name>ProTV HD</Name>
+    <Name>Pro TV HD</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/6/6b/Pro_TV_HD_logo_2017.png</LogoUrl>
     <Aliases>
       <string>[ RO ] PRO TV HD</string>
       <string>ProTV HD</string>
@@ -1460,6 +1578,7 @@
     <Id>protv_international</Id>
     <Name>General</Name>
     <Category>ProTV International</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Pro_TV_Interna%C8%9Bional_%282017%29.svg/234px-Logo_Pro_TV_Interna%C8%9Bional_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: Pro Tv INTERNATIONAL</string>
       <string>General</string>
@@ -1467,8 +1586,9 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>protv</Id>
-    <Name>ProTV</Name>
+    <Name>Pro TV</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Logo_Pro_TV_%282017%29.svg/234px-Logo_Pro_TV_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO:PRO TV</string>
       <string>RO: PRO TV</string>
@@ -1479,18 +1599,29 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>prox_hd</Id>
-    <Name>ProX HD</Name>
+    <Id>prox</Id>
+    <Name>Pro X</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Pro_X_%282017%29.svg/234px-Logo_Pro_X_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: PRO X HD</string>
       <string>ProX HD</string>
+      <string>RO: Sport RO</string>
+      <string />
+      <string>RO: Sport.RO</string>
+      <string>Ro: Sport Ro</string>
+      <string>[ RO ] Sport RO</string>
+      <string>SPORT.RO</string>
+      <string>RO: Sport</string>
+      <string>##### RO - SPORTS #####</string>
+      <string>Sport.RO</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>pvtv</Id>
     <Name>Pescuit si Vanatoare TV</Name>
     <Category>Lifestyle</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/c/cf/FishingHuntingLogo.jpg/220px-FishingHuntingLogo.jpg</LogoUrl>
     <Aliases>
       <string>Ro: Fishing&amp;Hunting</string>
       <string>FISHING &amp; HUNTING</string>
@@ -1501,6 +1632,7 @@
     <Id>realitatea</Id>
     <Name>Realitatea</Name>
     <Category>News</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/5/59/Logo_Realitatea_TV_%282007%29.png</LogoUrl>
     <Aliases>
       <string>RO:REALITATEA TV</string>
       <string>RO: REALITATEA TV</string>
@@ -1515,6 +1647,7 @@
     <Id>rtv</Id>
     <Name>Romania TV</Name>
     <Category>News</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a2/Rom%C3%A2nia_TV_logo.png</LogoUrl>
     <Aliases>
       <string>RO:ROMANIA TV</string>
       <string>RO: Romania Tv</string>
@@ -1529,31 +1662,17 @@
     <Id>somax</Id>
     <Name>Somax</Name>
     <Category>Local</Category>
+    <LogoUrl>http://www.somaxtv.com/wp-content/uploads/2015/04/logo_somax_t3.png</LogoUrl>
     <Aliases>
       <string>RO:SOMAX TV</string>
       <string>Somax</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>sport.ro</Id>
-    <Name>Sport.RO</Name>
-    <Category>Sport</Category>
-    <Aliases>
-      <string>RO: Sport RO</string>
-      <string />
-      <string>RO: Sport.RO</string>
-      <string>Ro: Sport Ro</string>
-      <string>[ RO ] Sport RO</string>
-      <string>SPORT.RO</string>
-      <string>RO: Sport</string>
-      <string>##### RO - SPORTS #####</string>
-      <string>Sport.RO</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>stv</Id>
     <Name>STV</Name>
     <Category>???</Category>
+    <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO:STV</string>
       <string>STV</string>
@@ -1563,6 +1682,7 @@
     <Id>sundance_hd</Id>
     <Name>Sundance HD</Name>
     <Category>???</Category>
+    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/b/bd/Sundance_Channel_1996.svg/revision/latest/scale-to-width-down/250?cb=20151110024159</LogoUrl>
     <Aliases>
       <string>RO: Sundance TV HD</string>
       <string>Sundance HD</string>
@@ -1572,6 +1692,7 @@
     <Id>taraf_hd</Id>
     <Name>Taraf HD</Name>
     <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Taraftv.png/220px-Taraftv.png</LogoUrl>
     <Aliases>
       <string>RO: TARAF TV HD</string>
       <string>RO: Taraf TV HD</string>
@@ -1582,6 +1703,7 @@
     <Id>taraf</Id>
     <Name>Taraf</Name>
     <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Taraftv.png/220px-Taraftv.png</LogoUrl>
     <Aliases>
       <string>RO:Taraf Tv</string>
       <string>Ro: Taraf</string>
@@ -1594,6 +1716,7 @@
     <Id>telekom_sport_1_hd</Id>
     <Name>Telekom Sport 1 HD</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Logo_Telekom_Sport_1_%282017%29.svg/800px-Logo_Telekom_Sport_1_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TELEKOM SPORT 1 HD</string>
       <string>[ RO ] Telekom Sport 1 HD</string>
@@ -1604,6 +1727,7 @@
     <Id>telekom_sport_2_hd</Id>
     <Name>Telekom Sport 2 HD</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Logo_Telekom_Sport_2_%282017%29.svg/2000px-Logo_Telekom_Sport_2_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TELEKOM SPORT 2 HD</string>
       <string>[ RO ] Telekom Sport 2 HD</string>
@@ -1614,6 +1738,7 @@
     <Id>telekom_sport_3_hd</Id>
     <Name>Telekom Sport 3 HD</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/a/ad/Logo_Telekom_Sport_3_%282017%29.svg</LogoUrl>
     <Aliases>
       <string>RO: TELEKOM SPORT 3 HD</string>
       <string>[ RO ] Telekom Sport 3 HD</string>
@@ -1624,6 +1749,7 @@
     <Id>telekom_sport_4_hd</Id>
     <Name>Telekom Sport 4 HD</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Logo_Telekom_Sport_4_%282017%29.svg/1280px-Logo_Telekom_Sport_4_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TELEKOM SPORT 4 HD</string>
       <string>[ RO ] Telekom Sport 4 HD</string>
@@ -1634,6 +1760,7 @@
     <Id>telekom_sport_5_hd</Id>
     <Name>Telekom Sport 5 HD</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Logo_Telekom_Sport_5_%282017%29.svg/1280px-Logo_Telekom_Sport_5_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 5 HD</string>
       <string>Telekom Sport 5 HD</string>
@@ -1643,6 +1770,7 @@
     <Id>telekom_sport_5</Id>
     <Name>Telekom Sport 5</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Logo_Telekom_Sport_5_%282017%29.svg/1280px-Logo_Telekom_Sport_5_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TELEKOM SPORT 5</string>
       <string>Telekom Sport 5</string>
@@ -1652,6 +1780,7 @@
     <Id>telekom_sport_6_hd</Id>
     <Name>Telekom Sport 6 HD</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Telekom_Sport_6_%282017%29.svg/1280px-Logo_Telekom_Sport_6_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 6 HD</string>
       <string>Telekom Sport 6 HD</string>
@@ -1661,6 +1790,7 @@
     <Id>telekom_sport_6</Id>
     <Name>Telekom Sport 6</Name>
     <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Telekom_Sport_6_%282017%29.svg/1280px-Logo_Telekom_Sport_6_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TELEKOM SPORT 6</string>
       <string>Telekom Sport 6</string>
@@ -1670,6 +1800,7 @@
     <Id>telem</Id>
     <Name>Tele M</Name>
     <Category>Local</Category>
+    <LogoUrl>https://telemneamt.net/wp-content/uploads/2015/06/Logo-repr-TeleM.png</LogoUrl>
     <Aliases>
       <string>RO:TELE M</string>
       <string>Tele M</string>
@@ -1679,6 +1810,7 @@
     <Id>tlc</Id>
     <Name>TLC</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/TLC-Logo_2016.png/200px-TLC-Logo_2016.png</LogoUrl>
     <Aliases>
       <string>RO: TLC</string>
       <string>Ro: TLC</string>
@@ -1689,6 +1821,7 @@
     <Id>tnt_hd</Id>
     <Name>TNT HD</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/145px-TNT_Logo_2016.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TNT HD</string>
       <string>TNT HD</string>
@@ -1698,6 +1831,7 @@
     <Id>tnt</Id>
     <Name>TNT</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/145px-TNT_Logo_2016.svg.png</LogoUrl>
     <Aliases>
       <string>Ro: TNT</string>
       <string>TNT</string>
@@ -1707,6 +1841,7 @@
     <Id>travel_mix</Id>
     <Name>Travel Mix</Name>
     <Category>Lifestyle</Category>
+    <LogoUrl>https://www.forbes.ro/wp-content/uploads/2013/06/51b9cc5d394f8-325x336c.jpg</LogoUrl>
     <Aliases>
       <string>RO: Travel Mix</string>
       <string>Travel Mix</string>
@@ -1716,6 +1851,7 @@
     <Id>trinitas</Id>
     <Name>Trinitas</Name>
     <Category>Religious</Category>
+    <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mCtwbe55WTSbdmCNo4IGHpMXXs0tzr_KlRL_w=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>Ro: Trinitas</string>
       <string>TRINITAS</string>
@@ -1726,6 +1862,7 @@
     <Id>tv_sud_est</Id>
     <Name>TV Sud Est</Name>
     <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/tv-sud-est.png</LogoUrl>
     <Aliases>
       <string>RO:TV Sud Est</string>
       <string>TV Sud Est</string>
@@ -1733,8 +1870,9 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>tv1000_hd</Id>
-    <Name>TV 1000 HD</Name>
+    <Name>TV1000 HD</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/f/f4/Logo_TV1000_%282014%29.png/75px-Logo_TV1000_%282014%29.png</LogoUrl>
     <Aliases>
       <string>[ RO ] TV 1000 HD</string>
       <string>TV 1000 HD</string>
@@ -1742,8 +1880,9 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>tv1000</Id>
-    <Name>TV 1000</Name>
+    <Name>TV1000</Name>
     <Category>Films</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/f/f4/Logo_TV1000_%282014%29.png/75px-Logo_TV1000_%282014%29.png</LogoUrl>
     <Aliases>
       <string>RO: TV 1000</string>
       <string>Ro: TV1000</string>
@@ -1754,6 +1893,7 @@
     <Id>tv5monde</Id>
     <Name>TV5 Monde</Name>
     <Category>Foreign</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/TV5MONDE_logo.png/250px-TV5MONDE_logo.png</LogoUrl>
     <Aliases>
       <string>Ro: TV5 MONDE</string>
       <string>TV5 MONDE</string>
@@ -1764,6 +1904,7 @@
     <Id>tvh20</Id>
     <Name>TVH 20</Name>
     <Category>???</Category>
+    <LogoUrl></LogoUrl>
     <Aliases>
       <string>Ro: TVH 20</string>
       <string>TVH 20</string>
@@ -1773,6 +1914,7 @@
     <Id>tvr1</Id>
     <Name>TVR1</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Logo_TVR_1_%282004%29.svg/150px-Logo_TVR_1_%282004%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO:TVR1</string>
       <string>RO: TVR 1</string>
@@ -1786,6 +1928,7 @@
     <Id>tvr2</Id>
     <Name>TVR2</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Logo_TVR_2_%282004%29.svg/150px-Logo_TVR_2_%282004%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO:TVR2</string>
       <string>RO: TVR 2</string>
@@ -1799,6 +1942,7 @@
     <Id>tvr3</Id>
     <Name>TVR3</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Logo_TVR_3_%282017%29.svg/150px-Logo_TVR_3_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO:TVR3</string>
       <string>RO: TVR 3</string>
@@ -1812,6 +1956,7 @@
     <Id>tvrhd</Id>
     <Name>TVR HD</Name>
     <Category>General</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Logo_TVR_1_%282004%29.svg/150px-Logo_TVR_1_%282004%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR HD</string>
       <string>TVR HD</string>
@@ -1821,6 +1966,7 @@
     <Id>utv</Id>
     <Name>U TV</Name>
     <Category>Music</Category>
+    <LogoUrl>http://frosat.net/images/logotv/utv-ro.jpg</LogoUrl>
     <Aliases>
       <string>RO:UTV</string>
       <string>RO: U TV</string>
@@ -1829,9 +1975,10 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>viasat_explorer</Id>
-    <Name>Viasat Explorer</Name>
+    <Id>viasat_explore</Id>
+    <Name>Viasat Explore</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/a/ab/Viasat_Explore.png</LogoUrl>
     <Aliases>
       <string>RO: VIASAT EXPORER</string>
       <string>RO: VIASAT EXPLORER</string>
@@ -1842,6 +1989,7 @@
     <Id>viasat_history</Id>
     <Name>Viasat History</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/7/7f/Viasat_History-2014.png</LogoUrl>
     <Aliases>
       <string>RO: VIASAT HISTORY</string>
       <string>RO: Viasat History</string>
@@ -1855,6 +2003,7 @@
     <Id>viasat_nature</Id>
     <Name>Viasat Nature</Name>
     <Category>Educational</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/1/15/Viasat_Nature-2014.png</LogoUrl>
     <Aliases>
       <string>RO: Viasat Nature</string>
       <string>Ro: Viasat Nature</string>
@@ -1867,6 +2016,7 @@
     <Id>zu_hd</Id>
     <Name>ZU HD</Name>
     <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a2/ZUTVLogo.png</LogoUrl>
     <Aliases>
       <string>RO: ZU TV HD</string>
       <string>ZU HD</string>
@@ -1876,6 +2026,7 @@
     <Id>zu</Id>
     <Name>ZU</Name>
     <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a2/ZUTVLogo.png</LogoUrl>
     <Aliases>
       <string>Ro: ZU TV</string>
       <string>ZU</string>

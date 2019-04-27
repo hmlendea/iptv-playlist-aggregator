@@ -14,6 +14,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
             serviceModel.Id = dataObject.Id;
             serviceModel.Name = dataObject.Name;
             serviceModel.Category = dataObject.Category;
+            serviceModel.LogoUrl = dataObject.LogoUrl;
             serviceModel.Aliases = dataObject.Aliases;
 
             return serviceModel;
@@ -25,6 +26,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
             dataObject.Id = serviceModel.Id;
             dataObject.Name = serviceModel.Name;
             dataObject.Category = serviceModel.Category;
+            dataObject.LogoUrl = serviceModel.LogoUrl;
             dataObject.Aliases = serviceModel.Aliases;
 
             return dataObject;

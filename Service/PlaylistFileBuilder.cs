@@ -12,6 +12,7 @@ namespace IptvPlaylistFetcher.Service
         const string EntryHeader = "#EXTINF";
         const string EntryHeaderSeparator = ":";
         const string EntryValuesSeparator = ",";
+        const string LogoTagKey = "tvg-logo";
         const int DefaultEntryRuntime = -1;
 
         readonly ApplicationSettings settings;
@@ -29,7 +30,15 @@ namespace IptvPlaylistFetcher.Service
             {
                 file += 
                     $"{EntryHeader}{EntryHeaderSeparator}" +
-                    $"{DefaultEntryRuntime}{EntryValuesSeparator}";
+                    $"{DefaultEntryRuntime}";
+                
+                if (settings.AreLogosEnabled &&
+                    !string.IsNullOrWhiteSpace(channel.LogoUrl))
+                {
+                    file += $" {LogoTagKey}=\"{channel.LogoUrl}\"";
+                }
+                
+                file += EntryValuesSeparator;
                 
                 if (settings.AreCategoriesEnabled)
                 {
