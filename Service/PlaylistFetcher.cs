@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 
@@ -12,6 +13,8 @@ namespace IptvPlaylistFetcher.Service
 {
     public sealed class PlaylistFetcher : IPlaylistFetcher
     {
+        const string CacheFileNameFormat = "{0}_playlist_{1:yyyy-MM-dd}.m3u";
+
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly IChannelDefinitionRepository channelRepository;
         readonly IPlaylistProviderRepository playlistProviderRepository;
@@ -63,32 +66,91 @@ namespace IptvPlaylistFetcher.Service
 
         void ProcessProvider(Playlist playlist, PlaylistProvider provider)
         {
-            string m3uFile = FetchPlaylistFromProvider(provider);
-            Playlist m3uPlaylist = playlistFileBuilder.ParseFile(m3uFile);
-            
+            Playlist m3uPlaylist = FetchPlaylistFromProvider(provider);
+
+            if (Playlist.IsNullOrEmpty(m3uPlaylist))
+            {
+                return;
+            }
+
             foreach (Channel channel in m3uPlaylist.Channels)
             {
                 ProcessChannel(playlist, channel);
             }
         }
 
-        string FetchPlaylistFromProvider(PlaylistProvider provider)
+        void SaveProviderPlaylistToCache(string providerId, string playlist)
         {
+            if (!Directory.Exists(settings.CacheDirectoryPath))
+            {
+                Directory.CreateDirectory(settings.CacheDirectoryPath);
+            }
+
+            string filePath = Path.Combine(
+                settings.CacheDirectoryPath,
+                string.Format(CacheFileNameFormat, providerId, DateTime.Now));
+
+            File.WriteAllText(filePath, playlist);
+        }
+
+        Playlist FetchPlaylistFromProvider(PlaylistProvider provider)
+        {
+            for (int i = 0; i < settings.DaysToCheck; i++)
+            {
+                DateTime date = DateTime.Now.AddDays(-i);
+
+                Playlist playlist = LoadPlaylistFromCache(provider, date);
+                
+                if (playlist is null)
+                {
+                    playlist = DownloadPlaylist(provider, date);
+                }
+                
+                if (!(playlist is null))
+                {
+                    return playlist;
+                }
+            }
+
+            return null;
+        }
+
+        Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
+        {
+            string filePath = Path.Combine(
+                settings.CacheDirectoryPath,
+                string.Format(CacheFileNameFormat, provider.Id, DateTime.Now));
+            
+            if (File.Exists(filePath))
+            {
+                string fileContent = File.ReadAllText(filePath);
+                
+                return playlistFileBuilder.ParseFile(fileContent);
+            }
+
+            return null;
+        }
+
+        Playlist DownloadPlaylist(PlaylistProvider provider, DateTime date)
+        {
+            string url = string.Format(provider.UrlFormat, date);
+
+            Console.WriteLine($"GET '{url}'");
+
             using (WebClient client = new WebClient())
             {
-                for (int i = 0; i < settings.DaysToCheck; i++)
+                try
                 {
-                    DateTime date = DateTime.Now.AddDays(-i);
-                    string url = string.Format(provider.UrlFormat, date);
+                    string fileContent = client.DownloadString(url);
+                    Playlist playlist = playlistFileBuilder.ParseFile(fileContent);
 
-                    Console.WriteLine($"GET '{url}'");
-
-                    try
+                    if (!playlist.IsEmpty)
                     {
-                        return client.DownloadString(url);
+                        SaveProviderPlaylistToCache(provider.Id, fileContent);
+                        return playlist;
                     }
-                    catch { }
                 }
+                catch { }
             }
 
             return null;
