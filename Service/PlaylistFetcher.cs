@@ -155,6 +155,8 @@ namespace IptvPlaylistFetcher.Service
         {
             string url = string.Format(provider.UrlFormat, date);
 
+            Console.Write($"GET '{url}' ... ");
+
             using (WebClient client = new WebClient())
             {
                 try
@@ -162,15 +164,18 @@ namespace IptvPlaylistFetcher.Service
                     string fileContent = client.DownloadString(url);
                     Playlist playlist = playlistFileBuilder.ParseFile(fileContent);
 
-                    if (!playlist.IsEmpty)
+                    if (!Playlist.IsNullOrEmpty(playlist))
                     {
                         SaveProviderPlaylistToCache(provider.Id, fileContent);
+                        Console.WriteLine("SUCCESS");
+
                         return playlist;
                     }
                 }
                 catch { }
             }
 
+            Console.WriteLine("FAIL");
             return null;
         }
     }

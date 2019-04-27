@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfChannelDefinitionEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ChannelDefinitionEntity>
+    <Id>1HD.ro</Id>
+    <Name>1 HD</Name>
+    <Category>???</Category>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Ro- 1 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>dolceSport1</Id>
+    <Name>Dolce Sport 1</Name>
+    <Category>???</Category>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Ro- Dolce Sport 1 HD</string>
+      <string>RO: Dolce Sport 1 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>dolceSport2</Id>
+    <Name>Dolce Sport 2</Name>
+    <Category>???</Category>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Ro- Dolce Sport 2 HD</string>
+      <string>RO: Dolce Sport 2 HD</string>
+      <string>RO: DOLCE SPORT2 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Acasa.ro</Id>
     <Name>Acasa</Name>
     <Category>???</Category>
     <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3e/Acasa_%281998-2003%2C_s_teni%29.png/revision/latest?cb=20170801234434</LogoUrl>
     <Aliases>
-      <string>RO: ACASA HD</string>
       <string>Acasa HD</string>
+      <string>Ro- Acasa TV</string>
+      <string>RO: ACASA HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>AcasaGold.ro</Id>
+    <Name>Acasa Gold</Name>
+    <Category>???</Category>
+    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3e/Acasa_%281998-2003%2C_s_teni%29.png/revision/latest?cb=20170801234434</LogoUrl>
+    <Aliases>
+      <string>Ro- Acasa Gold</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -60,10 +100,11 @@
     <Category>News</Category>
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mBVIV7H4CzzM1GbAZg4eaiZ9sEQUfwuR0qrYg=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
-      <string>RO: Agro TV</string>
-      <string>Ro: Agro Tv</string>
       <string>AGRO TV</string>
       <string>Agro TV</string>
+      <string>RO: AGRO TV</string>
+      <string>RO: Agro TV</string>
+      <string>Ro: Agro Tv</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -98,12 +139,13 @@
     <Category>Educational</Category>
     <LogoUrl>https://www.underconsideration.com/brandnew/archives/animal_planet_2018_logo.png</LogoUrl>
     <Aliases>
-      <string>RO: Animal Planet HD</string>
-      <string>Animal Planet HD</string>
-      <string>RO: ANIMAL PLANET</string>
-      <string>Ro: Animal Planet</string>
       <string>[ RO ] Animal Planet</string>
+      <string>Animal Planet HD</string>
       <string>Animal Planet</string>
+      <string>RO: Animal Planet HD</string>
+      <string>RO: ANIMAL PLANET</string>
+      <string>RO: Animal Planet</string>
+      <string>Ro: Animal Planet</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -122,15 +164,16 @@
     <Category>General</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a9/Antena_Stars_logo_2013.png</LogoUrl>
     <Aliases>
-      <string>RO: ANTENA STARS HD</string>
+      <string>[ RO ] Antena Stars</string>
       <string>Antena Stars HD</string>
-      <string>RO:ANTENA STARS</string>
+      <string>ANTENA STARS</string>
+      <string>Antena Stars</string>
+      <string>Ro- Antena Stars</string>
+      <string>RO: ANTENA STARS HD</string>
       <string>RO: ANTENA STARS</string>
       <string>RO: Antena Stars</string>
       <string>Ro: Antena Stars</string>
-      <string>[ RO ] Antena Stars</string>
-      <string>ANTENA STARS</string>
-      <string>Antena Stars</string>
+      <string>RO:ANTENA STARS</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -139,15 +182,16 @@
     <Category>General</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_Antena_1_%282010%29.svg/100px-Logo_Antena_1_%282010%29.svg.png</LogoUrl>
     <Aliases>
-      <string>RO: Antena 1 HD</string>
+      <string>[ RO ] Antena 1</string>
       <string>Antena 1 HD</string>
-      <string>RO:ANTENA 1</string>
+      <string>ANTENA 1</string>
+      <string>Antena 1</string>
+      <string>Ro- Antena 1</string>
+      <string>RO: Antena 1 HD</string>
       <string>RO: ANTENA 1</string>
       <string>RO: Antena 1</string>
       <string>Ro: Antena1</string>
-      <string>[ RO ] Antena 1</string>
-      <string>ANTENA 1</string>
-      <string>Antena 1</string>
+      <string>RO:ANTENA 1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -156,13 +200,15 @@
     <Category>News</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/2/23/Antena_3.jpg/180px-Antena_3.jpg</LogoUrl>
     <Aliases>
-      <string>RO: ANTENA 3 HD</string>
-      <string>Antena 3 HD</string>
-      <string>RO: Antena 3</string>
-      <string>Ro: Antena 3</string>
       <string>[ RO ] Antena 3</string>
+      <string>Antena 3 HD</string>
       <string>ANTENA 3</string>
       <string>Antena 3</string>
+      <string>Ro- Antena 3</string>
+      <string>RO: ANTENA 3 HD</string>
+      <string>RO: Antena 3</string>
+      <string>Ro: Antena 3</string>
+      <string>RO: ANTENA 3</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -226,6 +272,7 @@
       <string> B1</string>
       <string>[ RO ] B1</string>
       <string>B1</string>
+      <string>Ro- B1 TV</string>
       <string>RO: B1 Tv</string>
       <string>RO: B1</string>
       <string>Ro: B1</string>
@@ -311,8 +358,9 @@
     <Category>Lifestyle</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBS_Reality.png/200px-CBS_Reality.png</LogoUrl>
     <Aliases>
-      <string>RO: CBS Reality</string>
       <string>CBS Reality</string>
+      <string>Ro- CBS Reality</string>
+      <string>RO: CBS Reality</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -326,6 +374,7 @@
       <string>CineMAX HD</string>
       <string>CINEMAX RO</string>
       <string>CineMAX RO</string>
+      <string>RO: CINEMAX RO</string>
       <string>Ro: Cinemax Ro</string>
       <string>RO:CINEMAX HD</string>
     </Aliases>
@@ -346,13 +395,14 @@
     <Category>Film</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/Cinemax2.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: Cinemax 2 HD</string>
-      <string>CineMAX 2 HD</string>
-      <string>RO: Cinemax 2</string>
-      <string>Ro: Cinemax2</string>
       <string>[ RO ] Cinemax 2</string>
+      <string>CineMAX 2 HD</string>
       <string>CINEMAX 2</string>
       <string>CineMAX 2</string>
+      <string>RO: Cinemax 2 HD</string>
+      <string>RO: CINEMAX 2</string>
+      <string>RO: Cinemax 2</string>
+      <string>Ro: Cinemax2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -389,13 +439,15 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>dibitv</Id>
+    <Id>DibiTV.ro</Id>
     <Name>Dibi TV</Name>
     <Category>Music</Category>
     <LogoUrl>http://www.dibitv.ro/galerii/video/poze/2.jpg</LogoUrl>
     <Aliases>
       <string>[ RO ]DIBI TV (Music) Balkan</string>
       <string>Dibi TV</string>
+      <string>Ro- DIBI TV HD</string>
+      <string>RO: DIBI TV (Music) Balkan</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -404,14 +456,15 @@
     <Category>Educational</Category>
     <LogoUrl>https://static.iptv-epg.com/hu/DigiAnimalWorld.hu.png</LogoUrl>
     <Aliases>
-      <string>RO: Digi Animal World HD</string>
-      <string>Digi Animal World HD</string>
-      <string>RO:DIGI ANIMAL WORLD</string>
-      <string>RO: Digi Animal World</string>
-      <string>Ro: Digi Animal World</string>
       <string>[ RO ] Digi Animal World</string>
+      <string>Digi Animal World HD</string>
       <string>DIGI ANIMAL WORLD</string>
       <string>Digi Animal World</string>
+      <string>RO: Digi Animal World HD</string>
+      <string>RO: DIGI ANIMAL WORLD</string>
+      <string>RO: Digi Animal World</string>
+      <string>Ro: Digi Animal World</string>
+      <string>RO:DIGI ANIMAL WORLD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -420,14 +473,15 @@
     <Category>Educational</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/DigiLLife.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: Digi Life HD</string>
-      <string>Digi Life HD</string>
-      <string>RO:DIGI LIFE</string>
-      <string>RO: Digi Life</string>
-      <string>Ro: Digi Life</string>
       <string>[ RO ] Digi Life</string>
+      <string>Digi Life HD</string>
       <string>DIGI LIFE</string>
       <string>Digi Life</string>
+      <string>RO: Digi Life HD</string>
+      <string>RO: Digi Life</string>
+      <string>Ro: Digi Life</string>
+      <string>RO: DIGI LIFE</string>
+      <string>RO:DIGI LIFE</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -512,14 +566,15 @@
     <Category>Educational</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/DigiWorld.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: Digi World HD</string>
-      <string>Digi World HD</string>
-      <string>RO:DIGI WORLD</string>
-      <string>RO: Digi World</string>
-      <string>Ro: Digi World</string>
       <string>[ RO ] Digi World</string>
+      <string>Digi World HD</string>
       <string>DIGI WORLD</string>
       <string>Digi World</string>
+      <string>RO: Digi World HD</string>
+      <string>RO: Digi World</string>
+      <string>Ro: Digi World</string>
+      <string>RO: DIGI WORLD</string>
+      <string>RO:DIGI WORLD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -557,8 +612,10 @@
       <string>DIGI 24</string>
       <string>Digi24 HD</string>
       <string>Digi24</string>
+      <string>Ro- Digi 24</string>
       <string>RO: Digi 24 HD</string>
       <string>RO: DIGI 24 HD</string>
+      <string>RO: DIGI 24</string>
       <string>RO: Digi 24</string>
       <string>Ro: Digi 24</string>
       <string>RO:DIGI 24</string>
@@ -570,11 +627,12 @@
     <Category>Educational</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryChannel.ro.png</LogoUrl>
     <Aliases>
-      <string>Ro: Discovery</string>
       <string>[ RO ] Discovery channel</string>
       <string>Discovery Channel</string>
-      <string>RO: DISCOVERY RO</string>
       <string>Discovery RO</string>
+      <string>RO: Discovery channel</string>
+      <string>RO: DISCOVERY RO</string>
+      <string>Ro: Discovery</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -678,13 +736,24 @@
     <Category>Music</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/Etno.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: ETNO TV HD</string>
       <string>[ RO ] ETNO TV HD</string>
       <string>Etno HD</string>
-      <string>RO: Etno Tv</string>
-      <string>Ro: Etno Tv</string>
       <string>ETNO TV</string>
       <string>Etno</string>
+      <string>Ro- ETNO TV</string>
+      <string>RO: ETNO TV HD</string>
+      <string>RO: Etno Tv</string>
+      <string>Ro: Etno Tv</string>
+      <string>RO: ETNO TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>EtnicTV.ro</Id>
+    <Name>Etnic TV</Name>
+    <Category>???</Category>
+    <LogoUrl>http://tvrohdonline.com/wp-content/uploads/2019/01/3.png</LogoUrl>
+    <Aliases>
+      <string>Ro- ETNIC TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -694,15 +763,18 @@
     <LogoUrl>https://static.iptv-epg.com/ro/Eurosport1.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Eurosport 1 HD RO</string>
-      <string>EuroSport 1 HD RO</string>
-      <string>RO: EUROSPORT 1 HD</string>
       <string>[ RO ] EUROSPORT 1 HD</string>
-      <string>EuroSport 1 HD</string>
-      <string>Ro: Eurosport</string>
-      <string>RO: Eurosport 1</string>
       <string>[ RO ] Eurosport</string>
-      <string>EUROSPORT</string>
+      <string>EuroSport 1 HD RO</string>
+      <string>EuroSport 1 HD</string>
       <string>EuroSport 1</string>
+      <string>EUROSPORT</string>
+      <string>RO: Eurosport 1 HD RO</string>
+      <string>RO: EUROSPORT 1 HD</string>
+      <string>RO: Eurosport 1</string>
+      <string>Ro: Eurosport</string>
+      <string>RO: EUROSPORT</string>
+      <string>RO: Eurosport</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -711,16 +783,17 @@
     <Category>Sport</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/Eurosport2.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: EUROSPORT 2 HD</string>
       <string>[ RO ] EUROSPORT 2 HD</string>
-      <string>EuroSport 2 HD</string>
-      <string>RO: EUROSPORT 2 RO</string>
-      <string>EuroSport 2 RO</string>
-      <string>Ro: Eurosport 2</string>
-      <string>RO: Eurosport 2</string>
       <string>[ RO ] Eurosport 2</string>
-      <string>EUROSPORT 2</string>
+      <string>EuroSport 2 HD</string>
+      <string>EuroSport 2 RO</string>
       <string>EuroSport 2</string>
+      <string>EUROSPORT 2</string>
+      <string>RO: EUROSPORT 2 HD</string>
+      <string>RO: EUROSPORT 2 RO</string>
+      <string>RO: Eurosport 2</string>
+      <string>RO: EUROSPORT 2</string>
+      <string>Ro: Eurosport 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -729,10 +802,11 @@
     <Category>Music</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/ae/FavoritLogo.png</LogoUrl>
     <Aliases>
-      <string>RO: Favorit Tv</string>
-      <string>Ro: Favorit Tv</string>
       <string>FAVORIT TV</string>
       <string>Favorit</string>
+      <string>RO: Favorit Tv</string>
+      <string>Ro: Favorit Tv</string>
+      <string>RO: FAVORIT TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -766,11 +840,12 @@
     <Category>Film</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/HappyChannel.ro.png</LogoUrl>
     <Aliases>
-      <string>Ro: Happy</string>
-      <string>RO: Happy Channel</string>
       <string>[ RO ] Happy Channel</string>
       <string>HAPPY CHANNEL</string>
       <string>Happy</string>
+      <string>RO: Happy Channel</string>
+      <string>RO: HAPPY CHANNEL</string>
+      <string>Ro: Happy</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -779,15 +854,18 @@
     <Category>Film</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/HBO.ro.png</LogoUrl>
     <Aliases>
-      <string>RO:HBO HD</string>
-      <string>RO: HBO HD</string>
-      <string>HBO 1</string>
-      <string>RO: HBO</string>
-      <string>HBO 1</string>
-      <string>Ro: HBO Romania</string>
       <string>[ RO ] HBO Romania</string>
-      <string>HBO ROMANIA</string>
+      <string>HBO 1</string>
+      <string>HBO 1</string>
       <string>HBO Romania</string>
+      <string>HBO ROMANIA</string>
+      <string>Ro- HBO</string>
+      <string>RO: HBO HD</string>
+      <string>Ro: HBO Romania</string>
+      <string>RO: HBO Romania</string>
+      <string>RO: HBO ROMANIA</string>
+      <string>RO: HBO</string>
+      <string>RO:HBO HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -826,13 +904,14 @@
     <Category>Educational</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/HistoryChannel.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: History HD</string>
-      <string>History HD</string>
-      <string>RO: History Channel</string>
-      <string>Ro: History</string>
       <string>[ RO ] History Channel</string>
       <string>HISTORY CHANNEL</string>
       <string>History Channel</string>
+      <string>History HD</string>
+      <string>RO: History Channel</string>
+      <string>RO: HISTORY CHANNEL</string>
+      <string>RO: History HD</string>
+      <string>Ro: History</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -852,14 +931,15 @@
     <LogoUrl>https://static.iptv-epg.com/tr/KanalD.tr.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Canal D HD</string>
+      <string>[ RO ] Kanal D</string>
       <string>Kanal D HD</string>
-      <string>RO:KANAL D</string>
+      <string>KANAL D</string>
+      <string>Kanal D</string>
+      <string>Ro- Kanal D</string>
       <string>RO: KANAL D</string>
       <string>RO: Kanal D</string>
       <string>Ro: Kanal D</string>
-      <string>[ RO ] Kanal D</string>
-      <string>KANAL D</string>
-      <string>Kanal D</string>
+      <string>RO:KANAL D</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -872,6 +952,7 @@
       <string>[ RO ] Kiss TV</string>
       <string>KISS TV</string>
       <string>KissTV</string>
+      <string>Ro- Kiss TV</string>
       <string>RO: KISS TV</string>
       <string>RO: Kiss Tv</string>
       <string>Ro: Kiss</string>
@@ -883,25 +964,37 @@
     <Category>Sport</Category>
     <LogoUrl>http://lookplus.ro/wp-content/uploads/2018/09/lp-v-hd-tag-300px.png</LogoUrl>
     <Aliases>
-      <string>RO: Look Plus</string>
-      <string>Ro: Look Plus</string>
       <string>LOOK PLUS TV</string>
       <string>Look Plus</string>
+      <string>RO: LOOK PLUS TV</string>
+      <string>RO: Look Plus</string>
+      <string>Ro: Look Plus</string>
+      <string>RO: LOOK PLUS</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>LookTV.ro</Id>
+    <Name>Look TV</Name>
+    <Category>Sport</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Logo_LookSport_HD_%282018%29.svg/200px-Logo_LookSport_HD_%282018%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>LOOK TV</string>
+      <string>RO: Look TV HD</string>
+      <string>RO: LOOK TV</string>
+      <string>RO: Look TV</string>
+      <string>Ro: Look Tv</string>
+      <string>RO:LOOK TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>LookSport.ro</Id>
     <Name>Look Sport</Name>
     <Category>Sport</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Logo_LookSport_HD_%282018%29.svg/200px-Logo_LookSport_HD_%282018%29.svg.png</LogoUrl>
     <Aliases>
-      <string>RO: Look TV HD</string>
       <string>Look Sport HD</string>
-      <string>RO:LOOK TV</string>
+      <string>Look Sport</string>
       <string>RO: LOOK PLUS</string>
-      <string>RO: Look TV</string>
-      <string>Ro: Look Tv</string>
-      <string>LOOK TV</string>
       <string>Look Sport</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -962,6 +1055,7 @@
     <Aliases>
       <string>[ RO ] MTV</string>
       <string>MTV</string>
+      <string>RO: MTV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -970,9 +1064,10 @@
     <Category>Music</Category>
     <LogoUrl>https://static.iptv-epg.com/hu/MusicChannel.hu.png</LogoUrl>
     <Aliases>
-      <string>Ro: Music Channe hu</string>
-      <string>MUSIC CHANNEL.HU</string>
       <string>Music Channel HU</string>
+      <string>MUSIC CHANNEL.HU</string>
+      <string>Ro: Music Channe hu</string>
+      <string>RO: MUSIC CHANNEL HU</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -981,12 +1076,14 @@
     <Category>Music</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/MusicChannel.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: Music Channel</string>
-      <string>Music Channel</string>
-      <string>RO: 1 Music Channel</string>
-      <string>Ro: 1 Music Channel</string>
       <string>[ RO ] 1 Music Channel</string>
       <string>1 Music Channel</string>
+      <string>Music Channel</string>
+      <string>Ro- 1 Music Channel</string>
+      <string>RO: 1 MUSIC CHANNEL</string>
+      <string>RO: 1 Music Channel</string>
+      <string>Ro: 1 Music Channel</string>
+      <string>RO: Music Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1019,13 +1116,14 @@
     <Category>Educational</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/NatGeo.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: Nat Geo HD</string>
-      <string>National Geographic HD</string>
-      <string>RO: National Geographic</string>
-      <string>Ro: Nat Geographic</string>
       <string>[ RO ] National Geographic</string>
-      <string>NGC</string>
+      <string>National Geographic HD</string>
       <string>National Geographic</string>
+      <string>NGC</string>
+      <string>RO: Nat Geo HD</string>
+      <string>Ro: Nat Geographic</string>
+      <string>RO: National Geographic</string>
+      <string>RO: NGC</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1034,14 +1132,16 @@
     <Category>Educational</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/NatGeoWild.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: Nat Geo Wild HD</string>
+      <string>[ RO ] Nat Geo Wild</string>
       <string>National Geographic Wild HD</string>
-      <string>RO: National Geo Wild</string>
+      <string>National Geographic Wild</string>
+      <string>NGC WILD</string>
+      <string>Ro- National Geographic Wild</string>
+      <string>RO: Nat Geo Wild HD</string>
       <string>RO: Nat Geo Wild</string>
       <string>Ro: NatGeoWild</string>
-      <string>[ RO ] Nat Geo Wild</string>
-      <string>NGC WILD</string>
-      <string>National Geographic Wild</string>
+      <string>RO: National Geo Wild</string>
+      <string>RO: NGC WILD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1050,13 +1150,14 @@
     <Category>General</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/NationalTV.ro.png</LogoUrl>
     <Aliases>
-      <string>RO:NATIONAL TV</string>
-      <string>RO: NATIONAL TV</string>
-      <string>RO: National TV</string>
-      <string>Ro: National</string>
       <string>[ RO ] National TV</string>
       <string>NATIONAL TV</string>
       <string>National TV</string>
+      <string>Ro- Na?ional TV</string>
+      <string>RO: NATIONAL TV</string>
+      <string>RO: National TV</string>
+      <string>Ro: National</string>
+      <string>RO:NATIONAL TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1085,14 +1186,15 @@
     <Category>Kids</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/Nickelodeon.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: Nickelodeon HD</string>
-      <string>Nickelodeon HD</string>
-      <string>RO:NICKELODEON</string>
-      <string>RO: Nickelodeon</string>
-      <string>Ro: Nickelodeon</string>
       <string>[ RO ] Nickelodeon</string>
+      <string>Nickelodeon HD</string>
       <string>NICKELODEON</string>
       <string>Nickelodeon</string>
+      <string>RO: Nickelodeon HD</string>
+      <string>RO: NICKELODEON</string>
+      <string>RO: Nickelodeon</string>
+      <string>Ro: Nickelodeon</string>
+      <string>RO:NICKELODEON</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1123,14 +1225,15 @@
     <Category>Film</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/ParamountChannel.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: Paramount Channel RO</string>
-      <string>Ro: Paramount Channel RO</string>
       <string>[ RO ] Paramount Channel</string>
       <string>Paramount Channel RO</string>
-      <string>RO: Paramount Channel</string>
-      <string>Ro: Paramount Channel</string>
       <string>PARAMOUNT CHANNEL</string>
       <string>Paramount Channel</string>
+      <string>RO: Paramount Channel RO</string>
+      <string>Ro: Paramount Channel RO</string>
+      <string>RO: PARAMOUNT CHANNEL</string>
+      <string>RO: Paramount Channel</string>
+      <string>Ro: Paramount Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1139,14 +1242,16 @@
     <Category>General</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/PrimaTV.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: PRIMA TV RO</string>
       <string>Prima TV RO</string>
-      <string>RO:PRIMA TV</string>
+      <string>PRIMA TV</string>
+      <string>Prima TV</string>
+      <string>Ro- Prima TV</string>
+      <string>RO: PRIMA TV RO</string>
+      <string>RO: PRIMA TV</string>
       <string>RO: Prima Tv</string>
       <string>RO: Prima TV</string>
       <string>Ro: Prima Tv</string>
-      <string>PRIMA TV</string>
-      <string>Prima TV</string>
+      <string>RO:PRIMA TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1155,13 +1260,15 @@
     <Category>Film</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/Pro2.ro.png</LogoUrl>
     <Aliases>
-      <string>RO: PRO 2</string>
-      <string>Pro 2</string>
-      <string>RO: Acasa Tv</string>
-      <string>Ro: Acasa TV</string>
       <string>[ RO ] ACASA TV</string>
       <string>ACASA TV</string>
       <string>Acasa</string>
+      <string>Pro 2</string>
+      <string>Ro- Acasa Tv</string>
+      <string>RO: Acasa Tv</string>
+      <string>Ro: Acasa TV</string>
+      <string>RO: ACASA TV</string>
+      <string>RO: PRO 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1195,13 +1302,16 @@
     <LogoUrl>https://static.iptv-epg.com/ro/ProTV.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] PRO TV HD</string>
-      <string>ProTV HD</string>
-      <string>RO:PRO TV</string>
-      <string>RO: PRO TV</string>
-      <string>RO: Pro TV</string>
-      <string>Ro: ProTV</string>
       <string>PRO TV</string>
+      <string>ProTV HD</string>
       <string>ProTV</string>
+      <string>Ro- Pro TV backup</string>
+      <string>Ro- Pro TV</string>
+      <string>RO: PRO TV HD</string>
+      <string>RO: Pro TV</string>
+      <string>RO: PRO TV</string>
+      <string>Ro: ProTV</string>
+      <string>RO:PRO TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1216,11 +1326,12 @@
   <ChannelDefinitionEntity>
     <Id>ProTVInternational.ro</Id>
     <Name>General</Name>
-    <Category>ProTV International</Category>
+    <Category>General</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Pro_TV_Interna%C8%9Bional_%282017%29.svg/234px-Logo_Pro_TV_Interna%C8%9Bional_%282017%29.svg.png</LogoUrl>
     <Aliases>
+      <string>ProTV International</string>
+      <string>Ro- Pro TV International</string>
       <string>RO: Pro Tv INTERNATIONAL</string>
-      <string>General</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1229,16 +1340,16 @@
     <Category>General</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Pro_X_%282017%29.svg/234px-Logo_Pro_X_%282017%29.svg.png</LogoUrl>
     <Aliases>
-      <string>RO: PRO X HD</string>
-      <string>ProX HD</string>
-      <string>RO: Sport RO</string>
-      <string />
-      <string>RO: Sport.RO</string>
-      <string>Ro: Sport Ro</string>
       <string>[ RO ] Sport RO</string>
-      <string>SPORT.RO</string>
-      <string>RO: Sport</string>
       <string>##### RO - SPORTS #####</string>
+      <string>ProX HD</string>
+      <string>RO: PRO X HD</string>
+      <string>Ro: Sport Ro</string>
+      <string>RO: Sport RO</string>
+      <string>RO: Sport.RO</string>
+      <string>RO: SPORT.RO</string>
+      <string>RO: Sport</string>
+      <string>SPORT.RO</string>
       <string>Sport.RO</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1248,9 +1359,11 @@
     <Category>Lifestyle</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/c/cf/FishingHuntingLogo.jpg/220px-FishingHuntingLogo.jpg</LogoUrl>
     <Aliases>
-      <string>Ro: Fishing&amp;Hunting</string>
       <string>FISHING &amp; HUNTING</string>
       <string>Pescuit si Vanatoare TV</string>
+      <string>Ro- VPTV</string>
+      <string>RO: FISHING &amp; HUNTING</string>
+      <string>Ro: Fishing&amp;Hunting</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1263,9 +1376,12 @@
       <string>Realitatea TV Rumania</string>
       <string>REALITATEA</string>
       <string>Realitatea</string>
+      <string>Ro- Realitatea TV</string>
       <string>RO: REALITATEA TV</string>
       <string>RO: Realitatea Tv</string>
+      <string>RO: REALITATEA TV</string>
       <string>Ro: Realitatea</string>
+      <string>RO: REALITATEA</string>
       <string>RO:REALITATEA TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1284,11 +1400,14 @@
     <Category>News</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a2/Rom%C3%A2nia_TV_logo.png</LogoUrl>
     <Aliases>
-      <string>RO:ROMANIA TV</string>
+      <string>[ RO ] Romania Tv</string>
+      <string>Ro- Romania TV backup</string>
+      <string>Ro- Romania TV</string>
       <string>RO: Romania Tv</string>
       <string>RO: Romania TV</string>
+      <string>RO: ROMANIA TV</string>
       <string>Ro: Romania</string>
-      <string>[ RO ] Romania Tv</string>
+      <string>RO:ROMANIA TV</string>
       <string>ROMANIA TV</string>
       <string>Romania TV</string>
     </Aliases>
@@ -1328,12 +1447,14 @@
     <Category>Music</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Taraftv.png/220px-Taraftv.png</LogoUrl>
     <Aliases>
+      <string>[ RO ] Taraf TV</string>
+      <string>Ro- Taraf TV</string>
       <string>RO: TARAF TV HD</string>
       <string>RO: Taraf TV HD</string>
-      <string>Taraf HD</string>
-      <string>RO:Taraf Tv</string>
+      <string>RO: TARAF TV</string>
       <string>Ro: Taraf</string>
-      <string>[ RO ] Taraf TV</string>
+      <string>RO:Taraf Tv</string>
+      <string>Taraf HD</string>
       <string>TARAF TV</string>
       <string>Taraf</string>
     </Aliases>
@@ -1443,11 +1564,48 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>ColumnaTV.ro</Id>
+    <Name>Columna TV</Name>
+    <Category>???</Category>
+    <LogoUrl>https://i.ytimg.com/vi/PWgPPn2qeHo/hqdefault.jpg</LogoUrl>
+    <Aliases>
+      <string>Ro- Columnta TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TraditiiTV.ro</Id>
+    <Name>Traditii TV</Name>
+    <Category>???</Category>
+    <LogoUrl>http://oklivetv.com/wp-content/uploads/2015/02/TraditiiTVlogo.jpg</LogoUrl>
+    <Aliases>
+      <string>Ro- Traditii TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TezaurTV.ro</Id>
+    <Name>Tezaur TV</Name>
+    <Category>???</Category>
+    <LogoUrl>http://www.tezaurtv.ro/wp-content/uploads/2018/09/Tezaur-TV-online.jpg</LogoUrl>
+    <Aliases>
+      <string>Ro- TEZAUR TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>MioritaTV.ro</Id>
+    <Name>Miorita TV</Name>
+    <Category>???</Category>
+    <LogoUrl>https://scontent.fomr1-1.fna.fbcdn.net/v/t1.0-9/23472832_2058248204396465_7929018799266255912_n.jpg?_nc_cat=106&amp;_nc_ht=scontent.fomr1-1.fna&amp;oh=a9542aaed1845b097c3098566efecd2d&amp;oe=5D311CF6</LogoUrl>
+    <Aliases>
+      <string>Ro- MIORITA TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>TravelMix.ro</Id>
     <Name>Travel Mix</Name>
     <Category>Lifestyle</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/TravelMix.ro.png</LogoUrl>
     <Aliases>
+      <string>Ro- Travel Mix</string>
       <string>RO: Travel Mix</string>
       <string>Travel Mix</string>
     </Aliases>
@@ -1459,6 +1617,7 @@
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mCtwbe55WTSbdmCNo4IGHpMXXs0tzr_KlRL_w=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>Ro: Trinitas</string>
+      <string>RO: TRINITAS</string>
       <string>TRINITAS</string>
       <string>Trinitas</string>
     </Aliases>
@@ -1480,9 +1639,10 @@
     <LogoUrl>https://static.iptv-epg.com/ro/TV1000.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] TV 1000 HD</string>
-      <string>TV 1000 HD</string>
+      <string>RO: TV 1000 HD</string>
       <string>RO: TV 1000</string>
       <string>Ro: TV1000</string>
+      <string>TV 1000 HD</string>
       <string>TV 1000</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1493,6 +1653,7 @@
     <LogoUrl>https://static.iptv-epg.com/nl/TV5Monde.nl.png</LogoUrl>
     <Aliases>
       <string>Ro: TV5 MONDE</string>
+      <string>RO: TV5 MONDE</string>
       <string>TV5 MONDE</string>
       <string>TV5 Monde</string>
     </Aliases>
@@ -1503,6 +1664,7 @@
     <Category>???</Category>
     <LogoUrl></LogoUrl>
     <Aliases>
+      <string>Ro- TV H</string>
       <string>Ro: TVH 20</string>
       <string>TVH 20</string>
     </Aliases>
@@ -1515,6 +1677,8 @@
     <Aliases>
       <string> TVR 1 </string>
       <string>[ RO ] TVR 1</string>
+      <string>Ro- TVR HD</string>
+      <string>Ro- TVR1 HD</string>
       <string>RO: TVR 1</string>
       <string>Ro: Tvr 1</string>
       <string>RO: TVR HD</string>
@@ -1532,6 +1696,7 @@
     <Aliases>
       <string> TVR 2 </string>
       <string>[ RO ] TVR 2</string>
+      <string>Ro- TVR2 HD</string>
       <string>RO: TVR 2</string>
       <string>Ro: Tvr 2</string>
       <string>RO:TVR2</string>
@@ -1547,6 +1712,7 @@
     <Aliases>
       <string> TVR 3 </string>
       <string>[ RO ] TVR 3</string>
+      <string>Ro- TVR3 HD</string>
       <string>RO: TVR 3</string>
       <string>Ro: Tvr 3</string>
       <string>RO:TVR3</string>
@@ -1615,6 +1781,7 @@
     <LogoUrl>http://0.gravatar.com/avatar/69247a9a644ad8980adc79d7d60ccc52?s=200&amp;r=g</LogoUrl>
     <Aliases>
       <string> U TV</string>
+      <string>Ro- UTV</string>
       <string>RO: U TV</string>
       <string>Ro: U TV</string>
       <string>RO:UTV</string>
@@ -1654,9 +1821,10 @@
     <Category>Educational</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/1/15/Viasat_Nature-2014.png</LogoUrl>
     <Aliases>
+      <string>[ RO ] Viasat Nature</string>
       <string>RO: Viasat Nature</string>
       <string>Ro: Viasat Nature</string>
-      <string>[ RO ] Viasat Nature</string>
+      <string>RO: VIASAT NATURE</string>
       <string>VIASAT NATURE</string>
       <string>Viasat Nature</string>
     </Aliases>
@@ -1680,6 +1848,7 @@
     <LogoUrl>http://stvron.com/canale/mari/bucuresti-tv.png</LogoUrl>
     <Aliases>
       <string>Bucuresti TV</string>
+      <string>Ro- Bucuresti TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1727,6 +1896,7 @@
     <LogoUrl>http://www.tvdiaspora.ro/uploads/custom-logo.png</LogoUrl>
     <Aliases>
       <string>DIASPORA TV</string>
+      <string>Ro- DIASPORA TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>

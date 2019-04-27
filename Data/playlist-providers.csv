@@ -4,7 +4,9 @@ bestfreeiptv1,Best Free IPTV,https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-
 bestfreeiptv2,Best Free IPTV Backup 1,https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}_1.m3u
 bestfreeiptv3,Best Free IPTV Backup 2,https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}_2.m3u
 bestiptvm3u,Best IPTV M3U,https://www.bestiptvm3u.com/wp-content/uploads/{0:yyyy}/{0:MM}/m3u-romania-{0:dd.MM.yyyy}.zip
-freeiptvplaylist,FreeIPTVPlaylist,https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}.m3u
+freeiptvplaylist1,Free IPTV Playlist,https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}.m3u
+freeiptvplaylist2,Free IPTV Playlist Backup 1,https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}-backuplist1.m3u
+freeiptvplaylist3,Free IPTV Playlist Backup 2,https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}-backuplist2.m3u
 iptvm3ulist1,IPTVM3UList 1,https://iptvm3ulist.com/m3u/ro01_iptvm3ulist_com_{0:ddMMyy}.m3u
 iptvm3ulist2,IPTVM3UList 2,https://iptvm3ulist.com/m3u/ro02_iptvm3ulist_com_{0:ddMMyy}.m3u
 iptvm3ulist3,IPTVM3UList 3,https://iptvm3ulist.com/m3u/ro03_iptvm3ulist_com_{0:ddMMyy}.m3u
@@ -22,3 +24,10 @@ dailyiptvlist1,DailyIPTVList 1,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yy
 dailyiptvlist2,DailyIPTVList 2,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
 dailyiptvlist3,DailyIPTVList 3,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
 tousecurity,Tousecurity,https://sites.google.com/site/uup4mee/Romania%20M3u%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0
+freeiptvserver1,Free IPTV Server,https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com.m3u
+freeiptvserver2,Free IPTV Server Backup 1,https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com2.m3u
+freeiptvserver3,Free IPTV Server Backup 2,https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com3.m3u
+freedailyiptv1,Free Daily IPTV 1,https://freedailyiptv.com/countries/RO/RO_freedailyiptv.com.m3u
+freedailyiptv2,Free Daily IPTV 2,https://freedailyiptv.com/countries/RO/RO2_freedailyiptv.com.m3u
+freedailyiptv3,Free Daily IPTV 3,https://freedailyiptv.com/countries/RO/RO3_freedailyiptv.com.m3u
+freedailyiptv4,Free Daily IPTV 4,https://freedailyiptv.com/countries/RO/RO4_freedailyiptv.com.m3u
