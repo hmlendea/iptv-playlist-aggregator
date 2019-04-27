@@ -10,8 +10,6 @@ namespace IptvPlaylistFetcher.Core.Configuration
 
         public int DaysToCheck { get; set; }
 
-        public bool AreCategoriesEnabled { get; set; }
-
-        public bool AreLogosEnabled { get; set; }
+        public bool AreTvGuideTagsEnabled { get; set; }
     }
 }

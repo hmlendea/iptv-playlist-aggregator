@@ -13,6 +13,7 @@ namespace IptvPlaylistFetcher.Service
         const string EntryHeaderSeparator = ":";
         const string EntryValuesSeparator = ",";
         const string LogoTagKey = "tvg-logo";
+        const string GroupTagKey = "group-title";
         const int DefaultEntryRuntime = -1;
 
         readonly ApplicationSettings settings;
@@ -32,24 +33,22 @@ namespace IptvPlaylistFetcher.Service
                     $"{EntryHeader}{EntryHeaderSeparator}" +
                     $"{DefaultEntryRuntime}";
                 
-                if (settings.AreLogosEnabled &&
-                    !string.IsNullOrWhiteSpace(channel.LogoUrl))
+                if (settings.AreTvGuideTagsEnabled)
                 {
-                    file += $" {LogoTagKey}=\"{channel.LogoUrl}\"";
-                }
-                
-                file += EntryValuesSeparator;
-                
-                if (settings.AreCategoriesEnabled)
-                {
-                    file += $"{channel.Category}: {channel.Name}{Environment.NewLine}";
-                }
-                else
-                {
-                    file += $"{channel.Name}{Environment.NewLine}";
-                }
+                    if (!string.IsNullOrWhiteSpace(channel.LogoUrl))
+                    {
+                        file += $" {LogoTagKey}=\"{channel.LogoUrl}\"";
+                    }
 
-                file += $"{channel.Url}{Environment.NewLine}";
+                    if (!string.IsNullOrWhiteSpace(channel.Category))
+                    {
+                        file += $" {GroupTagKey}=\"{channel.Category}\"";
+                    }
+                }
+                
+                file +=
+                    $"{EntryValuesSeparator}{channel.Name}{Environment.NewLine}" +
+                    $"{channel.Url}{Environment.NewLine}";
             }
 
             return file;

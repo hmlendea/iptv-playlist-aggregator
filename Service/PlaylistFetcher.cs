@@ -47,20 +47,11 @@ namespace IptvPlaylistFetcher.Service
                 ProcessProvider(playlist, provider);
             }
 
-            if (settings.AreCategoriesEnabled)
-            {
-                playlist.Channels = playlist.Channels
-                    .OrderBy(x => x.Category)
-                    .ThenBy(x => x.Name)
-                    .ToList();
-            }
-            else
-            {
-                playlist.Channels = playlist.Channels
-                    .OrderBy(x => x.Name)
-                    .ToList();
-            }
-
+            playlist.Channels = playlist.Channels
+                .OrderBy(x => x.Category)
+                .ThenBy(x => x.Name)
+                .ToList();
+            
             return playlistFileBuilder.BuildFile(playlist);
         }
 

@@ -12,7 +12,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>accent</Id>
-    <Name>Accent</Name>
+    <Name>Accent TV</Name>
     <Category>???</Category>
     <LogoUrl>http://curentul.md/wp-content/uploads/2017/10/accent-tv.jpg</LogoUrl>
     <Aliases>
@@ -385,23 +385,18 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>cinemax_hd_ro</Id>
-    <Name>CineMAX HD RO</Name>
+    <Id>cinemax1</Id>
+    <Name>CineMAX 1</Name>
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Cinemax HD RO</string>
       <string>CineMAX HD RO</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>cinemax_hd</Id>
-    <Name>CineMAX HD</Name>
-    <Category>Film</Category>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
-    <Aliases>
-      <string>RO:CINEMAX HD</string>
       <string>CineMAX HD</string>
+      <string>CINEMAX RO</string>
+      <string>CineMAX RO</string>
+      <string>Ro: Cinemax Ro</string>
+      <string>RO:CINEMAX HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -435,17 +430,6 @@
       <string>[ RO ] Cinemax 2</string>
       <string>CINEMAX 2</string>
       <string>CineMAX 2</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>cinemaxro</Id>
-    <Name>CineMAX RO</Name>
-    <Category>Film</Category>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
-    <Aliases>
-      <string>Ro: Cinemax Ro</string>
-      <string>CINEMAX RO</string>
-      <string>CineMAX RO</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
