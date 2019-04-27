@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 
+using IptvPlaylistFetcher.Core.Configuration;
 using IptvPlaylistFetcher.DataAccess.Repositories;
 using IptvPlaylistFetcher.Service.Mapping;
 using IptvPlaylistFetcher.Service.Models;
@@ -14,6 +15,7 @@ namespace IptvPlaylistFetcher.Service
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly IChannelDefinitionRepository channelRepository;
         readonly IPlaylistProviderRepository playlistProviderRepository;
+        readonly ApplicationSettings settings;
 
         IEnumerable<ChannelDefinition> channelDefinitions;
         IEnumerable<PlaylistProvider> playlistProviders;
@@ -21,11 +23,13 @@ namespace IptvPlaylistFetcher.Service
         public PlaylistFetcher(
             IPlaylistFileBuilder playlistFileBuilder,
             IChannelDefinitionRepository channelRepository,
-            IPlaylistProviderRepository playlistProviderRepository)
+            IPlaylistProviderRepository playlistProviderRepository,
+            ApplicationSettings settings)
         {
             this.playlistFileBuilder = playlistFileBuilder;
             this.channelRepository = channelRepository;
             this.playlistProviderRepository = playlistProviderRepository;
+            this.settings = settings;
         }
 
         public string GetPlaylistFile()
@@ -58,7 +62,7 @@ namespace IptvPlaylistFetcher.Service
         {
             using (WebClient client = new WebClient())
             {
-                for (int i = 0; i < 20; i++)
+                for (int i = 0; i < settings.DaysToCheck; i++)
                 {
                     DateTime date = DateTime.Now.AddDays(-i);
                     string url = string.Format(provider.UrlFormat, date);
