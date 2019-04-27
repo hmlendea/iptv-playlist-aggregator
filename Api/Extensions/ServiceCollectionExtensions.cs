@@ -24,6 +24,7 @@ namespace IptvPlaylistFetcher.Api.Extensions
         public static IServiceCollection AddCustomServices(this IServiceCollection services)
         {
             return services
+                .AddScoped<IPlaylistAggregator, PlaylistAggregator>()
                 .AddScoped<IPlaylistFetcher, PlaylistFetcher>()
                 .AddScoped<IPlaylistFileBuilder, PlaylistFileBuilder>()
                 .AddScoped<IMediaStreamStatusChecker, MediaStreamStatusChecker>()

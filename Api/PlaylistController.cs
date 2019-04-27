@@ -12,9 +12,9 @@ namespace IptvPlaylistFetcher.Controllers
     [ApiController]
     public class PlaylistController : ControllerBase
     {
-        readonly IPlaylistFetcher service;
+        readonly IPlaylistAggregator service;
 
-        public PlaylistController(IPlaylistFetcher service)
+        public PlaylistController(IPlaylistAggregator service)
         {
             this.service = service;
         }
@@ -22,7 +22,7 @@ namespace IptvPlaylistFetcher.Controllers
         [HttpGet("playlist.m3u")]
         public ActionResult<string> GetAccount()
         {
-            return service.GetPlaylistFile();
+            return service.GatherPlaylist();
         }
     }
 }
