@@ -38,18 +38,20 @@
     <Aliases>
       <string>Actualitatea tv</string>
       <string>Actualitatea</string>
+      <string>ATV</string>
       <string>RO: Actualitatea TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>acum</Id>
-    <Name>Acum</Name>
+    <Name>Acum TV</Name>
     <Category>???</Category>
     <LogoUrl>http://stvron.com/canale/mari/acum-tv.png</LogoUrl>
     <Aliases>
-      <string>RO:ACUM TV</string>
-      <string>RO: Acum TV</string>
       <string>Acum</string>
+      <string>KIT Tv</string>
+      <string>RO: Acum TV</string>
+      <string>RO:ACUM TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -219,7 +221,7 @@
     <Id>B1TV.ro</Id>
     <Name>B1</Name>
     <Category>News</Category>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/8/8b/Logo_B1_bw.jpg</LogoUrl>
+    <LogoUrl>https://vreaulocdemunca.ro/wp-content/uploads/2018/05/b111111111.jpg</LogoUrl>
     <Aliases>
       <string> B1</string>
       <string>[ RO ] B1</string>
@@ -879,7 +881,7 @@
     <Id>LookPlus.ro</Id>
     <Name>Look Plus</Name>
     <Category>Sport</Category>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Logo_LookPlus_HD_%282018%29.svg/200px-Logo_LookPlus_HD_%282018%29.svg.png</LogoUrl>
+    <LogoUrl>http://lookplus.ro/wp-content/uploads/2018/09/lp-v-hd-tag-300px.png</LogoUrl>
     <Aliases>
       <string>RO: Look Plus</string>
       <string>Ro: Look Plus</string>
@@ -1070,7 +1072,7 @@
   <ChannelDefinitionEntity>
     <Id>NestTV.ro</Id>
     <Name>NEst TV</Name>
-    <Category>???</Category>
+    <Category>Local</Category>
     <LogoUrl>https://ik.imagekit.io/ulangotv/image/upload/469250_logo_nest_tv1.png</LogoUrl>
     <Aliases>
       <string>NEst tv</string>
@@ -1255,7 +1257,7 @@
     <Id>RealitateaTV.ro</Id>
     <Name>Realitatea</Name>
     <Category>News</Category>
-    <LogoUrl>https://static.iptv-epg.com/ro/RealitateaTV.ro.png</LogoUrl>
+    <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mCe6lQV8dYNJ8G5sPGQe5BxK7CuHwuPg1rUFA=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>[ RO ] Realitatea</string>
       <string>Realitatea TV Rumania</string>
@@ -1411,7 +1413,7 @@
     <Id>telem</Id>
     <Name>Tele M</Name>
     <Category>Local</Category>
-    <LogoUrl>https://telemneamt.net/wp-content/uploads/2015/06/Logo-repr-TeleM.png</LogoUrl>
+    <LogoUrl>http://telem.ro/wp-content/uploads/2018/07/cropped-telem-sigla-site.png</LogoUrl>
     <Aliases>
       <string>RO:TELE M</string>
       <string>Tele M</string>
@@ -1610,7 +1612,7 @@
     <Id>UTV.ro</Id>
     <Name>U TV</Name>
     <Category>Music</Category>
-    <LogoUrl>http://frosat.net/images/logotv/utv-ro.jpg</LogoUrl>
+    <LogoUrl>http://0.gravatar.com/avatar/69247a9a644ad8980adc79d7d60ccc52?s=200&amp;r=g</LogoUrl>
     <Aliases>
       <string> U TV</string>
       <string>RO: U TV</string>
@@ -1764,30 +1766,12 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>KitTV.ro</Id>
-    <Name>Kit TV</Name>
-    <Category>???</Category>
-    <LogoUrl>https://pbs.twimg.com/profile_images/489445411271086080/RiP38i3e_400x400.png</LogoUrl>
-    <Aliases>
-      <string>KIT Tv</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>BitTV.ro</Id>
     <Name>Bit TV</Name>
     <Category>Local</Category>
-    <LogoUrl>https://bittv.info/wp-content/uploads/2018/10/logo-nou-2018.png</LogoUrl>
+    <LogoUrl>https://bittv.info/wp-content/uploads/2016/02/cropped-logo1.png</LogoUrl>
     <Aliases>
       <string>Bit TV (ROM)</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>ATV.ro</Id>
-    <Name>ATV</Name>
-    <Category>???</Category>
-    <LogoUrl></LogoUrl>
-    <Aliases>
-      <string>ATV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
