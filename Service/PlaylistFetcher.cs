@@ -73,6 +73,18 @@ namespace IptvPlaylistFetcher.Service
                 }
             }
 
+            IEnumerable<string> unmatchedChannelNames = providerPlaylists
+                .SelectMany(x => x.Channels)
+                .Where(x => channelDefinitions.All(y => !y.Aliases.Contains(x.Name)))
+                .Select(x => x.Name)
+                .Distinct()
+                .OrderBy(x => x);
+            
+            foreach (string unmatchedChannelName in unmatchedChannelNames)
+            {
+                Console.WriteLine($"Unmatched channel: '{unmatchedChannelName}'");
+            }
+
             playlist.Channels = playlist.Channels
                 .OrderBy(x => x.Category)
                 .ThenBy(x => x.Name)
