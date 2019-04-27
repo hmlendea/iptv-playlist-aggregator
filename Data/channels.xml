@@ -3,11 +3,20 @@
   <ChannelDefinitionEntity>
     <Id>Acasa.ro</Id>
     <Name>Acasa</Name>
-    <Category>Film</Category>
+    <Category>???</Category>
     <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3e/Acasa_%281998-2003%2C_s_teni%29.png/revision/latest?cb=20170801234434</LogoUrl>
     <Aliases>
       <string>RO: ACASA HD</string>
       <string>Acasa HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>AcasaTV.ro</Id>
+    <Name>Acasa TV</Name>
+    <Category>???</Category>
+    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3e/Acasa_%281998-2003%2C_s_teni%29.png/revision/latest?cb=20170801234434</LogoUrl>
+    <Aliases>
+      <string>Acasa TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -16,18 +25,20 @@
     <Category>???</Category>
     <LogoUrl>http://curentul.md/wp-content/uploads/2017/10/accent-tv.jpg</LogoUrl>
     <Aliases>
-      <string>RO:ACCENT TV</string>
+      <string>Accent TV</string>
       <string>Accent</string>
+      <string>RO:ACCENT TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>actualitatea</Id>
-    <Name>Actualitatea</Name>
+    <Name>Actualitatea TV</Name>
     <Category>???</Category>
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mDf6sM1jeUpYJIiAxgFNuffuR4hxahEv0Fozg=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
-      <string>RO: Actualitatea TV</string>
+      <string>Actualitatea tv</string>
       <string>Actualitatea</string>
+      <string>RO: Actualitatea TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -59,10 +70,11 @@
     <Category>Religios</Category>
     <LogoUrl>https://alfaomega.tv/images/alfaomega/sigla_aotv_600x400_transparent.png</LogoUrl>
     <Aliases>
-      <string>RO:ALFA OMEGA</string>
-      <string>RO: ALFA OMEGA TV</string>
-      <string>Ro: Alfa &amp; Omega</string>
       <string>Alfa &amp; Omega</string>
+      <string>Alfa Omega TV</string>
+      <string>Ro: Alfa &amp; Omega</string>
+      <string>RO: ALFA OMEGA TV</string>
+      <string>RO:ALFA OMEGA</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -209,11 +221,12 @@
     <Category>News</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/8/8b/Logo_B1_bw.jpg</LogoUrl>
     <Aliases>
-      <string>RO: B1</string>
-      <string>RO: B1 Tv</string>
-      <string>Ro: B1</string>
+      <string> B1</string>
       <string>[ RO ] B1</string>
       <string>B1</string>
+      <string>RO: B1 Tv</string>
+      <string>RO: B1</string>
+      <string>Ro: B1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -367,8 +380,10 @@
     <Category>Local</Category>
     <LogoUrl>http://ik.imagekit.io/ulangotv/image/upload/469249_logo_cromtel_tv1.png</LogoUrl>
     <Aliases>
-      <string>RO:CROMTEL TV</string>
+      <string>Cromtel TV</string>
+      <string>Cromtel tv</string>
       <string>Cromtel</string>
+      <string>RO:CROMTEL TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -531,15 +546,20 @@
     <Category>News</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
-      <string>RO: DIGI 24 HD</string>
-      <string>RO: Digi 24 HD</string>
+      <string> Digi 24</string>
+      <string>[ RO ] Digi 24</string>
+      <string>Digi 24 (Rumania)</string>
+      <string>DIGI 24 HD [576p]</string>
+      <string>DIGI 24 HD</string>
+      <string>DIGI 24 TV</string>
+      <string>DIGI 24</string>
       <string>Digi24 HD</string>
-      <string>RO:DIGI 24</string>
+      <string>Digi24</string>
+      <string>RO: Digi 24 HD</string>
+      <string>RO: DIGI 24 HD</string>
       <string>RO: Digi 24</string>
       <string>Ro: Digi 24</string>
-      <string>[ RO ] Digi 24</string>
-      <string>DIGI 24</string>
-      <string>Digi24</string>
+      <string>RO:DIGI 24</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -846,12 +866,13 @@
     <Category>Music</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/3/38/Logo_Kiss_TV_%282014%29.png</LogoUrl>
     <Aliases>
-      <string>RO: KISS TV</string>
-      <string>RO: Kiss Tv</string>
-      <string>Ro: Kiss</string>
+      <string> KISS TV</string>
       <string>[ RO ] Kiss TV</string>
       <string>KISS TV</string>
       <string>KissTV</string>
+      <string>RO: KISS TV</string>
+      <string>RO: Kiss Tv</string>
+      <string>Ro: Kiss</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1047,6 +1068,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>NestTV.ro</Id>
+    <Name>NEst TV</Name>
+    <Category>???</Category>
+    <LogoUrl>https://ik.imagekit.io/ulangotv/image/upload/469250_logo_nest_tv1.png</LogoUrl>
+    <Aliases>
+      <string>NEst tv</string>
+      <string>RO:NEST TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Nickelodeon.ro</Id>
     <Name>Nickelodeon</Name>
     <Category>Kids</Category>
@@ -1172,6 +1203,15 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>ProTVChisinau.md</Id>
+    <Name>Pro TV Chisinau</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Logo_Pro_TV_Chi%C8%99in%C4%83u_%282016%29.svg/1200px-Logo_Pro_TV_Chi%C8%99in%C4%83u_%282016%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>ProTV Chișinău</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>ProTVInternational.ro</Id>
     <Name>General</Name>
     <Category>ProTV International</Category>
@@ -1217,13 +1257,23 @@
     <Category>News</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/RealitateaTV.ro.png</LogoUrl>
     <Aliases>
-      <string>RO:REALITATEA TV</string>
+      <string>[ RO ] Realitatea</string>
+      <string>Realitatea TV Rumania</string>
+      <string>REALITATEA</string>
+      <string>Realitatea</string>
       <string>RO: REALITATEA TV</string>
       <string>RO: Realitatea Tv</string>
       <string>Ro: Realitatea</string>
-      <string>[ RO ] Realitatea</string>
-      <string>REALITATEA</string>
-      <string>Realitatea</string>
+      <string>RO:REALITATEA TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>RockTV.ro</Id>
+    <Name>Rock TV</Name>
+    <Category>Music</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/8/85/Rock_TV.png</LogoUrl>
+    <Aliases>
+      <string>Rock TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1249,6 +1299,15 @@
     <Aliases>
       <string>RO:SOMAX TV</string>
       <string>Somax</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>STV.ro</Id>
+    <Name>STV</Name>
+    <Category>???</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/en/thumb/7/72/STV_logo.svg/1280px-STV_logo.svg.png</LogoUrl>
+    <Aliases>
+      <string>RO:STV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1452,14 +1511,15 @@
     <Category>General</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Logo_TVR_1_%282004%29.svg/150px-Logo_TVR_1_%282004%29.svg.png</LogoUrl>
     <Aliases>
-      <string>RO:TVR1</string>
+      <string> TVR 1 </string>
+      <string>[ RO ] TVR 1</string>
       <string>RO: TVR 1</string>
       <string>Ro: Tvr 1</string>
-      <string>[ RO ] TVR 1</string>
-      <string>TVR 1</string>
-      <string>TVR1</string>
       <string>RO: TVR HD</string>
+      <string>RO:TVR1</string>
+      <string>TVR 1</string>
       <string>TVR HD</string>
+      <string>TVR1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1468,10 +1528,11 @@
     <Category>General</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Logo_TVR_2_%282004%29.svg/150px-Logo_TVR_2_%282004%29.svg.png</LogoUrl>
     <Aliases>
-      <string>RO:TVR2</string>
+      <string> TVR 2 </string>
+      <string>[ RO ] TVR 2</string>
       <string>RO: TVR 2</string>
       <string>Ro: Tvr 2</string>
-      <string>[ RO ] TVR 2</string>
+      <string>RO:TVR2</string>
       <string>TVR 2</string>
       <string>TVR2</string>
     </Aliases>
@@ -1482,12 +1543,67 @@
     <Category>General</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Logo_TVR_3_%282017%29.svg/150px-Logo_TVR_3_%282017%29.svg.png</LogoUrl>
     <Aliases>
-      <string>RO:TVR3</string>
+      <string> TVR 3 </string>
+      <string>[ RO ] TVR 3</string>
       <string>RO: TVR 3</string>
       <string>Ro: Tvr 3</string>
-      <string>[ RO ] TVR 3</string>
+      <string>RO:TVR3</string>
       <string>TVR 3</string>
       <string>TVR3</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVRCluj.ro</Id>
+    <Name>TVR Cluj</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Logo_TVR_Cluj.svg/1280px-Logo_TVR_Cluj.svg.png</LogoUrl>
+    <Aliases>
+      <string>TVR Cluj  </string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVRCraiova.ro</Id>
+    <Name>TVR Craiova</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Logo_TVR_Craiova.svg/1280px-Logo_TVR_Craiova.svg.png</LogoUrl>
+    <Aliases>
+      <string>TVR Craiova </string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVRIasi.ro</Id>
+    <Name>TVR Iasi</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Logo_TVR_Ia%C8%99i.svg/1280px-Logo_TVR_Ia%C8%99i.svg.png</LogoUrl>
+    <Aliases>
+      <string>TVR Isasi</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVRTimisoara.ro</Id>
+    <Name>TVR Timisoara</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Logo_TVR_Timi%C8%99oara.svg/1280px-Logo_TVR_Timi%C8%99oara.svg.png</LogoUrl>
+    <Aliases>
+      <string>TVR Timisoara </string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVRInternational.ro</Id>
+    <Name>TVR International</Name>
+    <Category>Extern</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/d9/TVRiLogo.svg/1200px-TVRiLogo.svg.png</LogoUrl>
+    <Aliases>
+      <string>TVR International </string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVRMoldova.md</Id>
+    <Name>TVR Moldova</Name>
+    <Category>Extern</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/de/Logo_TVR_Moldova.svg/1280px-Logo_TVR_Moldova.svg.png</LogoUrl>
+    <Aliases>
+      <string>TVR Moldova </string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1496,10 +1612,13 @@
     <Category>Music</Category>
     <LogoUrl>http://frosat.net/images/logotv/utv-ro.jpg</LogoUrl>
     <Aliases>
-      <string>RO:UTV</string>
+      <string> U TV</string>
       <string>RO: U TV</string>
       <string>Ro: U TV</string>
+      <string>RO:UTV</string>
       <string>U TV</string>
+      <string>UTV (Opt-1)</string>
+      <string>UTV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1550,6 +1669,181 @@
       <string>ZU HD</string>
       <string>Ro: ZU TV</string>
       <string>ZU</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>BucurestiTV.ro</Id>
+    <Name>Bucuresti TV</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/bucuresti-tv.png</LogoUrl>
+    <Aliases>
+      <string>Bucuresti TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>IasiTVLife.ro</Id>
+    <Name>Iasi TV Life</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://www.iasitvlife.ro/images/itv-logo.png</LogoUrl>
+    <Aliases>
+      <string>Iasi TV Life</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ElitaTV.md</Id>
+    <Name>Elita TV</Name>
+    <Category>???</Category>
+    <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mAx7kElqoc0zrLwF7cKkYXikwzL6a6rRuo5=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
+    <Aliases>
+      <string>TV ELITA</string>
+      <string>Elita TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>PublikaTV.md</Id>
+    <Name>Publika TV</Name>
+    <Category>News</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/f/f9/Publika.png</LogoUrl>
+    <Aliases>
+      <string>Publika TV</string>
+      <string>Elita TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>FilmBox.ro</Id>
+    <Name>FilmBox</Name>
+    <Category>Film</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/FILMBOX.jpg/200px-FILMBOX.jpg</LogoUrl>
+    <Aliases>
+      <string>FilmBox</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>DiasporaTV.ro</Id>
+    <Name>Diaspora TV</Name>
+    <Category>Extern</Category>
+    <LogoUrl>http://www.tvdiaspora.ro/uploads/custom-logo.png</LogoUrl>
+    <Aliases>
+      <string>DIASPORA TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>CredoTV.ro</Id>
+    <Name>Credo TV</Name>
+    <Category>Religios</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Banner-credo-tv.png</LogoUrl>
+    <Aliases>
+      <string>Credo TV [720p]</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>PROFM.ro</Id>
+    <Name>PRO FM</Name>
+    <Category>Radio</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/b/b8/Profm.png/220px-Profm.png</LogoUrl>
+    <Aliases>
+      <string>PROFM</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>DanceFM.ro</Id>
+    <Name>Dance FM</Name>
+    <Category>Radio</Category>
+    <LogoUrl>https://www.dancefm.ro/wp-content/uploads/logoDance-2018.png</LogoUrl>
+    <Aliases>
+      <string>PROFM DANCEFM</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>CI.ro</Id>
+    <Name>CI</Name>
+    <Category>???</Category>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Ro: CI</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>KitTV.ro</Id>
+    <Name>Kit TV</Name>
+    <Category>???</Category>
+    <LogoUrl>https://pbs.twimg.com/profile_images/489445411271086080/RiP38i3e_400x400.png</LogoUrl>
+    <Aliases>
+      <string>KIT Tv</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>BitTV.ro</Id>
+    <Name>Bit TV</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://bittv.info/wp-content/uploads/2018/10/logo-nou-2018.png</LogoUrl>
+    <Aliases>
+      <string>Bit TV (ROM)</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ATV.ro</Id>
+    <Name>ATV</Name>
+    <Category>???</Category>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>ATV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Moldova1.md</Id>
+    <Name>Moldova 1</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Logo_Moldova_1_%282016%29.svg/1200px-Logo_Moldova_1_%282016%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>Moldova 1</string>
+      <string>Moldova 1 [432p]</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Moldova2.md</Id>
+    <Name>Moldova 2</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Logo_Moldova_2_%282016%29.svg/2000px-Logo_Moldova_2_%282016%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>Moldova 2</string>
+      <string>Moldova 2 [432p]</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TV8Moldova.md</Id>
+    <Name>TV8 Moldova</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_TV8_%282017%29.svg/2000px-Logo_TV8_%282017%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>TV8 Moldova</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>HTBMoldova.md</Id>
+    <Name>HTB Moldova</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://www.deschide.md/images/cms-image-000036515.png</LogoUrl>
+    <Aliases>
+      <string>НТВ Moldova</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>CanalRegional.md</Id>
+    <Name>Canal Regional</Name>
+    <Category>Local</Category>
+    <LogoUrl>https://canalregional.md/wp-content/uploads/2018/04/Logo.png</LogoUrl>
+    <Aliases>
+      <string>Canal Regional (Moldova)</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>GoldTV.md</Id>
+    <Name>Gold TV</Name>
+    <Category>???</Category>
+    <LogoUrl>http://goldtv.md/GoldTVLogo1.gif</LogoUrl>
+    <Aliases>
+      <string>Gold TV (Moldova)</string>
     </Aliases>
   </ChannelDefinitionEntity>
 </ArrayOfChannelDefinitionEntity>
