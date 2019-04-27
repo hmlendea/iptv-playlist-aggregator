@@ -1,0 +1,18 @@
+dailyiptvlist1,DailyIPTVList 1,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
+dailyiptvlist2,DailyIPTVList 2,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
+dailyiptvlist3,DailyIPTVList 3,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
+tousecurity,Tousecurity,https://sites.google.com/site/uup4mee/Romania%20M3u%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0
+freeiptvplaylist,FreeIPTVPlaylist,https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}.m3u
+iptvm3ulist1,IPTVM3UList 1,https://iptvm3ulist.com/m3u/ro01_iptvm3ulist_com_{0:ddMMyy}.m3u
+iptvm3ulist2,IPTVM3UList 2,https://iptvm3ulist.com/m3u/ro02_iptvm3ulist_com_{0:ddMMyy}.m3u
+iptvm3ulist3,IPTVM3UList 3,https://iptvm3ulist.com/m3u/ro03_iptvm3ulist_com_{0:ddMMyy}.m3u
+iptvsource,IPTVsource,https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com.m3u
+iptvsource_backup1,IPTVsource Backup 1,https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com2.m3u
+iptvsource_backup2,IPTVsource Backup 2,https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com3.m3u
+iptvsource_backup3,IPTVsource Backup 4,https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com4.m3u
+iptvsat,IPTVSAT,https://www.iptvsat.com/dn/romania.m3u
+gratisiptv1,Gratis IPTV 1,https://gratisiptv.com/dl/ro-gratisiptvm3u-{0:yyyy-MM-dd}-1.m3u
+gratisiptv2,Gratis IPTV 2,https://gratisiptv.com/dl/ro-gratisiptvm3u-{0:yyyy-MM-dd}-2.m3u
+gratisiptv3,Gratis IPTV 3,https://gratisiptv.com/dl/ro-gratisiptvm3u-{0:yyyy-MM-dd}-3.m3u
+iptvresources,iPTV Resources,https://iptvresources.com/iptv/ro-iptv-{0:yyyy-MM-dd}-1.m3u
+gatachannel,gatachannel,https://gatachannel.com/iptv/Romanian-{0:dd-MM-yy}.m3u

@@ -5,7 +5,5 @@ namespace IptvPlaylistFetcher.Core.Configuration
         public string ChannelStorePath { get; set; }
 
         public string PlaylistProviderStorePath { get; set; }
-
-        public string OutputPlaylistPath { get; set; }
     }
 }
