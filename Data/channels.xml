@@ -80,7 +80,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AnimalPlanet.ro</Id>
-    <Name>Animal Planet HD</Name>
+    <Name>Animal Planet</Name>
     <Category>Educational</Category>
     <LogoUrl>https://www.underconsideration.com/brandnew/archives/animal_planet_2018_logo.png</LogoUrl>
     <Aliases>
@@ -164,7 +164,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AXN.ro</Id>
-    <Name>AXN HD</Name>
+    <Name>AXN</Name>
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/250px-AXN_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
@@ -218,7 +218,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BBCEarth.ro</Id>
-    <Name>BBC Earth HD</Name>
+    <Name>BBC Earth</Name>
     <Category>Educational</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/BBC_Earth.jpg/125px-BBC_Earth.jpg</LogoUrl>
     <Aliases>
@@ -868,7 +868,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>LookTV.ro</Id>
-    <Name>Look Sport HD</Name>
+    <Name>Look Sport</Name>
     <Category>Sport</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Logo_LookSport_HD_%282018%29.svg/200px-Logo_LookSport_HD_%282018%29.svg.png</LogoUrl>
     <Aliases>
@@ -912,7 +912,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MoldovaSport.md</Id>
-    <Name>Moldova Sport HD</Name>
+    <Name>Moldova Sport</Name>
     <Category>Sport</Category>
     <LogoUrl>http://live-tv.me/wp-content/uploads/2014/08/MOLDOVA-SPORT-TV.gif</LogoUrl>
     <Aliases>
@@ -1007,7 +1007,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NatGeoWild.ro</Id>
-    <Name>National Geographic Wild HD</Name>
+    <Name>National Geographic Wild</Name>
     <Category>Educational</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/NatGeoWild.ro.png</LogoUrl>
     <Aliases>
@@ -1157,7 +1157,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTV.ro</Id>
-    <Name>Pro TV HD</Name>
+    <Name>Pro TV</Name>
     <Category>General</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/ProTV.ro.png</LogoUrl>
     <Aliases>
@@ -1263,7 +1263,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TarafTV.ro</Id>
-    <Name>Taraf HD</Name>
+    <Name>Taraf</Name>
     <Category>Music</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Taraftv.png/220px-Taraftv.png</LogoUrl>
     <Aliases>
@@ -1371,7 +1371,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TNT.ro</Id>
-    <Name>TNT HD</Name>
+    <Name>TNT</Name>
     <Category>Film</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/TNT.ro.png</LogoUrl>
     <Aliases>
