@@ -7,5 +7,7 @@ namespace IptvPlaylistFetcher.Core.Configuration
         public string PlaylistProviderStorePath { get; set; }
 
         public int DaysToCheck { get; set; }
+
+        public bool AreCategoriesEnabled { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
             ChannelDefinition serviceModel = new ChannelDefinition();
             serviceModel.Id = dataObject.Id;
             serviceModel.Name = dataObject.Name;
+            serviceModel.Category = dataObject.Category;
             serviceModel.Aliases = dataObject.Aliases;
 
             return serviceModel;
@@ -23,6 +24,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
             ChannelDefinitionEntity dataObject = new ChannelDefinitionEntity();
             dataObject.Id = serviceModel.Id;
             dataObject.Name = serviceModel.Name;
+            dataObject.Category = serviceModel.Category;
             dataObject.Aliases = serviceModel.Aliases;
 
             return dataObject;

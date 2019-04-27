@@ -12,6 +12,7 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
     {
         const char CsvFieldSeparator = ',';
         const char CsvCollectionSeparator = '|';
+        const string UnknownCategoryPlaceholder = "???";
 
         readonly ApplicationSettings settings;
 
@@ -49,7 +50,7 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
 
             string[] fields = csvLine.Split(CsvFieldSeparator);
 
-            if (fields.Length != 3)
+            if (fields.Length != 4)
             {
                 throw new ArgumentException($"Invalid CSV line '{csvLine}'", nameof(csvLine));
             }
@@ -57,7 +58,13 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
             ChannelDefinitionEntity entity = new ChannelDefinitionEntity();
             entity.Id = fields[0];
             entity.Name = fields[1];
-            entity.Aliases = fields[2].Split(CsvCollectionSeparator).ToList();
+            entity.Category = fields[2];
+            entity.Aliases = fields[3].Split(CsvCollectionSeparator).ToList();
+
+            if (string.IsNullOrWhiteSpace(entity.Category))
+            {
+                entity.Category = UnknownCategoryPlaceholder;
+            }
 
             entity.Aliases.Add(entity.Name);
             entity.Aliases = entity.Aliases.Distinct().ToList();

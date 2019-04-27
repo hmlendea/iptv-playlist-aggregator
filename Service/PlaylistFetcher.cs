@@ -44,6 +44,20 @@ namespace IptvPlaylistFetcher.Service
                 ProcessProvider(playlist, provider);
             }
 
+            if (settings.AreCategoriesEnabled)
+            {
+                playlist.Channels = playlist.Channels
+                    .OrderBy(x => x.Category)
+                    .ThenBy(x => x.Name)
+                    .ToList();
+            }
+            else
+            {
+                playlist.Channels = playlist.Channels
+                    .OrderBy(x => x.Name)
+                    .ToList();
+            }
+
             return playlistFileBuilder.BuildFile(playlist);
         }
 
@@ -67,7 +81,7 @@ namespace IptvPlaylistFetcher.Service
                     DateTime date = DateTime.Now.AddDays(-i);
                     string url = string.Format(provider.UrlFormat, date);
 
-                    Console.WriteLine(url);
+                    Console.WriteLine($"GET '{url}'");
 
                     try
                     {
@@ -98,6 +112,7 @@ namespace IptvPlaylistFetcher.Service
             
             Channel finalChannel = new Channel();
             finalChannel.Name = channelDef.Name;
+            finalChannel.Category = channelDef.Category;
             finalChannel.Url = channel.Url;
 
             playlist.Channels.Add(finalChannel);

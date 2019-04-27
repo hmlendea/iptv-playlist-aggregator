@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 
+using IptvPlaylistFetcher.Core.Configuration;
 using IptvPlaylistFetcher.Service.Models;
 
 namespace IptvPlaylistFetcher.Service
@@ -13,6 +14,13 @@ namespace IptvPlaylistFetcher.Service
         const string EntryValuesSeparator = ",";
         const int DefaultEntryRuntime = -1;
 
+        readonly ApplicationSettings settings;
+
+        public PlaylistFileBuilder(ApplicationSettings settings)
+        {
+            this.settings = settings;
+        }
+
         public string BuildFile(Playlist playlist)
         {
             string file = FileHeader + Environment.NewLine;
@@ -21,9 +29,18 @@ namespace IptvPlaylistFetcher.Service
             {
                 file += 
                     $"{EntryHeader}{EntryHeaderSeparator}" +
-                    $"{DefaultEntryRuntime}{EntryValuesSeparator}" +
-                    $"{channel.Name}{Environment.NewLine}" +
-                    $"{channel.Url}{Environment.NewLine}";
+                    $"{DefaultEntryRuntime}{EntryValuesSeparator}";
+                
+                if (settings.AreCategoriesEnabled)
+                {
+                    file += $"{channel.Category} - {channel.Name}{Environment.NewLine}";
+                }
+                else
+                {
+                    file += $"{channel.Name}{Environment.NewLine}";
+                }
+
+                file += $"{channel.Url}{Environment.NewLine}";
             }
 
             return file;
