@@ -1,0 +1,1884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfChannelDefinitionEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ChannelDefinitionEntity>
+    <Id>acasa_gold</Id>
+    <Name>Acasa Gold</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: Acasa Gold TV</string>
+      <string>Ro: Acasa Gold</string>
+      <string>Acasa Gold</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>acasa_hd</Id>
+    <Name>Acasa HD</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: ACASA HD</string>
+      <string>Acasa HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>acasa</Id>
+    <Name>Acasa</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: Acasa Tv</string>
+      <string>Ro: Acasa TV</string>
+      <string>[ RO ] ACASA TV</string>
+      <string>ACASA TV</string>
+      <string>Acasa</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>accent</Id>
+    <Name>Accent</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO:ACCENT TV</string>
+      <string>Accent</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>actualitatea</Id>
+    <Name>Actualitatea</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO: Actualitatea TV</string>
+      <string>Actualitatea</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>acum</Id>
+    <Name>Acum</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO:ACUM TV</string>
+      <string>RO: Acum TV</string>
+      <string>Acum</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>agrotv</Id>
+    <Name>Agro TV</Name>
+    <Category>News</Category>
+    <Aliases>
+      <string>RO: Agro TV</string>
+      <string>Ro: Agro Tv</string>
+      <string>AGRO TV</string>
+      <string>Agro TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>alfa_omega</Id>
+    <Name>Alfa &amp; Omega</Name>
+    <Category>Religious</Category>
+    <Aliases>
+      <string>RO:ALFA OMEGA</string>
+      <string>RO: ALFA OMEGA TV</string>
+      <string>Ro: Alfa &amp; Omega</string>
+      <string>Alfa &amp; Omega</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>amc_ro</Id>
+    <Name>AMC RO</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: AMC RO</string>
+      <string>AMC RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>amc</Id>
+    <Name>AMC</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: AMC</string>
+      <string>[ RO ] AMC</string>
+      <string>AMC</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>animal_planet_hd</Id>
+    <Name>Animal Planet HD</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: Animal Planet HD</string>
+      <string>Animal Planet HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>animal_planet</Id>
+    <Name>Animal Planet</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: ANIMAL PLANET</string>
+      <string>Ro: Animal Planet</string>
+      <string>[ RO ] Animal Planet</string>
+      <string>Animal Planet</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>antena_monden</Id>
+    <Name>Antena Monden</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO:ANTENA MONDEN</string>
+      <string>Antena Monden</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>antena_stars_hd</Id>
+    <Name>Antena Stars HD</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO: ANTENA STARS HD</string>
+      <string>Antena Stars HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>antena_stars</Id>
+    <Name>Antena Stars</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO:ANTENA STARS</string>
+      <string>RO: ANTENA STARS</string>
+      <string>RO: Antena Stars</string>
+      <string>Ro: Antena Stars</string>
+      <string>[ RO ] Antena Stars</string>
+      <string>ANTENA STARS</string>
+      <string>Antena Stars</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>antena1_hd</Id>
+    <Name>Antena 1 HD</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO: Antena 1 HD</string>
+      <string>Antena 1 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>antena1</Id>
+    <Name>Antena 1</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO:ANTENA 1</string>
+      <string>RO: ANTENA 1</string>
+      <string>RO: Antena 1</string>
+      <string>Ro: Antena1</string>
+      <string>[ RO ] Antena 1</string>
+      <string>ANTENA 1</string>
+      <string>Antena 1</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>antena3_hd</Id>
+    <Name>Antena 3 HD</Name>
+    <Category>News</Category>
+    <Aliases>
+      <string>RO: ANTENA 3 HD</string>
+      <string>Antena 3 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>antena3</Id>
+    <Name>Antena 3</Name>
+    <Category>News</Category>
+    <Aliases>
+      <string>RO: Antena 3</string>
+      <string>Ro: Antena 3</string>
+      <string>[ RO ] Antena 3</string>
+      <string>ANTENA 3</string>
+      <string>Antena 3</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>auto_motor_sport</Id>
+    <Name>Auto Motor Sport</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: Auto Motor Sport</string>
+      <string>Auto Motor Sport</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>axn_black</Id>
+    <Name>AXN Black</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: AXN BLACK</string>
+      <string>Ro: AXN Black</string>
+      <string>AXN Black</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>axn_hd</Id>
+    <Name>AXN HD</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: AXN HD</string>
+      <string>AXN HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>axn_ro</Id>
+    <Name>AXN Romania</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: AXN ROMANIA</string>
+      <string>Ro: AXN Romania</string>
+      <string>AXN ROMANIA</string>
+      <string>AXN Romania</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>axn_spin</Id>
+    <Name>AXN Spin</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: AXN SPIN</string>
+      <string>AXN Spin</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>axn_white</Id>
+    <Name>AXN White</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: AXN WHITE</string>
+      <string>RO: AXN White</string>
+      <string>Ro: AXN White</string>
+      <string>AXN WHITE</string>
+      <string>AXN White</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>axn_with</Id>
+    <Name>AXN With</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: AXN WITH</string>
+      <string>AXN With</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>axn</Id>
+    <Name>AXN</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: AXN</string>
+      <string>AXN</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>b1tv</Id>
+    <Name>B1</Name>
+    <Category>News</Category>
+    <Aliases>
+      <string>RO: B1</string>
+      <string>RO: B1 Tv</string>
+      <string>Ro: B1</string>
+      <string>[ RO ] B1</string>
+      <string>B1</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>bbc_earth_hd</Id>
+    <Name>BBC Earth HD</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: BBC Earth HD</string>
+      <string>BBC Earth HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>bollywood_classic</Id>
+    <Name>Bollywood Classic</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO:BOLLYWOOD CLASSIC</string>
+      <string>Bollywood Classic</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>bollywood</Id>
+    <Name>Bollywood</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO:BOLYWOOD TV</string>
+      <string>Bollywood</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>boomerang</Id>
+    <Name>Boomerang</Name>
+    <Category>Kids</Category>
+    <Aliases>
+      <string>RO: BOOMERANG</string>
+      <string>RO: Boomerang</string>
+      <string>Ro: Boomerang</string>
+      <string>[ RO ] Boomerang</string>
+      <string>BOOMERANG</string>
+      <string>Boomerang</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>canal2</Id>
+    <Name>Canal 2</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO:CANAL 2 HD</string>
+      <string>Canal 2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>canal3</Id>
+    <Name>Canal 3</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO:CANAL 3 HD</string>
+      <string>Canal 3</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>cartoonnetwork</Id>
+    <Name>Cartoon Network</Name>
+    <Category>Kids</Category>
+    <Aliases>
+      <string>Ro: Cartoon Network</string>
+      <string>Cartoon Network</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>cbs_reality</Id>
+    <Name>CBS Reality</Name>
+    <Category>Lifestyle</Category>
+    <Aliases>
+      <string>RO: CBS Reality</string>
+      <string>CBS Reality</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ci</Id>
+    <Name>CI</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>Ro: CI</string>
+      <string>CI</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>cinemax_hd_ro</Id>
+    <Name>CineMAX HD RO</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>[ RO ] Cinemax HD RO</string>
+      <string>CineMAX HD RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>cinemax_hd</Id>
+    <Name>CineMAX HD</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO:CINEMAX HD</string>
+      <string>CineMAX HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>cinemax_megamax_ro</Id>
+    <Name>CineMAX / Megamax RO</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>[ RO ] Cinemax/Megamax RO</string>
+      <string>CineMAX / Megamax RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>cinemax2_hd</Id>
+    <Name>CineMAX 2 HD</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: Cinemax 2 HD</string>
+      <string>CineMAX 2 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>cinemax2</Id>
+    <Name>CineMAX 2</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: Cinemax 2</string>
+      <string>Ro: Cinemax2</string>
+      <string>[ RO ] Cinemax 2</string>
+      <string>CINEMAX 2</string>
+      <string>CineMAX 2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>cinemaxro</Id>
+    <Name>CineMAX RO</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>Ro: Cinemax Ro</string>
+      <string>CINEMAX RO</string>
+      <string>CineMAX RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>cinethronix</Id>
+    <Name>Cinethronix</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>Ro: Ciné Thronix</string>
+      <string>Cinethronix</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>comedycentral</Id>
+    <Name>Comedy Central</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: COMEDY CENTRAL</string>
+      <string>Ro: Comedy Central</string>
+      <string>Comedy Central</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>cromtel</Id>
+    <Name>Cromtel</Name>
+    <Category>Local</Category>
+    <Aliases>
+      <string>RO:CROMTEL TV</string>
+      <string>Cromtel</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>dibitv</Id>
+    <Name>Dibi TV</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>[ RO ]DIBI TV (Music) Balkan</string>
+      <string>Dibi TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_animal_world_hd</Id>
+    <Name>Digi Animal World HD</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: Digi Animal World HD</string>
+      <string>Digi Animal World HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_animal_world</Id>
+    <Name>Digi Animal World</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO:DIGI ANIMAL WORLD</string>
+      <string>RO: Digi Animal World</string>
+      <string>Ro: Digi Animal World</string>
+      <string>[ RO ] Digi Animal World</string>
+      <string>DIGI ANIMAL WORLD</string>
+      <string>Digi Animal World</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_film</Id>
+    <Name>Digi Film</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO:DIGI FILM</string>
+      <string>Ro: Digi Film</string>
+      <string>DIGI FILM</string>
+      <string>Digi Film</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_life_hd</Id>
+    <Name>Digi Life HD</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: Digi Life HD</string>
+      <string>Digi Life HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_life</Id>
+    <Name>Digi Life</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO:DIGI LIFE</string>
+      <string>RO: Digi Life</string>
+      <string>Ro: Digi Life</string>
+      <string>[ RO ] Digi Life</string>
+      <string>DIGI LIFE</string>
+      <string>Digi Life</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sport1_hd</Id>
+    <Name>Digi Sport 1</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO:DIGI SPORT 1 HD</string>
+      <string>RO: DIGI SPORT 1 HD</string>
+      <string>Digi Sport 1</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sport1</Id>
+    <Name>Digi Sport 1</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO:DIGI SPORT 1</string>
+      <string>RO: Digi Sport 1</string>
+      <string>RO: DIGI SPORT 1</string>
+      <string>[ RO ] DIGI Sport 1</string>
+      <string>DIGI SPORT 1</string>
+      <string>Digi Sport 1</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sport2_hd</Id>
+    <Name>Digi Sport 2</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO:DIGI SPORT 2 HD</string>
+      <string>RO: DIGI SPORT 2 HD</string>
+      <string>Digi Sport 2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sport2</Id>
+    <Name>Digi Sport 2</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO:DIGI SPORT 2</string>
+      <string>RO: Digi Sport 2</string>
+      <string>RO: DIGI SPORT 2</string>
+      <string>[ RO ] DIGI Sport 2</string>
+      <string>DIGI SPORT 2</string>
+      <string>Digi Sport 2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sport3_hd</Id>
+    <Name>Digi Sport 3</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO:DIGI SPORT 3 HD</string>
+      <string>RO: DIGI SPORT 3 HD</string>
+      <string>Digi Sport 3</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sport3</Id>
+    <Name>Digi Sport 3</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO:DIGI SPORT 3</string>
+      <string>RO: Digi Sport 3</string>
+      <string>RO: DIGI SPORT 3</string>
+      <string>[ RO ] DIGI Sport 3</string>
+      <string>DIGI SPORT 3</string>
+      <string>Digi Sport 3</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sport4_hd</Id>
+    <Name>Digi Sport 4</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO:DIGI SPORT 4 HD</string>
+      <string>RO: DIGI SPORT 4 HD</string>
+      <string>Digi Sport 4</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sport4</Id>
+    <Name>Digi Sport 4</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO:DIGI SPORT 4</string>
+      <string>RO: Digi Sport 4</string>
+      <string>RO: DIGI SPORT 4</string>
+      <string>[ RO ] Digi Sport 4</string>
+      <string>DIGI SPORT 4</string>
+      <string>Digi Sport 4</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sports1</Id>
+    <Name>Digi Sports 1</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>[ RO ] DIGI SPORTS 1</string>
+      <string>Digi Sports 1</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sports2</Id>
+    <Name>Digi Sports 2</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>[ RO ] DIGI SPORTS 2</string>
+      <string>Digi Sports 2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sports3</Id>
+    <Name>Digi Sports 3</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>[ RO ] DIGI SPORTS 3</string>
+      <string>Digi Sports 3</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_sports4</Id>
+    <Name>Digi Sports 4</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>[ RO ] DIGI SPORTS 4</string>
+      <string>Digi Sports 4</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_world_hd</Id>
+    <Name>Digi World HD</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: Digi World HD</string>
+      <string>Digi World HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi_world</Id>
+    <Name>Digi World</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO:DIGI WORLD</string>
+      <string>RO: Digi World</string>
+      <string>Ro: Digi World</string>
+      <string>[ RO ] Digi World</string>
+      <string>DIGI WORLD</string>
+      <string>Digi World</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi24_craiova</Id>
+    <Name>Digi24 Craiova</Name>
+    <Category>Local</Category>
+    <Aliases>
+      <string>[ RO ] DIGI 24 Craiova</string>
+      <string>Digi24 Craiova</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi24_galati</Id>
+    <Name>Digi24 Galati</Name>
+    <Category>Local</Category>
+    <Aliases>
+      <string>[ RO ] DIGI 24 Galati</string>
+      <string>Digi24 Galati</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi24_hd</Id>
+    <Name>Digi24 HD</Name>
+    <Category>News</Category>
+    <Aliases>
+      <string>RO: DIGI 24 HD</string>
+      <string>RO: Digi 24 HD</string>
+      <string>Digi24 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digi24</Id>
+    <Name>Digi24</Name>
+    <Category>News</Category>
+    <Aliases>
+      <string>RO:DIGI 24</string>
+      <string>RO: Digi 24</string>
+      <string>Ro: Digi 24</string>
+      <string>[ RO ] Digi 24</string>
+      <string>DIGI 24</string>
+      <string>Digi24</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>discovery_channel</Id>
+    <Name>Discovery Channel</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>Ro: Discovery</string>
+      <string>[ RO ] Discovery channel</string>
+      <string>Discovery Channel</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>discovery_hd_showcase</Id>
+    <Name>Discovery HD Showcase</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: Discovery HD Showcase</string>
+      <string>Discovery HD Showcase</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>discovery_idx_hd</Id>
+    <Name>Discovery IDX HD</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: ID Investigation Discovery HD</string>
+      <string>Discovery IDX HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>discovery_idx</Id>
+    <Name>Discovery IDX</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>Ro: Discovery IDX</string>
+      <string>Discovery IDX</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>discovery_ro</Id>
+    <Name>Discovery RO</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: DISCOVERY RO</string>
+      <string>Discovery RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>discovery_science_hd</Id>
+    <Name>Discovery Science HD</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: Discovery Science HD</string>
+      <string>Discovery Science HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>discovery_science</Id>
+    <Name>Discovery Science</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: Discovery science</string>
+      <string>Ro: Discovery Science</string>
+      <string>[ RO ] Discovery science</string>
+      <string>Discovery Science</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>disney_channel</Id>
+    <Name>Disney Channel</Name>
+    <Category>Kids</Category>
+    <Aliases>
+      <string>RO: DISNEY CHANNEL</string>
+      <string>RO: Disney Channel</string>
+      <string>[ RO ] Disney Channel</string>
+      <string>Disney Channel</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>disney_junior</Id>
+    <Name>Disney Junior</Name>
+    <Category>Kids</Category>
+    <Aliases>
+      <string>RO:DISNEY JUNIOR</string>
+      <string>RO: DISNEY JUNIOR</string>
+      <string>RO: Disney Junior</string>
+      <string>Ro: Disney Junior</string>
+      <string>[ RO ] Disney Junior</string>
+      <string>DISNEY JUNIOR</string>
+      <string>Disney Junior</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>diva</Id>
+    <Name>Diva</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: DIVA</string>
+      <string>Diva</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>dolcesport1</Id>
+    <Name>Dolce Sport</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO:DOLCE SPORT 1</string>
+      <string>RO: Dolce Sport 1</string>
+      <string>Dolce Sport</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>dtx_ro</Id>
+    <Name>DTX RO</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO: DTX RO</string>
+      <string>DTX RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>dtx</Id>
+    <Name>DTX</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>Ro: DTX</string>
+      <string>DTX</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>epic_drama</Id>
+    <Name>Epic Drama</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: Epic Drama</string>
+      <string>Epic Drama</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>etno_hd</Id>
+    <Name>Etno HD</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>RO: ETNO TV HD</string>
+      <string>[ RO ] ETNO TV HD</string>
+      <string>Etno HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>etno</Id>
+    <Name>Etno</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>RO: Etno Tv</string>
+      <string>Ro: Etno Tv</string>
+      <string>ETNO TV</string>
+      <string>Etno</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>eurosport1_hd_ro</Id>
+    <Name>EuroSport 1 HD RO</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>[ RO ] Eurosport 1 HD RO</string>
+      <string>EuroSport 1 HD RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>eurosport1_hd</Id>
+    <Name>EuroSport 1 HD</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: EUROSPORT 1 HD</string>
+      <string>[ RO ] EUROSPORT 1 HD</string>
+      <string>EuroSport 1 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>eurosport1</Id>
+    <Name>EuroSport 1</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>Ro: Eurosport</string>
+      <string>RO: Eurosport 1</string>
+      <string>[ RO ] Eurosport</string>
+      <string>EUROSPORT</string>
+      <string>EuroSport 1</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>eurosport2_hd</Id>
+    <Name>EuroSport 2 HD</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: EUROSPORT 2 HD</string>
+      <string>[ RO ] EUROSPORT 2 HD</string>
+      <string>EuroSport 2 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>eurosport2_ro</Id>
+    <Name>EuroSport 2 RO</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: EUROSPORT 2 RO</string>
+      <string>EuroSport 2 RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>eurosport2</Id>
+    <Name>EuroSport 2</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>Ro: Eurosport 2</string>
+      <string>RO: Eurosport 2</string>
+      <string>[ RO ] Eurosport 2</string>
+      <string>EUROSPORT 2</string>
+      <string>EuroSport 2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>favorit</Id>
+    <Name>Favorit</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>RO: Favorit Tv</string>
+      <string>Ro: Favorit Tv</string>
+      <string>FAVORIT TV</string>
+      <string>Favorit</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>film_cafe</Id>
+    <Name>Film Cafe</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: FILM CAFE</string>
+      <string>RO: Film Cafe</string>
+      <string>Film Cafe</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>film_now_hd</Id>
+    <Name>Film NOW HD</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: Film NOW HD</string>
+      <string>Film NOW HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>happy</Id>
+    <Name>Happy</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>Ro: Happy</string>
+      <string>RO: Happy Channel</string>
+      <string>[ RO ] Happy Channel</string>
+      <string>HAPPY CHANNEL</string>
+      <string>Happy</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>hbo_ro</Id>
+    <Name>HBO Romania</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>Ro: HBO Romania</string>
+      <string>[ RO ] HBO Romania</string>
+      <string>HBO ROMANIA</string>
+      <string>HBO Romania</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>hbo1_hd</Id>
+    <Name>HBO 1</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO:HBO HD</string>
+      <string>RO: HBO HD</string>
+      <string>HBO 1</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>hbo1</Id>
+    <Name>HBO 1</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: HBO</string>
+      <string>HBO 1</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>hbo2_hd</Id>
+    <Name>HBO 2</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO:HBO 2 HD</string>
+      <string>RO: HBO 2 HD</string>
+      <string>HBO 2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>hbo2</Id>
+    <Name>HBO 2</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: HBO 2</string>
+      <string>Ro: Hbo 2</string>
+      <string>[ RO ] HBO 2</string>
+      <string>HBO 2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>hbo3_hd</Id>
+    <Name>HBO 3</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO:HBO 3 HD</string>
+      <string>RO: HBO 3 HD</string>
+      <string>HBO 3</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>hbo3</Id>
+    <Name>HBO 3</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: HBO 3</string>
+      <string>Ro: Hbo 3</string>
+      <string>[ RO ] HBO 3</string>
+      <string>HBO 3</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>history_channel</Id>
+    <Name>History Channel</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: History Channel</string>
+      <string>Ro: History</string>
+      <string>[ RO ] History Channel</string>
+      <string>HISTORY CHANNEL</string>
+      <string>History Channel</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>history_hd</Id>
+    <Name>History HD</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: History HD</string>
+      <string>History HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>hit</Id>
+    <Name>HIT</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>Ro: HIT</string>
+      <string>HIT</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>kanald_hd</Id>
+    <Name>Kanal D HD</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>[ RO ] Canal D HD</string>
+      <string>Kanal D HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>kanald</Id>
+    <Name>Kanal D</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO:KANAL D</string>
+      <string>RO: KANAL D</string>
+      <string>RO: Kanal D</string>
+      <string>Ro: Kanal D</string>
+      <string>[ RO ] Kanal D</string>
+      <string>KANAL D</string>
+      <string>Kanal D</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>kisstv</Id>
+    <Name>KissTV</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>RO: KISS TV</string>
+      <string>RO: Kiss Tv</string>
+      <string>Ro: Kiss</string>
+      <string>[ RO ] Kiss TV</string>
+      <string>KISS TV</string>
+      <string>KissTV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>look_plus</Id>
+    <Name>Look Plus</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: Look Plus</string>
+      <string>Ro: Look Plus</string>
+      <string>LOOK PLUS TV</string>
+      <string>Look Plus</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>look_sport_hd</Id>
+    <Name>Look Sport HD</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: Look TV HD</string>
+      <string>Look Sport HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>look_sport</Id>
+    <Name>Look Sport</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO:LOOK TV</string>
+      <string>RO: LOOK PLUS</string>
+      <string>RO: Look TV</string>
+      <string>Ro: Look Tv</string>
+      <string>LOOK TV</string>
+      <string>Look Sport</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>megamax</Id>
+    <Name>Megamax</Name>
+    <Category>Kids</Category>
+    <Aliases>
+      <string>RO:MEGAMAX</string>
+      <string>RO: MEGAMAX</string>
+      <string>RO: Megamax</string>
+      <string>Ro: Megamax</string>
+      <string>MEGAMAX</string>
+      <string>Megamax</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>minimax</Id>
+    <Name>Minimax</Name>
+    <Category>Kids</Category>
+    <Aliases>
+      <string>RO:MINIMAX</string>
+      <string>RO: MINIMAX</string>
+      <string>RO: Minimax</string>
+      <string>Ro: Minimax</string>
+      <string>MINIMAX</string>
+      <string>Minimax</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>moldova_sport_hd</Id>
+    <Name>Moldova Sport HD</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: Moldova Sport HD</string>
+      <string>Moldova Sport HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>mooz</Id>
+    <Name>MOOZ RO!</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO:MOOZ RO!</string>
+      <string>RO: MOOZ RO</string>
+      <string>MOOZ RO!</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>mtv</Id>
+    <Name>MTV</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>[ RO ] MTV</string>
+      <string>MTV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>music_channel_hu</Id>
+    <Name>Music Channel HU</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>Ro: Music Channe hu</string>
+      <string>MUSIC CHANNEL.HU</string>
+      <string>Music Channel HU</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>music_channel</Id>
+    <Name>Music Channel</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>RO: Music Channel</string>
+      <string>Music Channel</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>music_hits_17</Id>
+    <Name>Music Hits '17</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>[ RO ] MUSIC HITS '17 (music only -  numai muzica)</string>
+      <string>Music Hits '17</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>n24_plus</Id>
+    <Name>National 24 Plus</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO: National 24 Plus</string>
+      <string>National 24 Plus</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>n24</Id>
+    <Name>National 24</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO: National 24</string>
+      <string>Ro: N24</string>
+      <string>[ RO ] National 24</string>
+      <string>National 24</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>natgeo_hd</Id>
+    <Name>National Geographic HD</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: Nat Geo HD</string>
+      <string>National Geographic HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>natgeo_wild_hd</Id>
+    <Name>National Geographic Wild HD</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: Nat Geo Wild HD</string>
+      <string>National Geographic Wild HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>natgeo_wild</Id>
+    <Name>National Geographic Wild</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: National Geo Wild</string>
+      <string>RO: Nat Geo Wild</string>
+      <string>Ro: NatGeoWild</string>
+      <string>[ RO ] Nat Geo Wild</string>
+      <string>NGC WILD</string>
+      <string>National Geographic Wild</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>natgeo</Id>
+    <Name>National Geographic</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: National Geographic</string>
+      <string>Ro: Nat Geographic</string>
+      <string>[ RO ] National Geographic</string>
+      <string>NGC</string>
+      <string>National Geographic</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>nationaltv</Id>
+    <Name>National TV</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO:NATIONAL TV</string>
+      <string>RO: NATIONAL TV</string>
+      <string>RO: National TV</string>
+      <string>Ro: National</string>
+      <string>[ RO ] National TV</string>
+      <string>NATIONAL TV</string>
+      <string>National TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>neptuntv</Id>
+    <Name>NeptunTV</Name>
+    <Category>Local</Category>
+    <Aliases>
+      <string>RO: NeptunTV</string>
+      <string>NeptunTV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>nest</Id>
+    <Name>Nest</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO:NEST TV</string>
+      <string>Nest</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>nickelodeon_hd</Id>
+    <Name>Nickelodeon HD</Name>
+    <Category>Kids</Category>
+    <Aliases>
+      <string>RO: Nickelodeon HD</string>
+      <string>Nickelodeon HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>nickelodeon</Id>
+    <Name>Nickelodeon</Name>
+    <Category>Kids</Category>
+    <Aliases>
+      <string>RO:NICKELODEON</string>
+      <string>RO: Nickelodeon</string>
+      <string>Ro: Nickelodeon</string>
+      <string>[ RO ] Nickelodeon</string>
+      <string>NICKELODEON</string>
+      <string>Nickelodeon</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>nickjr</Id>
+    <Name>Nick Jr.</Name>
+    <Category>Kids</Category>
+    <Aliases>
+      <string>RO: Nick Jr.</string>
+      <string>Nick Jr.</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>one_music</Id>
+    <Name>1 Music Channel</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>RO: 1 Music Channel</string>
+      <string>Ro: 1 Music Channel</string>
+      <string>[ RO ] 1 Music Channel</string>
+      <string>1 Music Channel</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>paprika</Id>
+    <Name>Paprika</Name>
+    <Category>Lifestyle</Category>
+    <Aliases>
+      <string>RO: TV PAPRIKA</string>
+      <string>RO: TV Paprika</string>
+      <string>Ro: Paprika</string>
+      <string>Paprika</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>paramount_ro</Id>
+    <Name>Paramount Channel RO</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO: Paramount Channel RO</string>
+      <string>Ro: Paramount Channel RO</string>
+      <string>[ RO ] Paramount Channel</string>
+      <string>Paramount Channel RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>paramount</Id>
+    <Name>Paramount Channel</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO: Paramount Channel</string>
+      <string>Ro: Paramount Channel</string>
+      <string>PARAMOUNT CHANNEL</string>
+      <string>Paramount Channel</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>primatv_ro</Id>
+    <Name>Prima TV RO</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO: PRIMA TV RO</string>
+      <string>Prima TV RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>primatv</Id>
+    <Name>Prima TV</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO:PRIMA TV</string>
+      <string>RO: Prima Tv</string>
+      <string>RO: Prima TV</string>
+      <string>Ro: Prima Tv</string>
+      <string>PRIMA TV</string>
+      <string>Prima TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>pro2</Id>
+    <Name>Pro 2</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: PRO 2</string>
+      <string>Pro 2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>procinema</Id>
+    <Name>ProCinema</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>Ro: ProCinema</string>
+      <string>PRO CINEMA</string>
+      <string>ProCinema</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>progold</Id>
+    <Name>Pro Gold</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: PRO GOLD</string>
+      <string>Pro Gold</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>protv_hd</Id>
+    <Name>ProTV HD</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>[ RO ] PRO TV HD</string>
+      <string>ProTV HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>protv_international</Id>
+    <Name>General</Name>
+    <Category>ProTV International</Category>
+    <Aliases>
+      <string>RO: Pro Tv INTERNATIONAL</string>
+      <string>General</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>protv</Id>
+    <Name>ProTV</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO:PRO TV</string>
+      <string>RO: PRO TV</string>
+      <string>RO: Pro TV</string>
+      <string>Ro: ProTV</string>
+      <string>PRO TV</string>
+      <string>ProTV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>prox_hd</Id>
+    <Name>ProX HD</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO: PRO X HD</string>
+      <string>ProX HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>pvtv</Id>
+    <Name>Pescuit si Vanatoare TV</Name>
+    <Category>Lifestyle</Category>
+    <Aliases>
+      <string>Ro: Fishing&amp;Hunting</string>
+      <string>FISHING &amp; HUNTING</string>
+      <string>Pescuit si Vanatoare TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>realitatea</Id>
+    <Name>Realitatea</Name>
+    <Category>News</Category>
+    <Aliases>
+      <string>RO:REALITATEA TV</string>
+      <string>RO: REALITATEA TV</string>
+      <string>RO: Realitatea Tv</string>
+      <string>Ro: Realitatea</string>
+      <string>[ RO ] Realitatea</string>
+      <string>REALITATEA</string>
+      <string>Realitatea</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>rtv</Id>
+    <Name>Romania TV</Name>
+    <Category>News</Category>
+    <Aliases>
+      <string>RO:ROMANIA TV</string>
+      <string>RO: Romania Tv</string>
+      <string>RO: Romania TV</string>
+      <string>Ro: Romania</string>
+      <string>[ RO ] Romania Tv</string>
+      <string>ROMANIA TV</string>
+      <string>Romania TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>somax</Id>
+    <Name>Somax</Name>
+    <Category>Local</Category>
+    <Aliases>
+      <string>RO:SOMAX TV</string>
+      <string>Somax</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>sport.ro</Id>
+    <Name>Sport.RO</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: Sport RO</string>
+      <string />
+      <string>RO: Sport.RO</string>
+      <string>Ro: Sport Ro</string>
+      <string>[ RO ] Sport RO</string>
+      <string>SPORT.RO</string>
+      <string>RO: Sport</string>
+      <string>##### RO - SPORTS #####</string>
+      <string>Sport.RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>stv</Id>
+    <Name>STV</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO:STV</string>
+      <string>STV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>sundance_hd</Id>
+    <Name>Sundance HD</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>RO: Sundance TV HD</string>
+      <string>Sundance HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>taraf_hd</Id>
+    <Name>Taraf HD</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>RO: TARAF TV HD</string>
+      <string>RO: Taraf TV HD</string>
+      <string>Taraf HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>taraf</Id>
+    <Name>Taraf</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>RO:Taraf Tv</string>
+      <string>Ro: Taraf</string>
+      <string>[ RO ] Taraf TV</string>
+      <string>TARAF TV</string>
+      <string>Taraf</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telekom_sport_1_hd</Id>
+    <Name>Telekom Sport 1 HD</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: TELEKOM SPORT 1 HD</string>
+      <string>[ RO ] Telekom Sport 1 HD</string>
+      <string>Telekom Sport 1 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telekom_sport_2_hd</Id>
+    <Name>Telekom Sport 2 HD</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: TELEKOM SPORT 2 HD</string>
+      <string>[ RO ] Telekom Sport 2 HD</string>
+      <string>Telekom Sport 2 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telekom_sport_3_hd</Id>
+    <Name>Telekom Sport 3 HD</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: TELEKOM SPORT 3 HD</string>
+      <string>[ RO ] Telekom Sport 3 HD</string>
+      <string>Telekom Sport 3 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telekom_sport_4_hd</Id>
+    <Name>Telekom Sport 4 HD</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: TELEKOM SPORT 4 HD</string>
+      <string>[ RO ] Telekom Sport 4 HD</string>
+      <string>Telekom Sport 4 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telekom_sport_5_hd</Id>
+    <Name>Telekom Sport 5 HD</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>[ RO ] Telekom Sport 5 HD</string>
+      <string>Telekom Sport 5 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telekom_sport_5</Id>
+    <Name>Telekom Sport 5</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: TELEKOM SPORT 5</string>
+      <string>Telekom Sport 5</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telekom_sport_6_hd</Id>
+    <Name>Telekom Sport 6 HD</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>[ RO ] Telekom Sport 6 HD</string>
+      <string>Telekom Sport 6 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telekom_sport_6</Id>
+    <Name>Telekom Sport 6</Name>
+    <Category>Sport</Category>
+    <Aliases>
+      <string>RO: TELEKOM SPORT 6</string>
+      <string>Telekom Sport 6</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telem</Id>
+    <Name>Tele M</Name>
+    <Category>Local</Category>
+    <Aliases>
+      <string>RO:TELE M</string>
+      <string>Tele M</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tlc</Id>
+    <Name>TLC</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: TLC</string>
+      <string>Ro: TLC</string>
+      <string>TLC</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tnt_hd</Id>
+    <Name>TNT HD</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: TNT HD</string>
+      <string>TNT HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tnt</Id>
+    <Name>TNT</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>Ro: TNT</string>
+      <string>TNT</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>travel_mix</Id>
+    <Name>Travel Mix</Name>
+    <Category>Lifestyle</Category>
+    <Aliases>
+      <string>RO: Travel Mix</string>
+      <string>Travel Mix</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>trinitas</Id>
+    <Name>Trinitas</Name>
+    <Category>Religious</Category>
+    <Aliases>
+      <string>Ro: Trinitas</string>
+      <string>TRINITAS</string>
+      <string>Trinitas</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tv_sud_est</Id>
+    <Name>TV Sud Est</Name>
+    <Category>Local</Category>
+    <Aliases>
+      <string>RO:TV Sud Est</string>
+      <string>TV Sud Est</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tv1000_hd</Id>
+    <Name>TV 1000 HD</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>[ RO ] TV 1000 HD</string>
+      <string>TV 1000 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tv1000</Id>
+    <Name>TV 1000</Name>
+    <Category>Films</Category>
+    <Aliases>
+      <string>RO: TV 1000</string>
+      <string>Ro: TV1000</string>
+      <string>TV 1000</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tv5monde</Id>
+    <Name>TV5 Monde</Name>
+    <Category>Foreign</Category>
+    <Aliases>
+      <string>Ro: TV5 MONDE</string>
+      <string>TV5 MONDE</string>
+      <string>TV5 Monde</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tvh20</Id>
+    <Name>TVH 20</Name>
+    <Category>???</Category>
+    <Aliases>
+      <string>Ro: TVH 20</string>
+      <string>TVH 20</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tvr1</Id>
+    <Name>TVR1</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO:TVR1</string>
+      <string>RO: TVR 1</string>
+      <string>Ro: Tvr 1</string>
+      <string>[ RO ] TVR 1</string>
+      <string>TVR 1</string>
+      <string>TVR1</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tvr2</Id>
+    <Name>TVR2</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO:TVR2</string>
+      <string>RO: TVR 2</string>
+      <string>Ro: Tvr 2</string>
+      <string>[ RO ] TVR 2</string>
+      <string>TVR 2</string>
+      <string>TVR2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tvr3</Id>
+    <Name>TVR3</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO:TVR3</string>
+      <string>RO: TVR 3</string>
+      <string>Ro: Tvr 3</string>
+      <string>[ RO ] TVR 3</string>
+      <string>TVR 3</string>
+      <string>TVR3</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tvrhd</Id>
+    <Name>TVR HD</Name>
+    <Category>General</Category>
+    <Aliases>
+      <string>RO: TVR HD</string>
+      <string>TVR HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>utv</Id>
+    <Name>U TV</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>RO:UTV</string>
+      <string>RO: U TV</string>
+      <string>Ro: U TV</string>
+      <string>U TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>viasat_explorer</Id>
+    <Name>Viasat Explorer</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: VIASAT EXPORER</string>
+      <string>RO: VIASAT EXPLORER</string>
+      <string>Viasat Explorer</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>viasat_history</Id>
+    <Name>Viasat History</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: VIASAT HISTORY</string>
+      <string>RO: Viasat History</string>
+      <string>Ro: Viasat History</string>
+      <string>[ RO ] Viasat History</string>
+      <string>VIASAT HISTORY</string>
+      <string>Viasat History</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>viasat_nature</Id>
+    <Name>Viasat Nature</Name>
+    <Category>Educational</Category>
+    <Aliases>
+      <string>RO: Viasat Nature</string>
+      <string>Ro: Viasat Nature</string>
+      <string>[ RO ] Viasat Nature</string>
+      <string>VIASAT NATURE</string>
+      <string>Viasat Nature</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>zu_hd</Id>
+    <Name>ZU HD</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>RO: ZU TV HD</string>
+      <string>ZU HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>zu</Id>
+    <Name>ZU</Name>
+    <Category>Music</Category>
+    <Aliases>
+      <string>Ro: ZU TV</string>
+      <string>ZU</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+</ArrayOfChannelDefinitionEntity>

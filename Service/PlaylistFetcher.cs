@@ -41,7 +41,7 @@ namespace IptvPlaylistFetcher.Service
 
             channelDefinitions = channelRepository.GetAll().ToServiceModels();
             playlistProviders = playlistProviderRepository.GetAll().ToServiceModels();
-                
+
             foreach (PlaylistProvider provider in playlistProviders)
             {
                 ProcessProvider(playlist, provider);
@@ -171,6 +171,12 @@ namespace IptvPlaylistFetcher.Service
             {
                 return;
             }
+
+            if (!IsChannelAlive(channel.Url))
+            {
+                Console.WriteLine("Channel down: " + channel.Url);
+                return;
+            }
             
             Channel finalChannel = new Channel();
             finalChannel.Name = channelDef.Name;
@@ -178,6 +184,36 @@ namespace IptvPlaylistFetcher.Service
             finalChannel.Url = channel.Url;
 
             playlist.Channels.Add(finalChannel);
+        }
+
+        bool IsChannelAlive(string url)
+        {
+            return true;
+
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                throw new ArgumentNullException(nameof(url));
+            }
+
+            try
+            {
+                UriBuilder uriBuilder = new UriBuilder(url);
+                HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(uriBuilder.Uri);
+                request.Timeout = 1000;
+
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                
+                if (response.StatusCode != HttpStatusCode.NotFound)
+                {
+                    return true;
+                }
+                
+                return false;
+            }
+            catch
+            {
+                return false;
+            }     
         }
     }
 }

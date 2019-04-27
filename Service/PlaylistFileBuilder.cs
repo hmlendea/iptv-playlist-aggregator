@@ -33,7 +33,7 @@ namespace IptvPlaylistFetcher.Service
                 
                 if (settings.AreCategoriesEnabled)
                 {
-                    file += $"{channel.Category} - {channel.Name}{Environment.NewLine}";
+                    file += $"{channel.Category}: {channel.Name}{Environment.NewLine}";
                 }
                 else
                 {

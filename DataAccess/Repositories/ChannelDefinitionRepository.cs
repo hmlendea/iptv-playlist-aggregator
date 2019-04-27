@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Xml.Serialization;
 
 using IptvPlaylistFetcher.Core.Configuration;
 using IptvPlaylistFetcher.DataAccess.DataObjects;
@@ -23,53 +24,15 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
 
         public IEnumerable<ChannelDefinitionEntity> GetAll()
         {
-            IEnumerable<string> lines = File.ReadAllLines(settings.ChannelStorePath);
-            IList<ChannelDefinitionEntity> entities = new List<ChannelDefinitionEntity>();
+            XmlSerializer serializer = new XmlSerializer(typeof(List<ChannelDefinitionEntity>));
+            IEnumerable<ChannelDefinitionEntity> entities;
 
-            foreach (string line in lines)
+            using (TextReader reader = new StreamReader(settings.ChannelStorePath))
             {
-                if (string.IsNullOrWhiteSpace(line) ||
-                    line.StartsWith('#'))
-                {
-                    continue;
-                }
-    
-                ChannelDefinitionEntity entity = ReadEntity(line);
-                entities.Add(entity);
+                entities = (IEnumerable<ChannelDefinitionEntity>)serializer.Deserialize(reader);
             }
 
             return entities;
-        }
-
-        ChannelDefinitionEntity ReadEntity(string csvLine)
-        {
-            if (string.IsNullOrWhiteSpace(csvLine))
-            {
-                throw new ArgumentNullException(nameof(csvLine));
-            }
-
-            string[] fields = csvLine.Split(CsvFieldSeparator);
-
-            if (fields.Length != 4)
-            {
-                throw new ArgumentException($"Invalid CSV line '{csvLine}'", nameof(csvLine));
-            }
-
-            ChannelDefinitionEntity entity = new ChannelDefinitionEntity();
-            entity.Id = fields[0];
-            entity.Name = fields[1];
-            entity.Category = fields[2];
-            entity.Aliases = fields[3].Split(CsvCollectionSeparator).ToList();
-
-            if (string.IsNullOrWhiteSpace(entity.Category))
-            {
-                entity.Category = UnknownCategoryPlaceholder;
-            }
-
-            entity.Aliases.Add(entity.Name);
-            entity.Aliases = entity.Aliases.Distinct().ToList();
-
-            return entity;
         }
     }
 }
