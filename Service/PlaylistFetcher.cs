@@ -16,35 +16,64 @@ namespace IptvPlaylistFetcher.Service
         const string CacheFileNameFormat = "{0}_playlist_{1:yyyy-MM-dd}.m3u";
 
         readonly IPlaylistFileBuilder playlistFileBuilder;
+        readonly IMediaStreamStatusChecker mediaStreamStatusChecker;
         readonly IChannelDefinitionRepository channelRepository;
         readonly IPlaylistProviderRepository playlistProviderRepository;
         readonly ApplicationSettings settings;
+
+        readonly IDictionary<string, bool> pingedUrlsAliveStatus;
 
         IEnumerable<ChannelDefinition> channelDefinitions;
         IEnumerable<PlaylistProvider> playlistProviders;
 
         public PlaylistFetcher(
             IPlaylistFileBuilder playlistFileBuilder,
+            IMediaStreamStatusChecker mediaStreamStatusChecker,
             IChannelDefinitionRepository channelRepository,
             IPlaylistProviderRepository playlistProviderRepository,
             ApplicationSettings settings)
         {
             this.playlistFileBuilder = playlistFileBuilder;
+            this.mediaStreamStatusChecker = mediaStreamStatusChecker;
             this.channelRepository = channelRepository;
             this.playlistProviderRepository = playlistProviderRepository;
             this.settings = settings;
+
+            pingedUrlsAliveStatus = new Dictionary<string, bool>();
         }
 
         public string GetPlaylistFile()
         {
-            Playlist playlist = new Playlist();
-
             channelDefinitions = channelRepository.GetAll().ToServiceModels();
             playlistProviders = playlistProviderRepository.GetAll().ToServiceModels();
 
-            foreach (PlaylistProvider provider in playlistProviders)
+            Playlist playlist = new Playlist();
+            IEnumerable<Playlist> providerPlaylists = FetchProviderPlaylists(playlistProviders);
+
+            foreach (ChannelDefinition channelDef in channelDefinitions)
             {
-                ProcessProvider(playlist, provider);
+                Console.Write("Processing channel: " + channelDef.Name + " on " + providerPlaylists.Count() + " playlists");
+                foreach (Playlist providerPlaylist in providerPlaylists)
+                {
+                    Console.Write(".");
+                    Channel providerChannel = providerPlaylist.Channels
+                        .FirstOrDefault(x => channelDef.Aliases.Contains(x.Name));
+                    
+                    if (!(providerChannel is null) &&
+                        mediaStreamStatusChecker.IsStreamAlive(providerChannel.Url))
+                    {
+                        Channel finalChannel = new Channel();
+                        finalChannel.Id = channelDef.Id;
+                        finalChannel.Name = channelDef.Name;
+                        finalChannel.Category = channelDef.Category;
+                        finalChannel.LogoUrl = channelDef.LogoUrl;
+                        finalChannel.Url = providerChannel.Url;
+
+                        playlist.Channels.Add(finalChannel);
+                        break;
+                    }
+                }
+                Console.WriteLine();
             }
 
             playlist.Channels = playlist.Channels
@@ -55,19 +84,32 @@ namespace IptvPlaylistFetcher.Service
             return playlistFileBuilder.BuildFile(playlist);
         }
 
-        void ProcessProvider(Playlist playlist, PlaylistProvider provider)
+        IEnumerable<Playlist> FetchProviderPlaylists(IEnumerable<PlaylistProvider> providers)
         {
-            Playlist m3uPlaylist = FetchPlaylistFromProvider(provider);
+            IList<Playlist> playlists = new List<Playlist>();
 
-            if (Playlist.IsNullOrEmpty(m3uPlaylist))
+            foreach (PlaylistProvider provider in providers)
             {
-                return;
+                for (int i = 0; i < settings.DaysToCheck; i++)
+                {
+                    DateTime date = DateTime.Now.AddDays(-i);
+
+                    Playlist playlist = LoadPlaylistFromCache(provider, date);
+                    
+                    if (playlist is null)
+                    {
+                        playlist = DownloadPlaylist(provider, date);
+                    }
+                    
+                    if (!(playlist is null))
+                    {
+                        playlists.Add(playlist);
+                        break;
+                    }
+                }
             }
 
-            foreach (Channel channel in m3uPlaylist.Channels)
-            {
-                ProcessChannel(playlist, channel);
-            }
+            return playlists;
         }
 
         void SaveProviderPlaylistToCache(string providerId, string playlist)
@@ -82,28 +124,6 @@ namespace IptvPlaylistFetcher.Service
                 string.Format(CacheFileNameFormat, providerId, DateTime.Now));
 
             File.WriteAllText(filePath, playlist);
-        }
-
-        Playlist FetchPlaylistFromProvider(PlaylistProvider provider)
-        {
-            for (int i = 0; i < settings.DaysToCheck; i++)
-            {
-                DateTime date = DateTime.Now.AddDays(-i);
-
-                Playlist playlist = LoadPlaylistFromCache(provider, date);
-                
-                if (playlist is null)
-                {
-                    playlist = DownloadPlaylist(provider, date);
-                }
-                
-                if (!(playlist is null))
-                {
-                    return playlist;
-                }
-            }
-
-            return null;
         }
 
         Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
@@ -145,68 +165,6 @@ namespace IptvPlaylistFetcher.Service
             }
 
             return null;
-        }
-
-        void ProcessChannel(Playlist playlist, Channel channel)
-        {
-            ChannelDefinition channelDef =
-                channelDefinitions.FirstOrDefault(x => x.Aliases.Contains(channel.Name));
-            
-            if (channelDef is null)
-            {
-                Console.WriteLine($"Unknown channel '{channel.Name}'");
-                return;
-            }
-
-            if (playlist.Channels.Any(x => x.Name.Equals(channelDef.Name)))
-            {
-                return;
-            }
-
-            if (!IsChannelAlive(channel.Url))
-            {
-                Console.WriteLine("Channel down: " + channel.Url);
-                return;
-            }
-            
-            Channel finalChannel = new Channel();
-            finalChannel.Id = channelDef.Id;
-            finalChannel.Name = channelDef.Name;
-            finalChannel.Category = channelDef.Category;
-            finalChannel.LogoUrl = channelDef.LogoUrl;
-            finalChannel.Url = channel.Url;
-
-            playlist.Channels.Add(finalChannel);
-        }
-
-        bool IsChannelAlive(string url)
-        {
-            return true;
-
-            if (string.IsNullOrWhiteSpace(url))
-            {
-                throw new ArgumentNullException(nameof(url));
-            }
-
-            try
-            {
-                UriBuilder uriBuilder = new UriBuilder(url);
-                HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(uriBuilder.Uri);
-                request.Timeout = 1000;
-
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-                
-                if (response.StatusCode != HttpStatusCode.NotFound)
-                {
-                    return true;
-                }
-                
-                return false;
-            }
-            catch
-            {
-                return false;
-            }     
         }
     }
 }

@@ -26,6 +26,7 @@ namespace IptvPlaylistFetcher.Api.Extensions
             return services
                 .AddScoped<IPlaylistFetcher, PlaylistFetcher>()
                 .AddScoped<IPlaylistFileBuilder, PlaylistFileBuilder>()
+                .AddScoped<IMediaStreamStatusChecker, MediaStreamStatusChecker>()
                 .AddScoped<IChannelDefinitionRepository, ChannelDefinitionRepository>()
                 .AddScoped<IPlaylistProviderRepository, PlaylistProviderRepository>();
         }

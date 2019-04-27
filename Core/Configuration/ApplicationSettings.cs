@@ -8,6 +8,10 @@ namespace IptvPlaylistFetcher.Core.Configuration
 
         public string CacheDirectoryPath { get; set; }
 
+        public string MediaStreamAliveStatusCacheFileName { get; set; }
+
+        public int MediaStreamStatusCacheTimeoutMins { get; set; }
+
         public int DaysToCheck { get; set; }
 
         public bool AreTvGuideTagsEnabled { get; set; }
