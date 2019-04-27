@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,7 +27,8 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
 
             foreach (string line in lines)
             {
-                if (string.IsNullOrWhiteSpace(line))
+                if (string.IsNullOrWhiteSpace(line) ||
+                    line.StartsWith('#'))
                 {
                     continue;
                 }
@@ -38,9 +40,19 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
             return entities;
         }
 
-        public static ChannelDefinitionEntity ReadEntity(string csvLine)
+        ChannelDefinitionEntity ReadEntity(string csvLine)
         {
+            if (string.IsNullOrWhiteSpace(csvLine))
+            {
+                throw new ArgumentNullException(nameof(csvLine));
+            }
+
             string[] fields = csvLine.Split(CsvFieldSeparator);
+
+            if (fields.Length != 3)
+            {
+                throw new ArgumentException($"Invalid CSV line '{csvLine}'", nameof(csvLine));
+            }
 
             ChannelDefinitionEntity entity = new ChannelDefinitionEntity();
             entity.Id = fields[0];

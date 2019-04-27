@@ -14,7 +14,6 @@ namespace IptvPlaylistFetcher.Service.Mapping
             serviceModel.Id = dataObject.Id;
             serviceModel.Name = dataObject.Name;
             serviceModel.UrlFormat = dataObject.UrlFormat;
-            serviceModel.DateFormat = dataObject.DateFormat;
 
             return serviceModel;
         }
@@ -25,7 +24,6 @@ namespace IptvPlaylistFetcher.Service.Mapping
             dataObject.Id = serviceModel.Id;
             dataObject.Name = serviceModel.Name;
             dataObject.UrlFormat = serviceModel.UrlFormat;
-            dataObject.DateFormat = serviceModel.DateFormat;
 
             return dataObject;
         }

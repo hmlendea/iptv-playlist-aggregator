@@ -7,7 +7,5 @@ namespace IptvPlaylistFetcher.DataAccess.DataObjects
         public string Name { get; set; }
 
         public string UrlFormat { get; set; }
-
-        public string DateFormat { get; set; }
     }
 }

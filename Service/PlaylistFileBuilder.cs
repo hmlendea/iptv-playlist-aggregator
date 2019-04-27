@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 using IptvPlaylistFetcher.Service.Models;
 
@@ -26,6 +27,45 @@ namespace IptvPlaylistFetcher.Service
             }
 
             return file;
+        }
+
+        public Playlist ParseFile(string file)
+        {
+            Playlist playlist = new Playlist();
+
+            if (string.IsNullOrWhiteSpace(file))
+            {
+                return playlist;
+            }
+
+            string[] lines = file
+                .Replace("\r", "")
+                .Split('\n');
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                string line = lines[i];
+
+                if (string.IsNullOrWhiteSpace(line) ||
+                    line.Contains(FileHeader))
+                {
+                    continue;
+                }
+
+                if (line.Contains(EntryHeader))
+                {
+                    Channel channel = new Channel();
+                    channel.Name = line.Split(',')[1];
+
+                    playlist.Channels.Add(channel);
+                }
+                else
+                {
+                    playlist.Channels.Last().Url = line;
+                }
+            }
+
+            return playlist;
         }
     }
 }

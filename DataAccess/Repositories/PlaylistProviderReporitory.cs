@@ -45,7 +45,6 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
             entity.Id = fields[0];
             entity.Name = fields[1];
             entity.UrlFormat = fields[2];
-            entity.DateFormat = fields[3];
 
             return entity;
         }

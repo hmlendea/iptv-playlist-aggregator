@@ -4,7 +4,7 @@ namespace IptvPlaylistFetcher.Service.Models
 {
     public sealed class Playlist
     {
-        public IEnumerable<Channel> Channels;
+        public IList<Channel> Channels;
 
         public Playlist()
         {
