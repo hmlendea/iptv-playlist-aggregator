@@ -3,7 +3,7 @@
   <ChannelDefinitionEntity>
     <Id>acasa_hd</Id>
     <Name>Acasa HD</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3e/Acasa_%281998-2003%2C_s_teni%29.png/revision/latest?cb=20170801234434</LogoUrl>
     <Aliases>
       <string>RO: ACASA HD</string>
@@ -56,7 +56,7 @@
   <ChannelDefinitionEntity>
     <Id>alfa_omega</Id>
     <Name>Alfa &amp; Omega</Name>
-    <Category>Religious</Category>
+    <Category>Religios</Category>
     <LogoUrl>https://alfaomega.tv/images/alfaomega/sigla_aotv_600x400_transparent.png</LogoUrl>
     <Aliases>
       <string>RO:ALFA OMEGA</string>
@@ -68,7 +68,7 @@
   <ChannelDefinitionEntity>
     <Id>amc_ro</Id>
     <Name>AMC RO</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/5/50/AMC_2013.png/revision/latest?cb=20171217201039</LogoUrl>
     <Aliases>
       <string>RO: AMC RO</string>
@@ -78,7 +78,7 @@
   <ChannelDefinitionEntity>
     <Id>amc</Id>
     <Name>AMC</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/5/50/AMC_2013.png/revision/latest?cb=20171217201039</LogoUrl>
     <Aliases>
       <string>RO: AMC</string>
@@ -204,7 +204,7 @@
   <ChannelDefinitionEntity>
     <Id>axn_black</Id>
     <Name>AXN Black</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/250px-AXN_Black_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN BLACK</string>
@@ -215,7 +215,7 @@
   <ChannelDefinitionEntity>
     <Id>axn_hd</Id>
     <Name>AXN HD</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/250px-AXN_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN HD</string>
@@ -225,7 +225,7 @@
   <ChannelDefinitionEntity>
     <Id>axn_ro</Id>
     <Name>AXN Romania</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/250px-AXN_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN ROMANIA</string>
@@ -237,7 +237,7 @@
   <ChannelDefinitionEntity>
     <Id>axn_spin</Id>
     <Name>AXN Spin</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AXN_Spin_logo_%282015%29.svg/250px-AXN_Spin_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN SPIN</string>
@@ -247,7 +247,7 @@
   <ChannelDefinitionEntity>
     <Id>axn_white</Id>
     <Name>AXN White</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/250px-AXN_White_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN WHITE</string>
@@ -260,7 +260,7 @@
   <ChannelDefinitionEntity>
     <Id>axn_with</Id>
     <Name>AXN With</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/250px-AXN_White_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN WITH</string>
@@ -270,7 +270,7 @@
   <ChannelDefinitionEntity>
     <Id>axn</Id>
     <Name>AXN</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/250px-AXN_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: AXN</string>
@@ -303,7 +303,7 @@
   <ChannelDefinitionEntity>
     <Id>bollywood_clasic</Id>
     <Name>Bollywood Clasic</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bollywood_Clasic.png/200px-Bollywood_Clasic.png</LogoUrl>
     <Aliases>
       <string>RO:BOLLYWOOD CLASSIC</string>
@@ -313,7 +313,7 @@
   <ChannelDefinitionEntity>
     <Id>bollywood</Id>
     <Name>Bollywood</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bollywood_HD_2018.png/200px-Bollywood_HD_2018.png</LogoUrl>
     <Aliases>
       <string>RO:BOLYWOOD TV</string>
@@ -387,7 +387,7 @@
   <ChannelDefinitionEntity>
     <Id>cinemax_hd_ro</Id>
     <Name>CineMAX HD RO</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Cinemax HD RO</string>
@@ -397,7 +397,7 @@
   <ChannelDefinitionEntity>
     <Id>cinemax_hd</Id>
     <Name>CineMAX HD</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
     <Aliases>
       <string>RO:CINEMAX HD</string>
@@ -407,7 +407,7 @@
   <ChannelDefinitionEntity>
     <Id>cinemax_megamax_ro</Id>
     <Name>CineMAX / Megamax RO</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Cinemax/Megamax RO</string>
@@ -417,7 +417,7 @@
   <ChannelDefinitionEntity>
     <Id>cinemax2_hd</Id>
     <Name>CineMAX 2 HD</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/c/c3/Cinemax_2_%282016%29.png</LogoUrl>
     <Aliases>
       <string>RO: Cinemax 2 HD</string>
@@ -427,7 +427,7 @@
   <ChannelDefinitionEntity>
     <Id>cinemax2</Id>
     <Name>CineMAX 2</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/c/c3/Cinemax_2_%282016%29.png</LogoUrl>
     <Aliases>
       <string>RO: Cinemax 2</string>
@@ -440,7 +440,7 @@
   <ChannelDefinitionEntity>
     <Id>cinemaxro</Id>
     <Name>CineMAX RO</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
     <Aliases>
       <string>Ro: Cinemax Ro</string>
@@ -451,7 +451,7 @@
   <ChannelDefinitionEntity>
     <Id>cinethronix</Id>
     <Name>Cinethronix</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://3.bp.blogspot.com/-wtRpKNLeivE/XMHh516zQLI/AAAAAAAA3Ag/wei-MjbXj78PTHxhl9qboyCcRY5Eu_s-gCLcBGAs/s640/cinethronix%2Brcs%2Brds.jpg</LogoUrl>
     <Aliases>
       <string>Ro: Ciné Thronix</string>
@@ -461,7 +461,7 @@
   <ChannelDefinitionEntity>
     <Id>comedycentral</Id>
     <Name>Comedy Central</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/200px-Comedy_Central_2018.svg.png</LogoUrl>
     <Aliases>
       <string>RO: COMEDY CENTRAL</string>
@@ -516,7 +516,7 @@
   <ChannelDefinitionEntity>
     <Id>film_now</Id>
     <Name>Film Now</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_Film_Now_%282018%29.png/250px-Logo_Film_Now_%282018%29.png</LogoUrl>
     <Aliases>
       <string>RO:DIGI FILM</string>
@@ -861,7 +861,7 @@
   <ChannelDefinitionEntity>
     <Id>diva</Id>
     <Name>Diva</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Diva_logo.svg/200px-Diva_logo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: DIVA</string>
@@ -902,7 +902,7 @@
   <ChannelDefinitionEntity>
     <Id>epic_drama</Id>
     <Name>Epic Drama</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://mediaexpres.ro/admin2/Images/15145.R.jpg</LogoUrl>
     <Aliases>
       <string>RO: Epic Drama</string>
@@ -1015,7 +1015,7 @@
   <ChannelDefinitionEntity>
     <Id>film_cafe</Id>
     <Name>Film Cafe</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Film_cafe_hu.png/200px-Film_cafe_hu.png</LogoUrl>
     <Aliases>
       <string>RO: FILM CAFE</string>
@@ -1026,7 +1026,7 @@
   <ChannelDefinitionEntity>
     <Id>film_now_hd</Id>
     <Name>Film NOW HD</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_Film_Now_%282018%29.png/250px-Logo_Film_Now_%282018%29.png</LogoUrl>
     <Aliases>
       <string>RO: Film NOW HD</string>
@@ -1036,7 +1036,7 @@
   <ChannelDefinitionEntity>
     <Id>happy</Id>
     <Name>Happy Channel</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/6/69/Euforia-logo.png</LogoUrl>
     <Aliases>
       <string>Ro: Happy</string>
@@ -1049,7 +1049,7 @@
   <ChannelDefinitionEntity>
     <Id>hbo_ro</Id>
     <Name>HBO Romania</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>Ro: HBO Romania</string>
@@ -1061,7 +1061,7 @@
   <ChannelDefinitionEntity>
     <Id>hbo1_hd</Id>
     <Name>HBO 1</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO:HBO HD</string>
@@ -1072,7 +1072,7 @@
   <ChannelDefinitionEntity>
     <Id>hbo1</Id>
     <Name>HBO 1</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO: HBO</string>
@@ -1082,7 +1082,7 @@
   <ChannelDefinitionEntity>
     <Id>hbo2_hd</Id>
     <Name>HBO 2</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO:HBO 2 HD</string>
@@ -1093,7 +1093,7 @@
   <ChannelDefinitionEntity>
     <Id>hbo2</Id>
     <Name>HBO 2</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO: HBO 2</string>
@@ -1105,7 +1105,7 @@
   <ChannelDefinitionEntity>
     <Id>hbo3_hd</Id>
     <Name>HBO 3</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO:HBO 3 HD</string>
@@ -1116,7 +1116,7 @@
   <ChannelDefinitionEntity>
     <Id>hbo3</Id>
     <Name>HBO 3</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://logodix.com/logo/95816.png</LogoUrl>
     <Aliases>
       <string>RO: HBO 3</string>
@@ -1480,7 +1480,7 @@
   <ChannelDefinitionEntity>
     <Id>paramount_ro</Id>
     <Name>Paramount Channel RO</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/d/d9/Paramount_channel_logo.png</LogoUrl>
     <Aliases>
       <string>RO: Paramount Channel RO</string>
@@ -1492,7 +1492,7 @@
   <ChannelDefinitionEntity>
     <Id>paramount</Id>
     <Name>Paramount Channel</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/d/d9/Paramount_channel_logo.png</LogoUrl>
     <Aliases>
       <string>RO: Paramount Channel</string>
@@ -1528,7 +1528,7 @@
   <ChannelDefinitionEntity>
     <Id>pro2</Id>
     <Name>Pro 2</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Logo_Pro_2_%282017%29.svg/234px-Logo_Pro_2_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: PRO 2</string>
@@ -1543,7 +1543,7 @@
   <ChannelDefinitionEntity>
     <Id>procinema</Id>
     <Name>Pro Cinema</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Logo_Pro_Cinema_%282017%29.svg/234px-Logo_Pro_Cinema_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>Ro: ProCinema</string>
@@ -1554,7 +1554,7 @@
   <ChannelDefinitionEntity>
     <Id>progold</Id>
     <Name>Pro Gold</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Logo_Pro_Gold_%282017%29.svg/234px-Logo_Pro_Gold_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO: PRO GOLD</string>
@@ -1820,7 +1820,7 @@
   <ChannelDefinitionEntity>
     <Id>tnt_hd</Id>
     <Name>TNT HD</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/145px-TNT_Logo_2016.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TNT HD</string>
@@ -1830,7 +1830,7 @@
   <ChannelDefinitionEntity>
     <Id>tnt</Id>
     <Name>TNT</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/145px-TNT_Logo_2016.svg.png</LogoUrl>
     <Aliases>
       <string>Ro: TNT</string>
@@ -1850,7 +1850,7 @@
   <ChannelDefinitionEntity>
     <Id>trinitas</Id>
     <Name>Trinitas</Name>
-    <Category>Religious</Category>
+    <Category>Religios</Category>
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mCtwbe55WTSbdmCNo4IGHpMXXs0tzr_KlRL_w=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>Ro: Trinitas</string>
@@ -1871,7 +1871,7 @@
   <ChannelDefinitionEntity>
     <Id>tv1000_hd</Id>
     <Name>TV1000 HD</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/f/f4/Logo_TV1000_%282014%29.png/75px-Logo_TV1000_%282014%29.png</LogoUrl>
     <Aliases>
       <string>[ RO ] TV 1000 HD</string>
@@ -1881,7 +1881,7 @@
   <ChannelDefinitionEntity>
     <Id>tv1000</Id>
     <Name>TV1000</Name>
-    <Category>Films</Category>
+    <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/f/f4/Logo_TV1000_%282014%29.png/75px-Logo_TV1000_%282014%29.png</LogoUrl>
     <Aliases>
       <string>RO: TV 1000</string>
@@ -1892,7 +1892,7 @@
   <ChannelDefinitionEntity>
     <Id>tv5monde</Id>
     <Name>TV5 Monde</Name>
-    <Category>Foreign</Category>
+    <Category>Extern</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/TV5MONDE_logo.png/250px-TV5MONDE_logo.png</LogoUrl>
     <Aliases>
       <string>Ro: TV5 MONDE</string>
