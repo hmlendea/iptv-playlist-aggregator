@@ -170,6 +170,7 @@ namespace IptvPlaylistFetcher.Service
             }
             
             Channel finalChannel = new Channel();
+            finalChannel.Id = channelDef.Id;
             finalChannel.Name = channelDef.Name;
             finalChannel.Category = channelDef.Category;
             finalChannel.LogoUrl = channelDef.LogoUrl;

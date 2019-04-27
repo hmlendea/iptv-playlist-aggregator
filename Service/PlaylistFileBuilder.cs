@@ -12,8 +12,9 @@ namespace IptvPlaylistFetcher.Service
         const string EntryHeader = "#EXTINF";
         const string EntryHeaderSeparator = ":";
         const string EntryValuesSeparator = ",";
-        const string LogoTagKey = "tvg-logo";
-        const string GroupTagKey = "group-title";
+        const string TvGuideIdTagKey = "tvg-id";
+        const string TvGuideLogoTagKey = "tvg-logo";
+        const string TvGuideGroupTagKey = "group-title";
         const int DefaultEntryRuntime = -1;
 
         readonly ApplicationSettings settings;
@@ -35,14 +36,16 @@ namespace IptvPlaylistFetcher.Service
                 
                 if (settings.AreTvGuideTagsEnabled)
                 {
+                    file += $" {TvGuideIdTagKey}=\"{channel.Id}\"";
+
                     if (!string.IsNullOrWhiteSpace(channel.LogoUrl))
                     {
-                        file += $" {LogoTagKey}=\"{channel.LogoUrl}\"";
+                        file += $" {TvGuideLogoTagKey}=\"{channel.LogoUrl}\"";
                     }
 
                     if (!string.IsNullOrWhiteSpace(channel.Category))
                     {
-                        file += $" {GroupTagKey}=\"{channel.Category}\"";
+                        file += $" {TvGuideGroupTagKey}=\"{channel.Category}\"";
                     }
                 }
                 
