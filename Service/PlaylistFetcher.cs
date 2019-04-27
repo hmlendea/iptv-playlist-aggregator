@@ -52,7 +52,6 @@ namespace IptvPlaylistFetcher.Service
 
             foreach (ChannelDefinition channelDef in channelDefinitions)
             {
-                Console.Write("Processing channel: " + channelDef.Name + " on " + providerPlaylists.Count() + " playlists");
                 foreach (Playlist providerPlaylist in providerPlaylists)
                 {
                     Console.Write(".");
@@ -145,8 +144,6 @@ namespace IptvPlaylistFetcher.Service
         Playlist DownloadPlaylist(PlaylistProvider provider, DateTime date)
         {
             string url = string.Format(provider.UrlFormat, date);
-
-            Console.WriteLine($"GET '{url}'");
 
             using (WebClient client = new WebClient())
             {
