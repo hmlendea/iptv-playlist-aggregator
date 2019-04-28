@@ -294,12 +294,12 @@
     <Name>FreeIPTV.io</Name>
     <UrlFormat>https://freeiptv.io/m3u/ypi0x_normal.php?c=RO</UrlFormat>
   </PlaylistProviderEntity>
-
+  
   <PlaylistProviderEntity>
-    <Id>inedittv</Id>
+    <Id>hori-romd</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Inedit TV</Name>
-    <UrlFormat>http://inedittv.ro/live-tv/canal/index.m3u8</UrlFormat>
+    <Name>Hori RO and MD</Name>
+    <UrlFormat>http://192.168.1.11/others/iptv-hori-romd.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
 </ArrayOfPlaylistProviderEntity>

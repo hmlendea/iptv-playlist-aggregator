@@ -83,7 +83,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Actualitatea TV</Name>
     <Category></Category>
-    <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mDf6sM1jeUpYJIiAxgFNuffuR4hxahEv0Fozg=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mari/actualitatea-tv.png</LogoUrl>
     <Aliases>
       <string>Actualitatea tv</string>
       <string>Actualitatea</string>
@@ -91,6 +91,16 @@
       <string>RO | ATV</string>
       <string>RO: Actualitatea Tv</string>
       <string>RO: Actualitatea TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>alegetv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Alege TV</Name>
+    <Category></Category>
+    <LogoUrl>http://stvron.com/canale/mari/alege-tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Alege TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -105,6 +115,26 @@
       <string>RO | ACUM TV</string>
       <string>RO: Acum TV</string>
       <string>RO:ACUM TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>vptv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Valea Prahovei TV</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/valea-prahovei-tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Valea Prahovei TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tele2drobeta</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Tele2 Drobeta</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/tele-2-drobeta.png</LogoUrl>
+    <Aliases>
+      <string>RO: Tele2 Drobeta</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -275,6 +305,16 @@
     <LogoUrl>http://www.frosat.net/images/logotv/original/nasul-tv-ro.jpg</LogoUrl>
     <Aliases>
       <string>||ROM|| NASUL TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>onetv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>One TV</Name>
+    <Category>Film</Category>
+    <LogoUrl>http://stvron.com/canale/mici/one-tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: ONE TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1288,9 +1328,21 @@
     <IsEnabled>true</IsEnabled>
     <Name>Infinit TV</Name>
     <Category>Local</Category>
-    <LogoUrl>http://stvron.com/canale/mici/infinit-tv.png</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mari/infinit-tv.png</LogoUrl>
     <Aliases>
       <string>RO: INFINIT TV</string>
+      <string>RO: Infinit TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>inedittv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Inedit TV</Name>
+    <Category></Category>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: Inedit TV SD</string>
+      <string>RO: INEDIT TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1302,6 +1354,7 @@
     <Aliases>
       <string>||ROM|| INTERMEDIA SUCEAVA</string>
       <string>RO | Intermedia TV</string>
+      <string>RO: Intermedia Suceava</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1642,19 +1695,103 @@
       <string>NEst tv</string>
       <string>RO | Suceava TV</string>
       <string>RO:NEST TV</string>
+      <string>RO: NEst TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>telemoldova</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>TeleMoldova+</Name>
+    <Name>TeleMoldova Plus</Name>
     <Category>Local</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Logo_TeleMoldova_%282017%29.svg/1280px-Logo_TeleMoldova_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO | TELE MOLDOVA</string>
       <string>RO: Tele Moldova Plus</string>
+      <string>RO: TeleMoldova Plus</string>
       <string>RO: TeleMoldovaPlus</string>
       <string>TeleMoldova+</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telemoldova-iasi</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>TeleMoldova Iasi</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/tele-m-iasi.png</LogoUrl>
+    <Aliases>
+      <string>RO | TELE MOLDOVA IASI</string>
+      <string>RO: Tele Moldova Iasi</string>
+      <string>RO: TeleMoldova Iasi</string>
+      <string>RO: TeleMoldovaIasi</string>
+      <string>RO:TeleM Iasi</string>
+      <string>TeleM Iasi</string>
+      <string>TeleMoldovaIasi</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telemoldova-botosani</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>TeleMoldova Botosani</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/tele-m-botosani.png</LogoUrl>
+    <Aliases>
+      <string>RO | TELE MOLDOVA BOTOSANI</string>
+      <string>RO: Tele Moldova Botosani</string>
+      <string>RO: TeleMoldova Botosani</string>
+      <string>RO: TeleMoldovaBotosani</string>
+      <string>RO:TeleM Botosani</string>
+      <string>TeleM Botosani</string>
+      <string>TeleMoldovaBotosani</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>1tv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>1TV</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/1-tv-neamt.png</LogoUrl>
+    <Aliases>
+      <string>RO: 1 TV Neamt</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tvsud</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>TV Sud</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/tv-sud.png</LogoUrl>
+    <Aliases>
+      <string>RO: TV Sud Gorj</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>campustv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Campus TV</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/campus-tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Campus TV Buzau</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tvbuzau</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>TV Buzau</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/tv-buzau.png</LogoUrl>
+    <Aliases>
+      <string>RO: TV Buzau</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>tvsat</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>TVSAT</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/tv-sat.png</LogoUrl>
+    <Aliases>
+      <string>RO: TVSAT</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2238,26 +2375,6 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>telem_botosani</Id>
-    <IsEnabled>true</IsEnabled>
-    <Name>Tele M Botosani</Name>
-    <Category>Local</Category>
-    <LogoUrl>http://stvron.com/canale/mari/tele-m-botosani.png</LogoUrl>
-    <Aliases>
-      <string>TeleM Botosani</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>telem botosani</Id>
-    <IsEnabled>true</IsEnabled>
-    <Name>Tele M Botosani</Name>
-    <Category>Local</Category>
-    <LogoUrl>http://telem.ro/wp-content/uploads/2018/07/cropped-telem-sigla-site.png</LogoUrl>
-    <Aliases>
-      <string>RO:TeleM Botosani</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>TLC.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TLC</Name>
@@ -2296,6 +2413,7 @@
     <LogoUrl>https://i.ytimg.com/vi/PWgPPn2qeHo/hqdefault.jpg</LogoUrl>
     <Aliases>
       <string>Ro- Columnta TV</string>
+      <string>RO: Columna TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2397,6 +2515,8 @@
     <Category>Local</Category>
     <LogoUrl>http://stvron.com/canale/mari/tv-sud-est.png</LogoUrl>
     <Aliases>
+      <string>RO: TV Sud Est TVSAT</string>
+      <string>RO: TV Sud Est</string>
       <string>RO: TV SudEst</string>
       <string>RO:TV Sud Est</string>
       <string>TV Sud Est</string>
@@ -2723,6 +2843,7 @@
       <string>Iasi TV Life</string>
       <string>RO | Iasi TV Life</string>
       <string>RO | LASI TV</string>
+      <string>RO: Iasi TV Life</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
