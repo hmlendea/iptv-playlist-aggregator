@@ -76,7 +76,7 @@ namespace IptvPlaylistFetcher.Service
             return playlist;
         }
 
-        void SaveProviderPlaylistToCache(string providerId, string playlist)
+        void SaveProviderPlaylistToCache(string providerId, DateTime date, string playlist)
         {
             if (!Directory.Exists(settings.CacheDirectoryPath))
             {
@@ -85,7 +85,7 @@ namespace IptvPlaylistFetcher.Service
 
             string filePath = Path.Combine(
                 settings.CacheDirectoryPath,
-                string.Format(CacheFileNameFormat, providerId, DateTime.Now));
+                string.Format(CacheFileNameFormat, providerId, date));
 
             File.WriteAllText(filePath, playlist);
         }
@@ -94,7 +94,7 @@ namespace IptvPlaylistFetcher.Service
         {
             string filePath = Path.Combine(
                 settings.CacheDirectoryPath,
-                string.Format(CacheFileNameFormat, provider.Id, DateTime.Now));
+                string.Format(CacheFileNameFormat, provider.Id, date));
             
             if (File.Exists(filePath))
             {
@@ -121,7 +121,7 @@ namespace IptvPlaylistFetcher.Service
 
                     if (!Playlist.IsNullOrEmpty(playlist))
                     {
-                        SaveProviderPlaylistToCache(provider.Id, fileContent);
+                        SaveProviderPlaylistToCache(provider.Id, date, fileContent);
                         Console.WriteLine("SUCCESS");
 
                         return playlist;

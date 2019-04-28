@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 using IptvPlaylistFetcher.Core.Configuration;
 using IptvPlaylistFetcher.DataAccess.Repositories;
@@ -45,7 +46,6 @@ namespace IptvPlaylistFetcher.Service
         {
             channelDefinitions = channelRepository
                 .GetAll()
-                .Where(x => x.IsEnabled)
                 .ToServiceModels();
 
             playlistProviders = playlistProviderRepository
@@ -56,7 +56,7 @@ namespace IptvPlaylistFetcher.Service
             Playlist playlist = new Playlist();
             IEnumerable<Playlist> providerPlaylists = playlistFetcher.FetchProviderPlaylists(playlistProviders);
 
-            foreach (ChannelDefinition channelDef in channelDefinitions)
+            foreach (ChannelDefinition channelDef in channelDefinitions.Where(x => x.IsEnabled))
             {
                 string channelUrl = GetChannelUrl(channelDef, providerPlaylists);
 
@@ -98,7 +98,7 @@ namespace IptvPlaylistFetcher.Service
         {
             IEnumerable<Channel> unmatchedChannels = providerPlaylists
                 .SelectMany(x => x.Channels)
-                .Where(x => channelDefinitions.All(y => !y.Aliases.Contains(x.Name)))
+                .Where(x => channelDefinitions.All(y => !DoChannelNamesMatch(x.Name, y.Aliases)))
                 .GroupBy(x => x.Name)
                 .Select(g => g.FirstOrDefault());
             
@@ -121,7 +121,7 @@ namespace IptvPlaylistFetcher.Service
             foreach (Playlist providerPlaylist in providerPlaylists)
             {
                 IEnumerable<Channel> matchingChannels =
-                    providerPlaylist.Channels.Where(x => channelDef.Aliases.Contains(x.Name));
+                    providerPlaylist.Channels.Where(x => DoChannelNamesMatch(x.Name, channelDef.Aliases));
                 
                 foreach (Channel matchingChannel in matchingChannels)
                 {
@@ -139,6 +139,23 @@ namespace IptvPlaylistFetcher.Service
 
             Console.WriteLine();
             return null;
+        }
+
+        bool DoChannelNamesMatch(string name, IEnumerable<string> aliases)
+        {
+            return aliases.Any(alias =>
+                NormaliseChannelName(name).Equals(NormaliseChannelName(alias)));
+        }
+
+        string NormaliseChannelName(string name)
+        {
+            return name
+                .Where(c => char.IsLetterOrDigit(c))
+                .Aggregate(
+                    new StringBuilder(),
+                    (current, next) => current.Append(next),
+                    sb => sb.ToString())
+                .ToUpper();
         }
     }
 }
