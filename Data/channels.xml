@@ -4,7 +4,7 @@
     <Id>BanatTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Banat TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Banat</Group>
     <LogoUrl>https://www.btv.ro/wp-content/uploads/banat-TV.png</LogoUrl>
     <Aliases>
       <string>RO: Banat TV</string>
@@ -14,7 +14,7 @@
     <Id>salajeanultv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Salajeanul TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Crisana</Group>
     <LogoUrl>http://stvron.com/canale/mari/salajeanul-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Salajeanul TV</string>
@@ -35,8 +35,8 @@
     <Id>alphamedia</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Alpha Media</Name>
-    <Group>Local</Group>
-    <LogoUrl>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-0wFHPIFmGaGGQeD72Xz1pu3VbfxqlEEgQIXYoVPnBPqaPRUTg</LogoUrl>
+    <Group>Local - Dobrogea</Group>
+    <LogoUrl>http://tvalphamedia.ro/wp-content/themes/flatmagazine/images/logo.png</LogoUrl>
     <Aliases>
       <string>RO | Alpha Media TV</string>
     </Aliases>
@@ -104,7 +104,7 @@
     <Id>actualitatea</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Actualitatea TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>http://stvron.com/canale/mari/actualitatea-tv.png</LogoUrl>
     <Aliases>
       <string>Actualitatea tv</string>
@@ -130,8 +130,8 @@
     <Id>acum</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Acum TV</Name>
-    <Group>Local</Group>
-    <LogoUrl>http://stvron.com/canale/mari/acum-tv.png</LogoUrl>
+    <Group>Local - Moldova</Group>
+    <LogoUrl>http://acum-tv.ro/wp-content/uploads/2019/01/logo-acum-tv-xs-1-300x98.png</LogoUrl>
     <Aliases>
       <string>Acum</string>
       <string>KIT Tv</string>
@@ -144,7 +144,7 @@
     <Id>vptv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Valea Prahovei TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Muntenia</Group>
     <LogoUrl>http://stvron.com/canale/mari/valea-prahovei-tv.png</LogoUrl>
     <Aliases>
       <string>Ro- VPTV</string>
@@ -154,9 +154,9 @@
   <ChannelDefinitionEntity>
     <Id>tele2drobeta</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Tele2 Drobeta</Name>
-    <Group>Local</Group>
-    <LogoUrl>http://stvron.com/canale/mari/tele-2-drobeta.png</LogoUrl>
+    <Name>Tele 2</Name>
+    <Group>Local - Oltenia</Group>
+    <LogoUrl>https://tele2drobeta.ro/wp-content/uploads/2018/03/cropped-SIGLA_00002.png</LogoUrl>
     <Aliases>
       <string>RO: Tele2 Drobeta</string>
     </Aliases>
@@ -631,7 +631,7 @@
     <Id>Cromtel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Cromtel</Name>
-    <Group>Local</Group>
+    <Group>Local - ???</Group>
     <LogoUrl>http://ik.imagekit.io/ulangotv/image/upload/469249_logo_cromtel_tv1.png</LogoUrl>
     <Aliases>
       <string>Cromtel TV</string>
@@ -840,7 +840,7 @@
     <Id>Digi24Cluj.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Cluj</Name>
-    <Group>Local</Group>
+    <Group>Local - Transilvania</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Cluj</string>
@@ -852,7 +852,7 @@
     <Id>Digi24Craiova.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Craiova</Name>
-    <Group>Local</Group>
+    <Group>Local - Oltenia</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Craiova</string>
@@ -866,7 +866,7 @@
     <Id>Digi24Galati.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Galati</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Galati</string>
@@ -1421,7 +1421,7 @@
     <Id>informatiatv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Informatia TV</Name>
-    <Group>Local</Group>
+    <Group>Local - ???</Group>
     <LogoUrl>http://mywebtv.info/img/tvicons/541573.png</LogoUrl>
     <Aliases>
       <string>RO | INFORMATIA TV</string>
@@ -1432,7 +1432,7 @@
     <Id>infinittv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Infinit TV</Name>
-    <Group>Local</Group>
+    <Group>Local - ???</Group>
     <LogoUrl>http://stvron.com/canale/mari/infinit-tv.png</LogoUrl>
     <Aliases>
       <string>RO: INFINIT TV</string>
@@ -1454,7 +1454,7 @@
     <Id>intermedia</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Intermedia</Name>
-    <Group>Local</Group>
+    <Group>Local - Bucovina</Group>
     <LogoUrl>http://stvron.com/canale/mari/intermedia-tv.png</LogoUrl>
     <Aliases>
       <string>||ROM|| INTERMEDIA SUCEAVA</string>
@@ -1820,7 +1820,7 @@
     <Id>NeptunTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Neptun TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Dobrogea</Group>
     <LogoUrl>https://static.iptv-epg.com/ro/NeptunTV.ro.png</LogoUrl>
     <Aliases>
       <string>||RO|| NEPTUM TV</string>
@@ -1838,7 +1838,7 @@
     <Id>NestTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>NEst TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>https://ik.imagekit.io/ulangotv/image/upload/469250_logo_nest_tv1.png</LogoUrl>
     <Aliases>
       <string>NEst tv</string>
@@ -1851,7 +1851,7 @@
     <Id>telemoldova</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleMoldova Plus</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Logo_TeleMoldova_%282017%29.svg/1280px-Logo_TeleMoldova_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO | TELE MOLDOVA</string>
@@ -1865,7 +1865,7 @@
     <Id>telemoldova-neamt</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleMoldova Neamt</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>https://telemneamt.net/wp-content/uploads/2015/06/Logo-repr-TeleM.png</LogoUrl>
     <Aliases>
       <string>RO | Tele M</string>
@@ -1878,7 +1878,7 @@
     <Id>telemoldova-iasi</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleMoldova Iasi</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>http://stvron.com/canale/mari/tele-m-iasi.png</LogoUrl>
     <Aliases>
       <string>RO | TELE MOLDOVA IASI</string>
@@ -1894,7 +1894,7 @@
     <Id>telemoldova-botosani</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleMoldova Botosani</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>http://stvron.com/canale/mari/tele-m-botosani.png</LogoUrl>
     <Aliases>
       <string>RO | TELE MOLDOVA BOTOSANI</string>
@@ -1910,27 +1910,17 @@
     <Id>1tv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>1TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>http://stvron.com/canale/mari/1-tv-neamt.png</LogoUrl>
     <Aliases>
       <string>RO: 1 TV Neamt</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>tvsud</Id>
-    <IsEnabled>true</IsEnabled>
-    <Name>TV Sud</Name>
-    <Group>Local</Group>
-    <LogoUrl>http://stvron.com/canale/mari/tv-sud.png</LogoUrl>
-    <Aliases>
-      <string>RO: TV Sud Gorj</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>campustv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Campus TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Muntenia</Group>
     <LogoUrl>http://stvron.com/canale/mari/campus-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Campus TV Buzau</string>
@@ -1940,7 +1930,7 @@
     <Id>tvbuzau</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV Buzau</Name>
-    <Group>Local</Group>
+    <Group>Local - Muntenia</Group>
     <LogoUrl>http://stvron.com/canale/mari/tv-buzau.png</LogoUrl>
     <Aliases>
       <string>RO: TV Buzau</string>
@@ -1951,7 +1941,7 @@
     <Id>tvsat</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVSAT</Name>
-    <Group>Local</Group>
+    <Group>Local - ???</Group>
     <LogoUrl>http://stvron.com/canale/mari/tv-sat.png</LogoUrl>
     <Aliases>
       <string>RO: TVSAT</string>
@@ -2157,7 +2147,7 @@
     <Id>ProTVChisinau.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro TV Chisinau</Name>
-    <Group>Local</Group>
+    <Group>Local - Basarabia</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Logo_Pro_TV_Chi%C8%99in%C4%83u_%282016%29.svg/1200px-Logo_Pro_TV_Chi%C8%99in%C4%83u_%282016%29.svg.png</LogoUrl>
     <Aliases>
       <string>MD: ProTV Chisinau</string>
@@ -2377,7 +2367,7 @@
     <Id>somax</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Somax</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>http://www.somaxtv.com/wp-content/uploads/2015/04/logo_somax_t3.png</LogoUrl>
     <Aliases>
       <string>RO | Somax TV</string>
@@ -2392,7 +2382,7 @@
     <Id>STV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Singeorz TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Transilvania</Group>
     <LogoUrl>http://tvtolive.com/wp-content/uploads/S%C3%A2ngeorz-TV-tvtolive.com_.jpg</LogoUrl>
     <Aliases>
       <string>RO:STV</string>
@@ -2615,7 +2605,7 @@
     <Id>ColumnaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Columna TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Muntenia</Group>
     <LogoUrl>https://i.ytimg.com/vi/PWgPPn2qeHo/hqdefault.jpg</LogoUrl>
     <Aliases>
       <string>Ro- Columnta TV</string>
@@ -2709,17 +2699,18 @@
     <Id>TVSud.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV Sud</Name>
-    <Group>Local</Group>
-    <LogoUrl>http://stvron.com/canale/mari/tv-sud-est.png</LogoUrl>
+    <Group>Local - Oltenia</Group>
+    <LogoUrl>http://stvron.com/canale/mari/tv-sud.png</LogoUrl>
     <Aliases>
       <string>RO: TV Sud</string>
+      <string>RO: TV Sud Gorj</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVSudEst.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV SudEst</Name>
-    <Group>Local</Group>
+    <Group>Local - Muntenia</Group>
     <LogoUrl>http://stvron.com/canale/mari/tv-sud-est.png</LogoUrl>
     <Aliases>
       <string>RO: TV Sud Est TVSAT</string>
@@ -2733,8 +2724,8 @@
     <Id>musceltv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Muscel TV</Name>
-    <Group>Local</Group>
-    <LogoUrl>http://stvron.com/canale/mari/muscel-tv.png</LogoUrl>
+    <Group>Local - Muntenia</Group>
+    <LogoUrl>http://musceltv.ro/site/wp-content/uploads/2016/05/microsigla-frontala.png</LogoUrl>
     <Aliases>
       <string>RO: Muscel TV</string>
       <string>RO| Muscel TV</string>
@@ -2744,7 +2735,7 @@
     <Id>novatv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nova TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Transilvania</Group>
     <LogoUrl>http://stvron.com/canale/mari/nova-tv-brasov.png</LogoUrl>
     <Aliases>
       <string>RO: Nova Tv Brasov</string>
@@ -2891,7 +2882,7 @@
     <Id>TVRCluj.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Cluj</Name>
-    <Group>Local</Group>
+    <Group>Local - Transilvania</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Logo_TVR_Cluj.svg/1280px-Logo_TVR_Cluj.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Cluj</string>
@@ -2902,7 +2893,7 @@
     <Id>TVRCraiova.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Craiova</Name>
-    <Group>Local</Group>
+    <Group>Local - Oltenia</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Logo_TVR_Craiova.svg/1280px-Logo_TVR_Craiova.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Craiova</string>
@@ -2913,7 +2904,7 @@
     <Id>TVRIasi.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Iasi</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Logo_TVR_Ia%C8%99i.svg/1280px-Logo_TVR_Ia%C8%99i.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Iasi</string>
@@ -2925,7 +2916,7 @@
     <Id>TVRTarguMures.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Targu Mures</Name>
-    <Group>Local</Group>
+    <Group>Local - Transilvania</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Logo_TVR_T%C3%AErgu-Mure%C8%99.svg/1280px-Logo_TVR_T%C3%AErgu-Mure%C8%99.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Târgu-Mureș</string>
@@ -2936,7 +2927,7 @@
     <Id>TVRTimisoara.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Timisoara</Name>
-    <Group>Local</Group>
+    <Group>Local - Banat</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Logo_TVR_Timi%C8%99oara.svg/1280px-Logo_TVR_Timi%C8%99oara.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Timisoara</string>
@@ -3066,7 +3057,7 @@
     <Id>BucurestiTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Bucuresti TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Muntenia</Group>
     <LogoUrl>http://stvron.com/canale/mari/bucuresti-tv.png</LogoUrl>
     <Aliases>
       <string>Bucuresti TV</string>
@@ -3078,7 +3069,7 @@
     <Id>IasiTVLife.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Iasi TV Life</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>http://www.iasitvlife.ro/images/itv-logo.png</LogoUrl>
     <Aliases>
       <string>Iasi TV Life</string>
@@ -3091,7 +3082,7 @@
     <Id>tvplus-suceava</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV Plus Suceava</Name>
-    <Group>Local</Group>
+    <Group>Local - Bucovina</Group>
     <LogoUrl>http://stvron.com/canale/mari/tv-plus-suceava.png</LogoUrl>
     <Aliases>
       <string>RO: TV Plus Suceava</string>
@@ -3221,7 +3212,7 @@
     <Id>BitTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Bit TV</Name>
-    <Group>Local</Group>
+    <Group>Local - Moldova</Group>
     <LogoUrl>https://bittv.info/wp-content/uploads/2016/02/cropped-logo1.png</LogoUrl>
     <Aliases>
       <string>Bit TV (ROM)</string>
@@ -3232,7 +3223,7 @@
     <Id>Moldova1.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Moldova 1</Name>
-    <Group>Local</Group>
+    <Group>Local - Basarabia</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Logo_Moldova_1_%282016%29.svg/1200px-Logo_Moldova_1_%282016%29.svg.png</LogoUrl>
     <Aliases>
       <string>MD: Moldova 1</string>
@@ -3244,7 +3235,7 @@
     <Id>Moldova2.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Moldova 2</Name>
-    <Group>Local</Group>
+    <Group>Local - Basarabia</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Logo_Moldova_2_%282016%29.svg/2000px-Logo_Moldova_2_%282016%29.svg.png</LogoUrl>
     <Aliases>
       <string>MD: Moldova 2</string>
@@ -3256,7 +3247,7 @@
     <Id>TV8Moldova.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV8 Moldova</Name>
-    <Group>Local</Group>
+    <Group>Local - Basarabia</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_TV8_%282017%29.svg/2000px-Logo_TV8_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>TV8 Moldova</string>
@@ -3264,9 +3255,9 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HTBMoldova.md</Id>
-    <IsEnabled>true</IsEnabled>
-    <Name>HTB Moldova</Name>
-    <Group>Local</Group>
+    <IsEnabled>false</IsEnabled>
+    <Name>NTV Moldova</Name>
+    <Group>Local - Basarabia</Group>
     <LogoUrl>https://www.deschide.md/images/cms-image-000036515.png</LogoUrl>
     <Aliases>
       <string>HTB Moldova</string>
@@ -3277,7 +3268,7 @@
     <Id>CanalRegional.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Canal Regional</Name>
-    <Group>Local</Group>
+    <Group>Local - Basarabia</Group>
     <LogoUrl>https://canalregional.md/wp-content/uploads/2018/04/Logo.png</LogoUrl>
     <Aliases>
       <string>Canal Regional (Moldova)</string>
