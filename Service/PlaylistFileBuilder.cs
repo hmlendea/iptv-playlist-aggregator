@@ -10,6 +10,8 @@ namespace IptvPlaylistFetcher.Service
     {
         const string FileHeader = "#EXTM3U";
         const string EntryHeader = "#EXTINF";
+        const string EntryHeaderExtendedVersion = "#EXT-X-VERSION";
+        const string EntryHeaderExtendedInfo = "#EXT-X-STREAM-INF";
         const string EntryHeaderSeparator = ":";
         const string EntryValuesSeparator = ",";
         const string TvGuideIdTagKey = "tvg-id";
@@ -75,7 +77,8 @@ namespace IptvPlaylistFetcher.Service
                 string line = lines[i];
 
                 if (string.IsNullOrWhiteSpace(line) ||
-                    line.Contains(FileHeader))
+                    line.Contains(FileHeader) ||
+                    line.Contains(EntryHeaderExtendedVersion)) // TODO: See what to do about this
                 {
                     continue;
                 }
@@ -84,6 +87,13 @@ namespace IptvPlaylistFetcher.Service
                 {
                     Channel channel = new Channel();
                     channel.Name = line.Split(',')[1];
+
+                    playlist.Channels.Add(channel);
+                }
+                else if (line.Contains(EntryHeaderExtendedInfo))
+                {
+                    Channel channel = new Channel();
+                    // TODO: Where should I take the name from ???
 
                     playlist.Channels.Add(channel);
                 }

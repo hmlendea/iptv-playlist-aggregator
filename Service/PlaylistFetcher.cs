@@ -64,7 +64,8 @@ namespace IptvPlaylistFetcher.Service
                 }
             }
 
-            if (!string.IsNullOrWhiteSpace(provider.ChannelNameOverride))
+            if (!(playlist is null) &&
+                !string.IsNullOrWhiteSpace(provider.ChannelNameOverride))
             {
                 foreach (Channel channel in playlist.Channels)
                 {

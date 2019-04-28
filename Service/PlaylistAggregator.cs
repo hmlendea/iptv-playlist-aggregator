@@ -126,13 +126,6 @@ namespace IptvPlaylistFetcher.Service
                 foreach (Channel matchingChannel in matchingChannels)
                 {
                     Console.Write(".");
-                    // TODO: FIX THIS
-                    // Short-circuit until I handle this properly
-                    if (matchingChannel.Url.EndsWith(".m3u") ||
-                        matchingChannel.Url.EndsWith(".m3u8"))
-                    {
-                        //continue;
-                    }
 
                     bool isAlive = mediaStreamStatusChecker.IsStreamAlive(matchingChannel.Url);
 
