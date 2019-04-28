@@ -36,7 +36,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Alpha Media</Name>
     <Group>Local - Dobrogea</Group>
-    <LogoUrl>http://tvalphamedia.ro/wp-content/themes/flatmagazine/images/logo.png</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mari/tv-alpha-media.png</LogoUrl>
     <Aliases>
       <string>RO | Alpha Media TV</string>
     </Aliases>
@@ -286,6 +286,7 @@
       <string>Antena 1 HD</string>
       <string>ANTENA 1</string>
       <string>Antena 1</string>
+      <string>RO | ANETENA 1</string>
       <string>Ro- Antena 1</string>
       <string>RO: Antena 1 FHD</string>
       <string>RO: ANTENA 1 HD+</string>
@@ -1148,7 +1149,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>EuroSport 1</Name>
     <Group>Sport</Group>
-    <LogoUrl>https://static.iptv-epg.com/ro/Eurosport1.ro.png</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mari/eurosport.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Eurosport 1 HD RO</string>
       <string>[ RO ] EUROSPORT 1 HD</string>
@@ -1177,7 +1178,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>EuroSport 2</Name>
     <Group>Sport</Group>
-    <LogoUrl>https://static.iptv-epg.com/ro/Eurosport2.ro.png</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mari/eurosport-2.png</LogoUrl>
     <Aliases>
       <string>[ RO ] EUROSPORT 2 HD</string>
       <string>[ RO ] Eurosport 2</string>
@@ -1294,6 +1295,7 @@
     <Group></Group>
     <LogoUrl>http://stvron.com/canale/mari/fine-living.png</LogoUrl>
     <Aliases>
+      <string>||ROM|| FINE LIVING</string>
       <string>RO: Fine Living</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2952,7 +2954,7 @@
     <Id>TVRMoldova.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Moldova</Name>
-    <Group>Extern</Group>
+    <Group>Local - Basarabia</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/de/Logo_TVR_Moldova.svg/1280px-Logo_TVR_Moldova.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Moldova</string>
