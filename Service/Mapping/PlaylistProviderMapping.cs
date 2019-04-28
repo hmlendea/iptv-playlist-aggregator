@@ -15,6 +15,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
             serviceModel.IsEnabled = dataObject.IsEnabled;
             serviceModel.Name = dataObject.Name;
             serviceModel.UrlFormat = dataObject.UrlFormat;
+            serviceModel.ChannelNameOverride = dataObject.ChannelNameOverride;
 
             return serviceModel;
         }
@@ -26,6 +27,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
             dataObject.IsEnabled = serviceModel.IsEnabled;
             dataObject.Name = serviceModel.Name;
             dataObject.UrlFormat = serviceModel.UrlFormat;
+            dataObject.ChannelNameOverride = serviceModel.ChannelNameOverride;
 
             return dataObject;
         }

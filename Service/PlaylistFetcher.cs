@@ -45,11 +45,13 @@ namespace IptvPlaylistFetcher.Service
 
         public Playlist FetchProviderPlaylist(PlaylistProvider provider)
         {
+            Playlist playlist = null;
+
             for (int i = 0; i < settings.DaysToCheck; i++)
             {
                 DateTime date = DateTime.Now.AddDays(-i);
 
-                Playlist playlist = LoadPlaylistFromCache(provider, date);
+                playlist = LoadPlaylistFromCache(provider, date);
                 
                 if (playlist is null)
                 {
@@ -58,11 +60,19 @@ namespace IptvPlaylistFetcher.Service
                 
                 if (!(playlist is null))
                 {
-                    return playlist;
+                    break;
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(provider.ChannelNameOverride))
+            {
+                foreach (Channel channel in playlist.Channels)
+                {
+                    channel.Name = provider.ChannelNameOverride;
                 }
             }
             
-            return null;
+            return playlist;
         }
 
         void SaveProviderPlaylistToCache(string providerId, string playlist)

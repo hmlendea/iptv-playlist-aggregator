@@ -9,5 +9,7 @@ namespace IptvPlaylistFetcher.Service.Models
         public string Name { get; set; }
 
         public string UrlFormat { get; set; }
+
+        public string ChannelNameOverride { get; set; }
     }
 }
