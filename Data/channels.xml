@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfChannelDefinitionEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ChannelDefinitionEntity>
-    <Id>1HD.ro</Id>
-    <Name>1 HD</Name>
-    <Category>???</Category>
-    <LogoUrl></LogoUrl>
-    <Aliases>
-      <string>Ro- 1 HD</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>10tv</Id>
-    <Name>10 TV</Name>
-    <Category>???</Category>
-    <LogoUrl></LogoUrl>
-    <Aliases>
-      <string>RO: 10 TV</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>6tv</Id>
-    <Name>6 TV</Name>
-    <Category>???</Category>
-    <LogoUrl></LogoUrl>
-    <Aliases>
-      <string>RO: 6 TV</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>BanatTV.ro</Id>
     <Name>Banat TV</Name>
     <Category>Local</Category>
@@ -37,53 +10,34 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>dolceSport1</Id>
-    <Name>Dolce Sport 1</Name>
+    <Id>impact</Id>
+    <Name>Impact TV</Name>
+    <Category>Music</Category>
+    <LogoUrl>http://mywebtv.info/img/tvicons/impacttv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Impact TV HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>hora</Id>
+    <Name>Hora TV</Name>
+    <Category>Music</Category>
+    <LogoUrl>https://www.horatv.ro/images/icon.ico</LogoUrl>
+    <Aliases>
+      <string>RO: Hora TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>speranta</Id>
+    <Name>Speranta TV</Name>
     <Category>???</Category>
     <LogoUrl></LogoUrl>
     <Aliases>
-      <string>Ro- Dolce Sport 1 HD</string>
-      <string>RO: Dolce Sport 1 HD</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>dolceSport2</Id>
-    <Name>Dolce Sport 2</Name>
-    <Category>???</Category>
-    <LogoUrl></LogoUrl>
-    <Aliases>
-      <string>Ro- Dolce Sport 2 HD</string>
-      <string>RO: Dolce Sport 2 HD</string>
-      <string>RO: DOLCE SPORT2 HD</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>Acasa.ro</Id>
-    <Name>Acasa</Name>
-    <Category>???</Category>
-    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3e/Acasa_%281998-2003%2C_s_teni%29.png/revision/latest?cb=20170801234434</LogoUrl>
-    <Aliases>
-      <string>Acasa HD</string>
-      <string>Ro- Acasa TV</string>
-      <string>RO: ACASA HD</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>AcasaGold.ro</Id>
-    <Name>Acasa Gold</Name>
-    <Category>???</Category>
-    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3e/Acasa_%281998-2003%2C_s_teni%29.png/revision/latest?cb=20170801234434</LogoUrl>
-    <Aliases>
-      <string>Ro- Acasa Gold</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>AcasaTV.ro</Id>
-    <Name>Acasa TV</Name>
-    <Category>???</Category>
-    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/3/3e/Acasa_%281998-2003%2C_s_teni%29.png/revision/latest?cb=20170801234434</LogoUrl>
-    <Aliases>
-      <string>Acasa TV</string>
+      <string>||RO|| SPERANTA TV</string>
+      <string>||RO|| SPERANTA Tv</string>
+      <string>||ROM|| SPERANTA TV</string>
+      <string>||ROM|| SPERANTA Tv</string>
+      <string>RO: Speranta TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -156,11 +110,13 @@
     <Category>Film</Category>
     <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/5/50/AMC_2013.png/revision/latest?cb=20171217201039</LogoUrl>
     <Aliases>
-      <string>RO: AMC</string>
       <string>[ RO ] AMC</string>
+      <string>||RO|| AMC</string>
+      <string>||ROM|| AMC</string>
+      <string>AMC RO</string>
       <string>AMC</string>
       <string>RO: AMC RO</string>
-      <string>AMC RO</string>
+      <string>RO: AMC</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -195,6 +151,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a9/Antena_Stars_logo_2013.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Antena Stars</string>
+      <string>||RO|| ANTENA STARS</string>
+      <string>||ROM|| ANTENA STARS</string>
       <string>Antena Stars HD</string>
       <string>ANTENA STARS</string>
       <string>Antena Stars</string>
@@ -215,6 +173,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_Antena_1_%282010%29.svg/100px-Logo_Antena_1_%282010%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Antena 1</string>
+      <string>||RO|| ANTENA 1</string>
+      <string>||ROM|| ANTENA 1</string>
       <string>Antena 1 HD</string>
       <string>ANTENA 1</string>
       <string>Antena 1</string>
@@ -235,6 +195,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/2/23/Antena_3.jpg/180px-Antena_3.jpg</LogoUrl>
     <Aliases>
       <string>[ RO ] Antena 3</string>
+      <string>||RO|| ANTENA 3</string>
+      <string>||ROM|| ANTENA 3</string>
       <string>Antena 3 HD</string>
       <string>ANTENA 3</string>
       <string>Antena 3</string>
@@ -253,9 +215,11 @@
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/250px-AXN_Black_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
+      <string>||RO|| AXN</string>
+      <string>||ROM|| AXN</string>
+      <string>AXN Black</string>
       <string>RO: AXN BLACK</string>
       <string>Ro: AXN Black</string>
-      <string>AXN Black</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -264,6 +228,8 @@
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/250px-AXN_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
+      <string>||RO|| AXN BLACK</string>
+      <string>||ROM|| AXN BLACK</string>
       <string>AXN HD</string>
       <string>AXN ROMANIA</string>
       <string>AXN Romania</string>
@@ -281,6 +247,8 @@
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AXN_Spin_logo_%282015%29.svg/250px-AXN_Spin_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
+      <string>||RO|| AXN SPIN</string>
+      <string>||ROM|| AXN SPIN</string>
       <string>RO: AXN SPIN</string>
       <string>AXN Spin</string>
     </Aliases>
@@ -291,6 +259,8 @@
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/250px-AXN_White_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
+      <string>||RO|| AXN WHITE</string>
+      <string>||ROM|| AXN WHITE</string>
       <string>AXN WHITE</string>
       <string>AXN White</string>
       <string>AXN With</string>
@@ -309,6 +279,10 @@
     <Aliases>
       <string> B1</string>
       <string>[ RO ] B1</string>
+      <string>||RO|| B1 Tv</string>
+      <string>||RO|| B1 TV</string>
+      <string>||ROM|| B1 TV</string>
+      <string>||ROM|| B1 Tv</string>
       <string>B1</string>
       <string>Ro- B1 TV</string>
       <string>RO: B1 Tv</string>
@@ -342,8 +316,10 @@
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bollywood_HD_2018.png/200px-Bollywood_HD_2018.png</LogoUrl>
     <Aliases>
-      <string>RO:BOLYWOOD TV</string>
+      <string>||RO|| BOLLYWOOD TV</string>
+      <string>||ROM|| BOLLYWOOD TV</string>
       <string>Bollywood</string>
+      <string>RO:BOLYWOOD TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -352,12 +328,14 @@
     <Category>Kids</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/230px-Boomerang_2014_logo.svg.png</LogoUrl>
     <Aliases>
+      <string>[ RO ] Boomerang</string>
+      <string>||RO|| BOOMERANG</string>
+      <string>||ROM|| BOOMERANG</string>
+      <string>BOOMERANG</string>
+      <string>Boomerang</string>
       <string>RO: BOOMERANG</string>
       <string>RO: Boomerang</string>
       <string>Ro: Boomerang</string>
-      <string>[ RO ] Boomerang</string>
-      <string>BOOMERANG</string>
-      <string>Boomerang</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -386,6 +364,8 @@
     <Category>Kids</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/220px-Cartoon_Network_2010_logo.svg.png</LogoUrl>
     <Aliases>
+      <string>||RO|| CARTOON NETWORK</string>
+      <string>||ROM|| CARTOON NETWORK</string>
       <string>Cartoon Network</string>
       <string>RO: Cartoon Network HD</string>
       <string>Ro: Cartoon Network</string>
@@ -410,6 +390,12 @@
     <LogoUrl>https://static.iptv-epg.com/ro/Cinemax.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Cinemax HD RO</string>
+      <string>||RO|| CINEMAX HD</string>
+      <string>||RO|| CINEMAX RO</string>
+      <string>||RO|| CINEMAX1 HD</string>
+      <string>||ROM|| CINEMAX HD</string>
+      <string>||ROM|| CINEMAX RO</string>
+      <string>||ROM|| CINEMAX1 HD</string>
       <string>CineMAX HD RO</string>
       <string>CineMAX HD</string>
       <string>CINEMAX RO</string>
@@ -438,6 +424,10 @@
     <LogoUrl>https://static.iptv-epg.com/ro/Cinemax2.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Cinemax 2</string>
+      <string>||RO|| CINEMAX 2</string>
+      <string>||RO|| CINEMAX2 HD</string>
+      <string>||ROM|| CINEMAX 2</string>
+      <string>||ROM|| CINEMAX2 HD</string>
       <string>CineMAX 2 HD</string>
       <string>CINEMAX 2</string>
       <string>CineMAX 2</string>
@@ -465,9 +455,11 @@
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/200px-Comedy_Central_2018.svg.png</LogoUrl>
     <Aliases>
+      <string>||RO|| COMEDY CENTRAL</string>
+      <string>||ROM|| COMEDY CENTRAL</string>
+      <string>Comedy Central</string>
       <string>RO: COMEDY CENTRAL</string>
       <string>Ro: Comedy Central</string>
-      <string>Comedy Central</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -503,6 +495,8 @@
     <LogoUrl>https://static.iptv-epg.com/hu/DigiAnimalWorld.hu.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Digi Animal World</string>
+      <string>||RO|| DIGI ANIMAL WORLD</string>
+      <string>||ROM|| DIGI ANIMAL WORLD</string>
       <string>Digi Animal World HD</string>
       <string>DIGI ANIMAL WORLD</string>
       <string>Digi Animal World</string>
@@ -522,6 +516,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/DigiLLife.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Digi Life</string>
+      <string>||RO|| DIGI LIFE</string>
+      <string>||ROM|| DIGI LIFE</string>
       <string>Digi Life HD</string>
       <string>DIGI LIFE</string>
       <string>Digi Life</string>
@@ -543,6 +539,8 @@
     <Aliases>
       <string>[ RO ] DIGI Sport 1</string>
       <string>[ RO ] DIGI SPORTS 1</string>
+      <string>||RO|| DIGI SPORT 1</string>
+      <string>||ROM|| DIGI SPORT 1</string>
       <string>Digi Sport 1</string>
       <string>DIGI SPORT 1</string>
       <string>Digi Sport 1</string>
@@ -566,6 +564,8 @@
     <Aliases>
       <string>[ RO ] DIGI Sport 2</string>
       <string>[ RO ] DIGI SPORTS 2</string>
+      <string>||RO|| DIGI SPORT 2</string>
+      <string>||ROM|| DIGI SPORT 2</string>
       <string>Digi Sport 2</string>
       <string>DIGI SPORT 2</string>
       <string>Digi Sport 2</string>
@@ -588,6 +588,8 @@
     <Aliases>
       <string>[ RO ] DIGI Sport 3</string>
       <string>[ RO ] DIGI SPORTS 3</string>
+      <string>||RO|| DIGI SPORT 3</string>
+      <string>||ROM|| DIGI SPORT 3</string>
       <string>Digi Sport 3</string>
       <string>DIGI SPORT 3</string>
       <string>Digi Sport 3</string>
@@ -610,6 +612,8 @@
     <Aliases>
       <string>[ RO ] Digi Sport 4</string>
       <string>[ RO ] DIGI SPORTS 4</string>
+      <string>||RO|| DIGI SPORT 4</string>
+      <string>||ROM|| DIGI SPORT 4</string>
       <string>Digi Sport 4</string>
       <string>Digi Sport 4</string>
       <string>DIGI SPORT 4</string>
@@ -632,6 +636,9 @@
     <LogoUrl>https://static.iptv-epg.com/ro/DigiWorld.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Digi World</string>
+      <string>||RO||  DIGI WORLD HD</string>
+      <string>||RO|| DIGI WORLD</string>
+      <string>||ROM|| DIGI WORLD</string>
       <string>Digi World HD</string>
       <string>DIGI WORLD</string>
       <string>Digi World</string>
@@ -686,6 +693,10 @@
     <Aliases>
       <string> Digi 24</string>
       <string>[ RO ] Digi 24</string>
+      <string>||RO|| DIGI 24 HD</string>
+      <string>||RO|| DIGI 24</string>
+      <string>||ROM|| DIGI 24 HD</string>
+      <string>||ROM|| DIGI 24</string>
       <string>Digi 24 (Rumania)</string>
       <string>DIGI 24 HD [576p]</string>
       <string>DIGI 24 HD</string>
@@ -711,6 +722,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryChannel.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Discovery channel</string>
+      <string>||RO|| DISCOVERY</string>
+      <string>||ROM|| DISCOVERY</string>
       <string>Discovery Channel</string>
       <string>Discovery RO</string>
       <string>RO: Discovery channel</string>
@@ -736,6 +749,16 @@
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
     <Aliases>
       <string>RO: ID Investigation Discovery HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>DiscoveryIDX.ro</Id>
+    <Name>Discovery Investigation Extra</Name>
+    <Category>Educational</Category>
+    <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
+    <Aliases>
+      <string>||RO|| DISCOVERY ID XTRA</string>
+      <string>||ROM|| DISCOVERY ID XTRA</string>
       <string>Discovery IDX HD</string>
       <string>Ro: Discovery IDX</string>
       <string>Discovery IDX</string>
@@ -748,6 +771,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryScience.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Discovery science</string>
+      <string>||RO|| DISCOVERY SCIENCE</string>
+      <string>||ROM|| DISCOVERY SCIENCE</string>
       <string>Discovery Science HD</string>
       <string>Discovery Science</string>
       <string>RO: Discovery Science HD</string>
@@ -763,6 +788,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/DisneyChannel.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Disney Channel</string>
+      <string>||RO|| DISNEY CHANNEL</string>
+      <string>||ROM|| DISNEY CHANNEL</string>
       <string>Disney Channel</string>
       <string>RO: DISNEY CHANNEL</string>
       <string>RO: Disney Channel</string>
@@ -775,6 +802,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/DisneyJunior.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Disney Junior</string>
+      <string>||RO|| DISNEY JUNIOR</string>
+      <string>||ROM|| DISNEY JUNIOR</string>
       <string>DISNEY JUNIOR</string>
       <string>Disney Junior</string>
       <string>RO: DISNEY JUNIOR</string>
@@ -791,6 +820,8 @@
     <Category>Film</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/DivaUniversal.ro.png</LogoUrl>
     <Aliases>
+      <string>||RO|| DIVA UNIVERSAL</string>
+      <string>||ROM|| DIVA UNIVERSAL</string>
       <string>Diva</string>
       <string>RO: Diva Universal</string>
       <string>RO: DIVA</string>
@@ -802,6 +833,8 @@
     <Category>Educational</Category>
     <LogoUrl>https://static.iptv-epg.com/hu/DiscoveryTurboXtra.hu.png</LogoUrl>
     <Aliases>
+      <string>||RO|| DISCOVERY TURBO XTRA</string>
+      <string>||ROM|| DISCOVERY TURBO XTRA</string>
       <string>DTX RO</string>
       <string>DTX</string>
       <string>RO: DTX FHD</string>
@@ -826,6 +859,10 @@
     <LogoUrl>https://static.iptv-epg.com/ro/Etno.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] ETNO TV HD</string>
+      <string>||RO|| ETNO Tv</string>
+      <string>||RO|| ETNO</string>
+      <string>||ROM|| ETNO Tv</string>
+      <string>||ROM|| ETNO</string>
       <string>Etno HD</string>
       <string>ETNO TV</string>
       <string>Etno</string>
@@ -856,6 +893,10 @@
       <string>[ RO ] Eurosport 1 HD RO</string>
       <string>[ RO ] EUROSPORT 1 HD</string>
       <string>[ RO ] Eurosport</string>
+      <string>||RO|| EUROSPORT 1</string>
+      <string>||RO|| EUROSPORT</string>
+      <string>||ROM|| EUROSPORT 1</string>
+      <string>||ROM|| EUROSPORT</string>
       <string>EuroSport 1 HD RO</string>
       <string>EuroSport 1 HD</string>
       <string>EuroSport 1</string>
@@ -878,6 +919,8 @@
     <Aliases>
       <string>[ RO ] EUROSPORT 2 HD</string>
       <string>[ RO ] Eurosport 2</string>
+      <string>||RO|| EUROSPORT 2</string>
+      <string>||ROM|| EUROSPORT 2</string>
       <string>EuroSport 2 HD</string>
       <string>EuroSport 2 RO</string>
       <string>EuroSport 2</string>
@@ -897,6 +940,8 @@
     <Category>Music</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/ae/FavoritLogo.png</LogoUrl>
     <Aliases>
+      <string>||RO|| FAVORIT Tv</string>
+      <string>||ROM|| FAVORIT Tv</string>
       <string>FAVORIT TV</string>
       <string>Favorit</string>
       <string>RO: Favorit Tv</string>
@@ -912,9 +957,11 @@
     <Category>Film</Category>
     <LogoUrl>https://static.iptv-epg.com/hu/FilmCafe.hu.png</LogoUrl>
     <Aliases>
+      <string>||RO|| FILM CAFE</string>
+      <string>||ROM|| FILM CAFE</string>
+      <string>Film Cafe</string>
       <string>RO: FILM CAFE</string>
       <string>RO: Film Cafe</string>
-      <string>Film Cafe</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -923,6 +970,8 @@
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_Film_Now_%282018%29.png/250px-Logo_Film_Now_%282018%29.png</LogoUrl>
     <Aliases>
+      <string>||RO|| DIGI FILM</string>
+      <string>||ROM|| DIGI FILM</string>
       <string>DIGI FILM</string>
       <string>Digi Film</string>
       <string>Film NOW HD</string>
@@ -942,6 +991,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/HappyChannel.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Happy Channel</string>
+      <string>||RO|| HAPPY CHANNEL</string>
+      <string>||ROM|| HAPPY CHANNEL</string>
       <string>HAPPY CHANNEL</string>
       <string>Happy</string>
       <string>RO: Happy Channel</string>
@@ -958,6 +1009,10 @@
     <LogoUrl>https://static.iptv-epg.com/ro/HBO.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] HBO Romania</string>
+      <string>||RO|| HBO Romania</string>
+      <string>||RO|| HBO</string>
+      <string>||ROM|| HBO Romania</string>
+      <string>||ROM|| HBO</string>
       <string>HBO 1</string>
       <string>HBO 1</string>
       <string>HBO Romania</string>
@@ -985,6 +1040,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/HBO2.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] HBO 2</string>
+      <string>||RO|| HBO 2</string>
+      <string>||ROM|| HBO 2</string>
       <string>HBO 2</string>
       <string>HBO 2</string>
       <string>RO: HBO 2 FHD</string>
@@ -1002,6 +1059,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/HBO3.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] HBO 3</string>
+      <string>||RO|| HBO 3</string>
+      <string>||ROM|| HBO 3</string>
       <string>HBO 3</string>
       <string>HBO 3</string>
       <string>RO: HBO 3 FHD</string>
@@ -1019,6 +1078,10 @@
     <LogoUrl>https://static.iptv-epg.com/ro/HistoryChannel.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] History Channel</string>
+      <string>||RO|| HISTORY CHANNEL HD</string>
+      <string>||RO|| HISTORY CHANNEL</string>
+      <string>||ROM|| HISTORY CHANNEL HD</string>
+      <string>||ROM|| HISTORY CHANNEL</string>
       <string>History Channel</string>
       <string>HISTORY CHANNEL</string>
       <string>History HD</string>
@@ -1050,6 +1113,7 @@
     <Aliases>
       <string>[ RO ] Canal D HD</string>
       <string>[ RO ] Kanal D</string>
+      <string>||RO|| KANAL D HD</string>
       <string>Kanal D HD</string>
       <string>Kanal D</string>
       <string>KANAL D</string>
@@ -1071,6 +1135,8 @@
     <Aliases>
       <string> KISS TV</string>
       <string>[ RO ] Kiss TV</string>
+      <string>||RO|| KISS TV</string>
+      <string>||ROM|| KISS TV</string>
       <string>KISS TV</string>
       <string>KissTV</string>
       <string>Ro- Kiss TV</string>
@@ -1087,6 +1153,8 @@
     <Category>Sport</Category>
     <LogoUrl>http://lookplus.ro/wp-content/uploads/2018/09/lp-v-hd-tag-300px.png</LogoUrl>
     <Aliases>
+      <string>||RO|| LOOK PLUS</string>
+      <string>||ROM|| LOOK PLUS</string>
       <string>LOOK PLUS TV</string>
       <string>Look Plus</string>
       <string>RO: LOOK PLUS TV</string>
@@ -1129,6 +1197,12 @@
     <Category>Kids</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/Megamax.ro.png</LogoUrl>
     <Aliases>
+      <string>||RO|| MEGAMAX HD</string>
+      <string>||RO|| MEGAMAX</string>
+      <string>||RO|| MEGMAX</string>
+      <string>||ROM|| MEGAMAX HD</string>
+      <string>||ROM|| MEGAMAX</string>
+      <string>||ROM|| MEGMAX</string>
       <string>MEGAMAX</string>
       <string>Megamax</string>
       <string>RO: MegaMax HD</string>
@@ -1145,6 +1219,8 @@
     <Category>Kids</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/Minimax.ro.png</LogoUrl>
     <Aliases>
+      <string>||RO|| MINIMAX</string>
+      <string>||ROM|| MINIMAX</string>
       <string>MINIMAX</string>
       <string>Minimax</string>
       <string>RO: Mini Max</string>
@@ -1236,6 +1312,10 @@
     <LogoUrl>https://static.iptv-epg.com/ro/Na%C5%A3ional24Plus.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] National 24</string>
+      <string>||RO|| N24</string>
+      <string>||RO|| NATIONAL 24</string>
+      <string>||ROM|| N24</string>
+      <string>||ROM|| NATIONAL 24</string>
       <string>National 24 Plus</string>
       <string>National 24</string>
       <string>Ro: N24</string>
@@ -1251,6 +1331,10 @@
     <LogoUrl>https://static.iptv-epg.com/ro/NatGeo.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] National Geographic</string>
+      <string>||RO|| NAT GEO</string>
+      <string>||RO|| NATIONAL GEOGRAPHIC</string>
+      <string>||ROM|| NAT GEO</string>
+      <string>||ROM|| NATIONAL GEOGRAPHIC</string>
       <string>National Geographic HD</string>
       <string>National Geographic</string>
       <string>NGC</string>
@@ -1270,6 +1354,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/NatGeoWild.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Nat Geo Wild</string>
+      <string>||RO|| NAT GEO WILD</string>
+      <string>||ROM|| NAT GEO WILD</string>
       <string>National Geographic Wild HD</string>
       <string>National Geographic Wild</string>
       <string>NGC WILD</string>
@@ -1290,6 +1376,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/NationalTV.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] National TV</string>
+      <string>||RO|| NATIONAL TV</string>
+      <string>||ROM|| NATIONAL TV</string>
       <string>NATIONAL TV</string>
       <string>National TV</string>
       <string>Ro- Na?ional TV</string>
@@ -1306,6 +1394,10 @@
     <Category>Local</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/NeptunTV.ro.png</LogoUrl>
     <Aliases>
+      <string>||RO|| NEPTUM TV</string>
+      <string>||ROM|| NEPTUM TV</string>
+      <string>||RO|| NEPTUN TV</string>
+      <string>||ROM|| NEPTUN TV</string>
       <string>NeptunTV</string>
       <string>RO: Neptun TV</string>
       <string>RO: NeptunTV</string>
@@ -1328,6 +1420,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/Nickelodeon.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Nickelodeon</string>
+      <string>||RO|| NICKELODEON</string>
+      <string>||ROM|| NICKELODEON</string>
       <string>Nickelodeon HD</string>
       <string>NICKELODEON</string>
       <string>Nickelodeon</string>
@@ -1355,10 +1449,12 @@
     <Category>Lifestyle</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/TVPaprika.ro.png</LogoUrl>
     <Aliases>
+      <string>||RO|| TV PAPRIKA</string>
+      <string>||ROM|| TV PAPRIKA</string>
+      <string>Paprika</string>
+      <string>Ro: Paprika</string>
       <string>RO: TV PAPRIKA</string>
       <string>RO: TV Paprika</string>
-      <string>Ro: Paprika</string>
-      <string>Paprika</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1368,6 +1464,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/ParamountChannel.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Paramount Channel</string>
+      <string>||RO|| PARAMOUNT CHANNEL</string>
+      <string>||ROM|| PARAMOUNT CHANNEL</string>
       <string>Paramount Channel RO</string>
       <string>PARAMOUNT CHANNEL</string>
       <string>Paramount Channel</string>
@@ -1384,6 +1482,8 @@
     <Category>General</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/PrimaTV.ro.png</LogoUrl>
     <Aliases>
+      <string>||RO|| PRIMA TV</string>
+      <string>||ROM|| PRIMA TV</string>
       <string>Prima TV RO</string>
       <string>PRIMA TV</string>
       <string>Prima TV</string>
@@ -1404,6 +1504,11 @@
     <LogoUrl>https://static.iptv-epg.com/ro/Pro2.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] ACASA TV</string>
+      <string>||RO|| ACASA TV</string>
+      <string>||RO|| PRO 2</string>
+      <string>||ROM|| PRO 2</string>
+      <string>Acasa HD</string>
+      <string>Acasa TV</string>
       <string>ACASA TV</string>
       <string>Acasa</string>
       <string>Pro 2 (backup)</string>
@@ -1411,9 +1516,11 @@
       <string>Pro 2 HD</string>
       <string>Pro 2</string>
       <string>Ro- Acasa Tv</string>
+      <string>Ro- Acasa TV</string>
+      <string>RO: ACASA HD</string>
+      <string>Ro: Acasa TV</string>
       <string>RO: Acasa Tv</string>
       <string>RO: ACASA TV</string>
-      <string>Ro: Acasa TV</string>
       <string>RO: Pro 2 (backup)</string>
       <string>RO: Pro 2 FHD</string>
       <string>RO: Pro 2 HD</string>
@@ -1427,6 +1534,8 @@
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Logo_Pro_Cinema_%282017%29.svg/234px-Logo_Pro_Cinema_%282017%29.svg.png</LogoUrl>
     <Aliases>
+      <string>||RO|| PRO CINEMA</string>
+      <string>||ROM|| PRO CINEMA</string>
       <string>PRO CINEMA</string>
       <string>ProCinema</string>
       <string>RO: Pro Cinema HD</string>
@@ -1441,13 +1550,15 @@
     <Category>Film</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Logo_Pro_Gold_%282017%29.svg/234px-Logo_Pro_Gold_%282017%29.svg.png</LogoUrl>
     <Aliases>
-      <string>RO: PRO GOLD</string>
+      <string>||RO|| PRO GOLD</string>
+      <string>||ROM|| PRO GOLD</string>
+      <string>Acasa Gold</string>
       <string>Pro Gold</string>
-      <string>RO: Pro Gold</string>
-      <string>RO: PRO Gold HD</string>
       <string>RO: Acasa Gold TV</string>
       <string>Ro: Acasa Gold</string>
-      <string>Acasa Gold</string>
+      <string>RO: PRO Gold HD</string>
+      <string>RO: PRO GOLD</string>
+      <string>RO: Pro Gold</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1457,6 +1568,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/ProTV.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] PRO TV HD</string>
+      <string>||RO|| PRO TV</string>
+      <string>||ROM|| PRO TV</string>
       <string>PRO TV</string>
       <string>ProTV HD</string>
       <string>ProTV</string>
@@ -1484,10 +1597,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTVInternational.ro</Id>
-    <Name>General</Name>
+    <Name>Pro TV International</Name>
     <Category>General</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Pro_TV_Interna%C8%9Bional_%282017%29.svg/234px-Logo_Pro_TV_Interna%C8%9Bional_%282017%29.svg.png</LogoUrl>
     <Aliases>
+      <string>||RO|| PROTV INTERNATIONAL</string>
+      <string>||ROM|| PROTV INTERNATIONAL</string>
       <string>ProTV International</string>
       <string>Ro- Pro TV International</string>
       <string>RO: Pro TV International</string>
@@ -1502,6 +1617,8 @@
     <Aliases>
       <string>[ RO ] Sport RO</string>
       <string>##### RO - SPORTS #####</string>
+      <string>||RO|| PRO-X</string>
+      <string>||ROM|| PRO-X</string>
       <string>ProX HD</string>
       <string>RO: PRO X HD</string>
       <string>RO: Pro X</string>
@@ -1521,6 +1638,8 @@
     <Category>Lifestyle</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/c/cf/FishingHuntingLogo.jpg/220px-FishingHuntingLogo.jpg</LogoUrl>
     <Aliases>
+      <string>||RO|| FISHING &amp; HUNTING</string>
+      <string>||ROM|| FISHING &amp; HUNTING</string>
       <string>FISHING &amp; HUNTING</string>
       <string>Pescuit si Vanatoare TV</string>
       <string>Ro- VPTV</string>
@@ -1538,6 +1657,8 @@
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mCe6lQV8dYNJ8G5sPGQe5BxK7CuHwuPg1rUFA=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>[ RO ] Realitatea</string>
+      <string>||RO|| REALITATEA TV</string>
+      <string>||ROM|| REALITATEA TV</string>
       <string>Realitatea TV Rumania</string>
       <string>REALITATEA</string>
       <string>Realitatea</string>
@@ -1595,6 +1716,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a2/Rom%C3%A2nia_TV_logo.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Romania Tv</string>
+      <string>||RO|| ROMANIA TV</string>
+      <string>||ROM|| ROMANIA TV</string>
       <string>Ro- Romania TV backup</string>
       <string>Ro- Romania TV</string>
       <string>RO: Romania TV HD</string>
@@ -1645,6 +1768,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Taraftv.png/220px-Taraftv.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Taraf TV</string>
+      <string>||RO|| TARAF TV</string>
+      <string>||ROM|| TARAF TV</string>
       <string>Ro- Taraf TV</string>
       <string>RO: Taraf HD</string>
       <string>RO: Taraf TV HD</string>
@@ -1665,6 +1790,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Logo_Telekom_Sport_1_%282017%29.svg/800px-Logo_Telekom_Sport_1_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 1 HD</string>
+      <string>||RO|| TELEKOM SPORT 1</string>
+      <string>||ROM|| TELEKOM SPORT 1</string>
       <string>Dolce Sport</string>
       <string>RO: Dolce Sport 1</string>
       <string>RO: Telekom Sport 1 (backup)</string>
@@ -1682,6 +1809,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Logo_Telekom_Sport_2_%282017%29.svg/2000px-Logo_Telekom_Sport_2_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 2 HD</string>
+      <string>||RO|| TELEKOM SPORT 2</string>
+      <string>||ROM|| TELEKOM SPORT 2</string>
       <string>RO: Telekom Sport 2 (backup)</string>
       <string>RO: TELEKOM SPORT 2 HD</string>
       <string>RO: Telekom Sport 2 HD</string>
@@ -1696,6 +1825,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/a/ad/Logo_Telekom_Sport_3_%282017%29.svg</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 3 HD</string>
+      <string>||RO|| TELEKOM SPORT 3</string>
+      <string>||ROM|| TELEKOM SPORT 3</string>
       <string>RO: Telekom Sport 3 (backup)</string>
       <string>RO: TELEKOM SPORT 3 HD</string>
       <string>RO: Telekom Sport 3 HD</string>
@@ -1710,6 +1841,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Logo_Telekom_Sport_4_%282017%29.svg/1280px-Logo_Telekom_Sport_4_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 4 HD</string>
+      <string>||RO|| TELEKOM SPORT 4</string>
+      <string>||ROM|| TELEKOM SPORT 4</string>
       <string>RO: Telekom Sport 4 (backup)</string>
       <string>RO: TELEKOM SPORT 4 HD</string>
       <string>RO: Telekom Sport 4 HD</string>
@@ -1724,6 +1857,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Logo_Telekom_Sport_5_%282017%29.svg/1280px-Logo_Telekom_Sport_5_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 5 HD</string>
+      <string>||RO|| TELEKOM SPORT 5</string>
+      <string>||ROM|| TELEKOM SPORT 5</string>
       <string>RO: Telekom Sport 5 (backup)</string>
       <string>RO: Telekom Sport 5 HD</string>
       <string>RO: Telekom Sport 5</string>
@@ -1739,6 +1874,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Telekom_Sport_6_%282017%29.svg/1280px-Logo_Telekom_Sport_6_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 6 HD</string>
+      <string>||RO|| TELEKOM SPORT 6</string>
+      <string>||ROM|| TELEKOM SPORT 6</string>
       <string>RO: Telekom Sport 6 (backup)</string>
       <string>RO: Telekom Sport 6 HD</string>
       <string>RO: Telekom Sport 6</string>
@@ -1758,11 +1895,22 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>telem botosani</Id>
+    <Name>Tele M Botosani</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://telem.ro/wp-content/uploads/2018/07/cropped-telem-sigla-site.png</LogoUrl>
+    <Aliases>
+      <string>RO:TeleM Botosani</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>TLC.ro</Id>
     <Name>TLC</Name>
     <Category>Educational</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/TLC-Logo_2016.png/200px-TLC-Logo_2016.png</LogoUrl>
     <Aliases>
+      <string>||RO|| TLC RO</string>
+      <string>||ROM|| TLC RO</string>
       <string>RO: TLC</string>
       <string>Ro: TLC</string>
       <string>TLC</string>
@@ -1774,6 +1922,8 @@
     <Category>Film</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/TNT.ro.png</LogoUrl>
     <Aliases>
+      <string>||RO|| TNT</string>
+      <string>||ROM|| TNT</string>
       <string>RO: TNT HD</string>
       <string>Ro: TNT</string>
       <string>RO: TNT</string>
@@ -1794,7 +1944,7 @@
   <ChannelDefinitionEntity>
     <Id>TraditiiTV.ro</Id>
     <Name>Traditii TV</Name>
-    <Category>???</Category>
+    <Category>Music</Category>
     <LogoUrl>http://oklivetv.com/wp-content/uploads/2015/02/TraditiiTVlogo.jpg</LogoUrl>
     <Aliases>
       <string>Ro- Traditii TV</string>
@@ -1803,7 +1953,7 @@
   <ChannelDefinitionEntity>
     <Id>TezaurTV.ro</Id>
     <Name>Tezaur TV</Name>
-    <Category>???</Category>
+    <Category>Music</Category>
     <LogoUrl>http://www.tezaurtv.ro/wp-content/uploads/2018/09/Tezaur-TV-online.jpg</LogoUrl>
     <Aliases>
       <string>Ro- TEZAUR TV</string>
@@ -1812,7 +1962,7 @@
   <ChannelDefinitionEntity>
     <Id>MioritaTV.ro</Id>
     <Name>Miorita TV</Name>
-    <Category>???</Category>
+    <Category>Music</Category>
     <LogoUrl>https://scontent.fomr1-1.fna.fbcdn.net/v/t1.0-9/23472832_2058248204396465_7929018799266255912_n.jpg?_nc_cat=106&amp;_nc_ht=scontent.fomr1-1.fna&amp;oh=a9542aaed1845b097c3098566efecd2d&amp;oe=5D311CF6</LogoUrl>
     <Aliases>
       <string>Ro- MIORITA TV</string>
@@ -1820,7 +1970,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TravelChannel.ro</Id>
-    <Name>Travel Mix</Name>
+    <Name>Travel Channel</Name>
     <Category>???</Category>
     <LogoUrl>https://static.iptv-epg.com/ro/TravelChannel.ro.png</LogoUrl>
     <Aliases>
@@ -1845,6 +1995,8 @@
     <Category>Religios</Category>
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mCtwbe55WTSbdmCNo4IGHpMXXs0tzr_KlRL_w=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
+      <string>||RO|| TRINITAS</string>
+      <string>||ROM|| TRINITAS</string>
       <string>RO: TRINITAS TV</string>
       <string>Ro: Trinitas</string>
       <string>RO: Trinitas</string>
@@ -1889,6 +2041,8 @@
     <LogoUrl>https://static.iptv-epg.com/ro/TV1000.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] TV 1000 HD</string>
+      <string>||RO|| TV1000</string>
+      <string>||ROM|| TV1000</string>
       <string>RO: TV 1000 HD</string>
       <string>RO: TV 1000</string>
       <string>Ro: TV1000</string>
@@ -1904,6 +2058,8 @@
     <Category>Extern</Category>
     <LogoUrl>https://static.iptv-epg.com/nl/TV5Monde.nl.png</LogoUrl>
     <Aliases>
+      <string>||RO|| TV5 MONDE</string>
+      <string>||ROM|| TV5 MONDE</string>
       <string>RO: TV5 Monde HD</string>
       <string>Ro: TV5 MONDE</string>
       <string>RO: TV5 MONDE</string>
@@ -1918,6 +2074,10 @@
     <Category>???</Category>
     <LogoUrl></LogoUrl>
     <Aliases>
+      <string>||RO|| TVH20</string>
+      <string>||RO|| TVH2O</string>
+      <string>||ROM|| TVH20</string>
+      <string>||ROM|| TVH2O</string>
       <string>Ro- TV H</string>
       <string>Ro: TVH 20</string>
       <string>TVH 20</string>
@@ -1931,6 +2091,8 @@
     <Aliases>
       <string> TVR 1 </string>
       <string>[ RO ] TVR 1</string>
+      <string>||RO|| TVR 1</string>
+      <string>||ROM|| TVR 1</string>
       <string>Ro- TVR HD</string>
       <string>Ro- TVR1 HD</string>
       <string>RO: TVR 1 (Backup)</string>
@@ -1954,6 +2116,8 @@
     <Aliases>
       <string> TVR 2 </string>
       <string>[ RO ] TVR 2</string>
+      <string>||RO|| TVR 2</string>
+      <string>||ROM|| TVR 2</string>
       <string>Ro- TVR2 HD</string>
       <string>RO: TVR 2 (Backup)</string>
       <string>RO: TVR 2 HD</string>
@@ -1973,6 +2137,8 @@
     <Aliases>
       <string> TVR 3 </string>
       <string>[ RO ] TVR 3</string>
+      <string>||RO|| TVR 3</string>
+      <string>||ROM|| TVR 3</string>
       <string>Ro- TVR3 HD</string>
       <string>RO: TVR 3 (Backup)</string>
       <string>RO: TVR 3 HD</string>
@@ -2062,6 +2228,8 @@
     <LogoUrl>http://0.gravatar.com/avatar/69247a9a644ad8980adc79d7d60ccc52?s=200&amp;r=g</LogoUrl>
     <Aliases>
       <string> U TV</string>
+      <string>||RO|| UTV</string>
+      <string>||ROM|| UTV</string>
       <string>Ro- UTV</string>
       <string>RO: U TV</string>
       <string>Ro: U TV</string>
@@ -2090,6 +2258,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/7/7f/Viasat_History-2014.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Viasat History</string>
+      <string>||RO|| VIASAT HISTORY</string>
+      <string>||ROM|| VIASAT HISTORY</string>
       <string>RO: VIASAT  HISTORY</string>
       <string>RO: Viasat History FHD</string>
       <string>RO: VIASAT HISTORY</string>
@@ -2107,6 +2277,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/1/15/Viasat_Nature-2014.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Viasat Nature</string>
+      <string>||RO|| VIASAT NATURE</string>
+      <string>||ROM|| VIASAT NATURE</string>
       <string>RO: VIASAT  NATURE</string>
       <string>RO: Viasat Nature</string>
       <string>Ro: Viasat Nature</string>
@@ -2122,6 +2294,8 @@
     <Category>Music</Category>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a2/ZUTVLogo.png</LogoUrl>
     <Aliases>
+      <string>||RO|| ZU TV</string>
+      <string>||ROM|| ZU TV</string>
       <string>RO: ZU TV HD</string>
       <string>RO: Zu TV</string>
       <string>Ro: ZU TV</string>
@@ -2269,6 +2443,7 @@
     <Category>Local</Category>
     <LogoUrl>https://www.deschide.md/images/cms-image-000036515.png</LogoUrl>
     <Aliases>
+      <string>HTB Moldova</string>
       <string>НТВ Moldova</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2279,6 +2454,7 @@
     <LogoUrl>https://canalregional.md/wp-content/uploads/2018/04/Logo.png</LogoUrl>
     <Aliases>
       <string>Canal Regional (Moldova)</string>
+      <string>Canal Regional</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>

@@ -1,13 +1,9 @@
-tousecurity1,Tousecurity 1,https://sites.google.com/site/uup4mee/Romania%20M3u%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0
-tousecurity2-1,Tousecurity 2,https://sites.google.com/site/uup4mee/Romania%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0&d=1
-tousecurity2-2,Tousecurity 2 Backup 1,https://sites.google.com/site/uploadingy/Romania%20M3u%20%281%29%20.m3u?attredirects=0&d=1
-tousecurity2-3,Tousecurity 2 Backup 2,https://sites.google.com/site/uploadingy/Romania%20M3u%20%282%29%20.m3u?attredirects=0&d=1
-freearhey-iptv-github-ro,freearhey's IPTV GitHub RO Channels,https://raw.githubusercontent.com/freearhey/iptv/master/channels/ro.m3u
-freearhey-iptv-github-md,freearhey's IPTV GitHub MD Channels,https://raw.githubusercontent.com/freearhey/iptv/master/channels/md.m3u
+dailyiptvlist1,DailyIPTVList 1,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
+dailyiptvlist2,DailyIPTVList 2,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
+dailyiptvlist3,DailyIPTVList 3,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
 bestfreeiptv1,Best Free IPTV,https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}.m3u
 bestfreeiptv2,Best Free IPTV Backup 1,https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}_1.m3u
 bestfreeiptv3,Best Free IPTV Backup 2,https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}_2.m3u
-bestiptvm3u,Best IPTV M3U,https://www.bestiptvm3u.com/wp-content/uploads/{0:yyyy}/{0:MM}/m3u-romania-{0:dd.MM.yyyy}.zip
 freeiptvplaylist1,Free IPTV Playlist,https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}.m3u
 freeiptvplaylist2,Free IPTV Playlist Backup 1,https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}-backuplist1.m3u
 freeiptvplaylist3,Free IPTV Playlist Backup 2,https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}-backuplist2.m3u
@@ -24,9 +20,6 @@ gratisiptv2,Gratis IPTV 2,https://gratisiptv.com/dl/ro-gratisiptvm3u-{0:yyyy-MM-
 gratisiptv3,Gratis IPTV 3,https://gratisiptv.com/dl/ro-gratisiptvm3u-{0:yyyy-MM-dd}-3.m3u
 iptvresources,iPTV Resources,https://iptvresources.com/iptv/ro-iptv-{0:yyyy-MM-dd}-1.m3u
 gatachannel,gatachannel,https://gatachannel.com/iptv/Romanian-{0:dd-MM-yy}.m3u
-dailyiptvlist1,DailyIPTVList 1,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
-dailyiptvlist2,DailyIPTVList 2,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
-dailyiptvlist3,DailyIPTVList 3,https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u
 freeiptvserver1,Free IPTV Server,https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com.m3u
 freeiptvserver2,Free IPTV Server Backup 1,https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com2.m3u
 freeiptvserver3,Free IPTV Server Backup 2,https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com3.m3u
@@ -34,3 +27,9 @@ freedailyiptv1,Free Daily IPTV 1,https://freedailyiptv.com/countries/RO/RO_freed
 freedailyiptv2,Free Daily IPTV 2,https://freedailyiptv.com/countries/RO/RO2_freedailyiptv.com.m3u
 freedailyiptv3,Free Daily IPTV 3,https://freedailyiptv.com/countries/RO/RO3_freedailyiptv.com.m3u
 freedailyiptv4,Free Daily IPTV 4,https://freedailyiptv.com/countries/RO/RO4_freedailyiptv.com.m3u
+freearhey-iptv-github-ro,freearhey's IPTV GitHub RO Channels,https://raw.githubusercontent.com/freearhey/iptv/master/channels/ro.m3u
+freearhey-iptv-github-md,freearhey's IPTV GitHub MD Channels,https://raw.githubusercontent.com/freearhey/iptv/master/channels/md.m3u
+tousecurity1,Tousecurity 1,https://sites.google.com/site/uup4mee/Romania%20M3u%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0
+tousecurity2-1,Tousecurity 2,https://sites.google.com/site/uup4mee/Romania%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0&d=1
+tousecurity2-2,Tousecurity 2 Backup 1,https://sites.google.com/site/uploadingy/Romania%20M3u%20%281%29%20.m3u?attredirects=0&d=1
+tousecurity2-3,Tousecurity 2 Backup 2,https://sites.google.com/site/uploadingy/Romania%20M3u%20%282%29%20.m3u?attredirects=0&d=1
