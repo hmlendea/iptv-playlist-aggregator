@@ -6,6 +6,8 @@ namespace IptvPlaylistFetcher.Service.Models
     {
         public string Id { get; set; }
 
+        public bool IsEnabled { get; set; }
+
         public string Name { get; set; }
 
         public string Group { get; set; }

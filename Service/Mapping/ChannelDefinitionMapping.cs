@@ -12,6 +12,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
         {
             ChannelDefinition serviceModel = new ChannelDefinition();
             serviceModel.Id = dataObject.Id;
+            serviceModel.IsEnabled = dataObject.IsEnabled;
             serviceModel.Name = dataObject.Name;
             serviceModel.Group = dataObject.Group;
             serviceModel.LogoUrl = dataObject.LogoUrl;
@@ -24,6 +25,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
         {
             ChannelDefinitionEntity dataObject = new ChannelDefinitionEntity();
             dataObject.Id = serviceModel.Id;
+            dataObject.IsEnabled = serviceModel.IsEnabled;
             dataObject.Name = serviceModel.Name;
             dataObject.Group = serviceModel.Group;
             dataObject.LogoUrl = serviceModel.LogoUrl;

@@ -3,258 +3,301 @@
 
   <PlaylistProviderEntity>
     <Id>dailyiptvlist1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>DailyIPTVList 1</Name>
     <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>dailyiptvlist2</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>DailyIPTVList 2</Name>
     <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>dailyiptvlist3</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>DailyIPTVList 3</Name>
     <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Best Free IPTV</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv2</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Best Free IPTV Backup 1</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}_1.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv3</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Best Free IPTV Backup 2</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}_2.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freeiptvplaylist1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free IPTV Playlist</Name>
     <UrlFormat>https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freeiptvplaylist2</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free IPTV Playlist Backup 1</Name>
     <UrlFormat>https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}-backuplist1.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freeiptvplaylist3</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free IPTV Playlist Backup 2</Name>
     <UrlFormat>https://www.freeiptvplaylist.com/m3u/ro-freeiptvplaylist-com-{0:dd-MM-yy}-backuplist2.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvm3ulist1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>IPTVM3UList 1</Name>
     <UrlFormat>https://iptvm3ulist.com/m3u/ro01_iptvm3ulist_com_{0:ddMMyy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvm3ulist2</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>IPTVM3UList 2</Name>
     <UrlFormat>https://iptvm3ulist.com/m3u/ro02_iptvm3ulist_com_{0:ddMMyy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvm3ulist3</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>IPTVM3UList 3</Name>
     <UrlFormat>https://iptvm3ulist.com/m3u/ro03_iptvm3ulist_com_{0:ddMMyy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvsource</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>IPTVsource</Name>
     <UrlFormat>https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvsource_backup1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>IPTVsource Backup 1</Name>
     <UrlFormat>https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com2.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvsource_backup2</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>IPTVsource Backup 2</Name>
     <UrlFormat>https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com3.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvsource_backup3</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>IPTVsource Backup 4</Name>
     <UrlFormat>https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com4.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvsat</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>IPTVSAT</Name>
     <UrlFormat>https://www.iptvsat.com/dn/romania.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>gratisiptv1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Gratis IPTV 1</Name>
     <UrlFormat>https://gratisiptv.com/dl/ro-gratisiptvm3u-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>gratisiptv2</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Gratis IPTV 2</Name>
     <UrlFormat>https://gratisiptv.com/dl/ro-gratisiptvm3u-{0:yyyy-MM-dd}-2.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>gratisiptv3</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Gratis IPTV 3</Name>
     <UrlFormat>https://gratisiptv.com/dl/ro-gratisiptvm3u-{0:yyyy-MM-dd}-3.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvresources</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>iPTV Resources</Name>
     <UrlFormat>https://iptvresources.com/iptv/ro-iptv-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>gatachannel</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>gatachannel</Name>
     <UrlFormat>https://gatachannel.com/iptv/Romanian-{0:dd-MM-yy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freeiptvserver1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free IPTV Server</Name>
     <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freeiptvserver2</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free IPTV Server Backup 1</Name>
     <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com2.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freeiptvserver3</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free IPTV Server Backup 2</Name>
     <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com3.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freedailyiptv1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free Daily IPTV 1</Name>
     <UrlFormat>https://freedailyiptv.com/countries/RO/RO_freedailyiptv.com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freedailyiptv2</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free Daily IPTV 2</Name>
     <UrlFormat>https://freedailyiptv.com/countries/RO/RO2_freedailyiptv.com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freedailyiptv3</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free Daily IPTV 3</Name>
     <UrlFormat>https://freedailyiptv.com/countries/RO/RO3_freedailyiptv.com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freedailyiptv4</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free Daily IPTV 4</Name>
     <UrlFormat>https://freedailyiptv.com/countries/RO/RO4_freedailyiptv.com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freearhey-iptv-github-ro</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>freearhey's IPTV GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/freearhey/iptv/master/channels/ro.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freearhey-iptv-github-md</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>freearhey's IPTV GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/freearhey/iptv/master/channels/md.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>tousecurity1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Tousecurity 1</Name>
     <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20M3u%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>tousecurity2-1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Tousecurity 2</Name>
     <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>tousecurity2-2</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Tousecurity 2 Backup 1</Name>
     <UrlFormat>https://sites.google.com/site/uploadingy/Romania%20M3u%20%281%29%20.m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>tousecurity2-3</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Tousecurity 2 Backup 2</Name>
     <UrlFormat>https://sites.google.com/site/uploadingy/Romania%20M3u%20%282%29%20.m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>albaiaiptv</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Albania IPTV</Name>
     <UrlFormat>http://albaniaiptv.info/iptv/ro-playlist-m3u-{0:dd-MM-yyyy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvsat1</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>IPTVsat Main</Name>
     <UrlFormat>https://www.iptvsat.com/dn/romania.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvsat2</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>IPTVsat Backup</Name>
     <UrlFormat>https://www.iptvsat.com/dn/romania1.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>m3uplaylist</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>M3U Playlist</Name>
     <UrlFormat>http://m3uplaylist.com/m3u-files/romania_iptv_m3uplaylist_com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freesourcetv-ro</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free Source TV Romania</Name>
     <UrlFormat>http://freesourcetv.com/m3u-files/romania_iptv_{0:dd_MM_yyyy}_freesourcetv_com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freesourcetv-md</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Free Source TV Moldova</Name>
     <UrlFormat>http://freesourcetv.com/m3u-files/moldova_iptv_{0:dd_MM_yyyy}_freesourcetv_com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freeiptv.io</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>FreeIPTV.io</Name>
     <UrlFormat>https://freeiptv.io/m3u/ypi0x_normal.php?c=RO</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>inedittv</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>Inedit TV</Name>
     <UrlFormat>http://inedittv.ro/live-tv/canal/index.m3u8</UrlFormat>
   </PlaylistProviderEntity>

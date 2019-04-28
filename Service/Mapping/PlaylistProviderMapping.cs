@@ -12,6 +12,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
         {
             PlaylistProvider serviceModel = new PlaylistProvider();
             serviceModel.Id = dataObject.Id;
+            serviceModel.IsEnabled = dataObject.IsEnabled;
             serviceModel.Name = dataObject.Name;
             serviceModel.UrlFormat = dataObject.UrlFormat;
 
@@ -22,6 +23,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
         {
             PlaylistProviderEntity dataObject = new PlaylistProviderEntity();
             dataObject.Id = serviceModel.Id;
+            dataObject.IsEnabled = serviceModel.IsEnabled;
             dataObject.Name = serviceModel.Name;
             dataObject.UrlFormat = serviceModel.UrlFormat;
 

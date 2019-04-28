@@ -43,8 +43,15 @@ namespace IptvPlaylistFetcher.Service
 
         public string GatherPlaylist()
         {
-            channelDefinitions = channelRepository.GetAll().ToServiceModels();
-            playlistProviders = playlistProviderRepository.GetAll().ToServiceModels();
+            channelDefinitions = channelRepository
+                .GetAll()
+                .Where(x => x.IsEnabled)
+                .ToServiceModels();
+
+            playlistProviders = playlistProviderRepository
+                .GetAll()
+                .Where(x => x.IsEnabled)
+                .ToServiceModels();
 
             Playlist playlist = new Playlist();
             IEnumerable<Playlist> providerPlaylists = playlistFetcher.FetchProviderPlaylists(playlistProviders);
