@@ -71,7 +71,11 @@ namespace IptvPlaylistFetcher.Service
             foreach (Channel unmatchedChannel in unmatchedChannelNames)
             {
                 Console.WriteLine($"Unmatched channel: '{unmatchedChannel.Name}'");
-                playlist.Channels.Add(unmatchedChannel);
+
+                if (settings.CanIncludeUnmatchedChannels)
+                {
+                    playlist.Channels.Add(unmatchedChannel);
+                }
             }
 
             playlist.Channels = playlist.Channels

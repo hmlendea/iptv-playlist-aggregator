@@ -14,6 +14,8 @@ namespace IptvPlaylistFetcher.Core.Configuration
 
         public int DaysToCheck { get; set; }
 
+        public bool CanIncludeUnmatchedChannels { get; set; }
+
         public bool AreTvGuideTagsEnabled { get; set; }
     }
 }
