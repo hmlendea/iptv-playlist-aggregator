@@ -8,7 +8,7 @@ namespace IptvPlaylistFetcher.DataAccess.DataObjects
 
         public string Name { get; set; }
 
-        public string Category { get; set; }
+        public string Group { get; set; }
 
         public string LogoUrl { get; set; }
 

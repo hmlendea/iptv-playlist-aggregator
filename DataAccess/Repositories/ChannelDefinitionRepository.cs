@@ -11,9 +11,7 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
 {
     public sealed class ChannelDefinitionRepository : IChannelDefinitionRepository
     {
-        const char CsvFieldSeparator = ',';
-        const char CsvCollectionSeparator = '|';
-        const string UnknownCategoryPlaceholder = "???";
+        const string UnknownGroupPlaceholder = "???";
 
         readonly ApplicationSettings settings;
 
@@ -30,6 +28,14 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
             using (TextReader reader = new StreamReader(settings.ChannelStorePath))
             {
                 entities = (IEnumerable<ChannelDefinitionEntity>)serializer.Deserialize(reader);
+            }
+
+            foreach (ChannelDefinitionEntity channelDef in entities)
+            {
+                if (string.IsNullOrWhiteSpace(channelDef.Group))
+                {
+                    channelDef.Group = UnknownGroupPlaceholder;
+                }
             }
 
             return entities;
