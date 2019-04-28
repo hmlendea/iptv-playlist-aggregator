@@ -72,7 +72,8 @@ namespace IptvPlaylistFetcher.Service
             {
                 Console.WriteLine($"Unmatched channel: '{unmatchedChannel.Name}'");
 
-                if (settings.CanIncludeUnmatchedChannels)
+                if (settings.CanIncludeUnmatchedChannels &&
+                    mediaStreamStatusChecker.IsStreamAlive(unmatchedChannel.Url))
                 {
                     playlist.Channels.Add(unmatchedChannel);
                 }

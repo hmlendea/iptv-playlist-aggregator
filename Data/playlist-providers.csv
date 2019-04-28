@@ -33,3 +33,11 @@ tousecurity1,Tousecurity 1,https://sites.google.com/site/uup4mee/Romania%20M3u%2
 tousecurity2-1,Tousecurity 2,https://sites.google.com/site/uup4mee/Romania%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0&d=1
 tousecurity2-2,Tousecurity 2 Backup 1,https://sites.google.com/site/uploadingy/Romania%20M3u%20%281%29%20.m3u?attredirects=0&d=1
 tousecurity2-3,Tousecurity 2 Backup 2,https://sites.google.com/site/uploadingy/Romania%20M3u%20%282%29%20.m3u?attredirects=0&d=1
+albaiaiptv,Albania IPTV,http://albaniaiptv.info/iptv/ro-playlist-m3u-{0:dd-MM-yyyy}.m3u
+iptvsat1,IPTVsat Main,https://www.iptvsat.com/dn/romania.m3u
+iptvsat2,IPTVsat Backup,https://www.iptvsat.com/dn/romania1.m3u
+m3uplaylist,M3U Playlist,http://m3uplaylist.com/m3u-files/romania_iptv_m3uplaylist_com.m3u
+freesourcetv-ro,Free Source TV Romania,http://freesourcetv.com/m3u-files/romania_iptv_{0:dd_MM_yyyy}_freesourcetv_com.m3u
+freesourcetv-md,Free Source TV Moldova,http://freesourcetv.com/m3u-files/moldova_iptv_{0:dd_MM_yyyy}_freesourcetv_com.m3u
+freeiptv.io,FreeIPTV.io,https://freeiptv.io/m3u/ypi0x_normal.php?c=RO
+inedittv,Inedit TV,http://inedittv.ro/live-tv/canal/index.m3u8

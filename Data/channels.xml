@@ -1192,7 +1192,9 @@
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>||RO|| HIT MUSIC CHANNEL</string>
+      <string>||ROM|| HIT MUSIC</string>
       <string>RO | HIT CH</string>
+      <string>RO: H!T Music Channel</string>
       <string>RO: Hit Music Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1204,6 +1206,15 @@
     <Aliases>
       <string>RO | INFORMATIA TV</string>
       <string>RO: Informatia TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>infinittv</Id>
+    <Name>Infinit TV</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mici/infinit-tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: INFINIT TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1519,6 +1530,7 @@
       <string>||RO|| NEPTUN TV</string>
       <string>||ROM|| NEPTUM TV</string>
       <string>||ROM|| NEPTUN TV</string>
+      <string>Neptun tv</string>
       <string>NeptunTV</string>
       <string>RO: Neptun TV</string>
       <string>RO: Neptun</string>
@@ -1545,6 +1557,7 @@
       <string>RO | TELE MOLDOVA</string>
       <string>RO: Tele Moldova Plus</string>
       <string>RO: TeleMoldovaPlus</string>
+      <string>TeleMoldova+</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1899,6 +1912,7 @@
       <string>RO | Somax TV</string>
       <string>RO: Somax TV</string>
       <string>RO:SOMAX TV</string>
+      <string>Somax tv</string>
       <string>Somax</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2092,6 +2106,15 @@
       <string>RO | Tele M</string>
       <string>RO:TELE M</string>
       <string>Tele M</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>telem_botosani</Id>
+    <Name>Tele M Botosani</Name>
+    <Category>Local</Category>
+    <LogoUrl>http://stvron.com/canale/mari/tele-m-botosani.png</LogoUrl>
+    <Aliases>
+      <string>TeleM Botosani</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
