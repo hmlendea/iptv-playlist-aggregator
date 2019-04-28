@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -12,6 +13,7 @@ namespace IptvPlaylistFetcher.Service
     public sealed class MediaStreamStatusChecker : IMediaStreamStatusChecker
     {
         const char CsvFieldSeparator = ',';
+        const string TimestampFormat = "yyyy-MM-dd_HH-mm-ss";
 
         readonly ApplicationSettings settings;
 
@@ -87,10 +89,14 @@ namespace IptvPlaylistFetcher.Service
 
                 string url = fields[0];
                 bool isAlive = bool.Parse(fields[1]);
-                DateTime lastCheckTime = DateTime.Parse(fields[2]);
+                DateTime lastCheckTime = DateTime.ParseExact(
+                    fields[2].Replace("\r", "").Replace("\n", ""),
+                    TimestampFormat,
+                    CultureInfo.InvariantCulture);
 
                 if (DateTime.UtcNow > lastCheckTime.AddMinutes(settings.MediaStreamStatusCacheTimeoutMins))
                 {
+                    Console.WriteLine($"Expired cache " + fields[2] + " " + lastCheckTime);
                     continue;
                 }
 
@@ -109,10 +115,14 @@ namespace IptvPlaylistFetcher.Service
 
             foreach (MediaStreamStatus status in statuses.Values)
             {
+                string timestamp = status.LastCheckTime.ToString(
+                    TimestampFormat,
+                    CultureInfo.InvariantCulture);
+
                 cacheFile +=
                     $"{status.Url}{CsvFieldSeparator}" +
                     $"{status.IsAlive}{CsvFieldSeparator}" +
-                    $"{status.LastCheckTime}{Environment.NewLine}";
+                    $"{timestamp}{Environment.NewLine}";
             }
 
             string filePath = Path.Combine(

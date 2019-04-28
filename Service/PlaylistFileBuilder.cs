@@ -43,9 +43,9 @@ namespace IptvPlaylistFetcher.Service
                         file += $" {TvGuideLogoTagKey}=\"{channel.LogoUrl}\"";
                     }
 
-                    if (!string.IsNullOrWhiteSpace(channel.Category))
+                    if (!string.IsNullOrWhiteSpace(channel.Group))
                     {
-                        file += $" {TvGuideGroupTagKey}=\"{channel.Category}\"";
+                        file += $" {TvGuideGroupTagKey}=\"{channel.Group}\"";
                     }
                 }
                 
