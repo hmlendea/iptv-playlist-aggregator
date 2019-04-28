@@ -53,7 +53,7 @@ namespace IptvPlaylistFetcher.Service
             {
                 UriBuilder uriBuilder = new UriBuilder(url);
                 HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(uriBuilder.Uri);
-                request.Timeout = 2000;
+                request.Timeout = 3000;
 
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 

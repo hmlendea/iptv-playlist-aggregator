@@ -90,7 +90,9 @@ namespace IptvPlaylistFetcher.Service
         {
             IEnumerable<Channel> unmatchedChannels = providerPlaylists
                 .SelectMany(x => x.Channels)
-                .Where(x => channelDefinitions.All(y => !y.Aliases.Contains(x.Name)));
+                .Where(x => channelDefinitions.All(y => !y.Aliases.Contains(x.Name)))
+                .GroupBy(x => x.Name)
+                .Select(g => g.FirstOrDefault());
             
             IEnumerable<Channel> processedUnmatchedChannels = unmatchedChannels
                 .Select(x => new Channel
