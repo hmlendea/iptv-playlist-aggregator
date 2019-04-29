@@ -180,6 +180,19 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>AgroTV.md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Agro TV Moldova</Name>
+    <Group>Local - Basarabia</Group>
+    <LogoUrl>https://www.rabota.md/uploads/2017_07_07_10_01_50_logo.png</LogoUrl>
+    <Aliases>
+      <string>MD: AGRO TV</string>
+      <string>MD: Agro TV</string>
+      <string>Md: Agro Tv</string>
+      <string>MD: Agro</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>AlfaOmegaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Alfa &amp; Omega</Name>
@@ -193,6 +206,7 @@
       <string>Ro: Alfa &amp; Omega</string>
       <string>RO: ALFA OMEGA TV</string>
       <string>RO: Alfa Omega</string>
+      <string>RO: AlfaOmega TV</string>
       <string>RO:ALFA OMEGA</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -633,7 +647,7 @@
   <ChannelDefinitionEntity>
     <Id>ComedyEst.ro</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Cinemaraton</Name>
+    <Name>Comedy Est</Name>
     <Group>Film</Group>
     <LogoUrl>https://restxyz.akta.ro/assets/images/comedyest_poster.png</LogoUrl>
     <Aliases>
@@ -1026,6 +1040,7 @@
     <Aliases>
       <string>||ROM|| DA VINCI LEARNING</string>
       <string>RO: Da Vinci Learning</string>
+      <string>RO: DaVinci Learning</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1636,6 +1651,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>jasmintv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Jasmin TV</Name>
+    <Group>Music</Group>
+    <LogoUrl>https://scontent.fomr1-1.fna.fbcdn.net/v/t1.0-9/11046972_1547016762228097_8978976372468915740_n.png?_nc_cat=109&amp;_nc_ht=scontent.fomr1-1.fna&amp;oh=8df2ed1cd1fd688ba368ce537ea6a83b&amp;oe=5D2F9A04</LogoUrl>
+    <Aliases>
+      <string>RO: Jasmin TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>BalkanikaMusicTv.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Balkanika TV</Name>
@@ -1673,7 +1698,7 @@
     <Id>LookPlus.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Look Plus</Name>
-    <Group>Sport</Group>
+    <Group></Group>
     <LogoUrl>http://lookplus.ro/wp-content/uploads/2018/09/lp-v-hd-tag-300px.png</LogoUrl>
     <Aliases>
       <string>||RO|| LOOK PLUS</string>
@@ -1916,6 +1941,7 @@
       <string>Ro: NatGeoWild</string>
       <string>RO: National Geo Wild</string>
       <string>RO: NATIONAL Geo wild</string>
+      <string>RO: National Geographic Wild</string>
       <string>RO: NGC WILD</string>
       <string>RO:NATIONAL GEO WILD</string>
     </Aliases>
@@ -2241,6 +2267,17 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>protv-news</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Pro TV News</Name>
+    <Group>General</Group>
+    <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/5/56/Pro_TV_News_logo_2017.png</LogoUrl>
+    <Aliases>
+      <string>RO: ProTv News</string>
+      <string>RO: ProTV News</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>ProTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro TV</Name>
@@ -2386,8 +2423,9 @@
     <Group></Group>
     <LogoUrl>http://stvron.com/canale/mari/telestar-1.png</LogoUrl>
     <Aliases>
-      <string>RO: Telestar 1 TV</string>
       <string>RO | Telestar 1</string>
+      <string>RO: Telestar 1 TV</string>
+      <string>RO: Telestar</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2522,8 +2560,9 @@
     <Group>Local - Transilvania</Group>
     <LogoUrl>http://tvtolive.com/wp-content/uploads/S%C3%A2ngeorz-TV-tvtolive.com_.jpg</LogoUrl>
     <Aliases>
-      <string>RO:STV</string>
       <string>RO | Sangeorz TV</string>
+      <string>RO: Sangeorz TV</string>
+      <string>RO:STV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2785,7 +2824,7 @@
     <Id>TravelChannel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Travel Channel</Name>
-    <Group></Group>
+    <Group>Lifestyle</Group>
     <LogoUrl>https://static.iptv-epg.com/ro/TravelChannel.ro.png</LogoUrl>
     <Aliases>
       <string>RO: Travel Channel FHD</string>
@@ -2939,6 +2978,17 @@
   <ChannelDefinitionEntity>
     <Id>TVH.ro</Id>
     <IsEnabled>true</IsEnabled>
+    <Name>TVH</Name>
+    <Group></Group>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Ro- TV H</string>
+      <string>RO: TV H</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVH20.ro</Id>
+    <IsEnabled>true</IsEnabled>
     <Name>TVH 20</Name>
     <Group></Group>
     <LogoUrl></LogoUrl>
@@ -2947,7 +2997,6 @@
       <string>||RO|| TVH2O</string>
       <string>||ROM|| TVH20</string>
       <string>||ROM|| TVH2O</string>
-      <string>Ro- TV H</string>
       <string>Ro: TVH 20</string>
       <string>TVH 20</string>
     </Aliases>
@@ -3109,6 +3158,7 @@
     <Group>Local - Basarabia</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/de/Logo_TVR_Moldova.svg/1280px-Logo_TVR_Moldova.svg.png</LogoUrl>
     <Aliases>
+      <string>MD: TVR Moldova</string>
       <string>RO: TVR Moldova</string>
       <string>TVR Moldova </string>
     </Aliases>
@@ -3243,6 +3293,7 @@
     <LogoUrl>http://canal33.ro/wp-content/uploads/2017/12/logo.jpg</LogoUrl>
     <Aliases>
       <string>RO: Canal 33</string>
+      <string>RO: Canal33</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3303,7 +3354,17 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>jurnaltv</Id>
+    <Id>BusuiocTV.md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Busuioc TV</Name>
+    <Group>Music</Group>
+    <LogoUrl>https://busuioctv.md/wp-content/uploads/2018/03/cropped-Favicon-Busuioc.png</LogoUrl>
+    <Aliases>
+      <string>MD: Busuioc TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>JurnalTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Jurnal TV</Name>
     <Group></Group>
@@ -3313,7 +3374,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>noroctv</Id>
+    <Id>Noroc.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Noroc TV</Name>
     <Group></Group>
@@ -3397,6 +3458,7 @@
     <Aliases>
       <string>Bit TV (ROM)</string>
       <string>RO | Bit TV</string>
+      <string>RO: BIT TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3430,6 +3492,7 @@
     <Group>Local - Basarabia</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_TV8_%282017%29.svg/2000px-Logo_TV8_%282017%29.svg.png</LogoUrl>
     <Aliases>
+      <string>MD: TV8</string>
       <string>TV8 Moldova</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -3464,6 +3527,7 @@
     <LogoUrl>http://goldtv.md/GoldTVLogo1.gif</LogoUrl>
     <Aliases>
       <string>Gold TV (Moldova)</string>
+      <string>MD: Gold TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
 </ArrayOfChannelDefinitionEntity>
