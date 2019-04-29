@@ -6,6 +6,8 @@ namespace IptvPlaylistFetcher.DataAccess.DataObjects
 
         public bool IsEnabled { get; set; }
 
+        public int Priority { get; set; }
+
         public string Name { get; set; }
 
         public string UrlFormat { get; set; }

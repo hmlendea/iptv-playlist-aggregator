@@ -27,6 +27,15 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
                 entities = (IEnumerable<PlaylistProviderEntity>)serializer.Deserialize(reader);
             }
 
+            // TODO: This is a very ugly, yet very quick fix
+            foreach (PlaylistProviderEntity entity in entities)
+            {
+                if (entity.Priority <= 0)
+                {
+                    entity.Priority = 99999;
+                }
+            }
+
             return entities;
         }
     }

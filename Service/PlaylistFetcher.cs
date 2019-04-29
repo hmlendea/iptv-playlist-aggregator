@@ -31,19 +31,25 @@ namespace IptvPlaylistFetcher.Service
 
         public IEnumerable<Playlist> FetchProviderPlaylists(IEnumerable<PlaylistProvider> providers)
         {
-            ConcurrentBag<Playlist> playlists = new ConcurrentBag<Playlist>();
+            ConcurrentDictionary<int, Playlist> playlists = new ConcurrentDictionary<int, Playlist>();
 
+            Console.WriteLine($"Getting the playlists from the providers ...");
             Parallel.ForEach(providers, provider =>
             {
                 Playlist playlist = FetchProviderPlaylist(provider);
 
                 if (!(playlist is null))
                 {
-                    playlists.Add(playlist);
+                    playlists.AddOrUpdate(
+                        provider.Priority,
+                        playlist,
+                        (key, oldValue) => playlist);
                 }
             });
 
-            return playlists;
+            return playlists
+                .OrderBy(x => x.Key)
+                .Select(x => x.Value);
         }
 
         public Playlist FetchProviderPlaylist(PlaylistProvider provider)
@@ -113,7 +119,7 @@ namespace IptvPlaylistFetcher.Service
         {
             string url = string.Format(provider.UrlFormat, date);
 
-            using (FileDownloader client = new FileDownloader())
+            using (FileDownloader client = new FileDownloader(500))
             {
                 try
                 {
@@ -124,15 +130,12 @@ namespace IptvPlaylistFetcher.Service
                     {
                         SaveProviderPlaylistToCache(provider.Id, date, fileContent);
 
-                        Console.WriteLine($"[S] GET '{url}'");
-
                         return playlist;
                     }
                 }
                 catch { }
             }
 
-            Console.WriteLine($"[F] GET '{url}'");
             return null;
         }
     }

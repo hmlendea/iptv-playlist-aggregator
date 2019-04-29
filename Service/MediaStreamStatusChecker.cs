@@ -96,7 +96,6 @@ namespace IptvPlaylistFetcher.Service
 
                 if (DateTime.UtcNow > lastCheckTime.AddMinutes(settings.MediaStreamStatusCacheTimeoutMins))
                 {
-                    Console.WriteLine($"Expired cache " + fields[2] + " " + lastCheckTime);
                     continue;
                 }
 

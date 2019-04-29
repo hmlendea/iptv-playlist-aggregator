@@ -54,11 +54,17 @@ namespace IptvPlaylistFetcher.Service
                 .ToServiceModels();
 
             Playlist playlist = new Playlist();
-            IEnumerable<Playlist> providerPlaylists = playlistFetcher.FetchProviderPlaylists(playlistProviders);
+            IEnumerable<Channel> providerChannels = playlistFetcher
+                .FetchProviderPlaylists(playlistProviders)
+                .SelectMany(x => x.Channels)
+                .GroupBy(x => x.Url)
+                .Select(g => g.FirstOrDefault());
+            
+            Console.WriteLine($"Getting channel URLs ...");
 
             foreach (ChannelDefinition channelDef in channelDefinitions.Where(x => x.IsEnabled))
             {
-                string channelUrl = GetChannelUrl(channelDef, providerPlaylists);
+                string channelUrl = GetChannelUrl(channelDef, providerChannels);
 
                 if (!string.IsNullOrWhiteSpace(channelUrl))
                 {
@@ -73,16 +79,20 @@ namespace IptvPlaylistFetcher.Service
                 }
             }
 
-            IEnumerable<Channel> unmatchedChannelNames = GetUnmatchedChannels(providerPlaylists);
-            
-            foreach (Channel unmatchedChannel in unmatchedChannelNames)
+            if (settings.CanIncludeUnmatchedChannels)
             {
-                Console.WriteLine($"Unmatched channel: '{unmatchedChannel.Name}'");
+                Console.WriteLine($"Getting unmatched channels ...");
+                
+                IEnumerable<Channel> unmatchedChannels = GetUnmatchedChannels(providerChannels);
 
-                if (settings.CanIncludeUnmatchedChannels &&
-                    mediaStreamStatusChecker.IsStreamAlive(unmatchedChannel.Url))
+                foreach (Channel unmatchedChannel in unmatchedChannels)
                 {
-                    playlist.Channels.Add(unmatchedChannel);
+                    Console.WriteLine($"Unmatched channel: '{unmatchedChannel.Name}'");
+
+                    if (mediaStreamStatusChecker.IsStreamAlive(unmatchedChannel.Url))
+                    {
+                        playlist.Channels.Add(unmatchedChannel);
+                    }
                 }
             }
 
@@ -90,18 +100,17 @@ namespace IptvPlaylistFetcher.Service
                 .OrderBy(x => x.Group)
                 .ThenBy(x => x.Name)
                 .ToList();
-            
+
             return playlistFileBuilder.BuildFile(playlist);
         }
 
-        IEnumerable<Channel> GetUnmatchedChannels(IEnumerable<Playlist> providerPlaylists)
+        IEnumerable<Channel> GetUnmatchedChannels(IEnumerable<Channel> providerChannels)
         {
-            IEnumerable<Channel> unmatchedChannels = providerPlaylists
-                .SelectMany(x => x.Channels)
+            IEnumerable<Channel> unmatchedChannels = providerChannels
                 .GroupBy(x => x.Name)
                 .Select(g => g.FirstOrDefault())
                 .Where(x => channelDefinitions.All(y => !DoChannelNamesMatch(x.Name, y.Aliases)));
-            
+
             IEnumerable<Channel> processedUnmatchedChannels = unmatchedChannels
                 .Select(x => new Channel
                 {
@@ -110,34 +119,27 @@ namespace IptvPlaylistFetcher.Service
                     Group = "zzz UNKNOWN",
                     Url = x.Url
                 });
-            
+
             return processedUnmatchedChannels.OrderBy(x => x.Name);
         }
 
-        string GetChannelUrl(ChannelDefinition channelDef, IEnumerable<Playlist> providerPlaylists)
+        string GetChannelUrl(ChannelDefinition channelDef, IEnumerable<Channel> providerChannels)
         {
-            Console.WriteLine($"Getting URL for '{channelDef.Name}'");
-
-            foreach (Playlist providerPlaylist in providerPlaylists)
+            foreach (Channel providerChannel in providerChannels)
             {
-                IEnumerable<Channel> matchingChannels =
-                    providerPlaylist.Channels.Where(x => DoChannelNamesMatch(x.Name, channelDef.Aliases));
-                
-                foreach (Channel matchingChannel in matchingChannels)
+                if (!DoChannelNamesMatch(providerChannel.Name, channelDef.Aliases))
                 {
-                    Console.Write(".");
+                    continue;
+                }
 
-                    bool isAlive = mediaStreamStatusChecker.IsStreamAlive(matchingChannel.Url);
+                bool isAlive = mediaStreamStatusChecker.IsStreamAlive(providerChannel.Url);
 
-                    if (isAlive)
-                    {
-                        Console.WriteLine();
-                        return matchingChannel.Url;
-                    }
+                if (isAlive)
+                {
+                    return providerChannel.Url;
                 }
             }
 
-            Console.WriteLine();
             return null;
         }
 
@@ -149,10 +151,17 @@ namespace IptvPlaylistFetcher.Service
 
         string NormaliseChannelName(string name)
         {
-            return name
-                .Where(char.IsLetterOrDigit)
-                .ToString()
-                .ToUpper();
+            string normalisedName = string.Empty;
+
+            foreach (char c in name)
+            {
+                if (char.IsLetterOrDigit(c))
+                {
+                    normalisedName += char.ToUpper(c);
+                }
+            }
+            
+            return normalisedName;
         }
     }
 }

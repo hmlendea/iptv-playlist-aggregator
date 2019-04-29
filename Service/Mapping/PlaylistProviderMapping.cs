@@ -13,6 +13,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
             PlaylistProvider serviceModel = new PlaylistProvider();
             serviceModel.Id = dataObject.Id;
             serviceModel.IsEnabled = dataObject.IsEnabled;
+            serviceModel.Priority = dataObject.Priority;
             serviceModel.Name = dataObject.Name;
             serviceModel.UrlFormat = dataObject.UrlFormat;
             serviceModel.ChannelNameOverride = dataObject.ChannelNameOverride;
@@ -25,6 +26,7 @@ namespace IptvPlaylistFetcher.Service.Mapping
             PlaylistProviderEntity dataObject = new PlaylistProviderEntity();
             dataObject.Id = serviceModel.Id;
             dataObject.IsEnabled = serviceModel.IsEnabled;
+            dataObject.Priority = serviceModel.Priority;
             dataObject.Name = serviceModel.Name;
             dataObject.UrlFormat = serviceModel.UrlFormat;
             dataObject.ChannelNameOverride = serviceModel.ChannelNameOverride;
