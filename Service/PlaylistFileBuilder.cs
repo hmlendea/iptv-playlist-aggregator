@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-using IptvPlaylistFetcher.Core.Configuration;
+using IptvPlaylistFetcher.Configuration;
 using IptvPlaylistFetcher.Service.Models;
 
 namespace IptvPlaylistFetcher.Service

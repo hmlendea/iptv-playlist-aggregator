@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using IptvPlaylistFetcher.Core.Configuration;
+using IptvPlaylistFetcher.Configuration;
 using IptvPlaylistFetcher.DataAccess.Repositories;
 using IptvPlaylistFetcher.Service.Mapping;
 using IptvPlaylistFetcher.Service.Models;

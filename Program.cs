@@ -4,23 +4,47 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
+
+using IptvPlaylistFetcher.Configuration;
+using IptvPlaylistFetcher.DataAccess.Repositories;
+using IptvPlaylistFetcher.Service;
 
 namespace IptvPlaylistFetcher
 {
     public class Program
     {
+        static ApplicationSettings applicationSettings;
+
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
-        }
+            IConfiguration config = LoadConfiguration();
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
-            => WebHost
-                .CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+            applicationSettings = new ApplicationSettings();
+            config.Bind(nameof(ApplicationSettings), applicationSettings);
+
+            IServiceProvider serviceProvider = new ServiceCollection()
+                .AddSingleton(applicationSettings)
+                .AddScoped<IPlaylistAggregator, PlaylistAggregator>()
+                .AddScoped<IPlaylistFetcher, PlaylistFetcher>()
+                .AddScoped<IPlaylistFileBuilder, PlaylistFileBuilder>()
+                .AddSingleton<IMediaStreamStatusChecker, MediaStreamStatusChecker>()
+                .AddScoped<IChannelDefinitionRepository, ChannelDefinitionRepository>()
+                .AddScoped<IPlaylistProviderRepository, PlaylistProviderRepository>()
+                .BuildServiceProvider();
+
+            IPlaylistAggregator aggregator = serviceProvider.GetService<IPlaylistAggregator>();
+
+            string playlistFile = aggregator.GatherPlaylist();
+            File.WriteAllText(applicationSettings.OutputPlaylistPath, playlistFile);
+        }
+        
+        static IConfiguration LoadConfiguration()
+        {
+            return new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json", true, true)
+                .Build();
+        }
     }
 }

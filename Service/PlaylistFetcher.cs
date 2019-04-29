@@ -7,7 +7,7 @@ using System.Net;
 using System.Threading.Tasks;
 
 using IptvPlaylistFetcher.Communication;
-using IptvPlaylistFetcher.Core.Configuration;
+using IptvPlaylistFetcher.Configuration;
 using IptvPlaylistFetcher.DataAccess.Repositories;
 using IptvPlaylistFetcher.Service.Mapping;
 using IptvPlaylistFetcher.Service.Models;

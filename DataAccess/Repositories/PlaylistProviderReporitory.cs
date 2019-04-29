@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
 
-using IptvPlaylistFetcher.Core.Configuration;
+using IptvPlaylistFetcher.Configuration;
 using IptvPlaylistFetcher.DataAccess.DataObjects;
 
 namespace IptvPlaylistFetcher.DataAccess.Repositories
