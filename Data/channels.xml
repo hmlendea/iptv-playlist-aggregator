@@ -36,9 +36,10 @@
     <IsEnabled>true</IsEnabled>
     <Name>Alpha Media</Name>
     <Group>Local - Dobrogea</Group>
-    <LogoUrl>http://stvron.com/canale/mari/tv-alpha-media.png</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mici/tv-alpha-media.png</LogoUrl>
     <Aliases>
       <string>RO | Alpha Media TV</string>
+      <string>RO: Alpha Media TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -81,7 +82,7 @@
     <Id>AccentTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Accent TV</Name>
-    <Group></Group>
+    <Group>Local - Basarabia</Group>
     <LogoUrl>http://curentul.md/wp-content/uploads/2017/10/accent-tv.jpg</LogoUrl>
     <Aliases>
       <string>Accent TV</string>
@@ -137,7 +138,9 @@
       <string>KIT Tv</string>
       <string>RO | ACUM TV</string>
       <string>RO: Acum TV</string>
+      <string>RO: TV Kit</string>
       <string>RO:ACUM TV</string>
+      <string>RO:TV Kit</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -154,7 +157,7 @@
   <ChannelDefinitionEntity>
     <Id>tele2drobeta</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Tele 2</Name>
+    <Name>Tele 2 Drobeta</Name>
     <Group>Local - Oltenia</Group>
     <LogoUrl>https://tele2drobeta.ro/wp-content/uploads/2018/03/cropped-SIGLA_00002.png</LogoUrl>
     <Aliases>
@@ -433,6 +436,8 @@
       <string>RO: B1 HD</string>
       <string>RO: B1 Tv</string>
       <string>RO: B1 TV</string>
+      <string>RO: B1 TV S1</string>
+      <string>RO: B1 TV S2</string>
       <string>RO: B1</string>
       <string>Ro: B1</string>
     </Aliases>
@@ -444,8 +449,9 @@
     <Group>Educational</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/BBC_Earth.jpg/125px-BBC_Earth.jpg</LogoUrl>
     <Aliases>
-      <string>RO: BBC Earth HD</string>
       <string>BBC Earth HD</string>
+      <string>RO: BBC Earth HD</string>
+      <string>RO: BBC Earth</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -611,6 +617,27 @@
       <string>Cinethronix</string>
       <string>Ro: Ciné Thronix</string>
       <string>RO: Cinethronix SD</string>
+      <string>RO: Cinethronix</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Cinemaraton.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Cinemaraton</Name>
+    <Group>Film</Group>
+    <LogoUrl>https://restxyz.akta.ro/assets/images/cinemaraton_poster.png</LogoUrl>
+    <Aliases>
+      <string>RO: Cinemaraton</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ComedyEst.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Cinemaraton</Name>
+    <Group>Film</Group>
+    <LogoUrl>https://restxyz.akta.ro/assets/images/comedyest_poster.png</LogoUrl>
+    <Aliases>
+      <string>RO: Comedy Est</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -659,6 +686,16 @@
       <string>Ro- DIBI TV HD</string>
       <string>RO: DIBI TV (Music) Balkan</string>
       <string>RO: Dibi TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>DJingTV.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>DJing TV</Name>
+    <Group>Music</Group>
+    <LogoUrl>https://pbs.twimg.com/profile_images/753627557917065216/G_-_PzF9_400x400.jpg</LogoUrl>
+    <Aliases>
+      <string>RO: DJing TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -838,44 +875,6 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>Digi24Cluj.ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Name>Digi24 Cluj</Name>
-    <Group>Local - Transilvania</Group>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
-    <Aliases>
-      <string>[ RO ] DIGI 24 Cluj</string>
-      <string>Digi24 Cluj</string>
-      <string>RO: Digi 24 Cluj</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>Digi24Craiova.ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Name>Digi24 Craiova</Name>
-    <Group>Local - Oltenia</Group>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
-    <Aliases>
-      <string>[ RO ] DIGI 24 Craiova</string>
-      <string>Digi24 Craiova</string>
-      <string>RO: Digi 24 Craiova</string>
-      <string>RO: DIGI 24 Craiova</string>
-      <string>RO: DIGI 24 CRAIOVA</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>Digi24Galati.ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Name>Digi24 Galati</Name>
-    <Group>Local - Moldova</Group>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
-    <Aliases>
-      <string>[ RO ] DIGI 24 Galati</string>
-      <string>Digi24 Galati</string>
-      <string>RO: Digi 24 Galati</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>Digi24.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24</Name>
@@ -907,9 +906,115 @@
       <string>RO: DIGI 24</string>
       <string>RO: Digi 24</string>
       <string>Ro: Digi 24</string>
+      <string>RO: Digi24 S1</string>
+      <string>RO: Digi24 S2</string>
       <string>RO: Digi24</string>
       <string>RO:Digi 24</string>
       <string>RO:DIGI 24</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Digi24Oradea.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Digi24 Oradea</Name>
+    <Group>Local - Crisana</Group>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>[ RO ] DIGI 24 Oradea</string>
+      <string>Digi24 Oradea</string>
+      <string>RO: Digi 24 Oradea</string>
+      <string>RO: Digi24 Oradea</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Digi24Cluj.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Digi24 Cluj</Name>
+    <Group>Local - Transilvania</Group>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>[ RO ] DIGI 24 Cluj</string>
+      <string>Digi24 Cluj</string>
+      <string>RO: Digi 24 Cluj</string>
+      <string>RO: Digi24 Cluj</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Digi24Brasov.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Digi24 Brasov</Name>
+    <Group>Local - Transilvania</Group>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>[ RO ] DIGI 24 Brasov</string>
+      <string>Digi24 Brasov</string>
+      <string>RO: Digi 24 Brasov</string>
+      <string>RO: Digi24 Brasov</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Digi24Timis.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Digi24 Timis</Name>
+    <Group>Local - Banat</Group>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>[ RO ] DIGI 24 Timis</string>
+      <string>Digi24 Timis</string>
+      <string>RO: Digi 24 Timis</string>
+      <string>RO: Digi24 Timis</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Digi24Craiova.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Digi24 Craiova</Name>
+    <Group>Local - Oltenia</Group>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>[ RO ] DIGI 24 Craiova</string>
+      <string>Digi24 Craiova</string>
+      <string>RO: Digi 24 Craiova</string>
+      <string>RO: Digi24 Craiova</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Digi24Galati.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Digi24 Galati</Name>
+    <Group>Local - Moldova</Group>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>[ RO ] DIGI 24 Galati</string>
+      <string>Digi24 Galati</string>
+      <string>RO: Digi 24 Galati</string>
+      <string>RO: Digi24 Galati</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Digi24Iasi.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Digi24 Iasi</Name>
+    <Group>Local - Moldova</Group>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>[ RO ] DIGI 24 Iasi</string>
+      <string>Digi24 Iasi</string>
+      <string>RO: Digi 24 Iasi</string>
+      <string>RO: Digi24 Iasi</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Digi24Constanta.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Digi24 Constanta</Name>
+    <Group>Local - Dobrogea</Group>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
+    <Aliases>
+      <string>[ RO ] DIGI 24 Constanta</string>
+      <string>Digi24 Constanta</string>
+      <string>RO: Digi 24 Constanta</string>
+      <string>RO: Digi24 Constanta</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1095,6 +1200,7 @@
       <string>Epic Drama</string>
       <string>RO: Epic Drama SD</string>
       <string>RO: Epic Drama</string>
+      <string>RO: Epic</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1277,9 +1383,9 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>food_network</Id>
+    <Id>FoodNetwork.ro</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Food NEtwork</Name>
+    <Name>Food Network</Name>
     <Group></Group>
     <LogoUrl></LogoUrl>
     <Aliases>
@@ -1417,6 +1523,8 @@
       <string>RO | HIT CH</string>
       <string>RO: H!T Music Channel</string>
       <string>RO: Hit Music Channel</string>
+      <string>RO: H!T Music Channel S1</string>
+      <string>RO: H!T Music Channel S2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1448,6 +1556,8 @@
     <Group></Group>
     <LogoUrl>http://stvron.com/canale/mari/inedit-tv.png</LogoUrl>
     <Aliases>
+      <string>RO: Inedit TV S1</string>
+      <string>RO: Inedit TV S2</string>
       <string>RO: Inedit TV SD</string>
       <string>RO: INEDIT TV</string>
     </Aliases>
@@ -1462,6 +1572,16 @@
       <string>||ROM|| INTERMEDIA SUCEAVA</string>
       <string>RO | Intermedia TV</string>
       <string>RO: Intermedia Suceava</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>bucovinaTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Bucovina TV</Name>
+    <Group>Local - Bucovina</Group>
+    <LogoUrl>http://stvron.com/canale/mici/bucovina-tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Bucovina TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1507,6 +1627,8 @@
       <string>RO: KISS TV HD</string>
       <string>RO: Kiss Tv</string>
       <string>RO: Kiss TV</string>
+      <string>RO: Kiss TV S1</string>
+      <string>RO: Kiss TV S2</string>
       <string>RO: KISS TV</string>
       <string>Ro: Kiss</string>
       <string>RO: Kiss</string>
@@ -1839,14 +1961,15 @@
   <ChannelDefinitionEntity>
     <Id>NestTV.ro</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>NEst TV</Name>
+    <Name>Nord Est TV</Name>
     <Group>Local - Moldova</Group>
     <LogoUrl>https://ik.imagekit.io/ulangotv/image/upload/469250_logo_nest_tv1.png</LogoUrl>
     <Aliases>
       <string>NEst tv</string>
       <string>RO | Suceava TV</string>
-      <string>RO:NEST TV</string>
       <string>RO: NEst TV</string>
+      <string>RO: Nord Est TV</string>
+      <string>RO:NEST TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2329,6 +2452,7 @@
     <Group>Music</Group>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/8/85/Rock_TV.png</LogoUrl>
     <Aliases>
+      <string>RO: Rock TV</string>
       <string>Rock TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2340,6 +2464,16 @@
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO: HEAVY METAL TV </string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ibizaglobal-tv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Ibiza Global TV</Name>
+    <Group>Music</Group>
+    <LogoUrl>http://static-cdn2.ustream.tv/i/channel/picture/1/5/2/5/15259399/15259399_logo-cuadrado_1374184866,640x360,b:1.jpg</LogoUrl>
+    <Aliases>
+      <string>Ibiza Global TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2375,6 +2509,7 @@
       <string>RO | Somax TV</string>
       <string>RO: Somax TV</string>
       <string>RO: SOMAX TV</string>
+      <string>RO: Somax</string>
       <string>RO:SOMAX TV</string>
       <string>Somax tv</string>
       <string>Somax</string>
@@ -2612,6 +2747,8 @@
     <Aliases>
       <string>Ro- Columnta TV</string>
       <string>RO: Columna TV</string>
+      <string>RO: Columna TV S1</string>
+      <string>RO: Columna TV S2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2668,6 +2805,8 @@
       <string>RO: Travel Mix TV</string>
       <string>RO: Travel Mix</string>
       <string>Travel Mix</string>
+      <string>RO: Travel Mix S1</string>
+      <string>RO: Travel Mix S2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2766,7 +2905,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>TV5Monde.nl</Id>
+    <Id>TV5Monde.fr</Id>
     <IsEnabled>false</IsEnabled>
     <Name>TV5 Monde</Name>
     <Group>Extern</Group>
@@ -2782,6 +2921,19 @@
       <string>RO:TV5 MONDE</string>
       <string>TV5 MONDE</string>
       <string>TV5 Monde</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Frane24.fr</Id>
+    <IsEnabled>false</IsEnabled>
+    <Name>Frane24</Name>
+    <Group>Extern</Group>
+    <LogoUrl>https://static.iptv-epg.com/fr/France24.fr.png</LogoUrl>
+    <Aliases>
+      <string>France 24</string>
+      <string>France24</string>
+      <string>RO: France 24</string>
+      <string>RO: France24</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2974,8 +3126,12 @@
       <string>RO | U TV</string>
       <string>RO | UTV</string>
       <string>Ro- UTV</string>
-      <string>RO: U TV</string>
+      <string>RO: U TV S1-1</string>
+      <string>RO: U TV S1-2</string>
+      <string>RO: U TV S1</string>
+      <string>RO: U TV S2</string>
       <string>Ro: U TV</string>
+      <string>RO: U TV</string>
       <string>RO: UTV </string>
       <string>RO: UTV FHD</string>
       <string>RO: UTV HD</string>
@@ -3065,6 +3221,28 @@
       <string>Bucuresti TV</string>
       <string>Ro- Bucuresti TV</string>
       <string>RO: Bucuresti TV</string>
+      <string>RO: Bucuresti TV S1</string>
+      <string>RO: Bucuresti TV S2</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>a7tv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>A7 TV</Name>
+    <Group></Group>
+    <LogoUrl>https://a7tv.ro/wp-content/uploads/2017/12/logo-a7tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: A7 TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Canal33.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Canal 33</Name>
+    <Group>News</Group>
+    <LogoUrl>http://canal33.ro/wp-content/uploads/2017/12/logo.jpg</LogoUrl>
+    <Aliases>
+      <string>RO: Canal 33</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
