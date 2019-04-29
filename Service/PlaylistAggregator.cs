@@ -98,9 +98,9 @@ namespace IptvPlaylistFetcher.Service
         {
             IEnumerable<Channel> unmatchedChannels = providerPlaylists
                 .SelectMany(x => x.Channels)
-                .Where(x => channelDefinitions.All(y => !DoChannelNamesMatch(x.Name, y.Aliases)))
                 .GroupBy(x => x.Name)
-                .Select(g => g.FirstOrDefault());
+                .Select(g => g.FirstOrDefault())
+                .Where(x => channelDefinitions.All(y => !DoChannelNamesMatch(x.Name, y.Aliases)));
             
             IEnumerable<Channel> processedUnmatchedChannels = unmatchedChannels
                 .Select(x => new Channel
@@ -150,11 +150,8 @@ namespace IptvPlaylistFetcher.Service
         string NormaliseChannelName(string name)
         {
             return name
-                .Where(c => char.IsLetterOrDigit(c))
-                .Aggregate(
-                    new StringBuilder(),
-                    (current, next) => current.Append(next),
-                    sb => sb.ToString())
+                .Where(char.IsLetterOrDigit)
+                .ToString()
                 .ToUpper();
         }
     }

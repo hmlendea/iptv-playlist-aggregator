@@ -1,9 +1,12 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 
+using IptvPlaylistFetcher.Communication;
 using IptvPlaylistFetcher.Core.Configuration;
 using IptvPlaylistFetcher.DataAccess.Repositories;
 using IptvPlaylistFetcher.Service.Mapping;
@@ -28,9 +31,9 @@ namespace IptvPlaylistFetcher.Service
 
         public IEnumerable<Playlist> FetchProviderPlaylists(IEnumerable<PlaylistProvider> providers)
         {
-            IList<Playlist> playlists = new List<Playlist>();
+            ConcurrentBag<Playlist> playlists = new ConcurrentBag<Playlist>();
 
-            foreach (PlaylistProvider provider in providers)
+            Parallel.ForEach(providers, provider =>
             {
                 Playlist playlist = FetchProviderPlaylist(provider);
 
@@ -38,7 +41,7 @@ namespace IptvPlaylistFetcher.Service
                 {
                     playlists.Add(playlist);
                 }
-            }
+            });
 
             return playlists;
         }
@@ -110,9 +113,7 @@ namespace IptvPlaylistFetcher.Service
         {
             string url = string.Format(provider.UrlFormat, date);
 
-            Console.Write($"GET '{url}' ... ");
-
-            using (WebClient client = new WebClient())
+            using (FileDownloader client = new FileDownloader())
             {
                 try
                 {
@@ -122,7 +123,8 @@ namespace IptvPlaylistFetcher.Service
                     if (!Playlist.IsNullOrEmpty(playlist))
                     {
                         SaveProviderPlaylistToCache(provider.Id, date, fileContent);
-                        Console.WriteLine("SUCCESS");
+
+                        Console.WriteLine($"[S] GET '{url}'");
 
                         return playlist;
                     }
@@ -130,7 +132,7 @@ namespace IptvPlaylistFetcher.Service
                 catch { }
             }
 
-            Console.WriteLine("FAIL");
+            Console.WriteLine($"[F] GET '{url}'");
             return null;
         }
     }
