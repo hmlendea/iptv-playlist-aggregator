@@ -1385,7 +1385,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>History Channel</Name>
     <Group>Educational</Group>
-    <LogoUrl>https://static.iptv-epg.com/ro/HistoryChannel.ro.png</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mici/history.png</LogoUrl>
     <Aliases>
       <string>[ RO ] History Channel</string>
       <string>||RO|| HISTORY CHANNEL HD</string>
@@ -2055,7 +2055,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Pro 2</Name>
     <Group>Film</Group>
-    <LogoUrl>https://static.iptv-epg.com/ro/Pro2.ro.png</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mici/pro-2.png</LogoUrl>
     <Aliases>
       <string>[ RO ] ACASA TV</string>
       <string>||RO|| ACASA TV</string>
@@ -2087,7 +2087,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Pro Cinema</Name>
     <Group>Film</Group>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Logo_Pro_Cinema_%282017%29.svg/234px-Logo_Pro_Cinema_%282017%29.svg.png</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mici/pro-cinema.png</LogoUrl>
     <Aliases>
       <string>||RO|| PRO CINEMA</string>
       <string>||ROM|| PRO CINEMA</string>
@@ -2104,7 +2104,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Pro Gold</Name>
     <Group>Film</Group>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Logo_Pro_Gold_%282017%29.svg/234px-Logo_Pro_Gold_%282017%29.svg.png</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mici/pro-gold.png</LogoUrl>
     <Aliases>
       <string>||RO|| PRO GOLD</string>
       <string>||ROM|| PRO GOLD</string>
@@ -2591,7 +2591,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>TNT</Name>
     <Group>Film</Group>
-    <LogoUrl>https://static.iptv-epg.com/ro/TNT.ro.png</LogoUrl>
+    <LogoUrl>http://stvron.com/canale/mari/tnt.png</LogoUrl>
     <Aliases>
       <string>||RO|| TNT</string>
       <string>||ROM|| TNT</string>
