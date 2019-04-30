@@ -89,6 +89,7 @@ namespace IptvPlaylistFetcher.Service
                         channel.Name = channelDef.Name;
                         channel.Group = groups[channelDef.GroupId].Name;
                         channel.LogoUrl = channelDef.LogoUrl;
+                        channel.Number = playlist.Channels.Count + 1;
                         channel.Url = channelUrl;
 
                         playlist.Channels.Add(channel);
@@ -108,6 +109,7 @@ namespace IptvPlaylistFetcher.Service
 
                     if (mediaStreamStatusChecker.IsStreamAlive(unmatchedChannel.Url))
                     {
+                        unmatchedChannel.Number = playlist.Channels.Count + 1;
                         playlist.Channels.Add(unmatchedChannel);
                     }
                 }
@@ -128,7 +130,7 @@ namespace IptvPlaylistFetcher.Service
                 {
                     Id = Guid.NewGuid().ToString(),
                     Name = x.Name,
-                    Group = "zzz UNKNOWN",
+                    Group = "unknown",
                     Url = x.Url
                 });
 

@@ -10,6 +10,8 @@ namespace IptvPlaylistFetcher.Service.Models
 
         public string LogoUrl { get; set; }
 
+        public int Number { get; set; }
+
         public string Url { get; set; }
     }
 }

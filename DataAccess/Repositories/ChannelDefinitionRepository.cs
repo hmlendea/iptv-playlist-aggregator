@@ -11,7 +11,7 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
 {
     public sealed class ChannelDefinitionRepository : IChannelDefinitionRepository
     {
-        const string UnknownGroupPlaceholder = "???";
+        const string UnknownGroupPlaceholder = "unknown";
 
         readonly ApplicationSettings settings;
 
