@@ -12,7 +12,7 @@
     <Id>news</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>5</Priority>
-    <Name>Stiri</Name>
+    <Name>Știri</Name>
   </GroupEntity>
 
   <GroupEntity>
@@ -40,7 +40,7 @@
     <Id>international</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>30</Priority>
-    <Name>Internationale</Name>
+    <Name>Internaționale</Name>
   </GroupEntity>
 
   <GroupEntity>
@@ -152,7 +152,7 @@
     <Id>music</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>90</Priority>
-    <Name>Muzica</Name>
+    <Name>Muzică</Name>
   </GroupEntity>
 
   <GroupEntity>

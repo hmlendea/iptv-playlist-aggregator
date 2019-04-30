@@ -132,7 +132,7 @@ namespace IptvPlaylistFetcher.Service
                 {
                     Id = Guid.NewGuid().ToString(),
                     Name = x.Name,
-                    Group = "unknown",
+                    Group = groups["unknown"].Name,
                     Url = x.Url
                 });
 
