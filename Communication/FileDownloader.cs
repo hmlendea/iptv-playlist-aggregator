@@ -5,7 +5,7 @@ namespace IptvPlaylistFetcher.Communication
 {
     public sealed class FileDownloader : WebClient
     {
-        const int DefaultTimeout = 1000;
+        const int DefaultTimeout = 2000;
 
         public int Timeout { get; set; }
 

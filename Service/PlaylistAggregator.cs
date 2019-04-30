@@ -115,6 +115,8 @@ namespace IptvPlaylistFetcher.Service
                 }
             }
 
+            Console.WriteLine($"Finished aggregating {playlist.Channels.Count} channels");
+
             return playlistFileBuilder.BuildFile(playlist);
         }
 

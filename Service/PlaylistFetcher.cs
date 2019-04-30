@@ -119,7 +119,7 @@ namespace IptvPlaylistFetcher.Service
         {
             string url = string.Format(provider.UrlFormat, date);
 
-            using (FileDownloader client = new FileDownloader(500))
+            using (FileDownloader client = new FileDownloader(3000))
             {
                 try
                 {
@@ -130,12 +130,14 @@ namespace IptvPlaylistFetcher.Service
                     {
                         SaveProviderPlaylistToCache(provider.Id, date, fileContent);
 
+                        Console.WriteLine($"[ S ] GET '{url}'");
                         return playlist;
                     }
                 }
                 catch { }
             }
 
+            Console.WriteLine($"[-F-] GET '{url}'");
             return null;
         }
     }
