@@ -11,8 +11,15 @@
   <GroupEntity>
     <Id>news</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>5</Priority>
+    <Priority>4</Priority>
     <Name>Știri</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>entertainment</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>7</Priority>
+    <Name>Divertisment</Name>
   </GroupEntity>
 
   <GroupEntity>
@@ -58,58 +65,65 @@
   </GroupEntity>
 
   <GroupEntity>
-    <Id>local-banat</Id>
+    <Id>local-maramures</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>32</Priority>
+    <Name>Locale (Maramureș)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-banat</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>33</Priority>
     <Name>Locale (Banat)</Name>
   </GroupEntity>
 
   <GroupEntity>
     <Id>local-muntenia</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>33</Priority>
+    <Priority>34</Priority>
     <Name>Locale (Muntenia)</Name>
   </GroupEntity>
 
   <GroupEntity>
     <Id>local-oltenia</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>34</Priority>
+    <Priority>35</Priority>
     <Name>Locale (Oltenia)</Name>
   </GroupEntity>
 
   <GroupEntity>
     <Id>local-dobrogea</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>35</Priority>
+    <Priority>36</Priority>
     <Name>Locale (Dobrogea)</Name>
   </GroupEntity>
 
   <GroupEntity>
     <Id>local-bucovina</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>36</Priority>
+    <Priority>37</Priority>
     <Name>Locale (Bucovina)</Name>
   </GroupEntity>
 
   <GroupEntity>
     <Id>local-moldova</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>37</Priority>
+    <Priority>38</Priority>
     <Name>Locale (Moldova)</Name>
   </GroupEntity>
 
   <GroupEntity>
     <Id>local-basarabia</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>38</Priority>
+    <Priority>39</Priority>
     <Name>Locale (Basarabia)</Name>
   </GroupEntity>
 
   <GroupEntity>
     <Id>local-unknown</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>39</Priority>
+    <Priority>40</Priority>
     <Name>Locale (???)</Name>
   </GroupEntity>
 
@@ -138,14 +152,14 @@
     <Id>religious</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>70</Priority>
-    <Name>Religie</Name>
+    <Name>Religioase</Name>
   </GroupEntity>
 
   <GroupEntity>
     <Id>foreign</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>80</Priority>
-    <Name>Straine</Name>
+    <Name>Străine</Name>
   </GroupEntity>
 
   <GroupEntity>
@@ -157,7 +171,7 @@
 
   <GroupEntity>
     <Id>radio</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>100</Priority>
     <Name>Radio</Name>
   </GroupEntity>
