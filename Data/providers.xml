@@ -22,7 +22,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>11</Priority>
     <Name>DailyIPTVList 2</Name>
-    <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
+    <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-2.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -30,7 +30,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>12</Priority>
     <Name>DailyIPTVList 3</Name>
-    <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
+    <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-3.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>

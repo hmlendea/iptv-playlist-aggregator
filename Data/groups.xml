@@ -37,6 +37,13 @@
   </GroupEntity>
 
   <GroupEntity>
+    <Id>international</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>30</Priority>
+    <Name>Internationale</Name>
+  </GroupEntity>
+
+  <GroupEntity>
     <Id>local-crisana</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>30</Priority>
@@ -61,7 +68,7 @@
     <Id>local-muntenia</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>33</Priority>
-    <Name>Locale (Dobrogea)</Name>
+    <Name>Locale (Muntenia)</Name>
   </GroupEntity>
 
   <GroupEntity>

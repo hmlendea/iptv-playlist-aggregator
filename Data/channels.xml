@@ -151,6 +151,7 @@
     <LogoUrl>http://stvron.com/canale/mari/valea-prahovei-tv.png</LogoUrl>
     <Aliases>
       <string>Ro- VPTV</string>
+      <string>RO: Valea Prahovei TV HD</string>
       <string>RO: Valea Prahovei TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -177,6 +178,16 @@
       <string>RO: Agro TV</string>
       <string>Ro: Agro Tv</string>
       <string>RO: Agro</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>profit.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Profit.ro</Name>
+    <GroupId>news</GroupId>
+    <LogoUrl>http://i0.1616.ro/media/2/2621/33347/18574712/12/profitro-vertical-al.png?width=300</LogoUrl>
+    <Aliases>
+      <string>RO: Profit.ro</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -258,7 +269,7 @@
     <Id>AntenaInternational.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Antena International</Name>
-    <GroupId></GroupId>
+    <GroupId>international</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/antena-international.png</LogoUrl>
     <Aliases>
       <string>RO: Antena International HD</string>
@@ -369,8 +380,8 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/250px-AXN_Black_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
-      <string>||RO|| AXN</string>
-      <string>||ROM|| AXN</string>
+      <string>||RO|| AXN BLACK</string>
+      <string>||ROM|| AXN BLACK</string>
       <string>AXN Black</string>
       <string>RO: AXN BLACK</string>
       <string>Ro: AXN Black</string>
@@ -383,8 +394,8 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/250px-AXN_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
-      <string>||RO|| AXN BLACK</string>
-      <string>||ROM|| AXN BLACK</string>
+      <string>||RO|| AXN</string>
+      <string>||ROM|| AXN</string>
       <string>AXN HD</string>
       <string>AXN ROMANIA</string>
       <string>AXN Romania</string>
@@ -673,7 +684,7 @@
     <Id>Cromtel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Cromtel</Name>
-    <GroupId>local-unknown</GroupId>
+    <GroupId>local-bucovina</GroupId>
     <LogoUrl>http://ik.imagekit.io/ulangotv/image/upload/469249_logo_cromtel_tv1.png</LogoUrl>
     <Aliases>
       <string>Cromtel TV</string>
@@ -1553,7 +1564,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Inedit TV</Name>
     <GroupId></GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/inedit-tv.png</LogoUrl>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/5/5d/Logo-site-nou.png</LogoUrl>
     <Aliases>
       <string>RO: Inedit TV S1</string>
       <string>RO: Inedit TV S2</string>
@@ -1789,6 +1800,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>arcadia-tv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Arcadia World</Name>
+    <GroupId>sport</GroupId>
+    <LogoUrl>http://stvron.com/canale/mari/arcadia-tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Arcadia World</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>MoozRo.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>MOOZ RO!</Name>
@@ -1801,15 +1822,13 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>MTVRomania.ro</Id>
+    <Id>mtv-music24</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>MTV</Name>
+    <Name>MTV Music 24</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://static.spin.com/files/2016/09/MTV-HD-Logo-640x441.jpg</LogoUrl>
     <Aliases>
-      <string>[ RO ] MTV</string>
-      <string>MTV</string>
-      <string>RO: MTV</string>
+      <string>MTV Music 24 HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2268,7 +2287,7 @@
     <Id>protv-news</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro TV News</Name>
-    <GroupId>general</GroupId>
+    <GroupId>news</GroupId>
     <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/5/56/Pro_TV_News_logo_2017.png</LogoUrl>
     <Aliases>
       <string>RO: ProTv News</string>
@@ -2319,7 +2338,7 @@
     <Id>ProTVInternational.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro TV International</Name>
-    <GroupId>general</GroupId>
+    <GroupId>international</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Pro_TV_Interna%C8%9Bional_%282017%29.svg/234px-Logo_Pro_TV_Interna%C8%9Bional_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>||RO|| PROTV INTERNATIONAL</string>
@@ -2507,9 +2526,19 @@
     <IsEnabled>true</IsEnabled>
     <Name>Ibiza Global TV</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>http://static-cdn2.ustream.tv/i/channel/picture/1/5/2/5/15259399/15259399_logo-cuadrado_1374184866,640x360,b:1.jpg</LogoUrl>
+    <LogoUrl>https://media.watchthedj.com/logos/ibiza-global-radio-tv.jpg</LogoUrl>
     <Aliases>
       <string>Ibiza Global TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>drochia-tv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Drochia TV</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>http://stvron.com/canale/mari/drochia-tv.png</LogoUrl>
+    <Aliases>
+      <string>MD: Drochia TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2899,6 +2928,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>est-tv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Est TV</Name>
+    <GroupId>local-muntenia</GroupId>
+    <LogoUrl>http://www.tvsatmediagroup.ro/images/15063296804206_SIGLA%20EST%20TV.png</LogoUrl>
+    <Aliases>
+      <string>RO: Est TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>musceltv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Muscel TV</Name>
@@ -3142,7 +3181,7 @@
     <Id>TVRInternational.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR International</Name>
-    <GroupId>foreign</GroupId>
+    <GroupId>international</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/d9/TVRiLogo.svg/1200px-TVRiLogo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Int</string>
@@ -3189,6 +3228,26 @@
       <string>U TV</string>
       <string>UTV (Opt-1)</string>
       <string>UTV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>m2o</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Radio m2o TV</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://www.m2o.it/wp-content/themes/network-m2o/img/logo_m2o_1024x1024.png</LogoUrl>
+    <Aliases>
+      <string>RO: Radio m2o TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>1-music-channel</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Music Channel</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/e/e4/1music.jpg</LogoUrl>
+    <Aliases>
+      <string>RO: 1 Music Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3253,11 +3312,33 @@
     <Aliases>
       <string>||RO|| ZU TV</string>
       <string>||ROM|| ZU TV</string>
+      <string>RO: Radio ZU Video HD</string>
       <string>RO: ZU TV HD</string>
       <string>RO: Zu TV</string>
       <string>Ro: ZU TV</string>
       <string>ZU HD</string>
+      <string>ZU TV</string>
       <string>ZU</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>retro-tv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Retro TV</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/7/7b/Retro_Music_TV_logo.png</LogoUrl>
+    <Aliases>
+      <string>RO: Retro TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>slager-tv</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Slager TV</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mBTIF3JiRM-v2hhQb6ByqCNLV0Talt5igzvEw=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
+    <Aliases>
+      <string>RO: Slager TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3332,7 +3413,7 @@
     <Id>ElitaTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Elita TV</Name>
-    <GroupId></GroupId>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mAx7kElqoc0zrLwF7cKkYXikwzL6a6rRuo5=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>Elita TV</string>
@@ -3399,7 +3480,7 @@
     <Id>DiasporaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Diaspora TV</Name>
-    <GroupId>foreign</GroupId>
+    <GroupId>international</GroupId>
     <LogoUrl>http://www.tvdiaspora.ro/uploads/custom-logo.png</LogoUrl>
     <Aliases>
       <string>DIASPORA TV</string>
@@ -3504,6 +3585,7 @@
     <LogoUrl>https://www.deschide.md/images/cms-image-000036515.png</LogoUrl>
     <Aliases>
       <string>HTB Moldova</string>
+      <string>MD: NTV</string>
       <string>НТВ Moldova</string>
     </Aliases>
   </ChannelDefinitionEntity>
