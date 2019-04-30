@@ -119,7 +119,7 @@ namespace IptvPlaylistFetcher.Service
         {
             string url = string.Format(provider.UrlFormat, date);
 
-            using (FileDownloader client = new FileDownloader(3000))
+            using (FileDownloader client = new FileDownloader(5000))
             {
                 try
                 {
@@ -137,7 +137,7 @@ namespace IptvPlaylistFetcher.Service
                 catch { }
             }
 
-            Console.WriteLine($"[-F-] GET '{url}'");
+            Console.WriteLine($"[   ] GET '{url}'");
             return null;
         }
     }

@@ -15,6 +15,7 @@ namespace IptvPlaylistFetcher.Service
         const string EntryHeaderSeparator = ":";
         const string EntryValuesSeparator = ",";
         const string TvGuideChannelNumberTagKey = "tvg-chno";
+        const string TvGuideNameTagKey = "tvg-name";
         const string TvGuideIdTagKey = "tvg-id";
         const string TvGuideLogoTagKey = "tvg-logo";
         const string TvGuideGroupTagKey = "group-title";
@@ -41,7 +42,8 @@ namespace IptvPlaylistFetcher.Service
                 {
                     file += 
                         $" {TvGuideChannelNumberTagKey}=\"{channel.Number}\"" +
-                        $" {TvGuideIdTagKey}=\"{channel.Id}\"";
+                        $" {TvGuideIdTagKey}=\"{channel.Id}\"" +
+                        $" {TvGuideNameTagKey}=\"{channel.Name}\"";
                         
                     if (!string.IsNullOrWhiteSpace(channel.LogoUrl))
                     {
