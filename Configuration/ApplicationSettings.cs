@@ -6,6 +6,8 @@ namespace IptvPlaylistFetcher.Configuration
 
         public string PlaylistProviderStorePath { get; set; }
 
+        public string GroupStorePath { get; set; }
+
         public string OutputPlaylistPath { get; set; }
 
         public string CacheDirectoryPath { get; set; }

@@ -32,9 +32,9 @@ namespace IptvPlaylistFetcher.DataAccess.Repositories
 
             foreach (ChannelDefinitionEntity channelDef in entities)
             {
-                if (string.IsNullOrWhiteSpace(channelDef.Group))
+                if (string.IsNullOrWhiteSpace(channelDef.GroupId))
                 {
-                    channelDef.Group = UnknownGroupPlaceholder;
+                    channelDef.GroupId = UnknownGroupPlaceholder;
                 }
             }
 

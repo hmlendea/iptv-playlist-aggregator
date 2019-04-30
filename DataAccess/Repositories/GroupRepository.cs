@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,27 +9,27 @@ using IptvPlaylistFetcher.DataAccess.DataObjects;
 
 namespace IptvPlaylistFetcher.DataAccess.Repositories
 {
-    public sealed class PlaylistProviderRepository : IPlaylistProviderRepository
+    public sealed class GroupRepository : IGroupRepository
     {
         readonly ApplicationSettings settings;
 
-        public PlaylistProviderRepository(ApplicationSettings settings)
+        public GroupRepository(ApplicationSettings settings)
         {
             this.settings = settings;
         }
 
-        public IEnumerable<PlaylistProviderEntity> GetAll()
+        public IEnumerable<GroupEntity> GetAll()
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(List<PlaylistProviderEntity>));
-            IEnumerable<PlaylistProviderEntity> entities;
+            XmlSerializer serializer = new XmlSerializer(typeof(List<GroupEntity>));
+            IEnumerable<GroupEntity> entities;
 
-            using (TextReader reader = new StreamReader(settings.PlaylistProviderStorePath))
+            using (TextReader reader = new StreamReader(settings.GroupStorePath))
             {
-                entities = (IEnumerable<PlaylistProviderEntity>)serializer.Deserialize(reader);
+                entities = (IEnumerable<GroupEntity>)serializer.Deserialize(reader);
             }
 
             // TODO: This is a very ugly, yet very quick fix
-            foreach (PlaylistProviderEntity entity in entities)
+            foreach (GroupEntity entity in entities)
             {
                 if (entity.Priority <= 0)
                 {

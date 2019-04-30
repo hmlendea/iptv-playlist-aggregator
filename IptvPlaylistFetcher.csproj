@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Update="Data/channels.xml"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></None>
+    <None Update="Data/groups.xml"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></None>
     <None Update="Data/providers.xml"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></None>
   </ItemGroup>
 

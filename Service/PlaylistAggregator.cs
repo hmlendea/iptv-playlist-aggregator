@@ -16,6 +16,7 @@ namespace IptvPlaylistFetcher.Service
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly IMediaStreamStatusChecker mediaStreamStatusChecker;
         readonly IChannelDefinitionRepository channelRepository;
+        readonly IGroupRepository groupRepository;
         readonly IPlaylistProviderRepository playlistProviderRepository;
         readonly ApplicationSettings settings;
 
@@ -23,12 +24,14 @@ namespace IptvPlaylistFetcher.Service
 
         IEnumerable<ChannelDefinition> channelDefinitions;
         IEnumerable<PlaylistProvider> playlistProviders;
+        IDictionary<string, Group> groups;
 
         public PlaylistAggregator(
             IPlaylistFetcher playlistFetcher,
             IPlaylistFileBuilder playlistFileBuilder,
             IMediaStreamStatusChecker mediaStreamStatusChecker,
             IChannelDefinitionRepository channelRepository,
+            IGroupRepository groupRepository,
             IPlaylistProviderRepository playlistProviderRepository,
             ApplicationSettings settings)
         {
@@ -37,6 +40,7 @@ namespace IptvPlaylistFetcher.Service
             this.mediaStreamStatusChecker = mediaStreamStatusChecker;
             this.channelRepository = channelRepository;
             this.playlistProviderRepository = playlistProviderRepository;
+            this.groupRepository = groupRepository;
             this.settings = settings;
 
             pingedUrlsAliveStatus = new Dictionary<string, bool>();
@@ -46,7 +50,14 @@ namespace IptvPlaylistFetcher.Service
         {
             channelDefinitions = channelRepository
                 .GetAll()
+                .OrderBy(x => x.Name)
                 .ToServiceModels();
+            
+            groups = groupRepository
+                .GetAll()
+                .Where(x => x.IsEnabled)
+                .ToServiceModels()
+                .ToDictionary(x => x.Id, x => x);
 
             playlistProviders = playlistProviderRepository
                 .GetAll()
@@ -59,23 +70,29 @@ namespace IptvPlaylistFetcher.Service
                 .SelectMany(x => x.Channels)
                 .GroupBy(x => x.Url)
                 .Select(g => g.FirstOrDefault());
-            
-            Console.WriteLine($"Getting channel URLs ...");
 
-            foreach (ChannelDefinition channelDef in channelDefinitions.Where(x => x.IsEnabled))
+            foreach (Group group in groups.Values)
             {
-                string channelUrl = GetChannelUrl(channelDef, providerChannels);
+                Console.WriteLine($"Getting channel URLs in group '{group.Id}' ...");
 
-                if (!string.IsNullOrWhiteSpace(channelUrl))
+                IEnumerable<ChannelDefinition> channelDefsInGroup = channelDefinitions
+                    .Where(x => x.IsEnabled && x.GroupId == group.Id);
+
+                foreach (ChannelDefinition channelDef in channelDefsInGroup)
                 {
-                    Channel channel = new Channel();
-                    channel.Id = channelDef.Id;
-                    channel.Name = channelDef.Name;
-                    channel.Group = channelDef.Group;
-                    channel.LogoUrl = channelDef.LogoUrl;
-                    channel.Url = channelUrl;
+                    string channelUrl = GetChannelUrl(channelDef, providerChannels);
 
-                    playlist.Channels.Add(channel);
+                    if (!string.IsNullOrWhiteSpace(channelUrl))
+                    {
+                        Channel channel = new Channel();
+                        channel.Id = channelDef.Id;
+                        channel.Name = channelDef.Name;
+                        channel.Group = groups[channelDef.GroupId].Name;
+                        channel.LogoUrl = channelDef.LogoUrl;
+                        channel.Url = channelUrl;
+
+                        playlist.Channels.Add(channel);
+                    }
                 }
             }
 
@@ -95,11 +112,6 @@ namespace IptvPlaylistFetcher.Service
                     }
                 }
             }
-
-            playlist.Channels = playlist.Channels
-                .OrderBy(x => x.Group)
-                .ThenBy(x => x.Name)
-                .ToList();
 
             return playlistFileBuilder.BuildFile(playlist);
         }

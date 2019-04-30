@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfGroupEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GroupEntity>
+    <Id>general</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>1</Priority>
+    <Name>Generale</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>news</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>5</Priority>
+    <Name>Stiri</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>movies</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>10</Priority>
+    <Name>Filme</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>educational</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>15</Priority>
+    <Name>Documentare</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>sport</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>20</Priority>
+    <Name>Sport</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-crisana</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>30</Priority>
+    <Name>Locale (Crisana)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-transilvania</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>31</Priority>
+    <Name>Locale (Transilvania)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-banat</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>32</Priority>
+    <Name>Locale (Banat)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-muntenia</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>33</Priority>
+    <Name>Locale (Dobrogea)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-oltenia</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>34</Priority>
+    <Name>Locale (Oltenia)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-dobrogea</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>35</Priority>
+    <Name>Locale (Dobrogea)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-bucovina</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>36</Priority>
+    <Name>Locale (Bucovina)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-moldova</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>37</Priority>
+    <Name>Locale (Moldova)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-basarabia</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>38</Priority>
+    <Name>Locale (Basarabia)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>local-unknown</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>39</Priority>
+    <Name>Locale (???)</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>???</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>45</Priority>
+    <Name>Necunoscute</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>lifestyle</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>50</Priority>
+    <Name>Tematice</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>kids</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>60</Priority>
+    <Name>Copii</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>religious</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>70</Priority>
+    <Name>Religie</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>foreign</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>80</Priority>
+    <Name>Straine</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>music</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>90</Priority>
+    <Name>Muzica</Name>
+  </GroupEntity>
+
+  <GroupEntity>
+    <Id>radio</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>100</Priority>
+    <Name>Radio</Name>
+  </GroupEntity>
+
+</ArrayOfGroupEntity>

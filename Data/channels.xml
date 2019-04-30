@@ -4,7 +4,7 @@
     <Id>BanatTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Banat TV</Name>
-    <Group>Local - Banat</Group>
+    <GroupId>local-banat</GroupId>
     <LogoUrl>https://www.btv.ro/wp-content/uploads/banat-TV.png</LogoUrl>
     <Aliases>
       <string>RO: Banat TV</string>
@@ -14,7 +14,7 @@
     <Id>salajeanultv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Salajeanul TV</Name>
-    <Group>Local - Crisana</Group>
+    <GroupId>local-crisana</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/salajeanul-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Salajeanul TV</string>
@@ -24,7 +24,7 @@
     <Id>6tv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>6 TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://mywebtv.info/img/tvicons/6tvro.png</LogoUrl>
     <Aliases>
       <string>RO | 6 TV</string>
@@ -35,7 +35,7 @@
     <Id>alphamedia</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Alpha Media</Name>
-    <Group>Local - Dobrogea</Group>
+    <GroupId>local-dobrogea</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/tv-alpha-media.png</LogoUrl>
     <Aliases>
       <string>RO | Alpha Media TV</string>
@@ -46,7 +46,7 @@
     <Id>impact</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Impact TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://mywebtv.info/img/tvicons/impacttv.png</LogoUrl>
     <Aliases>
       <string>RO: Impact TV HD</string>
@@ -57,7 +57,7 @@
     <Id>hora</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Hora TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://www.horatv.ro/images/icon.ico</LogoUrl>
     <Aliases>
       <string>RO: Hora TV</string>
@@ -67,7 +67,7 @@
     <Id>speranta</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Speranta TV</Name>
-    <Group>Religios</Group>
+    <GroupId>religious</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/speranta-tv.png</LogoUrl>
     <Aliases>
       <string>||RO|| SPERANTA TV</string>
@@ -82,7 +82,7 @@
     <Id>AccentTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Accent TV</Name>
-    <Group>Local - Basarabia</Group>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>http://curentul.md/wp-content/uploads/2017/10/accent-tv.jpg</LogoUrl>
     <Aliases>
       <string>Accent TV</string>
@@ -95,7 +95,7 @@
     <Id>europa_plus</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Europa Plus</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://stvron.com/canale/mici/europa-plus.png</LogoUrl>
     <Aliases>
       <string>MD: Europa Plus</string>
@@ -105,7 +105,7 @@
     <Id>actualitatea</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Actualitatea TV</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/actualitatea-tv.png</LogoUrl>
     <Aliases>
       <string>Actualitatea tv</string>
@@ -121,7 +121,7 @@
     <Id>alegetv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Alege TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://stvron.com/canale/mari/alege-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Alege TV</string>
@@ -131,7 +131,7 @@
     <Id>acum</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Acum TV</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>http://acum-tv.ro/wp-content/uploads/2019/01/logo-acum-tv-xs-1-300x98.png</LogoUrl>
     <Aliases>
       <string>Acum</string>
@@ -147,7 +147,7 @@
     <Id>vptv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Valea Prahovei TV</Name>
-    <Group>Local - Muntenia</Group>
+    <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/valea-prahovei-tv.png</LogoUrl>
     <Aliases>
       <string>Ro- VPTV</string>
@@ -158,7 +158,7 @@
     <Id>tele2drobeta</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Tele 2 Drobeta</Name>
-    <Group>Local - Oltenia</Group>
+    <GroupId>local-oltenia</GroupId>
     <LogoUrl>https://tele2drobeta.ro/wp-content/uploads/2018/03/cropped-SIGLA_00002.png</LogoUrl>
     <Aliases>
       <string>RO: Tele2 Drobeta</string>
@@ -168,7 +168,7 @@
     <Id>AgroTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Agro TV</Name>
-    <Group>News</Group>
+    <GroupId>news</GroupId>
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mBVIV7H4CzzM1GbAZg4eaiZ9sEQUfwuR0qrYg=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>AGRO TV</string>
@@ -183,7 +183,7 @@
     <Id>AgroTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Agro TV Moldova</Name>
-    <Group>Local - Basarabia</Group>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://www.rabota.md/uploads/2017_07_07_10_01_50_logo.png</LogoUrl>
     <Aliases>
       <string>MD: AGRO TV</string>
@@ -196,7 +196,7 @@
     <Id>AlfaOmegaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Alfa &amp; Omega</Name>
-    <Group>Religios</Group>
+    <GroupId>religious</GroupId>
     <LogoUrl>https://alfaomega.tv/images/alfaomega/sigla_aotv_600x400_transparent.png</LogoUrl>
     <Aliases>
       <string>Alfa &amp; Omega</string>
@@ -214,7 +214,7 @@
     <Id>AMC.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>AMC</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/5/50/AMC_2013.png/revision/latest?cb=20171217201039</LogoUrl>
     <Aliases>
       <string>[ RO ] AMC</string>
@@ -230,7 +230,7 @@
     <Id>AnimalPlanet.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Animal Planet</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://www.underconsideration.com/brandnew/archives/animal_planet_2018_logo.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Animal Planet</string>
@@ -247,7 +247,7 @@
     <Id>antena_monden</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Antena Monden</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>https://assets.antenaplay.ro/2019/02/08/ASCEI8MhBY2ItX0av7KS.png</LogoUrl>
     <Aliases>
       <string>RO:ANTENA MONDEN</string>
@@ -258,7 +258,7 @@
     <Id>AntenaInternational.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Antena International</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://stvron.com/canale/mari/antena-international.png</LogoUrl>
     <Aliases>
       <string>RO: Antena International HD</string>
@@ -269,7 +269,7 @@
     <Id>AntenaStars.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Antena Stars</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a9/Antena_Stars_logo_2013.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Antena Stars</string>
@@ -294,7 +294,7 @@
     <Id>Antena1.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Antena 1</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_Antena_1_%282010%29.svg/100px-Logo_Antena_1_%282010%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Antena 1</string>
@@ -320,7 +320,7 @@
     <Id>Antena3.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Antena 3</Name>
-    <Group>News</Group>
+    <GroupId>news</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/2/23/Antena_3.jpg/180px-Antena_3.jpg</LogoUrl>
     <Aliases>
       <string>[ RO ] Antena 3</string>
@@ -345,7 +345,7 @@
     <Id>NaşulTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nasul TV</Name>
-    <Group>News</Group>
+    <GroupId>news</GroupId>
     <LogoUrl>http://www.frosat.net/images/logotv/original/nasul-tv-ro.jpg</LogoUrl>
     <Aliases>
       <string>||ROM|| NASUL TV</string>
@@ -356,7 +356,7 @@
     <Id>onetv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>One TV</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/one-tv.png</LogoUrl>
     <Aliases>
       <string>RO: ONE TV</string>
@@ -366,7 +366,7 @@
     <Id>AXNBlack.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>AXN Black</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/250px-AXN_Black_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>||RO|| AXN</string>
@@ -380,7 +380,7 @@
     <Id>AXN.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>AXN</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/250px-AXN_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>||RO|| AXN BLACK</string>
@@ -401,7 +401,7 @@
     <Id>AXNSpin.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>AXN Spin</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AXN_Spin_logo_%282015%29.svg/250px-AXN_Spin_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>||RO|| AXN SPIN</string>
@@ -414,7 +414,7 @@
     <Id>AXNWhite.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>AXN White</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/250px-AXN_White_logo_%282015%29.svg.png</LogoUrl>
     <Aliases>
       <string>||RO|| AXN WHITE</string>
@@ -436,7 +436,7 @@
     <Id>B1TV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>B1</Name>
-    <Group>News</Group>
+    <GroupId>news</GroupId>
     <LogoUrl>https://vreaulocdemunca.ro/wp-content/uploads/2018/05/b111111111.jpg</LogoUrl>
     <Aliases>
       <string> B1</string>
@@ -460,7 +460,7 @@
     <Id>BBCEarth.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>BBC Earth</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/BBC_Earth.jpg/125px-BBC_Earth.jpg</LogoUrl>
     <Aliases>
       <string>BBC Earth HD</string>
@@ -472,7 +472,7 @@
     <Id>BollywoodClassic.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Bollywood Clasic</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bollywood_Clasic.png/200px-Bollywood_Clasic.png</LogoUrl>
     <Aliases>
       <string>RO:BOLLYWOOD CLASSIC</string>
@@ -483,7 +483,7 @@
     <Id>BollywoodTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Bollywood</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bollywood_HD_2018.png/200px-Bollywood_HD_2018.png</LogoUrl>
     <Aliases>
       <string>||RO|| BOLLYWOOD TV</string>
@@ -496,7 +496,7 @@
     <Id>Boomerang.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Boomerang</Name>
-    <Group>Kids</Group>
+    <GroupId>kids</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/230px-Boomerang_2014_logo.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Boomerang</string>
@@ -513,7 +513,7 @@
     <Id>Canal2.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Canal 2</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/7/7f/Logo_Canal_2.png</LogoUrl>
     <Aliases>
       <string>RO:CANAL 2 HD</string>
@@ -524,7 +524,7 @@
     <Id>Canal3.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Canal 3</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://www.frosat.net/images/logotv/original/Canal3_md.gif</LogoUrl>
     <Aliases>
       <string>Canal 3</string>
@@ -536,7 +536,7 @@
     <Id>CartoonNetwork.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Cartoon Network</Name>
-    <Group>Kids</Group>
+    <GroupId>kids</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/220px-Cartoon_Network_2010_logo.svg.png</LogoUrl>
     <Aliases>
       <string>||RO|| CARTOON NETWORK</string>
@@ -551,7 +551,7 @@
     <Id>CBSReality.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>CBS Reality</Name>
-    <Group>Lifestyle</Group>
+    <GroupId>lifestyle</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBS_Reality.png/200px-CBS_Reality.png</LogoUrl>
     <Aliases>
       <string>CBS Reality</string>
@@ -563,7 +563,7 @@
     <Id>Cinemax.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>CineMAX 1</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Cinemax.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Cinemax HD RO</string>
@@ -590,7 +590,7 @@
     <Id>cinemax_megamax_ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>CineMAX / Megamax RO</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Cinemax1.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Cinemax/Megamax RO</string>
@@ -601,7 +601,7 @@
     <Id>Cinemax2.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>CineMAX 2</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Cinemax2.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Cinemax 2</string>
@@ -625,7 +625,7 @@
     <Id>Cinethronix.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Cinethronix</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://3.bp.blogspot.com/-wtRpKNLeivE/XMHh516zQLI/AAAAAAAA3Ag/wei-MjbXj78PTHxhl9qboyCcRY5Eu_s-gCLcBGAs/s640/cinethronix%2Brcs%2Brds.jpg</LogoUrl>
     <Aliases>
       <string>Cinethronix</string>
@@ -638,7 +638,7 @@
     <Id>Cinemaraton.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Cinemaraton</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://restxyz.akta.ro/assets/images/cinemaraton_poster.png</LogoUrl>
     <Aliases>
       <string>RO: Cinemaraton</string>
@@ -648,7 +648,7 @@
     <Id>ComedyEst.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Comedy Est</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://restxyz.akta.ro/assets/images/comedyest_poster.png</LogoUrl>
     <Aliases>
       <string>RO: Comedy Est</string>
@@ -658,7 +658,7 @@
     <Id>ComedyCentral.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Comedy Central</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/200px-Comedy_Central_2018.svg.png</LogoUrl>
     <Aliases>
       <string>||RO|| COMEDY CENTRAL</string>
@@ -673,7 +673,7 @@
     <Id>Cromtel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Cromtel</Name>
-    <Group>Local - ???</Group>
+    <GroupId>local-unknown</GroupId>
     <LogoUrl>http://ik.imagekit.io/ulangotv/image/upload/469249_logo_cromtel_tv1.png</LogoUrl>
     <Aliases>
       <string>Cromtel TV</string>
@@ -691,7 +691,7 @@
     <Id>DibiTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Dibi TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://www.dibitv.ro/galerii/video/poze/2.jpg</LogoUrl>
     <Aliases>
       <string>[ RO ]DIBI TV (Music) Balkan</string>
@@ -706,7 +706,7 @@
     <Id>DJingTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>DJing TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://pbs.twimg.com/profile_images/753627557917065216/G_-_PzF9_400x400.jpg</LogoUrl>
     <Aliases>
       <string>RO: DJing TV</string>
@@ -716,7 +716,7 @@
     <Id>DIGIAnimalWorld.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi Animal World</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/hu/DigiAnimalWorld.hu.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Digi Animal World</string>
@@ -738,7 +738,7 @@
     <Id>DigiLLife.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi Life</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DigiLLife.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Digi Life</string>
@@ -761,7 +761,7 @@
     <Id>DigiSport1.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 1</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DigiSport1.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI Sport 1</string>
@@ -788,7 +788,7 @@
     <Id>DigiSport2.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 2</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DigiSport2.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI Sport 2</string>
@@ -814,7 +814,7 @@
     <Id>DigiSport3.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 3</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DigiSport3.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI Sport 3</string>
@@ -840,7 +840,7 @@
     <Id>DigiSport4.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 4</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DigiSport4.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Digi Sport 4</string>
@@ -867,7 +867,7 @@
     <Id>DigiWorld.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi World</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DigiWorld.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Digi World</string>
@@ -892,7 +892,7 @@
     <Id>Digi24.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24</Name>
-    <Group>News</Group>
+    <GroupId>news</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string> Digi 24</string>
@@ -931,7 +931,7 @@
     <Id>Digi24Oradea.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Oradea</Name>
-    <Group>Local - Crisana</Group>
+    <GroupId>local-crisana</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Oradea</string>
@@ -944,7 +944,7 @@
     <Id>Digi24Cluj.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Cluj</Name>
-    <Group>Local - Transilvania</Group>
+    <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Cluj</string>
@@ -957,7 +957,7 @@
     <Id>Digi24Brasov.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Brasov</Name>
-    <Group>Local - Transilvania</Group>
+    <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Brasov</string>
@@ -970,7 +970,7 @@
     <Id>Digi24Timis.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Timis</Name>
-    <Group>Local - Banat</Group>
+    <GroupId>local-banat</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Timis</string>
@@ -983,7 +983,7 @@
     <Id>Digi24Craiova.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Craiova</Name>
-    <Group>Local - Oltenia</Group>
+    <GroupId>local-oltenia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Craiova</string>
@@ -996,7 +996,7 @@
     <Id>Digi24Galati.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Galati</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Galati</string>
@@ -1009,7 +1009,7 @@
     <Id>Digi24Iasi.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Iasi</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Iasi</string>
@@ -1022,7 +1022,7 @@
     <Id>Digi24Constanta.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi24 Constanta</Name>
-    <Group>Local - Dobrogea</Group>
+    <GroupId>local-dobrogea</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Logo_Digi_24_%282012%29.svg/150px-Logo_Digi_24_%282012%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI 24 Constanta</string>
@@ -1035,7 +1035,7 @@
     <Id>DaVinciLearning.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>DaVinci Learning</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://www.davincimedia.tv/sites/all/themes/davincimedia/images/Gen%20Logo%20-%20Grey.png</LogoUrl>
     <Aliases>
       <string>||ROM|| DA VINCI LEARNING</string>
@@ -1047,7 +1047,7 @@
     <Id>DiscoveryChannel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Discovery Channel</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryChannel.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Discovery channel</string>
@@ -1067,7 +1067,7 @@
     <Id>discovery_showcase</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Discovery Showcase</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/hu/DiscoveryHDShowcase.hu.png</LogoUrl>
     <Aliases>
       <string>Discovery HD Showcase</string>
@@ -1079,7 +1079,7 @@
     <Id>DiscoveryID.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Discovery Investigation</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
     <Aliases>
       <string>RO: Discovery ID</string>
@@ -1091,7 +1091,7 @@
     <Id>DiscoveryIDX.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Discovery Investigation Extra</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
     <Aliases>
       <string>||RO|| DISCOVERY ID XTRA</string>
@@ -1105,7 +1105,7 @@
     <Id>DiscoveryScience.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Discovery Science</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryScience.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Discovery science</string>
@@ -1124,7 +1124,7 @@
     <Id>DiscoveryWorld.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Discovery World</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/World_Discovery_HD_logo.svg/1200px-World_Discovery_HD_logo.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Discovery world</string>
@@ -1143,7 +1143,7 @@
     <Id>DisneyChannel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Disney Channel</Name>
-    <Group>Kids</Group>
+    <GroupId>kids</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DisneyChannel.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Disney Channel</string>
@@ -1158,7 +1158,7 @@
     <Id>DisneyJunior.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Disney Junior</Name>
-    <Group>Kids</Group>
+    <GroupId>kids</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DisneyJunior.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Disney Junior</string>
@@ -1178,7 +1178,7 @@
     <Id>DivaUniversal.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Diva Universal</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DivaUniversal.ro.png</LogoUrl>
     <Aliases>
       <string>||RO|| DIVA UNIVERSAL</string>
@@ -1192,7 +1192,7 @@
     <Id>DiscoveryTurboXtra.hu</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Discovery Turbo Extra</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/hu/DiscoveryTurboXtra.hu.png</LogoUrl>
     <Aliases>
       <string>||RO|| DISCOVERY TURBO XTRA</string>
@@ -1209,7 +1209,7 @@
     <Id>EpicDrama.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Epic Drama</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/hu/EpicDrama.hu.png</LogoUrl>
     <Aliases>
       <string>Epic Drama</string>
@@ -1222,7 +1222,7 @@
     <Id>Etno.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Etno</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Etno.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] ETNO TV HD</string>
@@ -1247,7 +1247,7 @@
     <Id>EtnicTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Etnic TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://tvrohdonline.com/wp-content/uploads/2019/01/3.png</LogoUrl>
     <Aliases>
       <string>Ro- ETNIC TV</string>
@@ -1257,7 +1257,7 @@
     <Id>SuperTennis.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>SuperTennis</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://stvron.com/canale/mici/super-tennis.png</LogoUrl>
     <Aliases>
       <string>RO: SUPERTENNIS FHD</string>
@@ -1269,7 +1269,7 @@
     <Id>Eurosport1.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>EuroSport 1</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/eurosport.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Eurosport 1 HD RO</string>
@@ -1298,7 +1298,7 @@
     <Id>Eurosport2.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>EuroSport 2</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/eurosport-2.png</LogoUrl>
     <Aliases>
       <string>[ RO ] EUROSPORT 2 HD</string>
@@ -1323,7 +1323,7 @@
     <Id>Favorit.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Favorit</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/ae/FavoritLogo.png</LogoUrl>
     <Aliases>
       <string>||RO|| FAVORIT Tv</string>
@@ -1342,7 +1342,7 @@
     <Id>FilmCafe.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Film Cafe</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/hu/FilmCafe.hu.png</LogoUrl>
     <Aliases>
       <string>||RO|| FILM CAFE</string>
@@ -1357,7 +1357,7 @@
     <Id>FilmNow.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Film Now</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_Film_Now_%282018%29.png/250px-Logo_Film_Now_%282018%29.png</LogoUrl>
     <Aliases>
       <string>||RO|| DIGI FILM</string>
@@ -1379,7 +1379,7 @@
     <Id>HappyChannel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Happy Channel</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/HappyChannel.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Happy Channel</string>
@@ -1401,7 +1401,7 @@
     <Id>FoodNetwork.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Food Network</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO: Food Network FHD</string>
@@ -1413,7 +1413,7 @@
     <Id>FineLiving.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Fine Living</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://stvron.com/canale/mari/fine-living.png</LogoUrl>
     <Aliases>
       <string>||ROM|| FINE LIVING</string>
@@ -1424,7 +1424,7 @@
     <Id>HBO.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>HBO 1</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/HBO.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] HBO Romania</string>
@@ -1460,7 +1460,7 @@
     <Id>HBO2.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>HBO 2</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/HBO2.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] HBO 2</string>
@@ -1483,7 +1483,7 @@
     <Id>HBO3.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>HBO 3</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/HBO3.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] HBO 3</string>
@@ -1505,7 +1505,7 @@
     <Id>HistoryChannel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>History Channel</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/history.png</LogoUrl>
     <Aliases>
       <string>[ RO ] History Channel</string>
@@ -1527,26 +1527,10 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>hit</Id>
-    <IsEnabled>true</IsEnabled>
-    <Name>H!T</Name>
-    <Group>Music</Group>
-    <LogoUrl>http://stvron.com/canale/mari/hit-music-channel.png</LogoUrl>
-    <Aliases>
-      <string>||RO|| HIT MUSIC CHANNEL</string>
-      <string>||ROM|| HIT MUSIC</string>
-      <string>RO | HIT CH</string>
-      <string>RO: H!T Music Channel</string>
-      <string>RO: Hit Music Channel</string>
-      <string>RO: H!T Music Channel S1</string>
-      <string>RO: H!T Music Channel S2</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>informatiatv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Informatia TV</Name>
-    <Group>Local - ???</Group>
+    <GroupId>local-unknown</GroupId>
     <LogoUrl>http://mywebtv.info/img/tvicons/541573.png</LogoUrl>
     <Aliases>
       <string>RO | INFORMATIA TV</string>
@@ -1557,7 +1541,7 @@
     <Id>infinittv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Infinit TV</Name>
-    <Group>Local - ???</Group>
+    <GroupId>local-unknown</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/infinit-tv.png</LogoUrl>
     <Aliases>
       <string>RO: INFINIT TV</string>
@@ -1568,7 +1552,7 @@
     <Id>inedittv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Inedit TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://stvron.com/canale/mari/inedit-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Inedit TV S1</string>
@@ -1581,7 +1565,7 @@
     <Id>intermedia</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Intermedia</Name>
-    <Group>Local - Bucovina</Group>
+    <GroupId>local-bucovina</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/intermedia-tv.png</LogoUrl>
     <Aliases>
       <string>||ROM|| INTERMEDIA SUCEAVA</string>
@@ -1593,7 +1577,7 @@
     <Id>bucovinaTV</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Bucovina TV</Name>
-    <Group>Local - Bucovina</Group>
+    <GroupId>local-bucovina</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/bucovina-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Bucovina TV</string>
@@ -1603,7 +1587,7 @@
     <Id>KanalD.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Kanal D</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://static.iptv-epg.com/tr/KanalD.tr.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Canal D HD</string>
@@ -1628,7 +1612,7 @@
     <Id>KissTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>KissTV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/3/38/Logo_Kiss_TV_%282014%29.png</LogoUrl>
     <Aliases>
       <string> KISS TV</string>
@@ -1654,7 +1638,7 @@
     <Id>jasmintv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Jasmin TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://scontent.fomr1-1.fna.fbcdn.net/v/t1.0-9/11046972_1547016762228097_8978976372468915740_n.png?_nc_cat=109&amp;_nc_ht=scontent.fomr1-1.fna&amp;oh=8df2ed1cd1fd688ba368ce537ea6a83b&amp;oe=5D2F9A04</LogoUrl>
     <Aliases>
       <string>RO: Jasmin TV</string>
@@ -1664,7 +1648,7 @@
     <Id>BalkanikaMusicTv.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Balkanika TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/balkanika-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Balkanika</string>
@@ -1674,7 +1658,7 @@
     <Id>MagicTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Magic TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/magic-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Magic TV FHD</string>
@@ -1686,7 +1670,7 @@
     <Id>OrizontTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Orizont TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/orizont-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Orizont TV FHD</string>
@@ -1698,7 +1682,7 @@
     <Id>LookPlus.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Look Plus</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://lookplus.ro/wp-content/uploads/2018/09/lp-v-hd-tag-300px.png</LogoUrl>
     <Aliases>
       <string>||RO|| LOOK PLUS</string>
@@ -1718,7 +1702,7 @@
     <Id>LookTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Look TV</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Logo_LookSport_HD_%282018%29.svg/200px-Logo_LookSport_HD_%282018%29.svg.png</LogoUrl>
     <Aliases>
       <string>LOOK TV</string>
@@ -1734,7 +1718,7 @@
     <Id>LookSport.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Look Sport</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Logo_LookSport_HD_%282018%29.svg/200px-Logo_LookSport_HD_%282018%29.svg.png</LogoUrl>
     <Aliases>
       <string>Look Sport HD</string>
@@ -1754,7 +1738,7 @@
     <Id>Megamax.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Megamax</Name>
-    <Group>Kids</Group>
+    <GroupId>kids</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Megamax.ro.png</LogoUrl>
     <Aliases>
       <string>||RO|| MEGAMAX HD</string>
@@ -1778,7 +1762,7 @@
     <Id>Minimax.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Minimax</Name>
-    <Group>Kids</Group>
+    <GroupId>kids</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Minimax.ro.png</LogoUrl>
     <Aliases>
       <string>||RO|| MINIMAX</string>
@@ -1797,7 +1781,7 @@
     <Id>MoldovaSport.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Moldova Sport</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>http://live-tv.me/wp-content/uploads/2014/08/MOLDOVA-SPORT-TV.gif</LogoUrl>
     <Aliases>
       <string>RO: Moldova Sport HD</string>
@@ -1808,7 +1792,7 @@
     <Id>MoozRo.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>MOOZ RO!</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/5/50/Dolce_mooz_ro.png/220px-Dolce_mooz_ro.png</LogoUrl>
     <Aliases>
       <string>RO:MOOZ RO!</string>
@@ -1820,7 +1804,7 @@
     <Id>MTVRomania.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>MTV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://static.spin.com/files/2016/09/MTV-HD-Logo-640x441.jpg</LogoUrl>
     <Aliases>
       <string>[ RO ] MTV</string>
@@ -1829,44 +1813,38 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>MusicChannel.hu</Id>
+    <Id>h!t</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Music Channel HU</Name>
-    <Group>Music</Group>
-    <LogoUrl>https://static.iptv-epg.com/hu/MusicChannel.hu.png</LogoUrl>
+    <Name>H!T</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>http://stvron.com/canale/mari/hit-music-channel.png</LogoUrl>
     <Aliases>
-      <string>Music Channel HU</string>
-      <string>MUSIC CHANNEL.HU</string>
-      <string>Ro: Music Channe hu</string>
-      <string>RO: MUSIC CHANNEL HU</string>
-      <string>RO:MUSIC CHANNEL HU</string>
+      <string>RO: H!T Music Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MusicChannel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Music Channel</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/MusicChannel.ro.png</LogoUrl>
     <Aliases>
-      <string>[ RO ] 1 Music Channel</string>
-      <string>1 Music Channel</string>
-      <string>Music Channel</string>
-      <string>Ro- 1 Music Channel</string>
-      <string>RO: 1 MUSIC CHANNEL</string>
-      <string>Ro: 1 Music Channel</string>
-      <string>RO: 1 Music Channel</string>
-      <string>RO: Music 1 Channel</string>
-      <string>RO: Music Channel</string>
-      <string>RO:MUSIC CHANEL  ONE</string>
-      <string>RO:MUSIC CHANNEL ONE1</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>MusicChannel.hu</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Music Channel HU</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://static.iptv-epg.com/hu/MusicChannel.hu.png</LogoUrl>
+    <Aliases>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>music_hits_17</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Music Hits '17</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>[ RO ] MUSIC HITS '17 (music only -  numai muzica)</string>
@@ -1874,10 +1852,30 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>protv-md</Id>
+    <IsEnabled>false</IsEnabled>
+    <Name>Pro TV Moldova</Name>
+    <GroupId></GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>MD: ProTV Moldova</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>acasatv-md</Id>
+    <IsEnabled>false</IsEnabled>
+    <Name>Acasa TV Moldova</Name>
+    <GroupId></GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>MD: Acasa TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>National24plus.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>National 24 Plus</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Na%C5%A3ional24Plus.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] National 24</string>
@@ -1897,7 +1895,7 @@
     <Id>NatGeo.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>National Geographic</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/NatGeo.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] National Geographic</string>
@@ -1924,7 +1922,7 @@
     <Id>NatGeoWild.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>National Geographic Wild</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/NatGeoWild.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Nat Geo Wild</string>
@@ -1950,7 +1948,7 @@
     <Id>NationalTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>National TV</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/NationalTV.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] National TV</string>
@@ -1970,7 +1968,7 @@
     <Id>NeptunTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Neptun TV</Name>
-    <Group>Local - Dobrogea</Group>
+    <GroupId>local-dobrogea</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/NeptunTV.ro.png</LogoUrl>
     <Aliases>
       <string>||RO|| NEPTUM TV</string>
@@ -1988,7 +1986,7 @@
     <Id>NestTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nord Est TV</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>https://ik.imagekit.io/ulangotv/image/upload/469250_logo_nest_tv1.png</LogoUrl>
     <Aliases>
       <string>NEst tv</string>
@@ -2002,7 +2000,7 @@
     <Id>telemoldova</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleMoldova Plus</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Logo_TeleMoldova_%282017%29.svg/1280px-Logo_TeleMoldova_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>RO | TELE MOLDOVA</string>
@@ -2016,7 +2014,7 @@
     <Id>telemoldova-neamt</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleMoldova Neamt</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>https://telemneamt.net/wp-content/uploads/2015/06/Logo-repr-TeleM.png</LogoUrl>
     <Aliases>
       <string>RO | Tele M</string>
@@ -2029,7 +2027,7 @@
     <Id>telemoldova-iasi</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleMoldova Iasi</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tele-m-iasi.png</LogoUrl>
     <Aliases>
       <string>RO | TELE MOLDOVA IASI</string>
@@ -2045,7 +2043,7 @@
     <Id>telemoldova-botosani</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleMoldova Botosani</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tele-m-botosani.png</LogoUrl>
     <Aliases>
       <string>RO | TELE MOLDOVA BOTOSANI</string>
@@ -2061,7 +2059,7 @@
     <Id>1tv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>1TV</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/1-tv-neamt.png</LogoUrl>
     <Aliases>
       <string>RO: 1 TV Neamt</string>
@@ -2071,7 +2069,7 @@
     <Id>campustv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Campus TV</Name>
-    <Group>Local - Muntenia</Group>
+    <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/campus-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Campus TV Buzau</string>
@@ -2081,7 +2079,7 @@
     <Id>tvbuzau</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV Buzau</Name>
-    <Group>Local - Muntenia</Group>
+    <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-buzau.png</LogoUrl>
     <Aliases>
       <string>RO: TV Buzau</string>
@@ -2092,7 +2090,7 @@
     <Id>tvsat</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVSAT</Name>
-    <Group>Local - ???</Group>
+    <GroupId>local-unknown</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-sat.png</LogoUrl>
     <Aliases>
       <string>RO: TVSAT</string>
@@ -2102,7 +2100,7 @@
     <Id>Nickelodeon.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nickelodeon</Name>
-    <Group>Kids</Group>
+    <GroupId>kids</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Nickelodeon.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Nickelodeon</string>
@@ -2123,7 +2121,7 @@
     <Id>NickJr.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nickelodeon Junior</Name>
-    <Group>Kids</Group>
+    <GroupId>kids</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/NickJr.ro.png</LogoUrl>
     <Aliases>
       <string>Nick Jr.</string>
@@ -2135,7 +2133,7 @@
     <Id>JimJam.ro	</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nickelodeon Junior</Name>
-    <Group>Kids</Group>
+    <GroupId>kids</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/jimjam.png</LogoUrl>
     <Aliases>
       <string>RO: JimJam</string>
@@ -2146,7 +2144,7 @@
     <Id>TVPaprika.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Paprika</Name>
-    <Group>Lifestyle</Group>
+    <GroupId>lifestyle</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/TVPaprika.ro.png</LogoUrl>
     <Aliases>
       <string>||RO|| TV PAPRIKA</string>
@@ -2161,7 +2159,7 @@
     <Id>ParamountChannel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Paramount Channel</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/ParamountChannel.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Paramount Channel</string>
@@ -2181,7 +2179,7 @@
     <Id>PrimaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Prima TV</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/PrimaTV.ro.png</LogoUrl>
     <Aliases>
       <string>||RO|| PRIMA TV</string>
@@ -2203,7 +2201,7 @@
     <Id>Pro2.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro 2</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/pro-2.png</LogoUrl>
     <Aliases>
       <string>[ RO ] ACASA TV</string>
@@ -2235,7 +2233,7 @@
     <Id>ProCinema.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro Cinema</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/pro-cinema.png</LogoUrl>
     <Aliases>
       <string>||RO|| PRO CINEMA</string>
@@ -2252,7 +2250,7 @@
     <Id>AcasaGold.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro Gold</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/pro-gold.png</LogoUrl>
     <Aliases>
       <string>||RO|| PRO GOLD</string>
@@ -2270,7 +2268,7 @@
     <Id>protv-news</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro TV News</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://vignette.wikia.nocookie.net/logopedia/images/5/56/Pro_TV_News_logo_2017.png</LogoUrl>
     <Aliases>
       <string>RO: ProTv News</string>
@@ -2281,7 +2279,7 @@
     <Id>ProTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro TV</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/ProTV.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] PRO TV HD</string>
@@ -2309,7 +2307,7 @@
     <Id>ProTVChisinau.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro TV Chisinau</Name>
-    <Group>Local - Basarabia</Group>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Logo_Pro_TV_Chi%C8%99in%C4%83u_%282016%29.svg/1200px-Logo_Pro_TV_Chi%C8%99in%C4%83u_%282016%29.svg.png</LogoUrl>
     <Aliases>
       <string>MD: ProTV Chisinau</string>
@@ -2321,7 +2319,7 @@
     <Id>ProTVInternational.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro TV International</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Pro_TV_Interna%C8%9Bional_%282017%29.svg/234px-Logo_Pro_TV_Interna%C8%9Bional_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>||RO|| PROTV INTERNATIONAL</string>
@@ -2336,7 +2334,7 @@
     <Id>PROX.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro X</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Pro_X_%282017%29.svg/234px-Logo_Pro_X_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Sport RO</string>
@@ -2361,7 +2359,7 @@
     <Id>FishingHunting.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pescuit si Vanatoare TV</Name>
-    <Group>Lifestyle</Group>
+    <GroupId>lifestyle</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/c/cf/FishingHuntingLogo.jpg/220px-FishingHuntingLogo.jpg</LogoUrl>
     <Aliases>
       <string>||RO|| FISHING &amp; HUNTING</string>
@@ -2382,7 +2380,7 @@
     <Id>RealitateaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Realitatea</Name>
-    <Group>News</Group>
+    <GroupId>news</GroupId>
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mCe6lQV8dYNJ8G5sPGQe5BxK7CuHwuPg1rUFA=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>[ RO ] Realitatea</string>
@@ -2410,7 +2408,7 @@
     <Id>realitatea-plus</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Realitatea Plus</Name>
-    <Group>News</Group>
+    <GroupId>news</GroupId>
     <LogoUrl>http://itcmedia.ro/wp-content/uploads/2013/01/REALITATEA_PLUS2.jpg</LogoUrl>
     <Aliases>
       <string>RO | Realitatea Plus TV</string>
@@ -2420,7 +2418,7 @@
     <Id>telestar1</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Telestar 1 TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://stvron.com/canale/mari/telestar-1.png</LogoUrl>
     <Aliases>
       <string>RO | Telestar 1</string>
@@ -2431,8 +2429,8 @@
   <ChannelDefinitionEntity>
     <Id>EEntertainment.ro</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Everything Entertainment</Name>
-    <Group>Educational</Group>
+    <Name>E! Entertainment</Name>
+    <GroupId>educational</GroupId>
     <LogoUrl>http://upload.wikimedia.org/wikipedia/commons/9/95/E!_Logo.png</LogoUrl>
     <Aliases>
       <string>||ROM|| E!</string>
@@ -2445,7 +2443,7 @@
     <Id>teleshop</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Teleshop TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://stvron.com/canale/mari/telestar-1.png</LogoUrl>
     <Aliases>
       <string>RO: TELESHOP TV</string>
@@ -2455,7 +2453,7 @@
     <Id>tigo</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Tigo Music</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO: Tigo Music</string>
@@ -2465,7 +2463,7 @@
     <Id>vh1</Id>
     <IsEnabled>true</IsEnabled>
     <Name>VH1</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/vh1.png</LogoUrl>
     <Aliases>
       <string>RO: VH1</string>
@@ -2476,7 +2474,7 @@
     <Id>vh1_classic</Id>
     <IsEnabled>true</IsEnabled>
     <Name>VH1 Classic</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/vh1.png</LogoUrl>
     <Aliases>
       <string>RO: VH1 Classic</string>
@@ -2487,7 +2485,7 @@
     <Id>RockTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Rock TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/8/85/Rock_TV.png</LogoUrl>
     <Aliases>
       <string>RO: Rock TV</string>
@@ -2498,7 +2496,7 @@
     <Id>heavymetal-tv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Heavy Metal TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO: HEAVY METAL TV </string>
@@ -2508,7 +2506,7 @@
     <Id>ibizaglobal-tv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Ibiza Global TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://static-cdn2.ustream.tv/i/channel/picture/1/5/2/5/15259399/15259399_logo-cuadrado_1374184866,640x360,b:1.jpg</LogoUrl>
     <Aliases>
       <string>Ibiza Global TV</string>
@@ -2518,7 +2516,7 @@
     <Id>RomaniaTv.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Romania TV</Name>
-    <Group>News</Group>
+    <GroupId>news</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a2/Rom%C3%A2nia_TV_logo.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Romania Tv</string>
@@ -2541,7 +2539,7 @@
     <Id>somax</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Somax</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>http://www.somaxtv.com/wp-content/uploads/2015/04/logo_somax_t3.png</LogoUrl>
     <Aliases>
       <string>RO | Somax TV</string>
@@ -2557,7 +2555,7 @@
     <Id>STV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Singeorz TV</Name>
-    <Group>Local - Transilvania</Group>
+    <GroupId>local-transilvania</GroupId>
     <LogoUrl>http://tvtolive.com/wp-content/uploads/S%C3%A2ngeorz-TV-tvtolive.com_.jpg</LogoUrl>
     <Aliases>
       <string>RO | Sangeorz TV</string>
@@ -2569,7 +2567,7 @@
     <Id>Sundance.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Sundance</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Sundance.ro.png</LogoUrl>
     <Aliases>
       <string>RO: Sundance TV HD</string>
@@ -2581,7 +2579,7 @@
     <Id>TarafTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Taraf</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Taraftv.png/220px-Taraftv.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Taraf TV</string>
@@ -2606,7 +2604,7 @@
     <Id>TelekomSport1.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 1</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Logo_Telekom_Sport_1_%282017%29.svg/800px-Logo_Telekom_Sport_1_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 1 HD</string>
@@ -2630,7 +2628,7 @@
     <Id>TelekomSport2.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 2</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Logo_Telekom_Sport_2_%282017%29.svg/2000px-Logo_Telekom_Sport_2_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 2 HD</string>
@@ -2654,7 +2652,7 @@
     <Id>TelekomSport3.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 3</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/a/ad/Logo_Telekom_Sport_3_%282017%29.svg</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 3 HD</string>
@@ -2678,7 +2676,7 @@
     <Id>TelekomSport4.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 4</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Logo_Telekom_Sport_4_%282017%29.svg/1280px-Logo_Telekom_Sport_4_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 4 HD</string>
@@ -2702,7 +2700,7 @@
     <Id>TelekomSport5.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 5</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Logo_Telekom_Sport_5_%282017%29.svg/1280px-Logo_Telekom_Sport_5_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 5 HD</string>
@@ -2726,7 +2724,7 @@
     <Id>TelekomSport6.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 6</Name>
-    <Group>Sport</Group>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Telekom_Sport_6_%282017%29.svg/1280px-Logo_Telekom_Sport_6_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Telekom Sport 6 HD</string>
@@ -2750,7 +2748,7 @@
     <Id>TLC.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TLC</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/TLC-Logo_2016.png/200px-TLC-Logo_2016.png</LogoUrl>
     <Aliases>
       <string>||RO|| TLC RO</string>
@@ -2764,7 +2762,7 @@
     <Id>TNT.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TNT</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tnt.png</LogoUrl>
     <Aliases>
       <string>||RO|| TNT</string>
@@ -2781,7 +2779,7 @@
     <Id>ColumnaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Columna TV</Name>
-    <Group>Local - Muntenia</Group>
+    <GroupId>local-muntenia</GroupId>
     <LogoUrl>https://i.ytimg.com/vi/PWgPPn2qeHo/hqdefault.jpg</LogoUrl>
     <Aliases>
       <string>Ro- Columnta TV</string>
@@ -2794,7 +2792,7 @@
     <Id>TraditiiTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Traditii TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://oklivetv.com/wp-content/uploads/2015/02/TraditiiTVlogo.jpg</LogoUrl>
     <Aliases>
       <string>Ro- Traditii TV</string>
@@ -2804,7 +2802,7 @@
     <Id>TezaurTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Tezaur TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://www.tezaurtv.ro/wp-content/uploads/2018/09/Tezaur-TV-online.jpg</LogoUrl>
     <Aliases>
       <string>Ro- TEZAUR TV</string>
@@ -2814,7 +2812,7 @@
     <Id>MioritaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Miorita TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://scontent.fomr1-1.fna.fbcdn.net/v/t1.0-9/23472832_2058248204396465_7929018799266255912_n.jpg?_nc_cat=106&amp;_nc_ht=scontent.fomr1-1.fna&amp;oh=a9542aaed1845b097c3098566efecd2d&amp;oe=5D311CF6</LogoUrl>
     <Aliases>
       <string>Ro- MIORITA TV</string>
@@ -2824,7 +2822,7 @@
     <Id>TravelChannel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Travel Channel</Name>
-    <Group>Lifestyle</Group>
+    <GroupId>lifestyle</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/TravelChannel.ro.png</LogoUrl>
     <Aliases>
       <string>RO: Travel Channel FHD</string>
@@ -2836,7 +2834,7 @@
     <Id>TravelMix.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Travel Mix</Name>
-    <Group>Lifestyle</Group>
+    <GroupId>lifestyle</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/TravelMix.ro.png</LogoUrl>
     <Aliases>
       <string>RO | Travel Mix TV</string>
@@ -2852,7 +2850,7 @@
     <Id>TrinitasTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Trinitas</Name>
-    <Group>Religios</Group>
+    <GroupId>religious</GroupId>
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mCtwbe55WTSbdmCNo4IGHpMXXs0tzr_KlRL_w=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
       <string>||RO|| TRINITAS</string>
@@ -2869,7 +2867,7 @@
     <Id>Trinity.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Trinity</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO: Trinity HD</string>
@@ -2879,7 +2877,7 @@
     <Id>TVSud.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV Sud</Name>
-    <Group>Local - Oltenia</Group>
+    <GroupId>local-oltenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-sud.png</LogoUrl>
     <Aliases>
       <string>RO: TV Sud</string>
@@ -2890,7 +2888,7 @@
     <Id>TVSudEst.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV SudEst</Name>
-    <Group>Local - Muntenia</Group>
+    <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-sud-est.png</LogoUrl>
     <Aliases>
       <string>RO: TV Sud Est TVSAT</string>
@@ -2904,7 +2902,7 @@
     <Id>musceltv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Muscel TV</Name>
-    <Group>Local - Muntenia</Group>
+    <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://musceltv.ro/site/wp-content/uploads/2016/05/microsigla-frontala.png</LogoUrl>
     <Aliases>
       <string>RO: Muscel TV</string>
@@ -2915,7 +2913,7 @@
     <Id>novatv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nova TV</Name>
-    <Group>Local - Transilvania</Group>
+    <GroupId>local-transilvania</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/nova-tv-brasov.png</LogoUrl>
     <Aliases>
       <string>RO: Nova Tv Brasov</string>
@@ -2925,7 +2923,7 @@
     <Id>TV1000.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV1000</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/TV1000.ro.png</LogoUrl>
     <Aliases>
       <string>[ RO ] TV 1000 HD</string>
@@ -2947,7 +2945,7 @@
     <Id>TV5Monde.fr</Id>
     <IsEnabled>false</IsEnabled>
     <Name>TV5 Monde</Name>
-    <Group>Extern</Group>
+    <GroupId>foreign</GroupId>
     <LogoUrl>https://static.iptv-epg.com/nl/TV5Monde.nl.png</LogoUrl>
     <Aliases>
       <string>||RO|| TV5 MONDE</string>
@@ -2966,7 +2964,7 @@
     <Id>Frane24.fr</Id>
     <IsEnabled>false</IsEnabled>
     <Name>Frane24</Name>
-    <Group>Extern</Group>
+    <GroupId>foreign</GroupId>
     <LogoUrl>https://static.iptv-epg.com/fr/France24.fr.png</LogoUrl>
     <Aliases>
       <string>France 24</string>
@@ -2979,7 +2977,7 @@
     <Id>TVH.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVH</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>Ro- TV H</string>
@@ -2990,7 +2988,7 @@
     <Id>TVH20.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVH 20</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>||RO|| TVH20</string>
@@ -3005,7 +3003,7 @@
     <Id>TVR1.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR1</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Logo_TVR_1_%282004%29.svg/150px-Logo_TVR_1_%282004%29.svg.png</LogoUrl>
     <Aliases>
       <string> TVR 1 </string>
@@ -3035,7 +3033,7 @@
     <Id>TVR2.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR2</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Logo_TVR_2_%282004%29.svg/150px-Logo_TVR_2_%282004%29.svg.png</LogoUrl>
     <Aliases>
       <string> TVR 2 </string>
@@ -3060,7 +3058,7 @@
     <Id>TVR3.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR3</Name>
-    <Group>General</Group>
+    <GroupId>general</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Logo_TVR_3_%282017%29.svg/150px-Logo_TVR_3_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string> TVR 3 </string>
@@ -3085,7 +3083,7 @@
     <Id>TVRCluj.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Cluj</Name>
-    <Group>Local - Transilvania</Group>
+    <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Logo_TVR_Cluj.svg/1280px-Logo_TVR_Cluj.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Cluj</string>
@@ -3096,7 +3094,7 @@
     <Id>TVRCraiova.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Craiova</Name>
-    <Group>Local - Oltenia</Group>
+    <GroupId>local-oltenia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Logo_TVR_Craiova.svg/1280px-Logo_TVR_Craiova.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Craiova</string>
@@ -3107,7 +3105,7 @@
     <Id>TVRIasi.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Iasi</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Logo_TVR_Ia%C8%99i.svg/1280px-Logo_TVR_Ia%C8%99i.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Iasi</string>
@@ -3119,9 +3117,10 @@
     <Id>TVRTarguMures.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Targu Mures</Name>
-    <Group>Local - Transilvania</Group>
+    <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Logo_TVR_T%C3%AErgu-Mure%C8%99.svg/1280px-Logo_TVR_T%C3%AErgu-Mure%C8%99.svg.png</LogoUrl>
     <Aliases>
+      <string>RO: TVR Targu Mures</string>
       <string>RO: TVR Târgu-Mureș</string>
       <string>RO: TVR Tg Mures</string>
     </Aliases>
@@ -3130,7 +3129,7 @@
     <Id>TVRTimisoara.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Timisoara</Name>
-    <Group>Local - Banat</Group>
+    <GroupId>local-banat</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Logo_TVR_Timi%C8%99oara.svg/1280px-Logo_TVR_Timi%C8%99oara.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Timisoara</string>
@@ -3143,7 +3142,7 @@
     <Id>TVRInternational.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR International</Name>
-    <Group>Extern</Group>
+    <GroupId>foreign</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/d9/TVRiLogo.svg/1200px-TVRiLogo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Int</string>
@@ -3155,7 +3154,7 @@
     <Id>TVRMoldova.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR Moldova</Name>
-    <Group>Local - Basarabia</Group>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/de/Logo_TVR_Moldova.svg/1280px-Logo_TVR_Moldova.svg.png</LogoUrl>
     <Aliases>
       <string>MD: TVR Moldova</string>
@@ -3167,7 +3166,7 @@
     <Id>UTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>U TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>http://0.gravatar.com/avatar/69247a9a644ad8980adc79d7d60ccc52?s=200&amp;r=g</LogoUrl>
     <Aliases>
       <string> U TV</string>
@@ -3196,7 +3195,7 @@
     <Id>ViasatExplore.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Viasat Explore</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/a/ab/Viasat_Explore.png</LogoUrl>
     <Aliases>
       <string>RO: Viasat Explore</string>
@@ -3209,7 +3208,7 @@
     <Id>ViasatHistory.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Viasat History</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/7/7f/Viasat_History-2014.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Viasat History</string>
@@ -3230,7 +3229,7 @@
     <Id>ViasatNature.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Viasat Nature</Name>
-    <Group>Educational</Group>
+    <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/1/15/Viasat_Nature-2014.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Viasat Nature</string>
@@ -3249,7 +3248,7 @@
     <Id>ZUTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>ZU</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a2/ZUTVLogo.png</LogoUrl>
     <Aliases>
       <string>||RO|| ZU TV</string>
@@ -3265,7 +3264,7 @@
     <Id>BucurestiTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Bucuresti TV</Name>
-    <Group>Local - Muntenia</Group>
+    <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/bucuresti-tv.png</LogoUrl>
     <Aliases>
       <string>Bucuresti TV</string>
@@ -3279,7 +3278,7 @@
     <Id>a7tv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>A7 TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>https://a7tv.ro/wp-content/uploads/2017/12/logo-a7tv.png</LogoUrl>
     <Aliases>
       <string>RO: A7 TV</string>
@@ -3289,7 +3288,7 @@
     <Id>Canal33.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Canal 33</Name>
-    <Group>News</Group>
+    <GroupId>news</GroupId>
     <LogoUrl>http://canal33.ro/wp-content/uploads/2017/12/logo.jpg</LogoUrl>
     <Aliases>
       <string>RO: Canal 33</string>
@@ -3300,7 +3299,7 @@
     <Id>IasiTVLife.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Iasi TV Life</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>http://www.iasitvlife.ro/images/itv-logo.png</LogoUrl>
     <Aliases>
       <string>Iasi TV Life</string>
@@ -3313,7 +3312,7 @@
     <Id>tvplus-suceava</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV Plus Suceava</Name>
-    <Group>Local - Bucovina</Group>
+    <GroupId>local-bucovina</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-plus-suceava.png</LogoUrl>
     <Aliases>
       <string>RO: TV Plus Suceava</string>
@@ -3323,7 +3322,7 @@
     <Id>misatv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Misa TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>https://misatv.ro/wp-content/uploads/2018/09/MTV-Logo-Cropped2.png</LogoUrl>
     <Aliases>
       <string>RO | MISA TV</string>
@@ -3333,18 +3332,19 @@
     <Id>ElitaTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Elita TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>https://yt3.ggpht.com/a-/AAuE7mAx7kElqoc0zrLwF7cKkYXikwzL6a6rRuo5=s900-mo-c-c0xffffffff-rj-k-no</LogoUrl>
     <Aliases>
-      <string>TV ELITA</string>
       <string>Elita TV</string>
+      <string>MD: Elita Rezina</string>
+      <string>TV ELITA</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>PublikaTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Publika TV</Name>
-    <Group>News</Group>
+    <GroupId>news</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/f/f9/Publika.png</LogoUrl>
     <Aliases>
       <string>MD: Publika TV</string>
@@ -3357,7 +3357,7 @@
     <Id>BusuiocTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Busuioc TV</Name>
-    <Group>Music</Group>
+    <GroupId>music</GroupId>
     <LogoUrl>https://busuioctv.md/wp-content/uploads/2018/03/cropped-Favicon-Busuioc.png</LogoUrl>
     <Aliases>
       <string>MD: Busuioc TV</string>
@@ -3367,7 +3367,7 @@
     <Id>JurnalTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Jurnal TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://stvron.com/canale/mari/jurnal-tv.png</LogoUrl>
     <Aliases>
       <string>MD: Jurnal TV</string>
@@ -3377,7 +3377,7 @@
     <Id>Noroc.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Noroc TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://stvron.com/canale/mari/noroc-tv.png</LogoUrl>
     <Aliases>
       <string>MD: Noroc TV SD</string>
@@ -3387,7 +3387,7 @@
     <Id>FilmBox.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>FilmBox</Name>
-    <Group>Film</Group>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/FILMBOX.jpg/200px-FILMBOX.jpg</LogoUrl>
     <Aliases>
       <string>FilmBox</string>
@@ -3399,7 +3399,7 @@
     <Id>DiasporaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Diaspora TV</Name>
-    <Group>Extern</Group>
+    <GroupId>foreign</GroupId>
     <LogoUrl>http://www.tvdiaspora.ro/uploads/custom-logo.png</LogoUrl>
     <Aliases>
       <string>DIASPORA TV</string>
@@ -3411,7 +3411,7 @@
     <Id>CredoTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Credo TV</Name>
-    <Group>Religios</Group>
+    <GroupId>religious</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Banner-credo-tv.png</LogoUrl>
     <Aliases>
       <string>Credo TV [720p]</string>
@@ -3423,7 +3423,7 @@
     <Id>PROFM.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>PRO FM</Name>
-    <Group>Radio</Group>
+    <GroupId>radio</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/b/b8/Profm.png/220px-Profm.png</LogoUrl>
     <Aliases>
       <string>PROFM</string>
@@ -3433,7 +3433,7 @@
     <Id>DanceFM.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Dance FM</Name>
-    <Group>Radio</Group>
+    <GroupId>radio</GroupId>
     <LogoUrl>https://www.dancefm.ro/wp-content/uploads/logoDance-2018.png</LogoUrl>
     <Aliases>
       <string>PROFM DANCEFM</string>
@@ -3443,7 +3443,7 @@
     <Id>CI.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>CI</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>Ro: CI</string>
@@ -3453,7 +3453,7 @@
     <Id>BitTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Bit TV</Name>
-    <Group>Local - Moldova</Group>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl>https://bittv.info/wp-content/uploads/2016/02/cropped-logo1.png</LogoUrl>
     <Aliases>
       <string>Bit TV (ROM)</string>
@@ -3465,7 +3465,7 @@
     <Id>Moldova1.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Moldova 1</Name>
-    <Group>Local - Basarabia</Group>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Logo_Moldova_1_%282016%29.svg/1200px-Logo_Moldova_1_%282016%29.svg.png</LogoUrl>
     <Aliases>
       <string>MD: Moldova 1</string>
@@ -3477,7 +3477,7 @@
     <Id>Moldova2.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Moldova 2</Name>
-    <Group>Local - Basarabia</Group>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Logo_Moldova_2_%282016%29.svg/2000px-Logo_Moldova_2_%282016%29.svg.png</LogoUrl>
     <Aliases>
       <string>MD: Moldova 2</string>
@@ -3489,7 +3489,7 @@
     <Id>TV8Moldova.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV8 Moldova</Name>
-    <Group>Local - Basarabia</Group>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_TV8_%282017%29.svg/2000px-Logo_TV8_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>MD: TV8</string>
@@ -3500,7 +3500,7 @@
     <Id>HTBMoldova.md</Id>
     <IsEnabled>false</IsEnabled>
     <Name>NTV Moldova</Name>
-    <Group>Local - Basarabia</Group>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://www.deschide.md/images/cms-image-000036515.png</LogoUrl>
     <Aliases>
       <string>HTB Moldova</string>
@@ -3511,7 +3511,7 @@
     <Id>CanalRegional.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Canal Regional</Name>
-    <Group>Local - Basarabia</Group>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://canalregional.md/wp-content/uploads/2018/04/Logo.png</LogoUrl>
     <Aliases>
       <string>Canal Regional (Moldova)</string>
@@ -3523,7 +3523,7 @@
     <Id>GoldTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Gold TV</Name>
-    <Group></Group>
+    <GroupId></GroupId>
     <LogoUrl>http://goldtv.md/GoldTVLogo1.gif</LogoUrl>
     <Aliases>
       <string>Gold TV (Moldova)</string>

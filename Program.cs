@@ -26,12 +26,13 @@ namespace IptvPlaylistFetcher
 
             IServiceProvider serviceProvider = new ServiceCollection()
                 .AddSingleton(applicationSettings)
-                .AddScoped<IPlaylistAggregator, PlaylistAggregator>()
-                .AddScoped<IPlaylistFetcher, PlaylistFetcher>()
-                .AddScoped<IPlaylistFileBuilder, PlaylistFileBuilder>()
+                .AddSingleton<IPlaylistAggregator, PlaylistAggregator>()
+                .AddSingleton<IPlaylistFetcher, PlaylistFetcher>()
+                .AddSingleton<IPlaylistFileBuilder, PlaylistFileBuilder>()
                 .AddSingleton<IMediaStreamStatusChecker, MediaStreamStatusChecker>()
-                .AddScoped<IChannelDefinitionRepository, ChannelDefinitionRepository>()
-                .AddScoped<IPlaylistProviderRepository, PlaylistProviderRepository>()
+                .AddSingleton<IChannelDefinitionRepository, ChannelDefinitionRepository>()
+                .AddSingleton<IGroupRepository, GroupRepository>()
+                .AddSingleton<IPlaylistProviderRepository, PlaylistProviderRepository>()
                 .BuildServiceProvider();
 
             IPlaylistAggregator aggregator = serviceProvider.GetService<IPlaylistAggregator>();

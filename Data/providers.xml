@@ -122,6 +122,14 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>iptvsaga</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>46</Priority>
+    <Name>IPTV Saga</Name>
+    <UrlFormat>http://www.iptvsaga.com/download/111-romanian-tv-channels-playlist-m3u-{0:MM-yy}.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>iptvsource</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>50</Priority>
