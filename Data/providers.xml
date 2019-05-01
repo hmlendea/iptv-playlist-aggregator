@@ -258,7 +258,23 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>freearhey-iptv-github-ro</Id>
+    <Id>github-kilirushi-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>110</Priority>
+    <Name>kilirushi's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/kilirushi/m3u/master/ro.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-kilirushi-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>110</Priority>
+    <Name>kilirushi's IPTV GitHub MD Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/kilirushi/m3u/master/md.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-freearhey-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>110</Priority>
     <Name>freearhey's IPTV GitHub RO Channels</Name>
@@ -266,7 +282,7 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>freearhey-iptv-github-md</Id>
+    <Id>github-freearhey-md</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>111</Priority>
     <Name>freearhey's IPTV GitHub MD Channels</Name>

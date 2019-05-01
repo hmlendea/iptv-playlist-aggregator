@@ -84,7 +84,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Accent TV</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>http://curentul.md/wp-content/uploads/2017/10/accent-tv.jpg</LogoUrl>
+    <LogoUrl>https://i.imgur.com/aCHhM1Z.png</LogoUrl>
     <Aliases>
       <string>Accent TV</string>
       <string>Accent</string>
@@ -186,7 +186,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Profit.ro</Name>
     <GroupId>news</GroupId>
-    <LogoUrl>https://www.profit.ro/favicon.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/J57neLI.png</LogoUrl>
     <Aliases>
       <string>RO: Profit.ro</string>
     </Aliases>
@@ -243,7 +243,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Animal Planet</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>https://www.underconsideration.com/brandnew/archives/animal_planet_2018_logo.png</LogoUrl>
+    <LogoUrl>http://oi68.tinypic.com/n47ic7.jpg</LogoUrl>
     <Aliases>
       <string>[ RO ] Animal Planet</string>
       <string>Animal Planet HD</string>
@@ -471,7 +471,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>AXN Spin</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AXN_Spin_logo_%282015%29.svg/250px-AXN_Spin_logo_%282015%29.svg.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/WokkHFK.png</LogoUrl>
     <Aliases>
       <string>||RO|| AXN SPIN</string>
       <string>||ROM|| AXN SPIN</string>
@@ -508,7 +508,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>BBC Earth</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/BBC_Earth.jpg/125px-BBC_Earth.jpg</LogoUrl>
+    <LogoUrl>https://i.imgur.com/uWMCQ4o.png</LogoUrl>
     <Aliases>
       <string>BBC Earth HD</string>
       <string>RO: BBC Earth HD</string>
@@ -686,7 +686,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Comedy Est</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://restxyz.akta.ro/assets/images/comedyest_poster.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/zKe4yDK.png</LogoUrl>
     <Aliases>
       <string>RO: Comedy Est</string>
     </Aliases>
@@ -696,7 +696,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Comedy Central</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/5a864149c7b71865258b4568.png</LogoUrl>
+    <LogoUrl>http://i63.tinypic.com/35je4ub_th.png</LogoUrl>
     <Aliases>
       <string>||RO|| COMEDY CENTRAL</string>
       <string>||ROM|| COMEDY CENTRAL</string>
@@ -751,7 +751,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Super TV</Name>
     <GroupId>local-muntenia</GroupId>
-    <LogoUrl>https://yt3.ggpht.com/-KLZH_Hi8-MU/AAAAAAAAAAI/AAAAAAAAAAA/XZFb5ZcVvK8/s240-c-k-no-mo-rj-c0xffffff/photo.jpg</LogoUrl>
+    <LogoUrl>https://i.imgur.com/XLgVI3n.png</LogoUrl>
     <Aliases>
       <string>RO: Super TV</string>
     </Aliases>
@@ -779,7 +779,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Dibi TV</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>http://www.dibitv.ro/galerii/video/poze/2.jpg</LogoUrl>
+    <LogoUrl>https://i.imgur.com/1W0ZO5e.png</LogoUrl>
     <Aliases>
       <string>[ RO ]DIBI TV (Music) Balkan</string>
       <string>Dibi TV</string>
@@ -849,7 +849,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 1</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/DigiSport1.ro.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/wMjCrbX.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI Sport 1</string>
       <string>[ RO ] DIGI SPORTS 1</string>
@@ -864,6 +864,8 @@
       <string>RO: DIGI Sport 1 HD RO</string>
       <string>RO: Digi Sport 1 HD</string>
       <string>RO: DIGI SPORT 1 HD</string>
+      <string>RO: DIGI Sport 1 HQ</string>
+      <string>RO: DIGI Sport 1 MQ</string>
       <string>RO: Digi Sport 1</string>
       <string>RO: DIGI SPORT 1</string>
       <string>RO:DIGI  SPORT 1</string>
@@ -877,7 +879,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 2</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/DigiSport2.ro.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/FwLH9nY.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI Sport 2</string>
       <string>[ RO ] DIGI SPORTS 2</string>
@@ -892,6 +894,8 @@
       <string>RO: DIGI Sport 2 HD RO</string>
       <string>RO: Digi Sport 2 HD</string>
       <string>RO: DIGI SPORT 2 HD</string>
+      <string>RO: DIGI Sport 2 HQ</string>
+      <string>RO: DIGI Sport 2 MQ</string>
       <string>RO: DIGI SPORT 2</string>
       <string>RO: Digi Sport 2</string>
       <string>RO:DIGI  SPORT 2</string>
@@ -904,7 +908,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 3</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/DigiSport3.ro.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/aSpucRq.png</LogoUrl>
     <Aliases>
       <string>[ RO ] DIGI Sport 3</string>
       <string>[ RO ] DIGI SPORTS 3</string>
@@ -919,6 +923,8 @@
       <string>RO: DIGI Sport 3 HD RO</string>
       <string>RO: Digi Sport 3 HD</string>
       <string>RO: DIGI SPORT 3 HD</string>
+      <string>RO: DIGI Sport 3 HQ</string>
+      <string>RO: DIGI Sport 3 MQ</string>
       <string>RO: DIGI SPORT 3</string>
       <string>RO: Digi Sport 3</string>
       <string>RO:DIGI  SPORT 3</string>
@@ -931,7 +937,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 4</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/DigiSport4.ro.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/plLLnMN.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Digi Sport 4</string>
       <string>[ RO ] DIGI SPORTS 4</string>
@@ -942,11 +948,13 @@
       <string>DIGI SPORT 4</string>
       <string>Digi Sports 4</string>
       <string>RO: DIGI  SPORT 4</string>
-      <string>RO: DIGI Sport 4 FHD</string>
       <string>RO: DIGI SPORT 4 FHD</string>
+      <string>RO: DIGI Sport 4 FHD</string>
       <string>RO: DIGI Sport 4 HD RO</string>
       <string>RO: Digi Sport 4 HD</string>
       <string>RO: DIGI SPORT 4 HD</string>
+      <string>RO: DIGI Sport 4 HQ</string>
+      <string>RO: DIGI Sport 4 MQ</string>
       <string>RO: DIGI SPORT 4</string>
       <string>RO: Digi Sport 4</string>
       <string>RO:DIGI  SPORT 4</string>
@@ -1341,7 +1349,7 @@
     <Id>EtnicTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Etnic TV</Name>
-    <GroupId></GroupId>
+    <GroupId>music</GroupId>
     <LogoUrl>http://tvrohdonline.com/wp-content/uploads/2019/01/3.png</LogoUrl>
     <Aliases>
       <string>Ro- ETNIC TV</string>
@@ -1364,7 +1372,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>EuroSport 1</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45c5.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/vJztjZf.png</LogoUrl>
     <Aliases>
       <string>[ RO ] Eurosport 1 HD RO</string>
       <string>[ RO ] EUROSPORT 1 HD</string>
@@ -1393,7 +1401,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>EuroSport 2</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45c6.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/uU0u1xz.png</LogoUrl>
     <Aliases>
       <string>[ RO ] EUROSPORT 2 HD</string>
       <string>[ RO ] Eurosport 2</string>
@@ -1895,7 +1903,7 @@
     <Id>arcadia-tv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Arcadia World</Name>
-    <GroupId>documentar</GroupId>
+    <GroupId>educational</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/arcadia-tv.png</LogoUrl>
     <Aliases>
       <string>RO: Arcadia World</string>
@@ -1918,7 +1926,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>MTV Music 24</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>https://static.spin.com/files/2016/09/MTV-HD-Logo-640x441.jpg</LogoUrl>
+    <LogoUrl>https://i.imgur.com/lqhE3lx.png</LogoUrl>
     <Aliases>
       <string>MTV Music 24 HD</string>
     </Aliases>
@@ -1946,6 +1954,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>1hd</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>1 HD</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://i.imgur.com/KS6ya3j.png</LogoUrl>
+    <Aliases>
+      <string>RO- 1 HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>MusicChannel.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>1 Music Channel</Name>
@@ -1953,6 +1971,7 @@
     <LogoUrl>https://static.iptv-epg.com/ro/MusicChannel.ro.png</LogoUrl>
     <Aliases>
       <string>RO: 1 Music Channel</string>
+      <string>RO: Music Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2755,12 +2774,13 @@
       <string>[ RO ] Telekom Sport 1 HD</string>
       <string>||RO|| TELEKOM SPORT 1</string>
       <string>||ROM|| TELEKOM SPORT 1</string>
+      <string>Ro- Dolce Sport 1 HD</string>
       <string>RO: Dolce Sport 1</string>
       <string>RO: Telekom Sport 1 (backup)</string>
-      <string>RO: Telekom Sport 1 FHD</string>
       <string>RO: TELEKOM Sport 1 FHD</string>
-      <string>RO: Telekom Sport 1 HD(On-Demand)</string>
+      <string>RO: Telekom Sport 1 FHD</string>
       <string>RO: TELEKOM SPORT 1 HD(On-Demand)</string>
+      <string>RO: Telekom Sport 1 HD(On-Demand)</string>
       <string>RO: Telekom Sport 1 HD</string>
       <string>RO: TELEKOM SPORT 1 HD</string>
       <string>RO: Telekom Sport 1</string>
@@ -2780,6 +2800,7 @@
       <string>[ RO ] Telekom Sport 2 HD</string>
       <string>||RO|| TELEKOM SPORT 2</string>
       <string>||ROM|| TELEKOM SPORT 2</string>
+      <string>Ro- Dolce Sport 2 HD</string>
       <string>RO: Dolce Sport 2</string>
       <string>RO: Telekom Sport 2 (backup)</string>
       <string>RO: Telekom Sport 2 FHD</string>
@@ -2805,6 +2826,7 @@
       <string>[ RO ] Telekom Sport 3 HD</string>
       <string>||RO|| TELEKOM SPORT 3</string>
       <string>||ROM|| TELEKOM SPORT 3</string>
+      <string>Ro- Dolce Sport 3 HD</string>
       <string>RO: Dolce Sport 3</string>
       <string>RO: Telekom Sport 3 (backup)</string>
       <string>RO: Telekom Sport 3 FHD</string>
@@ -2830,6 +2852,7 @@
       <string>[ RO ] Telekom Sport 4 HD</string>
       <string>||RO|| TELEKOM SPORT 4</string>
       <string>||ROM|| TELEKOM SPORT 4</string>
+      <string>Ro- Dolce Sport 4 HD</string>
       <string>RO: Dolce Sport 4</string>
       <string>RO: Telekom Sport 4 (backup)</string>
       <string>RO: Telekom Sport 4 FHD</string>
@@ -2855,6 +2878,7 @@
       <string>[ RO ] Telekom Sport 5 HD</string>
       <string>||RO|| TELEKOM SPORT 5</string>
       <string>||ROM|| TELEKOM SPORT 5</string>
+      <string>Ro- Dolce Sport 5 HD</string>
       <string>RO: Dolce Sport 5</string>
       <string>RO: Telekom Sport 5 (backup)</string>
       <string>RO: Telekom Sport 5 FHD</string>
@@ -2880,6 +2904,7 @@
       <string>[ RO ] Telekom Sport 6 HD</string>
       <string>||RO|| TELEKOM SPORT 6</string>
       <string>||ROM|| TELEKOM SPORT 6</string>
+      <string>Ro- Dolce Sport 6 HD</string>
       <string>RO: Dolce Sport 6</string>
       <string>RO: Telekom Sport 6 (backup)</string>
       <string>RO: Telekom Sport 6 FHD</string>
@@ -2955,7 +2980,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Tezaur TV</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>http://www.tezaurtv.ro/wp-content/uploads/2018/09/Tezaur-TV-online.jpg</LogoUrl>
+    <LogoUrl>https://i.imgur.com/pSyX10a.png</LogoUrl>
     <Aliases>
       <string>Ro- TEZAUR TV</string>
     </Aliases>
@@ -2965,7 +2990,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Miorița TV</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>https://scontent.fomr1-1.fna.fbcdn.net/v/t1.0-9/23472832_2058248204396465_7929018799266255912_n.jpg?_nc_cat=106&amp;_nc_ht=scontent.fomr1-1.fna&amp;oh=a9542aaed1845b097c3098566efecd2d&amp;oe=5D311CF6</LogoUrl>
+    <LogoUrl>https://i.imgur.com/geGCI4K.png</LogoUrl>
     <Aliases>
       <string>Ro- MIORITA TV</string>
     </Aliases>
@@ -3381,7 +3406,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Radio m2o TV</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>https://www.m2o.it/wp-content/themes/network-m2o/img/logo_m2o_1024x1024.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/Q5UoalD.png</LogoUrl>
     <Aliases>
       <string>RO: Radio m2o TV</string>
     </Aliases>
@@ -3393,6 +3418,8 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/a/ab/Viasat_Explore.png</LogoUrl>
     <Aliases>
+      <string>RO: Viasat Explore HQ</string>
+      <string>RO: Viasat Explore MQ</string>
       <string>RO: Viasat Explore</string>
       <string>RO: VIASAT EXPLORER</string>
       <string>RO: VIASAT EXPORER</string>
@@ -3409,13 +3436,15 @@
       <string>[ RO ] Viasat History</string>
       <string>||RO|| VIASAT HISTORY</string>
       <string>||ROM|| VIASAT HISTORY</string>
+      <string>Ro | Viasat History</string>
       <string>RO: VIASAT  HISTORY</string>
       <string>RO: Viasat History FHD</string>
-      <string>RO: VIASAT HISTORY</string>
+      <string>RO: Viasat History HQ</string>
+      <string>RO: Viasat History MQ</string>
       <string>RO: Viasat History</string>
       <string>Ro: Viasat History</string>
+      <string>RO: VIASAT HISTORY</string>
       <string>RO:VIASAT  HISTORY</string>
-      <string>Ro | Viasat History</string>
       <string>VIASAT HISTORY</string>
       <string>Viasat History</string>
     </Aliases>
@@ -3431,6 +3460,8 @@
       <string>||RO|| VIASAT NATURE</string>
       <string>||ROM|| VIASAT NATURE</string>
       <string>RO: VIASAT  NATURE</string>
+      <string>RO: Viasat Nature HQ</string>
+      <string>RO: Viasat Nature MQ</string>
       <string>RO: Viasat Nature</string>
       <string>Ro: Viasat Nature</string>
       <string>RO: VIASAT NATURE</string>
@@ -3605,8 +3636,8 @@
     <Id>Noroc.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Noroc TV</Name>
-    <GroupId></GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/noroc-tv.png</LogoUrl>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://i.ibb.co/mbNhwfk/noroc-tv.png</LogoUrl>
     <Aliases>
       <string>MD: Noroc TV SD</string>
     </Aliases>
@@ -3628,7 +3659,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Diaspora TV</Name>
     <GroupId>international</GroupId>
-    <LogoUrl>http://www.tvdiaspora.ro/uploads/custom-logo.png</LogoUrl>
+    <LogoUrl>https://i.imgur.com/HUdy3Q5.png</LogoUrl>
     <Aliases>
       <string>DIASPORA TV</string>
       <string>Ro- DIASPORA TV</string>
