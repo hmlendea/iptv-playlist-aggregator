@@ -5,22 +5,27 @@ using System.IO;
 using System.Linq;
 using System.Net;
 
+using IptvPlaylistFetcher.Communication;
 using IptvPlaylistFetcher.Configuration;
 using IptvPlaylistFetcher.Service.Models;
 
 namespace IptvPlaylistFetcher.Service
 {
-    public sealed class MediaStreamStatusChecker : IMediaStreamStatusChecker
+    public sealed class MediaSourceChecker : IMediaSourceChecker
     {
         const char CsvFieldSeparator = ',';
         const string TimestampFormat = "yyyy-MM-dd_HH-mm-ss";
 
+        readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly ApplicationSettings settings;
 
         readonly IDictionary<string, MediaStreamStatus> statuses;
 
-        public MediaStreamStatusChecker(ApplicationSettings settings)
+        public MediaSourceChecker(
+            IPlaylistFileBuilder playlistFileBuilder,
+            ApplicationSettings settings)
         {
+            this.playlistFileBuilder = playlistFileBuilder;
             this.settings = settings;
 
             statuses = new Dictionary<string, MediaStreamStatus>();
@@ -28,7 +33,7 @@ namespace IptvPlaylistFetcher.Service
             LoadCache();
         }
 
-        public bool IsStreamAlive(string url)
+        public bool IsSourcePlayable(string url)
         {
             if (string.IsNullOrWhiteSpace(url))
             {
@@ -40,14 +45,30 @@ namespace IptvPlaylistFetcher.Service
                 return statuses[url].IsAlive;
             }
             
-            bool status = RetrieveStreamAliveStatus(url);
+            bool status;
+
+            if (url.Contains(".m3u") || url.Contains(".m3u8"))
+            {
+                status = IsPlaylistPlayable(url);
+            }
+            else
+            {
+                status = IsStreamPlayable(url);
+            }
             
             SaveToCache(url, status);
 
             return status;
         }
 
-        bool RetrieveStreamAliveStatus(string url)
+        bool IsPlaylistPlayable(string url)
+        {
+            Playlist playlist = DownloadPlaylist(url);
+
+            return !Playlist.IsNullOrEmpty(playlist);
+        }
+
+        bool IsStreamPlayable(string url)
         {
             try
             {
@@ -68,6 +89,26 @@ namespace IptvPlaylistFetcher.Service
             {
                 return false;
             }
+        }
+
+        Playlist DownloadPlaylist(string url)
+        {
+            using (FileDownloader client = new FileDownloader(5000))
+            {
+                try
+                {
+                    string fileContent = client.DownloadString(url);
+                    Playlist playlist = playlistFileBuilder.ParseFile(fileContent);
+
+                    if (!Playlist.IsNullOrEmpty(playlist))
+                    {
+                        return playlist;
+                    }
+                }
+                catch { }
+            }
+            
+            return null;
         }
 
         void LoadCache()

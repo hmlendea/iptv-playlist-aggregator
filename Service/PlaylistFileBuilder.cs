@@ -81,26 +81,28 @@ namespace IptvPlaylistFetcher.Service
             {
                 string line = lines[i];
 
-                if (string.IsNullOrWhiteSpace(line) ||
-                    line.Contains(FileHeader) ||
-                    line.Contains(EntryHeaderExtendedVersion)) // TODO: See what to do about this
+                if (string.IsNullOrWhiteSpace(line))
                 {
                     continue;
                 }
 
-                if (line.Contains(EntryHeader))
+                if (line.StartsWith(EntryHeader))
                 {
                     Channel channel = new Channel();
                     channel.Name = line.Split(',')[1];
 
                     playlist.Channels.Add(channel);
                 }
-                else if (line.Contains(EntryHeaderExtendedInfo))
+                else if (line.StartsWith(EntryHeaderExtendedInfo))
                 {
                     Channel channel = new Channel();
                     // TODO: Where should I take the name from ???
 
                     playlist.Channels.Add(channel);
+                }
+                else if (line.StartsWith("#"))
+                {
+                    continue;
                 }
                 else
                 {

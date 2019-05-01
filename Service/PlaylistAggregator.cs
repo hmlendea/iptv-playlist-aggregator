@@ -14,7 +14,7 @@ namespace IptvPlaylistFetcher.Service
     {
         readonly IPlaylistFetcher playlistFetcher;
         readonly IPlaylistFileBuilder playlistFileBuilder;
-        readonly IMediaStreamStatusChecker mediaStreamStatusChecker;
+        readonly IMediaSourceChecker mediaSourceChecker;
         readonly IChannelDefinitionRepository channelRepository;
         readonly IGroupRepository groupRepository;
         readonly IPlaylistProviderRepository playlistProviderRepository;
@@ -29,7 +29,7 @@ namespace IptvPlaylistFetcher.Service
         public PlaylistAggregator(
             IPlaylistFetcher playlistFetcher,
             IPlaylistFileBuilder playlistFileBuilder,
-            IMediaStreamStatusChecker mediaStreamStatusChecker,
+            IMediaSourceChecker mediaSourceChecker,
             IChannelDefinitionRepository channelRepository,
             IGroupRepository groupRepository,
             IPlaylistProviderRepository playlistProviderRepository,
@@ -37,7 +37,7 @@ namespace IptvPlaylistFetcher.Service
         {
             this.playlistFetcher = playlistFetcher;
             this.playlistFileBuilder = playlistFileBuilder;
-            this.mediaStreamStatusChecker = mediaStreamStatusChecker;
+            this.mediaSourceChecker = mediaSourceChecker;
             this.channelRepository = channelRepository;
             this.playlistProviderRepository = playlistProviderRepository;
             this.groupRepository = groupRepository;
@@ -52,7 +52,7 @@ namespace IptvPlaylistFetcher.Service
                 .GetAll()
                 .OrderBy(x => x.Name)
                 .ToServiceModels();
-            
+
             groups = groupRepository
                 .GetAll()
                 .Where(x => x.IsEnabled)
@@ -100,15 +100,15 @@ namespace IptvPlaylistFetcher.Service
             if (settings.CanIncludeUnmatchedChannels)
             {
                 Console.WriteLine($"Getting unmatched channels ...");
-                
+
                 IEnumerable<Channel> unmatchedChannels = GetUnmatchedChannels(providerChannels);
 
                 foreach (Channel unmatchedChannel in unmatchedChannels)
                 {
-                    Console.WriteLine($"Unmatched channel: '{unmatchedChannel.Name}'");
-
-                    if (mediaStreamStatusChecker.IsStreamAlive(unmatchedChannel.Url))
+                    if (mediaSourceChecker.IsSourcePlayable(unmatchedChannel.Url))
                     {
+                        Console.WriteLine($"Added unmatched channel: '{unmatchedChannel.Name}'");
+
                         unmatchedChannel.Number = playlist.Channels.Count + 1;
                         playlist.Channels.Add(unmatchedChannel);
                     }
@@ -148,7 +148,7 @@ namespace IptvPlaylistFetcher.Service
                     continue;
                 }
 
-                bool isAlive = mediaStreamStatusChecker.IsStreamAlive(providerChannel.Url);
+                bool isAlive = mediaSourceChecker.IsSourcePlayable(providerChannel.Url);
 
                 if (isAlive)
                 {
@@ -176,7 +176,7 @@ namespace IptvPlaylistFetcher.Service
                     normalisedName += char.ToUpper(c);
                 }
             }
-            
+
             return normalisedName;
         }
     }

@@ -29,7 +29,7 @@ namespace IptvPlaylistFetcher
                 .AddSingleton<IPlaylistAggregator, PlaylistAggregator>()
                 .AddSingleton<IPlaylistFetcher, PlaylistFetcher>()
                 .AddSingleton<IPlaylistFileBuilder, PlaylistFileBuilder>()
-                .AddSingleton<IMediaStreamStatusChecker, MediaStreamStatusChecker>()
+                .AddSingleton<IMediaSourceChecker, MediaSourceChecker>()
                 .AddSingleton<IChannelDefinitionRepository, ChannelDefinitionRepository>()
                 .AddSingleton<IGroupRepository, GroupRepository>()
                 .AddSingleton<IPlaylistProviderRepository, PlaylistProviderRepository>()
