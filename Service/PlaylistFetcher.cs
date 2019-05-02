@@ -17,7 +17,7 @@ namespace IptvPlaylistFetcher.Service
     public sealed class PlaylistFetcher : IPlaylistFetcher
     {
         const string CacheFileNameFormat = "{0}_playlist_{1:yyyy-MM-dd}.m3u";
-
+        
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly ApplicationSettings settings;
 
@@ -85,7 +85,7 @@ namespace IptvPlaylistFetcher.Service
             return playlist;
         }
 
-        void SaveProviderPlaylistToCache(string providerId, DateTime date, string playlist)
+        void StorePlaylistInCache(string providerId, DateTime date, string file)
         {
             if (!Directory.Exists(settings.CacheDirectoryPath))
             {
@@ -96,7 +96,7 @@ namespace IptvPlaylistFetcher.Service
                 settings.CacheDirectoryPath,
                 string.Format(CacheFileNameFormat, providerId, date));
 
-            File.WriteAllText(filePath, playlist);
+            File.WriteAllText(filePath, file);
         }
 
         Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
@@ -118,26 +118,33 @@ namespace IptvPlaylistFetcher.Service
         Playlist DownloadPlaylist(PlaylistProvider provider, DateTime date)
         {
             string url = string.Format(provider.UrlFormat, date);
+            string fileContent = DownloadPlaylistFile(url);
 
+            Playlist playlist = playlistFileBuilder.ParseFile(fileContent);
+
+            if (Playlist.IsNullOrEmpty(playlist))
+            {
+                Console.WriteLine($"[   ] GET '{url}'");
+                return null;
+            }
+
+            Console.WriteLine($"[ S ] GET '{url}'");
+            StorePlaylistInCache(provider.Id, date, fileContent);
+
+            return playlist;
+        }
+
+        string DownloadPlaylistFile(string url)
+        {
             using (FileDownloader client = new FileDownloader(5000))
             {
                 try
                 {
-                    string fileContent = client.DownloadString(url);
-                    Playlist playlist = playlistFileBuilder.ParseFile(fileContent);
-
-                    if (!Playlist.IsNullOrEmpty(playlist))
-                    {
-                        SaveProviderPlaylistToCache(provider.Id, date, fileContent);
-
-                        Console.WriteLine($"[ S ] GET '{url}'");
-                        return playlist;
-                    }
+                    return client.DownloadString(url);
                 }
                 catch { }
             }
-
-            Console.WriteLine($"[   ] GET '{url}'");
+            
             return null;
         }
     }
