@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using NuciExtensions;
+
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.Repositories;
 using IptvPlaylistAggregator.Service.Mapping;
@@ -177,7 +179,7 @@ namespace IptvPlaylistAggregator.Service
                 }
             }
 
-            return normalisedName;
+            return normalisedName.RemoveDiacritics();
         }
     }
 }
