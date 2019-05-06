@@ -560,18 +560,19 @@
     <Id>Canal2.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Canal 2</Name>
-    <GroupId></GroupId>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/7/7f/Logo_Canal_2.png</LogoUrl>
     <Aliases>
-      <string>RO:CANAL 2 HD</string>
       <string>Canal 2</string>
+      <string>MD: Canal 2</string>
+      <string>RO:CANAL 2 HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Canal3.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Canal 3</Name>
-    <GroupId></GroupId>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>http://www.frosat.net/images/logotv/original/Canal3_md.gif</LogoUrl>
     <Aliases>
       <string>Canal 3</string>
