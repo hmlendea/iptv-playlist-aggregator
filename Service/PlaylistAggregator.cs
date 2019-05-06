@@ -107,13 +107,15 @@ namespace IptvPlaylistAggregator.Service
 
                 foreach (Channel unmatchedChannel in unmatchedChannels)
                 {
-                    if (mediaSourceChecker.IsSourcePlayable(unmatchedChannel.Url))
+                    if (!mediaSourceChecker.IsSourcePlayable(unmatchedChannel.Url))
                     {
-                        Console.WriteLine($"Added unmatched channel: '{unmatchedChannel.Name}'");
-
-                        unmatchedChannel.Number = playlist.Channels.Count + 1;
-                        playlist.Channels.Add(unmatchedChannel);
+                        continue;
                     }
+
+                    Console.WriteLine($"Added unmatched channel: '{unmatchedChannel.Name}'");
+
+                    unmatchedChannel.Number = playlist.Channels.Count + 1;
+                    playlist.Channels.Add(unmatchedChannel);
                 }
             }
 
@@ -150,9 +152,7 @@ namespace IptvPlaylistAggregator.Service
                     continue;
                 }
 
-                bool isAlive = mediaSourceChecker.IsSourcePlayable(providerChannel.Url);
-
-                if (isAlive)
+                if (mediaSourceChecker.IsSourcePlayable(providerChannel.Url))
                 {
                     return providerChannel.Url;
                 }
@@ -171,12 +171,9 @@ namespace IptvPlaylistAggregator.Service
         {
             string normalisedName = string.Empty;
 
-            foreach (char c in name)
+            foreach (char c in name.Where(char.IsLetterOrDigit))
             {
-                if (char.IsLetterOrDigit(c))
-                {
-                    normalisedName += char.ToUpper(c);
-                }
+                normalisedName += char.ToUpper(c);
             }
 
             return normalisedName.RemoveDiacritics();

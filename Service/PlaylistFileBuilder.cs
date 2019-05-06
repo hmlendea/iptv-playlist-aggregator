@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 using IptvPlaylistAggregator.Configuration;
@@ -40,20 +41,7 @@ namespace IptvPlaylistAggregator.Service
                 
                 if (settings.AreTvGuideTagsEnabled)
                 {
-                    file += 
-                        $" {TvGuideChannelNumberTagKey}=\"{channel.Number}\"" +
-                        $" {TvGuideIdTagKey}=\"{channel.Id}\"" +
-                        $" {TvGuideNameTagKey}=\"{channel.Name}\"";
-                        
-                    if (!string.IsNullOrWhiteSpace(channel.LogoUrl))
-                    {
-                        file += $" {TvGuideLogoTagKey}=\"{channel.LogoUrl}\"";
-                    }
-
-                    if (!string.IsNullOrWhiteSpace(channel.Group))
-                    {
-                        file += $" {TvGuideGroupTagKey}=\"{channel.Group}\"";
-                    }
+                    file += BuildTvGuideHeaderTags(channel);
                 }
                 
                 file +=
@@ -68,24 +56,13 @@ namespace IptvPlaylistAggregator.Service
         {
             Playlist playlist = new Playlist();
 
-            if (string.IsNullOrWhiteSpace(file))
-            {
-                return playlist;
-            }
-
-            string[] lines = file
+            IEnumerable<string> lines = file?
                 .Replace("\r", "")
-                .Split('\n');
+                .Split('\n')
+                .Where(x => !string.IsNullOrWhiteSpace(x));
 
-            for (int i = 0; i < lines.Length; i++)
+            foreach (string line in lines)
             {
-                string line = lines[i];
-
-                if (string.IsNullOrWhiteSpace(line))
-                {
-                    continue;
-                }
-
                 if (line.StartsWith(EntryHeader))
                 {
                     Channel channel = new Channel();
@@ -111,6 +88,26 @@ namespace IptvPlaylistAggregator.Service
             }
 
             return playlist;
+        }
+
+        string BuildTvGuideHeaderTags(Channel channel)
+        {
+            string tvgTags =
+                $" {TvGuideChannelNumberTagKey}=\"{channel.Number}\"" +
+                $" {TvGuideIdTagKey}=\"{channel.Id}\"" +
+                $" {TvGuideNameTagKey}=\"{channel.Name}\"";
+                
+            if (!string.IsNullOrWhiteSpace(channel.LogoUrl))
+            {
+                tvgTags += $" {TvGuideLogoTagKey}=\"{channel.LogoUrl}\"";
+            }
+
+            if (!string.IsNullOrWhiteSpace(channel.Group))
+            {
+                tvgTags += $" {TvGuideGroupTagKey}=\"{channel.Group}\"";
+            }
+
+            return tvgTags;
         }
     }
 }
