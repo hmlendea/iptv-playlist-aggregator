@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using IptvPlaylistFetcher.Configuration;
-using IptvPlaylistFetcher.DataAccess.Repositories;
-using IptvPlaylistFetcher.Service.Mapping;
-using IptvPlaylistFetcher.Service.Models;
+using IptvPlaylistAggregator.Configuration;
+using IptvPlaylistAggregator.DataAccess.Repositories;
+using IptvPlaylistAggregator.Service.Mapping;
+using IptvPlaylistAggregator.Service.Models;
 
-namespace IptvPlaylistFetcher.Service
+namespace IptvPlaylistAggregator.Service
 {
     public sealed class PlaylistAggregator : IPlaylistAggregator
     {

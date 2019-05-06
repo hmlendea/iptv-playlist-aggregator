@@ -1,7 +1,7 @@
 using System;
 using System.Net;
 
-namespace IptvPlaylistFetcher.Communication
+namespace IptvPlaylistAggregator.Communication
 {
     public sealed class FileDownloader : WebClient
     {

@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using IptvPlaylistFetcher.DataAccess.DataObjects;
-using IptvPlaylistFetcher.Service.Models;
+using IptvPlaylistAggregator.DataAccess.DataObjects;
+using IptvPlaylistAggregator.Service.Models;
 
-namespace IptvPlaylistFetcher.Service.Mapping
+namespace IptvPlaylistAggregator.Service.Mapping
 {
     static class ChannelDefinitionMapping
     {

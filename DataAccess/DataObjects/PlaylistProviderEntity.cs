@@ -1,4 +1,4 @@
-namespace IptvPlaylistFetcher.DataAccess.DataObjects
+namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
     public class PlaylistProviderEntity
     {

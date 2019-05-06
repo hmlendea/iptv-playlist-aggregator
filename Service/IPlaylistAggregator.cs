@@ -1,4 +1,4 @@
-namespace IptvPlaylistFetcher.Service
+namespace IptvPlaylistAggregator.Service
 {
     public interface IPlaylistAggregator
     {

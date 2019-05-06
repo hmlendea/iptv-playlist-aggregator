@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace IptvPlaylistFetcher.DataAccess.DataObjects
+namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
     public sealed class ChannelDefinitionEntity
     {

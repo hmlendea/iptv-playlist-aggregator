@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-using IptvPlaylistFetcher.Service.Models;
+using IptvPlaylistAggregator.Service.Models;
 
-namespace IptvPlaylistFetcher.Service
+namespace IptvPlaylistAggregator.Service
 {
     public interface IPlaylistFetcher
     {

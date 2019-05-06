@@ -1,10 +1,10 @@
 using System;
 using System.Linq;
 
-using IptvPlaylistFetcher.Configuration;
-using IptvPlaylistFetcher.Service.Models;
+using IptvPlaylistAggregator.Configuration;
+using IptvPlaylistAggregator.Service.Models;
 
-namespace IptvPlaylistFetcher.Service
+namespace IptvPlaylistAggregator.Service
 {
     public sealed class PlaylistFileBuilder : IPlaylistFileBuilder
     {

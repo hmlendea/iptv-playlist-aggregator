@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-using IptvPlaylistFetcher.DataAccess.DataObjects;
+using IptvPlaylistAggregator.DataAccess.DataObjects;
 
-namespace IptvPlaylistFetcher.DataAccess.Repositories
+namespace IptvPlaylistAggregator.DataAccess.Repositories
 {
     public interface IChannelDefinitionRepository
     {

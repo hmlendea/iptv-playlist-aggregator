@@ -1,3 +1,3 @@
-[![Build Status](https://travis-ci.com/hmlendea/iptv-m3u-fetcher.svg?branch=master)](https://travis-ci.com/hmlendea/iptv-m3u-fetcher)
+[![Build Status](https://travis-ci.com/hmlendea/iptv-playlist-aggregator.svg?branch=master)](https://travis-ci.com/hmlendea/iptv-playlist-aggregator)
 
-# IPTV Playlist Fetcher
+# IPTV Playlist Aggregator

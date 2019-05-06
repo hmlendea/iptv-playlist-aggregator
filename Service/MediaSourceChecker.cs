@@ -5,11 +5,11 @@ using System.IO;
 using System.Linq;
 using System.Net;
 
-using IptvPlaylistFetcher.Communication;
-using IptvPlaylistFetcher.Configuration;
-using IptvPlaylistFetcher.Service.Models;
+using IptvPlaylistAggregator.Communication;
+using IptvPlaylistAggregator.Configuration;
+using IptvPlaylistAggregator.Service.Models;
 
-namespace IptvPlaylistFetcher.Service
+namespace IptvPlaylistAggregator.Service
 {
     public sealed class MediaSourceChecker : IMediaSourceChecker
     {

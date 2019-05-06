@@ -4,10 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
 
-using IptvPlaylistFetcher.Configuration;
-using IptvPlaylistFetcher.DataAccess.DataObjects;
+using IptvPlaylistAggregator.Configuration;
+using IptvPlaylistAggregator.DataAccess.DataObjects;
 
-namespace IptvPlaylistFetcher.DataAccess.Repositories
+namespace IptvPlaylistAggregator.DataAccess.Repositories
 {
     public sealed class ChannelDefinitionRepository : IChannelDefinitionRepository
     {

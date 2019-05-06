@@ -1,4 +1,4 @@
-namespace IptvPlaylistFetcher.Configuration
+namespace IptvPlaylistAggregator.Configuration
 {
     public sealed class ApplicationSettings
     {

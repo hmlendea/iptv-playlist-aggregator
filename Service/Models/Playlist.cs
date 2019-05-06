@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace IptvPlaylistFetcher.Service.Models
+namespace IptvPlaylistAggregator.Service.Models
 {
     public sealed class Playlist
     {

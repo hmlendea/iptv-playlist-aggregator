@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using IptvPlaylistFetcher.Configuration;
-using IptvPlaylistFetcher.DataAccess.Repositories;
-using IptvPlaylistFetcher.Service;
+using IptvPlaylistAggregator.Configuration;
+using IptvPlaylistAggregator.DataAccess.Repositories;
+using IptvPlaylistAggregator.Service;
 
-namespace IptvPlaylistFetcher
+namespace IptvPlaylistAggregator
 {
     public class Program
     {
