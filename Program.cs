@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+using NuciLog;
+using NuciLog.Core;
+
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.Repositories;
 using IptvPlaylistAggregator.Service;
@@ -33,6 +36,7 @@ namespace IptvPlaylistAggregator
                 .AddSingleton<IChannelDefinitionRepository, ChannelDefinitionRepository>()
                 .AddSingleton<IGroupRepository, GroupRepository>()
                 .AddSingleton<IPlaylistProviderRepository, PlaylistProviderRepository>()
+                .AddSingleton<ILogger, NuciLogger>()
                 .BuildServiceProvider();
 
             IPlaylistAggregator aggregator = serviceProvider.GetService<IPlaylistAggregator>();

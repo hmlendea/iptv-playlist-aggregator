@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using NuciExtensions;
+using NuciLog.Core;
 
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.Repositories;
@@ -21,6 +22,7 @@ namespace IptvPlaylistAggregator.Service
         readonly IGroupRepository groupRepository;
         readonly IPlaylistProviderRepository playlistProviderRepository;
         readonly ApplicationSettings settings;
+        readonly ILogger logger;
 
         readonly IDictionary<string, bool> pingedUrlsAliveStatus;
 
@@ -35,7 +37,8 @@ namespace IptvPlaylistAggregator.Service
             IChannelDefinitionRepository channelRepository,
             IGroupRepository groupRepository,
             IPlaylistProviderRepository playlistProviderRepository,
-            ApplicationSettings settings)
+            ApplicationSettings settings,
+            ILogger logger)
         {
             this.playlistFetcher = playlistFetcher;
             this.playlistFileBuilder = playlistFileBuilder;
@@ -44,6 +47,7 @@ namespace IptvPlaylistAggregator.Service
             this.playlistProviderRepository = playlistProviderRepository;
             this.groupRepository = groupRepository;
             this.settings = settings;
+            this.logger = logger;
 
             pingedUrlsAliveStatus = new Dictionary<string, bool>();
         }
@@ -75,7 +79,7 @@ namespace IptvPlaylistAggregator.Service
 
             foreach (Group group in groups.Values)
             {
-                Console.WriteLine($"Getting channel URLs in group '{group.Id}' ...");
+                logger.Info($"Getting channel URLs in group '{group.Id}' ...");
 
                 IEnumerable<ChannelDefinition> channelDefsInGroup = channelDefinitions
                     .Where(x => x.IsEnabled && x.GroupId == group.Id);
@@ -101,7 +105,7 @@ namespace IptvPlaylistAggregator.Service
 
             if (settings.CanIncludeUnmatchedChannels)
             {
-                Console.WriteLine($"Getting unmatched channels ...");
+                logger.Info($"Getting unmatched channels ...");
 
                 IEnumerable<Channel> unmatchedChannels = GetUnmatchedChannels(providerChannels);
 
@@ -112,14 +116,14 @@ namespace IptvPlaylistAggregator.Service
                         continue;
                     }
 
-                    Console.WriteLine($"Added unmatched channel: '{unmatchedChannel.Name}'");
+                    logger.Warning($"Added unmatched channel: '{unmatchedChannel.Name}'");
 
                     unmatchedChannel.Number = playlist.Channels.Count + 1;
                     playlist.Channels.Add(unmatchedChannel);
                 }
             }
 
-            Console.WriteLine($"Finished aggregating {playlist.Channels.Count} channels");
+            logger.Info($"Finished aggregating {playlist.Channels.Count} channels");
 
             return playlistFileBuilder.BuildFile(playlist);
         }

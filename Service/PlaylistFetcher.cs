@@ -6,6 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
+using NuciLog.Core;
+
 using IptvPlaylistAggregator.Communication;
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.Repositories;
@@ -20,20 +22,24 @@ namespace IptvPlaylistAggregator.Service
         
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly ApplicationSettings settings;
+        readonly ILogger logger;
 
         public PlaylistFetcher(
             IPlaylistFileBuilder playlistFileBuilder,
-            ApplicationSettings settings)
+            ApplicationSettings settings,
+            ILogger logger)
         {
             this.playlistFileBuilder = playlistFileBuilder;
             this.settings = settings;
+            this.logger = logger;
         }
 
         public IEnumerable<Playlist> FetchProviderPlaylists(IEnumerable<PlaylistProvider> providers)
         {
             ConcurrentDictionary<int, Playlist> playlists = new ConcurrentDictionary<int, Playlist>();
 
-            Console.WriteLine($"Getting the playlists from the providers ...");
+            logger.Info($"Getting the playlists from the providers ...");
+
             Parallel.ForEach(providers, provider =>
             {
                 Playlist playlist = FetchProviderPlaylist(provider);
@@ -124,11 +130,11 @@ namespace IptvPlaylistAggregator.Service
 
             if (Playlist.IsNullOrEmpty(playlist))
             {
-                Console.WriteLine($"[   ] GET '{url}'");
+                logger.Info(Operation.Unknown, OperationStatus.Failure, $"Getting playlist from '{url}'");
                 return null;
             }
 
-            Console.WriteLine($"[ S ] GET '{url}'");
+            logger.Info(Operation.Unknown, OperationStatus.Success, $"Getting playlist from '{url}'");
             StorePlaylistInCache(provider.Id, date, fileContent);
 
             return playlist;
