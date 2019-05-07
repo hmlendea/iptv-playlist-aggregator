@@ -3419,12 +3419,22 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/a/ab/Viasat_Explore.png</LogoUrl>
     <Aliases>
+      <string>(RO) VIASAT  EXPLORE HD</string>
+      <string>[ RO ] Viasat Explore</string>
+      <string>||RO|| VIASAT EXPLORE</string>
+      <string>||ROM|| VIASAT EXPLORE</string>
+      <string>Ro | Viasat Explore</string>
+      <string>RO: VIASAT  EXPLORE</string>
+      <string>RO: Viasat Explore FHD</string>
       <string>RO: Viasat Explore HQ</string>
       <string>RO: Viasat Explore MQ</string>
       <string>RO: Viasat Explore</string>
-      <string>RO: VIASAT EXPLORER</string>
-      <string>RO: VIASAT EXPORER</string>
-      <string>Viasat Explorer</string>
+      <string>Ro: Viasat Explore</string>
+      <string>RO: VIASAT EXPLORE</string>
+      <string>RO:VIASAT  EXPLORE</string>
+      <string>Viasat Explore HD</string>
+      <string>VIASAT EXPLORE</string>
+      <string>Viasat Explore</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3434,6 +3444,7 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/7/7f/Viasat_History-2014.png</LogoUrl>
     <Aliases>
+      <string>(RO) VIASAT  HISTORY HD</string>
       <string>[ RO ] Viasat History</string>
       <string>||RO|| VIASAT HISTORY</string>
       <string>||ROM|| VIASAT HISTORY</string>
@@ -3446,6 +3457,7 @@
       <string>Ro: Viasat History</string>
       <string>RO: VIASAT HISTORY</string>
       <string>RO:VIASAT  HISTORY</string>
+      <string>Viasat History HD</string>
       <string>VIASAT HISTORY</string>
       <string>Viasat History</string>
     </Aliases>
@@ -3457,16 +3469,18 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/1/15/Viasat_Nature-2014.png</LogoUrl>
     <Aliases>
+      <string>(RO) VIASAT  NATURE HD</string>
       <string>[ RO ] Viasat Nature</string>
       <string>||RO|| VIASAT NATURE</string>
       <string>||ROM|| VIASAT NATURE</string>
       <string>RO: VIASAT  NATURE</string>
       <string>RO: Viasat Nature HQ</string>
       <string>RO: Viasat Nature MQ</string>
-      <string>RO: Viasat Nature</string>
       <string>Ro: Viasat Nature</string>
       <string>RO: VIASAT NATURE</string>
+      <string>RO: Viasat Nature</string>
       <string>RO:VIASAT  NATURE</string>
+      <string>Viasat Nature HD</string>
       <string>VIASAT NATURE</string>
       <string>Viasat Nature</string>
     </Aliases>
