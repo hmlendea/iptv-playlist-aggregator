@@ -52,11 +52,28 @@ namespace IptvPlaylistAggregator.Service
             return file;
         }
 
+        public Playlist TryParseFile(string file)
+        {
+            try
+            {
+                return ParseFile(file);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         public Playlist ParseFile(string file)
         {
             Playlist playlist = new Playlist();
 
-            IEnumerable<string> lines = file?
+            if (string.IsNullOrWhiteSpace(file))
+            {
+                throw new ArgumentNullException(nameof(file));
+            }
+
+            IEnumerable<string> lines = file
                 .Replace("\r", "")
                 .Split('\n')
                 .Where(x => !string.IsNullOrWhiteSpace(x));

@@ -8,6 +8,7 @@ using NuciLog.Core;
 
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.Repositories;
+using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service.Mapping;
 using IptvPlaylistAggregator.Service.Models;
 
@@ -79,7 +80,7 @@ namespace IptvPlaylistAggregator.Service
 
             foreach (Group group in groups.Values)
             {
-                logger.Info($"Getting channel URLs in group '{group.Id}' ...");
+                logger.Info(MyOperation.ChannelMatching, OperationStatus.InProgress, new LogInfo(MyLogInfoKey.Group, group.Name));
 
                 IEnumerable<ChannelDefinition> channelDefsInGroup = channelDefinitions
                     .Where(x => x.IsEnabled && x.GroupId == group.Id);
@@ -105,7 +106,7 @@ namespace IptvPlaylistAggregator.Service
 
             if (settings.CanIncludeUnmatchedChannels)
             {
-                logger.Info($"Getting unmatched channels ...");
+                logger.Info(MyOperation.ChannelMatching, OperationStatus.InProgress, $"Getting unmatched channels");
 
                 IEnumerable<Channel> unmatchedChannels = GetUnmatchedChannels(providerChannels);
 
@@ -116,14 +117,14 @@ namespace IptvPlaylistAggregator.Service
                         continue;
                     }
 
-                    logger.Warning($"Added unmatched channel: '{unmatchedChannel.Name}'");
+                    logger.Warn(MyOperation.ChannelMatching, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Channel, unmatchedChannel.Name));
 
                     unmatchedChannel.Number = playlist.Channels.Count + 1;
                     playlist.Channels.Add(unmatchedChannel);
                 }
             }
 
-            logger.Info($"Finished aggregating {playlist.Channels.Count} channels");
+            logger.Info(MyOperation.ChannelMatching, OperationStatus.Success, new LogInfo(MyLogInfoKey.ChannelsCount, playlist.Channels.Count.ToString()));
 
             return playlistFileBuilder.BuildFile(playlist);
         }

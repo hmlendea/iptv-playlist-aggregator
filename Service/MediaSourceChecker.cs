@@ -95,17 +95,13 @@ namespace IptvPlaylistAggregator.Service
         {
             using (FileDownloader client = new FileDownloader(5000))
             {
-                try
-                {
-                    string fileContent = client.DownloadString(url);
-                    Playlist playlist = playlistFileBuilder.ParseFile(fileContent);
+                string fileContent = client.DownloadString(url);
+                Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
-                    if (!Playlist.IsNullOrEmpty(playlist))
-                    {
-                        return playlist;
-                    }
+                if (!Playlist.IsNullOrEmpty(playlist))
+                {
+                    return playlist;
                 }
-                catch { }
             }
             
             return null;

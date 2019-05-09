@@ -11,6 +11,7 @@ using NuciLog.Core;
 using IptvPlaylistAggregator.Communication;
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.Repositories;
+using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service.Mapping;
 using IptvPlaylistAggregator.Service.Models;
 
@@ -38,7 +39,7 @@ namespace IptvPlaylistAggregator.Service
         {
             ConcurrentDictionary<int, Playlist> playlists = new ConcurrentDictionary<int, Playlist>();
 
-            logger.Info($"Getting the playlists from the providers ...");
+            logger.Info(MyOperation.PlaylistFetching, OperationStatus.Started, "Fetching provider playlists");
 
             Parallel.ForEach(providers, provider =>
             {
@@ -115,7 +116,7 @@ namespace IptvPlaylistAggregator.Service
             {
                 string fileContent = File.ReadAllText(filePath);
                 
-                return playlistFileBuilder.ParseFile(fileContent);
+                return playlistFileBuilder.TryParseFile(fileContent);
             }
 
             return null;
@@ -126,15 +127,15 @@ namespace IptvPlaylistAggregator.Service
             string url = string.Format(provider.UrlFormat, date);
             string fileContent = DownloadPlaylistFile(url);
 
-            Playlist playlist = playlistFileBuilder.ParseFile(fileContent);
+            Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
             if (Playlist.IsNullOrEmpty(playlist))
             {
-                logger.Info(Operation.Unknown, OperationStatus.Failure, $"Getting playlist from '{url}'");
+                logger.Warn(MyOperation.PlaylistFetching, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Url, url));
                 return null;
             }
 
-            logger.Info(Operation.Unknown, OperationStatus.Success, $"Getting playlist from '{url}'");
+            logger.Info(MyOperation.PlaylistFetching, OperationStatus.Success, new LogInfo(MyLogInfoKey.Url, url));
             StorePlaylistInCache(provider.Id, date, fileContent);
 
             return playlist;

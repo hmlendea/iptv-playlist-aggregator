@@ -6,6 +6,8 @@ namespace IptvPlaylistAggregator.Service
     {
         string BuildFile(Playlist playlist);
 
+        Playlist TryParseFile(string file);
+
         Playlist ParseFile(string file);
     }
 }
