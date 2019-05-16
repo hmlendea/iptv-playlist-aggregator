@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPlaylistProviderEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  
+
   <PlaylistProviderEntity>
     <Id>hori-romd</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>1</Priority>
     <Name>Hori's Romanian language channels from everywhere</Name>
     <UrlFormat>http://192.168.1.11/others/iptv-hori-romd.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>hori-streams-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>2</Priority>
+    <Name>Hori's list of live streams from Romania</Name>
+    <UrlFormat>http://192.168.1.11/iptv/playlist-streams-ro.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>hori-streams-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>3</Priority>
+    <Name>Hori's list of live streams from Moldova</Name>
+    <UrlFormat>http://192.168.1.11/iptv/playlist-streams-md.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>hori-streams-int</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>4</Priority>
+    <Name>Hori's list of live streams with an international audience</Name>
+    <UrlFormat>http://192.168.1.11/iptv/playlist-streams-int.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -55,6 +79,30 @@
     <Priority>22</Priority>
     <Name>Best Free IPTV Backup 2</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}_2.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>freeiptvdaily1</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>25</Priority>
+    <Name>Free IPTV Daily 1</Name>
+    <UrlFormat>https://www.mediafire.com/file/s53fu5b8180r2hy/2-IPTV_Romania_M3u_Playlist.m3u/file</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>freeiptvdaily2</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>27</Priority>
+    <Name>Free IPTV Daily 2</Name>
+    <UrlFormat>https://www.mediafire.com/file/5f3o1igg0iqdb3n/ROMANIA_IPTV2222.m3u/file</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>freeiptvdaily3</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>28</Priority>
+    <Name>Free IPTV Daily 3</Name>
+    <UrlFormat>https://www.mediafire.com/file/jkihqazn2uouxeu/ro-m3uplaylist-1-1.m3u/file</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>

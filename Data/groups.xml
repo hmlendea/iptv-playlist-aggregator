@@ -135,7 +135,7 @@
   </GroupEntity>
 
   <GroupEntity>
-    <Id>lifestyle</Id>
+    <Id>thematic</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>50</Priority>
     <Name>Tematice</Name>
@@ -157,7 +157,7 @@
 
   <GroupEntity>
     <Id>foreign</Id>
-    <IsEnabled>false</IsEnabled>
+    <IsEnabled>true</IsEnabled>
     <Priority>80</Priority>
     <Name>Străine</Name>
   </GroupEntity>
@@ -171,7 +171,7 @@
 
   <GroupEntity>
     <Id>radio</Id>
-    <IsEnabled>false</IsEnabled>
+    <IsEnabled>true</IsEnabled>
     <Priority>100</Priority>
     <Name>Radio</Name>
   </GroupEntity>
