@@ -40,11 +40,23 @@ namespace IptvPlaylistAggregator
                 .AddSingleton<IPlaylistProviderRepository, PlaylistProviderRepository>()
                 .AddSingleton<ILogger, NuciLogger>()
                 .BuildServiceProvider();
+            
+            ILogger logger = serviceProvider.GetService<ILogger>();
+            logger.Info(Operation.StartUp, OperationStatus.Success);
 
-            IPlaylistAggregator aggregator = serviceProvider.GetService<IPlaylistAggregator>();
+            try
+            {
+                IPlaylistAggregator aggregator = serviceProvider.GetService<IPlaylistAggregator>();
 
-            string playlistFile = aggregator.GatherPlaylist();
-            File.WriteAllText(applicationSettings.OutputPlaylistPath, playlistFile);
+                string playlistFile = aggregator.GatherPlaylist();
+                File.WriteAllText(applicationSettings.OutputPlaylistPath, playlistFile);
+            }
+            catch (Exception ex)
+            {
+                logger.Fatal(Operation.Unknown, OperationStatus.Failure, ex);
+            }
+
+            logger.Info(Operation.ShutDown, OperationStatus.Success);
         }
         
         static IConfiguration LoadConfiguration()
