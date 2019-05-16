@@ -16,15 +16,18 @@ namespace IptvPlaylistAggregator.Service
         const char CsvFieldSeparator = ',';
         const string TimestampFormat = "yyyy-MM-dd_HH-mm-ss";
 
+        readonly IFileDownloader fileDownloader;
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly ApplicationSettings settings;
 
         readonly IDictionary<string, MediaStreamStatus> statuses;
 
         public MediaSourceChecker(
+            IFileDownloader fileDownloader,
             IPlaylistFileBuilder playlistFileBuilder,
             ApplicationSettings settings)
         {
+            this.fileDownloader = fileDownloader;
             this.playlistFileBuilder = playlistFileBuilder;
             this.settings = settings;
 
@@ -93,15 +96,12 @@ namespace IptvPlaylistAggregator.Service
 
         Playlist DownloadPlaylist(string url)
         {
-            using (FileDownloader client = new FileDownloader(5000))
-            {
-                string fileContent = client.DownloadString(url);
-                Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
+            string fileContent = fileDownloader.TryDownloadString(url);
+            Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
-                if (!Playlist.IsNullOrEmpty(playlist))
-                {
-                    return playlist;
-                }
+            if (!Playlist.IsNullOrEmpty(playlist))
+            {
+                return playlist;
             }
             
             return null;

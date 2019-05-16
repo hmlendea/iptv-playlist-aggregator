@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NuciLog;
 using NuciLog.Core;
 
+using IptvPlaylistAggregator.Communication;
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.Repositories;
 using IptvPlaylistAggregator.Service;
@@ -29,6 +30,7 @@ namespace IptvPlaylistAggregator
 
             IServiceProvider serviceProvider = new ServiceCollection()
                 .AddSingleton(applicationSettings)
+                .AddSingleton<IFileDownloader, FileDownloader>()
                 .AddSingleton<IPlaylistAggregator, PlaylistAggregator>()
                 .AddSingleton<IPlaylistFetcher, PlaylistFetcher>()
                 .AddSingleton<IPlaylistFileBuilder, PlaylistFileBuilder>()

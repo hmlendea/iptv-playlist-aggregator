@@ -20,16 +20,19 @@ namespace IptvPlaylistAggregator.Service
     public sealed class PlaylistFetcher : IPlaylistFetcher
     {
         const string CacheFileNameFormat = "{0}_playlist_{1:yyyy-MM-dd}.m3u";
-        
+
+        readonly IFileDownloader fileDownloader;        
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly ApplicationSettings settings;
         readonly ILogger logger;
 
         public PlaylistFetcher(
+            IFileDownloader fileDownloader,
             IPlaylistFileBuilder playlistFileBuilder,
             ApplicationSettings settings,
             ILogger logger)
         {
+            this.fileDownloader = fileDownloader;
             this.playlistFileBuilder = playlistFileBuilder;
             this.settings = settings;
             this.logger = logger;
@@ -125,7 +128,7 @@ namespace IptvPlaylistAggregator.Service
         Playlist DownloadPlaylist(PlaylistProvider provider, DateTime date)
         {
             string url = string.Format(provider.UrlFormat, date);
-            string fileContent = DownloadPlaylistFile(url);
+            string fileContent = fileDownloader.TryDownloadString(url);
 
             Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
@@ -139,20 +142,6 @@ namespace IptvPlaylistAggregator.Service
             StorePlaylistInCache(provider.Id, date, fileContent);
 
             return playlist;
-        }
-
-        string DownloadPlaylistFile(string url)
-        {
-            using (FileDownloader client = new FileDownloader(5000))
-            {
-                try
-                {
-                    return client.DownloadString(url);
-                }
-                catch { }
-            }
-            
-            return null;
         }
     }
 }
