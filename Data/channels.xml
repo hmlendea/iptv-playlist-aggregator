@@ -440,6 +440,7 @@
     <Aliases>
       <string>||RO|| BOLLYWOOD TV</string>
       <string>||ROM|| BOLLYWOOD TV</string>
+      <string>Bollywood HD</string>
       <string>Bollywood</string>
       <string>RO:BOLYWOOD TV</string>
     </Aliases>
@@ -1500,6 +1501,25 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>fix_and_foxi</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Fix and Foxi</Name>
+    <GroupId>kids</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/fix_and_foxi.png</LogoUrl>
+    <Aliases>
+      <string>||ROM|| FISHING &amp; HUNTING</string>
+      <string>Fishing &amp; Hunting RO</string>
+      <string>FISHING &amp; HUNTING</string>
+      <string>Pescuit si Vanatoare TV</string>
+      <string>RO: Fishing &amp; Hunting HD</string>
+      <string>RO: Fishing and Hunting</string>
+      <string>RO: The Fishing &amp; Hunting FHD</string>
+      <string>RO: The Fishing &amp; Hunting HD</string>
+      <string>RO: The Fishing &amp; Hunting</string>
+      <string>RO:FISHING &amp;  HUNTING</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>FoodNetwork.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Food Network</Name>
@@ -1810,7 +1830,7 @@
     <Id>JurnalTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Jurnal TV</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/jurnal-tv.png</LogoUrl>
     <Aliases>
       <string>MD: Jurnal TV</string>
@@ -2602,6 +2622,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/8/85/Rock_TV.png</LogoUrl>
     <Aliases>
       <string>RO: Rock TV</string>
+      <string>Rock TV FHD</string>
       <string>Rock TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
