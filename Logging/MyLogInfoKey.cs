@@ -4,7 +4,7 @@ namespace IptvPlaylistAggregator.Logging
 {
     public sealed class MyLogInfoKey : LogInfoKey
     {
-        protected MyLogInfoKey(string name)
+        MyLogInfoKey(string name)
             : base(name)
         {
             

@@ -4,7 +4,7 @@ namespace IptvPlaylistAggregator.Logging
 {
     public sealed class MyOperation : Operation
     {
-        protected MyOperation(string name)
+        MyOperation(string name)
             : base(name)
         {
             
