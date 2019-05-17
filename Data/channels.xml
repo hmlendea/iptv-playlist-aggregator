@@ -442,6 +442,7 @@
       <string>||ROM|| BOLLYWOOD TV</string>
       <string>Bollywood HD</string>
       <string>Bollywood</string>
+      <string>RO: Bollywood HD</string>
       <string>RO:BOLYWOOD TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1102,8 +1103,9 @@
       <string>||RO|| DISCOVERY ID XTRA</string>
       <string>||ROM|| DISCOVERY ID XTRA</string>
       <string>Discovery IDX HD</string>
-      <string>Ro: Discovery IDX</string>
       <string>Discovery IDX</string>
+      <string>Ro: Discovery IDX</string>
+      <string>RO: ID Xtra HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1507,6 +1509,7 @@
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/fix_and_foxi.png</LogoUrl>
     <Aliases>
+      <string>Fix and Foxi</string>
       <string>RO: Fix and Foxi</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2612,8 +2615,11 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/8/85/Rock_TV.png</LogoUrl>
     <Aliases>
+      <string>RO: Rock TV FHD</string>
+      <string>RO: Rock TV HD</string>
       <string>RO: Rock TV</string>
       <string>Rock TV FHD</string>
+      <string>Rock TV HD</string>
       <string>Rock TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
