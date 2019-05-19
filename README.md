@@ -73,7 +73,7 @@ WantedBy=timers.target
 
 Values that you might want to change:
  - *OnBootSec*: the delay before the service is started after the OS is booted
- - OnUnitActiveSec*: how often the service will be triggered
+ - *OnUnitActiveSec*: how often the service will be triggered
 
 In the above example, the service will start 5 minutes after boot, and then again once every 50 minutes.
 
