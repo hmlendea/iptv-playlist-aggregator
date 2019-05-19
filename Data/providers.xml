@@ -62,7 +62,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>20</Priority>
     <Name>Best Free IPTV</Name>
-    <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}.m3u</UrlFormat>
+    <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -70,7 +70,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>21</Priority>
     <Name>Best Free IPTV Backup 1</Name>
-    <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}_1.m3u</UrlFormat>
+    <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_1.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -78,7 +78,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>22</Priority>
     <Name>Best Free IPTV Backup 2</Name>
-    <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyy-MM-dd}_2.m3u</UrlFormat>
+    <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_2.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
