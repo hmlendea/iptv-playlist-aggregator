@@ -2,13 +2,21 @@
 <ArrayOfPlaylistProviderEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
   <PlaylistProviderEntity>
-    <Id>hori-romd</Id>
+    <Id>github-hmlendea-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>1</Priority>
-    <Name>Hori's Romanian language channels from everywhere</Name>
-    <UrlFormat>http://192.168.1.11/others/iptv-hori-romd.m3u</UrlFormat>
+    <Name>kilirushi's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/ro.m3u</UrlFormat>
   </PlaylistProviderEntity>
-
+  
+  <PlaylistProviderEntity>
+    <Id>github-hmlendea-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>1</Priority>
+    <Name>kilirushi's IPTV GitHub MD Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/md.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+  
   <PlaylistProviderEntity>
     <Id>hori-streams-ro</Id>
     <IsEnabled>true</IsEnabled>
