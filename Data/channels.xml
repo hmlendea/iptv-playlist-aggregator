@@ -405,11 +405,12 @@
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd40bc33b1566d8b45d5.png</LogoUrl>
     <Aliases>
       <string>||ROM|| B1 Tv</string>
+      <string>B1 Tv</string>
       <string>B1</string>
       <string>RO: B1 HD</string>
-      <string>RO: B1 TV</string>
       <string>RO: B1 TV S1</string>
       <string>RO: B1 TV S2</string>
+      <string>RO: B1 TV</string>
       <string>Ro: B1</string>
       <string>Romania | B1 HD</string>
       <string>Romania | B1 TV HD</string>
@@ -489,6 +490,8 @@
       <string>Boolywood HD</string>
       <string>Boolywood</string>
       <string>RO: Bollywood HD</string>
+      <string>RO: Boolywood HD</string>
+      <string>RO: Boolywood</string>
       <string>RO:BOLYWOOD TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1329,6 +1332,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/disney_junior.png</LogoUrl>
     <Aliases>
       <string>||ROM|| DISNEY JUNIOR</string>
+      <string>Disney Junior RO</string>
       <string>Disney Junior</string>
       <string>RO: Disney Jr</string>
       <string>RO:DISNEY JUNIOR</string>
@@ -1878,7 +1882,8 @@
     <Aliases>
       <string>||ROM|| HISTORY CHANNEL HD</string>
       <string>||ROM|| HISTORY CHANNEL</string>
-      <string>HISTORY CHANNEL</string>
+      <string>History Channel RO</string>
+      <string>History Channel</string>
       <string>History HD</string>
       <string>RO: HISTORI CHANNEL</string>
       <string>RO: History Channel HD</string>
@@ -2053,15 +2058,16 @@
     <Aliases>
       <string>[ RO ] Canal D HD</string>
       <string>Kanal D HD</string>
+      <string>KANAL D RO</string>
       <string>KANAL D</string>
       <string>RO: Canal D</string>
       <string>RO: Kanal D FHD</string>
       <string>RO: Kanal D HD</string>
       <string>RO:KANAL D</string>
-      <string>Romania | Kanal D</string>
       <string>Romania | Kanal D HD</string>
-      <string>Rumania | Kanal D</string>
+      <string>Romania | Kanal D</string>
       <string>Rumania | Kanal D HD</string>
+      <string>Rumania | Kanal D</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2453,6 +2459,7 @@
     <LogoUrl>https://static.iptv-epg.com/ro/NatGeoWild.ro.png</LogoUrl>
     <Aliases>
       <string>||ROM|| NAT GEO WILD</string>
+      <string>Nat Geo Wild RO</string>
       <string>National Geographic Wild FHD</string>
       <string>National Geographic Wild HD</string>
       <string>National Geographic Wild</string>
@@ -2542,7 +2549,9 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nickelodeon.png</LogoUrl>
     <Aliases>
       <string>||ROM|| NICKELODEON</string>
+      <string>Nickelodeon (RO)</string>
       <string>Nickelodeon HD</string>
+      <string>Nickelodeon RO</string>
       <string>Nickelodeon</string>
       <string>RO: Nickelodeon HD</string>
       <string>RO:NICKELODEON</string>
