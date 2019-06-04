@@ -12,8 +12,8 @@ namespace IptvPlaylistAggregator.DataAccess.Repositories
     {
         const string UnknownGroupPlaceholder = "unknown";
 
-        public ChannelDefinitionRepository(ApplicationSettings settings)
-            : base(settings.ChannelStorePath)
+        public ChannelDefinitionRepository(DataStoreSettings dataStoreSettings)
+            : base(dataStoreSettings.ChannelStorePath)
         {
         }
 

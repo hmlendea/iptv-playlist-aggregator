@@ -11,8 +11,8 @@ namespace IptvPlaylistAggregator.DataAccess.Repositories
 {
     public sealed class PlaylistProviderRepository : XmlRepository<PlaylistProviderEntity>, IPlaylistProviderRepository
     {
-        public PlaylistProviderRepository(ApplicationSettings settings)
-            : base(settings.PlaylistProviderStorePath)
+        public PlaylistProviderRepository(DataStoreSettings dataStoreSettings)
+            : base(dataStoreSettings.PlaylistProviderStorePath)
         {
         }
 

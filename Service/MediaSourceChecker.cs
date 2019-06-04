@@ -18,18 +18,18 @@ namespace IptvPlaylistAggregator.Service
 
         readonly IFileDownloader fileDownloader;
         readonly IPlaylistFileBuilder playlistFileBuilder;
-        readonly ApplicationSettings settings;
+        readonly CacheSettings cacheSettings;
 
         readonly IDictionary<string, MediaStreamStatus> statuses;
 
         public MediaSourceChecker(
             IFileDownloader fileDownloader,
             IPlaylistFileBuilder playlistFileBuilder,
-            ApplicationSettings settings)
+            CacheSettings cacheSettings)
         {
             this.fileDownloader = fileDownloader;
             this.playlistFileBuilder = playlistFileBuilder;
-            this.settings = settings;
+            this.cacheSettings = cacheSettings;
 
             statuses = new Dictionary<string, MediaStreamStatus>();
 
@@ -110,8 +110,8 @@ namespace IptvPlaylistAggregator.Service
         void LoadCache()
         {
             string filePath = Path.Combine(
-                settings.CacheDirectoryPath,
-                settings.MediaStreamAliveStatusCacheFileName);
+                cacheSettings.CacheDirectoryPath,
+                cacheSettings.MediaStreamAliveStatusCacheFileName);
 
             if (!File.Exists(filePath))
             {
@@ -131,7 +131,7 @@ namespace IptvPlaylistAggregator.Service
                     TimestampFormat,
                     CultureInfo.InvariantCulture);
 
-                if (DateTime.UtcNow > lastCheckTime.AddMinutes(settings.MediaStreamStatusCacheTimeoutMins))
+                if (DateTime.UtcNow > lastCheckTime.AddMinutes(cacheSettings.MediaStreamStatusCacheTimeoutMins))
                 {
                     continue;
                 }
@@ -162,8 +162,8 @@ namespace IptvPlaylistAggregator.Service
             }
 
             string filePath = Path.Combine(
-                settings.CacheDirectoryPath,
-                settings.MediaStreamAliveStatusCacheFileName);
+                cacheSettings.CacheDirectoryPath,
+                cacheSettings.MediaStreamAliveStatusCacheFileName);
 
             File.WriteAllText(filePath, cacheFile);
         }

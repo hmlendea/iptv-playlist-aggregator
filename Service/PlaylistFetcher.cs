@@ -23,18 +23,21 @@ namespace IptvPlaylistAggregator.Service
 
         readonly IFileDownloader fileDownloader;        
         readonly IPlaylistFileBuilder playlistFileBuilder;
-        readonly ApplicationSettings settings;
+        readonly ApplicationSettings applicationSettings;
+        readonly CacheSettings cacheSettings;
         readonly ILogger logger;
 
         public PlaylistFetcher(
             IFileDownloader fileDownloader,
             IPlaylistFileBuilder playlistFileBuilder,
-            ApplicationSettings settings,
+            ApplicationSettings applicationSettings,
+            CacheSettings cacheSettings,
             ILogger logger)
         {
             this.fileDownloader = fileDownloader;
             this.playlistFileBuilder = playlistFileBuilder;
-            this.settings = settings;
+            this.applicationSettings = applicationSettings;
+            this.cacheSettings = cacheSettings;
             this.logger = logger;
         }
 
@@ -66,7 +69,7 @@ namespace IptvPlaylistAggregator.Service
         {
             Playlist playlist = null;
 
-            for (int i = 0; i < settings.DaysToCheck; i++)
+            for (int i = 0; i < applicationSettings.DaysToCheck; i++)
             {
                 DateTime date = DateTime.Now.AddDays(-i);
 
@@ -97,13 +100,13 @@ namespace IptvPlaylistAggregator.Service
 
         void StorePlaylistInCache(string providerId, DateTime date, string file)
         {
-            if (!Directory.Exists(settings.CacheDirectoryPath))
+            if (!Directory.Exists(cacheSettings.CacheDirectoryPath))
             {
-                Directory.CreateDirectory(settings.CacheDirectoryPath);
+                Directory.CreateDirectory(cacheSettings.CacheDirectoryPath);
             }
 
             string filePath = Path.Combine(
-                settings.CacheDirectoryPath,
+                cacheSettings.CacheDirectoryPath,
                 string.Format(CacheFileNameFormat, providerId, date));
 
             File.WriteAllText(filePath, file);
@@ -112,7 +115,7 @@ namespace IptvPlaylistAggregator.Service
         Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
         {
             string filePath = Path.Combine(
-                settings.CacheDirectoryPath,
+                cacheSettings.CacheDirectoryPath,
                 string.Format(CacheFileNameFormat, provider.Id, date));
             
             if (File.Exists(filePath))

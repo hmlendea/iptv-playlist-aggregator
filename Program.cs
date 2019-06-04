@@ -20,16 +20,25 @@ namespace IptvPlaylistAggregator
     public class Program
     {
         static ApplicationSettings applicationSettings;
+        static CacheSettings cacheSettings;
+        static DataStoreSettings dataStoreSettings;
 
         public static void Main(string[] args)
         {
             IConfiguration config = LoadConfiguration();
 
             applicationSettings = new ApplicationSettings();
+            cacheSettings = new CacheSettings();
+            dataStoreSettings = new DataStoreSettings();
+
             config.Bind(nameof(ApplicationSettings), applicationSettings);
+            config.Bind(nameof(CacheSettings), cacheSettings);
+            config.Bind(nameof(DataStoreSettings), dataStoreSettings);
 
             IServiceProvider serviceProvider = new ServiceCollection()
                 .AddSingleton(applicationSettings)
+                .AddSingleton(cacheSettings)
+                .AddSingleton(dataStoreSettings)
                 .AddSingleton<IFileDownloader, FileDownloader>()
                 .AddSingleton<IPlaylistAggregator, PlaylistAggregator>()
                 .AddSingleton<IPlaylistFetcher, PlaylistFetcher>()

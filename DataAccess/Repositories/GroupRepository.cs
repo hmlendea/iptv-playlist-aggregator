@@ -11,8 +11,8 @@ namespace IptvPlaylistAggregator.DataAccess.Repositories
 {
     public sealed class GroupRepository : XmlRepository<GroupEntity>, IGroupRepository
     {
-        public GroupRepository(ApplicationSettings settings)
-            : base(settings.GroupStorePath)
+        public GroupRepository(DataStoreSettings dataStoreSettings)
+            : base(dataStoreSettings.GroupStorePath)
         {
         }
 
