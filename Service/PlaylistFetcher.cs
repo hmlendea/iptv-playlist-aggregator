@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
 
 using NuciLog.Core;
 
@@ -47,7 +46,7 @@ namespace IptvPlaylistAggregator.Service
 
             logger.Info(MyOperation.PlaylistFetching, OperationStatus.Started, "Fetching provider playlists");
 
-            Parallel.ForEach(providers, provider =>
+            foreach (PlaylistProvider provider in providers)
             {
                 Playlist playlist = FetchProviderPlaylist(provider);
 
@@ -58,7 +57,7 @@ namespace IptvPlaylistAggregator.Service
                         playlist,
                         (key, oldValue) => playlist);
                 }
-            });
+            }
 
             return playlists
                 .OrderBy(x => x.Key)
