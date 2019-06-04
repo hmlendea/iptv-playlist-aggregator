@@ -1,9 +1,9 @@
+using NuciDAL.DataObjects;
+
 namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
-    public class GroupEntity
+    public class GroupEntity : EntityBase
     {
-        public string Id { get; set; }
-
         public bool IsEnabled { get; set; }
 
         public string Name { get; set; }

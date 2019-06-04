@@ -1,32 +1,24 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Xml.Serialization;
+
+using NuciDAL.Repositories;
 
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.DataObjects;
 
 namespace IptvPlaylistAggregator.DataAccess.Repositories
 {
-    public sealed class GroupRepository : IGroupRepository
+    public sealed class GroupRepository : XmlRepository<GroupEntity>, IGroupRepository
     {
-        readonly ApplicationSettings settings;
-
         public GroupRepository(ApplicationSettings settings)
+            : base(settings.GroupStorePath)
         {
-            this.settings = settings;
         }
 
-        public IEnumerable<GroupEntity> GetAll()
+        public override IEnumerable<GroupEntity> GetAll()
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(List<GroupEntity>));
-            IEnumerable<GroupEntity> entities;
-
-            using (TextReader reader = new StreamReader(settings.GroupStorePath))
-            {
-                entities = (IEnumerable<GroupEntity>)serializer.Deserialize(reader);
-            }
+            IEnumerable<GroupEntity> entities = base.GetAll();
 
             // TODO: This is a very ugly, yet very quick fix
             foreach (GroupEntity entity in entities)
@@ -38,6 +30,11 @@ namespace IptvPlaylistAggregator.DataAccess.Repositories
             }
 
             return entities.OrderBy(x => x.Priority);
+        }
+
+        public override void Update(GroupEntity entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

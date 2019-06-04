@@ -1,9 +1,9 @@
+using NuciDAL.DataObjects;
+
 namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
-    public class PlaylistProviderEntity
+    public class PlaylistProviderEntity : EntityBase
     {
-        public string Id { get; set; }
-
         public bool IsEnabled { get; set; }
 
         public int Priority { get; set; }

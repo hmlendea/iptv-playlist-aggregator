@@ -18,10 +18,7 @@ namespace IptvPlaylistAggregator.Communication
         {
             Timeout = timeoutMillis;
         }
-
-        public string DownloadString(string url)
-            => base.DownloadString(url);
-
+        
         public string TryDownloadString(string url)
         {
             try

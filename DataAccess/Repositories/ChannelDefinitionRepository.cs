@@ -1,34 +1,25 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Xml.Serialization;
+
+using NuciDAL.Repositories;
 
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.DataObjects;
 
 namespace IptvPlaylistAggregator.DataAccess.Repositories
 {
-    public sealed class ChannelDefinitionRepository : IChannelDefinitionRepository
+    public sealed class ChannelDefinitionRepository : XmlRepository<ChannelDefinitionEntity>, IChannelDefinitionRepository
     {
         const string UnknownGroupPlaceholder = "unknown";
 
-        readonly ApplicationSettings settings;
-
         public ChannelDefinitionRepository(ApplicationSettings settings)
+            : base(settings.ChannelStorePath)
         {
-            this.settings = settings;
         }
 
-        public IEnumerable<ChannelDefinitionEntity> GetAll()
+        public override IEnumerable<ChannelDefinitionEntity> GetAll()
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(List<ChannelDefinitionEntity>));
-            IEnumerable<ChannelDefinitionEntity> entities;
-
-            using (TextReader reader = new StreamReader(settings.ChannelStorePath))
-            {
-                entities = (IEnumerable<ChannelDefinitionEntity>)serializer.Deserialize(reader);
-            }
+            IEnumerable<ChannelDefinitionEntity> entities = base.GetAll();
 
             foreach (ChannelDefinitionEntity channelDef in entities)
             {
@@ -39,6 +30,11 @@ namespace IptvPlaylistAggregator.DataAccess.Repositories
             }
 
             return entities;
+        }
+
+        public override void Update(ChannelDefinitionEntity entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

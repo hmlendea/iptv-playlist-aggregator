@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 
+using NuciDAL.DataObjects;
+
 namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
-    public sealed class ChannelDefinitionEntity
+    public sealed class ChannelDefinitionEntity : EntityBase
     {
-        public string Id { get; set; }
-
         public bool IsEnabled { get; set; }
 
         public string Name { get; set; }
