@@ -2305,17 +2305,7 @@
     <GroupId>unknown</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/5/50/Dolce_mooz_ro.png/220px-Dolce_mooz_ro.png</LogoUrl>
     <Aliases>
-      <string>RO: MOOZ RO</string>
       <string>MOOZ RO!</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>MoozRo.ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Name>Mooz Ro!</Name>
-    <GroupId>music</GroupId>
-    <LogoUrl>https://mooz.tv/site/img/mooz-ro1.png</LogoUrl>
-    <Aliases>
       <string>Mooz RO</string>
       <string>Mooz</string>
       <string>RO: Mooz RO</string>

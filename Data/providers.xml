@@ -22,7 +22,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>2</Priority>
     <Name>Hori's list of live streams from Romania</Name>
-    <UrlFormat>http://192.168.1.11/iptv/playlist-streams-ro.m3u</UrlFormat>
+    <UrlFormat>http://hori.go.ro/iptv/playlist-streams-ro.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -30,7 +30,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>3</Priority>
     <Name>Hori's list of live streams from Moldova</Name>
-    <UrlFormat>http://192.168.1.11/iptv/playlist-streams-md.m3u</UrlFormat>
+    <UrlFormat>http://hori.go.ro/iptv/playlist-streams-md.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -38,7 +38,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>4</Priority>
     <Name>Hori's list of live streams with an international audience</Name>
-    <UrlFormat>http://192.168.1.11/iptv/playlist-streams-int.m3u</UrlFormat>
+    <UrlFormat>http://hori.go.ro/iptv/playlist-streams-int.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -381,14 +381,6 @@
     <Id>tousecurity3-1</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>140</Priority>
-    <Name>Tousecurity Uploadingy 1</Name>
-    <UrlFormat>https://sites.google.com/site/uploadingy/Romania%20M3u%20%281%29%20.m3u?attredirects=0&amp;d=1</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>tousecurity3-1</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>141</Priority>
     <Name>Tousecurity Uploadingy 1</Name>
     <UrlFormat>https://sites.google.com/site/uploadingy/Romania%20M3u%20%282%29%20.m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
