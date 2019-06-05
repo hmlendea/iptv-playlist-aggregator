@@ -13,10 +13,9 @@ namespace IptvPlaylistAggregator.Service.Mapping
             ChannelDefinition serviceModel = new ChannelDefinition();
             serviceModel.Id = dataObject.Id;
             serviceModel.IsEnabled = dataObject.IsEnabled;
-            serviceModel.Name = dataObject.Name;
+            serviceModel.Name = new ChannelName(dataObject.Name, dataObject.Aliases);
             serviceModel.GroupId = dataObject.GroupId;
             serviceModel.LogoUrl = dataObject.LogoUrl;
-            serviceModel.Aliases = dataObject.Aliases;
 
             return serviceModel;
         }
@@ -26,10 +25,10 @@ namespace IptvPlaylistAggregator.Service.Mapping
             ChannelDefinitionEntity dataObject = new ChannelDefinitionEntity();
             dataObject.Id = serviceModel.Id;
             dataObject.IsEnabled = serviceModel.IsEnabled;
-            dataObject.Name = serviceModel.Name;
+            dataObject.Name = serviceModel.Name.Value;
             dataObject.GroupId = serviceModel.GroupId;
             dataObject.LogoUrl = serviceModel.LogoUrl;
-            dataObject.Aliases = serviceModel.Aliases;
+            dataObject.Aliases = serviceModel.Name.Aliases.ToList();
 
             return dataObject;
         }

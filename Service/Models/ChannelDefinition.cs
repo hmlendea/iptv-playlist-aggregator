@@ -8,12 +8,10 @@ namespace IptvPlaylistAggregator.Service.Models
 
         public bool IsEnabled { get; set; }
 
-        public string Name { get; set; }
+        public ChannelName Name { get; set; }
 
         public string GroupId { get; set; }
 
         public string LogoUrl { get; set; }
-
-        public List<string> Aliases { get; set; }
     }
 }

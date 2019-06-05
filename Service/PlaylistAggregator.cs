@@ -93,7 +93,7 @@ namespace IptvPlaylistAggregator.Service
                     {
                         Channel channel = new Channel();
                         channel.Id = channelDef.Id;
-                        channel.Name = channelDef.Name;
+                        channel.Name = channelDef.Name.Value;
                         channel.Group = groups[channelDef.GroupId].Name;
                         channel.LogoUrl = channelDef.LogoUrl;
                         channel.Number = playlist.Channels.Count + 1;
@@ -134,7 +134,7 @@ namespace IptvPlaylistAggregator.Service
             IEnumerable<Channel> unmatchedChannels = providerChannels
                 .GroupBy(x => x.Name)
                 .Select(g => g.FirstOrDefault())
-                .Where(x => channelDefinitions.All(y => !DoChannelNamesMatch(x.Name, y.Aliases)));
+                .Where(x => channelDefinitions.All(y => !y.Name.Equals(x.Name)));
 
             IEnumerable<Channel> processedUnmatchedChannels = unmatchedChannels
                 .Select(x => new Channel
@@ -152,7 +152,7 @@ namespace IptvPlaylistAggregator.Service
         {
             foreach (Channel providerChannel in providerChannels)
             {
-                if (!DoChannelNamesMatch(providerChannel.Name, channelDef.Aliases))
+                if (!channelDef.Name.Equals(providerChannel.Name))
                 {
                     continue;
                 }
@@ -164,24 +164,6 @@ namespace IptvPlaylistAggregator.Service
             }
 
             return null;
-        }
-
-        bool DoChannelNamesMatch(string name, IEnumerable<string> aliases)
-        {
-            return aliases.Any(alias =>
-                NormaliseChannelName(name).Equals(NormaliseChannelName(alias)));
-        }
-
-        string NormaliseChannelName(string name)
-        {
-            string normalisedName = string.Empty;
-
-            foreach (char c in name.Where(char.IsLetterOrDigit))
-            {
-                normalisedName += char.ToUpper(c);
-            }
-
-            return normalisedName.RemoveDiacritics();
         }
     }
 }
