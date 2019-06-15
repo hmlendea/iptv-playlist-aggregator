@@ -5,30 +5,30 @@
     <Id>github-hmlendea-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>1</Priority>
-    <Name>kilirushi's IPTV GitHub RO Channels</Name>
+    <Name>hmlendea's IPTV GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/ro.m3u</UrlFormat>
   </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
     <Id>github-hmlendea-md</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>1</Priority>
-    <Name>kilirushi's IPTV GitHub MD Channels</Name>
+    <Priority>2</Priority>
+    <Name>hmlendea's IPTV GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/md.m3u</UrlFormat>
   </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
     <Id>hori-streams-ro</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>2</Priority>
+    <Priority>3</Priority>
     <Name>Hori's list of live streams from Romania</Name>
     <UrlFormat>http://hori.go.ro/iptv/playlist-streams-ro.m3u</UrlFormat>
   </PlaylistProviderEntity>
-
+  
   <PlaylistProviderEntity>
     <Id>hori-streams-md</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>3</Priority>
+    <Priority>4</Priority>
     <Name>Hori's list of live streams from Moldova</Name>
     <UrlFormat>http://hori.go.ro/iptv/playlist-streams-md.m3u</UrlFormat>
   </PlaylistProviderEntity>
@@ -36,7 +36,7 @@
   <PlaylistProviderEntity>
     <Id>hori-streams-int</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>4</Priority>
+    <Priority>5</Priority>
     <Name>Hori's list of live streams with an international audience</Name>
     <UrlFormat>http://hori.go.ro/iptv/playlist-streams-int.m3u</UrlFormat>
   </PlaylistProviderEntity>
