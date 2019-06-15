@@ -1,11 +1,18 @@
 #!/bin/bash
 
-APP_NAME="iptv-playlist-aggregator"
-VERSION=$(date +"%y.%j")
+APP_NAME=$(git remote -vv | grep fetch | sed 's|.*http.*/\(.*\)\.git.*|\1|')
+VERSION_MAJOR=$(date +"%y.%j")
+VERSION_MINOR="$1"
 RELEASE_DIR_RELATIVE="bin/Release"
 PUBLISH_DIR_RELATIVE="${RELEASE_DIR_RELATIVE}/publish-script-output"
 RELEASE_DIR="$(pwd)/$RELEASE_DIR_RELATIVE"
 PUBLISH_DIR="$(pwd)/$PUBLISH_DIR_RELATIVE"
+
+if [ -z $VERSION_MINOR ]; then
+    VERSION_MINOR="0"
+fi
+
+VERSION="$VERSION_MAJOR.$VERSION_MINOR"
 
 function package {
     ARCH="$1"
