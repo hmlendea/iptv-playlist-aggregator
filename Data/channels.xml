@@ -311,6 +311,8 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/arcadia_tv.png</LogoUrl>
     <Aliases>
+      <string>RO: Arcadia World FHD</string>
+      <string>RO: Arcadia World HD</string>
       <string>RO: Arcadia World</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -489,7 +491,9 @@
       <string>Bollywood</string>
       <string>Boolywood HD</string>
       <string>Boolywood</string>
+      <string>RO: Bollywood FHD</string>
       <string>RO: Bollywood HD</string>
+      <string>RO: Boolywood FHD</string>
       <string>RO: Boolywood HD</string>
       <string>RO: Boolywood</string>
       <string>RO:BOLYWOOD TV</string>
@@ -666,12 +670,15 @@
       <string>CineMAX 1 HD RO</string>
       <string>CineMAX 1 HD</string>
       <string>CineMAX 1 RO</string>
+      <string>CineMAX FHD RO</string>
       <string>CineMAX HD RO</string>
       <string>CineMAX HD</string>
       <string>CINEMAX RO</string>
       <string>RO: Cinemax 1 FHD</string>
       <string>RO: Cinemax 1</string>
-      <string>Ro: Cinemax Ro</string>
+      <string>RO: CineMAX FHD RO</string>
+      <string>RO: CineMAX HD RO</string>
+      <string>Ro: Cinemax RO</string>
       <string>RO: Cinemax</string>
       <string>RO:CINEMAX HD</string>
       <string>Romania | Cinemax 1</string>
@@ -1213,6 +1220,7 @@
     <LogoUrl>https://static.iptv-epg.com/hu/DiscoveryHDShowcase.hu.png</LogoUrl>
     <Aliases>
       <string>Discovery HD Showcase</string>
+      <string>RO: Discovery FHD Showcase</string>
       <string>RO: Discovery HD Showcase</string>
       <string>RO: Discovery Showcase HD</string>
     </Aliases>
@@ -1244,6 +1252,8 @@
     <Aliases>
       <string>RO: Discovery ID</string>
       <string>RO: ID Investigation Discovery HD</string>
+      <string>RO: Investigation Disvovery FHD</string>
+      <string>RO: Investigation Disvovery HD</string>
       <string>RO: Investigation Disvovery</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1409,6 +1419,8 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/epic_drama.png</LogoUrl>
     <Aliases>
       <string>Epic Drama</string>
+      <string>RO: Epic Drama FHD</string>
+      <string>RO: Epic Drama HD</string>
       <string>RO: Epic Drama SD</string>
       <string>RO: Epic Drama</string>
       <string>RO: Epic</string>
@@ -1583,6 +1595,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmbox_extra.png</LogoUrl>
     <Aliases>
       <string>FilmBox Extra</string>
+      <string>RO: Film Box Extra FHD</string>
       <string>RO: Film Box Extra HD</string>
       <string>RO: Film Box Extra</string>
     </Aliases>
@@ -1653,6 +1666,7 @@
       <string>RO: DIGI Film FHD</string>
       <string>RO: Digi Film HD</string>
       <string>RO: Digi Film NOW HD</string>
+      <string>RO: Film NOW FHD</string>
       <string>RO: Film NOW HD</string>
       <string>RO:DIGI FILM</string>
       <string>Romania | Digi Film HD</string>
@@ -1670,6 +1684,8 @@
     <Aliases>
       <string>||ROM|| FINE LIVING</string>
       <string>Fine Living</string>
+      <string>RO: Fine Living FHD</string>
+      <string>RO: Fine Living HD</string>
       <string>RO: Fine Living</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1799,6 +1815,8 @@
       <string>HBO 1 HD</string>
       <string>HBO 1 RO</string>
       <string>HBO 1</string>
+      <string>HBO RO FHD</string>
+      <string>HBO RO HD</string>
       <string>HBO RO</string>
       <string>HBO Romania</string>
       <string>HBO</string>
@@ -1806,6 +1824,8 @@
       <string>RO: HBO 1 HD</string>
       <string>RO: HBO 1</string>
       <string>RO: HBO FHD</string>
+      <string>RO: HBO RO FHD</string>
+      <string>RO: HBO RO HD</string>
       <string>RO: HBO RO</string>
       <string>RO: HBO</string>
       <string>RO: HBOmania</string>
@@ -1829,9 +1849,13 @@
       <string>||ROM|| HBO 2</string>
       <string>HBO 2 FHD</string>
       <string>HBO 2 HD</string>
+      <string>HBO 2 RO FHD</string>
+      <string>HBO 2 RO HD</string>
       <string>HBO 2 RO</string>
       <string>HBO 2</string>
       <string>RO: HBO 2 FHD</string>
+      <string>RO: HBO 2 RO FHD</string>
+      <string>RO: HBO 2 RO HD</string>
       <string>RO: HBO 2 RO</string>
       <string>RO:HBO 2 HD</string>
       <string>RO:HBO 2</string>
@@ -1851,9 +1875,13 @@
       <string>||ROM|| HBO 3</string>
       <string>HBO 3 FHD</string>
       <string>HBO 3 HD</string>
+      <string>HBO 3 RO FHD</string>
+      <string>HBO 3 RO HD</string>
       <string>HBO 3 RO</string>
       <string>HBO 3</string>
       <string>RO: HBO 3 FHD</string>
+      <string>RO: HBO 3 RO FHD</string>
+      <string>RO: HBO 3 RO HD</string>
       <string>RO: HBO 3 RO</string>
       <string>RO:HBO 3 HD</string>
       <string>RO:HBO 3</string>
@@ -2089,6 +2117,7 @@
     <Aliases>
       <string>||ROM|| KISS TV</string>
       <string>KissTV</string>
+      <string>RO: KISS TV FHD</string>
       <string>RO: KISS TV HD</string>
       <string>RO: Kiss TV S1</string>
       <string>RO: Kiss TV S2</string>
@@ -2432,6 +2461,8 @@
       <string>NGC</string>
       <string>RO: NAT GEO HD</string>
       <string>RO: NAT GEO</string>
+      <string>RO: NatGeo FHD</string>
+      <string>RO: NatGeo HD</string>
       <string>RO: NatGeographic</string>
       <string>RO: National Geographic FHD</string>
       <string>RO: National Geographic HD</string>
@@ -2456,6 +2487,8 @@
       <string>NGC WILD</string>
       <string>RO: Nat Geo Wild HD</string>
       <string>RO: Nat Geo Wild RO</string>
+      <string>RO: NatGeo Wild FHD</string>
+      <string>RO: NatGeo Wild HD</string>
       <string>Ro: NatGeoWild</string>
       <string>RO: National Geographic Wild</string>
       <string>RO: NGC WILD</string>
@@ -2543,7 +2576,9 @@
       <string>Nickelodeon HD</string>
       <string>Nickelodeon RO</string>
       <string>Nickelodeon</string>
+      <string>RO: Nickelodeon FHD</string>
       <string>RO: Nickelodeon HD</string>
+      <string>RO: NIckolodeon FHD</string>
       <string>RO:NICKELODEON</string>
       <string>Romania | Nickelodeon</string>
       <string>Rumania | Nickelodeon</string>
@@ -2569,6 +2604,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/noroc_tv.png</LogoUrl>
     <Aliases>
       <string>MD: Noroc TV SD</string>
+      <string>RO: Noroc TV FHD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2999,6 +3035,7 @@
     <GroupId>unknown</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Sundance.ro.png</LogoUrl>
     <Aliases>
+      <string>RO: Sundance FHD</string>
       <string>RO: Sundance TV HD</string>
       <string>RO: Sundance TV</string>
       <string>Sundance HD</string>
@@ -3909,6 +3946,7 @@
     <Aliases>
       <string>||ROM|| ZU TV</string>
       <string>RO: Radio ZU Video HD</string>
+      <string>RO: ZU TV FHD</string>
       <string>RO: ZU TV HD</string>
       <string>Ro: ZU TV</string>
       <string>ZU HD</string>
