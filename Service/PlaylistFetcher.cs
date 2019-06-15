@@ -9,9 +9,7 @@ using NuciLog.Core;
 
 using IptvPlaylistAggregator.Communication;
 using IptvPlaylistAggregator.Configuration;
-using IptvPlaylistAggregator.DataAccess.Repositories;
 using IptvPlaylistAggregator.Logging;
-using IptvPlaylistAggregator.Service.Mapping;
 using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service

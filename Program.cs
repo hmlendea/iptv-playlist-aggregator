@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+using NuciDAL.Repositories;
 using NuciLog;
 using NuciLog.Core;
 
 using IptvPlaylistAggregator.Communication;
 using IptvPlaylistAggregator.Configuration;
-using IptvPlaylistAggregator.DataAccess.Repositories;
+using IptvPlaylistAggregator.DataAccess.DataObjects;
 using IptvPlaylistAggregator.Service;
 
 namespace IptvPlaylistAggregator
@@ -44,9 +42,9 @@ namespace IptvPlaylistAggregator
                 .AddSingleton<IPlaylistFetcher, PlaylistFetcher>()
                 .AddSingleton<IPlaylistFileBuilder, PlaylistFileBuilder>()
                 .AddSingleton<IMediaSourceChecker, MediaSourceChecker>()
-                .AddSingleton<IChannelDefinitionRepository, ChannelDefinitionRepository>()
-                .AddSingleton<IGroupRepository, GroupRepository>()
-                .AddSingleton<IPlaylistProviderRepository, PlaylistProviderRepository>()
+                .AddSingleton<IRepository<ChannelDefinitionEntity>>(s => new XmlRepository<ChannelDefinitionEntity>(dataStoreSettings.ChannelStorePath))
+                .AddSingleton<IRepository<GroupEntity>>(s => new XmlRepository<GroupEntity>(dataStoreSettings.GroupStorePath))
+                .AddSingleton<IRepository<PlaylistProviderEntity>>(s => new XmlRepository<PlaylistProviderEntity>(dataStoreSettings.PlaylistProviderStorePath))
                 .AddSingleton<ILogger, NuciLogger>()
                 .BuildServiceProvider();
             

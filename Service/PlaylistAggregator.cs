@@ -1,13 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-using NuciExtensions;
+using NuciDAL.Repositories;
 using NuciLog.Core;
 
 using IptvPlaylistAggregator.Configuration;
-using IptvPlaylistAggregator.DataAccess.Repositories;
+using IptvPlaylistAggregator.DataAccess.DataObjects;
 using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service.Mapping;
 using IptvPlaylistAggregator.Service.Models;
@@ -19,9 +18,9 @@ namespace IptvPlaylistAggregator.Service
         readonly IPlaylistFetcher playlistFetcher;
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly IMediaSourceChecker mediaSourceChecker;
-        readonly IChannelDefinitionRepository channelRepository;
-        readonly IGroupRepository groupRepository;
-        readonly IPlaylistProviderRepository playlistProviderRepository;
+        readonly IRepository<ChannelDefinitionEntity> channelRepository;
+        readonly IRepository<GroupEntity> groupRepository;
+        readonly IRepository<PlaylistProviderEntity> playlistProviderRepository;
         readonly ApplicationSettings settings;
         readonly ILogger logger;
 
@@ -35,9 +34,9 @@ namespace IptvPlaylistAggregator.Service
             IPlaylistFetcher playlistFetcher,
             IPlaylistFileBuilder playlistFileBuilder,
             IMediaSourceChecker mediaSourceChecker,
-            IChannelDefinitionRepository channelRepository,
-            IGroupRepository groupRepository,
-            IPlaylistProviderRepository playlistProviderRepository,
+            IRepository<ChannelDefinitionEntity> channelRepository,
+            IRepository<GroupEntity> groupRepository,
+            IRepository<PlaylistProviderEntity> playlistProviderRepository,
             ApplicationSettings settings,
             ILogger logger)
         {
@@ -69,6 +68,7 @@ namespace IptvPlaylistAggregator.Service
             playlistProviders = playlistProviderRepository
                 .GetAll()
                 .Where(x => x.IsEnabled)
+                .OrderBy(x => x.Priority)
                 .ToServiceModels();
 
             Playlist playlist = new Playlist();
