@@ -18,6 +18,14 @@
   </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
+    <Id>github-hmlendea-en</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>2</Priority>
+    <Name>Hori's IPTV GitHub english language Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/en.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+  
+  <PlaylistProviderEntity>
     <Id>hori-streams-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>3</Priority>
@@ -258,6 +266,14 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>gatachannel2</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>80</Priority>
+    <Name>gatachannel2</Name>
+    <UrlFormat>http://gatachannel.com/iptv/worldwide/iptv-romania/ro-{0:dd-MM-yyyy}.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>freeiptvserver1</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>90</Priority>
@@ -343,46 +359,6 @@
     <Priority>111</Priority>
     <Name>freearhey's IPTV GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/freearhey/iptv/master/channels/md.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>tousecurity1</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>120</Priority>
-    <Name>Tousecurity List 1</Name>
-    <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20M3u%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0&amp;d=1</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>tousecurity1-2</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>121</Priority>
-    <Name>Tousecurity List 2</Name>
-    <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20M3u%20%282%29%{0:dd-MM-yyyy}.m3u?attredirects=0&amp;d=1</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>tousecurity1-3</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>123</Priority>
-    <Name>Tousecurity List 3</Name>
-    <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20M3u%20%283%29%20{0:dd-MM-yyyy}.m3u?attredirects=0&amp;d=1</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>tousecurity2-1</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>130</Priority>
-    <Name>Tousecurity Backup 1</Name>
-    <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20%281%29%20{0:dd-MM-yyyy}m3u?attredirects=0&amp;d=1</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>tousecurity3-1</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>140</Priority>
-    <Name>Tousecurity Uploadingy 1</Name>
-    <UrlFormat>https://sites.google.com/site/uploadingy/Romania%20M3u%20%282%29%20.m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
