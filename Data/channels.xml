@@ -250,6 +250,7 @@
       <string>Antena 1 HD</string>
       <string>Antena 1</string>
       <string>RO | ANETENA 1</string>
+      <string>RO-ANTENA_1(b)</string>
       <string>RO: Antena 1 FHD</string>
       <string>RO: Antena 1 HD</string>
       <string>RO:Antena 1</string>
@@ -267,6 +268,7 @@
       <string>||ROM|| ANTENA 3</string>
       <string>Antena 3 HD</string>
       <string>Antena 3</string>
+      <string>RO-ANTENA_3_HD(b)</string>
       <string>RO: Antena 3 FHD</string>
       <string>RO: Antena 3 HD</string>
       <string>RO:ANTENA  3</string>
@@ -409,6 +411,7 @@
       <string>||ROM|| B1 Tv</string>
       <string>B1 Tv</string>
       <string>B1</string>
+      <string>RO-B1_TV(b)</string>
       <string>RO: B1 HD</string>
       <string>RO: B1 TV S1</string>
       <string>RO: B1 TV S2</string>
@@ -450,6 +453,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bbc_earth.png</LogoUrl>
     <Aliases>
       <string>BBC Earth HD</string>
+      <string>RO: BBC Earth FHD</string>
       <string>RO: BBC Earth HD</string>
       <string>RO: BBC Earth</string>
     </Aliases>
@@ -539,9 +543,10 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bucuresti_tv.png</LogoUrl>
     <Aliases>
       <string>Bucuresti TV</string>
-      <string>RO: Bucuresti TV</string>
+      <string>RO: Bucuresti TV FHD</string>
       <string>RO: Bucuresti TV S1</string>
       <string>RO: Bucuresti TV S2</string>
+      <string>RO: Bucuresti TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -745,6 +750,7 @@
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/columna-tv.png</LogoUrl>
     <Aliases>
+      <string>Columna TV</string>
       <string>Columnta TV</string>
       <string>Ro- Columnta TV</string>
       <string>RO: Columna TV S1</string>
@@ -1041,6 +1047,7 @@
       <string>||ROM|| DIGI ANIMAL WORLD</string>
       <string>Digi Animal World HD</string>
       <string>Digi Animal World</string>
+      <string>RO-DIGI_ANIMAL_WORLD(b)</string>
       <string>RO: DIGI Animal World FHD</string>
       <string>RO: Digi Animal World HD</string>
       <string>RO:DIGI ANIMAL WORLD</string>
@@ -1060,6 +1067,7 @@
       <string>||ROM|| DIGI LIFE</string>
       <string>Digi Life HD</string>
       <string>Digi Life</string>
+      <string>RO-Digi_Life(b)</string>
       <string>RO: DIGI Life FHD</string>
       <string>RO: Digi Life HD</string>
       <string>RO:DIGI LIFE</string>
@@ -1203,8 +1211,10 @@
       <string>||ROM|| DIGI WORLD</string>
       <string>Digi World HD</string>
       <string>Digi World</string>
+      <string>RO-Digi_World(b)</string>
       <string>RO: Digi World FHD</string>
       <string>RO: Digi World HD</string>
+      <string>RO:Digi World RO</string>
       <string>RO:DIGI WORLD</string>
       <string>Romania | Digi World HD</string>
       <string>Romania | Digi World</string>
@@ -1223,6 +1233,7 @@
       <string>RO: Discovery FHD Showcase</string>
       <string>RO: Discovery HD Showcase</string>
       <string>RO: Discovery Showcase HD</string>
+      <string>RO:Discovery HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1252,7 +1263,7 @@
     <Aliases>
       <string>RO: Discovery ID</string>
       <string>RO: ID Investigation Discovery HD</string>
-      <string>RO: Investigation Disvovery FHD</string>
+      <string>RO: Investigation Discovery FHD</string>
       <string>RO: Investigation Disvovery HD</string>
       <string>RO: Investigation Disvovery</string>
     </Aliases>
@@ -1299,6 +1310,7 @@
       <string>||ROM|| DISCOVERY TURBO XTRA</string>
       <string>DTX RO</string>
       <string>DTX</string>
+      <string>RO: Discovery Turbo Xtra FHD</string>
       <string>RO: DTX FHD</string>
       <string>RO: DTX HD</string>
       <string>RO: DTX RO</string>
@@ -1329,6 +1341,7 @@
     <Aliases>
       <string>||ROM|| DISNEY CHANNEL</string>
       <string>Disney Channel</string>
+      <string>RO-Disney_Channel(b)</string>
       <string>RO: Disney Channel</string>
       <string>Romania | Disney Channel</string>
       <string>Rumania | Disney Channel</string>
@@ -1344,6 +1357,7 @@
       <string>||ROM|| DISNEY JUNIOR</string>
       <string>Disney Junior RO</string>
       <string>Disney Junior</string>
+      <string>RO-Disney_Junior(b)</string>
       <string>RO: Disney Jr</string>
       <string>RO:DISNEY JUNIOR</string>
       <string>Romania | Disney Junior</string>
@@ -1527,6 +1541,7 @@
       <string>EuroSport 2 RO</string>
       <string>EUROSPORT 2</string>
       <string>RO: Eurosport 2 FHD</string>
+      <string>RO: Eurosport 2 HD RO</string>
       <string>RO: EUROSPORT 2 HD</string>
       <string>RO: EUROSPORT 2 RO</string>
       <string>RO:EUROSPORT  2</string>
@@ -1663,11 +1678,13 @@
       <string>||ROM|| DIGI FILM</string>
       <string>Digi Film</string>
       <string>Film NOW HD</string>
+      <string>RO-DIGI_FILM(b)</string>
       <string>RO: DIGI Film FHD</string>
       <string>RO: Digi Film HD</string>
       <string>RO: Digi Film NOW HD</string>
       <string>RO: Film NOW FHD</string>
       <string>RO: Film NOW HD</string>
+      <string>RO: Film Now</string>
       <string>RO:DIGI FILM</string>
       <string>Romania | Digi Film HD</string>
       <string>Romania | Digi Film</string>
@@ -1853,6 +1870,7 @@
       <string>HBO 2 RO HD</string>
       <string>HBO 2 RO</string>
       <string>HBO 2</string>
+      <string>RO-HBO_2(b)</string>
       <string>RO: HBO 2 FHD</string>
       <string>RO: HBO 2 RO FHD</string>
       <string>RO: HBO 2 RO HD</string>
@@ -1913,6 +1931,7 @@
       <string>History Channel RO</string>
       <string>History Channel</string>
       <string>History HD</string>
+      <string>RO-HISTORY_CHANNEL(b)</string>
       <string>RO: HISTORI CHANNEL</string>
       <string>RO: History Channel HD</string>
       <string>RO: History Channel</string>
@@ -2088,6 +2107,7 @@
       <string>Kanal D HD</string>
       <string>KANAL D RO</string>
       <string>KANAL D</string>
+      <string>RO-Kanal_D(b)</string>
       <string>RO: Canal D</string>
       <string>RO: Kanal D FHD</string>
       <string>RO: Kanal D HD</string>
@@ -2166,6 +2186,7 @@
       <string>Look Sport</string>
       <string>Look TV Sport</string>
       <string>LOOK TV</string>
+      <string>RO-LOOK_TV(b)</string>
       <string>RO: Look Sport FHD</string>
       <string>RO: Look Sport SD</string>
       <string>RO: Look Sport TV FHD</string>
@@ -2249,6 +2270,7 @@
     <Aliases>
       <string>||ROM|| MINIMAX</string>
       <string>Minimax</string>
+      <string>RO-MINIMAX(b)</string>
       <string>RO: Minimax HD</string>
       <string>RO: Minimax RO</string>
       <string>RO:MINIMAX</string>
@@ -2337,6 +2359,8 @@
       <string>MOOZ RO!</string>
       <string>Mooz RO</string>
       <string>Mooz</string>
+      <string>RO: Mooz FHD</string>
+      <string>RO: Mooz HD</string>
       <string>RO: Mooz RO</string>
       <string>RO: Mooz</string>
     </Aliases>
@@ -2457,8 +2481,8 @@
       <string>||ROM|| NATIONAL GEOGRAPHIC</string>
       <string>National Geographic HD</string>
       <string>National Geographic RO</string>
-      <string>National Geographic</string>
       <string>NGC</string>
+      <string>RO-NATIONAL_GEOGRAPHIC(b)</string>
       <string>RO: NAT GEO HD</string>
       <string>RO: NAT GEO</string>
       <string>RO: NatGeo FHD</string>
@@ -2528,6 +2552,7 @@
       <string>National TV RO</string>
       <string>NATIONAL TV</string>
       <string>Ro- Na?ional TV</string>
+      <string>RO-NATIONAL_TV(b)</string>
       <string>Ro: National</string>
       <string>RO:NATIONAL TV</string>
       <string>Romania | National TV</string>
@@ -2574,6 +2599,7 @@
       <string>||ROM|| NICKELODEON</string>
       <string>Nickelodeon (RO)</string>
       <string>Nickelodeon HD</string>
+      <string>RO-NICKELODEON(b)</string>
       <string>Nickelodeon RO</string>
       <string>Nickelodeon</string>
       <string>RO: Nickelodeon FHD</string>
@@ -2693,8 +2719,9 @@
     <Aliases>
       <string>||ROM|| PRIMA TV</string>
       <string>Prima TV RO</string>
-      <string>Prima TV</string>
+      <string>RO-PRIMA_TV(b)</string>
       <string>RO: PRIMA TV RO</string>
+      <string>RO: Prima</string>
       <string>RO: Prima</string>
       <string>RO:PRIMA TV</string>
     </Aliases>
@@ -2775,6 +2802,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/36/5b/4d/365b4d0f-2085-2bde-3255-4bf5408931e6/AppIcon-1x_U007emarketing-85-220-9.png/128x0w.jpg</LogoUrl>
     <Aliases>
+      <string>ProTV News</string>
       <string>RO: ProTV News</string>
       <string>Romania | Pro TV News</string>
       <string>Rumania | Pro TV News</string>
@@ -2790,6 +2818,7 @@
       <string>||ROM|| PRO TV</string>
       <string>ProTV HD</string>
       <string>ProTV</string>
+      <string>RO-PRO_TV(b)</string>
       <string>RO: Pro TV (backup)</string>
       <string>RO: Pro TV FHD</string>
       <string>RO: ProTV HD</string>
@@ -2887,6 +2916,7 @@
       <string>Realitatea TV Rumania</string>
       <string>Realitatea Tv</string>
       <string>Realitatea</string>
+      <string>RO-REALITATEA_TV(b)</string>
       <string>RO: REALITATAE TV</string>
       <string>RO: Realitatea TV HD</string>
       <string>RO: REALITATEA</string>
@@ -2943,6 +2973,7 @@
     <Aliases>
       <string>||ROM|| ROMANIA TV</string>
       <string>Ro- Romania TV backup</string>
+      <string>RO-ROMANIA_TV(b)</string>
       <string>RO: Romania TV HD</string>
       <string>Ro: Romania</string>
       <string>RO:ROMANIA TV</string>
@@ -3072,6 +3103,7 @@
     <LogoUrl>https://www.taraf.tv/images/logo.png</LogoUrl>
     <Aliases>
       <string>||ROM|| TARAF TV</string>
+      <string>RO-TARAF_TV_HD(b)</string>
       <string>RO: Taraf HD</string>
       <string>RO: TARAF TV HD</string>
       <string>RO: Taraf</string>
@@ -3339,6 +3371,7 @@
       <string>RO | Telestar 1</string>
       <string>RO: Telestar 1 TV</string>
       <string>RO: Telestar</string>
+      <string>Telestar 1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3497,6 +3530,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv1000.png</LogoUrl>
     <Aliases>
       <string>||ROM|| TV1000</string>
+      <string>RO-TV_1000(b)</string>
       <string>RO: TV 1000 HD</string>
       <string>Ro:TV1000</string>
       <string>Romania | TV 1000 HD</string>
@@ -3619,6 +3653,7 @@
       <string>||ROM|| TVR 1</string>
       <string>RO | TVR</string>
       <string>Ro- TVR1 HD</string>
+      <string>RO-TVR_1(b)</string>
       <string>RO: RO TVR 1</string>
       <string>RO: TVR 1 (Backup)</string>
       <string>RO: TVR 1 SD</string>
@@ -3638,6 +3673,8 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Logo_TVR_2_%282004%29.svg/150px-Logo_TVR_2_%282004%29.svg.png</LogoUrl>
     <Aliases>
       <string>||ROM|| TVR 2</string>
+      <string>Ro- TVR2 HD</string>
+      <string>RO-TVR_2(b)</string>
       <string>RO: RO TVR 2</string>
       <string>RO: TVR 2 (Backup)</string>
       <string>RO: TVR 2 HD</string>
@@ -3715,6 +3752,7 @@
     <Aliases>
       <string>RO: TVR Ia</string>
       <string>RO: TVR Iași</string>
+      <string>TVR Iasi</string>
       <string>TVR Isasi</string>
     </Aliases>
   </ChannelDefinitionEntity>
