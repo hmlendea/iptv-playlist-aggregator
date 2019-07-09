@@ -750,6 +750,7 @@
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/columna-tv.png</LogoUrl>
     <Aliases>
+      <string>Columna</string>
       <string>Columna TV</string>
       <string>Columnta TV</string>
       <string>Ro- Columnta TV</string>
@@ -1311,6 +1312,7 @@
       <string>DTX RO</string>
       <string>DTX</string>
       <string>RO: Discovery Turbo Xtra FHD</string>
+      <string>RO: Discovery Turbo Xtra HD</string>
       <string>RO: DTX FHD</string>
       <string>RO: DTX HD</string>
       <string>RO: DTX RO</string>
@@ -2125,6 +2127,7 @@
     <GroupId>generale</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/kapital-tv.png</LogoUrl>
     <Aliases>
+      <string>Kapital TV</string>
       <string>RO: Kapital TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2458,6 +2461,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>ncnTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>NCN TV</Name>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ncn_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: NCN TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>NaşulTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nașul TV</Name>
@@ -2719,6 +2732,7 @@
     <Aliases>
       <string>||ROM|| PRIMA TV</string>
       <string>Prima TV RO</string>
+      <string>Prima TV</string>
       <string>RO-PRIMA_TV(b)</string>
       <string>RO: PRIMA TV RO</string>
       <string>RO: Prima</string>
@@ -2854,6 +2868,7 @@
     <Aliases>
       <string>||ROM|| PROTV INTERNATIONAL</string>
       <string>ProTV International</string>
+      <string>RO: PRO TV INT</string>
       <string>RO: Pro Tv INTERNATIONAL</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -3147,6 +3162,7 @@
       <string>||ROM|| TELEKOM SPORT 1</string>
       <string>Dolce Sport 1 HD</string>
       <string>Dolce Sport 1</string>
+      <string>Ro- Dolce Sport 1 FHD</string>
       <string>Ro- Dolce Sport 1 HD</string>
       <string>RO: Dolce Sport 1</string>
       <string>RO: Telekom Sport 1 (backup)</string>
@@ -3174,6 +3190,7 @@
       <string>||ROM|| TELEKOM SPORT 2</string>
       <string>Dolce Sport 2 HD</string>
       <string>Dolce Sport 2</string>
+      <string>Ro- Dolce Sport 2 FHD</string>
       <string>Ro- Dolce Sport 2 HD</string>
       <string>RO: Dolce Sport 2</string>
       <string>RO: Telekom Sport 2 (backup)</string>
@@ -3201,6 +3218,7 @@
       <string>||ROM|| TELEKOM SPORT 3</string>
       <string>Dolce Sport 3 HD</string>
       <string>Dolce Sport 3</string>
+      <string>Ro- Dolce Sport 3 FHD</string>
       <string>Ro- Dolce Sport 3 HD</string>
       <string>RO: Dolce Sport 3</string>
       <string>RO: Telekom Sport 3 (backup)</string>
@@ -3228,6 +3246,7 @@
       <string>||ROM|| TELEKOM SPORT 4</string>
       <string>Dolce Sport 4 HD</string>
       <string>Dolce Sport 4</string>
+      <string>Ro- Dolce Sport 4 FHD</string>
       <string>Ro- Dolce Sport 4 HD</string>
       <string>RO: Dolce Sport 4</string>
       <string>RO: Telekom Sport 4 (backup)</string>
@@ -3255,6 +3274,7 @@
       <string>||ROM|| TELEKOM SPORT 5</string>
       <string>Dolce Sport 5 HD</string>
       <string>Dolce Sport 5</string>
+      <string>Ro- Dolce Sport 5 FHD</string>
       <string>Ro- Dolce Sport 5 HD</string>
       <string>RO: Dolce Sport 5</string>
       <string>RO: Telekom Sport 5 (backup)</string>
@@ -3282,6 +3302,7 @@
       <string>||ROM|| TELEKOM SPORT 6</string>
       <string>Dolce Sport 6 HD</string>
       <string>Dolce Sport 6</string>
+      <string>Ro- Dolce Sport 6 FHD</string>
       <string>Ro- Dolce Sport 6 HD</string>
       <string>RO: Dolce Sport 6</string>
       <string>RO: Telekom Sport 6 (backup)</string>
