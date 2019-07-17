@@ -161,7 +161,8 @@
     <Aliases>
       <string>Alfa &amp; Omega</string>
       <string>Alfa Omega TV</string>
-      <string>RO: AlfaOmega TV</string>
+      <string>RO: Alfa Omega HD</string>
+      <string>RO: Alfa Omega TV</string>
       <string>RO: Alfa Omega</string>
       <string>Romania | Alfa &amp; Omega TV</string>
       <string>Rumania | Alfa &amp; Omega TV</string>
@@ -2590,12 +2591,13 @@
       <string>NGC Wild</string>
       <string>RO: Nat Geo Wild HD</string>
       <string>RO: Nat Geo Wild RO</string>
+      <string>RO: Nat Geo Wild SD</string>
       <string>RO: Natgeo Wild FHD</string>
       <string>RO: Natgeo Wild HD</string>
       <string>RO: NatgeoWild</string>
+      <string>RO: National Geo Wild</string>
       <string>RO: National geographic Wild</string>
       <string>RO: NGC Wild</string>
-      <string>RO: National Geo Wild</string>
       <string>Romania | Nat Geo Wild</string>
       <string>Rumania | Nat Geo Wild</string>
     </Aliases>
@@ -4058,6 +4060,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/viasat_nature.png</LogoUrl>
     <Aliases>
       <string>||ROM|| Viasat Nature</string>
+      <string>RO: Viasat Nature HD</string>
       <string>RO: Viasat Nature HQ</string>
       <string>RO: Viasat Nature MQ</string>
       <string>RO: Viasat Nature</string>
