@@ -18,6 +18,14 @@
   </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
+    <Id>github-hmlendea-en</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>2</Priority>
+    <Name>Hori's IPTV GitHub english language Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/en.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+  
+  <PlaylistProviderEntity>
     <Id>hori-streams-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>3</Priority>
@@ -231,6 +239,14 @@
     <Priority>80</Priority>
     <Name>gatachannel</Name>
     <UrlFormat>https://gatachannel.com/iptv/Romanian-{0:dd-MM-yy}.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gatachannel2</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>80</Priority>
+    <Name>gatachannel2</Name>
+    <UrlFormat>http://gatachannel.com/iptv/worldwide/iptv-romania/ro-{0:dd-MM-yyyy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
