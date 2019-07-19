@@ -84,7 +84,7 @@ namespace IptvPlaylistAggregator.Service.Models
                 strippedName = strippedName.Replace(substringToStrip, "", true, CultureInfo.CurrentCulture);
             }
 
-            foreach (char c in name.Where(char.IsLetterOrDigit))
+            foreach (char c in strippedName.Where(char.IsLetterOrDigit))
             {
                 normalisedName += char.ToUpper(c);
             }
