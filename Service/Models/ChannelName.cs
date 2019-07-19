@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 using NuciExtensions;
@@ -11,6 +12,11 @@ namespace IptvPlaylistAggregator.Service.Models
         public string Value { get; set; }
 
         public IEnumerable<string> Aliases { get; set; }
+
+        static readonly IEnumerable<string> SubstringsToStrip = new List<string>
+        {
+            "(backup)", "(b)", " backup", "(On-Demand)", "(Opt-1)", "[432p]", "[576p]", "[720p]"
+        };
 
         public ChannelName(string name)
             : this(name, new List<string>())
@@ -71,6 +77,12 @@ namespace IptvPlaylistAggregator.Service.Models
         string NormaliseChannelName(string name)
         {
             string normalisedName = string.Empty;
+            string strippedName = name;
+
+            foreach (string substringToStrip in SubstringsToStrip)
+            {
+                strippedName = strippedName.Replace(substringToStrip, "", true, CultureInfo.CurrentCulture);
+            }
 
             foreach (char c in name.Where(char.IsLetterOrDigit))
             {
