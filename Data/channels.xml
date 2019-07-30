@@ -166,6 +166,7 @@
     <Aliases>
       <string>Alfa &amp; Omega TV RO</string>
       <string>Alfa &amp; Omega</string>
+      <string>Alfa Omega TV</string>
       <string>RO: Alfa Omega HD</string>
       <string>RO: Alfa Omega TV</string>
       <string>RO: Alfa Omega</string>
@@ -507,6 +508,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bollywood_Clasic.png/200px-Bollywood_Clasic.png</LogoUrl>
     <Aliases>
       <string>Bollywood Classic</string>
+      <string>RO: Bollywood Clasic</string>
       <string>RO: Bollywood Classic</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -708,10 +710,11 @@
       <string>RO: CineMAX 1 FHD</string>
       <string>RO: CineMAX 1</string>
       <string>RO: CineMAX FHD RO</string>
+      <string>RO: CineMAX FHD</string>
       <string>RO: CineMAX HD</string>
       <string>RO: CineMAX RO</string>
-      <string>RO: CineMAX</string>
       <string>RO: CineMAX1 HD</string>
+      <string>RO: CineMAX</string>
       <string>ROM: CineMAX HD</string>
       <string>ROM: CineMAX RO</string>
       <string>ROM: CineMAX1 HD</string>
@@ -871,6 +874,7 @@
     <GroupId>radio</GroupId>
     <LogoUrl>https://www.dancefm.ro/wp-content/uploads/logoDance-2018.png</LogoUrl>
     <Aliases>
+      <string>Dance FM</string>
       <string>Pro FM Dance FM</string>
       <string>RO: Pro FM Dance FM</string>
     </Aliases>
@@ -1247,7 +1251,9 @@
       <string>RO: Discovery FHD Showcase</string>
       <string>RO: Discovery HD Showcase</string>
       <string>RO: Discovery HD</string>
+      <string>RO: Discovery Showcase FHD</string>
       <string>RO: Discovery Showcase HD</string>
+      <string>RO: Discovery Showcase</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1291,6 +1297,7 @@
     <Aliases>
       <string>Discovery IDX HD</string>
       <string>Discovery IDX</string>
+      <string>ID Xtra HD</string>
       <string>RO: Discovery ID Xtra</string>
       <string>RO: Discovery IDX</string>
       <string>RO: ID Xtra HD</string>
@@ -2384,6 +2391,7 @@
     <Aliases>
       <string>MD: Moldova 1</string>
       <string>Moldova 1</string>
+      <string>Moldova M1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2395,6 +2403,7 @@
     <Aliases>
       <string>MD: Moldova 2</string>
       <string>Moldova 2</string>
+      <string>Moldova M2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2638,6 +2647,7 @@
       <string>National TV RO</string>
       <string>National TV</string>
       <string>RO: Na?ional TV</string>
+      <string>RO: National TV HD</string>
       <string>RO: National TV</string>
       <string>RO: National</string>
       <string>ROM: National TV</string>
@@ -2665,6 +2675,7 @@
       <string>Neptun TV RO</string>
       <string>Neptun TV</string>
       <string>RO: Neptum TV</string>
+      <string>RO: Neptun TV</string>
       <string>RO: Neptun</string>
       <string>ROM: Neptum TV</string>
       <string>ROM: Neptun TV</string>
@@ -3871,6 +3882,7 @@
     <LogoUrl>http://stvron.com/canale/mici/tvr-iasi.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Ia</string>
+      <string>RO: TVR Ia?i</string>
       <string>RO: TVR Iași</string>
       <string>TVR Iasi RO</string>
       <string>TVR Iasi</string>
@@ -3913,8 +3925,9 @@
     <LogoUrl>http://stvron.com/canale/mici/tvr-targu-mures.png</LogoUrl>
     <Aliases>
       <string>RO: TVR T?rgu-Mure?</string>
-      <string>RO: TVR Târgu-Mureș</string>
       <string>RO: TVR Tg Mures</string>
+      <string>RO: TVR Târgu-Mure?</string>
+      <string>RO: TVR Târgu-Mureș</string>
       <string>TVR T?rgu-Mure?</string>
       <string>TVR Târgu-Mureș RO</string>
     </Aliases>
@@ -3929,6 +3942,7 @@
       <string>RO: TVR Timioara</string>
       <string>RO: TVR Timișoara</string>
       <string>TVR Timioara</string>
+      <string>TVR Timisoara</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -4124,6 +4138,217 @@
       <string>ZU TV RO</string>
       <string>ZU TV</string>
       <string>ZU</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>fashionTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Fashion TV</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: Fashion TV HD</string>
+      <string>RO: Fashion TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>fightBox</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>FightBox</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: FightBox</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>duckTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Duck TV</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: Duck TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>filmMania</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Film Mania</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: Film Mania</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>docuBox</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>DocuBox</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: DocuBox</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>moozTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Mooz TV</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: Mooz TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>infoPescar</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Info Pescar</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl>RO: Info Pescar</LogoUrl>
+    <Aliases>
+      <string>RO: DocuBox</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>radioZU</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Radio ZU</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Radio ZU</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>radioLiberty</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Radio Liberty</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Radio Liberty</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>radioGuerilla</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Radio Guerilla</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Radio Guerilla</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>radioHot</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Radio Hot</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Radio Hot</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>magicFM</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Magic FM</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Magic FM</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>europaFM</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Europa FM</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Europa FM</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>romanticFM</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Romantic FM</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Romantic FM</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>romaniaActualitati</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>România Actualități</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Romania Actualitati</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>digiFM</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Digi FM</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Digi FM</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>deea-fm</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Deea FM</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Deea FM</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>antena-satelor</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Antena Satelor</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Antena Satelor</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>dark-edge-radio</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Dark Edge Radio</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Dark Edge Radio</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>kissFM</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Kiss FM</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Kiss FM</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>vibeFM</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Vibe FM</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Vibe FM</string>
     </Aliases>
   </ChannelDefinitionEntity>
 </ArrayOfChannelDefinitionEntity>
