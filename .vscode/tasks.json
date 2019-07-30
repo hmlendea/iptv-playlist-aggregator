@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/IptvPlaylistAggregator.csproj"
+                "${workspaceFolder}/IptvPlaylistAggregator/IptvPlaylistAggregator.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/IptvPlaylistAggregator.csproj"
+                "${workspaceFolder}/IptvPlaylistAggregator/IptvPlaylistAggregator.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -28,7 +28,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/IptvPlaylistAggregator.csproj"
+                "${workspaceFolder}/IptvPlaylistAggregator/IptvPlaylistAggregator.csproj"
             ],
             "problemMatcher": "$tsc"
         }
