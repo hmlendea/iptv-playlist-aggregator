@@ -30,6 +30,12 @@ namespace IptvPlaylistAggregator.Service.Models
             Aliases = aliases;
         }
 
+        public ChannelName(string name, params string[] aliases)
+        {
+            Value = name;
+            Aliases = aliases;
+        }
+
         public bool Equals(ChannelName other)
         {
             if (ReferenceEquals(null, other))
@@ -89,7 +95,17 @@ namespace IptvPlaylistAggregator.Service.Models
                 strippedName = strippedName.Replace(substringToStrip, "", true, CultureInfo.InvariantCulture);
             }
 
-            return strippedName.Where(char.IsLetterOrDigit).ToString();
+            string finalString = string.Empty;
+
+            foreach (char c in strippedName)
+            {
+                if (char.IsLetterOrDigit(c))
+                {
+                    finalString += c;
+                }
+            }
+
+            return finalString;
         }
 
         public static bool operator ==(ChannelName source, ChannelName other)
