@@ -12,4 +12,8 @@
     <PackageReference Include="nunit" Version="3.11.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\IptvPlaylistAggregator\IptvPlaylistAggregator.csproj" />
+  </ItemGroup>
+
 </Project>
