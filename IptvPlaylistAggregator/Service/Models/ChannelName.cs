@@ -13,9 +13,9 @@ namespace IptvPlaylistAggregator.Service.Models
 
         public IEnumerable<string> Aliases { get; set; }
 
-        static readonly IEnumerable<string> SubstringsToStrip = new List<string>
+        static readonly string[] SubstringsToStrip = new string[]
         {
-            "(backup)", "(b)", " backup", "(On-Demand)", "(Opt-1)", "[432p]", "[576p]", "[720p]", "www.iptvsource.com"
+            "(backup)", "(b)", " backup", "(On-Demand)", "(Opt-1)", "[432p]", "[576p]", "[720p]", "[Multi-Audio]", "www.iptvsource.com"
         };
 
         public ChannelName(string name)
@@ -70,26 +70,26 @@ namespace IptvPlaylistAggregator.Service.Models
 
         public bool Equals(string name)
         {
-            return Aliases.Any(alias =>
-                NormaliseChannelName(name).Equals(NormaliseChannelName(alias)));
+            string normalisedName = NormaliseChannelName(name);
+
+            return Aliases.Any(alias => NormaliseChannelName(alias).Equals(normalisedName));
         }
 
         string NormaliseChannelName(string name)
         {
-            string normalisedName = string.Empty;
+            return StripChannelName(name).ToUpper().RemoveDiacritics();
+        }
+
+        string StripChannelName(string name)
+        {
             string strippedName = name;
 
             foreach (string substringToStrip in SubstringsToStrip)
             {
-                strippedName = strippedName.Replace(substringToStrip, "", true, CultureInfo.CurrentCulture);
+                strippedName = strippedName.Replace(substringToStrip, "", true, CultureInfo.InvariantCulture);
             }
 
-            foreach (char c in strippedName.Where(char.IsLetterOrDigit))
-            {
-                normalisedName += char.ToUpper(c);
-            }
-
-            return normalisedName.RemoveDiacritics();
+            return strippedName.Where(char.IsLetterOrDigit).ToString();
         }
 
         public static bool operator ==(ChannelName source, ChannelName other)
