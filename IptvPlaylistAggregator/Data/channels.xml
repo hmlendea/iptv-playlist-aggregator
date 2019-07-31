@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfChannelDefinitionEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ChannelDefinitionEntity>
+    <Id>___separators</Id>
+    <IsEnabled>false</IsEnabled>
+    <Name>INVALID_CHANNEL</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>-----ROMANIA------</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>1hd</Id>
     <IsEnabled>true</IsEnabled>
     <Name>1 HD</Name>
@@ -461,6 +471,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/balkanika-tv.png</LogoUrl>
     <Aliases>
+      <string>RO: Balkanika TV</string>
       <string>RO: Balkanika</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1038,6 +1049,7 @@
       <string>Digi24 Timis RO</string>
       <string>Digi24 Timis</string>
       <string>RO: Digi24 Timis</string>
+      <string>RO: Digi24 Timisoara</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1859,10 +1871,10 @@
       <string>Happy Channel</string>
       <string>Happy TV</string>
       <string>Happy</string>
-      <string>Ro | Happy TV</string>
       <string>RO: Happy Channel FHD</string>
       <string>RO: Happy Channel HD</string>
       <string>RO: Happy Channel</string>
+      <string>RO: Happy TV</string>
       <string>RO: Happy</string>
       <string>ROM: Happy Channel</string>
       <string>ROMANIA: Happy Channel</string>
@@ -2392,6 +2404,7 @@
       <string>MD: Moldova 1</string>
       <string>Moldova 1</string>
       <string>Moldova M1</string>
+      <string>RO: Moldova M1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2733,6 +2746,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/noroc_tv.png</LogoUrl>
     <Aliases>
+      <string>Noroc TV</string>
       <string>MD: Noroc TV SD</string>
       <string>RO: Noroc TV FHD</string>
     </Aliases>
@@ -3898,6 +3912,7 @@
     <Aliases>
       <string>RO: TVR Int</string>
       <string>RO: TVR International</string>
+      <string>RO: TVRi</string>
       <string>ROMANIA: TVR International</string>
       <string>RUMANIA: TVR International</string>
       <string>TVR International RO</string>
@@ -4232,13 +4247,13 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>radioGuerilla</Id>
+    <Id>radioGuerrilla</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Radio Guerilla</Name>
+    <Name>Radio Guerrilla</Name>
     <GroupId>radio</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
-      <string>Radio Guerilla</string>
+      <string>Radio Guerrilla</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -4349,6 +4364,16 @@
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>Vibe FM</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>infoHD</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Televiziunea InfoHD</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Televiziunea InfoHD</string>
     </Aliases>
   </ChannelDefinitionEntity>
 </ArrayOfChannelDefinitionEntity>
