@@ -385,12 +385,4 @@
     <UrlFormat>http://freesourcetv.com/m3u-files/moldova_iptv_{0:dd_MM_yyyy}_freesourcetv_com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
-  <PlaylistProviderEntity>
-    <Id>freeiptv.io</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>190</Priority>
-    <Name>FreeIPTV.io</Name>
-    <UrlFormat>https://freeiptv.io/m3u/ypi0x_normal.php?c=RO</UrlFormat>
-  </PlaylistProviderEntity>
-
 </ArrayOfPlaylistProviderEntity>
