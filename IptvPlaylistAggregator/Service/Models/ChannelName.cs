@@ -15,7 +15,8 @@ namespace IptvPlaylistAggregator.Service.Models
 
         static readonly string[] SubstringsToStrip = new string[]
         {
-            "(backup)", "(b)", " backup", "(On-Demand)", "(Opt-1)", "[432p]", "[576p]", "[720p]", "[Multi-Audio]", "www.iptvsource.com"
+            "(backup)", "(b)", " backup", "(On-Demand)", "[432p]", "[576p]", "[720p]", "[Multi-Audio]", "www.iptvsource.com",
+            "(Opt-1)", "(Opt-2)", "(Opt-3)", "(Opt-4)", "(Opt-5)", "(Opt-6)", "(Opt-7)", "(Opt-8)", "(Opt-9)"
         };
 
         public ChannelName(string name)
