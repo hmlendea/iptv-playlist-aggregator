@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APP_NAME=$(git remote -vv | grep fetch | sed 's|.*http.*/\(.*\)\.git.*|\1|')
-VERSION_MAJOR=$(date +"%y.%j")
+VERSION_MAJOR="$(date +"%y.%j")"
 VERSION_MINOR="$1"
 RELEASE_DIR_RELATIVE="bin/Release"
 PUBLISH_DIR_RELATIVE="${RELEASE_DIR_RELATIVE}/publish-script-output"
@@ -53,15 +53,16 @@ function cleanup {
     rm -rf "$PUBLISH_DIR"
 }
 
+function build-release {
+    dotnet-pub $1
+    package $1
+}
+
 prepare
 
-dotnet-pub win-x64
-package win-x64
-
-dotnet-pub linux-x64
-package linux-x64
-
-dotnet-pub linux-arm
-package linux-arm
+build-release win-x64
+build-release linux-x64
+build-release linux-arm
+build-release linux-arm64
 
 cleanup
