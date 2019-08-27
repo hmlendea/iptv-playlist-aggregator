@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IptvPlaylistAggregator\IptvPlaylistAggregator.csproj" />
+    <ProjectReference Include="..\IptvPlaylistAggregator.csproj" />
   </ItemGroup>
 
 </Project>

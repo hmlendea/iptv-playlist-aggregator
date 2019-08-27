@@ -5,7 +5,8 @@ dist: xenial
 
 install:
   - dotnet restore
-  - dotnet test IptvPlaylistAggregator.UnitTests
+  - dotnet restore UnitTests
+  - dotnet test UnitTests
 
 script:
   - dotnet build
