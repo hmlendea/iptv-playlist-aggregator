@@ -38,6 +38,7 @@
     <GroupId>general</GroupId>
     <LogoUrl>https://new.6tv.ro/wp-content/uploads/2017/08/6tv_logo.png</LogoUrl>
     <Aliases>
+      <string>6 TV</string>
       <string>6 TV RO</string>
       <string>RO: 6 TV</string>
       <string>ROMANIA: 6 TV</string>
@@ -194,6 +195,7 @@
       <string>Alfa Media TV</string>
       <string>Alpha Media TV</string>
       <string>RO: Alpha Media TV</string>
+      <string>RO: Alpha Media</string>
       <string>ROMANIA: Alpha Media TV</string>
       <string>RUMANIA: Alpha Media TV</string>
     </Aliases>
@@ -244,6 +246,8 @@
     <GroupId>entertainment</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/comedy-play.png</LogoUrl>
     <Aliases>
+      <string>Antena Comedy</string>
+      <string>RO: Antena Comedy Play</string>
       <string>RO: Antena Comedy</string>
       <string>RO: Antena Play Comedy</string>
     </Aliases>
@@ -643,6 +647,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/canal33.png</LogoUrl>
     <Aliases>
+      <string>Canal33</string>
       <string>RO: Canal33</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -722,6 +727,7 @@
       <string>RO: CineMAX 1</string>
       <string>RO: CineMAX FHD RO</string>
       <string>RO: CineMAX FHD</string>
+      <string>RO: CineMAX HD RO</string>
       <string>RO: CineMAX HD</string>
       <string>RO: CineMAX RO</string>
       <string>RO: CineMAX1 HD</string>
@@ -2043,6 +2049,7 @@
       <string>HTB Moldova</string>
       <string>MD: NTV</string>
       <string>НТВ Moldova</string>
+      <string>НТВ-Молдова</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2916,7 +2923,9 @@
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45a7.png</LogoUrl>
     <Aliases>
       <string>Pro TV HD RO</string>
+      <string>Pro TV HD</string>
       <string>Pro TV RO</string>
+      <string>Pro TV</string>
       <string>RO: Pro TV FHD</string>
       <string>RO: Pro TV HD</string>
       <string>RO: Pro TV</string>
@@ -3025,12 +3034,8 @@
     <GroupId>news</GroupId>
     <LogoUrl>http://itcmedia.ro/wp-content/uploads/2013/01/REALITATEA_PLUS2.jpg</LogoUrl>
     <Aliases>
-      <string>Realitatea TV FHD RO</string>
-      <string>Realitatea TV FHD</string>
-      <string>Realitatea TV HD RO</string>
-      <string>Realitatea TV HD</string>
-      <string>Realitatea TV RO</string>
-      <string>Realitatea TV</string>
+      <string>Realitatea Plus HD</string>
+      <string>RO: Realitatea Plus HD</string>
       <string>RO: Realitatea Plus TV</string>
       <string>ROMANIA: Realitatea Plus TV</string>
       <string>RUMANIA: Realitatea Plus TV</string>
@@ -3043,10 +3048,18 @@
     <GroupId>news</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/realitatea-tv.png</LogoUrl>
     <Aliases>
+      <string>Realitatea HD</string>
+      <string>Realitatea TV FHD RO</string>
+      <string>Realitatea TV FHD</string>
+      <string>Realitatea TV HD RO</string>
+      <string>Realitatea TV HD</string>
+      <string>Realitatea TV RO</string>
       <string>Realitatea TV Rumania</string>
+      <string>Realitatea TV</string>
       <string>Realitatea TV</string>
       <string>Realitatea</string>
       <string>RO: Realitatae TV</string>
+      <string>RO: Realitatea HD</string>
       <string>RO: Realitatea TV HD</string>
       <string>RO: Realitatea TV</string>
       <string>RO: Realitatea</string>
@@ -3684,6 +3697,7 @@
     <GroupId>foreign</GroupId>
     <LogoUrl>https://static.iptv-epg.com/nl/TV5Monde.nl.png</LogoUrl>
     <Aliases>
+      <string>RO: TV5 Monde Europe</string>
       <string>RO: TV5 Monde HD</string>
       <string>RO: TV5 Monde</string>
       <string>RO: TV5 Monder</string>
@@ -3705,6 +3719,7 @@
     <Aliases>
       <string>MD: TV8</string>
       <string>TV8 Moldova</string>
+      <string>TV8</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3911,6 +3926,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/d9/TVRiLogo.svg/1200px-TVRiLogo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Int</string>
+      <string>RO: TVR International (TVRi)</string>
       <string>RO: TVR International</string>
       <string>RO: TVRi</string>
       <string>ROMANIA: TVR International</string>
@@ -3940,9 +3956,10 @@
     <LogoUrl>http://stvron.com/canale/mici/tvr-targu-mures.png</LogoUrl>
     <Aliases>
       <string>RO: TVR T?rgu-Mure?</string>
-      <string>RO: TVR Tg Mures</string>
       <string>RO: TVR Târgu-Mure?</string>
       <string>RO: TVR Târgu-Mureș</string>
+      <string>RO: TVR Tg Mures</string>
+      <string>RO: TVR Tîrgu-Mureș</string>
       <string>TVR T?rgu-Mure?</string>
       <string>TVR Târgu-Mureș RO</string>
     </Aliases>
