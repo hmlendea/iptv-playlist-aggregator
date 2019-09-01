@@ -1,18 +1,22 @@
 using NUnit.Framework;
 
+using IptvPlaylistAggregator.Service;
 using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.UnitTests.Service.Models
 {
-    public sealed class ChannelNameTests
+    public sealed class ChannelMatcherTests
     {
+        IChannelMatcher channelMatcher;
+
         [SetUp]
         public void SetUp()
         {
+            channelMatcher = new ChannelMatcher();
         }
 
         [Test]
-        public void Equals_CompareWithSameValue_ReturnsTrue()
+        public void DoChannelNamesMatch_CompareWithSameValue_ReturnsTrue()
         {
             string definedName = "Digi Sport 2";
             string providerName = "RO: Digi Sport 2";
@@ -20,11 +24,11 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 
             ChannelName channelName = new ChannelName(definedName, alias);
 
-            Assert.IsTrue(channelName.Equals(providerName));
+            Assert.IsTrue(channelMatcher.DoChannelNamesMatch(channelName, providerName));
         }
 
         [Test]
-        public void Equals_CompareWithSameValueDifferentCasing_ReturnsTrue()
+        public void DoChannelNamesMatch_CompareWithSameValueDifferentCasing_ReturnsTrue()
         {
             string definedName = "Digi Sport 2";
             string providerName = "RO: Digi Sport 2";
@@ -32,11 +36,11 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 
             ChannelName channelName = new ChannelName(definedName, alias);
 
-            Assert.IsTrue(channelName.Equals(providerName));
+            Assert.IsTrue(channelMatcher.DoChannelNamesMatch(channelName, providerName));
         }
 
         [Test]
-        public void Equals_CompareWithSameValueWithDiacritics_ReturnsTrue()
+        public void DoChannelNamesMatch_CompareWithSameValueWithDiacritics_ReturnsTrue()
         {
             string definedName = "TVR Timișoara";
             string providerName = "RO: TVR Timisoara";
@@ -44,11 +48,11 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 
             ChannelName channelName = new ChannelName(definedName, alias);
 
-            Assert.IsTrue(channelName.Equals(providerName));
+            Assert.IsTrue(channelMatcher.DoChannelNamesMatch(channelName, providerName));
         }
 
         [Test]
-        public void Equals_CompareWithSameValueWithBlacklistedSubstrings_ReturnsTrue()
+        public void DoChannelNamesMatch_CompareWithSameValueWithBlacklistedSubstrings_ReturnsTrue()
         {
             string definedName = "Digi Sport 2";
             string providerName = "RO: Digi Sport 2 [Multi-Audio]";
@@ -56,11 +60,11 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 
             ChannelName channelName = new ChannelName(definedName, alias);
 
-            Assert.IsTrue(channelName.Equals(providerName));
+            Assert.IsTrue(channelMatcher.DoChannelNamesMatch(channelName, providerName));
         }
 
         [Test]
-        public void Equals_CompareWithDifferentValue_ReturnsFalse()
+        public void DoChannelNamesMatch_CompareWithDifferentValue_ReturnsFalse()
         {
             string definedName = "Digi Sport 2";
             string providerName = "RO: Digi Sport 2";
@@ -68,7 +72,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 
             ChannelName channelName = new ChannelName(definedName, alias);
 
-            Assert.IsFalse(channelName.Equals(providerName));
+            Assert.IsFalse(channelMatcher.DoChannelNamesMatch(channelName, providerName));
         }
     }
 }

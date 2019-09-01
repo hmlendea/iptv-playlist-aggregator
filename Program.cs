@@ -41,6 +41,7 @@ namespace IptvPlaylistAggregator
                 .AddSingleton<IPlaylistAggregator, PlaylistAggregator>()
                 .AddSingleton<IPlaylistFetcher, PlaylistFetcher>()
                 .AddSingleton<IPlaylistFileBuilder, PlaylistFileBuilder>()
+                .AddSingleton<IChannelMatcher, ChannelMatcher>()
                 .AddSingleton<IMediaSourceChecker, MediaSourceChecker>()
                 .AddSingleton<IRepository<ChannelDefinitionEntity>>(s => new XmlRepository<ChannelDefinitionEntity>(dataStoreSettings.ChannelStorePath))
                 .AddSingleton<IRepository<GroupEntity>>(s => new XmlRepository<GroupEntity>(dataStoreSettings.GroupStorePath))
