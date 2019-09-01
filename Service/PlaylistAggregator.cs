@@ -17,6 +17,7 @@ namespace IptvPlaylistAggregator.Service
     {
         readonly IPlaylistFetcher playlistFetcher;
         readonly IPlaylistFileBuilder playlistFileBuilder;
+        readonly IChannelMatcher channelMatcher;
         readonly IMediaSourceChecker mediaSourceChecker;
         readonly IRepository<ChannelDefinitionEntity> channelRepository;
         readonly IRepository<GroupEntity> groupRepository;
@@ -33,6 +34,7 @@ namespace IptvPlaylistAggregator.Service
         public PlaylistAggregator(
             IPlaylistFetcher playlistFetcher,
             IPlaylistFileBuilder playlistFileBuilder,
+            IChannelMatcher channelMatcher,
             IMediaSourceChecker mediaSourceChecker,
             IRepository<ChannelDefinitionEntity> channelRepository,
             IRepository<GroupEntity> groupRepository,
@@ -42,6 +44,7 @@ namespace IptvPlaylistAggregator.Service
         {
             this.playlistFetcher = playlistFetcher;
             this.playlistFileBuilder = playlistFileBuilder;
+            this.channelMatcher = channelMatcher;
             this.mediaSourceChecker = mediaSourceChecker;
             this.channelRepository = channelRepository;
             this.playlistProviderRepository = playlistProviderRepository;
@@ -134,7 +137,7 @@ namespace IptvPlaylistAggregator.Service
             IEnumerable<Channel> unmatchedChannels = providerChannels
                 .GroupBy(x => x.Name)
                 .Select(g => g.FirstOrDefault())
-                .Where(x => channelDefinitions.All(y => !y.Name.Equals(x.Name)));
+                .Where(x => channelDefinitions.All(y => !channelMatcher.DoChannelNamesMatch(y.Name, x.Name)));
 
             IEnumerable<Channel> processedUnmatchedChannels = unmatchedChannels
                 .Select(x => new Channel
@@ -152,7 +155,7 @@ namespace IptvPlaylistAggregator.Service
         {
             foreach (Channel providerChannel in providerChannels)
             {
-                if (!channelDef.Name.Equals(providerChannel.Name))
+                if (!channelMatcher.DoChannelNamesMatch(channelDef.Name, providerChannel.Name))
                 {
                     continue;
                 }
