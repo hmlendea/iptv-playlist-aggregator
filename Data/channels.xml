@@ -250,6 +250,7 @@
       <string>RO: Antena Comedy Play</string>
       <string>RO: Antena Comedy</string>
       <string>RO: Antena Play Comedy</string>
+      <string>RO: Comedy Play</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -259,8 +260,10 @@
     <GroupId>entertainment</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/cook-play.png</LogoUrl>
     <Aliases>
+      <string>RO: Antena Cook Play</string>
       <string>RO: Antena Cook</string>
       <string>RO: Antena Play Cook</string>
+      <string>RO: Cook &amp; Play</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -351,6 +354,7 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/arcadia_tv.png</LogoUrl>
     <Aliases>
+      <string>RO: Arcadia TV</string>
       <string>RO: Arcadia World FHD</string>
       <string>RO: Arcadia World HD</string>
       <string>RO: Arcadia World</string>
@@ -3751,6 +3755,7 @@
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_cns.png</LogoUrl>
     <Aliases>
+      <string>RO: CNS TV</string>
       <string>RO: TV CNS</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -4201,6 +4206,26 @@
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO: Duck TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>frfTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>FRF TV</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: FRF TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>exclusivTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Exclusiv TV</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: Exclusiv TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
