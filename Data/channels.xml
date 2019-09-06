@@ -1409,6 +1409,7 @@
       <string>Disney Junior RO</string>
       <string>Disney Junior</string>
       <string>RO: Disney Jr</string>
+      <string>RO: Disney Junior HD</string>
       <string>RO: Disney Junior</string>
       <string>RO: Disney. unior</string>
       <string>ROM: Disney Junior</string>
@@ -2266,10 +2267,12 @@
     <Aliases>
       <string>Look Plus RO</string>
       <string>Look Plus</string>
+      <string>Look TV Plus</string>
       <string>RO: Look Plus FHD</string>
       <string>RO: Look Plus HD</string>
       <string>RO: Look Plus TV</string>
       <string>RO: Look Plus</string>
+      <string>RO: Look TV Plus</string>
       <string>ROM: Look Plus</string>
       <string>ROMANIA: Look Plus</string>
       <string>RUMANIA: Look Plus</string>
@@ -2548,8 +2551,9 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://static.iptv-epg.com/hu/MusicChannel.hu.png</LogoUrl>
     <Aliases>
+      <string>Music Channe HU</string>
       <string>RO: 1 Music Channel HU</string>
-      <string>RO: Music Channe hu</string>
+      <string>RO: Music Channe HU</string>
       <string>RO: Music Channel HU</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2599,12 +2603,14 @@
       <string>National Geographic HD RO</string>
       <string>National Geographic HD</string>
       <string>National Geographic RO</string>
+      <string>National Geographic SD</string>
       <string>NGC</string>
       <string>RO: Nat Geo</string>
       <string>RO: Natgeo FHD</string>
       <string>RO: Natgeographic</string>
       <string>RO: National Geographic FHD</string>
       <string>RO: National Geographic HD</string>
+      <string>RO: National Geographic SD</string>
       <string>RO: National Geographic</string>
       <string>RO: NGC</string>
       <string>ROM: NAT Geo</string>
@@ -2730,6 +2736,7 @@
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nickelodeon.png</LogoUrl>
     <Aliases>
+      <string>Nickelodeon (RO)</string>
       <string>Nickelodeon HD</string>
       <string>Nickelodeon</string>
       <string>RO: Nickelodeon FHD</string>
@@ -4104,6 +4111,7 @@
       <string>RO: Viasat History HD</string>
       <string>RO: Viasat History HQ</string>
       <string>RO: Viasat History MQ</string>
+      <string>RO: Viasat History SD</string>
       <string>RO: Viasat History</string>
       <string>ROM: Viasat History</string>
       <string>Viasat History FHD RO</string>
@@ -4111,6 +4119,7 @@
       <string>Viasat History HD RO</string>
       <string>Viasat History HD</string>
       <string>Viasat History RO</string>
+      <string>Viasat History SD</string>
       <string>Viasat History</string>
     </Aliases>
   </ChannelDefinitionEntity>
