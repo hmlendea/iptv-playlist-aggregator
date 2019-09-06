@@ -526,6 +526,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bollywood_Clasic.png/200px-Bollywood_Clasic.png</LogoUrl>
     <Aliases>
+      <string>BO Casic</string>
       <string>Bollywood Classic</string>
       <string>RO: Bollywood Clasic</string>
       <string>RO: Bollywood Classic</string>
@@ -538,6 +539,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bollywood_HD_2018.png/200px-Bollywood_HD_2018.png</LogoUrl>
     <Aliases>
+      <string>BO TV</string>
       <string>Bollywood HD</string>
       <string>Bollywood</string>
       <string>Boolywood HD</string>
@@ -2112,6 +2114,7 @@
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/inedit_tv.png</LogoUrl>
     <Aliases>
+      <string>Inedit</string>
       <string>RO: Inedit TV S1</string>
       <string>RO: Inedit TV S2</string>
       <string>RO: Inedit TV SD</string>
@@ -3746,6 +3749,7 @@
     <LogoUrl>http://mywebtv.info/img/tvicons/tvcityro.png</LogoUrl>
     <Aliases>
       <string>RO: TV City</string>
+      <string>TV City</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -4411,11 +4415,12 @@
   <ChannelDefinitionEntity>
     <Id>infoHD</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Televiziunea InfoHD</Name>
+    <Name>Info HD</Name>
     <GroupId>unknown</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>Televiziunea InfoHD</string>
+      <string>Info HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
 </ArrayOfChannelDefinitionEntity>
