@@ -12,6 +12,8 @@ namespace IptvPlaylistAggregator.Logging
 
         public static Operation PlaylistFetching => new MyOperation(nameof(PlaylistFetching));
 
+        public static Operation ProviderChannelsFiltering => new MyOperation(nameof(ProviderChannelsFiltering));
+
         public static Operation ChannelMatching => new MyOperation(nameof(ChannelMatching));
     }
 }
