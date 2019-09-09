@@ -32,15 +32,23 @@ namespace IptvPlaylistAggregator.Service
 
             if (!(status is null))
             {
+                Console.WriteLine("cache hit");
                 return status.IsAlive;
             }
             
+            bool isAlive;
+
             if (url.Contains(".m3u") || url.Contains(".m3u8"))
             {
-                return IsPlaylistPlayable(url);
+                isAlive = IsPlaylistPlayable(url);
             }
-            
-            return IsStreamPlayable(url);
+            else
+            {
+                isAlive = IsStreamPlayable(url);
+            }
+
+            SaveToCache(url, isAlive);
+            return isAlive;
         }
 
         bool IsPlaylistPlayable(string url)
