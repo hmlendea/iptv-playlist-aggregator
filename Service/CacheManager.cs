@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+using System.Collections.Concurrent;
 using System.IO;
 
 using NuciExtensions;
@@ -15,19 +15,19 @@ namespace IptvPlaylistAggregator.Service
 
         readonly CacheSettings cacheSettings;
 
-        readonly IDictionary<string, string> normalisedNames;
-        readonly IDictionary<string, MediaStreamStatus> streamStatuses;
-        readonly IDictionary<string, string> webDownloads;
-        readonly IDictionary<int, Playlist> playlists;
+        readonly ConcurrentDictionary<string, string> normalisedNames;
+        readonly ConcurrentDictionary<string, MediaStreamStatus> streamStatuses;
+        readonly ConcurrentDictionary<string, string> webDownloads;
+        readonly ConcurrentDictionary<int, Playlist> playlists;
 
         public CacheManager(CacheSettings cacheSettings)
         {
             this.cacheSettings = cacheSettings;
 
-            normalisedNames = new Dictionary<string, string>();
-            streamStatuses = new Dictionary<string, MediaStreamStatus>();
-            webDownloads = new Dictionary<string, string>();
-            playlists = new Dictionary<int, Playlist>();
+            normalisedNames = new ConcurrentDictionary<string, string>();
+            streamStatuses = new ConcurrentDictionary<string, MediaStreamStatus>();
+            webDownloads = new ConcurrentDictionary<string, string>();
+            playlists = new ConcurrentDictionary<int, Playlist>();
 
             PrepareFilesystem();
         }
