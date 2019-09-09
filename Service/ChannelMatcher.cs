@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
@@ -10,16 +9,17 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class ChannelMatcher : IChannelMatcher
     {
-        readonly IDictionary<string, string> cache;
         static readonly string[] SubstringsToStrip = new string[]
         {
             "(backup)", "(b)", " backup", "(On-Demand)", "[432p]", "[576p]", "[720p]", "[Multi-Audio]", "www.iptvsource.com",
             "(Opt-1)", "(Opt-2)", "(Opt-3)", "(Opt-4)", "(Opt-5)", "(Opt-6)", "(Opt-7)", "(Opt-8)", "(Opt-9)"
         };
 
-        public ChannelMatcher()
+        readonly ICacheManager cache;
+
+        public ChannelMatcher(ICacheManager cache)
         {
-            cache = new Dictionary<string, string>();
+            this.cache = cache;
         }
 
         public bool DoChannelNamesMatch(ChannelName name1, string name2)
@@ -30,16 +30,18 @@ namespace IptvPlaylistAggregator.Service
         
         string NormaliseChannelName(string name)
         {
-            if (cache.ContainsKey(name))
+            string normalisedName = cache.GetNormalisedChannelName(name);
+
+            if (!string.IsNullOrWhiteSpace(normalisedName))
             {
-                return cache[name];
+                return normalisedName;
             }
 
-            string normalisedName = StripChannelName(name)
+            normalisedName = StripChannelName(name)
                 .ToUpper()
                 .RemoveDiacritics();
 
-            cache.Add(name, normalisedName);
+            cache.StoreNormalisedChannelName(name, normalisedName);
 
             return normalisedName;
         }
