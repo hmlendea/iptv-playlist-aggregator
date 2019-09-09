@@ -1,5 +1,6 @@
 using System;
 using System.Net;
+using System.Threading.Tasks;
 
 using IptvPlaylistAggregator.Service.Models;
 
@@ -24,7 +25,7 @@ namespace IptvPlaylistAggregator.Service
             this.cache = cache;
         }
 
-        public bool IsSourcePlayable(string url)
+        public async Task<bool> IsSourcePlayableAsync(string url)
         {
             if (string.IsNullOrWhiteSpace(url))
             {
@@ -35,7 +36,6 @@ namespace IptvPlaylistAggregator.Service
 
             if (!(status is null))
             {
-                Console.WriteLine("cache hit");
                 return status.IsAlive;
             }
             
@@ -43,24 +43,24 @@ namespace IptvPlaylistAggregator.Service
 
             if (url.Contains(".m3u") || url.Contains(".m3u8"))
             {
-                isAlive = IsPlaylistPlayable(url);
+                isAlive = await IsPlaylistPlayableAsync(url);
             }
             else
             {
-                isAlive = IsStreamPlayable(url);
+                isAlive = await IsStreamPlayableAsync(url);
             }
 
             SaveToCache(url, isAlive);
             return isAlive;
         }
 
-        bool IsPlaylistPlayable(string url)
+        async Task<bool> IsPlaylistPlayableAsync(string url)
         {
-            Playlist playlist = DownloadPlaylist(url);
+            Playlist playlist = await DownloadPlaylist(url);
             return !Playlist.IsNullOrEmpty(playlist);
         }
 
-        bool IsStreamPlayable(string url)
+        async Task<bool> IsStreamPlayableAsync(string url)
         {
             string resolvedUrl = dnsResolver.ResolveUrl(url);
 
@@ -71,29 +71,32 @@ namespace IptvPlaylistAggregator.Service
 
             try
             {
-                Uri uri = new Uri(resolvedUrl);
-                HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(uri);
-                request.Method = "HEAD";
-                request.Timeout = 4000;
-
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                HttpWebRequest request = CreateWebRequest(resolvedUrl);
+                HttpWebResponse response = (HttpWebResponse)(await request.GetResponseAsync());
                 
                 if (response.StatusCode != HttpStatusCode.NotFound)
                 {
                     return true;
                 }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(resolvedUrl + " (" + url + ")" + Environment.NewLine + ex.Message);
-            }
+            catch { }
 
             return false;
         }
 
-        Playlist DownloadPlaylist(string url)
+        HttpWebRequest CreateWebRequest(string url)
         {
-            string fileContent = fileDownloader.TryDownloadString(url);
+            Uri uri = new Uri(url);
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(uri);
+            request.Method = "HEAD";
+            request.Timeout = 5000;
+
+            return request;
+        }
+
+        async Task<Playlist> DownloadPlaylist(string url)
+        {
+            string fileContent = await fileDownloader.TryDownloadStringTaskAsync(url);
             Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
             return playlist;
