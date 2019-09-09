@@ -1,39 +1,25 @@
 using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using System.Linq;
 using System.Net;
 
 using IptvPlaylistAggregator.Communication;
-using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service
 {
     public sealed class MediaSourceChecker : IMediaSourceChecker
     {
-        const char CsvFieldSeparator = ',';
-        const string TimestampFormat = "yyyy-MM-dd_HH-mm-ss";
-
         readonly IFileDownloader fileDownloader;
         readonly IPlaylistFileBuilder playlistFileBuilder;
-        readonly CacheSettings cacheSettings;
-
-        readonly IDictionary<string, MediaStreamStatus> statuses;
+        readonly ICacheManager cache;
 
         public MediaSourceChecker(
             IFileDownloader fileDownloader,
             IPlaylistFileBuilder playlistFileBuilder,
-            CacheSettings cacheSettings)
+            ICacheManager cache)
         {
             this.fileDownloader = fileDownloader;
             this.playlistFileBuilder = playlistFileBuilder;
-            this.cacheSettings = cacheSettings;
-
-            statuses = new Dictionary<string, MediaStreamStatus>();
-
-            LoadCache();
+            this.cache = cache;
         }
 
         public bool IsSourcePlayable(string url)
@@ -43,25 +29,19 @@ namespace IptvPlaylistAggregator.Service
                 throw new ArgumentNullException(nameof(url));
             }
 
-            if (statuses.ContainsKey(url))
+            MediaStreamStatus status = cache.GetStreamStatus(url);
+
+            if (!(status is null))
             {
-                return statuses[url].IsAlive;
+                return status.IsAlive;
             }
             
-            bool status;
-
             if (url.Contains(".m3u") || url.Contains(".m3u8"))
             {
-                status = IsPlaylistPlayable(url);
-            }
-            else
-            {
-                status = IsStreamPlayable(url);
+                return IsPlaylistPlayable(url);
             }
             
-            SaveToCache(url, status);
-
-            return status;
+            return IsStreamPlayable(url);
         }
 
         bool IsPlaylistPlayable(string url)
@@ -107,67 +87,6 @@ namespace IptvPlaylistAggregator.Service
             return null;
         }
 
-        void LoadCache()
-        {
-            string filePath = Path.Combine(
-                cacheSettings.CacheDirectoryPath,
-                cacheSettings.MediaStreamAliveStatusCacheFileName);
-
-            if (!File.Exists(filePath))
-            {
-                return;
-            }
-
-            IList<string> cacheLines = File.ReadAllLines(filePath);
-
-            foreach (string line in cacheLines)
-            {
-                string[] fields = line.Split(CsvFieldSeparator);
-
-                string url = fields[0];
-                bool isAlive = bool.Parse(fields[1]);
-                DateTime lastCheckTime = DateTime.ParseExact(
-                    fields[2].Replace("\r", "").Replace("\n", ""),
-                    TimestampFormat,
-                    CultureInfo.InvariantCulture);
-
-                if (DateTime.UtcNow > lastCheckTime.AddMinutes(cacheSettings.MediaStreamStatusCacheTimeoutMins))
-                {
-                    continue;
-                }
-
-                MediaStreamStatus status = new MediaStreamStatus();
-                status.Url = url;
-                status.IsAlive = isAlive;
-                status.LastCheckTime = lastCheckTime;
-
-                statuses.Add(url, status);
-            }
-        }
-
-        void SaveCache()
-        {
-            string cacheFile = string.Empty;
-
-            foreach (MediaStreamStatus status in statuses.Values)
-            {
-                string timestamp = status.LastCheckTime.ToString(
-                    TimestampFormat,
-                    CultureInfo.InvariantCulture);
-
-                cacheFile +=
-                    $"{status.Url}{CsvFieldSeparator}" +
-                    $"{status.IsAlive}{CsvFieldSeparator}" +
-                    $"{timestamp}{Environment.NewLine}";
-            }
-
-            string filePath = Path.Combine(
-                cacheSettings.CacheDirectoryPath,
-                cacheSettings.MediaStreamAliveStatusCacheFileName);
-
-            File.WriteAllText(filePath, cacheFile);
-        }
-
         void SaveToCache(string url, bool isAlive)
         {
             MediaStreamStatus status = new MediaStreamStatus();
@@ -175,8 +94,7 @@ namespace IptvPlaylistAggregator.Service
             status.IsAlive = isAlive;
             status.LastCheckTime = DateTime.UtcNow;
 
-            statuses.Add(url, status);
-            SaveCache();
+            cache.StoreStreamStatus(status);
         }
     }
 }
