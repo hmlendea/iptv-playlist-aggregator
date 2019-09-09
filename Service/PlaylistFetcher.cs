@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net;
 
 using NuciLog.Core;
 
@@ -16,25 +14,23 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class PlaylistFetcher : IPlaylistFetcher
     {
-        const string CacheFileNameFormat = "{0}_playlist_{1:yyyy-MM-dd}.m3u";
-
         readonly IFileDownloader fileDownloader;        
         readonly IPlaylistFileBuilder playlistFileBuilder;
+        readonly ICacheManager cache;
         readonly ApplicationSettings applicationSettings;
-        readonly CacheSettings cacheSettings;
         readonly ILogger logger;
 
         public PlaylistFetcher(
             IFileDownloader fileDownloader,
             IPlaylistFileBuilder playlistFileBuilder,
+            ICacheManager cache,
             ApplicationSettings applicationSettings,
-            CacheSettings cacheSettings,
             ILogger logger)
         {
             this.fileDownloader = fileDownloader;
             this.playlistFileBuilder = playlistFileBuilder;
             this.applicationSettings = applicationSettings;
-            this.cacheSettings = cacheSettings;
+            this.cache = cache;
             this.logger = logger;
         }
 
@@ -95,34 +91,16 @@ namespace IptvPlaylistAggregator.Service
             return playlist;
         }
 
-        void StorePlaylistInCache(string providerId, DateTime date, string file)
-        {
-            if (!Directory.Exists(cacheSettings.CacheDirectoryPath))
-            {
-                Directory.CreateDirectory(cacheSettings.CacheDirectoryPath);
-            }
-
-            string filePath = Path.Combine(
-                cacheSettings.CacheDirectoryPath,
-                string.Format(CacheFileNameFormat, providerId, date));
-
-            File.WriteAllText(filePath, file);
-        }
-
         Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
         {
-            string filePath = Path.Combine(
-                cacheSettings.CacheDirectoryPath,
-                string.Format(CacheFileNameFormat, provider.Id, date));
-            
-            if (File.Exists(filePath))
+            string content = cache.GetPlaylistFile(provider.Id, date);
+
+            if (string.IsNullOrWhiteSpace(content))
             {
-                string fileContent = File.ReadAllText(filePath);
-                
-                return playlistFileBuilder.TryParseFile(fileContent);
+                return null;
             }
 
-            return null;
+            return playlistFileBuilder.TryParseFile(content);
         }
 
         Playlist DownloadPlaylist(PlaylistProvider provider, DateTime date)
@@ -139,7 +117,7 @@ namespace IptvPlaylistAggregator.Service
             }
 
             logger.Info(MyOperation.PlaylistFetching, OperationStatus.Success, new LogInfo(MyLogInfoKey.Url, url));
-            StorePlaylistInCache(provider.Id, date, fileContent);
+            cache.StorePlaylistFile(provider.Id, date, fileContent);
 
             return playlist;
         }

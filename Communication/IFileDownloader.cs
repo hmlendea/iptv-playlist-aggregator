@@ -1,6 +1,3 @@
-using System;
-using System.Net;
-
 namespace IptvPlaylistAggregator.Communication
 {
     public interface IFileDownloader

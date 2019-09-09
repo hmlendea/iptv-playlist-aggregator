@@ -1,3 +1,5 @@
+using System;
+
 using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service
@@ -9,5 +11,8 @@ namespace IptvPlaylistAggregator.Service
 
         void StoreStreamStatus(MediaStreamStatus status);
         MediaStreamStatus GetStreamStatus(string url);
+
+        void StorePlaylistFile(string name, DateTime date, string content);
+        string GetPlaylistFile(string name, DateTime date);
     }
 }
