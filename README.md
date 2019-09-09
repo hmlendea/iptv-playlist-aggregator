@@ -44,10 +44,10 @@ If not, use **only** the publish directory, since that one contains all the nece
 
 **Note:** The following instructions only apply for *Linux* distributions using *systemd*.
 
-Create the following service file: /etc/systemd/system/iptv-playlist-aggregator.service
+Create the following service file: /lib/systemd/system/iptv-playlist-aggregator.service
 ```
 [Unit]
-Description=IptvPlaylistAggregator
+Description=IPTV Playlist Aggregator
 
 [Service]
 WorkingDirectory=[ABSOLUTE_PATH_TO_SERVICE_DIRECTORY]
@@ -58,7 +58,7 @@ User=[YOUR_USERNAME]
 WantedBy=multi-user.target
 ```
 
-Create the following timer file: /etc/systemd/system/iptv-playlist-aggregator.timer
+Create the following timer file: /lib/systemd/system/iptv-playlist-aggregator.timer
 ```
 [Unit]
 Description=Periodically aggregates an IPTV M3U playlist
@@ -88,8 +88,6 @@ The settings are stored in the `appsettings.json` file in the root directory.
  - *playlistProviderStorePath*: The file where all the playlist provider URLs are stored
  - *outputPlaylistPath*: The location where the output playlist will be written. Can be used to write directly to an http server
  - *cacheDirectoryPath*: The directory where all the cache files will be written. Leave as default unless you specifically require to move it
- - *mediaStreamAliveStatusFileName*: The name of the file within the cache directory, where the stream health status info will be stored. Leave as default unless you specifically require to rename it
- - *mediaStreamStatusCacheTimeoutMins*: The amount of time in minutes until a stream health status cache will expire. A lower value means that the status is checked more often, as opposed to a higher value which means they will be checked less often. Take note that checking the status of a stream can take up to 3 seconds for each.
  - *daysToCheck*: How far in the past to go for each playlist. If today's playlist is not found (sometimes the providers skip some days) then the service will move on to the previous day, again and again until one is found or the daysToCheck limit is reached.
  - *canIncludeUnmatchedChannels*: Boolean value indicating whether provider channels that were not able to be matched with the data in the channelStorePath file should be included in the output file (in the Unknown category) or not at all
  - *areTvGuideTagsEnabled*: Boolean value indicating whether TV Guide tags (logo URLs, groups, TVG IDs, channel numbers, etc) should be included in the output file or not
