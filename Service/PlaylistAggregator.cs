@@ -82,12 +82,10 @@ namespace IptvPlaylistAggregator.Service
                 .FetchProviderPlaylists(playlistProviders)
                 .SelectMany(x => x.Channels);
             
+            Playlist playlist = new Playlist();
             IEnumerable<Channel> filteredProviderChannels = FilterProviderChannels(providerChannels, channelDefinitions);
-
             IEnumerable<ChannelDefinition> enabledChannelDefinitions = channelDefinitions
                 .Where(x => x.IsEnabled && groups[x.GroupId].IsEnabled);
-
-            Playlist playlist = new Playlist();
 
             foreach (ChannelDefinition channelDef in enabledChannelDefinitions)
             {

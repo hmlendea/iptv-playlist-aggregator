@@ -1,34 +1,29 @@
 using System;
-using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace IptvPlaylistAggregator.Service
 {
-    public sealed class FileDownloader : WebClient, IFileDownloader
+    public sealed class FileDownloader : IFileDownloader
     {
-        const int DefaultTimeout = 5000;
-
         public int Timeout { get; set; }
 
         readonly IDnsResolver dnsResolver;
         readonly ICacheManager cache;
 
+        readonly HttpClient httpClient;
+
         public FileDownloader(
             IDnsResolver dnsResolver,
             ICacheManager cache)
         {
-            Timeout = DefaultTimeout;
-
             this.dnsResolver = dnsResolver;
             this.cache = cache;
+
+            httpClient = new HttpClient();
         }
 
-        public FileDownloader(int timeoutMillis)
-        {
-            Timeout = timeoutMillis;
-        }
-        
-        public string TryDownloadString(string url)
+        public async Task<string> TryDownloadStringAsync(string url)
         {
             string content = cache.GetWebDownload(url);
 
@@ -43,7 +38,7 @@ namespace IptvPlaylistAggregator.Service
             {
                 try
                 {
-                    content = DownloadString(resolvedUrl);
+                    content = await GetAsync(url);
                 }
                 catch { }
             }
@@ -51,37 +46,16 @@ namespace IptvPlaylistAggregator.Service
             cache.StoreWebDownload(url, content);
             return content;
         }
-        
-        public async Task<string> TryDownloadStringTaskAsync(string url)
+
+        async Task<string> GetAsync(string url)
         {
-            string content = cache.GetWebDownload(url);
-
-            if (!(content is null))
+            using (HttpResponseMessage response = await httpClient.GetAsync(url))
             {
-                return content;
-            }
-
-            string resolvedUrl = dnsResolver.ResolveUrl(url);
-
-            if (!(resolvedUrl is null))
-            {
-                try
+                using (HttpContent content = response.Content)
                 {
-                    content = await DownloadStringTaskAsync(resolvedUrl);
+                    return await content.ReadAsStringAsync();
                 }
-                catch { }
             }
-
-            cache.StoreWebDownload(url, content);
-            return content;
-        }
-
-        protected override WebRequest GetWebRequest(Uri uri)
-        {
-            WebRequest request = base.GetWebRequest(uri);
-            request.Timeout = Timeout;
-
-            return request;
         }
     }
 }

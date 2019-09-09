@@ -17,5 +17,7 @@ namespace IptvPlaylistAggregator.Logging
         public static LogInfoKey ChannelsCount => new MyLogInfoKey(nameof(ChannelsCount));
 
         public static LogInfoKey Group => new MyLogInfoKey(nameof(Group));
+
+        public static LogInfoKey Provider => new MyLogInfoKey(nameof(Provider));
     }
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 using IptvPlaylistAggregator.Service.Models;
 
@@ -8,6 +9,6 @@ namespace IptvPlaylistAggregator.Service
     {
         IEnumerable<Playlist> FetchProviderPlaylists(IEnumerable<PlaylistProvider> providers);
 
-        Playlist FetchProviderPlaylist(PlaylistProvider provider);
+        Task<Playlist> FetchProviderPlaylistAsync(PlaylistProvider provider);
     }
 }

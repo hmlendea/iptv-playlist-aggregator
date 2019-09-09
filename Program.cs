@@ -64,12 +64,12 @@ namespace IptvPlaylistAggregator
             {
                 foreach (Exception innerException in ex.InnerExceptions)
                 {
-                    logger.Fatal(Operation.Unknown, OperationStatus.Failure, innerException);
+                    logger.Fatal(Operation.Unknown, OperationStatus.Failure, innerException.StackTrace, innerException);
                 }
             }
             catch (Exception ex)
             {
-                logger.Fatal(Operation.Unknown, OperationStatus.Failure, ex);
+                logger.Fatal(Operation.Unknown, OperationStatus.Failure, ex.StackTrace, ex);
             }
 
             logger.Info(Operation.ShutDown, OperationStatus.Success);

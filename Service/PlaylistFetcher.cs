@@ -2,6 +2,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 using NuciLog.Core;
 
@@ -39,25 +40,34 @@ namespace IptvPlaylistAggregator.Service
 
             logger.Info(MyOperation.PlaylistFetching, OperationStatus.Started, "Fetching provider playlists");
 
+            List<Task> tasks = new List<Task>();
+
             foreach (PlaylistProvider provider in providers)
             {
-                Playlist playlist = FetchProviderPlaylist(provider);
-
-                if (!(playlist is null))
+                Task task = Task.Run(async () =>
                 {
-                    playlists.AddOrUpdate(
-                        provider.Priority,
-                        playlist,
-                        (key, oldValue) => playlist);
-                }
+                    Playlist playlist = await FetchProviderPlaylistAsync(provider);
+
+                    if (!Playlist.IsNullOrEmpty(playlist))
+                    {
+                        playlists.AddOrUpdate(
+                            provider.Priority,
+                            playlist,
+                            (key, oldValue) => playlist);
+                    }
+                });
+
+                tasks.Add(task);
             }
+
+            Task.WaitAll(tasks.ToArray());
 
             return playlists
                 .OrderBy(x => x.Key)
                 .Select(x => x.Value);
         }
 
-        public Playlist FetchProviderPlaylist(PlaylistProvider provider)
+        public async Task<Playlist> FetchProviderPlaylistAsync(PlaylistProvider provider)
         {
             Playlist playlist = null;
 
@@ -69,7 +79,13 @@ namespace IptvPlaylistAggregator.Service
                 
                 if (playlist is null)
                 {
-                    playlist = DownloadPlaylist(provider, date);
+                    string playlistFile = await DownloadPlaylistFileAsync(provider, date);
+                    playlist = playlistFileBuilder.TryParseFile(playlistFile);
+
+                    if (!Playlist.IsNullOrEmpty(playlist))
+                    {
+                        cache.StorePlaylistFile(provider.Id, date, playlistFile);
+                    }
                 }
                 
                 if (!(playlist is null))
@@ -78,15 +94,29 @@ namespace IptvPlaylistAggregator.Service
                 }
             }
 
-            if (!(playlist is null) &&
-                !string.IsNullOrWhiteSpace(provider.ChannelNameOverride))
+            if (Playlist.IsNullOrEmpty(playlist))
+            {
+                logger.Warn(
+                    MyOperation.PlaylistFetching,
+                    OperationStatus.Failure,
+                    new LogInfo(MyLogInfoKey.Provider, provider.Id));
+
+                return null;
+            }
+
+            if (!string.IsNullOrWhiteSpace(provider.ChannelNameOverride))
             {
                 foreach (Channel channel in playlist.Channels)
                 {
                     channel.Name = provider.ChannelNameOverride;
                 }
             }
-            
+
+            logger.Debug(
+                MyOperation.PlaylistFetching,
+                OperationStatus.Success,
+                new LogInfo(MyLogInfoKey.Provider, provider.Id));
+                
             return playlist;
         }
 
@@ -102,23 +132,10 @@ namespace IptvPlaylistAggregator.Service
             return playlistFileBuilder.TryParseFile(content);
         }
 
-        Playlist DownloadPlaylist(PlaylistProvider provider, DateTime date)
+        async Task<string> DownloadPlaylistFileAsync(PlaylistProvider provider, DateTime date)
         {
             string url = string.Format(provider.UrlFormat, date);
-            string fileContent = fileDownloader.TryDownloadString(url);
-
-            Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
-
-            if (Playlist.IsNullOrEmpty(playlist))
-            {
-                logger.Warn(MyOperation.PlaylistFetching, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Url, url));
-                return null;
-            }
-
-            logger.Info(MyOperation.PlaylistFetching, OperationStatus.Success, new LogInfo(MyLogInfoKey.Url, url));
-            cache.StorePlaylistFile(provider.Id, date, fileContent);
-
-            return playlist;
+            return await fileDownloader.TryDownloadStringAsync(url);
         }
     }
 }
