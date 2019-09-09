@@ -1,5 +1,3 @@
-using System;
-
 namespace IptvPlaylistAggregator.Service
 {
     public interface IDnsResolver

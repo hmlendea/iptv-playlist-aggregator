@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace IptvPlaylistAggregator.Service.Models
 {
     public sealed class ChannelDefinition
