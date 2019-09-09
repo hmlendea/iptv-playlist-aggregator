@@ -87,6 +87,8 @@ namespace IptvPlaylistAggregator.Service
             IEnumerable<ChannelDefinition> enabledChannelDefinitions = channelDefinitions
                 .Where(x => x.IsEnabled && groups[x.GroupId].IsEnabled);
 
+            logger.Info(MyOperation.ChannelMatching, OperationStatus.Started);
+
             foreach (ChannelDefinition channelDef in enabledChannelDefinitions)
             {
                 Channel matchedChannel = filteredProviderChannels
@@ -127,7 +129,10 @@ namespace IptvPlaylistAggregator.Service
                 }
             }
 
-            logger.Info(MyOperation.ChannelMatching, OperationStatus.Success, new LogInfo(MyLogInfoKey.ChannelsCount, playlist.Channels.Count.ToString()));
+            logger.Debug(
+                MyOperation.ChannelMatching,
+                OperationStatus.Success,
+                new LogInfo(MyLogInfoKey.ChannelsCount, playlist.Channels.Count.ToString()));
 
             return playlistFileBuilder.BuildFile(playlist);
         }
