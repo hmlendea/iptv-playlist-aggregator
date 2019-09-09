@@ -62,18 +62,19 @@ namespace IptvPlaylistAggregator.Service
 
         bool IsStreamPlayable(string url)
         {
+            string resolvedUrl = dnsResolver.ResolveUrl(url);
+
+            if (string.IsNullOrWhiteSpace(resolvedUrl))
+            {
+                return false;
+            }
+
             try
             {
-                string resolvedUrl = dnsResolver.ResolveUrl(url);
-
-                if (string.IsNullOrWhiteSpace(resolvedUrl))
-                {
-                    return false;
-                }
-
                 Uri uri = new Uri(resolvedUrl);
                 HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(uri);
-                request.Timeout = 3000;
+                request.Method = "HEAD";
+                request.Timeout = 4000;
 
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 
@@ -81,13 +82,13 @@ namespace IptvPlaylistAggregator.Service
                 {
                     return true;
                 }
-                
-                return false;
             }
-            catch
+            catch (Exception ex)
             {
-                return false;
+                Console.WriteLine(resolvedUrl + " (" + url + ")" + Environment.NewLine + ex.Message);
             }
+
+            return false;
         }
 
         Playlist DownloadPlaylist(string url)

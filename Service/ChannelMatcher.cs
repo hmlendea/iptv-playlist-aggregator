@@ -31,9 +31,8 @@ namespace IptvPlaylistAggregator.Service
                 return normalisedName;
             }
 
-            normalisedName = StripChannelName(name)
-                .ToUpper()
-                .RemoveDiacritics();
+            normalisedName = name.ToUpper().RemoveDiacritics();
+            normalisedName = StripChannelName(normalisedName);
 
             cache.StoreNormalisedChannelName(name, normalisedName);
 
@@ -48,6 +47,11 @@ namespace IptvPlaylistAggregator.Service
 
         string StripChannelName(string name)
         {
+            const string allowedChars =
+                "abcdefghijklmnopqrstuvwxyz" +
+                "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
+                "0123456789";
+            
             string strippedName = name;
 
             foreach (string substringToStrip in SubstringsToStrip)
@@ -59,7 +63,7 @@ namespace IptvPlaylistAggregator.Service
 
             foreach (char c in strippedName)
             {
-                if (char.IsLetterOrDigit(c))
+                if (allowedChars.Contains(c))
                 {
                     finalString += c;
                 }
