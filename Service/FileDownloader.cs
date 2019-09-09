@@ -1,4 +1,3 @@
-using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -6,8 +5,6 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class FileDownloader : IFileDownloader
     {
-        public int Timeout { get; set; }
-
         readonly IDnsResolver dnsResolver;
         readonly ICacheManager cache;
 

@@ -1,11 +1,9 @@
-using System;
 using System.Collections.Generic;
 using System.Collections.Concurrent;
 using System.Linq;
 using System.Threading.Tasks;
 
 using NuciDAL.Repositories;
-using NuciExtensions;
 using NuciLog.Core;
 
 using IptvPlaylistAggregator.Configuration;
@@ -27,8 +25,6 @@ namespace IptvPlaylistAggregator.Service
         readonly IRepository<PlaylistProviderEntity> playlistProviderRepository;
         readonly ApplicationSettings settings;
         readonly ILogger logger;
-
-        readonly IDictionary<string, bool> pingedUrlsAliveStatus;
 
         IEnumerable<ChannelDefinition> channelDefinitions;
         IEnumerable<PlaylistProvider> playlistProviders;
@@ -54,8 +50,6 @@ namespace IptvPlaylistAggregator.Service
             this.groupRepository = groupRepository;
             this.settings = settings;
             this.logger = logger;
-
-            pingedUrlsAliveStatus = new Dictionary<string, bool>();
         }
 
         public string GatherPlaylist()
@@ -152,7 +146,6 @@ namespace IptvPlaylistAggregator.Service
                 .GroupBy(x => x.Url)
                 .Select(g => g.First())
                 .OrderBy(x => channelMatcher.NormaliseName(x.Name));
-
 
             foreach (Channel channel in uniqueChannels)
             {

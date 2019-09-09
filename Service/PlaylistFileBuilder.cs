@@ -11,7 +11,6 @@ namespace IptvPlaylistAggregator.Service
     {
         const string FileHeader = "#EXTM3U";
         const string EntryHeader = "#EXTINF";
-        const string EntryHeaderExtendedVersion = "#EXT-X-VERSION";
         const string EntryHeaderExtendedInfo = "#EXT-X-STREAM-INF";
         const string EntryHeaderSeparator = ":";
         const string EntryValuesSeparator = ",";
