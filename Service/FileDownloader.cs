@@ -27,7 +27,7 @@ namespace IptvPlaylistAggregator.Service
         {
             string content = cache.GetWebDownload(url);
 
-            if (!string.IsNullOrWhiteSpace(content))
+            if (!(content is null))
             {
                 return content;
             }

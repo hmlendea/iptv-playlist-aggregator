@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
-using System.Linq;
 
 using NuciExtensions;
 
@@ -47,7 +45,7 @@ namespace IptvPlaylistAggregator.Service
             => streamStatuses.TryGetValue(url);
         
         public void StoreWebDownload(string url, string content)
-            => webDownloads.TryAdd(url, content);
+            => webDownloads.TryAdd(url, content ?? string.Empty);
         
         public string GetWebDownload(string url)
             => webDownloads.TryGetValue(url);
