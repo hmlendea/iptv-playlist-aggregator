@@ -16,6 +16,7 @@ namespace IptvPlaylistAggregator.Service
         readonly CacheSettings cacheSettings;
 
         readonly ConcurrentDictionary<string, string> normalisedNames;
+        readonly ConcurrentDictionary<string, string> dnsEntries;
         readonly ConcurrentDictionary<string, MediaStreamStatus> streamStatuses;
         readonly ConcurrentDictionary<string, string> webDownloads;
         readonly ConcurrentDictionary<int, Playlist> playlists;
@@ -25,6 +26,7 @@ namespace IptvPlaylistAggregator.Service
             this.cacheSettings = cacheSettings;
 
             normalisedNames = new ConcurrentDictionary<string, string>();
+            dnsEntries = new ConcurrentDictionary<string, string>();
             streamStatuses = new ConcurrentDictionary<string, MediaStreamStatus>();
             webDownloads = new ConcurrentDictionary<string, string>();
             playlists = new ConcurrentDictionary<int, Playlist>();
@@ -37,6 +39,12 @@ namespace IptvPlaylistAggregator.Service
 
         public string GetNormalisedChannelName(string name)
             => normalisedNames.TryGetValue(name);
+
+        public void StoreDnsEntry(string hostname, string ip)
+            => dnsEntries.TryAdd(hostname, ip);
+
+        public string GetDnsEntry(string hostname)
+            => dnsEntries.TryGetValue(hostname);
 
         public void StoreStreamStatus(MediaStreamStatus status)
             => streamStatuses.TryAdd(status.Url, status);
