@@ -9,6 +9,12 @@ namespace IptvPlaylistAggregator.Service
         void StoreNormalisedChannelName(string name, string normalisedName);
         string GetNormalisedChannelName(string name);
 
+        void StoreHostnameResolution(string hostname, string ip);
+        string GetHostnameResolution(string hostname);
+
+        void StoreUrlResolution(string url, string ip);
+        string GetUrlResolution(string url);
+
         void StoreStreamStatus(MediaStreamStatus status);
         MediaStreamStatus GetStreamStatus(string url);
 
