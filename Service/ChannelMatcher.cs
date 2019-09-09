@@ -22,13 +22,7 @@ namespace IptvPlaylistAggregator.Service
             this.cache = cache;
         }
 
-        public bool DoChannelNamesMatch(ChannelName name1, string name2)
-            => name1.Aliases.Any(x => DoChannelNamesMatch(x, name2));
-
-        bool DoChannelNamesMatch(string name1, string name2)
-            => NormaliseChannelName(name1).Equals(NormaliseChannelName(name2));
-        
-        string NormaliseChannelName(string name)
+        public string NormaliseName(string name)
         {
             string normalisedName = cache.GetNormalisedChannelName(name);
 
@@ -45,6 +39,12 @@ namespace IptvPlaylistAggregator.Service
 
             return normalisedName;
         }
+
+        public bool DoesMatch(ChannelName name1, string name2)
+            => name1.Aliases.Any(x => DoChannelNamesMatch(x, name2));
+
+        bool DoChannelNamesMatch(string name1, string name2)
+            => NormaliseName(name1).Equals(NormaliseName(name2));
 
         string StripChannelName(string name)
         {

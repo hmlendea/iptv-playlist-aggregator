@@ -4,6 +4,8 @@ namespace IptvPlaylistAggregator.Service
 {
     public interface IChannelMatcher
     {
-        bool DoChannelNamesMatch(ChannelName name1, string name2);
+        string NormaliseName(string name);
+
+        bool DoesMatch(ChannelName name1, string name2);
     }
 }
