@@ -1,7 +1,9 @@
+using System.Threading.Tasks;
+
 namespace IptvPlaylistAggregator.Service
 {
     public interface IMediaSourceChecker
     {
-        bool IsSourcePlayable(string url);
+        Task<bool> IsSourcePlayableAsync(string url);
     }
 }

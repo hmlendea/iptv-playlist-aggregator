@@ -114,15 +114,14 @@ namespace IptvPlaylistAggregator.Service
             {
                 logger.Info(MyOperation.ChannelMatching, OperationStatus.InProgress, $"Getting unmatched channels");
 
-                IEnumerable<Channel> unmatchedChannels = GetUnmatchedChannels(filteredProviderChannels);
+                IEnumerable<Channel> unmatchedChannels = providerChannels
+                    .Where(x => channelDefinitions.All(y => !channelMatcher.DoesMatch(y.Name, x.Name)))
+                    .GroupBy(x => x.Name)
+                    .Select(g => g.First())
+                    .OrderBy(x => x.Name);
 
                 foreach (Channel unmatchedChannel in unmatchedChannels)
                 {
-                    if (!mediaSourceChecker.IsSourcePlayable(unmatchedChannel.Url))
-                    {
-                        continue;
-                    }
-
                     logger.Warn(MyOperation.ChannelMatching, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Channel, unmatchedChannel.Name));
 
                     unmatchedChannel.Number = playlist.Channels.Count + 1;
@@ -144,75 +143,32 @@ namespace IptvPlaylistAggregator.Service
                 OperationStatus.Started,
                 new LogInfo(MyLogInfoKey.ChannelsCount, channels.Count()));
 
+            List<Task> tasks = new List<Task>();
             ConcurrentBag<Channel> filteredChannels = new ConcurrentBag<Channel>();
-
             IEnumerable<Channel> uniqueChannels = channels
                 .GroupBy(x => x.Url)
-                .Select(g => g.FirstOrDefault())
+                .Select(g => g.First())
                 .OrderBy(x => channelMatcher.NormaliseName(x.Name));
 
-            Dictionary<string, string> normalisedNames = new Dictionary<string, string>();
 
             foreach (Channel channel in uniqueChannels)
             {
-                if (normalisedNames.ContainsKey(channel.Name))
+                Task task = Task.Run(async () =>
                 {
-                    continue;
-                }
-
-                string normalisedName = channelMatcher.NormaliseName(channel.Name);
-
-                foreach (ChannelDefinition channelDefinition in channelDefinitions)
-                {
-                    if (channelMatcher.DoesMatch(channelDefinition.Name, channel.Name))
-                    {
-                        normalisedName = channelMatcher.NormaliseName(channelDefinition.Name.Value);
-                        break;
-                    }
-                }
-
-                normalisedNames.Add(channel.Name, normalisedName);
-            }
-            Console.WriteLine("to check: " + normalisedNames.Values.Distinct().Count());
-
-            //foreach (Channel channel in uniqueChannels)
-            Parallel.ForEach(uniqueChannels, channel =>
-            {
-                string normalisedName = normalisedNames.TryGetValue(channel.Name);
-
-                if (!string.IsNullOrWhiteSpace(normalisedName) &&
-                    !filteredChannels.Any(x => normalisedNames[x.Name] == normalisedName) &&
-                    mediaSourceChecker.IsSourcePlayable(channel.Url))
-                {
+                    await mediaSourceChecker.IsSourcePlayableAsync(channel.Url);
                     filteredChannels.Add(channel);
-                    Console.WriteLine(filteredChannels.Count);
-                }
-            });
+                });
+
+                tasks.Add(task);
+            }
+
+            Task.WaitAll(tasks.ToArray());
 
             logger.Info(
                 MyOperation.ProviderChannelsFiltering,
-                OperationStatus.Started);
+                OperationStatus.Success);
 
             return filteredChannels;
-        }
-
-        IEnumerable<Channel> GetUnmatchedChannels(IEnumerable<Channel> providerChannels)
-        {
-            IEnumerable<Channel> unmatchedChannels = providerChannels
-                .GroupBy(x => x.Name)
-                .Select(g => g.FirstOrDefault())
-                .Where(x => channelDefinitions.All(y => !channelMatcher.DoesMatch(y.Name, x.Name)));
-
-            IEnumerable<Channel> processedUnmatchedChannels = unmatchedChannels
-                .Select(x => new Channel
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    Name = x.Name,
-                    Group = groups["unknown"].Name,
-                    Url = x.Url
-                });
-
-            return processedUnmatchedChannels.OrderBy(x => x.Name);
         }
     }
 }

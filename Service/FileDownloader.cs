@@ -1,5 +1,6 @@
 using System;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace IptvPlaylistAggregator.Service
 {
@@ -43,6 +44,30 @@ namespace IptvPlaylistAggregator.Service
                 try
                 {
                     content = DownloadString(resolvedUrl);
+                }
+                catch { }
+            }
+
+            cache.StoreWebDownload(url, content);
+            return content;
+        }
+        
+        public async Task<string> TryDownloadStringTaskAsync(string url)
+        {
+            string content = cache.GetWebDownload(url);
+
+            if (!(content is null))
+            {
+                return content;
+            }
+
+            string resolvedUrl = dnsResolver.ResolveUrl(url);
+
+            if (!(resolvedUrl is null))
+            {
+                try
+                {
+                    content = await DownloadStringTaskAsync(resolvedUrl);
                 }
                 catch { }
             }
