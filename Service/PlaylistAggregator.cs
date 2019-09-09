@@ -1,8 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.Concurrent;
 using System.Linq;
+using System.Threading.Tasks;
 
 using NuciDAL.Repositories;
+using NuciExtensions;
 using NuciLog.Core;
 
 using IptvPlaylistAggregator.Configuration;
@@ -65,7 +68,6 @@ namespace IptvPlaylistAggregator.Service
 
             channelDefinitions = channelRepository
                 .GetAll()
-                .Where (x => x.IsEnabled && groups[x.GroupId].IsEnabled)
                 .OrderBy(x => groups[x.GroupId].Priority)
                 .ThenBy(x => x.Name)
                 .ToServiceModels();
@@ -76,15 +78,18 @@ namespace IptvPlaylistAggregator.Service
                 .OrderBy(x => x.Priority)
                 .ToServiceModels();
 
-            Playlist playlist = new Playlist();
-
             IEnumerable<Channel> providerChannels = playlistFetcher
                 .FetchProviderPlaylists(playlistProviders)
                 .SelectMany(x => x.Channels);
             
             IEnumerable<Channel> filteredProviderChannels = FilterProviderChannels(providerChannels, channelDefinitions);
 
-            foreach (ChannelDefinition channelDef in channelDefinitions)
+            IEnumerable<ChannelDefinition> enabledChannelDefinitions = channelDefinitions
+                .Where(x => x.IsEnabled && groups[x.GroupId].IsEnabled);
+
+            Playlist playlist = new Playlist();
+
+            foreach (ChannelDefinition channelDef in enabledChannelDefinitions)
             {
                 Channel matchedChannel = filteredProviderChannels
                     .FirstOrDefault(x => channelMatcher.DoesMatch(channelDef.Name, x.Name));
@@ -139,7 +144,7 @@ namespace IptvPlaylistAggregator.Service
                 OperationStatus.Started,
                 new LogInfo(MyLogInfoKey.ChannelsCount, channels.Count()));
 
-            List<Channel> filteredChannels = new List<Channel>();
+            ConcurrentBag<Channel> filteredChannels = new ConcurrentBag<Channel>();
 
             IEnumerable<Channel> uniqueChannels = channels
                 .GroupBy(x => x.Url)
@@ -148,13 +153,13 @@ namespace IptvPlaylistAggregator.Service
 
             Dictionary<string, string> normalisedNames = new Dictionary<string, string>();
 
-            var a = uniqueChannels
-                    .GroupBy(channel => channelMatcher.NormaliseName(channel.Name))
-                    .Select(g => g.FirstOrDefault())
-                    .OrderBy(x => channelMatcher.NormaliseName(x.Name));
-
-            foreach (Channel channel in a)
+            foreach (Channel channel in uniqueChannels)
             {
+                if (normalisedNames.ContainsKey(channel.Name))
+                {
+                    continue;
+                }
+
                 string normalisedName = channelMatcher.NormaliseName(channel.Name);
 
                 foreach (ChannelDefinition channelDefinition in channelDefinitions)
@@ -162,24 +167,27 @@ namespace IptvPlaylistAggregator.Service
                     if (channelMatcher.DoesMatch(channelDefinition.Name, channel.Name))
                     {
                         normalisedName = channelMatcher.NormaliseName(channelDefinition.Name.Value);
+                        break;
                     }
                 }
 
                 normalisedNames.Add(channel.Name, normalisedName);
             }
+            Console.WriteLine("to check: " + normalisedNames.Values.Distinct().Count());
 
-            foreach (Channel channel in uniqueChannels)
+            //foreach (Channel channel in uniqueChannels)
+            Parallel.ForEach(uniqueChannels, channel =>
             {
-                string normalisedName = normalisedNames[channel.Name];
+                string normalisedName = normalisedNames.TryGetValue(channel.Name);
 
-                if (filteredChannels.Any(x => normalisedNames[x.Name] == channel.Name) ||
-                    !mediaSourceChecker.IsSourcePlayable(channel.Url))
+                if (!string.IsNullOrWhiteSpace(normalisedName) &&
+                    !filteredChannels.Any(x => normalisedNames[x.Name] == normalisedName) &&
+                    mediaSourceChecker.IsSourcePlayable(channel.Url))
                 {
-                    continue;
+                    filteredChannels.Add(channel);
+                    Console.WriteLine(filteredChannels.Count);
                 }
-
-                filteredChannels.Add(channel);
-            }
+            });
 
             logger.Info(
                 MyOperation.ProviderChannelsFiltering,
