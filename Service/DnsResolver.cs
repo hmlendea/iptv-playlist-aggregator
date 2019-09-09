@@ -54,6 +54,7 @@ namespace IptvPlaylistAggregator.Service
 
             int pos = url.IndexOf(uri.Host);
             string resolvedUrl = url.Substring(0, pos) + ip + url.Substring(pos + uri.Host.Length);
+            resolvedUrl = resolvedUrl.Replace("https", "http");
 
             cache.StoreUrlResolution(url, resolvedUrl);
             return resolvedUrl;

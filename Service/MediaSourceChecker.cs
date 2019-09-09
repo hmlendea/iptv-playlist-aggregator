@@ -96,7 +96,7 @@ namespace IptvPlaylistAggregator.Service
 
         async Task<Playlist> DownloadPlaylist(string url)
         {
-            string fileContent = await fileDownloader.TryDownloadStringTaskAsync(url);
+            string fileContent = await fileDownloader.TryDownloadStringAsync(url);
             Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
             return playlist;
