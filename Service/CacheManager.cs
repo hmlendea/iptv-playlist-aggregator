@@ -20,6 +20,7 @@ namespace IptvPlaylistAggregator.Service
         readonly IDictionary<string, string> normalisedNames;
         readonly IDictionary<string, MediaStreamStatus> streamStatuses;
         readonly IDictionary<string, string> webDownloads;
+        readonly IDictionary<int, Playlist> playlists;
 
         public CacheManager(CacheSettings cacheSettings)
         {
@@ -28,6 +29,7 @@ namespace IptvPlaylistAggregator.Service
             normalisedNames = new Dictionary<string, string>();
             streamStatuses = new Dictionary<string, MediaStreamStatus>();
             webDownloads = new Dictionary<string, string>();
+            playlists = new Dictionary<int, Playlist>();
 
             PrepareFilesystem();
         }
@@ -49,6 +51,12 @@ namespace IptvPlaylistAggregator.Service
         
         public string GetWebDownload(string url)
             => webDownloads.TryGetValue(url);
+        
+        public void StorePlaylist(string fileContent, Playlist playlist)
+            => playlists.TryAdd(fileContent.GetHashCode(), playlist);
+        
+        public Playlist GetPlaylist(string fileContent)
+            => playlists.TryGetValue(fileContent.GetHashCode());
 
         public void StorePlaylistFile(string providerId, DateTime date, string content)
         {

@@ -36,6 +36,7 @@ namespace IptvPlaylistAggregator
                 .AddSingleton(applicationSettings)
                 .AddSingleton(cacheSettings)
                 .AddSingleton(dataStoreSettings)
+                .AddSingleton<ICacheManager, CacheManager>()
                 .AddSingleton<IFileDownloader, FileDownloader>()
                 .AddSingleton<IPlaylistAggregator, PlaylistAggregator>()
                 .AddSingleton<IPlaylistFetcher, PlaylistFetcher>()
