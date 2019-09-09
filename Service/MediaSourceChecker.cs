@@ -1,7 +1,6 @@
 using System;
 using System.Net;
 
-using IptvPlaylistAggregator.Communication;
 using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service

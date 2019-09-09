@@ -5,7 +5,6 @@ using System.Linq;
 
 using NuciLog.Core;
 
-using IptvPlaylistAggregator.Communication;
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service.Models;
