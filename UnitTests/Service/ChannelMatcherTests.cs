@@ -1,5 +1,7 @@
 using NUnit.Framework;
 
+using Moq;
+
 using IptvPlaylistAggregator.Service;
 using IptvPlaylistAggregator.Service.Models;
 
@@ -7,12 +9,16 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 {
     public sealed class ChannelMatcherTests
     {
+        Mock<ICacheManager> cacheMock;
+        
         IChannelMatcher channelMatcher;
 
         [SetUp]
         public void SetUp()
         {
-            channelMatcher = new ChannelMatcher();
+            cacheMock = new Mock<ICacheManager>();
+
+            channelMatcher = new ChannelMatcher(cacheMock.Object);
         }
 
         [Test]
