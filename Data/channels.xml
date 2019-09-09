@@ -2077,7 +2077,6 @@
       <string>HTB Moldova</string>
       <string>MD: NTV</string>
       <string>НТВ Moldova</string>
-      <string>НТВ-Молдова</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2173,6 +2172,7 @@
     <GroupId>local-bucovina</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/intermedia-tv.png</LogoUrl>
     <Aliases>
+      <string>Intermedia TV</string>
       <string>RO: Intermedia Suceava</string>
       <string>RO: Intermedia TV</string>
       <string>ROM: Intermedia Suceava</string>
@@ -2240,7 +2240,7 @@
     <Id>kapital_tv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Kapital TV</Name>
-    <GroupId>generale</GroupId>
+    <GroupId>general</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/kapital-tv.png</LogoUrl>
     <Aliases>
       <string>Kapital TV RO</string>
@@ -2960,6 +2960,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/profit.ro.png</LogoUrl>
     <Aliases>
+      <string>Profit.ro</string>
       <string>RO: Profit.ro</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -3356,6 +3357,8 @@
       <string>RO: Dolce Sport 1 FHD</string>
       <string>RO: Dolce Sport 1 HD</string>
       <string>RO: Dolce Sport 1</string>
+      <string>RO: Telekom 1 HD</string>
+      <string>RO: Telekom 1</string>
       <string>RO: Telekom Sport 1 FHD</string>
       <string>RO: Telekom Sport 1 HD</string>
       <string>RO: Telekom Sport 1</string>
@@ -3386,6 +3389,8 @@
       <string>RO: Dolce Sport 2 FHD</string>
       <string>RO: Dolce Sport 2 HD</string>
       <string>RO: Dolce Sport 2</string>
+      <string>RO: Telekom 2 HD</string>
+      <string>RO: Telekom 2</string>
       <string>RO: Telekom Sport 2 FHD</string>
       <string>RO: Telekom Sport 2 HD</string>
       <string>RO: Telekom Sport 2</string>
@@ -3416,6 +3421,8 @@
       <string>RO: Dolce Sport 3 FHD</string>
       <string>RO: Dolce Sport 3 HD</string>
       <string>RO: Dolce Sport 3</string>
+      <string>RO: Telekom 3 HD</string>
+      <string>RO: Telekom 3</string>
       <string>RO: Telekom Sport 3 FHD</string>
       <string>RO: Telekom Sport 3 HD</string>
       <string>RO: Telekom Sport 3</string>
@@ -3446,6 +3453,8 @@
       <string>RO: Dolce Sport 4 FHD</string>
       <string>RO: Dolce Sport 4 HD</string>
       <string>RO: Dolce Sport 4</string>
+      <string>RO: Telekom 4 HD</string>
+      <string>RO: Telekom 4</string>
       <string>RO: Telekom Sport 4 FHD</string>
       <string>RO: Telekom Sport 4 HD</string>
       <string>RO: Telekom Sport 4</string>
@@ -3476,6 +3485,8 @@
       <string>RO: Dolce Sport 5 FHD</string>
       <string>RO: Dolce Sport 5 HD</string>
       <string>RO: Dolce Sport 5</string>
+      <string>RO: Telekom 5 HD</string>
+      <string>RO: Telekom 5</string>
       <string>RO: Telekom Sport 5 FHD</string>
       <string>RO: Telekom Sport 5 HD</string>
       <string>RO: Telekom Sport 5</string>
@@ -3506,6 +3517,8 @@
       <string>RO: Dolce Sport 6 FHD</string>
       <string>RO: Dolce Sport 6 HD</string>
       <string>RO: Dolce Sport 6</string>
+      <string>RO: Telekom 6 HD</string>
+      <string>RO: Telekom 6</string>
       <string>RO: Telekom Sport 6 FHD</string>
       <string>RO: Telekom Sport 6 HD</string>
       <string>RO: Telekom Sport 6</string>
@@ -4439,13 +4452,25 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>radioCluj</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Radio Cluj</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: SRR Radio Cluj</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>romaniaActualitati</Id>
     <IsEnabled>true</IsEnabled>
     <Name>România Actualități</Name>
     <GroupId>radio</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
+      <string>RO: SRR Radio România Actualități</string>
       <string>Romania Actualitati</string>
+      <string>România Actualități</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
