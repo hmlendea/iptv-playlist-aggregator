@@ -1,5 +1,7 @@
 using System;
+using System.Linq;
 using System.Net;
+using System.Net.Sockets;
 
 namespace IptvPlaylistAggregator.Service
 {
@@ -14,19 +16,20 @@ namespace IptvPlaylistAggregator.Service
         
         public string ResolveHostname(string hostname)
         {
-            string ip = cache.GetDnsEntry(hostname);
+            string ip = cache.GetHostnameResolution(hostname);
 
             if (ip is null)
             {
-                IPHostEntry hostEntry = Dns.GetHostEntry(hostname);
-                ip = string.Empty;
-
-                if (hostEntry.AddressList.Length != 0)
+                if (hostname.Any(x => char.IsLetter(x)))
                 {
-                    ip = hostEntry.AddressList[0].ToString();
+                    ip = TryGetHostEntry(hostname);
+                }
+                else
+                {
+                    ip = hostname;
                 }
 
-                cache.StoreDnsEntry(hostname, ip);
+                cache.StoreHostnameResolution(hostname, ip);
             }
 
             return ip;
@@ -34,6 +37,13 @@ namespace IptvPlaylistAggregator.Service
         
         public string ResolveUrl(string url)
         {
+            string cachedResolution = cache.GetUrlResolution(url);
+
+            if (!string.IsNullOrWhiteSpace(cachedResolution))
+            {
+                return cachedResolution;
+            }
+
             Uri uri = new Uri(url);
             string ip = ResolveHostname(uri.Host);
 
@@ -43,7 +53,28 @@ namespace IptvPlaylistAggregator.Service
             }
 
             int pos = url.IndexOf(uri.Host);
-            return url.Substring(0, pos) + ip + url.Substring(pos + uri.Host.Length);
+            string resolvedUrl = url.Substring(0, pos) + ip + url.Substring(pos + uri.Host.Length);
+
+            cache.StoreUrlResolution(url, resolvedUrl);
+            return resolvedUrl;
+        }
+
+        string TryGetHostEntry(string hostname)
+        {
+            try
+            {
+                IPHostEntry hostEntry = Dns.GetHostEntry(hostname);
+
+                if (hostEntry.AddressList.Length != 0)
+                {
+                    return hostEntry.AddressList
+                        .First(addr => addr.AddressFamily == AddressFamily.InterNetwork)
+                        .ToString();
+                }
+            }
+            catch { }
+
+            return null;
         }
     }
 }
