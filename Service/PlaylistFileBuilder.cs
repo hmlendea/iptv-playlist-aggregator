@@ -22,10 +22,14 @@ namespace IptvPlaylistAggregator.Service
         const string TvGuideGroupTagKey = "group-title";
         const int DefaultEntryRuntime = -1;
 
+        readonly ICacheManager cache;
         readonly ApplicationSettings settings;
 
-        public PlaylistFileBuilder(ApplicationSettings settings)
+        public PlaylistFileBuilder(
+            ICacheManager cache,
+            ApplicationSettings settings)
         {
+            this.cache = cache;
             this.settings = settings;
         }
 
@@ -64,16 +68,23 @@ namespace IptvPlaylistAggregator.Service
             }
         }
 
-        public Playlist ParseFile(string file)
+        public Playlist ParseFile(string content)
         {
-            Playlist playlist = new Playlist();
+            Playlist playlist = cache.GetPlaylist(content);
 
-            if (string.IsNullOrWhiteSpace(file))
+            if (!(playlist is null))
             {
-                throw new ArgumentNullException(nameof(file));
+                return playlist;
             }
 
-            IEnumerable<string> lines = file
+            playlist = new Playlist();
+
+            if (string.IsNullOrWhiteSpace(content))
+            {
+                throw new ArgumentNullException(nameof(content));
+            }
+
+            IEnumerable<string> lines = content
                 .Replace("\r", "")
                 .Split('\n')
                 .Where(x => !string.IsNullOrWhiteSpace(x));
@@ -103,6 +114,8 @@ namespace IptvPlaylistAggregator.Service
                     playlist.Channels.Last().Url = line;
                 }
             }
+
+            cache.StorePlaylist(content, playlist);
 
             return playlist;
         }

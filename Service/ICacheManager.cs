@@ -15,6 +15,9 @@ namespace IptvPlaylistAggregator.Service
         void StoreWebDownload(string url, string content);
         string GetWebDownload(string url);
 
+        void StorePlaylist(string fileContent, Playlist playlist);
+        Playlist GetPlaylist(string fileContent);
+
         void StorePlaylistFile(string name, DateTime date, string content);
         string GetPlaylistFile(string name, DateTime date);
     }
