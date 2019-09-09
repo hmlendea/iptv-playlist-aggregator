@@ -8,7 +8,6 @@ using NuciDAL.Repositories;
 using NuciLog;
 using NuciLog.Core;
 
-using IptvPlaylistAggregator.Communication;
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.DataObjects;
 using IptvPlaylistAggregator.Service;

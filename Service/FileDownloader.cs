@@ -1,7 +1,7 @@
 using System;
 using System.Net;
 
-namespace IptvPlaylistAggregator.Communication
+namespace IptvPlaylistAggregator.Service
 {
     public sealed class FileDownloader : WebClient, IFileDownloader
     {
@@ -9,9 +9,13 @@ namespace IptvPlaylistAggregator.Communication
 
         public int Timeout { get; set; }
 
-        public FileDownloader()
+        readonly ICacheManager cache;
+
+        public FileDownloader(ICacheManager cache)
         {
             Timeout = DefaultTimeout;
+
+            this.cache = cache;
         }
 
         public FileDownloader(int timeoutMillis)
@@ -21,14 +25,25 @@ namespace IptvPlaylistAggregator.Communication
         
         public string TryDownloadString(string url)
         {
+            string content = cache.GetWebDownload(url);
+
+            if (!string.IsNullOrWhiteSpace(content))
+            {
+                return content;
+            }
+
             try
             {
-                return DownloadString(url);
+                content = DownloadString(url);
             }
             catch
             {
-                return null;
+                content = null;
             }
+
+            cache.StoreWebDownload(url, content);
+
+            return content;
         }
 
         protected override WebRequest GetWebRequest(Uri uri)
