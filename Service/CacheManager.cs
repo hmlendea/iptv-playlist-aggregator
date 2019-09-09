@@ -13,6 +13,8 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class CacheManager : ICacheManager
     {
+        const string PlaylistFileNameFOrmat = "{0}_playlist_{1:yyyy-MM-dd}.m3u";
+
         readonly CacheSettings cacheSettings;
 
         readonly IDictionary<string, string> normalisedNames;
@@ -24,6 +26,8 @@ namespace IptvPlaylistAggregator.Service
 
             normalisedNames = new Dictionary<string, string>();
             streamStatuses = new Dictionary<string, MediaStreamStatus>();
+
+            PrepareFilesystem();
         }
 
         public void StoreNormalisedChannelName(string name, string normalisedName)
@@ -37,5 +41,34 @@ namespace IptvPlaylistAggregator.Service
 
         public MediaStreamStatus GetStreamStatus(string url)
             => streamStatuses.TryGetValue(url);
+
+        public void StorePlaylistFile(string providerId, DateTime date, string content)
+        {
+            string fileName = string.Format(PlaylistFileNameFOrmat, providerId, date);
+            string filePath = Path.Combine(cacheSettings.CacheDirectoryPath, fileName);
+
+            File.WriteAllText(filePath, content);
+        }
+
+        public string GetPlaylistFile(string providerId, DateTime date)
+        {
+            string fileName = string.Format(PlaylistFileNameFOrmat, providerId, date);
+            string filePath = Path.Combine(cacheSettings.CacheDirectoryPath, fileName);
+            
+            if (File.Exists(filePath))
+            {
+                return File.ReadAllText(filePath);
+            }
+
+            return null;
+        }
+
+        void PrepareFilesystem()
+        {
+            if (!Directory.Exists(cacheSettings.CacheDirectoryPath))
+            {
+                Directory.CreateDirectory(cacheSettings.CacheDirectoryPath);
+            }
+        }
     }
 }
