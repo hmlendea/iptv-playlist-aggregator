@@ -9,15 +9,18 @@ namespace IptvPlaylistAggregator.Service
     {
         readonly IFileDownloader fileDownloader;
         readonly IPlaylistFileBuilder playlistFileBuilder;
+        readonly IDnsResolver dnsResolver;
         readonly ICacheManager cache;
 
         public MediaSourceChecker(
             IFileDownloader fileDownloader,
             IPlaylistFileBuilder playlistFileBuilder,
+            IDnsResolver dnsResolver,
             ICacheManager cache)
         {
             this.fileDownloader = fileDownloader;
             this.playlistFileBuilder = playlistFileBuilder;
+            this.dnsResolver = dnsResolver;
             this.cache = cache;
         }
 
@@ -54,7 +57,6 @@ namespace IptvPlaylistAggregator.Service
         bool IsPlaylistPlayable(string url)
         {
             Playlist playlist = DownloadPlaylist(url);
-
             return !Playlist.IsNullOrEmpty(playlist);
         }
 
@@ -62,8 +64,15 @@ namespace IptvPlaylistAggregator.Service
         {
             try
             {
-                UriBuilder uriBuilder = new UriBuilder(url);
-                HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(uriBuilder.Uri);
+                string resolvedUrl = dnsResolver.ResolveUrl(url);
+
+                if (string.IsNullOrWhiteSpace(resolvedUrl))
+                {
+                    return false;
+                }
+
+                Uri uri = new Uri(resolvedUrl);
+                HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(uri);
                 request.Timeout = 3000;
 
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
@@ -86,12 +95,7 @@ namespace IptvPlaylistAggregator.Service
             string fileContent = fileDownloader.TryDownloadString(url);
             Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
-            if (!Playlist.IsNullOrEmpty(playlist))
-            {
-                return playlist;
-            }
-            
-            return null;
+            return playlist;
         }
 
         void SaveToCache(string url, bool isAlive)

@@ -37,6 +37,7 @@ namespace IptvPlaylistAggregator
                 .AddSingleton(cacheSettings)
                 .AddSingleton(dataStoreSettings)
                 .AddSingleton<ICacheManager, CacheManager>()
+                .AddSingleton<IDnsResolver, DnsResolver>()
                 .AddSingleton<IFileDownloader, FileDownloader>()
                 .AddSingleton<IPlaylistAggregator, PlaylistAggregator>()
                 .AddSingleton<IPlaylistFetcher, PlaylistFetcher>()
@@ -58,6 +59,13 @@ namespace IptvPlaylistAggregator
 
                 string playlistFile = aggregator.GatherPlaylist();
                 File.WriteAllText(applicationSettings.OutputPlaylistPath, playlistFile);
+            }
+            catch (AggregateException ex)
+            {
+                foreach (Exception innerException in ex.InnerExceptions)
+                {
+                    logger.Fatal(Operation.Unknown, OperationStatus.Failure, innerException);
+                }
             }
             catch (Exception ex)
             {
