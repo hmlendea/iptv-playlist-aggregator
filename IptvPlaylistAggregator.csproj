@@ -24,7 +24,7 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="NuciDAL" Version="1.1.1" />
-    <PackageReference Include="NuciExtensions" Version="1.4.0" />
+    <PackageReference Include="NuciExtensions" Version="1.4.1.1" />
     <PackageReference Include="NuciLog" Version="1.0.0" />
     <PackageReference Include="NuciLog.Core" Version="2.2.4" />
   </ItemGroup>

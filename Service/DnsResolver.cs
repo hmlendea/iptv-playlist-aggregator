@@ -3,6 +3,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 
+using NuciExtensions;
+
 namespace IptvPlaylistAggregator.Service
 {
     public sealed class DnsResolver : IDnsResolver
@@ -58,9 +60,7 @@ namespace IptvPlaylistAggregator.Service
                 return null;
             }
 
-            int pos = url.IndexOf(uri.Host);
-            string resolvedUrl = url.Substring(0, pos) + ip + url.Substring(pos + uri.Host.Length);
-            resolvedUrl = resolvedUrl.Replace("https", "http");
+            string resolvedUrl = url.ReplaceFirst(uri.Host, ip).ReplaceFirst("https", "http");
 
             cache.StoreUrlResolution(url, resolvedUrl);
             return resolvedUrl;

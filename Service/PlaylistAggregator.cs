@@ -20,6 +20,7 @@ namespace IptvPlaylistAggregator.Service
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly IChannelMatcher channelMatcher;
         readonly IMediaSourceChecker mediaSourceChecker;
+        readonly IDnsResolver dnsResolver;
         readonly IRepository<ChannelDefinitionEntity> channelRepository;
         readonly IRepository<GroupEntity> groupRepository;
         readonly IRepository<PlaylistProviderEntity> playlistProviderRepository;
@@ -35,6 +36,7 @@ namespace IptvPlaylistAggregator.Service
             IPlaylistFileBuilder playlistFileBuilder,
             IChannelMatcher channelMatcher,
             IMediaSourceChecker mediaSourceChecker,
+            IDnsResolver dnsResolver,
             IRepository<ChannelDefinitionEntity> channelRepository,
             IRepository<GroupEntity> groupRepository,
             IRepository<PlaylistProviderEntity> playlistProviderRepository,
@@ -45,6 +47,7 @@ namespace IptvPlaylistAggregator.Service
             this.playlistFileBuilder = playlistFileBuilder;
             this.channelMatcher = channelMatcher;
             this.mediaSourceChecker = mediaSourceChecker;
+            this.dnsResolver = dnsResolver;
             this.channelRepository = channelRepository;
             this.playlistProviderRepository = playlistProviderRepository;
             this.groupRepository = groupRepository;
@@ -108,7 +111,7 @@ namespace IptvPlaylistAggregator.Service
             {
                 logger.Info(MyOperation.ChannelMatching, OperationStatus.InProgress, $"Getting unmatched channels");
 
-                IEnumerable<Channel> unmatchedChannels = providerChannels
+                IEnumerable<Channel> unmatchedChannels = filteredProviderChannels
                     .Where(x => channelDefinitions.All(y => !channelMatcher.DoesMatch(y.Name, x.Name)))
                     .GroupBy(x => x.Name)
                     .Select(g => g.First())
@@ -143,16 +146,19 @@ namespace IptvPlaylistAggregator.Service
             List<Task> tasks = new List<Task>();
             ConcurrentBag<Channel> filteredChannels = new ConcurrentBag<Channel>();
             IEnumerable<Channel> uniqueChannels = channels
-                .GroupBy(x => x.Url)
-                .Select(g => g.First())
-                .OrderBy(x => channelMatcher.NormaliseName(x.Name));
+                .GroupBy(x => dnsResolver.ResolveUrl(x.Url))
+                .Select(g => g.First());
 
             foreach (Channel channel in uniqueChannels)
             {
                 Task task = Task.Run(async () =>
                 {
-                    await mediaSourceChecker.IsSourcePlayableAsync(channel.Url);
-                    filteredChannels.Add(channel);
+                    bool isPlayable = await mediaSourceChecker.IsSourcePlayableAsync(channel.Url);
+
+                    if (isPlayable)
+                    {
+                        filteredChannels.Add(channel);
+                    }
                 });
 
                 tasks.Add(task);
