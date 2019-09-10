@@ -2075,6 +2075,7 @@
     <LogoUrl>https://www.deschide.md/images/cms-image-000036515.png</LogoUrl>
     <Aliases>
       <string>HTB Moldova</string>
+      <string>MD: NTV Moldova</string>
       <string>MD: NTV</string>
       <string>НТВ Moldova</string>
     </Aliases>
@@ -2599,6 +2600,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/1_music_channel.png</LogoUrl>
     <Aliases>
+      <string>1 Music Channel</string>
       <string>Music Channel RO</string>
       <string>Music Channel</string>
       <string>RO: 1 Music Channel</string>
@@ -2641,15 +2643,16 @@
       <string>National Geographic RO</string>
       <string>National Geographic SD</string>
       <string>NGC</string>
+      <string>RO: Nat Geo FHD</string>
+      <string>RO: Nat Geo HD</string>
       <string>RO: Nat Geo</string>
-      <string>RO: Natgeo FHD</string>
-      <string>RO: Natgeographic</string>
+      <string>RO: Nat Geographic</string>
       <string>RO: National Geographic FHD</string>
       <string>RO: National Geographic HD</string>
       <string>RO: National Geographic SD</string>
       <string>RO: National Geographic</string>
       <string>RO: NGC</string>
-      <string>ROM: NAT Geo</string>
+      <string>ROM: Nat Geo</string>
       <string>ROM: National Geographic</string>
       <string>ROMANIA: National Geographic</string>
       <string>ROMANIA: NGC</string>
@@ -3326,6 +3329,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>autoMotorSport</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Auto Motor Sport</Name>
+    <GroupId>sport</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: Auto Motor Sport</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>tele2drobeta</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Tele 2 Drobeta</Name>
@@ -3333,6 +3346,16 @@
     <LogoUrl>https://tele2drobeta.ro/wp-content/uploads/2018/03/cropped-SIGLA_00002.png</LogoUrl>
     <Aliases>
       <string>RO: Tele2 Drobeta</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>erdelyTv</Id>
+    <IsEnabled>false</IsEnabled>
+    <Name>Erdely TV</Name>
+    <GroupId>local-transilvania</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Erdely TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>

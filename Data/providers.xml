@@ -333,14 +333,6 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>freeiptvserver-backup2</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>92</Priority>
-    <Name>Free IPTV Server Backup 2</Name>
-    <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com3.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>freeiptvserver-backup3</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>93</Priority>
