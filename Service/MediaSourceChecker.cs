@@ -72,7 +72,6 @@ namespace IptvPlaylistAggregator.Service
             }
 
             HttpWebRequest request = CreateWebRequest(resolvedUrl);
-            request.Timeout = 5000;
 
             try
             {
@@ -90,10 +89,13 @@ namespace IptvPlaylistAggregator.Service
 
         HttpWebRequest CreateWebRequest(string url)
         {
-            Uri uri = new Uri(url);
-            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(uri);
-            request.Method = "HEAD";
-            request.Timeout = 5000;
+            const int timeout = 7500;
+
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
+            request.Method = "GET";
+            request.Timeout = timeout;
+            request.ContinueTimeout = timeout;
+            request.ReadWriteTimeout = timeout;
 
             return request;
         }
