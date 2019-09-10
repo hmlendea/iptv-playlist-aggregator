@@ -96,10 +96,10 @@ namespace IptvPlaylistAggregator.Service
 
             if (Playlist.IsNullOrEmpty(playlist))
             {
-                logger.Warn(
+                logger.Debug(
                     MyOperation.PlaylistFetching,
                     OperationStatus.Failure,
-                    new LogInfo(MyLogInfoKey.Provider, provider.Id));
+                    new LogInfo(MyLogInfoKey.Provider, provider.Name));
 
                 return null;
             }
@@ -115,7 +115,7 @@ namespace IptvPlaylistAggregator.Service
             logger.Debug(
                 MyOperation.PlaylistFetching,
                 OperationStatus.Success,
-                new LogInfo(MyLogInfoKey.Provider, provider.Id));
+                new LogInfo(MyLogInfoKey.Provider, provider.Name));
                 
             return playlist;
         }
