@@ -56,7 +56,9 @@ namespace IptvPlaylistAggregator.Service
 
         async Task<bool> IsPlaylistPlayableAsync(string url)
         {
-            Playlist playlist = await DownloadPlaylist(url);
+            string fileContent = await fileDownloader.TryDownloadStringAsync(url);
+            Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
+
             return !Playlist.IsNullOrEmpty(playlist);
         }
 
@@ -69,12 +71,14 @@ namespace IptvPlaylistAggregator.Service
                 return false;
             }
 
+            HttpWebRequest request = CreateWebRequest(resolvedUrl);
+            request.Timeout = 5000;
+
             try
             {
-                HttpWebRequest request = CreateWebRequest(resolvedUrl);
                 HttpWebResponse response = (HttpWebResponse)(await request.GetResponseAsync());
                 
-                if (response.StatusCode != HttpStatusCode.NotFound)
+                if (response.StatusCode == HttpStatusCode.OK)
                 {
                     return true;
                 }
@@ -92,14 +96,6 @@ namespace IptvPlaylistAggregator.Service
             request.Timeout = 5000;
 
             return request;
-        }
-
-        async Task<Playlist> DownloadPlaylist(string url)
-        {
-            string fileContent = await fileDownloader.TryDownloadStringAsync(url);
-            Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
-
-            return playlist;
         }
 
         void SaveToCache(string url, bool isAlive)

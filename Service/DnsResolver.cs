@@ -45,6 +45,12 @@ namespace IptvPlaylistAggregator.Service
             }
 
             Uri uri = new Uri(url);
+
+            if (uri.Scheme != "http" && uri.Scheme != "https")
+            {
+                return null;
+            }
+
             string ip = ResolveHostname(uri.Host);
 
             if (ip is null)
