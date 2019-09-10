@@ -57,6 +57,11 @@ namespace IptvPlaylistAggregator.Service
 
         public Playlist TryParseFile(string file)
         {
+            if (string.IsNullOrWhiteSpace(file))
+            {
+                return null;
+            }
+
             try
             {
                 return ParseFile(file);
