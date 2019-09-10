@@ -99,6 +99,30 @@
     <Name>Best Free IPTV Backup 2</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_2.m3u</UrlFormat>
   </PlaylistProviderEntity>
+  
+  <PlaylistProviderEntity>
+    <Id>freeiptvdaily1</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>25</Priority>
+    <Name>Free IPTV Daily 1</Name>
+    <UrlFormat>https://www.mediafire.com/file/s53fu5b8180r2hy/2-IPTV_Romania_M3u_Playlist.m3u/file</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>freeiptvdaily2</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>27</Priority>
+    <Name>Free IPTV Daily 2</Name>
+    <UrlFormat>https://www.mediafire.com/file/5f3o1igg0iqdb3n/ROMANIA_IPTV2222.m3u/file</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>freeiptvdaily3</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>28</Priority>
+    <Name>Free IPTV Daily 3</Name>
+    <UrlFormat>https://www.mediafire.com/file/jkihqazn2uouxeu/ro-m3uplaylist-1-1.m3u/file</UrlFormat>
+  </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>freeiptvplaylist1</Id>
@@ -338,6 +362,46 @@
     <Priority>111</Priority>
     <Name>freearhey's IPTV GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/freearhey/iptv/master/channels/md.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>tousecurity1</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>120</Priority>
+    <Name>Tousecurity List 1</Name>
+    <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20M3u%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0&amp;d=1</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>tousecurity1-2</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>121</Priority>
+    <Name>Tousecurity List 2</Name>
+    <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20M3u%20%282%29%{0:dd-MM-yyyy}.m3u?attredirects=0&amp;d=1</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>tousecurity1-3</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>123</Priority>
+    <Name>Tousecurity List 3</Name>
+    <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20M3u%20%283%29%20{0:dd-MM-yyyy}.m3u?attredirects=0&amp;d=1</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>tousecurity2-1</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>130</Priority>
+    <Name>Tousecurity Backup 1</Name>
+    <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20%281%29%20{0:dd-MM-yyyy}m3u?attredirects=0&amp;d=1</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>tousecurity3-1</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>140</Priority>
+    <Name>Tousecurity Uploadingy 1</Name>
+    <UrlFormat>https://sites.google.com/site/uploadingy/Romania%20M3u%20%282%29%20.m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
