@@ -39,6 +39,11 @@ namespace IptvPlaylistAggregator.Service
         
         public string ResolveUrl(string url)
         {
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                return null;
+            }
+            
             string cachedResolution = cache.GetUrlResolution(url);
 
             if (!string.IsNullOrWhiteSpace(cachedResolution))
