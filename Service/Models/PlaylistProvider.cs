@@ -8,6 +8,8 @@ namespace IptvPlaylistAggregator.Service.Models
 
         public int Priority { get; set; }
 
+        public bool DontCache { get; set; }
+
         public string Name { get; set; }
 
         public string UrlFormat { get; set; }
