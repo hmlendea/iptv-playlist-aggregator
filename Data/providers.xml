@@ -31,7 +31,7 @@
     <Priority>3</Priority>
     <DontCache>true</DontCache>
     <Name>Hori's list of live streams from Romania</Name>
-    <UrlFormat>http://hmlendea.go.ro/iptv/playlist-streams-ro.m3u</UrlFormat>
+    <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/ro/playlist.m3u</UrlFormat>
   </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
@@ -40,7 +40,7 @@
     <Priority>4</Priority>
     <DontCache>true</DontCache>
     <Name>Hori's list of live streams from Moldova</Name>
-    <UrlFormat>http://hmlendea.go.ro/iptv/playlist-streams-md.m3u</UrlFormat>
+    <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/md/playlist.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -49,7 +49,7 @@
     <Priority>5</Priority>
     <DontCache>true</DontCache>
     <Name>Hori's list of live streams with an international audience</Name>
-    <UrlFormat>http://hmlendea.go.ro/iptv/playlist-streams-int.m3u</UrlFormat>
+    <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/int/playlist.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
