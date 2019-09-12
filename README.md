@@ -91,6 +91,7 @@ The settings are stored in the `appsettings.json` file in the root directory.
  - *daysToCheck*: How far in the past to go for each playlist. If today's playlist is not found (sometimes the providers skip some days) then the service will move on to the previous day, again and again until one is found or the daysToCheck limit is reached.
  - *canIncludeUnmatchedChannels*: Boolean value indicating whether provider channels that were not able to be matched with the data in the channelStorePath file should be included in the output file (in the Unknown category) or not at all
  - *areTvGuideTagsEnabled*: Boolean value indicating whether TV Guide tags (logo URLs, groups, TVG IDs, channel numbers, etc) should be included in the output file or not
+ - *userAgent*: String value indicating the UserAgent that should be used when performing HTTP operations
 
 ### Channel data
 
@@ -128,4 +129,6 @@ PlaylistProviderDefinitionEntity fields:
  - *Id* (string): The ID of the provider. You can put anything here, used only to distinguish between them.
  - *IsEnabled* (bool): Indicates whether this provider will be used or not.
  - *Priority* (int): The lower the value, the sooner the provider will be processed. Try to make sure the most reliable providers are processed first, as once a channel is matched with a provider, it will be ignored for all other providers after it.
+ - *DontCache* (bool): (Optional) Indicates whether this provider's playlist should be cached or not. Useful when the provider updates the playlist multiple times a day. By default it's false.
  - *UrlFormat* (string): The URL to the m3u playlist file of that provider. Replace the date part of the URL with a timestamp format. For example, *2019-05-19* will be replaced with *{0:yyyy-MM-dd}*. The *0* is the calendar day that is processed (today, or one of the previous ones depending on the *daysToCheck* setting)
+ - *ChannelNameOverride* (string): (Optional) The channel name override for all the channels in the provider's playlist.
