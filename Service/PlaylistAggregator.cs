@@ -72,12 +72,12 @@ namespace IptvPlaylistAggregator.Service
             playlistProviders = playlistProviderRepository
                 .GetAll()
                 .Where(x => x.IsEnabled)
-                .OrderBy(x => x.Priority)
                 .ToServiceModels();
 
-            IEnumerable<Channel> providerChannels = playlistFetcher
+            IList<Channel> providerChannels = playlistFetcher
                 .FetchProviderPlaylists(playlistProviders)
-                .SelectMany(x => x.Channels);
+                .SelectMany(x => x.Channels)
+                .ToList();
             
             Playlist playlist = new Playlist();
             IEnumerable<Channel> filteredProviderChannels = FilterProviderChannels(providerChannels, channelDefinitions);
@@ -135,7 +135,7 @@ namespace IptvPlaylistAggregator.Service
         }
 
         IEnumerable<Channel> FilterProviderChannels(
-            IEnumerable<Channel> channels,
+            IList<Channel> channels,
             IEnumerable<ChannelDefinition> channelDefinitions)
         {
             logger.Info(
@@ -170,7 +170,7 @@ namespace IptvPlaylistAggregator.Service
                 MyOperation.ProviderChannelsFiltering,
                 OperationStatus.Success);
 
-            return filteredChannels;
+            return filteredChannels.OrderBy(x => channels.IndexOf(x));
         }
     }
 }
