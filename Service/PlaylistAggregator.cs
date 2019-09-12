@@ -102,7 +102,7 @@ namespace IptvPlaylistAggregator.Service
                 channel.Group = groups[channelDef.GroupId].Name;
                 channel.LogoUrl = channelDef.LogoUrl;
                 channel.Number = playlist.Channels.Count + 1;
-                channel.Url = dnsResolver.ResolveUrl(matchedChannel.Url);
+                channel.Url = matchedChannel.Url;
 
                 playlist.Channels.Add(channel);
             }
