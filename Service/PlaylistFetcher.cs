@@ -82,7 +82,7 @@ namespace IptvPlaylistAggregator.Service
                     string playlistFile = await DownloadPlaylistFileAsync(provider, date);
                     playlist = playlistFileBuilder.TryParseFile(playlistFile);
 
-                    if (!Playlist.IsNullOrEmpty(playlist))
+                    if (!Playlist.IsNullOrEmpty(playlist) && !provider.DontCache)
                     {
                         cache.StorePlaylistFile(provider.Id, date, playlistFile);
                     }
@@ -122,6 +122,11 @@ namespace IptvPlaylistAggregator.Service
 
         Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
         {
+            if (provider.DontCache)
+            {
+                return null;
+            }
+
             string content = cache.GetPlaylistFile(provider.Id, date);
 
             if (string.IsNullOrWhiteSpace(content))
