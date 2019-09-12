@@ -2430,6 +2430,7 @@
     <GroupId>religious</GroupId>
     <LogoUrl>https://misatv.ro/wp-content/uploads/2018/09/MTV-Logo-Cropped2.png</LogoUrl>
     <Aliases>
+      <string>RO: Misa Senzațional TV</string>
       <string>RO: Misa TV</string>
       <string>ROMANIA: Misa TV</string>
       <string>RUMANIA: Misa TV</string>
@@ -3028,9 +3029,9 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>protv-md</Id>
-    <IsEnabled>false</IsEnabled>
+    <IsEnabled>true</IsEnabled>
     <Name>Pro TV Moldova</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl />
     <Aliases>
       <string>MD: Pro TV Moldova</string>
@@ -3100,6 +3101,7 @@
       <string>Realitatea Plus HD</string>
       <string>RO: Realitatea Plus HD</string>
       <string>RO: Realitatea Plus TV</string>
+      <string>RO: Realitatea Plus</string>
       <string>ROMANIA: Realitatea Plus TV</string>
       <string>RUMANIA: Realitatea Plus TV</string>
     </Aliases>
@@ -3810,6 +3812,7 @@
     <GroupId>foreign</GroupId>
     <LogoUrl>https://static.iptv-epg.com/nl/TV5Monde.nl.png</LogoUrl>
     <Aliases>
+      <string>INT: TV5 Monde</string>
       <string>RO: TV5 Monde Europe</string>
       <string>RO: TV5 Monde HD</string>
       <string>RO: TV5 Monde</string>
@@ -3849,13 +3852,24 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>tvcity</Id>
-    <IsEnabled>false</IsEnabled>
+    <IsEnabled>true</IsEnabled>
     <Name>TV City</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://mywebtv.info/img/tvicons/tvcityro.png</LogoUrl>
     <Aliases>
+      <string>RO: TV City București</string>
       <string>RO: TV City</string>
       <string>TV City</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>albaCarolina</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Alba Carolina TV</Name>
+    <GroupId>local-transilvania</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: Alba Carolina TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -4563,8 +4577,9 @@
     <GroupId>unknown</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
-      <string>Televiziunea InfoHD</string>
       <string>Info HD</string>
+      <string>RO: Info HD</string>
+      <string>Televiziunea InfoHD</string>
     </Aliases>
   </ChannelDefinitionEntity>
 </ArrayOfChannelDefinitionEntity>
