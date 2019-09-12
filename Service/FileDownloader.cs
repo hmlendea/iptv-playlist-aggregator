@@ -1,23 +1,31 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
+using IptvPlaylistAggregator.Configuration;
+
 namespace IptvPlaylistAggregator.Service
 {
     public sealed class FileDownloader : IFileDownloader
     {
         readonly IDnsResolver dnsResolver;
         readonly ICacheManager cache;
+        readonly ApplicationSettings applicationSettings;
 
         readonly HttpClient httpClient;
 
         public FileDownloader(
             IDnsResolver dnsResolver,
-            ICacheManager cache)
+            ICacheManager cache,
+            ApplicationSettings applicationSettings)
         {
             this.dnsResolver = dnsResolver;
             this.cache = cache;
+            this.applicationSettings = applicationSettings;
 
             httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Add(
+                "User-Agent",
+                applicationSettings.UserAgent);
         }
 
         public async Task<string> TryDownloadStringAsync(string url)

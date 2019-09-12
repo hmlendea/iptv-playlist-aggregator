@@ -9,5 +9,7 @@ namespace IptvPlaylistAggregator.Configuration
         public bool CanIncludeUnmatchedChannels { get; set; }
 
         public bool AreTvGuideTagsEnabled { get; set; }
+
+        public string UserAgent { get; set; }
     }
 }
