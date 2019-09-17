@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 using NuciDAL.Repositories;
 using NuciLog;
+using NuciLog.Configuration;
 using NuciLog.Core;
 
 using IptvPlaylistAggregator.Configuration;
@@ -19,6 +20,7 @@ namespace IptvPlaylistAggregator
         static ApplicationSettings applicationSettings;
         static CacheSettings cacheSettings;
         static DataStoreSettings dataStoreSettings;
+        static NuciLoggerSettings nuciLoggerSettings;
 
         public static void Main(string[] args)
         {
@@ -27,15 +29,18 @@ namespace IptvPlaylistAggregator
             applicationSettings = new ApplicationSettings();
             cacheSettings = new CacheSettings();
             dataStoreSettings = new DataStoreSettings();
+            nuciLoggerSettings = new NuciLoggerSettings();
 
             config.Bind(nameof(ApplicationSettings), applicationSettings);
             config.Bind(nameof(CacheSettings), cacheSettings);
             config.Bind(nameof(DataStoreSettings), dataStoreSettings);
+            config.Bind(nameof(NuciLoggerSettings), nuciLoggerSettings);
 
             IServiceProvider serviceProvider = new ServiceCollection()
                 .AddSingleton(applicationSettings)
                 .AddSingleton(cacheSettings)
                 .AddSingleton(dataStoreSettings)
+                .AddSingleton(nuciLoggerSettings)
                 .AddSingleton<ICacheManager, CacheManager>()
                 .AddSingleton<IDnsResolver, DnsResolver>()
                 .AddSingleton<IFileDownloader, FileDownloader>()
