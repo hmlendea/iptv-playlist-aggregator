@@ -45,9 +45,13 @@ namespace IptvPlaylistAggregator.Service
             {
                 isAlive = await IsPlaylistPlayableAsync(url);
             }
-            else
+            else if (!url.EndsWith(".ts"))
             {
                 isAlive = await IsStreamPlayableAsync(url);
+            }
+            else
+            {
+                isAlive = false;
             }
 
             SaveToCache(url, isAlive);
