@@ -1470,6 +1470,7 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/drochia-tv.png</LogoUrl>
     <Aliases>
+      <string>Drochia TV</string>
       <string>MD: Drochia TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
