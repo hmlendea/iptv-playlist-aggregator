@@ -154,6 +154,7 @@
     <LogoUrl>https://agro-tv.ro/wp-content/uploads/2018/09/favicon.png</LogoUrl>
     <Aliases>
       <string>Agro RO</string>
+      <string>Agro TV RO</string>
       <string>Agro TV</string>
       <string>RO: Agro TV</string>
       <string>RO: Agro</string>
@@ -225,6 +226,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/animal_planet.png</LogoUrl>
     <Aliases>
       <string>Animal Planet HD</string>
+      <string>Animal Planet RO</string>
       <string>Animal Planet</string>
       <string>RO: Animal Planet FHD</string>
       <string>RO: Animal Planet HD</string>
@@ -1321,6 +1323,7 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
     <Aliases>
+      <string>Discovery ID RO</string>
       <string>RO: Discovery ID</string>
       <string>RO: ID Investigation Discovery HD</string>
       <string>RO: Investigation Discovery FHD</string>
@@ -1705,6 +1708,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmbox_family.png</LogoUrl>
     <Aliases>
+      <string>FilmBox Family RO</string>
       <string>FilmBox Family</string>
       <string>RO: Film Box Family HD</string>
       <string>RO: Film Box Family</string>
@@ -1718,6 +1722,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmbox_plus.png</LogoUrl>
     <Aliases>
       <string>FilmBox Plus INT</string>
+      <string>FilmBox Plus RO</string>
       <string>FilmBox Plus</string>
       <string>RO: Film Box Plus HD</string>
       <string>RO: Film Box Plus INT</string>
@@ -1731,6 +1736,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmbox_premium.png</LogoUrl>
     <Aliases>
+      <string>FilmBox Premium RO</string>
       <string>FilmBox Premium</string>
       <string>RO: Film Box Premium HD</string>
       <string>RO: Film Box Premium</string>
@@ -2637,6 +2643,7 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://www.nationalgeographic.com/etc/designs/platform/refresh/images/favicon.ngsversion.5cb68203.png</LogoUrl>
     <Aliases>
+      <string>Nat Geo RO</string>
       <string>National Geographic FHD RO</string>
       <string>National Geographic FHD</string>
       <string>National Geographic HD RO</string>
@@ -2698,6 +2705,7 @@
     <GroupId>general</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Na%C5%A3ional24Plus.ro.png</LogoUrl>
     <Aliases>
+      <string>National 24 Plus RO</string>
       <string>National 24 Plus</string>
       <string>National 24</string>
       <string>RO: N24 Plus</string>
@@ -3020,11 +3028,12 @@
     <GroupId>international</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd41bc33b1566d8b45f7.png</LogoUrl>
     <Aliases>
-      <string>Pro TV International RO</string>
-      <string>Pro TV International</string>
+      <string>Pro TV Internacional RO</string>
+      <string>Pro TV Internațional RO</string>
+      <string>Pro TV Internațional</string>
       <string>RO: Pro TV INT</string>
-      <string>RO: Pro TV International</string>
-      <string>ROM: Pro TV International</string>
+      <string>RO: Pro TV Internațional</string>
+      <string>ROM: Pro TV Internațional</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3773,6 +3782,7 @@
       <string>ROMANIA: Trinitas</string>
       <string>RUMANIA: Trinitas</string>
       <string>Trinitas RO</string>
+      <string>Trinitas TV RO</string>
       <string>Trinitas</string>
     </Aliases>
   </ChannelDefinitionEntity>
