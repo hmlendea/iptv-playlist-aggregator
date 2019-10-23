@@ -888,6 +888,7 @@
       <string>Cromtel TV</string>
       <string>Cromtel</string>
       <string>RO: Cromtel TV HD</string>
+      <string>RO: Cromtel TV Rădăuți</string>
       <string>RO: Cromtel TV</string>
       <string>RO: TV Cromtel</string>
       <string>ROMANIA: Cromtel TV HD</string>
@@ -1490,6 +1491,7 @@
       <string>RO: E! Entertainment FHD</string>
       <string>RO: E! Entertainment HD</string>
       <string>RO: E! Entertainment</string>
+      <string>RO: E!</string>
       <string>ROM: E!</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1647,6 +1649,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/extreme_sports.png</LogoUrl>
     <Aliases>
       <string>RO: Extreme Sport</string>
+      <string>RO: Extreme Sports Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -4124,6 +4127,7 @@
     <GroupId>local-unknown</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-sat.png</LogoUrl>
     <Aliases>
+      <string>TVSAT</string>
       <string>RO: TVSAT</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -4406,6 +4410,7 @@
     <GroupId>music</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
+      <string>Mooz Dance</string>
       <string>RO: Mooz Dance</string>
     </Aliases>
   </ChannelDefinitionEntity>
