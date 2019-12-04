@@ -53,6 +53,7 @@
     <LogoUrl>https://a7tv.ro/wp-content/uploads/2017/12/logo-a7tv.png</LogoUrl>
     <Aliases>
       <string>A7 TV RO</string>
+      <string>RO: A7 TV FHD</string>
       <string>RO: A7 TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -68,6 +69,7 @@
       <string>Pro Gold</string>
       <string>RO: Acasa Gold TV</string>
       <string>RO: Acasa Gold</string>
+      <string>RO: P.Gold</string>
       <string>RO: Pro Gold HD</string>
       <string>RO: Pro Gold</string>
       <string>ROM: Pro Gold</string>
@@ -197,6 +199,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/alpha_media.png</LogoUrl>
     <Aliases>
       <string>Alfa Media TV</string>
+      <string>Alfa Media</string>
       <string>Alpha Media TV</string>
       <string>RO: Alpha Media TV</string>
       <string>RO: Alpha Media</string>
@@ -269,6 +272,7 @@
       <string>RO: Antena Cook</string>
       <string>RO: Antena Play Cook</string>
       <string>RO: Cook &amp; Play</string>
+      <string>RO: Cook and Play</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -509,6 +513,7 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bbc_earth.png</LogoUrl>
     <Aliases>
+      <string>BBC Earth HD RO</string>
       <string>BBC Earth HD</string>
       <string>RO: BBC Earth FHD</string>
       <string>RO: BBC Earth HD</string>
@@ -768,6 +773,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Cinemax2.ro.png</LogoUrl>
     <Aliases>
+      <string>CineMAX 2 FHD</string>
       <string>CineMAX 2 HD RO</string>
       <string>CineMAX 2 HD</string>
       <string>CineMAX 2 RO</string>
@@ -887,6 +893,7 @@
       <string>Cromtel TV RO</string>
       <string>Cromtel TV</string>
       <string>Cromtel</string>
+      <string>RO: Cmtel TV HD</string>
       <string>RO: Cromtel TV HD</string>
       <string>RO: Cromtel TV Rădăuți</string>
       <string>RO: Cromtel TV</string>
@@ -904,6 +911,7 @@
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/curier-tv.png</LogoUrl>
     <Aliases>
+      <string>RO: Curier Arges</string>
       <string>RO: Curier TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -929,6 +937,7 @@
       <string>DaVinci Learning RO</string>
       <string>DaVinci Learning</string>
       <string>RO: DaVinci Learning</string>
+      <string>RO: DaVinci</string>
       <string>ROM: DaVinci Learning</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1098,6 +1107,7 @@
       <string>Digi Animal World</string>
       <string>RO: Digi Animal World FHD</string>
       <string>RO: Digi Animal World HD</string>
+      <string>RO: Digi Animal World SD</string>
       <string>RO: Digi Animal World</string>
       <string>ROM: Digi Animal World</string>
       <string>ROMANIA: Digi Animal World HD</string>
@@ -1328,7 +1338,7 @@
       <string>RO: Discovery ID</string>
       <string>RO: ID Investigation Discovery HD</string>
       <string>RO: Investigation Discovery FHD</string>
-      <string>RO: Investigation Disvovery HD</string>
+      <string>RO: Investigation Discovery HD</string>
       <string>RO: Investigation Disvovery</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1775,6 +1785,7 @@
       <string>Film Now FHD</string>
       <string>Film Now HD RO</string>
       <string>Film Now HD</string>
+      <string>RO: Digi Filim HD</string>
       <string>RO: Digi Film FHD</string>
       <string>RO: Digi Film HD</string>
       <string>RO: Digi Film Now HD</string>
@@ -2186,6 +2197,7 @@
       <string>Intermedia TV</string>
       <string>RO: Intermedia Suceava</string>
       <string>RO: Intermedia TV</string>
+      <string>RO: Intermedia</string>
       <string>ROM: Intermedia Suceava</string>
       <string>ROMANIA: Intermedia TV</string>
       <string>RUMANIA: Intermedia TV</string>
@@ -2544,6 +2556,7 @@
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>MTV Live</string>
+      <string>RO: MTV Live FHD</string>
       <string>RO: MTV Live HD</string>
       <string>RO: MTV Live</string>
     </Aliases>
@@ -2663,6 +2676,7 @@
       <string>RO: National Geographic HD</string>
       <string>RO: National Geographic SD</string>
       <string>RO: National Geographic</string>
+      <string>RO: NGC HD</string>
       <string>RO: NGC</string>
       <string>ROM: Nat Geo</string>
       <string>ROM: National Geographic</string>
@@ -2680,6 +2694,7 @@
     <LogoUrl>https://static.iptv-epg.com/ro/NatgeoWild.ro.png</LogoUrl>
     <Aliases>
       <string>Nat Geo Wild RO</string>
+      <string>National Geo Wild</string>
       <string>National Geographic Wild FHD RO</string>
       <string>National Geographic Wild FHD</string>
       <string>National Geographic Wild HD RO</string>
@@ -2836,6 +2851,7 @@
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/nova-tv-brasov.png</LogoUrl>
     <Aliases>
+      <string>Nova TV</string>
       <string>RO: Nova TV Brasov</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2947,6 +2963,8 @@
       <string>Pro 2</string>
       <string>RO: Acasa HD</string>
       <string>RO: Acasa TV</string>
+      <string>RO: P.2 FHD</string>
+      <string>RO: Pro 2 (Acasa TV)</string>
       <string>RO: Pro 2 FHD</string>
       <string>RO: Pro 2 HD</string>
       <string>RO: Pro 2</string>
@@ -2965,6 +2983,7 @@
       <string>Pro Cinema RO</string>
       <string>Pro Cinema</string>
       <string>RO: Pro Cinema HD</string>
+      <string>RO: Pro Cinema SD</string>
       <string>RO: Pro Cinema</string>
       <string>ROM: Pro Cinema</string>
     </Aliases>
@@ -2998,6 +3017,7 @@
     <GroupId>general</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45a7.png</LogoUrl>
     <Aliases>
+      <string>Pro TV FHD RO</string>
       <string>Pro TV HD RO</string>
       <string>Pro TV HD</string>
       <string>Pro TV RO</string>
@@ -3076,6 +3096,7 @@
       <string>Pro X HD</string>
       <string>Pro X RO</string>
       <string>Pro X</string>
+      <string>RO: P-X FHD</string>
       <string>RO: Pro X FHD</string>
       <string>RO: Pro X HD</string>
       <string>RO: Pro X</string>
@@ -3360,6 +3381,7 @@
     <GroupId>local-oltenia</GroupId>
     <LogoUrl>https://tele2drobeta.ro/wp-content/uploads/2018/03/cropped-SIGLA_00002.png</LogoUrl>
     <Aliases>
+      <string>RO: Tele Drobeta 2</string>
       <string>RO: Tele2 Drobeta</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -3397,8 +3419,10 @@
       <string>RO: Dolce Sport 1</string>
       <string>RO: Telekom 1 HD</string>
       <string>RO: Telekom 1</string>
+      <string>RO: Telekom Sport 1 [Live During Events Only]</string>
       <string>RO: Telekom Sport 1 FHD</string>
       <string>RO: Telekom Sport 1 HD</string>
+      <string>RO: Telekom Sport 1 Ultra HD</string>
       <string>RO: Telekom Sport 1</string>
       <string>ROM: Telekom Sport 1</string>
       <string>ROMANIA: Telekom Sport 1 HD</string>
@@ -3429,8 +3453,10 @@
       <string>RO: Dolce Sport 2</string>
       <string>RO: Telekom 2 HD</string>
       <string>RO: Telekom 2</string>
+      <string>RO: Telekom Sport 2 [Live During Events Only]</string>
       <string>RO: Telekom Sport 2 FHD</string>
       <string>RO: Telekom Sport 2 HD</string>
+      <string>RO: Telekom Sport 2 Ultra HD</string>
       <string>RO: Telekom Sport 2</string>
       <string>ROM: Telekom Sport 2</string>
       <string>ROMANIA: Telekom Sport 2 HD</string>
@@ -3461,8 +3487,10 @@
       <string>RO: Dolce Sport 3</string>
       <string>RO: Telekom 3 HD</string>
       <string>RO: Telekom 3</string>
+      <string>RO: Telekom Sport 3 [Live During Events Only]</string>
       <string>RO: Telekom Sport 3 FHD</string>
       <string>RO: Telekom Sport 3 HD</string>
+      <string>RO: Telekom Sport 3 Ultra HD</string>
       <string>RO: Telekom Sport 3</string>
       <string>ROM: Telekom Sport 3</string>
       <string>ROMANIA: Telekom Sport 3 HD</string>
@@ -3493,8 +3521,10 @@
       <string>RO: Dolce Sport 4</string>
       <string>RO: Telekom 4 HD</string>
       <string>RO: Telekom 4</string>
+      <string>RO: Telekom Sport 4 [Live During Events Only]</string>
       <string>RO: Telekom Sport 4 FHD</string>
       <string>RO: Telekom Sport 4 HD</string>
+      <string>RO: Telekom Sport 4 Ultra HD</string>
       <string>RO: Telekom Sport 4</string>
       <string>ROM: Telekom Sport 4</string>
       <string>ROMANIA: Telekom Sport 4 HD</string>
@@ -3525,8 +3555,10 @@
       <string>RO: Dolce Sport 5</string>
       <string>RO: Telekom 5 HD</string>
       <string>RO: Telekom 5</string>
+      <string>RO: Telekom Sport 5 [Live During Events Only]</string>
       <string>RO: Telekom Sport 5 FHD</string>
       <string>RO: Telekom Sport 5 HD</string>
+      <string>RO: Telekom Sport 5 Ultra HD</string>
       <string>RO: Telekom Sport 5</string>
       <string>ROM: Telekom Sport 5</string>
       <string>ROMANIA: Telekom Sport 5 HD</string>
@@ -3557,8 +3589,10 @@
       <string>RO: Dolce Sport 6</string>
       <string>RO: Telekom 6 HD</string>
       <string>RO: Telekom 6</string>
+      <string>RO: Telekom Sport 6 [Live During Events Only]</string>
       <string>RO: Telekom Sport 6 FHD</string>
       <string>RO: Telekom Sport 6 HD</string>
+      <string>RO: Telekom Sport 6 Ultra HD</string>
       <string>RO: Telekom Sport 6</string>
       <string>ROM: Telekom Sport 6</string>
       <string>ROMANIA: Telekom Sport 6 HD</string>
@@ -3760,6 +3794,7 @@
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/travel_mix.png</LogoUrl>
     <Aliases>
+      <string>RO: Travel Mix FHD</string>
       <string>RO: Travel Mix S1</string>
       <string>RO: Travel Mix S2</string>
       <string>RO: Travel Mix TV</string>
@@ -3930,6 +3965,7 @@
     <LogoUrl>https://static.iptv-epg.com/ro/TVPaprika.ro.png</LogoUrl>
     <Aliases>
       <string>Paprika</string>
+      <string>RO: Paprika TV</string>
       <string>RO: Paprika</string>
       <string>RO: TV Paprika</string>
       <string>ROM: TV Paprika</string>
@@ -4197,8 +4233,10 @@
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/vh1.png</LogoUrl>
     <Aliases>
+      <string>RO: VH1 RO</string>
       <string>RO: VH1</string>
-      <string>ROM: VH 1</string>
+      <string>ROM: VH1 RO</string>
+      <string>ROM: VH1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -4209,7 +4247,7 @@
     <LogoUrl>http://stvron.com/canale/mari/vh1.png</LogoUrl>
     <Aliases>
       <string>RO: VH1 Classic</string>
-      <string>ROM: VH 1 Classic</string>
+      <string>ROM: VH1 Classic</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -4411,6 +4449,8 @@
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>Mooz Dance</string>
+      <string>RO: Mooz Dance FHD</string>
+      <string>RO: Mooz Dance HD</string>
       <string>RO: Mooz Dance</string>
     </Aliases>
   </ChannelDefinitionEntity>
