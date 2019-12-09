@@ -691,7 +691,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Cartoon Network</Name>
     <GroupId>kids</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/220px-Cartoon_Network_2010_logo.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/canal33.png</LogoUrl>
     <Aliases>
       <string>Cartoon Network RO</string>
       <string>Cartoon Network</string>
@@ -864,7 +864,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Cornea TV</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>http://5.2.150.246/corneatv/images/corneatv-logo.png</LogoUrl>
+    <LogoUrl>http://corneatv.ro/images/corneatv-logo.png</LogoUrl>
     <Aliases>
       <string>RO: Cornea TV</string>
     </Aliases>
@@ -888,7 +888,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Cromtel</Name>
     <GroupId>local-bucovina</GroupId>
-    <LogoUrl>http://ik.imagekit.io/ulangotv/image/upload/469249_logo_cromtel_tv1.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cromtel.png</LogoUrl>
     <Aliases>
       <string>Cromtel TV RO</string>
       <string>Cromtel TV</string>
@@ -2106,7 +2106,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Iași TV Life</Name>
     <GroupId>local-moldova</GroupId>
-    <LogoUrl>http://www.iasitvlife.ro/images/itv-logo.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/iasi_tv_life.png</LogoUrl>
     <Aliases>
       <string>Iasi TV Life</string>
       <string>Iasi TV</string>
@@ -2264,7 +2264,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Kapital TV</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/kapital-tv.png</LogoUrl>
+    <LogoUrl>http://www.kapitaltv.ro/wp-content/uploads/2016/10/logo-ktv-1.png</LogoUrl>
     <Aliases>
       <string>Kapital TV RO</string>
       <string>Kapital TV</string>
@@ -2658,7 +2658,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>National Geographic</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>https://www.nationalgeographic.com/etc/designs/platform/refresh/images/favicon.ngsversion.5cb68203.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/national_geographic.png</LogoUrl>
     <Aliases>
       <string>Nat Geo RO</string>
       <string>National Geographic FHD RO</string>
@@ -2691,7 +2691,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>National Geographic Wild</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/NatgeoWild.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/national_geographic_wild.png</LogoUrl>
     <Aliases>
       <string>Nat Geo Wild RO</string>
       <string>National Geo Wild</string>
@@ -2791,7 +2791,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Nord Est TV</Name>
     <GroupId>local-moldova</GroupId>
-    <LogoUrl>https://ik.imagekit.io/ulangotv/image/upload/469250_logo_nest_tv1.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nest_tv.png</LogoUrl>
     <Aliases>
       <string>NEst TV</string>
       <string>RO: NEst TV</string>
@@ -3113,7 +3113,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Publika TV</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/f/f9/Publika.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/publika.png</LogoUrl>
     <Aliases>
       <string>MD: Publika TV</string>
       <string>Publika TV RO</string>
@@ -3904,7 +3904,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>TV City</Name>
     <GroupId>local-muntenia</GroupId>
-    <LogoUrl>http://mywebtv.info/img/tvicons/tvcityro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_city.png</LogoUrl>
     <Aliases>
       <string>RO: TV City București</string>
       <string>RO: TV City</string>
@@ -3916,7 +3916,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Alba Carolina TV</Name>
     <GroupId>local-transilvania</GroupId>
-    <LogoUrl></LogoUrl>
+    <LogoUrl>https://www.albacarolinatv.ro/wp-content/uploads/2018/05/alba-carolina-tv-logo250.png</LogoUrl>
     <Aliases>
       <string>RO: Alba Carolina TV</string>
     </Aliases>
