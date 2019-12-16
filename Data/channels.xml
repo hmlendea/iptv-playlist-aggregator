@@ -4630,8 +4630,8 @@
     <Id>infoHD</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Info HD</Name>
-    <GroupId>unknown</GroupId>
-    <LogoUrl></LogoUrl>
+    <GroupId>local-transilvania</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/info_hd.png</LogoUrl>
     <Aliases>
       <string>Info HD</string>
       <string>RO: Info HD</string>
