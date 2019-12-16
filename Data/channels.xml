@@ -538,7 +538,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Bollywood Clasic</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bollywood_Clasic.png/200px-Bollywood_Clasic.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood_classic.png</LogoUrl>
     <Aliases>
       <string>BO Clasic</string>
       <string>Bollywood Classic</string>
@@ -551,7 +551,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Bollywood</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bollywood_HD_2018.png/200px-Bollywood_HD_2018.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood.png</LogoUrl>
     <Aliases>
       <string>BO TV</string>
       <string>Bollywood HD</string>
@@ -1272,7 +1272,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Digi World</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/DigiWorld.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_world.png</LogoUrl>
     <Aliases>
       <string>Digi World FHD RO</string>
       <string>Digi World FHD</string>
@@ -2642,6 +2642,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nasul_tv.png</LogoUrl>
     <Aliases>
+      <string>Nasu TV (New!)</string>
       <string>Nasu TV FHD RO</string>
       <string>Nasu TV FHD</string>
       <string>Nasu TV HD RO</string>
