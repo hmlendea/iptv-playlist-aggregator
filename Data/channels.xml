@@ -2511,7 +2511,7 @@
     <Id>MoozRo.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>MOOZ RO!</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/5/50/Dolce_mooz_ro.png/220px-Dolce_mooz_ro.png</LogoUrl>
     <Aliases>
       <string>Mooz FHD RO</string>
