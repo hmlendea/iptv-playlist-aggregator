@@ -808,6 +808,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ciresarii_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Ciresarii TV</string>
+      <string>RO: Ciresarii</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2642,13 +2643,13 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nasul_tv.png</LogoUrl>
     <Aliases>
-      <string>Nasu TV (New!)</string>
-      <string>Nasu TV FHD RO</string>
-      <string>Nasu TV FHD</string>
-      <string>Nasu TV HD RO</string>
-      <string>Nasu TV HD</string>
-      <string>Nasu TV RO</string>
-      <string>Nasu TV</string>
+      <string>Nasul TV (New!)</string>
+      <string>Nasul TV FHD RO</string>
+      <string>Nasul TV FHD</string>
+      <string>Nasul TV HD RO</string>
+      <string>Nasul TV HD</string>
+      <string>Nasul TV RO</string>
+      <string>Nasul TV</string>
       <string>Nasul TV</string>
       <string>RO: Nasul TV</string>
       <string>ROM: Nasul TV</string>
@@ -4453,7 +4454,7 @@
     <GroupId>unknown</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
-      <string>RO: DocuBox</string>
+      <string>RO: Info Pescar</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
