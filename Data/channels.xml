@@ -3137,7 +3137,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Realitatea</Name>
     <GroupId>news</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/realitatea-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_tv.png</LogoUrl>
     <Aliases>
       <string>Realitatea HD</string>
       <string>Realitatea TV FHD RO</string>
