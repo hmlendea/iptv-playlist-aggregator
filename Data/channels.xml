@@ -1510,7 +1510,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Elita TV</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/elita-tv-rezina.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/elita_tv.png</LogoUrl>
     <Aliases>
       <string>Elita TV Rezina</string>
       <string>Elita TV</string>
