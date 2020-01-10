@@ -203,6 +203,7 @@
       <string>Alpha Media TV</string>
       <string>RO: Alpha Media TV</string>
       <string>RO: Alpha Media</string>
+      <string>RO: TV Alpha Media</string>
       <string>ROMANIA: Alpha Media TV</string>
       <string>RUMANIA: Alpha Media TV</string>
     </Aliases>
@@ -807,6 +808,7 @@
     <GroupId>religious</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ciresarii_tv.png</LogoUrl>
     <Aliases>
+      <string>RO: Ciresarii</string>
       <string>RO: Ciresarii TV</string>
       <string>RO: Ciresarii</string>
     </Aliases>
@@ -3624,10 +3626,11 @@
     <GroupId>local-moldova</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tele-m-botosani.png</LogoUrl>
     <Aliases>
-      <string>RO: TeleM Botosani</string>
-      <string>RO: TeleMoldovaBotosani</string>
-      <string>TeleM Botosani</string>
-      <string>TeleMoldovaBotosani</string>
+      <string>RO: TeleM Botoșani</string>
+      <string>RO: TeleMoldova Botoșani</string>
+      <string>TeleM Botoșani RO</string>
+      <string>TeleM Botoșani</string>
+      <string>TeleMoldova Botoșani</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3742,6 +3745,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tnt.png</LogoUrl>
     <Aliases>
       <string>RO: TNT HD</string>
+      <string>RO: TNT RO</string>
       <string>RO: TNT TV</string>
       <string>RO: TNT</string>
       <string>ROM: TNT</string>
