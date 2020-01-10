@@ -269,6 +269,7 @@
     <GroupId>entertainment</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/cook-play.png</LogoUrl>
     <Aliases>
+      <string>Antena Cook and Play</string>
       <string>RO: Antena Cook Play</string>
       <string>RO: Antena Cook</string>
       <string>RO: Antena Play Cook</string>
@@ -514,6 +515,8 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bbc_earth.png</LogoUrl>
     <Aliases>
+      <string>BBC Earth FHD RO</string>
+      <string>BBC Earth FHD</string>
       <string>BBC Earth HD RO</string>
       <string>BBC Earth HD</string>
       <string>RO: BBC Earth FHD</string>
@@ -602,6 +605,7 @@
     <GroupId>local-bucovina</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/bucovina-tv.png</LogoUrl>
     <Aliases>
+      <string>Bucovina TV RO</string>
       <string>Bucovina TV</string>
       <string>RO: Bucovina TV</string>
     </Aliases>
@@ -808,9 +812,8 @@
     <GroupId>religious</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ciresarii_tv.png</LogoUrl>
     <Aliases>
-      <string>RO: Ciresarii</string>
-      <string>RO: Ciresarii TV</string>
-      <string>RO: Ciresarii</string>
+      <string>RO: Cireșarii TV</string>
+      <string>RO: Cireșarii</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2650,6 +2653,7 @@
       <string>Nasul TV FHD</string>
       <string>Nasul TV HD RO</string>
       <string>Nasul TV HD</string>
+      <string>Nasul TV New</string>
       <string>Nasul TV RO</string>
       <string>Nasul TV</string>
       <string>Nasul TV</string>
@@ -2730,6 +2734,7 @@
     <Aliases>
       <string>National 24 Plus RO</string>
       <string>National 24 Plus</string>
+      <string>National 24 RO</string>
       <string>National 24</string>
       <string>RO: N24 Plus</string>
       <string>RO: N24</string>
@@ -3408,6 +3413,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Logo_Telekom_Sport_1_%282017%29.svg/256px-Logo_Telekom_Sport_1_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>Dolce Sport 1 HD</string>
+      <string>Dolce Sport 1 RO</string>
       <string>Dolce Sport 1</string>
       <string>RO: Dolce Sport 1 FHD</string>
       <string>RO: Dolce Sport 1 HD</string>
@@ -3442,6 +3448,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Logo_Telekom_Sport_2_%282017%29.svg/256px-Logo_Telekom_Sport_2_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>Dolce Sport 2 HD</string>
+      <string>Dolce Sport 2 RO</string>
       <string>Dolce Sport 2</string>
       <string>RO: Dolce Sport 2 FHD</string>
       <string>RO: Dolce Sport 2 HD</string>
@@ -3476,6 +3483,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_Telekom_Sport_3_%282017%29.svg/256px-Logo_Telekom_Sport_3_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>Dolce Sport 3 HD</string>
+      <string>Dolce Sport 3 RO</string>
       <string>Dolce Sport 3</string>
       <string>RO: Dolce Sport 3 FHD</string>
       <string>RO: Dolce Sport 3 HD</string>
@@ -3510,6 +3518,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Logo_Telekom_Sport_4_%282017%29.svg/256px-Logo_Telekom_Sport_4_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>Dolce Sport 4 HD</string>
+      <string>Dolce Sport 4 RO</string>
       <string>Dolce Sport 4</string>
       <string>RO: Dolce Sport 4 FHD</string>
       <string>RO: Dolce Sport 4 HD</string>
@@ -3544,6 +3553,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Logo_Telekom_Sport_5_%282017%29.svg/256px-Logo_Telekom_Sport_5_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>Dolce Sport 5 HD</string>
+      <string>Dolce Sport 5 RO</string>
       <string>Dolce Sport 5</string>
       <string>RO: Dolce Sport 5 FHD</string>
       <string>RO: Dolce Sport 5 HD</string>
@@ -3578,6 +3588,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Telekom_Sport_6_%282017%29.svg/256px-Logo_Telekom_Sport_6_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>Dolce Sport 6 HD</string>
+      <string>Dolce Sport 6 RO</string>
       <string>Dolce Sport 6</string>
       <string>RO: Dolce Sport 6 FHD</string>
       <string>RO: Dolce Sport 6 HD</string>
