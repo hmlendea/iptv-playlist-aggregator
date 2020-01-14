@@ -2649,6 +2649,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/1_music_channel.png</LogoUrl>
     <Aliases>
+      <string>1 Music Channel RO</string>
       <string>1 Music Channel</string>
       <string>Music Channel RO</string>
       <string>Music Channel</string>
@@ -2983,6 +2984,7 @@
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45ab.png</LogoUrl>
     <Aliases>
       <string>Acasa HD</string>
+      <string>Acasa TV HD</string>
       <string>Acasa TV</string>
       <string>Acasa</string>
       <string>Pro 2 FHD RO</string>
