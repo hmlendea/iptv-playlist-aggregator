@@ -360,6 +360,19 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>Apolonia.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Apolonia TV</Name>
+    <GroupId></GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>Apolonia TV</string>
+      <string>RO: Apollonia TV</string>
+      <string>RO: Apolonia TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>arcadia-tv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Arcadia World</Name>
     <GroupId>educational</GroupId>
