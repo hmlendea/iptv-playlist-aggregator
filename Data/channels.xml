@@ -86,6 +86,7 @@
     <Aliases>
       <string>MD: Acasa TV</string>
       <string>MD: Pro 2</string>
+      <string>RO: Acasa Moldavia TV</string>
       <string>ROMANIA: Acasa Moldavia TV</string>
       <string>RUMANIA: Acasa Moldavia TV</string>
     </Aliases>
@@ -359,7 +360,6 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>arcadia-tv</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Arcadia World</Name>
     <GroupId>educational</GroupId>
@@ -545,6 +545,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood_classic.png</LogoUrl>
     <Aliases>
       <string>BO Clasic</string>
+      <string>Bollywood Clasic RO</string>
       <string>Bollywood Classic</string>
       <string>RO: Bollywood Clasic</string>
       <string>RO: Bollywood Classic</string>
@@ -559,6 +560,7 @@
     <Aliases>
       <string>BO TV</string>
       <string>Bollywood HD</string>
+      <string>Bollywood TV Film</string>
       <string>Bollywood</string>
       <string>Boolywood HD</string>
       <string>Boolywood</string>
@@ -1507,7 +1509,9 @@
       <string>RO: E! Entertainment FHD</string>
       <string>RO: E! Entertainment HD</string>
       <string>RO: E! Entertainment</string>
+      <string>RO: E! HD</string>
       <string>RO: E!</string>
+      <string>RO: Entertainment!</string>
       <string>ROM: E!</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1614,6 +1618,7 @@
       <string>RO: EuroSport 1 HD</string>
       <string>RO: EuroSport 1</string>
       <string>RO: EuroSport</string>
+      <string>RO: EUSport 1</string>
       <string>ROM: EuroSport 1</string>
       <string>ROM: EuroSport</string>
       <string>ROMANIA: EuroSport 1 FHD</string>
@@ -1648,6 +1653,7 @@
       <string>RO: EuroSport 2 HD</string>
       <string>RO: EuroSport 2 RO</string>
       <string>RO: EuroSport 2</string>
+      <string>RO: EUSport 2</string>
       <string>ROM: EuroSport 2</string>
       <string>ROMANIA: EuroSport 2 FHD</string>
       <string>ROMANIA: EuroSport 2 HD</string>
@@ -2648,17 +2654,17 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nasul_tv.png</LogoUrl>
     <Aliases>
-      <string>Nasul TV (New!)</string>
-      <string>Nasul TV FHD RO</string>
-      <string>Nasul TV FHD</string>
-      <string>Nasul TV HD RO</string>
-      <string>Nasul TV HD</string>
-      <string>Nasul TV New</string>
-      <string>Nasul TV RO</string>
-      <string>Nasul TV</string>
-      <string>Nasul TV</string>
-      <string>RO: Nasul TV</string>
-      <string>ROM: Nasul TV</string>
+      <string>Nașul TV (New!)</string>
+      <string>Nașul TV FHD RO</string>
+      <string>Nașul TV FHD</string>
+      <string>Nașul TV HD RO</string>
+      <string>Nașul TV HD</string>
+      <string>Nașul TV New</string>
+      <string>Nașul TV RO</string>
+      <string>Nașul TV</string>
+      <string>Nașul TV</string>
+      <string>RO: Nașul TV</string>
+      <string>ROM: Nașul TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2711,6 +2717,7 @@
       <string>National Geographic Wild RO</string>
       <string>National Geographic Wild</string>
       <string>NGC Wild</string>
+      <string>RO: Nat Geo Wild HD ROM MultiSub</string>
       <string>RO: Nat Geo Wild HD</string>
       <string>RO: Nat Geo Wild RO</string>
       <string>RO: Nat Geo Wild SD</string>
@@ -2972,6 +2979,7 @@
       <string>Pro 2 RO</string>
       <string>Pro 2</string>
       <string>RO: Acasa HD</string>
+      <string>RO: Acasa TV HD</string>
       <string>RO: Acasa TV</string>
       <string>RO: P.2 FHD</string>
       <string>RO: Pro 2 (Acasa TV)</string>
