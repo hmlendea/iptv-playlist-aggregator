@@ -2684,6 +2684,7 @@
       <string>RO: National Geographic HD</string>
       <string>RO: National Geographic SD</string>
       <string>RO: National Geographic</string>
+      <string>RO: NG RO</string>
       <string>RO: NGC HD</string>
       <string>RO: NGC</string>
       <string>ROM: Nat Geo</string>
@@ -3065,8 +3066,10 @@
       <string>Pro TV Internacional RO</string>
       <string>Pro TV Internațional RO</string>
       <string>Pro TV Internațional</string>
+      <string>RO: Pro INT TV</string>
       <string>RO: Pro TV INT</string>
       <string>RO: Pro TV Internațional</string>
+      <string>RO: PTV Internațional</string>
       <string>ROM: Pro TV Internațional</string>
     </Aliases>
   </ChannelDefinitionEntity>
