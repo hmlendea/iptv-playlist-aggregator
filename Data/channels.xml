@@ -1529,6 +1529,18 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>DunaTV.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Duna</Name>
+    <GroupId></GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: Duna HD</string>
+      <string>RO: Duna TV</string>
+      <string>RO: Duna</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>ElitaTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Elita TV</Name>
@@ -1897,6 +1909,16 @@
     <Aliases>
       <string>France24</string>
       <string>RO: France24</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>GagiuTV.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Gagiu TV</Name>
+    <GroupId></GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: Gagiu TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2722,6 +2744,7 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/national_geographic_wild.png</LogoUrl>
     <Aliases>
+      <string>Nat Geo Wild HD ROM MultiSub</string>
       <string>Nat Geo Wild RO</string>
       <string>National Geo Wild</string>
       <string>National Geographic Wild FHD RO</string>
