@@ -197,14 +197,6 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>m3uplaylist</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>35</Priority>
-    <Name>M3UPlaylist.com</Name>
-    <UrlFormat>http://m3uplaylist.com/m3u-files/romania_iptv_{0:dd-MM-yyyy}_m3uplaylist_com_S1.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>iptvm3ulist-list1</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>40</Priority>
@@ -584,6 +576,14 @@
     <Id>m3uplaylist</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>170</Priority>
+    <Name>M3UPlaylist.com</Name>
+    <UrlFormat>http://m3uplaylist.com/m3u-files/romania_iptv_{0:dd-MM-yyyy}_m3uplaylist_com_S1.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>m3uplaylist2</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>171</Priority>
     <Name>M3U Playlist</Name>
     <UrlFormat>http://m3uplaylist.com/m3u-files/romania_iptv_m3uplaylist_com.m3u</UrlFormat>
   </PlaylistProviderEntity>
