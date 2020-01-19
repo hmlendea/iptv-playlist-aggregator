@@ -363,7 +363,7 @@
     <Id>Apolonia.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Apolonia TV</Name>
-    <GroupId></GroupId>
+    <GroupId>unknown</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>Apolonia TV</string>
@@ -1532,7 +1532,7 @@
     <Id>DunaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Duna</Name>
-    <GroupId></GroupId>
+    <GroupId>unknown</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO: Duna HD</string>
@@ -1915,7 +1915,7 @@
     <Id>GagiuTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Gagiu TV</Name>
-    <GroupId></GroupId>
+    <GroupId>unknown</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO: Gagiu TV</string>
