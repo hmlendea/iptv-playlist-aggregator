@@ -2744,6 +2744,7 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/national_geographic_wild.png</LogoUrl>
     <Aliases>
+      <string>Nat Geo Wild HD RO MultiSub</string>
       <string>Nat Geo Wild HD ROM MultiSub</string>
       <string>Nat Geo Wild RO</string>
       <string>National Geo Wild</string>
