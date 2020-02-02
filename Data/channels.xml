@@ -1000,6 +1000,7 @@
       <string>Digi24 FHD RO</string>
       <string>Digi24 FHD</string>
       <string>Digi24 HD RO</string>
+      <string>Digi24 HD ROM</string>
       <string>Digi24 HD</string>
       <string>Digi24 RO</string>
       <string>Digi24 TV</string>
@@ -4059,6 +4060,7 @@
       <string>RUMANIA: TVR 1</string>
       <string>TVR 1 HD</string>
       <string>TVR 1 RO</string>
+      <string>TVR 1 ROM</string>
       <string>TVR 1</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -4080,6 +4082,7 @@
       <string>RUMANIA: TVR 2</string>
       <string>TVR 2 HD</string>
       <string>TVR 2 RO</string>
+      <string>TVR 2 ROM</string>
       <string>TVR 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -4101,6 +4104,7 @@
       <string>RUMANIA: TVR 3</string>
       <string>TVR 3 HD</string>
       <string>TVR 3 RO</string>
+      <string>TVR 3 ROM</string>
       <string>TVR 3</string>
     </Aliases>
   </ChannelDefinitionEntity>
