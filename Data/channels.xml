@@ -11,7 +11,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>1hd</Id>
+    <Id>1HD.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>1 HD</Name>
     <GroupId>music</GroupId>
@@ -22,7 +22,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>1tv</Id>
+    <Id>1TV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>1TV</Name>
     <GroupId>local-moldova</GroupId>
@@ -32,7 +32,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>6tv</Id>
+    <Id>6TV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>6 TV</Name>
     <GroupId>general</GroupId>
@@ -46,7 +46,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>a7tv</Id>
+    <Id>A7TV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>A7 TV</Name>
     <GroupId>general</GroupId>
@@ -78,7 +78,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>acasatv-md</Id>
+    <Id>Acasa.md</Id>
     <IsEnabled>false</IsEnabled>
     <Name>Pro 2 Moldova</Name>
     <GroupId>unknown</GroupId>
@@ -105,7 +105,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>actualitatea</Id>
+    <Id>ActualitateaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Actualitatea TV</Name>
     <GroupId>local-moldova</GroupId>
@@ -121,7 +121,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>acum</Id>
+    <Id>AcumTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Acum TV</Name>
     <GroupId>local-moldova</GroupId>
@@ -166,7 +166,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>alegetv</Id>
+    <Id>AlegeTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Alege TV</Name>
     <GroupId>unknown</GroupId>
@@ -193,7 +193,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>alphamedia</Id>
+    <Id>AlphaMedia.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Alpha Media</Name>
     <GroupId>local-dobrogea</GroupId>
@@ -239,7 +239,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>antena_monden</Id>
+    <Id>AntenaMonden.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Antena Monden</Name>
     <GroupId>news</GroupId>
@@ -250,7 +250,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>antena_play_comedy</Id>
+    <Id>AntenaComedy.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Antena Comedy Play</Name>
     <GroupId>entertainment</GroupId>
@@ -264,7 +264,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>antena_play_cook</Id>
+    <Id>AntenaCook.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Antena Cook&amp;Play</Name>
     <GroupId>entertainment</GroupId>
@@ -364,7 +364,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>Apolonia.ro</Id>
+    <Id>ApoloniaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Apolonia TV</Name>
     <GroupId>unknown</GroupId>
@@ -376,7 +376,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>arcadia-tv</Id>
+    <Id>ArcadiaWorld.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Arcadia World</Name>
     <GroupId>educational</GroupId>
@@ -389,7 +389,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>ardealTV</Id>
+    <Id>ArdealTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Ardeal TV</Name>
     <GroupId>local-transilvania</GroupId>
@@ -610,7 +610,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>brasov-tv</Id>
+    <Id>BrasovTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Brașov TV</Name>
     <GroupId>local-transilvania</GroupId>
@@ -620,7 +620,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>bucovinaTV</Id>
+    <Id>BucovinaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Bucovina TV</Name>
     <GroupId>local-bucovina</GroupId>
@@ -656,7 +656,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>campustv</Id>
+    <Id>CampusTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Campus TV</Name>
     <GroupId>local-muntenia</GroupId>
@@ -828,7 +828,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>ciresarii</Id>
+    <Id>Ciresarii.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Cireșarii TV</Name>
     <GroupId>religious</GroupId>
@@ -839,7 +839,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>cnn</Id>
+    <Id>CNN.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>CNN</Name>
     <GroupId>foreign</GroupId>
@@ -888,7 +888,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>corneatv</Id>
+    <Id>CorneaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Cornea TV</Name>
     <GroupId>general</GroupId>
@@ -934,7 +934,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>curierTV</Id>
+    <Id>CurierTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Curier TV</Name>
     <GroupId>local-muntenia</GroupId>
@@ -1123,7 +1123,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>DIGIAnimalWorld.ro</Id>
+    <Id>DigiAnimalworld.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi Animal World</Name>
     <GroupId>educational</GroupId>
@@ -1147,7 +1147,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>DigiLLife.ro</Id>
+    <Id>DigiLife.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi Life</Name>
     <GroupId>educational</GroupId>
@@ -1338,7 +1338,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>discovery_showcase</Id>
+    <Id>DiscoveryShowcase.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Discovery Showcase</Name>
     <GroupId>educational</GroupId>
@@ -1522,7 +1522,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>drochia-tv</Id>
+    <Id>DrochiaTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Drochia TV</Name>
     <GroupId>local-basarabia</GroupId>
@@ -1595,7 +1595,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>est-tv</Id>
+    <Id>EtTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Est TV</Name>
     <GroupId>local-muntenia</GroupId>
@@ -1641,7 +1641,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>europa_plus</Id>
+    <Id>EuropaPlus.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Europa Plus</Name>
     <GroupId>unknown</GroupId>
@@ -1721,7 +1721,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>extreme_sport</Id>
+    <Id>ExtremeSports.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Extreme Sports</Name>
     <GroupId>sport</GroupId>
@@ -1732,7 +1732,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>fallout-radio</Id>
+    <Id>FalloutRadio.com</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Fallout Radio</Name>
     <GroupId>radio</GroupId>
@@ -1909,7 +1909,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>fix_and_foxi</Id>
+    <Id>FixAndFoxi.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Fix and Foxi</Name>
     <GroupId>kids</GroupId>
@@ -1968,7 +1968,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>h!t</Id>
+    <Id>HTMusic.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>H!T Music Channel</Name>
     <GroupId>music</GroupId>
@@ -1980,7 +1980,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>h!t_hu</Id>
+    <Id>HTMusic.hu</Id>
     <IsEnabled>false</IsEnabled>
     <Name>H!T Music Channel HU</Name>
     <GroupId>music</GroupId>
@@ -2133,7 +2133,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>heavymetal-tv</Id>
+    <Id>HeavyMetalTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Heavy Metal TV</Name>
     <GroupId>music</GroupId>
@@ -2170,7 +2170,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>hora</Id>
+    <Id>HoraTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Hora TV</Name>
     <GroupId>music</GroupId>
@@ -2213,7 +2213,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>ibizaglobal-tv</Id>
+    <Id>IbizaGlobalTV.com</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Ibiza Global TV</Name>
     <GroupId>music</GroupId>
@@ -2223,7 +2223,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>ida</Id>
+    <Id>IDATV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>IDA TV</Name>
     <GroupId>educational</GroupId>
@@ -2234,7 +2234,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>impact</Id>
+    <Id>ImpactTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Impact TV</Name>
     <GroupId>music</GroupId>
@@ -2245,7 +2245,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>inedittv</Id>
+    <Id>IneditTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Inedit TV</Name>
     <GroupId>general</GroupId>
@@ -2259,7 +2259,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>infinittv</Id>
+    <Id>InfinitTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Infinit TV</Name>
     <GroupId>local-moldova</GroupId>
@@ -2269,7 +2269,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>informatiatv</Id>
+    <Id>InformatiaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Informația TV</Name>
     <GroupId>local-maramures</GroupId>
@@ -2282,7 +2282,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>intermedia</Id>
+    <Id>Intermedia.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Intermedia</Name>
     <GroupId>local-bucovina</GroupId>
@@ -2298,7 +2298,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>jasmintv</Id>
+    <Id>JasminTV.com</Id>
     <IsEnabled>false</IsEnabled>
     <Name>Jasmin TV</Name>
     <GroupId>music</GroupId>
@@ -2354,7 +2354,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>kapital_tv</Id>
+    <Id>KapitalTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Kapital TV</Name>
     <GroupId>general</GroupId>
@@ -2449,7 +2449,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>loungev-nature</Id>
+    <Id>LoungeVNature.com</Id>
     <IsEnabled>true</IsEnabled>
     <Name>LoungeV Nature</Name>
     <GroupId>thematic</GroupId>
@@ -2459,7 +2459,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>m2o</Id>
+    <Id>M2O.com</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Radio m2o TV</Name>
     <GroupId>music</GroupId>
@@ -2507,7 +2507,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>mezzo</Id>
+    <Id>Mezzo.hu</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Mezzo</Name>
     <GroupId>music</GroupId>
@@ -2546,7 +2546,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>misatv</Id>
+    <Id>MisaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Misa Senzațional TV</Name>
     <GroupId>religious</GroupId>
@@ -2662,7 +2662,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>mtv-music24</Id>
+    <Id>MTVMusic.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>MTV Music 24</Name>
     <GroupId>music</GroupId>
@@ -2684,7 +2684,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>musceltv</Id>
+    <Id>MuscelTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Muscel TV</Name>
     <GroupId>local-muntenia</GroupId>
@@ -2694,7 +2694,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>music_hits_17</Id>
+    <Id>MusicHits17.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Music Hits '17</Name>
     <GroupId>music</GroupId>
@@ -2737,7 +2737,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>NaşulTV.ro</Id>
+    <Id>NasulTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nașul TV</Name>
     <GroupId>news</GroupId>
@@ -2757,7 +2757,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>Natgeo.ro</Id>
+    <Id>NatGeo.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>National Geographic</Name>
     <GroupId>educational</GroupId>
@@ -2792,7 +2792,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>NatgeoWild.ro</Id>
+    <Id>NatGeoWild.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>National Geographic Wild</Name>
     <GroupId>educational</GroupId>
@@ -2826,7 +2826,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>National24plus.ro</Id>
+    <Id>National24Plus.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Național 24 Plus</Name>
     <GroupId>general</GroupId>
@@ -2870,7 +2870,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>ncnTV</Id>
+    <Id>NCNTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>NCN TV</Name>
     <GroupId>news</GroupId>
@@ -2954,28 +2954,19 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>novatv</Id>
+    <Id>NovaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nova TV</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/nova-tv-brasov.png</LogoUrl>
     <Aliases>
       <string>Nova TV</string>
+      <string>RO: Nova TV</string>
       <string>RO: Nova TV Brasov</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>nova-tv</Id>
-    <IsEnabled>true</IsEnabled>
-    <Name>Nova TV</Name>
-    <GroupId>local-transilvania</GroupId>
-    <LogoUrl>https://www.novapress.ro//images/logo.png</LogoUrl>
-    <Aliases>
-      <string>RO: Nova TV</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>on_air</Id>
+    <Id>ONAir.unknown</Id>
     <IsEnabled>false</IsEnabled>
     <Name>ON Air</Name>
     <GroupId>foreign</GroupId>
@@ -3028,7 +3019,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>partener-tv</Id>
+    <Id>PartenerTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Partener TV</Name>
     <GroupId>local-muntenia</GroupId>
@@ -3103,7 +3094,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>profit.ro</Id>
+    <Id>Profit.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Profit.ro</Name>
     <GroupId>news</GroupId>
@@ -3114,7 +3105,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>PROFM.ro</Id>
+    <Id>ProFM.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro FM</Name>
     <GroupId>radio</GroupId>
@@ -3179,7 +3170,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>protv-news</Id>
+    <Id>ProTVNews.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro TV Știri</Name>
     <GroupId>news</GroupId>
@@ -3192,7 +3183,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>PROX.ro</Id>
+    <Id>ProX.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Pro X</Name>
     <GroupId>sport</GroupId>
@@ -3234,7 +3225,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>realitatea-plus</Id>
+    <Id>RealitateaPlus.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Realitatea Plus</Name>
     <GroupId>news</GroupId>
@@ -3326,7 +3317,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>roman-tv</Id>
+    <Id>RomanTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Roman TV</Name>
     <GroupId>local-moldova</GroupId>
@@ -3336,7 +3327,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>rts</Id>
+    <Id>RTS.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>RT Severin</Name>
     <GroupId>local-oltenia</GroupId>
@@ -3346,7 +3337,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>salajeanultv</Id>
+    <Id>SalajeanulTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Sălăjeanul TV</Name>
     <GroupId>local-crisana</GroupId>
@@ -3356,7 +3347,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>slager-tv</Id>
+    <Id>SlagerTV.ro</Id>
     <IsEnabled>false</IsEnabled>
     <Name>Slager TV</Name>
     <GroupId>music</GroupId>
@@ -3366,7 +3357,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>somax</Id>
+    <Id>Somax.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Somax</Name>
     <GroupId>local-moldova</GroupId>
@@ -3382,7 +3373,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>speranta</Id>
+    <Id>SperantaTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Speranța TV</Name>
     <GroupId>religious</GroupId>
@@ -3437,7 +3428,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>supertv</Id>
+    <Id>SuperTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Super TV</Name>
     <GroupId>local-muntenia</GroupId>
@@ -3473,7 +3464,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>autoMotorSport</Id>
+    <Id>AutoMotorSport.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Auto Motor Sport</Name>
     <GroupId>sport</GroupId>
@@ -3494,7 +3485,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>erdelyTv</Id>
+    <Id>ErdelyTV.ro</Id>
     <IsEnabled>false</IsEnabled>
     <Name>Erdely TV</Name>
     <GroupId>local-transilvania</GroupId>
@@ -3504,7 +3495,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>teleeuropa-nova</Id>
+    <Id>TeleEuropaNova.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleEuropa Nova</Name>
     <GroupId>local-banat</GroupId>
@@ -3742,7 +3733,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>telemoldova</Id>
+    <Id>TeleMPlus.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleM Plus</Name>
     <GroupId>local-moldova</GroupId>
@@ -3757,7 +3748,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>telemoldova-botosani</Id>
+    <Id>TeleMBotosani.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleM Botoșani</Name>
     <GroupId>local-moldova</GroupId>
@@ -3771,7 +3762,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>telemoldova-iasi</Id>
+    <Id>TeleMIasi.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleM Iași</Name>
     <GroupId>local-moldova</GroupId>
@@ -3784,7 +3775,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>telemoldova-neamt</Id>
+    <Id>TeleMNeamt.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TeleM Neamț</Name>
     <GroupId>local-moldova</GroupId>
@@ -3796,7 +3787,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>teleshop</Id>
+    <Id>TeleshopTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Teleshop TV</Name>
     <GroupId>unknown</GroupId>
@@ -3806,7 +3797,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>telestar1</Id>
+    <Id>Telestar1.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Telestar1 TV</Name>
     <GroupId>foreign</GroupId>
@@ -3831,7 +3822,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>thevoice</Id>
+    <Id>TheVoice.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>The Voice</Name>
     <GroupId>music</GroupId>
@@ -3841,7 +3832,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>tigo</Id>
+    <Id>Tigo.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Tigo Music</Name>
     <GroupId>music</GroupId>
@@ -3851,7 +3842,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>tl+</Id>
+    <Id>TLPlus.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TL+ Maramureș</Name>
     <GroupId>local-maramures</GroupId>
@@ -4031,7 +4022,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>tvbuzau</Id>
+    <Id>TVBuzau.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV Buzău</Name>
     <GroupId>local-muntenia</GroupId>
@@ -4043,7 +4034,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>tvcity</Id>
+    <Id>TVCity.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV City</Name>
     <GroupId>local-muntenia</GroupId>
@@ -4055,7 +4046,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>albaCarolina</Id>
+    <Id>AlbaCarolina.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Alba Carolina TV</Name>
     <GroupId>local-transilvania</GroupId>
@@ -4065,7 +4056,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>tv-cns</Id>
+    <Id>TVCNS.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV CNS</Name>
     <GroupId>local-moldova</GroupId>
@@ -4118,7 +4109,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>tvplus-suceava</Id>
+    <Id>TVPlusSuceava.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV Plus Suceava</Name>
     <GroupId>local-bucovina</GroupId>
@@ -4220,7 +4211,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>tvrhd</Id>
+    <Id>TVRHD.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVR HD</Name>
     <GroupId>general</GroupId>
@@ -4306,7 +4297,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>tvsat</Id>
+    <Id>TVSAT.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TVSAT</Name>
     <GroupId>local-unknown</GroupId>
@@ -4341,7 +4332,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>tvt-vaslui</Id>
+    <Id>TVTotal.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>TV Total</Name>
     <GroupId>local-moldova</GroupId>
@@ -4379,7 +4370,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>vh1</Id>
+    <Id>VH1.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>VH1</Name>
     <GroupId>music</GroupId>
@@ -4392,7 +4383,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>vh1_classic</Id>
+    <Id>VH1Classic.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>VH1 Classic</Name>
     <GroupId>music</GroupId>
@@ -4462,7 +4453,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>vocea_basarabiei</Id>
+    <Id>VoceaBasarabiei.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Vocea Basarabiei</Name>
     <GroupId>local-basarabia</GroupId>
@@ -4472,7 +4463,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>vptv</Id>
+    <Id>VPTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Valea Prahovei TV</Name>
     <GroupId>local-muntenia</GroupId>
@@ -4485,7 +4476,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>vtv</Id>
+    <Id>VeziTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Vezi TV</Name>
     <GroupId>local-oltenia</GroupId>
@@ -4513,7 +4504,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>fashionTV</Id>
+    <Id>FashionTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Fashion TV</Name>
     <GroupId>unknown</GroupId>
@@ -4524,7 +4515,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>fightBox</Id>
+    <Id>FightBox.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>FightBox</Name>
     <GroupId>unknown</GroupId>
@@ -4534,7 +4525,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>duckTV</Id>
+    <Id>DuckTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Duck TV</Name>
     <GroupId>unknown</GroupId>
@@ -4544,17 +4535,17 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>frfTV</Id>
+    <Id>FRFTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>FRF TV</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>sport</GroupId>
     <LogoUrl></LogoUrl>
     <Aliases>
       <string>RO: FRF TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>exclusivTV</Id>
+    <Id>ExclusivTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Exclusiv TV</Name>
     <GroupId>unknown</GroupId>
@@ -4564,7 +4555,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>filmMania</Id>
+    <Id>FilmMania.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Film Mania</Name>
     <GroupId>movies</GroupId>
@@ -4574,8 +4565,8 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>docuBox</Id>
-    <IsEnabled>true</IsEnabled>
+    <Id>DocuBox.pl</Id>
+    <IsEnabled>false</IsEnabled>
     <Name>DocuBox</Name>
     <GroupId>unknown</GroupId>
     <LogoUrl></LogoUrl>
@@ -4584,7 +4575,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>moozTV</Id>
+    <Id>MoozTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Mooz TV</Name>
     <GroupId>music</GroupId>
@@ -4594,7 +4585,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>moozDance</Id>
+    <Id>MoozDance.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Mooz Dance</Name>
     <GroupId>music</GroupId>
@@ -4607,7 +4598,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>infoPescar</Id>
+    <Id>InfoPescar.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Info Pescar</Name>
     <GroupId>unknown</GroupId>
@@ -4617,7 +4608,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>nasaTv</Id>
+    <Id>NASAChannel.us</Id>
     <IsEnabled>true</IsEnabled>
     <Name>NASA TV</Name>
     <GroupId>educational</GroupId>
@@ -4627,7 +4618,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>radioZU</Id>
+    <Id>RadioZU.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Radio ZU</Name>
     <GroupId>radio</GroupId>
@@ -4637,7 +4628,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>radioLiberty</Id>
+    <Id>RadioLiberty.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Radio Liberty</Name>
     <GroupId>radio</GroupId>
@@ -4647,7 +4638,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>radioGuerrilla</Id>
+    <Id>RadioGuerrilla.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Radio Guerrilla</Name>
     <GroupId>radio</GroupId>
@@ -4657,7 +4648,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>radioHot</Id>
+    <Id>RadioHot.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Radio Hot</Name>
     <GroupId>radio</GroupId>
@@ -4667,7 +4658,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>magicFM</Id>
+    <Id>MagicFM.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Magic FM</Name>
     <GroupId>radio</GroupId>
@@ -4677,7 +4668,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>europaFM</Id>
+    <Id>EuropaFM.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Europa FM</Name>
     <GroupId>radio</GroupId>
@@ -4687,7 +4678,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>romanticFM</Id>
+    <Id>RomanticFM.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Romantic FM</Name>
     <GroupId>radio</GroupId>
@@ -4697,7 +4688,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>radioCluj</Id>
+    <Id>RadioCluj.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Radio Cluj</Name>
     <GroupId>radio</GroupId>
@@ -4707,7 +4698,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>romaniaActualitati</Id>
+    <Id>RomaniaActualitati.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>România Actualități</Name>
     <GroupId>radio</GroupId>
@@ -4719,7 +4710,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>digiFM</Id>
+    <Id>DigiFM.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Digi FM</Name>
     <GroupId>radio</GroupId>
@@ -4729,7 +4720,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>deea-fm</Id>
+    <Id>DeeaFM.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Deea FM</Name>
     <GroupId>radio</GroupId>
@@ -4739,7 +4730,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>antena-satelor</Id>
+    <Id>AntenaSatelor.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Antena Satelor</Name>
     <GroupId>radio</GroupId>
@@ -4749,7 +4740,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>dark-edge-radio</Id>
+    <Id>DarkEdgeRadio.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Dark Edge Radio</Name>
     <GroupId>radio</GroupId>
@@ -4759,7 +4750,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>kissFM</Id>
+    <Id>KissFM.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Kiss FM</Name>
     <GroupId>radio</GroupId>
@@ -4769,7 +4760,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>vibeFM</Id>
+    <Id>VibeFM.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Vibe FM</Name>
     <GroupId>radio</GroupId>
@@ -4779,7 +4770,7 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>infoHD</Id>
+    <Id>InfoHD.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Info HD</Name>
     <GroupId>local-transilvania</GroupId>
