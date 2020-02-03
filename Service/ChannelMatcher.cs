@@ -18,7 +18,7 @@ namespace IptvPlaylistAggregator.Service
         };
         static readonly IDictionary<string, string> SubstringsToReplace = new Dictionary<string, string>
         {
-            { "^VIP RO", "RO" },
+            { "^VIP|RO|", "" },
             { "^ROMANIA", "RO" },
             { "^RUMANIA", "RO" },
             { "^ROM", "RO" },
@@ -57,7 +57,8 @@ namespace IptvPlaylistAggregator.Service
         }
 
         public bool DoesMatch(ChannelName name1, string name2)
-            => name1.Aliases.Any(x => DoChannelNamesMatch(x, name2));
+            => DoChannelNamesMatch(name1.Value, name2) ||
+               name1.Aliases.Any(x => DoChannelNamesMatch(x, name2));
 
         bool DoChannelNamesMatch(string name1, string name2)
             => NormaliseName(name1).Equals(NormaliseName(name2));
@@ -78,7 +79,10 @@ namespace IptvPlaylistAggregator.Service
 
             foreach (string substringToReplace in SubstringsToReplace.Keys)
             {
-                strippedName = Regex.Replace(strippedName, substringToReplace, SubstringsToReplace[substringToReplace]);
+                strippedName = Regex.Replace(
+                    strippedName,
+                    substringToReplace,
+                    SubstringsToReplace[substringToReplace]);
             }
 
             string finalString = string.Empty;
