@@ -290,6 +290,7 @@
       <string>Antena 1 HD RO</string>
       <string>Antena 1 HD</string>
       <string>Antena 1 RO</string>
+      <string>Antena 1 SD</string>
       <string>Antena 1</string>
       <string>RO: Antena 1 FHD</string>
       <string>RO: Antena 1 HD</string>
@@ -297,6 +298,7 @@
       <string>ROM: Antena 1</string>
       <string>ROMANIA: Antena 1</string>
       <string>RUMANIA: Antena 1</string>
+      <string>VIP RO: Antena 1 HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -311,6 +313,7 @@
       <string>Antena 3 HD RO</string>
       <string>Antena 3 HD</string>
       <string>Antena 3 RO</string>
+      <string>Antena 3 SD</string>
       <string>Antena 3</string>
       <string>RO: Antena 3 FHD</string>
       <string>RO: Antena 3 HD</string>
@@ -357,6 +360,7 @@
       <string>ROM: Antena Stars</string>
       <string>ROMANIA: Antena Stars</string>
       <string>RUMANIA: Antena Stars</string>
+      <string>VIP RO: Antena Stars</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -471,6 +475,7 @@
       <string>ROMANIA: AXN White</string>
       <string>RUMANIA: AXN White HD</string>
       <string>RUMANIA: AXN White</string>
+      <string>VIP RO: AXN White</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -498,6 +503,7 @@
       <string>RUMANIA: B1 TV HD</string>
       <string>RUMANIA: B1 TV</string>
       <string>RUMANIA: B1</string>
+      <string>VIP RO: B1 TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -719,6 +725,7 @@
       <string>RO: Cartoon Network RO</string>
       <string>RO: Cartoon Network</string>
       <string>ROM: Cartoon Network</string>
+      <string>VIP RO: Cartoon Network</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -923,6 +930,7 @@
       <string>ROMANIA: Cromtel TV</string>
       <string>RUMANIA: Cromtel TV HD</string>
       <string>RUMANIA: Cromtel TV</string>
+      <string>VIP RO: Cromtel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1191,6 +1199,9 @@
       <string>RUMANIA: Digi Sport 1 HD</string>
       <string>RUMANIA: Digi Sport 1 SD</string>
       <string>RUMANIA: Digi Sport 1</string>
+      <string>VIP RO: Digi Sport 1 FHD</string>
+      <string>VIP RO: Digi Sport 1 HD</string>
+      <string>VIP RO: Digi Sport 1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1223,6 +1234,9 @@
       <string>RUMANIA: Digi Sport 2 HD</string>
       <string>RUMANIA: Digi Sport 2 SD</string>
       <string>RUMANIA: Digi Sport 2</string>
+      <string>VIP RO: Digi Sport 2 FHD</string>
+      <string>VIP RO: Digi Sport 2 HD</string>
+      <string>VIP RO: Digi Sport 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1255,6 +1269,9 @@
       <string>RUMANIA: Digi Sport 3 HD</string>
       <string>RUMANIA: Digi Sport 3 SD</string>
       <string>RUMANIA: Digi Sport 3</string>
+      <string>VIP RO: Digi Sport 3 FHD</string>
+      <string>VIP RO: Digi Sport 3 HD</string>
+      <string>VIP RO: Digi Sport 3</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1287,6 +1304,9 @@
       <string>RUMANIA: Digi Sport 4 HD</string>
       <string>RUMANIA: Digi Sport 4 SD</string>
       <string>RUMANIA: Digi Sport 4</string>
+      <string>VIP RO: Digi Sport 4 FHD</string>
+      <string>VIP RO: Digi Sport 4 HD</string>
+      <string>VIP RO: Digi Sport 4</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1312,6 +1332,9 @@
       <string>ROMANIA: Digi World</string>
       <string>RUMANIA: Digi World HD</string>
       <string>RUMANIA: Digi World</string>
+      <string>VIP RO: Digi World FHD</string>
+      <string>VIP RO: Digi World HD</string>
+      <string>VIP RO: Digi World</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1467,6 +1490,7 @@
       <string>ROM: Disney Junior</string>
       <string>ROMANIA: Disney Junior</string>
       <string>RUMANIA: Disney Junior</string>
+      <string>VIP RO: Disney Junior</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1484,6 +1508,7 @@
       <string>RO: Diva Universal</string>
       <string>RO: Diva</string>
       <string>ROM: Diva Universal</string>
+      <string>VIP RO: Diva Universal</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1659,6 +1684,9 @@
       <string>RUMANIA: EuroSport FHD</string>
       <string>RUMANIA: EuroSport HD</string>
       <string>RUMANIA: EuroSport</string>
+      <string>VIP RO: EuroSport 1 FHD</string>
+      <string>VIP RO: EuroSport 1 HD</string>
+      <string>VIP RO: EuroSport 1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1687,6 +1715,9 @@
       <string>RUMANIA: EuroSport 2 FHD</string>
       <string>RUMANIA: EuroSport 2 HD</string>
       <string>RUMANIA: EuroSport 2</string>
+      <string>VIP RO: EuroSport 2 FHD</string>
+      <string>VIP RO: EuroSport 2 HD</string>
+      <string>VIP RO: EuroSport 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1751,6 +1782,9 @@
       <string>RO: Film Box Extra FHD</string>
       <string>RO: Film Box Extra HD</string>
       <string>RO: Film Box Extra</string>
+      <string>VIP RO: Film Box Extra FHD</string>
+      <string>VIP RO: Film Box Extra HD</string>
+      <string>VIP RO: Film Box Extra</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1980,6 +2014,9 @@
       <string>ROM: Happy Channel</string>
       <string>ROMANIA: Happy Channel</string>
       <string>RUMANIA: Happy Channel</string>
+      <string>VIP RO: Happy Channel FHD</string>
+      <string>VIP RO: Happy Channel HD</string>
+      <string>VIP RO: Happy Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2028,6 +2065,9 @@
       <string>RUMANIA: HBO 1</string>
       <string>RUMANIA: HBO România</string>
       <string>RUMANIA: HBO</string>
+      <string>VIP RO: HBO 1 FHD</string>
+      <string>VIP RO: HBO 1 HD</string>
+      <string>VIP RO: HBO 1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2056,6 +2096,9 @@
       <string>ROMANIA: HBO 2</string>
       <string>RUMANIA: HBO 2 HD</string>
       <string>RUMANIA: HBO 2</string>
+      <string>VIP RO: HBO 2 FHD</string>
+      <string>VIP RO: HBO 2 HD</string>
+      <string>VIP RO: HBO 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2084,6 +2127,9 @@
       <string>ROMANIA: HBO 3</string>
       <string>RUMANIA: HBO 3 HD</string>
       <string>RUMANIA: HBO 3</string>
+      <string>VIP RO: HBO 3 FHD</string>
+      <string>VIP RO: HBO 3 HD</string>
+      <string>VIP RO: HBO 3</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2338,6 +2384,9 @@
       <string>ROM: Kiss TV</string>
       <string>ROMANIA: Kiss TV</string>
       <string>RUMANIA: Kiss TV</string>
+      <string>VIP RO: Kiss TV FHD</string>
+      <string>VIP RO: Kiss TV HD</string>
+      <string>VIP RO: Kiss TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2396,6 +2445,7 @@
       <string>ROMANIA: Look TV</string>
       <string>RUMANIA: Look Sport</string>
       <string>RUMANIA: Look TV</string>
+      <string>VIP RO: Look Sport</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2453,6 +2503,7 @@
       <string>ROM: MegMax</string>
       <string>ROMANIA: MegaMax</string>
       <string>RUMANIA: MegaMax</string>
+      <string>VIP RO: MegaMax</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2480,6 +2531,7 @@
       <string>ROM: MiniMax</string>
       <string>ROMANIA: MiniMax</string>
       <string>RUMANIA: MiniMax</string>
+      <string>VIP RO: MiniMax</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2736,6 +2788,7 @@
       <string>ROMANIA: NGC</string>
       <string>RUMANIA: National Geographic</string>
       <string>RUMANIA: NGC</string>
+      <string>VIP RO: National Geographic</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3029,6 +3082,9 @@
       <string>ROM: PRO 2</string>
       <string>ROMANIA: Acasa TV</string>
       <string>RUMANIA: Acasa TV</string>
+      <string>VIP RO: Pro 2 FHD</string>
+      <string>VIP RO: Pro 2 HD</string>
+      <string>VIP RO: Pro 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3082,6 +3138,7 @@
       <string>Pro TV</string>
       <string>RO: Pro TV FHD</string>
       <string>RO: Pro TV HD</string>
+      <string>RO: Pro TV SD</string>
       <string>RO: Pro TV</string>
       <string>ROM: Pro TV</string>
       <string>ROMANIA: Pro TV HD</string>
@@ -3489,6 +3546,9 @@
       <string>Telekom Sport 1 HD</string>
       <string>Telekom Sport 1 RO</string>
       <string>Telekom Sport 1</string>
+      <string>VIP RO: Telekom Sport 1 FHD</string>
+      <string>VIP RO: Telekom Sport 1 HD</string>
+      <string>VIP RO: Telekom Sport 1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3524,6 +3584,9 @@
       <string>Telekom Sport 2 HD</string>
       <string>Telekom Sport 2 RO</string>
       <string>Telekom Sport 2</string>
+      <string>VIP RO: Telekom Sport 2 FHD</string>
+      <string>VIP RO: Telekom Sport 2 HD</string>
+      <string>VIP RO: Telekom Sport 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3559,6 +3622,9 @@
       <string>Telekom Sport 3 HD</string>
       <string>Telekom Sport 3 RO</string>
       <string>Telekom Sport 3</string>
+      <string>VIP RO: Telekom Sport 3 FHD</string>
+      <string>VIP RO: Telekom Sport 3 HD</string>
+      <string>VIP RO: Telekom Sport 3</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3594,6 +3660,9 @@
       <string>Telekom Sport 4 HD</string>
       <string>Telekom Sport 4 RO</string>
       <string>Telekom Sport 4</string>
+      <string>VIP RO: Telekom Sport 4 FHD</string>
+      <string>VIP RO: Telekom Sport 4 HD</string>
+      <string>VIP RO: Telekom Sport 4</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3629,6 +3698,9 @@
       <string>Telekom Sport 5 HD</string>
       <string>Telekom Sport 5 RO</string>
       <string>Telekom Sport 5</string>
+      <string>VIP RO: Telekom Sport 5 FHD</string>
+      <string>VIP RO: Telekom Sport 5 HD</string>
+      <string>VIP RO: Telekom Sport 5</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3664,6 +3736,9 @@
       <string>Telekom Sport 6 HD</string>
       <string>Telekom Sport 6 RO</string>
       <string>Telekom Sport 6</string>
+      <string>VIP RO: Telekom Sport 6 FHD</string>
+      <string>VIP RO: Telekom Sport 6 HD</string>
+      <string>VIP RO: Telekom Sport 6</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3797,6 +3872,9 @@
       <string>ROM: TLC RO</string>
       <string>TLC RO</string>
       <string>TLC</string>
+      <string>VIP RO: TLC FHD</string>
+      <string>VIP RO: TLC HD</string>
+      <string>VIP RO: TLC</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3844,6 +3922,9 @@
       <string>Travel Channel HD RO</string>
       <string>Travel Channel HD</string>
       <string>Travel Channel</string>
+      <string>VIP RO: Travel Channel FHD</string>
+      <string>VIP RO: Travel Channel HD</string>
+      <string>VIP RO: Travel Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3911,6 +3992,9 @@
       <string>TV 1000 HD</string>
       <string>TV 1000 RO</string>
       <string>TV 1000</string>
+      <string>VIP RO: TV1000 FHD</string>
+      <string>VIP RO: TV1000 HD</string>
+      <string>VIP RO: TV1000</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -4081,6 +4165,7 @@
       <string>ROMANIA: TVR 2</string>
       <string>RUMANIA: TVR 2 HD</string>
       <string>RUMANIA: TVR 2</string>
+      <string>TVR 2 HD ROM</string>
       <string>TVR 2 HD</string>
       <string>TVR 2 RO</string>
       <string>TVR 2 ROM</string>
@@ -4103,6 +4188,7 @@
       <string>ROMANIA: TVR 3</string>
       <string>RUMANIA: TVR 3 HD</string>
       <string>RUMANIA: TVR 3</string>
+      <string>TVR 3 HD ROM</string>
       <string>TVR 3 HD</string>
       <string>TVR 3 RO</string>
       <string>TVR 3 ROM</string>
@@ -4287,6 +4373,9 @@
       <string>UTV HD RO</string>
       <string>UTV HD</string>
       <string>UTV</string>
+      <string>VIP RO: UTV FHD</string>
+      <string>VIP RO: UTV HD</string>
+      <string>VIP RO: UTV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
