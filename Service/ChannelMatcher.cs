@@ -23,13 +23,11 @@ namespace IptvPlaylistAggregator.Service
             { "^RUMANIA", "RO" },
             { "^ROM", "RO" },
             { "^RO: *", "" },
-            { " RO$", "" },
             { " ROM$", "" },
             { " România$", "" },
             { " Romania$", "" },
             { " S[0-9]$", "" },
-            { " [F]*[HMS][DQ]$", "" },
-            { " TV$", "" }
+            { " [F]*[HMS][DQ]$", "" }
         };
 
         readonly ICacheManager cache;
