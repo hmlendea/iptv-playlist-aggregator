@@ -26,6 +26,8 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Digi Sport 2", "RO: Digi Sport 2", "RO: DIGI Sport 2")]
         [TestCase("România TV", "România TV", "RO\" Romania TV")]
         [TestCase("Somax TV", null, "Somax TV")]
+        [TestCase("TVR Târgu Mureș", "RO: TVR T?rgu-Mure?", "TVR: Targu Mureș")]
+        [TestCase("U TV", null, "UTV")]
         [Test]
         public void DoesMatch_NamesMatch_ReturnsTrue(
             string definedName,
@@ -58,6 +60,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName));
         }
 
+        [TestCase("U TV", "UTV")]
         [TestCase("VIP|RO|: Discovery Channel FHD", "DISCOVERYCHANNEL")]
         [Test]
         public void NormaliseName_ReturnsExpectedValue(string inputValue, string expectedValue)
