@@ -608,7 +608,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Dance FM</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl>https://www.dancefm.ro/wp-content/uploads/logoDance-2018.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/dance_fm.png</LogoUrl>
     <Aliases>
       <string>Pro FM Dance FM</string>
     </Aliases>
