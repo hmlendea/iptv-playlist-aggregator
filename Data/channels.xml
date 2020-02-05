@@ -395,7 +395,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Bucovina TV</Name>
     <GroupId>local-bucovina</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/bucovina-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bucovina_tv.png</LogoUrl>
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1625,7 +1625,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Mooz Dance</Name>
     <GroupId>music</GroupId>
-    <LogoUrl />
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/mooz_dance.png</LogoUrl>
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2670,7 +2670,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>TVR Cluj</Name>
     <GroupId>local-transilvania</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/tvr-cluj.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_cluj.png</LogoUrl>
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2678,7 +2678,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>TVR Craiova</Name>
     <GroupId>local-oltenia</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/tvr-craiova.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_craiova.png</LogoUrl>
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2694,7 +2694,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>TVR Iași</Name>
     <GroupId>local-moldova</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/tvr-iasi.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_iasi.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Ia</string>
       <string>RO: TVR Ia?i</string>
@@ -2718,7 +2718,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>TVR Moldova</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/tvr-moldova.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_moldova.png</LogoUrl>
     <Aliases>
       <string>MD: TVR Moldova</string>
     </Aliases>
@@ -2728,7 +2728,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>TVR Târgu Mureș</Name>
     <GroupId>local-transilvania</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/tvr-targu-mures.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_targu_mures.png</LogoUrl>
     <Aliases>
       <string>RO: TVR T?rgu-Mure?</string>
       <string>RO: TVR Târgu-Mure?</string>
@@ -2741,7 +2741,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>TVR Timișoara</Name>
     <GroupId>local-banat</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/tvr-timisoara.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_timisoara.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Timioara</string>
     </Aliases>
