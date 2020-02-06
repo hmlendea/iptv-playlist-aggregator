@@ -25,6 +25,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Cartoon Network", "RO: Cartoon Network", "VIP|RO|: Cartoon Network")]
         [TestCase("Digi Sport 2", "RO: Digi Sport 2", "RO: DIGI Sport 2")]
         [TestCase("Digi World", "RO: Digi World FHD", "RUMANIA: DigiWorld FHD (Opt-1)")]
+        [TestCase("Golf Channel", "FR: Golf Channel", "|FR| GOLF CHANNEL FHD")]
         [TestCase("Realitatea Plus", null, "Realitatea Plus")]
         [TestCase("România TV", "România TV", "RO\" Romania TV")]
         [TestCase("Somax", "RO: Somax TV", "Somax TV")]
@@ -65,10 +66,12 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName));
         }
 
+        [TestCase("|FR| GOLF CHANNEL FHD", "FRGOLFCHANNEL")]
+        [TestCase("|FR| GOLF CHANNELS HD", "FRGOLFCHANNELS")]
         [TestCase("|RO| Ardeal TV", "ARDEALTV")]
         [TestCase("|ROM|: Cromtel", "CROMTEL")]
-        [TestCase("RO\" Romania TV", "ROMANIATV")]
         [TestCase("RO: Animal World [768p]", "ANIMALWORLD")]
+        [TestCase("RO\" Romania TV", "ROMANIATV")]
         [TestCase("RUMANIA: DigiWorld FHD (Opt-1)", "DIGIWORLD")]
         [TestCase("U TV", "UTV")]
         [TestCase("VIP|RO|: Discovery Channel FHD", "DISCOVERYCHANNEL")]

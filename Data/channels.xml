@@ -1424,6 +1424,22 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>___foreignChannels</Id>
+    <IsEnabled>false</IsEnabled>
+    <Name>FOREIGN_CHANNEL</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl />
+    <Aliases>
+      <string>AFRO ZIK</string>
+      <string>AR: AD Sport 4</string>
+      <string>FR: Golf Channel</string>
+      <string>FR: Golf Channels</string>
+      <string>FR: LEquipe 21</string>
+      <string>FR: RMC Sport 3 LIVE 5</string>
+      <string>FR: RMC Sport 3</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>___separators</Id>
     <IsEnabled>false</IsEnabled>
     <Name>INVALID_CHANNEL</Name>
