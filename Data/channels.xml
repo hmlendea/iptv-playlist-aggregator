@@ -678,7 +678,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Digi Life</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/DigiLLife.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_life.png</LogoUrl>
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1315,7 +1315,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>History Channel</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/history.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/history_channel.png</LogoUrl>
     <Aliases>
       <string>History</string>
       <string>RO: Histori Channel</string>
@@ -1964,7 +1964,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Pro FM</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/b/b8/Profm.png/220px-Profm.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_fm.png</LogoUrl>
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
