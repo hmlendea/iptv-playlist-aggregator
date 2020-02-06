@@ -66,7 +66,8 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName));
         }
 
-        [TestCase("|FR| GOLF CHANNEL FHD", "FRGOLFCHANNEL")]
+        [TestCase("|AR| AD SPORT 4 HEVC", "ARADSPORT4")]
+        [TestCase("|FR| GOLF CHANNELS HD", "FRGOLFCHANNELS")]
         [TestCase("|FR| GOLF CHANNELS HD", "FRGOLFCHANNELS")]
         [TestCase("|RO| Ardeal TV", "ARDEALTV")]
         [TestCase("|ROM|: Cromtel", "CROMTEL")]
