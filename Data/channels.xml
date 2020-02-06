@@ -129,7 +129,9 @@
     <Name>Alfa &amp; Omega</Name>
     <GroupId>religious</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/alfa_omega_tv.png</LogoUrl>
-    <Aliases />
+    <Aliases>
+      <string>RO: Alfa &amp; Omega TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AlphaMedia.ro</Id>
@@ -138,7 +140,8 @@
     <GroupId>local-dobrogea</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/alpha_media.png</LogoUrl>
     <Aliases>
-      <string>Alfa Media</string>
+      <string>RO: Alfa Media</string>
+      <string>RO: Alpha Media TV</string>
       <string>RO: TV Alpha Media</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -311,7 +314,7 @@
   <ChannelDefinitionEntity>
     <Id>B1TV.ro</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>B1</Name>
+    <Name>B1 TV</Name>
     <GroupId>news</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd40bc33b1566d8b45d5.png</LogoUrl>
     <Aliases />
@@ -357,10 +360,11 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood.png</LogoUrl>
     <Aliases>
-      <string>BO</string>
-      <string>Bollywood TV Film</string>
-      <string>Boolywood</string>
+      <string>RO: BO</string>
+      <string>RO: Bollywood TV Film</string>
+      <string>RO: Bollywood TV</string>
       <string>RO: Bolywood</string>
+      <string>RO: Boolywood</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -590,6 +594,7 @@
     <Aliases>
       <string>RO: Cmtel</string>
       <string>RO: Cromtel TV Rădăuți</string>
+      <string>RO: Cromtel TV</string>
       <string>RO: TV Cromtel</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -738,7 +743,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
     <Aliases>
-      <string>Digi24 (Rumania)</string>
+      <string>Digi24 (România)</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -993,12 +998,14 @@
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>EtTV.ro</Id>
+    <Id>EstTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Est TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://www.tvsatmediagroup.ro/images/15063296804206_SIGLA%20EST%20TV.png</LogoUrl>
-    <Aliases />
+    <Aliases>
+      <string>RO: EST TV Neamț</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>EtnicTV.ro</Id>
@@ -1471,7 +1478,8 @@
     <GroupId>general</GroupId>
     <LogoUrl>http://www.kapitaltv.ro/wp-content/uploads/2016/10/logo-ktv-1.png</LogoUrl>
     <Aliases>
-      <string>Kaptial</string>
+      <string>RO: Kaptial TV</string>
+      <string>RO: Kaptial</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1828,7 +1836,8 @@
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nest_tv.png</LogoUrl>
     <Aliases>
-      <string>NEst</string>
+      <string>RO: NEst TV</string>
+      <string>RO: NEst</string>
       <string>RO: Suceava</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2108,11 +2117,12 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_tv.png</LogoUrl>
     <Aliases>
-      <string>Realitatea TV Rumania</string>
+      <string>Realitatea TV România</string>
       <string>RO: Realitatae</string>
+      <string>RO: Realitate</string>
+      <string>RO: Realitatea TV</string>
       <string>RO: Realite</string>
       <string>RO: Realtaea</string>
-      <string>ROMANIA: Realitate</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2202,7 +2212,9 @@
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>http://sangeorztv.ro/wp-content/uploads/2015/01/logoSTV.png</LogoUrl>
     <Aliases>
+      <string>RO: Sangeorz TV</string>
       <string>RO: Sangeorz</string>
+      <string>RO: Sîngeorz</string>
       <string>RO: STV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2220,7 +2232,9 @@
     <Name>Somax</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/somax.png</LogoUrl>
-    <Aliases />
+    <Aliases>
+      <string>RO: Somax TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>SperantaTV.ro</Id>
