@@ -23,6 +23,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 
         [TestCase("Ardeal TV", "RO: Ardeal TV", "|RO| Ardeal TV")]
         [TestCase("Cartoon Network", "RO: Cartoon Network", "VIP|RO|: Cartoon Network")]
+        [TestCase("Cromtel", "Cmrotel", "Cmtel")]
         [TestCase("Digi Sport 2", "RO: Digi Sport 2", "RO: DIGI Sport 2")]
         [TestCase("România TV", "România TV", "RO\" Romania TV")]
         [TestCase("Somax TV", null, "Somax TV")]
@@ -34,18 +35,21 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             string alias,
             string providerName)
         {
-            ChannelName channelName;
-            
-            if (alias is null)
-            {
-                channelName = new ChannelName(definedName);
-            }
-            else
-            {
-                channelName = new ChannelName(definedName, alias);
-            }
+            ChannelName channelName = GetChannelName(definedName, alias);
 
             Assert.IsTrue(channelMatcher.DoesMatch(channelName, providerName));
+        }
+
+        [TestCase("Cromtel", "Cmrotel", "Cmtel")]
+        [Test]
+        public void DoesMatch_NamesDoNotMatch_ReturnsFalse(
+            string definedName,
+            string alias,
+            string providerName)
+        {
+            ChannelName channelName = GetChannelName(definedName, alias);
+
+            Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName));
         }
 
         [Test]
@@ -62,12 +66,23 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 
         [TestCase("U TV", "UTV")]
         [TestCase("VIP|RO|: Discovery Channel FHD", "DISCOVERYCHANNEL")]
+        [TestCase("VIP|RO|: Cromtel", "CROMTEL")]
         [Test]
         public void NormaliseName_ReturnsExpectedValue(string inputValue, string expectedValue)
         {
             string actualValue = channelMatcher.NormaliseName(inputValue);
             
             Assert.AreEqual(expectedValue, actualValue);
+        }
+
+        private ChannelName GetChannelName(string definedName, string alias)
+        {
+            if (alias is null)
+            {
+                return new ChannelName(definedName);
+            }
+            
+            return new ChannelName(definedName, alias);
         }
     }
 }
