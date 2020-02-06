@@ -18,6 +18,8 @@ namespace IptvPlaylistAggregator.Service
 
         static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
+            { " HEVC$", "" },
+            { " HEVC ", "" },
             { " [F]*[HMS][DQ]$", "" },
             { " [F]*[HMS][DQ] ", "" },
             { "\\(Opt-[0-9]\\)", "" },
