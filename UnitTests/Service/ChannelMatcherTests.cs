@@ -23,8 +23,8 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 
         [TestCase("Ardeal TV", "RO: Ardeal TV", "|RO| Ardeal TV")]
         [TestCase("Cartoon Network", "RO: Cartoon Network", "VIP|RO|: Cartoon Network")]
-        [TestCase("Cromtel", "Cmrotel", "Cmtel")]
         [TestCase("Digi Sport 2", "RO: Digi Sport 2", "RO: DIGI Sport 2")]
+        [TestCase("Digi World", "RO: Digi World FHD", "RUMANIA: DigiWorld FHD (Opt-1)")]
         [TestCase("România TV", "România TV", "RO\" Romania TV")]
         [TestCase("Somax TV", null, "Somax TV")]
         [TestCase("TVR Târgu Mureș", "RO: TVR T?rgu-Mure?", "TVR: Targu Mureș")]
@@ -64,9 +64,13 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName));
         }
 
+        [TestCase("|RO| Ardeal TV", "ARDEALTV")]
+        [TestCase("|ROM|: Cromtel", "CROMTEL")]
+        [TestCase("RO\" Romania TV", "ROMANIATV")]
+        [TestCase("RO: Animal World [768p]", "ANIMALWORLD")]
+        [TestCase("RUMANIA: DigiWorld FHD (Opt-1)", "DIGIWORLD")]
         [TestCase("U TV", "UTV")]
         [TestCase("VIP|RO|: Discovery Channel FHD", "DISCOVERYCHANNEL")]
-        [TestCase("VIP|RO|: Cromtel", "CROMTEL")]
         [Test]
         public void NormaliseName_ReturnsExpectedValue(string inputValue, string expectedValue)
         {
