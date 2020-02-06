@@ -13,21 +13,26 @@ namespace IptvPlaylistAggregator.Service
     {
         static readonly string[] SubstringsToStrip = new string[]
         {
-            "(backup)", "(b)", " backup", "(On-Demand)", "[432p]", "[576p]", "[720p]", "[Multi-Audio]", "MultiSub", "www.iptvsource.com",
-            "(Opt-1)", "(Opt-2)", "(Opt-3)", "(Opt-4)", "(Opt-5)", "(Opt-6)", "(Opt-7)", "(Opt-8)", "(Opt-9)"
+            "(backup)", "(b)", " backup", "(On-Demand)", "[Multi-Audio]", "MultiSub", "www.iptvsource.com"
         };
-        static readonly IDictionary<string, string> SubstringsToReplace = new Dictionary<string, string>
+
+        static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
-            { "^VIP|RO|", "" },
-            { "^ROMANIA", "RO" },
-            { "^RUMANIA", "RO" },
-            { "^ROM", "RO" },
-            { "^RO: *", "" },
-            { " ROM$", "" },
-            { " România$", "" },
-            { " Romania$", "" },
+            { " [F]*[HMS][DQ]$", "" },
+            { " [F]*[HMS][DQ] ", "" },
+            { "\\(Opt-[0-9]\\)", "" },
+            { "\\[[0-9]*p\\]", "" },
             { " S[0-9]$", "" },
-            { " [F]*[HMS][DQ]$", "" }
+
+            { " ROM$", "" },
+            { "[\\|]*ROM*[\\|:]", "RO:" },
+            { "^[\\|]*VIP([A-Z][A-Z]):", "$1:" },
+            { "RUMANIA", "Romania" },
+            { "^Romania[\"\\|:]", "RO:" },
+
+            { "^([A-Z][A-Z]])[\"\\|:]", "$1:" },
+            
+            { "^[\\|]*RO[\"\\|:] *", "" },
         };
 
         readonly ICacheManager cache;
@@ -46,8 +51,9 @@ namespace IptvPlaylistAggregator.Service
                 return normalisedName;
             }
 
-            normalisedName = name.ToUpper().RemoveDiacritics();
+            normalisedName = name.RemoveDiacritics();
             normalisedName = StripChannelName(normalisedName);
+            normalisedName = normalisedName.ToUpper();
 
             cache.StoreNormalisedChannelName(name, normalisedName);
 
@@ -75,12 +81,13 @@ namespace IptvPlaylistAggregator.Service
                 strippedName = strippedName.Replace(substringToStrip, "", true, CultureInfo.InvariantCulture);
             }
 
-            foreach (string substringToReplace in SubstringsToReplace.Keys)
+            foreach (string pattern in TextReplacements.Keys)
             {
                 strippedName = Regex.Replace(
                     strippedName,
-                    substringToReplace,
-                    SubstringsToReplace[substringToReplace]);
+                    pattern,
+                    TextReplacements[pattern],
+                    RegexOptions.IgnoreCase);
             }
 
             string finalString = string.Empty;
