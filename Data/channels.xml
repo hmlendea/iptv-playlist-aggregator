@@ -258,6 +258,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/arcadia_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Arcadia</string>
+      <string>RO: ArcadiaTV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -532,7 +533,9 @@
     <Name>Cireșarii TV</Name>
     <GroupId>religious</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ciresarii_tv.png</LogoUrl>
-    <Aliases />
+    <Aliases>
+      <string>RO: Cireșarii</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CNN.ro</Id>
@@ -2546,7 +2549,9 @@
     <Name>Trinitas</Name>
     <GroupId>religious</GroupId>
     <LogoUrl>https://www.trinitas.tv/wp-content/themes/trinitas.tv/assets/imgs/favicons/android-icon-192x192.png</LogoUrl>
-    <Aliases />
+    <Aliases>
+      <string>RO: Trinitas TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Trinity.ro</Id>
@@ -2581,6 +2586,7 @@
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_cns.png</LogoUrl>
     <Aliases>
+      <string>RO: CNS TV</string>
       <string>RO: CNS</string>
     </Aliases>
   </ChannelDefinitionEntity>
