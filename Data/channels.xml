@@ -65,6 +65,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/accent_tv.png</LogoUrl>
     <Aliases>
       <string>MD: Accent</string>
+      <string>MD: Accent TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -938,6 +939,7 @@
     <LogoUrl>http://stvron.com/canale/mari/drochia-tv.png</LogoUrl>
     <Aliases>
       <string>MD: Drochia</string>
+      <string>MD: Drochia TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1431,12 +1433,26 @@
     <LogoUrl />
     <Aliases>
       <string>AFRO ZIK</string>
+      <string>AL: Tring Sport 2</string>
       <string>AR: AD Sport 4</string>
+      <string>BR: SporTV 3</string>
+      <string>ES: M Desportes</string>
+      <string>EX-YU: Arena Sport 2 HR</string>
+      <string>FR: Bein Sport Max 10</string>
+      <string>FR: EuroSport 1</string>
+      <string>FR: Foot+ 24/24</string>
       <string>FR: Golf Channel</string>
       <string>FR: Golf Channels</string>
       <string>FR: LEquipe 21</string>
       <string>FR: RMC Sport 3 LIVE 5</string>
       <string>FR: RMC Sport 3</string>
+      <string>FR: RMC Sport LIVE 5</string>
+      <string>GR: Cosmote Sport 3</string>
+      <string>PL: Polsat Sport News</string>
+      <string>SU: Sportkanalen</string>
+      <string>SU: Viasat Sport</string>
+      <string>UK: Premier Sports 2</string>
+      <string>UK: Sky Sports Racing</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1865,6 +1881,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/noroc_tv.png</LogoUrl>
     <Aliases>
       <string>MD: Noroc</string>
+      <string>MD: Noroc TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2072,7 +2089,9 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/publika.png</LogoUrl>
     <Aliases>
+      <string>MD: Publika TV</string>
       <string>MD: Publika</string>
+      <string>MD: TV Publika</string>
       <string>RO: TV Publika</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2317,7 +2336,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Logo_Telekom_Sport_1_%282017%29.svg/256px-Logo_Telekom_Sport_1_%282017%29.svg.png</LogoUrl>
     <Aliases>
-      <string>Dolce Sport 1</string>
+      <string>RO: Dolce Sport 1</string>
       <string>RO: Telekom 1</string>
       <string>RO: Telekom Sport 1 [Live During Events Only]</string>
       <string>RO: Telekom Sport 1 Ultra</string>
@@ -2330,7 +2349,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Logo_Telekom_Sport_2_%282017%29.svg/256px-Logo_Telekom_Sport_2_%282017%29.svg.png</LogoUrl>
     <Aliases>
-      <string>Dolce Sport 2</string>
+      <string>RO: Dolce Sport 2</string>
       <string>RO: Telekom 2</string>
       <string>RO: Telekom Sport 2 [Live During Events Only]</string>
       <string>RO: Telekom Sport 2 Ultra</string>
@@ -2343,7 +2362,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_Telekom_Sport_3_%282017%29.svg/256px-Logo_Telekom_Sport_3_%282017%29.svg.png</LogoUrl>
     <Aliases>
-      <string>Dolce Sport 3</string>
+      <string>RO: Dolce Sport 3</string>
       <string>RO: Telekom 3</string>
       <string>RO: Telekom Sport 3 [Live During Events Only]</string>
       <string>RO: Telekom Sport 3 Ultra</string>
@@ -2356,7 +2375,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Logo_Telekom_Sport_4_%282017%29.svg/256px-Logo_Telekom_Sport_4_%282017%29.svg.png</LogoUrl>
     <Aliases>
-      <string>Dolce Sport 4</string>
+      <string>RO:Dolce Sport 4</string>
       <string>RO: Telekom 4</string>
       <string>RO: Telekom Sport 4 [Live During Events Only]</string>
       <string>RO: Telekom Sport 4 Ultra</string>
@@ -2369,7 +2388,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Logo_Telekom_Sport_5_%282017%29.svg/256px-Logo_Telekom_Sport_5_%282017%29.svg.png</LogoUrl>
     <Aliases>
-      <string>Dolce Sport 5</string>
+      <string>RO: Dolce Sport 5</string>
       <string>RO: Telekom 5</string>
       <string>RO: Telekom Sport 5 [Live During Events Only]</string>
       <string>RO: Telekom Sport 5 Ultra</string>
@@ -2382,7 +2401,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Telekom_Sport_6_%282017%29.svg/256px-Logo_Telekom_Sport_6_%282017%29.svg.png</LogoUrl>
     <Aliases>
-      <string>Dolce Sport 6</string>
+      <string>RO: Dolce Sport 6</string>
       <string>RO: Telekom 6</string>
       <string>RO: Telekom Sport 6 [Live During Events Only]</string>
       <string>RO: Telekom Sport 6 Ultra</string>
