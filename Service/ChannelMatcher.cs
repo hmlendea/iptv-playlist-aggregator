@@ -13,7 +13,7 @@ namespace IptvPlaylistAggregator.Service
     {
         static readonly string[] SubstringsToStrip = new string[]
         {
-            "(backup)", "(b)", " backup", "(On-Demand)", "[Multi-Audio]", "MultiSub", "www.iptvsource.com"
+            "(backup)", "(b)", " backup", "(On-Demand)", "(New!)", "(Live On Matches)", "[Multi-Audio]", "MultiSub", "www.iptvsource.com"
         };
 
         static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
@@ -26,7 +26,7 @@ namespace IptvPlaylistAggregator.Service
             { "\\[[0-9]*p\\]", "" },
             { " S[0-9]$", "" },
 
-            { " ROM$", "" },
+            { " \\(*ROM\\)*$", "" },
             { "[\\|]*ROM*[\\|:]", "RO:" },
             { "^[\\|]*VIP([A-Z][A-Z]):", "$1:" },
             { "RUMANIA", "Romania" },

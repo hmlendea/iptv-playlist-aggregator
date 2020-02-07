@@ -350,9 +350,7 @@
     <Name>Bit TV</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://bittv.info/wp-content/uploads/2016/02/cropped-logo1.png</LogoUrl>
-    <Aliases>
-      <string>Bit TV (ROM)</string>
-    </Aliases>
+    <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BollywoodTV.ro</Id>
@@ -375,8 +373,8 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood_classic.png</LogoUrl>
     <Aliases>
-      <string>BO Clasic</string>
-      <string>Bollywood Classic</string>
+      <string>RO: BO Clasic</string>
+      <string>RO: Bollywood Classic</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -509,7 +507,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Cinemax.ro.png</LogoUrl>
     <Aliases>
-      <string>CineMAX</string>
+      <string>RO: CineMAX</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -551,7 +549,7 @@
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/columna-tv.png</LogoUrl>
     <Aliases>
-      <string>Columnta</string>
+      <string>RO: Columnta</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -616,7 +614,7 @@
     <GroupId>radio</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/dance_fm.png</LogoUrl>
     <Aliases>
-      <string>Pro FM Dance FM</string>
+      <string>RO: Pro FM Dance FM</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -660,7 +658,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/dibitv.png</LogoUrl>
     <Aliases>
-      <string>Dibi TV (Music) Balkan</string>
+      <string>RO: Dibi TV (Music) Balkan</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -694,7 +692,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_sport_1.png</LogoUrl>
     <Aliases>
-      <string>Digi Sports 1</string>
+      <string>RO: Digi Sports 1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -704,7 +702,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_sport_2.png</LogoUrl>
     <Aliases>
-      <string>Digi Sports 2</string>
+      <string>RO: Digi Sports 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -714,7 +712,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_sport_3.png</LogoUrl>
     <Aliases>
-      <string>Digi Sports 3</string>
+      <string>RO: Digi Sports 3</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -724,7 +722,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_sport_4.png</LogoUrl>
     <Aliases>
-      <string>Digi Sports 4</string>
+      <string>RO: Digi Sports 4</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -744,7 +742,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
     <Aliases>
-      <string>Digi24 (România)</string>
+      <string>RO: Digi24 (România)</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -820,7 +818,7 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/discovery_channel.png</LogoUrl>
     <Aliases>
-      <string>Discovery</string>
+      <string>RO: Discovery</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -830,7 +828,7 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
     <Aliases>
-      <string>Discovery ID</string>
+      <string>RO: Discovery ID</string>
       <string>RO: ID Investigation Discovery</string>
       <string>RO: Investigation Discovery</string>
       <string>RO: Investigation Disvovery</string>
@@ -843,9 +841,9 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
     <Aliases>
-      <string>Discovery IDX</string>
-      <string>ID Xtra</string>
       <string>RO: Discovery ID Xtra</string>
+      <string>RO: Discovery IDX</string>
+      <string>RO: ID Xtra</string>
       <string>RO: Investigation Discovery</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -874,8 +872,8 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/hu/DiscoveryTurboXtra.hu.png</LogoUrl>
     <Aliases>
-      <string>DTX</string>
       <string>RO: Discovery Turbo Xtra</string>
+      <string>RO: DTX</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -912,7 +910,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/diva.png</LogoUrl>
     <Aliases>
-      <string>Diva</string>
+      <string>RO: Diva</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1024,7 +1022,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Etno.ro.png</LogoUrl>
     <Aliases>
-      <string>Ento</string>
+      <string>RO: Ento</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1052,7 +1050,7 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/eurosport1.png</LogoUrl>
     <Aliases>
-      <string>EuroSport</string>
+      <string>RO: EuroSport</string>
       <string>RO: EUSport 1</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1145,7 +1143,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmnow.png</LogoUrl>
     <Aliases>
-      <string>Digi Film</string>
+      <string>RO: Digi Film</string>
       <string>RO: Digi Filim</string>
       <string>RO: Digi Film Now</string>
     </Aliases>
@@ -1181,7 +1179,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmbox_plus.png</LogoUrl>
     <Aliases>
-      <string>FilmBox Plus INT</string>
+      <string>RO: FilmBox Plus INT</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1279,7 +1277,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/HappyChannel.ro.png</LogoUrl>
     <Aliases>
-      <string>Happy</string>
+      <string>RO: Happy</string>
       <string>RO: Happy Channale</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1290,8 +1288,8 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/HBO.ro.png</LogoUrl>
     <Aliases>
-      <string>HBO</string>
-      <string>HBO Romania</string>
+      <string>RO: HBO</string>
+      <string>RO: HBO Romania</string>
       <string>RO: HBOmania</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1326,9 +1324,9 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/history_channel.png</LogoUrl>
     <Aliases>
-      <string>History</string>
       <string>RO: Histori Channel</string>
       <string>RO: History ChannelH</string>
+      <string>RO: History</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1346,7 +1344,7 @@
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/iasi_tv_life.png</LogoUrl>
     <Aliases>
-      <string>Iasi</string>
+      <string>RO: Iasi</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1396,7 +1394,7 @@
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/info_hd.png</LogoUrl>
     <Aliases>
-      <string>Televiziunea InfoHD</string>
+      <string>RO: Televiziunea InfoHD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1432,6 +1430,7 @@
     <GroupId>unknown</GroupId>
     <LogoUrl />
     <Aliases>
+      <string>AF-South Africa: SuperSport 1</string>
       <string>AFRO ZIK</string>
       <string>AL: Tring Sport 2</string>
       <string>AR: AD Sport 4</string>
@@ -1449,8 +1448,10 @@
       <string>FR: RMC Sport LIVE 5</string>
       <string>GR: Cosmote Sport 3</string>
       <string>PL: Polsat Sport News</string>
+      <string>PT: EuroSport 2</string>
       <string>SU: Sportkanalen</string>
       <string>SU: Viasat Sport</string>
+      <string>UK: Chelsea TV</string>
       <string>UK: Premier Sports 2</string>
       <string>UK: Sky Sports Racing</string>
     </Aliases>
@@ -1547,7 +1548,7 @@
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/look_plus.png</LogoUrl>
     <Aliases>
-      <string>Look TV Plus</string>
+      <string>RO: Look TV Plus</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1557,8 +1558,8 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://www.looksport.ro/wp-content/themes/looksport/assets/imgs/favicon/favicon-96x96.png</LogoUrl>
     <Aliases>
-      <string>Look</string>
-      <string>Look TV Sport</string>
+      <string>RO: Look</string>
+      <string>RO: Look TV Sport</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1683,7 +1684,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/5/50/Dolce_mooz_ro.png/220px-Dolce_mooz_ro.png</LogoUrl>
     <Aliases>
-      <string>Mooz</string>
+      <string>RO: Mooz</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1741,7 +1742,7 @@
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://musceltv.ro/site/wp-content/uploads/2016/05/microsigla-frontala.png</LogoUrl>
     <Aliases>
-      <string>RO| Muscel</string>
+      <string>RO: Muscel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1770,9 +1771,7 @@
     <Name>Nașul TV</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nasul_tv.png</LogoUrl>
-    <Aliases>
-      <string>Nașul TV (New!)</string>
-    </Aliases>
+    <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NatGeo.ro</Id>
@@ -1781,10 +1780,10 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/national_geographic.png</LogoUrl>
     <Aliases>
-      <string>Nat Geo</string>
-      <string>NGC</string>
+      <string>RO: Nat Geo</string>
       <string>RO: Nat Geographic</string>
       <string>RO: NG</string>
+      <string>RO: NGC</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1794,9 +1793,9 @@
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/national_geographic_wild.png</LogoUrl>
     <Aliases>
-      <string>Nat Geo Wild</string>
-      <string>National Geo Wild</string>
-      <string>NGC Wild</string>
+      <string>RO: Nat Geo Wild</string>
+      <string>RO: National Geo Wild</string>
+      <string>RO: NGC Wild</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1806,9 +1805,9 @@
     <GroupId>general</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Na%C5%A3ional24Plus.ro.png</LogoUrl>
     <Aliases>
-      <string>National 24</string>
-      <string>RO: N24</string>
       <string>RO: N24 Plus</string>
+      <string>RO: N24</string>
+      <string>RO: Național 24</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1818,7 +1817,7 @@
     <GroupId>general</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/NationalTV.ro.png</LogoUrl>
     <Aliases>
-      <string>Na?ional</string>
+      <string>RO: Na?ional</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1846,7 +1845,7 @@
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nickelodeon.png</LogoUrl>
     <Aliases>
-      <string>Nickelodeon (RO)</string>
+      <string>RO: Nickelodeon (RO)</string>
       <string>RO: NIckolodeon</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2592,7 +2591,8 @@
     <GroupId>thematic</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/TVPaprika.ro.png</LogoUrl>
     <Aliases>
-      <string>Paprika</string>
+      <string>RO: Paprika</string>
+      <string>RO: Paprika TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2662,7 +2662,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_TV8_%282017%29.svg/2000px-Logo_TV8_%282017%29.svg.png</LogoUrl>
     <Aliases>
       <string>MD: TV8</string>
-      <string>TV8</string>
+      <string>RO: TV8</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2737,9 +2737,9 @@
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_iasi.png</LogoUrl>
     <Aliases>
-      <string>RO: TVR Ia</string>
       <string>RO: TVR Ia?i</string>
-      <string>TVR Isasi</string>
+      <string>RO: TVR Ia</string>
+      <string>RO: TVR Isasi</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2750,7 +2750,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/d9/TVRiLogo.svg/1200px-TVRiLogo.svg.png</LogoUrl>
     <Aliases>
       <string>RO: TVR Int</string>
-      <string>RO: TVR International (TVRi)</string>
+      <string>RO: TVR Internațional (TVRi)</string>
       <string>RO: TVRi</string>
     </Aliases>
   </ChannelDefinitionEntity>
