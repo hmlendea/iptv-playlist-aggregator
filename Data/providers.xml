@@ -445,6 +445,14 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>freedailyiptv-link6</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>105</Priority>
+    <Name>Free Daily IPTV Link 6</Name>
+    <UrlFormat>https://freedailyiptv.com/countries/RO/RO6_freedailyiptv.com.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>github-iptvorg-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>110</Priority>
