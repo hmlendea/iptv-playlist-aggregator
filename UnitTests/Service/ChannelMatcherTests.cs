@@ -75,6 +75,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("RO: Animal World [768p]", "ANIMALWORLD")]
         [TestCase("RO: Bit TV (ROM)", "BITTV")]
         [TestCase("RO: Nașul TV (New!)", "NASULTV")]
+        [TestCase("RO: U TV S1-1", "UTV")]
         [TestCase("RO\" Romania TV", "ROMANIATV")]
         [TestCase("RUMANIA: DigiWorld FHD (Opt-1)", "DIGIWORLD")]
         [TestCase("U TV", "UTV")]

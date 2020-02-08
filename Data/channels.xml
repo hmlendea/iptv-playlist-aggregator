@@ -2702,10 +2702,6 @@
     <Name>U TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/utv.png</LogoUrl>
-    <Aliases>
-      <string>RO: U TV S1-1</string>
-      <string>RO: U TV S1-2</string>
-    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>VPTV.ro</Id>
