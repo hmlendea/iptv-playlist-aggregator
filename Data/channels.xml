@@ -167,7 +167,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Antena 1</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_Antena_1_%282010%29.svg/100px-Logo_Antena_1_%282010%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/antena1.png</LogoUrl>
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -318,7 +318,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>B1 TV</Name>
     <GroupId>news</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd40bc33b1566d8b45d5.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/b1tv.png</LogoUrl>
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -474,7 +474,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Cartoon Network</Name>
     <GroupId>kids</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/canal33.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cartoon_network.png</LogoUrl>
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -576,7 +576,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Cornea TV</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>http://corneatv.ro/images/corneatv-logo.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cornea_tv.png</LogoUrl>
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
