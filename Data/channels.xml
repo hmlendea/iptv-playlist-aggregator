@@ -354,6 +354,14 @@
     <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>BloombergTV.us</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Bloomberg</Name>
+    <GroupId>foreign</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bloomberg.png</LogoUrl>
+    <Aliases />
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>BollywoodTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Bollywood</Name>
@@ -1092,7 +1100,9 @@
     <Name>Fallout Radio</Name>
     <GroupId>radio</GroupId>
     <LogoUrl>https://www.freepnglogos.com/uploads/fallout-4-logo/fallout-high-resolution-logo-13.png</LogoUrl>
-    <Aliases />
+    <Aliases>
+      <string>INT: Fallout Radio</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FashionTV.ro</Id>
