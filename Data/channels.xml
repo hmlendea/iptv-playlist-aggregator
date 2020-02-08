@@ -894,7 +894,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Drochia TV</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/drochia-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/drochia_tv.png</LogoUrl>
     <Aliases>
       <string>MD: Drochia</string>
       <string>MD: Drochia TV</string>
@@ -1023,7 +1023,7 @@
     <Id>ExclusivTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Exclusiv TV</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>local-moldova</GroupId>
     <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1345,8 +1345,8 @@
     <Id>InfoPescar.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Info Pescar</Name>
-    <GroupId>unknown</GroupId>
-    <LogoUrl />
+    <GroupId>thematic</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/info_pescar.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>InformatiaTV.ro</Id>
@@ -2581,7 +2581,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>TV8 Moldova</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_TV8_%282017%29.svg/2000px-Logo_TV8_%282017%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv8.png</LogoUrl>
     <Aliases>
       <string>MD: TV8</string>
       <string>RO: TV8</string>
