@@ -302,6 +302,9 @@
     <Name>B1 TV</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/b1tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: B1</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BalkanikaMusicTv.ro</Id>
@@ -337,6 +340,9 @@
     <Name>Bloomberg</Name>
     <GroupId>foreign</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bloomberg.png</LogoUrl>
+    <Aliases>
+      <string>INT: Bloomberg</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BollywoodTV.ro</Id>
@@ -1700,6 +1706,7 @@
     <GroupId>educational</GroupId>
     <LogoUrl />
     <Aliases>
+      <string>INT: NASA TV</string>
       <string>US: NASA</string>
     </Aliases>
   </ChannelDefinitionEntity>
