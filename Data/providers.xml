@@ -557,30 +557,6 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>iptvsat1</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>160</Priority>
-    <Name>IPTVsat Main 1</Name>
-    <UrlFormat>https://www.iptvsat.com/dn/romania.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>iptvsat2</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>161</Priority>
-    <Name>IPTVsat Main 2</Name>
-    <UrlFormat>https://iptvsat.info/Play/Romania-M3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>iptvsat3</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>162</Priority>
-    <Name>IPTVsat Backup</Name>
-    <UrlFormat>https://www.iptvsat.com/dn/romania1.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>m3uplaylist</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>170</Priority>
