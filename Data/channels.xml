@@ -91,14 +91,14 @@
     <Id>AgroTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Agro TV</Name>
-    <GroupId>news</GroupId>
+    <GroupId>thematic</GroupId>
     <LogoUrl>https://agro-tv.ro/wp-content/uploads/2018/09/favicon.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AgroTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Agro TV Moldova</Name>
-    <GroupId>local-basarabia</GroupId>
+    <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/agro_tv_moldova.png</LogoUrl>
     <Aliases>
       <string>MD: Agro</string>
@@ -606,7 +606,7 @@
     <Id>DaVinciLearning.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>DaVinci Learning</Name>
-    <GroupId>kids</GroupId>
+    <GroupId>educational[</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/58025817bc33b1525f8b77ce.png</LogoUrl>
     <Aliases>
       <string>RO: DaVinci</string>
@@ -1511,7 +1511,7 @@
     <Id>LookPlus.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Look Plus</Name>
-    <GroupId>general</GroupId>
+    <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/look_plus.png</LogoUrl>
     <Aliases>
       <string>RO: Look TV Plus</string>
@@ -2486,7 +2486,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Travel Channel</Name>
     <GroupId>thematic</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd44bc33b1566d8b464c.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/travel_channel.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TravelMix.ro</Id>
