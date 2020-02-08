@@ -1182,7 +1182,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>FRF TV</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl />
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/frf_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>GagiuTV.ro</Id>
@@ -1711,7 +1711,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>NASA TV</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl />
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nasa_tv.png</LogoUrl>
     <Aliases>
       <string>INT: NASA TV</string>
       <string>US: NASA</string>
