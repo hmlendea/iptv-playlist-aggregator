@@ -1652,6 +1652,13 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/MTV_Dance_2013_logo.svg/220px-MTV_Dance_2013_logo.svg.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MTVEurope.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>MTV Europe</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/mtv_europe.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>MTVHits.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>MTV Hits</Name>
@@ -1835,6 +1842,13 @@
     <Aliases>
       <string>RO: Nova TV Brasov</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>HGTV.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>HGTV</Name>
+    <GroupId>thematic</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hgtv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HTBMoldova.md</Id>
