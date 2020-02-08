@@ -1178,6 +1178,13 @@
     <LogoUrl>https://static.iptv-epg.com/fr/France24.fr.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>FRBTV.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>FRB TV</Name>
+    <GroupId>sport</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/frb_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>FRFTV.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>FRF TV</Name>
@@ -1911,6 +1918,17 @@
       <string>Fishing &amp; Hunting</string>
       <string>RO: Fishing and Hunting</string>
       <string>RO: The Fishing &amp; Hunting</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>FMF.md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>FMF TV</Name>
+    <GroupId>sport</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/fmf_tv.png</LogoUrl>
+    <Aliases>
+      <string>MD: FMF TV</string>
+      <string>MD: FMF</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
