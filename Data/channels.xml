@@ -1373,6 +1373,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>___broken</Id>
+    <IsEnabled>false</IsEnabled>
+    <Name>INVALID_CHANNEL</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl />
+    <Aliases>
+      <string>Acasa TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>___foreignChannels</Id>
     <IsEnabled>false</IsEnabled>
     <Name>FOREIGN_CHANNEL</Name>
@@ -1435,7 +1445,7 @@
   <ChannelDefinitionEntity>
     <Id>JobTV.ro</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>JobTv</Name>
+    <Name>Job TV</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/job_tv.png</LogoUrl>
     <Aliases>
