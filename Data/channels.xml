@@ -1032,6 +1032,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>Fallout76AppalachiaRadio.com</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Fallout 76 Appalachia Radio</Name>
+    <GroupId>radio</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/fallout_76_appalachia_radio.png</LogoUrl>
+    <Aliases>
+      <string>INT: Fallout 76 Appalachia Radio</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>FalloutRadio.com</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Fallout Radio</Name>
