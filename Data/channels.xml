@@ -504,8 +504,8 @@
     <Id>Cinethronix.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Cinethronix</Name>
-    <GroupId>movies</GroupId>
-    <LogoUrl>https://static.wixstatic.com/media/44ce1a_ee643db931d44901aa36539027761a22~mv2_d_2986_1822_s_2.png/v1/fill/w_154,h_98,al_c,q_80,usm_0.66_1.00_0.01/SIGLA%20CINETHRONIX.webp</LogoUrl>
+    <GroupId>thematic</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cinethronix.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Ciresarii.ro</Id>
@@ -1427,7 +1427,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Jim Jam</Name>
     <GroupId>kids</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/jimjam.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/jimjam.png</LogoUrl>
     <Aliases>
       <string>RO: JimJam EMEA</string>
     </Aliases>
