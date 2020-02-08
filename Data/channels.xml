@@ -1488,6 +1488,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>JobTV.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Job TV</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/job_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Job</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>JurnalTV.md</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Jurnal TV</Name>
@@ -1534,6 +1544,16 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/kiss_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Kiss</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>LinkPressTV.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>LinkPress TV</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/linkpress_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: LinkPress</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2467,6 +2487,21 @@
     <LogoUrl>http://stvron.com/canale/mari/telestar-1.png</LogoUrl>
     <Aliases>
       <string>RO: Telestar</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TezaurTV.md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Tezaur Folc TV</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tezaur_folc_tv.png</LogoUrl>
+    <Aliases>
+      <string>MD: Tezaur Folc TV</string>
+      <string>MD: Tezaur Folc</string>
+      <string>MD: Tezaur Folcloric TV</string>
+      <string>MD: Tezaur Folcloric</string>
+      <string>MD: Tezaur TV</string>
+      <string>MD: Tezaur</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
