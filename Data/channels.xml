@@ -1490,8 +1490,8 @@
   <ChannelDefinitionEntity>
     <Id>JobTV.ro</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Job TV</Name>
-    <GroupId>unknown</GroupId>
+    <Name>JobTv</Name>
+    <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/job_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Job</string>
@@ -1547,13 +1547,13 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>LinkPressTV.ro</Id>
+    <Id>LinkpressTV.ro</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>LinkPress TV</Name>
-    <GroupId>unknown</GroupId>
+    <Name>Linkpress TV</Name>
+    <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/linkpress_tv.png</LogoUrl>
     <Aliases>
-      <string>RO: LinkPress</string>
+      <string>RO: Linkpress</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
