@@ -74,6 +74,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("|ROM|: Cromtel", "CROMTEL")]
         [TestCase("|UK| CHELSEA TV (Live On Matches) HD", "UKCHELSEATV")]
         [TestCase("RO    \" DIGI SPORT 1 HD RO", "DIGISPORT1")]
+        [TestCase("RO-Animal Planet HD", "ANIMALPLANET")]
         [TestCase("RO: Animal World [768p]", "ANIMALWORLD")]
         [TestCase("RO: Bit TV (ROM)", "BITTV")]
         [TestCase("RO: HBO 3 RO", "HBO3")]
