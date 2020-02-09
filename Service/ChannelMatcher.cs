@@ -19,9 +19,9 @@ namespace IptvPlaylistAggregator.Service
         static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
             { "RUMANIA", "Romania" },
-            { "^Romania[\"\\|:]", "RO:" },
+            { "^[\\|\":]* *Romania *[\"\\|:]", "RO:" },
             
-            { "^[\\|\":]*([A-Z][A-Z])[\\|\":] *", "$1:" },
+            { "^[\\|\":]* *([A-Z][A-Z]) *[\\|\":] *", "$1:" },
             { "^([A-Z][A-Z]): *(.*) \\1$", "$1: $2" },
 
             { " HEVC$", "" },
