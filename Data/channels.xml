@@ -449,7 +449,7 @@
     <IsEnabled>false</IsEnabled>
     <Name>Canal Regional</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>https://canalregional.md/wp-content/uploads/2018/04/Logo.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/canal_regional.png</LogoUrl>
     <Aliases>
       <string>Canal Regional (Moldova)</string>
       <string>MD: Canal Regional</string>
