@@ -606,7 +606,7 @@
     <Id>DaVinciLearning.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>DaVinci Learning</Name>
-    <GroupId>educational[</GroupId>
+    <GroupId>educational</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/58025817bc33b1525f8b77ce.png</LogoUrl>
     <Aliases>
       <string>RO: DaVinci</string>
