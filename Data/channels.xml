@@ -1459,6 +1459,7 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/jurnal-tv.png</LogoUrl>
     <Aliases>
+      <string>MD: Jurnal TV</string>
       <string>MD: Jurnal</string>
     </Aliases>
   </ChannelDefinitionEntity>
