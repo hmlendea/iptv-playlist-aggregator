@@ -507,6 +507,22 @@
     <Name>mak-iptv's GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/mak-iptv/iptv/master/channels/ro.m3u</UrlFormat>
   </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-awinashrkdf-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>117</Priority>
+    <Name>awinashrkdf's GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/awinashrkdf/iptv/master/channels/ro.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-awinashrkdf-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>118</Priority>
+    <Name>awinashrkdf's GitHub MD Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/awinashrkdf/iptv/master/channels/md.m3u</UrlFormat>
+  </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
     <Id>tousecurity1</Id>
