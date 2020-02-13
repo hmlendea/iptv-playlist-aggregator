@@ -979,6 +979,7 @@
     <LogoUrl>https://static.iptv-epg.com/ro/Etno.ro.png</LogoUrl>
     <Aliases>
       <string>RO: Ento</string>
+      <string>RO: Etno TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1071,7 +1072,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/ae/FavoritLogo.png</LogoUrl>
     <Aliases>
-      <string>RO: Favorit TV iptvsource.com</string>
+      <string>RO: Favorit</string>
       <string>RO: Favorti</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2842,11 +2843,12 @@
   <ChannelDefinitionEntity>
     <Id>ZUTV.ro</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>ZU</Name>
+    <Name>ZU TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a2/ZUTVLogo.png</LogoUrl>
     <Aliases>
       <string>RO: Radio ZU Video</string>
+      <string>RO: ZU</string>
     </Aliases>
   </ChannelDefinitionEntity>
 </ArrayOfChannelDefinitionEntity>
