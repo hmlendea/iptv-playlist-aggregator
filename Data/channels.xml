@@ -1458,7 +1458,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Jurnal TV</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/jurnal-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/jurnal_tv.png</LogoUrl>
     <Aliases>
       <string>MD: Jurnal TV</string>
       <string>MD: Jurnal</string>
@@ -1979,7 +1979,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Pro Cinema</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/pro-cinema.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_cinema.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProFM.ro</Id>
@@ -2294,7 +2294,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 1</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Logo_Telekom_Sport_1_%282017%29.svg/256px-Logo_Telekom_Sport_1_%282017%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_1.png</LogoUrl>
     <Aliases>
       <string>RO: Dolce Sport 1</string>
       <string>RO: Telekom 1</string>
@@ -2307,7 +2307,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 2</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Logo_Telekom_Sport_2_%282017%29.svg/256px-Logo_Telekom_Sport_2_%282017%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_2.png</LogoUrl>
     <Aliases>
       <string>RO: Dolce Sport 2</string>
       <string>RO: Telekom 2</string>
@@ -2320,7 +2320,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 3</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_Telekom_Sport_3_%282017%29.svg/256px-Logo_Telekom_Sport_3_%282017%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_3.png</LogoUrl>
     <Aliases>
       <string>RO: Dolce Sport 3</string>
       <string>RO: Telekom 3</string>
@@ -2333,7 +2333,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 4</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Logo_Telekom_Sport_4_%282017%29.svg/256px-Logo_Telekom_Sport_4_%282017%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_4.png</LogoUrl>
     <Aliases>
       <string>RO:Dolce Sport 4</string>
       <string>RO: Telekom 4</string>
@@ -2346,7 +2346,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 5</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Logo_Telekom_Sport_5_%282017%29.svg/256px-Logo_Telekom_Sport_5_%282017%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_5.png</LogoUrl>
     <Aliases>
       <string>RO: Dolce Sport 5</string>
       <string>RO: Telekom 5</string>
@@ -2359,7 +2359,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 6</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Telekom_Sport_6_%282017%29.svg/256px-Logo_Telekom_Sport_6_%282017%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_6.png</LogoUrl>
     <Aliases>
       <string>RO: Dolce Sport 6</string>
       <string>RO: Telekom 6</string>
