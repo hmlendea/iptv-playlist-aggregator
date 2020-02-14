@@ -44,6 +44,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         }
 
         [TestCase("Cromtel", "Cmrotel", "Cmtel")]
+        [TestCase("Telekom Sport 2", "RO: Telekom Sport 2", "RO: Digi Sport 2")]
         [Test]
         public void DoesMatch_NamesDoNotMatch_ReturnsFalse(
             string definedName,
@@ -51,18 +52,6 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             string providerName)
         {
             ChannelName channelName = GetChannelName(definedName, alias);
-
-            Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName));
-        }
-
-        [Test]
-        public void DoesMatch_CompareWithDifferentValue_ReturnsFalse()
-        {
-            string definedName = "Telekom Sport 2";
-            string providerName = "RO: Digi Sport 2";
-            string alias = "RO: Telekom Sport 2";
-
-            ChannelName channelName = new ChannelName(definedName, alias);
 
             Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName));
         }
