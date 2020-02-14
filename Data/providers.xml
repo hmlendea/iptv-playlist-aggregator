@@ -523,11 +523,19 @@
     <Name>awinashrkdf's GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/awinashrkdf/iptv/master/channels/md.m3u</UrlFormat>
   </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-freeiptv-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>119</Priority>
+    <Name>Free-IPTV's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/Free-IPTV/iptv/master/channels/22_Romania.m3u</UrlFormat>
+  </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
     <Id>tousecurity1</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>120</Priority>
+    <Priority>130</Priority>
     <Name>Tousecurity List 1</Name>
     <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20M3u%20%281%29%20{0:dd-MM-yyyy}.m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
@@ -535,7 +543,7 @@
   <PlaylistProviderEntity>
     <Id>tousecurity1-2</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>121</Priority>
+    <Priority>131</Priority>
     <Name>Tousecurity List 2</Name>
     <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20M3u%20%282%29%{0:dd-MM-yyyy}.m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
@@ -543,7 +551,7 @@
   <PlaylistProviderEntity>
     <Id>tousecurity1-3</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>123</Priority>
+    <Priority>132</Priority>
     <Name>Tousecurity List 3</Name>
     <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20M3u%20%283%29%20{0:dd-MM-yyyy}.m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
@@ -551,7 +559,7 @@
   <PlaylistProviderEntity>
     <Id>tousecurity2-1</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>130</Priority>
+    <Priority>135</Priority>
     <Name>Tousecurity Backup 1</Name>
     <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20%281%29%20{0:dd-MM-yyyy}m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
