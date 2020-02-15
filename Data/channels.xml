@@ -1810,6 +1810,14 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>NETv.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>NETv</Name>
+    <GroupId>local-moldova</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/netv.png</LogoUrl>
+    <Aliases />
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Nickelodeon.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Nickelodeon</Name>
