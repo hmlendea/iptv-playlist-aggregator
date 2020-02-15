@@ -1733,6 +1733,8 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nasa_tv.png</LogoUrl>
     <Aliases>
       <string>INT: NASA TV</string>
+      <string>INT: NASA</string>
+      <string>US: NASA TV</string>
       <string>US: NASA</string>
     </Aliases>
   </ChannelDefinitionEntity>
