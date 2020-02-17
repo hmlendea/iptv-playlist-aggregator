@@ -2,14 +2,12 @@
 <ArrayOfChannelDefinitionEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ChannelDefinitionEntity>
     <Id>1HD.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>1 HD</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/1muz.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MusicChannel.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>1 Music Channel</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/1_music_channel.png</LogoUrl>
@@ -32,7 +30,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>1TV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>1TV</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/1-tv-neamt.png</LogoUrl>
@@ -42,21 +39,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>6TV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>6 TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://new.6tv.ro/wp-content/uploads/2017/08/6tv_logo.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>A7TV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>A7 TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://a7tv.ro/wp-content/uploads/2017/12/logo-a7tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AccentTV.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Accent TV</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/accent_tv.png</LogoUrl>
@@ -67,7 +61,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ActualitateaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Actualitatea TV</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/actualitatea-tv.png</LogoUrl>
@@ -77,7 +70,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AcumTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Acum TV</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>http://acum-tv.ro/wp-content/uploads/2019/01/logo-acum-tv-xs-1-300x98.png</LogoUrl>
@@ -89,14 +81,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AgroTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Agro TV</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://agro-tv.ro/wp-content/uploads/2018/09/favicon.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AgroTV.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Agro TV Moldova</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/agro_tv_moldova.png</LogoUrl>
@@ -106,21 +96,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AlbaCarolina.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Alba Carolina TV</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://www.albacarolinatv.ro/wp-content/uploads/2018/05/alba-carolina-tv-logo250.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AlegeTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Alege TV</Name>
     <GroupId>unknown</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/alege-tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AlfaOmegaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Alfa &amp; Omega</Name>
     <GroupId>religious</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/alfa_omega_tv.png</LogoUrl>
@@ -130,7 +117,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AlphaMedia.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Alpha Media</Name>
     <GroupId>local-dobrogea</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/alpha_media.png</LogoUrl>
@@ -142,35 +128,30 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AMC.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>AMC</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd46bc33b1566d8b4694.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AnimalPlanet.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Animal Planet</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/animal_planet.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Antena1.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Antena 1</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/antena1.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Antena3.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Antena 3</Name>
     <GroupId>news</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45ac.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AntenaComedy.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Antena Comedy Play</Name>
     <GroupId>entertainment</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/comedy-play.png</LogoUrl>
@@ -182,7 +163,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AntenaCook.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Antena Cook&amp;Play</Name>
     <GroupId>entertainment</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/cook-play.png</LogoUrl>
@@ -196,28 +176,23 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AntenaInternational.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Antena Internațional</Name>
     <GroupId>international</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/antena_international.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AntenaMonden.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Antena Monden</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/antena-monden.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AntenaSatelor.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Antena Satelor</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AntenaStars.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Antena Stars</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/antena_stars.png</LogoUrl>
@@ -229,17 +204,14 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ApoloniaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Apolonia TV</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
     <Aliases>
       <string>RO: Apollonia</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ArcadiaWorld.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Arcadia World</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/arcadia_tv.png</LogoUrl>
@@ -250,21 +222,17 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ArdealTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Ardeal TV</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ardeal_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AutoMotorSport.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Auto Motor Sport</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AXN.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>AXN</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/axn.png</LogoUrl>
@@ -274,21 +242,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AXNBlack.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>AXN Black</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/axn_black.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AXNSpin.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>AXN Spin</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/axn_spin.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AXNWhite.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>AXN White</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/axn_white.png</LogoUrl>
@@ -298,7 +263,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>B1TV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>B1 TV</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/b1tv.png</LogoUrl>
@@ -308,35 +272,30 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BalkanikaMusicTv.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Balkanika TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/balkanika-tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BanatTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Banat TV</Name>
     <GroupId>local-banat</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/banat_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BBCEarth.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>BBC Earth</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bbc_earth.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BitTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Bit TV</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://bittv.info/wp-content/uploads/2016/02/cropped-logo1.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BloombergTV.us</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Bloomberg</Name>
     <GroupId>foreign</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bloomberg.png</LogoUrl>
@@ -346,7 +305,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BollywoodTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Bollywood</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood.png</LogoUrl>
@@ -360,7 +318,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BollywoodClassic.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Bollywood Clasic</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood_classic.png</LogoUrl>
@@ -371,35 +328,30 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Boomerang.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Boomerang</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/230px-Boomerang_2014_logo.svg.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BrasovTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Brașov TV</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/brasov_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BucovinaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Bucovina TV</Name>
     <GroupId>local-bucovina</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bucovina_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BucurestiTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>București TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bucuresti_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BusuiocTV.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Busuioc TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://busuioctv.md/wp-content/uploads/2018/03/cropped-Favicon-Busuioc.png</LogoUrl>
@@ -409,7 +361,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CampusTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Campus TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/campus-tv.png</LogoUrl>
@@ -419,7 +370,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Canal2.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Canal 2</Name>
     <GroupId>unknown</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/7/7f/Logo_Canal_2.png</LogoUrl>
@@ -429,7 +379,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Canal3.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Canal 3</Name>
     <GroupId>unknown</GroupId>
     <LogoUrl>http://www.frosat.net/images/logotv/original/Canal3_md.gif</LogoUrl>
@@ -439,7 +388,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Canal33.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Canal 33</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/canal33.png</LogoUrl>
@@ -457,35 +405,29 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CartoonNetwork.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Cartoon Network</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cartoon_network.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CBSReality.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>CBS Reality</Name>
     <GroupId>entertainment</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cbs_reality.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CI.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>CI</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Cinemaraton.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Cinemaraton</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cinemaraton.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Cinemax.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>CineMAX 1</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Cinemax.ro.png</LogoUrl>
@@ -495,21 +437,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Cinemax2.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>CineMAX 2</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Cinemax2.ro.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Cinethronix.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Cinethronix</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cinethronix.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Ciresarii.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Cireșarii TV</Name>
     <GroupId>religious</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ciresarii_tv.png</LogoUrl>
@@ -519,14 +458,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CNN.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>CNN</Name>
     <GroupId>foreign</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/800px-CNN.svg.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ColumnaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Columna TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/columna-tv.png</LogoUrl>
@@ -536,35 +473,30 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ComedyCentral.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Comedy Central</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/comedy_central.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ComedyEst.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Comedy Est</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/comedy_est.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CorneaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Cornea TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cornea_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CredoTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Credo TV</Name>
     <GroupId>religious</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Banner-credo-tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Cromtel.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Cromtel</Name>
     <GroupId>local-bucovina</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cromtel.png</LogoUrl>
@@ -577,7 +509,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CurierTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Curier TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/curier-tv.png</LogoUrl>
@@ -587,7 +518,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DanceFM.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Dance FM</Name>
     <GroupId>radio</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/dance_fm.png</LogoUrl>
@@ -597,14 +527,11 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DarkEdgeRadio.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Dark Edge Radio</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DaVinciLearning.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>DaVinci Learning</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/58025817bc33b1525f8b77ce.png</LogoUrl>
@@ -614,21 +541,17 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DeeaFM.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Deea FM</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiasporaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Diaspora TV</Name>
     <GroupId>international</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/diaspora_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DibiTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Dibi TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/dibitv.png</LogoUrl>
@@ -638,28 +561,23 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DigiAnimalworld.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi Animal World</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_animal_world.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DigiFM.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi FM</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DigiLife.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi Life</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_life.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DigiSport1.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 1</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_sport_1.png</LogoUrl>
@@ -669,7 +587,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DigiSport2.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 2</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_sport_2.png</LogoUrl>
@@ -679,7 +596,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DigiSport3.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 3</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_sport_3.png</LogoUrl>
@@ -689,7 +605,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DigiSport4.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi Sport 4</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_sport_4.png</LogoUrl>
@@ -699,7 +614,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DigiWorld.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi World</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi_world.png</LogoUrl>
@@ -709,7 +623,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi24.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi24</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
@@ -719,56 +632,48 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi24Brasov.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi24 Brașov</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi24Cluj.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi24 Cluj</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi24Constanta.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi24 Constanța</Name>
     <GroupId>local-dobrogea</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi24Craiova.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi24 Craiova</Name>
     <GroupId>local-oltenia</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi24Galati.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi24 Galați</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi24Iasi.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi24 Iași</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi24Oradea.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi24 Oradea</Name>
     <GroupId>local-crisana</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi24Timis.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Digi24 Timiș</Name>
     <GroupId>local-banat</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
@@ -778,7 +683,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiscoveryChannel.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Discovery Channel</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/discovery_channel.png</LogoUrl>
@@ -788,7 +692,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiscoveryID.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Discovery Investigation</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
@@ -801,7 +704,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiscoveryIDX.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Discovery Investigation Extra</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
@@ -814,14 +716,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiscoveryScience.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Discovery Science</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd41bc33b1566d8b45f0.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiscoveryShowcase.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Discovery Showcase</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/hu/DiscoveryHDShowcase.hu.png</LogoUrl>
@@ -831,7 +731,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiscoveryTurboXtra.hu</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Discovery Turbo Extra</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://static.iptv-epg.com/hu/DiscoveryTurboXtra.hu.png</LogoUrl>
@@ -842,21 +741,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiscoveryWorld.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Discovery World</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/World_Discovery_HD_logo.svg/1200px-World_Discovery_HD_logo.svg.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DisneyChannel.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Disney Channel</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/DisneyChannel.ro.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DisneyJunior.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Disney Junior</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/disney_junior.png</LogoUrl>
@@ -867,7 +763,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DivaUniversal.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Diva Universal</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/diva.png</LogoUrl>
@@ -877,7 +772,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DJingTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>DJing TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/djing_tv.png</LogoUrl>
@@ -887,11 +781,9 @@
     <IsEnabled>false</IsEnabled>
     <Name>DocuBox</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DrochiaTV.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Drochia TV</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/drochia_tv.png</LogoUrl>
@@ -902,21 +794,16 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DuckTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Duck TV</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DunaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Duna</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>EEntertainment.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>E! Entertainment</Name>
     <GroupId>entertainment</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/5a86376cc7b718d6048b4571.png</LogoUrl>
@@ -927,7 +814,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ElitaTV.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Elita TV</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/elita_tv.png</LogoUrl>
@@ -939,7 +825,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>EpicDrama.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Epic Drama</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/epic_drama.png</LogoUrl>
@@ -952,11 +837,9 @@
     <IsEnabled>false</IsEnabled>
     <Name>Erdely TV</Name>
     <GroupId>local-transilvania</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>EstTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Est TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://www.tvsatmediagroup.ro/images/15063296804206_SIGLA%20EST%20TV.png</LogoUrl>
@@ -966,14 +849,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>EtnicTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Etnic TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>http://tvrohdonline.com/wp-content/uploads/2019/01/3.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Etno.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Etno</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Etno.ro.png</LogoUrl>
@@ -984,14 +865,11 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>EuropaFM.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Europa FM</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>EuropaPlus.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Europa Plus</Name>
     <GroupId>unknown</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/europa-plus.png</LogoUrl>
@@ -1001,7 +879,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Eurosport1.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>EuroSport 1</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/eurosport1.png</LogoUrl>
@@ -1012,7 +889,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Eurosport2.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>EuroSport 2</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/eurosport2.png</LogoUrl>
@@ -1022,14 +898,11 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ExclusivTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Exclusiv TV</Name>
     <GroupId>local-moldova</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ExtremeSports.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Extreme Sports</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/extreme_sports.png</LogoUrl>
@@ -1040,7 +913,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Fallout76AppalachiaRadio.com</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Fallout 76 Appalachia Radio</Name>
     <GroupId>radio</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/fallout_76_appalachia_radio.png</LogoUrl>
@@ -1050,7 +922,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FalloutRadio.com</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Fallout Radio</Name>
     <GroupId>radio</GroupId>
     <LogoUrl>https://www.freepnglogos.com/uploads/fallout-4-logo/fallout-high-resolution-logo-13.png</LogoUrl>
@@ -1060,14 +931,11 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FashionTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Fashion TV</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Favorit.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Favorit TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/ae/FavoritLogo.png</LogoUrl>
@@ -1078,14 +946,11 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FightBox.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>FightBox</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FilmCafe.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Film Cafe</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/film_cafe.png</LogoUrl>
@@ -1095,14 +960,11 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FilmMania.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Film Mania</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FilmNow.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Film Now</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmnow.png</LogoUrl>
@@ -1114,28 +976,24 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FilmBox.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>FilmBox</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmbox.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FilmBoxExtra.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>FilmBox Extra</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmbox_extra.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FilmBoxFamily.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>FilmBox Family</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmbox_family.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FilmBoxPlus.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>FilmBox Plus</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmbox_plus.png</LogoUrl>
@@ -1145,63 +1003,53 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FilmBoxPremium.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>FilmBox Premium</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmbox_premium.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FineLiving.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Fine Living</Name>
     <GroupId>unknown</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/fine-living.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FixAndFoxi.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Fix and Foxi</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/fix_and_foxi.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FoodNetwork.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Food Network</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/f/f9/Food_Network_New_Logo.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>France24.fr</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>France24</Name>
     <GroupId>foreign</GroupId>
     <LogoUrl>https://static.iptv-epg.com/fr/France24.fr.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FRBTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>FRB TV</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/frb_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FRFTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>FRF TV</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/frf_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>GagiuTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Gagiu TV</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>GoldTV.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Gold TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/gold-tv.png</LogoUrl>
@@ -1212,7 +1060,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HTMusic.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>H!T Music Channel</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/h!t_music_channel.png</LogoUrl>
@@ -1233,7 +1080,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HappyChannel.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Happy Channel</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/HappyChannel.ro.png</LogoUrl>
@@ -1244,7 +1090,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HBO.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>HBO 1</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/HBO.ro.png</LogoUrl>
@@ -1256,28 +1101,24 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HBO2.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>HBO 2</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/HBO2.ro.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HBO3.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>HBO 3</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/HBO3.ro.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HeavyMetalTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Heavy Metal TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://png2.kisspng.com/sh/1a311527bd4f8133545f3b46d99b1000/L0KzQYm3VcI5N6Fmg5H0aYP2gLBuTfNiap1qReZubHX5ecTwjB4uf5ZngeV4ZHWwhLnsTfZzaZ9wReVxb4ewdrr5hgR3NZlqeehELX3ohLLzTcVjOJNnUdY9OUS3RbKATsUyO2k1UKg5MUW1R4WCVcEzPGc1T6U3cH7q/kisspng-cable-television-webisode-the-frank-show-firetv-heavy-metal-5b0bb9d49445a7.5138086015274951246073.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HistoryChannel.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>History Channel</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/history_channel.png</LogoUrl>
@@ -1289,14 +1130,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HoraTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Hora TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://www.horatv.ro/images/icon.ico</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>IasiTVLife.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Iași TV Life</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/iasi_tv_life.png</LogoUrl>
@@ -1306,42 +1145,36 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>IbizaGlobalTV.com</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Ibiza Global TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ibiza_global_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>IDATV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>IDA TV</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ida.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ImpactTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Impact TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/impact-tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>IneditTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Inedit TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/inedit_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>InfinitTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Infinit TV</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/infinit-tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>InfoHD.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Info HD</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/info_hd.png</LogoUrl>
@@ -1351,21 +1184,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>InfoPescar.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Info Pescar</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/info_pescar.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>InformatiaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Informația TV</Name>
     <GroupId>local-maramures</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/informatia_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Intermedia.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Intermedia</Name>
     <GroupId>local-bucovina</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/intermedia-tv.png</LogoUrl>
@@ -1378,7 +1208,6 @@
     <IsEnabled>false</IsEnabled>
     <Name>INVALID_CHANNEL</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
     <Aliases>
       <string>Acasa TV</string>
     </Aliases>
@@ -1388,7 +1217,6 @@
     <IsEnabled>false</IsEnabled>
     <Name>FOREIGN_CHANNEL</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
     <Aliases>
       <string>AF-South Africa: SuperSport 1</string>
       <string>AFRO ZIK</string>
@@ -1421,7 +1249,6 @@
     <IsEnabled>false</IsEnabled>
     <Name>INVALID_CHANNEL</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
     <Aliases>
       <string>-----ROMANIA------</string>
     </Aliases>
@@ -1435,7 +1262,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>JimJam.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Jim Jam</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/jimjam.png</LogoUrl>
@@ -1445,7 +1271,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>JobTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Job TV</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/job_tv.png</LogoUrl>
@@ -1455,7 +1280,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>JurnalTV.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Jurnal TV</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/jurnal_tv.png</LogoUrl>
@@ -1466,7 +1290,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>KanalD.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Kanal D</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://static.iptv-epg.com/tr/KanalD.tr.png</LogoUrl>
@@ -1476,7 +1299,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>KapitalTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Kapital TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>http://www.kapitaltv.ro/wp-content/uploads/2016/10/logo-ktv-1.png</LogoUrl>
@@ -1487,14 +1309,11 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>KissFM.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Kiss FM</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>KissTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>KissTV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/kiss_tv.png</LogoUrl>
@@ -1504,7 +1323,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>LinkpressTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Linkpress TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/linkpress_tv.png</LogoUrl>
@@ -1514,14 +1332,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>LitoralTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Litoral TV</Name>
     <GroupId>local-dobrogea</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/litoral_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>LookPlus.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Look Plus</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/look_plus.png</LogoUrl>
@@ -1531,7 +1347,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>LookSport.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Look Sport</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://www.looksport.ro/wp-content/themes/looksport/assets/imgs/favicon/favicon-96x96.png</LogoUrl>
@@ -1542,28 +1357,23 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>LoungeVNature.com</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>LoungeV Nature</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/loungev.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MagicFM.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Magic FM</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MagicTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Magic TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magic_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Megamax.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>MegaMax</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/megamax.png</LogoUrl>
@@ -1574,28 +1384,24 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Mezzo.hu</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Mezzo</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://logonoid.com/images/mezzo-tv-logo.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Minimax.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>MiniMax</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/minimax.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MioritaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Miorița TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/miorita.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MisaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Misa Senzațional TV</Name>
     <GroupId>religious</GroupId>
     <LogoUrl>https://misatv.ro/wp-content/uploads/2018/09/MTV-Logo-Cropped2.png</LogoUrl>
@@ -1605,7 +1411,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Moldova1.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Moldova 1</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Logo_Moldova_1_%282016%29.svg/1200px-Logo_Moldova_1_%282016%29.svg.png</LogoUrl>
@@ -1616,7 +1421,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Moldova2.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Moldova 2</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Logo_Moldova_2_%282016%29.svg/2000px-Logo_Moldova_2_%282016%29.svg.png</LogoUrl>
@@ -1627,28 +1431,24 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MoldovaSport.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Moldova Sport</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>http://live-tv.me/wp-content/uploads/2014/08/MOLDOVA-SPORT-TV.gif</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MoozDance.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Mooz Dance</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/mooz_dance.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MoozHits.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Mooz Hits</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/mooz_hits.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MoozRo.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>MOOZ RO!</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/5/50/Dolce_mooz_ro.png/220px-Dolce_mooz_ro.png</LogoUrl>
@@ -1658,56 +1458,46 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MoozTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Mooz TV</Name>
     <GroupId>music</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MTVDance.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>MTV Dance</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/MTV_Dance_2013_logo.svg/220px-MTV_Dance_2013_logo.svg.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MTVEurope.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>MTV Europe</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/mtv_europe.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MTVHits.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>MTV Hits</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/MTV_Hits_2017_logo.svg/1200px-MTV_Hits_2017_logo.svg.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MTVLive.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>MTV Live</Name>
     <GroupId>music</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MTVMusic.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>MTV Music 24</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/mtv_music24.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MTVRocks.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>MTV Rocks</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/MTV_Rocks_2017_logo.svg/1200px-MTV_Rocks_2017_logo.svg.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MuscelTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Muscel TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://musceltv.ro/site/wp-content/uploads/2016/05/microsigla-frontala.png</LogoUrl>
@@ -1717,17 +1507,14 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MusicHits17.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Music Hits '17</Name>
     <GroupId>music</GroupId>
-    <LogoUrl />
     <Aliases>
       <string>RO: Music Hits '17 (music only - numai muzica)</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NASAChannel.us</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>NASA TV</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nasa_tv.png</LogoUrl>
@@ -1740,14 +1527,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NasulTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Nașul TV</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nasul_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NatGeo.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>National Geographic</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/national_geographic.png</LogoUrl>
@@ -1760,7 +1545,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NatGeoWild.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>National Geographic Wild</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/national_geographic_wild.png</LogoUrl>
@@ -1772,7 +1556,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>National24Plus.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Național 24 Plus</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Na%C5%A3ional24Plus.ro.png</LogoUrl>
@@ -1784,7 +1567,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NationalTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Național TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/NationalTV.ro.png</LogoUrl>
@@ -1794,14 +1576,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NCNTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>NCN TV</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ncn_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NeptunTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Neptun TV</Name>
     <GroupId>local-dobrogea</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/NeptunTV.ro.png</LogoUrl>
@@ -1811,26 +1591,21 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NETv.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>NETv</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/netv.png</LogoUrl>
-    <Aliases />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Nickelodeon.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Nickelodeon</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nickelodeon.png</LogoUrl>
     <Aliases>
-      <string>RO: Nickelodeon (RO)</string>
       <string>RO: NIckolodeon</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NickJr.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Nickelodeon Junior</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/NickJr.ro.png</LogoUrl>
@@ -1841,7 +1616,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NestTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Nord Est TV</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nest_tv.png</LogoUrl>
@@ -1853,7 +1627,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Noroc.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Noroc TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/noroc_tv.png</LogoUrl>
@@ -1864,7 +1637,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NovaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Nova TV</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/nova-tv-brasov.png</LogoUrl>
@@ -1874,7 +1646,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HGTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>HGTV</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hgtv.png</LogoUrl>
@@ -1897,32 +1668,27 @@
     <IsEnabled>false</IsEnabled>
     <Name>ON Air</Name>
     <GroupId>foreign</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>onetv</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>One TV</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/one-tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>OrizontTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Orizont TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/orizont-tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ParamountChannel.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Paramount Channel</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/paramount_channel.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>PartenerTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Partener TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/partener_tv.png</LogoUrl>
@@ -1932,7 +1698,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FishingHunting.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Pescuit și Vânătoare TV</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/fishing_and_hunting.png</LogoUrl>
@@ -1944,7 +1709,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FMF.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>FMF TV</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/fmf_tv.png</LogoUrl>
@@ -1955,14 +1719,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>PrimaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Prima TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/prima_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Pro2.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Pro 2</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45ab.png</LogoUrl>
@@ -1977,7 +1739,6 @@
     <IsEnabled>false</IsEnabled>
     <Name>Pro 2 Moldova</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
     <Aliases>
       <string>MD: Acasa</string>
       <string>MD: Pro 2</string>
@@ -1986,21 +1747,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProCinema.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Pro Cinema</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_cinema.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProFM.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Pro FM</Name>
     <GroupId>radio</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_fm.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AcasaGold.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Pro Gold</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd40bc33b1566d8b45d4.png</LogoUrl>
@@ -2011,14 +1769,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Pro TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45a7.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTVChisinau.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Pro TV Chișinău</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd47bc33b1566d8b46b8.png</LogoUrl>
@@ -2029,7 +1785,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTVInternational.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Pro TV Internațional</Name>
     <GroupId>international</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd41bc33b1566d8b45f7.png</LogoUrl>
@@ -2042,7 +1797,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTVNews.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Pro TV Știri</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/36/5b/4d/365b4d0f-2085-2bde-3255-4bf5408931e6/AppIcon-1x_U007emarketing-85-220-9.png/128x0w.jpg</LogoUrl>
@@ -2052,7 +1806,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProX.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Pro X</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45b6.png</LogoUrl>
@@ -2064,14 +1817,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Profit.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Profit.ro</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/profit.ro.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>PublikaTV.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Publika TV</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/publika.png</LogoUrl>
@@ -2084,52 +1835,40 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RadioCluj.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Radio Cluj</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
     <Aliases>
       <string>RO: SRR Radio Cluj</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RadioGuerrilla.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Radio Guerrilla</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RadioHot.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Radio Hot</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RadioLiberty.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Radio Liberty</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>M2O.com</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Radio m2o TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/m2o.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RadioZU.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Radio ZU</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RealitateaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Realitatea</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_tv.png</LogoUrl>
@@ -2144,28 +1883,24 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RealitateaPlus.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Realitatea Plus</Name>
     <GroupId>news</GroupId>
     <LogoUrl>http://itcmedia.ro/wp-content/uploads/2013/01/REALITATEA_PLUS2.jpg</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RetroTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Retro TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/7/7b/Retro_Music_TV_logo.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RockTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Rock TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/8/85/Rock_TV.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RomanTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Roman TV</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/roman_tv.png</LogoUrl>
@@ -2175,24 +1910,19 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RomanticFM.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Romantic FM</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RomaniaActualitati.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>România Actualități</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
     <Aliases>
       <string>RO: SRR Radio România Actualități</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RomaniaTv.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>România TV</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/romania_tv.png</LogoUrl>
@@ -2202,7 +1932,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RTS.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>RT Severin</Name>
     <GroupId>local-oltenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/rt_severin.png</LogoUrl>
@@ -2212,14 +1941,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>SalajeanulTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Sălăjeanul TV</Name>
     <GroupId>local-crisana</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/salajeanul_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>STV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Sîngeorz TV</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>http://sangeorztv.ro/wp-content/uploads/2015/01/logoSTV.png</LogoUrl>
@@ -2239,7 +1966,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Somax.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Somax</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/somax.png</LogoUrl>
@@ -2249,42 +1975,36 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>SperantaTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Speranța TV</Name>
     <GroupId>religious</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/speranta_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Sundance.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Sundance</Name>
     <GroupId>unknown</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Sundance.ro.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>SuperTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Super TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/super_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>SuperTennis.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>SuperTennis</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/super-tennis.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TarafTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Taraf</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://www.taraf.tv/images/logo.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>tele2drobeta</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Tele 2 Drobeta</Name>
     <GroupId>local-oltenia</GroupId>
     <LogoUrl>https://tele2drobeta.ro/wp-content/uploads/2018/03/cropped-SIGLA_00002.png</LogoUrl>
@@ -2294,14 +2014,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TeleEuropaNova.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TeleEuropa Nova</Name>
     <GroupId>local-banat</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/teleeuropa_nova.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TelekomSport1.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 1</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_1.png</LogoUrl>
@@ -2314,7 +2032,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TelekomSport2.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 2</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_2.png</LogoUrl>
@@ -2327,7 +2044,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TelekomSport3.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 3</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_3.png</LogoUrl>
@@ -2340,7 +2056,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TelekomSport4.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 4</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_4.png</LogoUrl>
@@ -2353,7 +2068,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TelekomSport5.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 5</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_5.png</LogoUrl>
@@ -2366,7 +2080,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TelekomSport6.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Telekom Sport 6</Name>
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telekom_sport_6.png</LogoUrl>
@@ -2379,7 +2092,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TeleMBotosani.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TeleM Botoșani</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tele-m-botosani.png</LogoUrl>
@@ -2389,7 +2101,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TeleMIasi.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TeleM Iași</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telem_iasi.png</LogoUrl>
@@ -2399,7 +2110,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TeleMNeamt.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TeleM Neamț</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://telemneamt.net/wp-content/uploads/2015/06/Logo-repr-TeleM.png</LogoUrl>
@@ -2410,7 +2120,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TeleMPlus.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TeleM Plus</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telem_plus.png</LogoUrl>
@@ -2421,14 +2130,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TeleshopTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Teleshop TV</Name>
     <GroupId>unknown</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/telestar-1.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Telestar1.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Telestar1 TV</Name>
     <GroupId>foreign</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/telestar-1.png</LogoUrl>
@@ -2438,7 +2145,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TezaurTV.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Tezaur Folc TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tezaur_folc_tv.png</LogoUrl>
@@ -2453,28 +2159,23 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TezaurTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Tezaur TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tezaur_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TheVoice.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>The Voice</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/a/a7/%D0%A2heVoiceTV-logo.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Tigo.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Tigo Music</Name>
     <GroupId>music</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TLPlus.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TL+ Maramureș</Name>
     <GroupId>local-maramures</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tl-plus-maramures.png</LogoUrl>
@@ -2484,42 +2185,36 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TLC.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TLC</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/TLC-Logo_2016.png/200px-TLC-Logo_2016.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TNT.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TNT</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tnt.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TraditiiTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Tradiții TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/traditii_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TravelChannel.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Travel Channel</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/travel_channel.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TravelMix.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Travel Mix</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/travel_mix.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TrinitasTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Trinitas</Name>
     <GroupId>religious</GroupId>
     <LogoUrl>https://www.trinitas.tv/wp-content/themes/trinitas.tv/assets/imgs/favicons/android-icon-192x192.png</LogoUrl>
@@ -2529,21 +2224,17 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Trinity.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Trinity</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVBuzau.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV Buzău</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-buzau.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVCity.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV City</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_city.png</LogoUrl>
@@ -2553,7 +2244,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVCNS.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV CNS</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_cns.png</LogoUrl>
@@ -2564,7 +2254,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVPaprika.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV Paprika</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/TVPaprika.ro.png</LogoUrl>
@@ -2575,14 +2264,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVPlusSuceava.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV Plus Suceava</Name>
     <GroupId>local-bucovina</GroupId>
     <LogoUrl>https://televiziuneaplus.ro/wp-content/uploads/2019/04/cropped-tv-plus-regional.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVSud.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV Sud</Name>
     <GroupId>local-oltenia</GroupId>
     <LogoUrl>http://www.tvsud.ro/wp-content/uploads/logo/logo-tv.png</LogoUrl>
@@ -2592,7 +2279,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVSudEst.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV SudEst</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-sud-est.png</LogoUrl>
@@ -2602,7 +2288,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVTotal.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV Total</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_total.png</LogoUrl>
@@ -2612,14 +2297,12 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TV1000.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV1000</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv1000.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TV5Monde.fr</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV5 Monde</Name>
     <GroupId>foreign</GroupId>
     <LogoUrl>https://static.iptv-epg.com/nl/TV5Monde.nl.png</LogoUrl>
@@ -2632,7 +2315,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TV8Moldova.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TV8 Moldova</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv8.png</LogoUrl>
@@ -2643,24 +2325,20 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVH.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVH</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvh.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVH20.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVH 20</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl />
     <Aliases>
       <string>RO: TVH2O</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVR1.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVR 1</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Logo_TVR_1_%282004%29.svg/150px-Logo_TVR_1_%282004%29.svg.png</LogoUrl>
@@ -2671,7 +2349,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVR2.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVR 2</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Logo_TVR_2_%282004%29.svg/150px-Logo_TVR_2_%282004%29.svg.png</LogoUrl>
@@ -2681,7 +2358,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVR3.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVR 3</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Logo_TVR_3_%282017%29.svg/150px-Logo_TVR_3_%282017%29.svg.png</LogoUrl>
@@ -2691,21 +2367,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVRCluj.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVR Cluj</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_cluj.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVRCraiova.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVR Craiova</Name>
     <GroupId>local-oltenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_craiova.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVRIasi.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVR Iași</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_iasi.png</LogoUrl>
@@ -2717,7 +2390,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVRInternational.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVR Internațional</Name>
     <GroupId>international</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/thumb/d/d9/TVRiLogo.svg/1200px-TVRiLogo.svg.png</LogoUrl>
@@ -2729,7 +2401,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVRMoldova.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVR Moldova</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_moldova.png</LogoUrl>
@@ -2739,7 +2410,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVRTarguMures.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVR Târgu Mureș</Name>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_targu_mures.png</LogoUrl>
@@ -2752,7 +2422,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVRTimisoara.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVR Timișoara</Name>
     <GroupId>local-banat</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_timisoara.png</LogoUrl>
@@ -2762,21 +2431,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVSAT.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>TVSAT</Name>
     <GroupId>local-unknown</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-sat.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>UTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>U TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/utv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>VPTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Valea Prahovei TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/valea_prahovei_tv.png</LogoUrl>
@@ -2786,7 +2452,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>VeziTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Vezi TV</Name>
     <GroupId>local-oltenia</GroupId>
     <LogoUrl>https://vtv.ro/wp-content/uploads/2018/06/vtv-100.png</LogoUrl>
@@ -2796,21 +2461,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>VH1.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>VH1</Name>
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/vh1.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>VH1Classic.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>VH1 Classic</Name>
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/vh1.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ViasatExplore.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Viasat Explore</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/viasat_explore.png</LogoUrl>
@@ -2821,28 +2483,23 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ViasatHistory.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Viasat History</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/viasat_history.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ViasatNature.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Viasat Nature</Name>
     <GroupId>educational</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/viasat_nature.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>VibeFM.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Vibe FM</Name>
     <GroupId>radio</GroupId>
-    <LogoUrl />
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>VoceaBasarabiei.md</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>Vocea Basarabiei</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/vocea_basarabiei.png</LogoUrl>
@@ -2852,7 +2509,6 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ZUTV.ro</Id>
-    <IsEnabled>true</IsEnabled>
     <Name>ZU TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/a2/ZUTVLogo.png</LogoUrl>
