@@ -58,7 +58,6 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 
         [TestCase("|AR| AD SPORT 4 HEVC", "ARADSPORT4")]
         [TestCase("|FR| GOLF CHANNELS HD", "FRGOLFCHANNELS")]
-        [TestCase("|FR| GOLF CHANNELS HD", "FRGOLFCHANNELS")]
         [TestCase("|RO| Ardeal TV", "ARDEALTV")]
         [TestCase("|ROM|: Cromtel", "CROMTEL")]
         [TestCase("|UK| CHELSEA TV (Live On Matches) HD", "UKCHELSEATV")]
@@ -69,6 +68,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("RO: HBO 3 RO", "HBO3")]
         [TestCase("RO: HBO HD RO", "HBO")]
         [TestCase("RO: Nașul TV (New!)", "NASULTV")]
+        [TestCase("RO: Nickelodeon (RO)", "NICKELODEON")]
         [TestCase("RO: U TV S1-1", "UTV")]
         [TestCase("RO\" Romania TV", "ROMANIATV")]
         [TestCase("RUMANIA: DigiWorld FHD (Opt-1)", "DIGIWORLD")]
