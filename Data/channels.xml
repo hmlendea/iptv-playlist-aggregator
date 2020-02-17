@@ -12,7 +12,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/1_music_channel.png</LogoUrl>
     <Aliases>
-      <string>Music Channel</string>
+      <string>RO: Music Channel</string>
       <string>RO: 1 Music Channele</string>
       <string>RO: Music 1 Channel</string>
     </Aliases>
@@ -24,7 +24,8 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://static.iptv-epg.com/hu/MusicChannel.hu.png</LogoUrl>
     <Aliases>
-      <string>Music Channe HU</string>
+      <string>HU: Music Channel</string>
+      <string>RO: Music Channe HU</string>
       <string>RO: Music Channel HU</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -65,7 +66,8 @@
     <GroupId>local-moldova</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/actualitatea-tv.png</LogoUrl>
     <Aliases>
-      <string>ATV</string>
+      <string>RO: Actualitatea</string>
+      <string>RO: ATV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -74,8 +76,8 @@
     <GroupId>local-moldova</GroupId>
     <LogoUrl>http://acum-tv.ro/wp-content/uploads/2019/01/logo-acum-tv-xs-1-300x98.png</LogoUrl>
     <Aliases>
-      <string>Kit</string>
       <string>RO: Acuma</string>
+      <string>RO: Kit</string>
       <string>RO: TV Kit</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -156,7 +158,7 @@
     <GroupId>entertainment</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/comedy-play.png</LogoUrl>
     <Aliases>
-      <string>Antena Comedy</string>
+      <string>RO: Antena Comedy</string>
       <string>RO: Antena Play Comedy</string>
       <string>RO: Comedy Play</string>
     </Aliases>
@@ -167,7 +169,7 @@
     <GroupId>entertainment</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/cook-play.png</LogoUrl>
     <Aliases>
-      <string>Antena Cook and Play</string>
+      <string>RO: Antena Cook and Play</string>
       <string>RO: Antena Cook</string>
       <string>RO: Antena Play Cook</string>
       <string>RO: Cook &amp; Play</string>
@@ -237,7 +239,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/axn.png</LogoUrl>
     <Aliases>
-      <string>AXN România</string>
+      <string>RO: AXN România</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -258,7 +260,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/axn_white.png</LogoUrl>
     <Aliases>
-      <string>AXN With</string>
+      <string>RO: AXN With</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -399,7 +401,7 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/canal_regional.png</LogoUrl>
     <Aliases>
-      <string>Canal Regional (Moldova)</string>
+      <string>MD: Canal Regional (Moldova)</string>
       <string>MD: Canal Regional</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -818,9 +820,9 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/elita_tv.png</LogoUrl>
     <Aliases>
-      <string>Elita TV Rezina</string>
       <string>MD: Elita Rezina</string>
-      <string>TV Elita</string>
+      <string>MD: Elita TV Rezina</string>
+      <string>MD: TV Elita</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1054,7 +1056,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/gold-tv.png</LogoUrl>
     <Aliases>
-      <string>Gold TV (Moldova)</string>
+      <string>MD: Gold TV (Moldova)</string>
       <string>MD: Gold</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1416,7 +1418,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Logo_Moldova_1_%282016%29.svg/1200px-Logo_Moldova_1_%282016%29.svg.png</LogoUrl>
     <Aliases>
       <string>MD: Moldova 1</string>
-      <string>Moldova M1</string>
+      <string>MD: Moldova M1</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1426,7 +1428,7 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Logo_Moldova_2_%282016%29.svg/2000px-Logo_Moldova_2_%282016%29.svg.png</LogoUrl>
     <Aliases>
       <string>MD: Moldova 2</string>
-      <string>Moldova M2</string>
+      <string>MD: Moldova M2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1610,7 +1612,7 @@
     <GroupId>kids</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/NickJr.ro.png</LogoUrl>
     <Aliases>
-      <string>Nick Jr.</string>
+      <string>RO: Nick Jr.</string>
       <string>RO: Nick Junior</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1657,10 +1659,10 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://www.deschide.md/images/cms-image-000036515.png</LogoUrl>
     <Aliases>
-      <string>HTB Moldova</string>
-      <string>MD: NTV</string>
+      <string>MD: HTB Moldova</string>
       <string>MD: NTV Moldova</string>
-      <string>НТВ Moldova</string>
+      <string>MD: NTV</string>
+      <string>MD: НТВ Moldova</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1702,7 +1704,7 @@
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/fishing_and_hunting.png</LogoUrl>
     <Aliases>
-      <string>Fishing &amp; Hunting</string>
+      <string>RO: Fishing &amp; Hunting</string>
       <string>RO: Fishing and Hunting</string>
       <string>RO: The Fishing &amp; Hunting</string>
     </Aliases>
@@ -1729,7 +1731,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45ab.png</LogoUrl>
     <Aliases>
-      <string>Acasa</string>
+      <string>RO: Acasa</string>
       <string>RO: P.2</string>
       <string>RO: Pro 2 (Acasa TV)</string>
     </Aliases>
@@ -1763,7 +1765,7 @@
     <GroupId>movies</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd40bc33b1566d8b45d4.png</LogoUrl>
     <Aliases>
-      <string>Acasa Gold</string>
+      <string>RO: Acasa Gold</string>
       <string>RO: P.Gold</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1789,9 +1791,9 @@
     <GroupId>international</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd41bc33b1566d8b45f7.png</LogoUrl>
     <Aliases>
-      <string>Pro TV Internacional</string>
       <string>RO: Pro INT</string>
       <string>RO: Pro TV INT</string>
+      <string>RO: Pro TV Internacional</string>
       <string>RO: PTV Internațional</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1801,7 +1803,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/36/5b/4d/365b4d0f-2085-2bde-3255-4bf5408931e6/AppIcon-1x_U007emarketing-85-220-9.png/128x0w.jpg</LogoUrl>
     <Aliases>
-      <string>Pro TV News</string>
+      <string>RO: Pro TV News</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
