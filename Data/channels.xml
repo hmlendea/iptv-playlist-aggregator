@@ -401,7 +401,6 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/canal_regional.png</LogoUrl>
     <Aliases>
-      <string>MD: Canal Regional (Moldova)</string>
       <string>MD: Canal Regional</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -628,9 +627,6 @@
     <Name>Digi24</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
-    <Aliases>
-      <string>RO: Digi24 (România)</string>
-    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi24Brasov.ro</Id>
@@ -1056,7 +1052,6 @@
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/gold-tv.png</LogoUrl>
     <Aliases>
-      <string>MD: Gold TV (Moldova)</string>
       <string>MD: Gold</string>
     </Aliases>
   </ChannelDefinitionEntity>
