@@ -20,6 +20,7 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
 
         public ChannelDefinitionEntity()
         {
+            IsEnabled = true;
             GroupId = UnknownGroupPlaceholder;
         }
     }
