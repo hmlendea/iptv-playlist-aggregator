@@ -29,7 +29,7 @@ namespace IptvPlaylistAggregator.Service
         {
             if (string.IsNullOrWhiteSpace(url))
             {
-                throw new ArgumentNullException(nameof(url));
+                return false;
             }
 
             MediaStreamStatus status = cache.GetStreamStatus(url);
