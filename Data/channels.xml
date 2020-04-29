@@ -167,7 +167,7 @@
     <Id>AntenaCook.ro</Id>
     <Name>Antena Cook&amp;Play</Name>
     <GroupId>entertainment</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/cook-play.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cook_and_play.png</LogoUrl>
     <Aliases>
       <string>RO: Antena Cook and Play</string>
       <string>RO: Antena Cook</string>
@@ -1289,7 +1289,7 @@
     <Id>KanalD.ro</Id>
     <Name>Kanal D</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/tr/KanalD.tr.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/kanal_d.png</LogoUrl>
     <Aliases>
       <string>RO: Canal D</string>
     </Aliases>
