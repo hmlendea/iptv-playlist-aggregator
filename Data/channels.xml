@@ -1346,7 +1346,7 @@
     <Id>LookSport.ro</Id>
     <Name>Look Sport</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://www.looksport.ro/wp-content/themes/looksport/assets/imgs/favicon/favicon-96x96.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/look_sport.png</LogoUrl>
     <Aliases>
       <string>RO: Look</string>
       <string>RO: Look TV Sport</string>
