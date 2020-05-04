@@ -29,8 +29,8 @@ namespace IptvPlaylistAggregator.Service
 
             { " HEVC$", "" },
             { " HEVC ", "" },
-            { " (Ultra|[FU])*_*[HMS][DQ]$", "" },
-            { " (Ultra|[FU])*_*[HMS][DQ] ", "" },
+            { "[\\ _](Ultra|[FU])*_*[HMS][DQ]$", "" },
+            { "[\\ _](Ultra|[FU])*_*[HMS][DQ] ", "" },
             { "\\(Opt-[0-9]\\)", "" },
             { "\\[[0-9]*p\\]", "" },
             { " S[0-9]$", "" },
