@@ -531,6 +531,14 @@
     <Name>Free-IPTV's IPTV GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/Free-IPTV/iptv/master/channels/22_Romania.m3u</UrlFormat>
   </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gitlab-cristy-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>119</Priority>
+    <Name>Cristy's IPTV GitLab MD Channels</Name>
+    <UrlFormat>https://gitlab.com/Cristy/iptv/-/raw/master/Moldova</UrlFormat>
+  </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
     <Id>tousecurity1</Id>
