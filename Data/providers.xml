@@ -603,7 +603,6 @@
     <Name>IPTV CAT RO 2</Name>
     <UrlFormat>https://iptvcat.com/romania/2?.m3u8</UrlFormat>
   </PlaylistProviderEntity>
-  </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>iptvcat-md-1</Id>
@@ -619,6 +618,7 @@
     <Priority>143</Priority>
     <Name>IPTV CAT MD 2</Name>
     <UrlFormat>https://iptvcat.com/moldova/2?.m3u8</UrlFormat>
+  </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
     <Id>albaiaiptv</Id>
