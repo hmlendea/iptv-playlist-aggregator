@@ -21,7 +21,6 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             channelMatcher = new ChannelMatcher(cacheMock.Object);
         }
 
-        [TestCase("Publika TV", "MD: Publika", "PUBLIKA_TV_HD")]
         [TestCase("Antena 3", null, "Antena 3 Ultra_HD")]
         [TestCase("Ardeal TV", "RO: Ardeal TV", "|RO| Ardeal TV")]
         [TestCase("Bollywood TV", "RO: BO TV", "BO TV")]
@@ -32,9 +31,11 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("HBO 3", null, "HBO 3 F_HD")]
         [TestCase("MTV Europe", null, "RO: MTV Europe")]
         [TestCase("Pro TV", null, "PRO TV ULTRA_HD")]
+        [TestCase("Publika TV", "MD: Publika", "PUBLIKA_TV_HD")]
         [TestCase("Realitatea Plus", null, "Realitatea Plus")]
         [TestCase("România TV", "România TV", "RO\" Romania TV")]
         [TestCase("Somax", "RO: Somax TV", "Somax TV")]
+        [TestCase("Travel Channel", "RO: Travel", "RO | Travel")]
         [TestCase("TVR Târgu Mureș", "RO: TVR T?rgu-Mure?", "TVR: Targu Mureș")]
         [TestCase("U TV", null, "UTV")]
         [Test]

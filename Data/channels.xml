@@ -810,6 +810,7 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/drochia_tv.png</LogoUrl>
     <Aliases>
+      <string>Drochia</string>
       <string>MD: Drochia</string>
       <string>MD: Drochia TV</string>
     </Aliases>
@@ -1376,8 +1377,9 @@
     <GroupId>sport</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/look_sport.png</LogoUrl>
     <Aliases>
-      <string>RO: Look</string>
       <string>RO: Look TV Sport</string>
+      <string>RO: Look TV</string>
+      <string>RO: Look</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2251,6 +2253,9 @@
     <Name>Travel Channel</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/travel_channel.png</LogoUrl>
+    <Aliases>
+      <string>RO: Travel</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TravelMix.ro</Id>
