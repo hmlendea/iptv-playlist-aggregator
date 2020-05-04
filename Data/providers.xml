@@ -575,7 +575,7 @@
   <PlaylistProviderEntity>
     <Id>tousecurity2-1</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>135</Priority>
+    <Priority>133</Priority>
     <Name>Tousecurity Backup 1</Name>
     <UrlFormat>https://sites.google.com/site/uup4mee/Romania%20%281%29%20{0:dd-MM-yyyy}m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
@@ -583,10 +583,42 @@
   <PlaylistProviderEntity>
     <Id>tousecurity3-1</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>140</Priority>
+    <Priority>134</Priority>
     <Name>Tousecurity Uploadingy 1</Name>
     <UrlFormat>https://sites.google.com/site/uploadingy/Romania%20M3u%20%282%29%20.m3u?attredirects=0&amp;d=1</UrlFormat>
   </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>iptvcat-ro-1</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>140</Priority>
+    <Name>IPTV CAT RO 1</Name>
+    <UrlFormat>https://iptvcat.com/romania?.m3u8</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>iptvcat-ro-2</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>141</Priority>
+    <Name>IPTV CAT RO 2</Name>
+    <UrlFormat>https://iptvcat.com/romania/2?.m3u8</UrlFormat>
+  </PlaylistProviderEntity>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>iptvcat-md-1</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>142</Priority>
+    <Name>IPTV CAT MD 1</Name>
+    <UrlFormat>https://iptvcat.com/moldova?.m3u8</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>iptvcat-md-2</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>143</Priority>
+    <Name>IPTV CAT MD 2</Name>
+    <UrlFormat>https://iptvcat.com/moldova/2?.m3u8</UrlFormat>
 
   <PlaylistProviderEntity>
     <Id>albaiaiptv</Id>
