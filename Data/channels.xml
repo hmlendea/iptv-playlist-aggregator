@@ -243,6 +243,15 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>AxialTV.md</Id>
+    <Name>Axial TV</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/axial_tv.png</LogoUrl>
+    <Aliases>
+      <string>MD: Axial TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>AXNBlack.ro</Id>
     <Name>AXN Black</Name>
     <GroupId>movies</GroupId>
@@ -277,6 +286,15 @@
     <Name>Balkanika TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/balkanika-tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>BaltiTV.md</Id>
+    <Name>Bălți TV</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/orhei_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Bălți TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BanatTV.ro</Id>
@@ -359,6 +377,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://busuioctv.md/wp-content/uploads/2018/03/cropped-Favicon-Busuioc.png</LogoUrl>
     <Aliases>
+      <string>MD: Busuioc TV</string>
       <string>MD: Busuioc</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -751,6 +770,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/disney_channel.png</LogoUrl>
     <Aliases>
       <string>Disney Channel RO</string>
+      <string>Disney</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1167,6 +1187,9 @@
     <Name>Inedit TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/inedit_tv.png</LogoUrl>
+    <Aliases>
+      <string>Inedit</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>InfinitTV.ro</Id>
@@ -1201,6 +1224,7 @@
     <GroupId>local-bucovina</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/intermedia-tv.png</LogoUrl>
     <Aliases>
+      <string>Intermedia TV</string>
       <string>RO: Intermedia Suceava</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1677,6 +1701,18 @@
     <Name>One TV</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>http://stvron.com/canale/mici/one-tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>OrheiTV.md</Id>
+    <Name>Orhei TV</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/orhei_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>OrizontTV.md</Id>
+    <Name>Orizont TV</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/orizont_tv.md.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>OrizontTV.ro</Id>
