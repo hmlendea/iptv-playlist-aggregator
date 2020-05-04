@@ -373,7 +373,7 @@
   <ChannelDefinitionEntity>
     <Id>Canal2.md</Id>
     <Name>Canal 2</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/7/7f/Logo_Canal_2.png</LogoUrl>
     <Aliases>
       <string>MD: Canal 2</string>
@@ -382,8 +382,8 @@
   <ChannelDefinitionEntity>
     <Id>Canal3.md</Id>
     <Name>Canal 3</Name>
-    <GroupId>unknown</GroupId>
-    <LogoUrl>http://www.frosat.net/images/logotv/original/Canal3_md.gif</LogoUrl>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/canal_3.png</LogoUrl>
     <Aliases>
       <string>MD: Canal 3</string>
     </Aliases>
@@ -431,7 +431,7 @@
     <Id>Cinemax.ro</Id>
     <Name>CineMAX 1</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/Cinemax.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cinemax1.png</LogoUrl>
     <Aliases>
       <string>RO: CineMAX</string>
     </Aliases>
@@ -440,7 +440,7 @@
     <Id>Cinemax2.ro</Id>
     <Name>CineMAX 2</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/Cinemax2.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cinemax2.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Cinethronix.ro</Id>
@@ -692,7 +692,7 @@
     <Id>DiscoveryID.ro</Id>
     <Name>Discovery Investigation</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/discovery_investigation.png</LogoUrl>
     <Aliases>
       <string>RO: Discovery ID</string>
       <string>RO: ID Investigation Discovery</string>
@@ -722,7 +722,7 @@
     <Id>DiscoveryShowcase.ro</Id>
     <Name>Discovery Showcase</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/hu/DiscoveryHDShowcase.hu.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/discovery_showcase.png</LogoUrl>
     <Aliases>
       <string>RO: Discovery</string>
     </Aliases>
@@ -731,7 +731,7 @@
     <Id>DiscoveryTurboXtra.hu</Id>
     <Name>Discovery Turbo Extra</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/hu/DiscoveryTurboXtra.hu.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/discovery_turbo_extra.png</LogoUrl>
     <Aliases>
       <string>RO: Discovery Turbo Xtra</string>
       <string>RO: DTX</string>
@@ -747,7 +747,7 @@
     <Id>DisneyChannel.ro</Id>
     <Name>Disney Channel</Name>
     <GroupId>kids</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/DisneyChannel.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/disney_channel.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DisneyJunior.ro</Id>
@@ -855,7 +855,7 @@
     <Id>Etno.ro</Id>
     <Name>Etno</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/Etno.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/etno_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Ento</string>
       <string>RO: Etno TV</string>
@@ -1079,7 +1079,7 @@
     <Id>HappyChannel.ro</Id>
     <Name>Happy Channel</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/HappyChannel.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/happy_channel.png</LogoUrl>
     <Aliases>
       <string>RO: Happy</string>
       <string>RO: Happy Channale</string>
@@ -1089,7 +1089,7 @@
     <Id>HBO.ro</Id>
     <Name>HBO 1</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/HBO.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hbo.png</LogoUrl>
     <Aliases>
       <string>RO: HBO</string>
       <string>RO: HBO Romania</string>
@@ -1100,13 +1100,13 @@
     <Id>HBO2.ro</Id>
     <Name>HBO 2</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/HBO2.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hbo2.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HBO3.ro</Id>
     <Name>HBO 3</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/HBO3.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hbo3.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HeavyMetalTV.ro</Id>
@@ -1555,7 +1555,7 @@
     <Id>National24Plus.ro</Id>
     <Name>Național 24 Plus</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/Na%C5%A3ional24Plus.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/national_24_plus.png</LogoUrl>
     <Aliases>
       <string>RO: N24 Plus</string>
       <string>RO: N24</string>
@@ -1566,7 +1566,7 @@
     <Id>NationalTV.ro</Id>
     <Name>Național TV</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/NationalTV.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/national_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Na?ional</string>
     </Aliases>
@@ -2253,7 +2253,7 @@
     <Id>TVPaprika.ro</Id>
     <Name>TV Paprika</Name>
     <GroupId>thematic</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/TVPaprika.ro.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_paprika.png</LogoUrl>
     <Aliases>
       <string>RO: Paprika</string>
       <string>RO: Paprika TV</string>
