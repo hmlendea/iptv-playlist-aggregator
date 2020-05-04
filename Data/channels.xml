@@ -312,6 +312,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood.png</LogoUrl>
     <Aliases>
       <string>RO: BO</string>
+      <string>RO: BO TV</string>
       <string>RO: Bollywood TV Film</string>
       <string>RO: Bollywood TV</string>
       <string>RO: Bolywood</string>
@@ -748,6 +749,9 @@
     <Name>Disney Channel</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/disney_channel.png</LogoUrl>
+    <Aliases>
+      <string>Disney Channel RO</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DisneyJunior.ro</Id>
@@ -1414,6 +1418,7 @@
     <Aliases>
       <string>MD: Moldova 1</string>
       <string>MD: Moldova M1</string>
+      <string>Moldova 1 Mobile</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1598,7 +1603,8 @@
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nickelodeon.png</LogoUrl>
     <Aliases>
-      <string>RO: NIckolodeon</string>
+      <string>Nickelodeon RO</string>
+      <string>RO: Nickolodeon</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1870,6 +1876,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_tv.png</LogoUrl>
     <Aliases>
+      <string>Realitatea RO</string>
       <string>Realitatea TV România</string>
       <string>RO: Realitatae</string>
       <string>RO: Realitate</string>
@@ -1999,6 +2006,9 @@
     <Name>Taraf</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://www.taraf.tv/images/logo.png</LogoUrl>
+    <Aliases>
+      <string>RO: Taraf TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>tele2drobeta</Id>
@@ -2133,11 +2143,13 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Telestar1.ro</Id>
-    <Name>Telestar1 TV</Name>
+    <Name>Telestar1</Name>
     <GroupId>foreign</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/telestar-1.png</LogoUrl>
     <Aliases>
+      <string>RO: Telestar TV</string>
       <string>RO: Telestar</string>
+      <string>RO: Telestar1 TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2281,6 +2293,7 @@
     <LogoUrl>http://stvron.com/canale/mari/tv-sud-est.png</LogoUrl>
     <Aliases>
       <string>RO: TV Sud Est TVSAT</string>
+      <string>TV SE</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
