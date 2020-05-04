@@ -1081,6 +1081,15 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>GurinelTV.md</Id>
+    <Name>Gurinel TV</Name>
+    <GroupId>kids</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/gurinel_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Gurinel TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>HTMusic.ro</Id>
     <Name>H!T Music Channel</Name>
     <GroupId>music</GroupId>
