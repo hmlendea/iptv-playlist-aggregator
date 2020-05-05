@@ -2769,7 +2769,7 @@
     <Id>TimelessDrama.ro</Id>
     <Name>Timeless Drama</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/timeless-drama.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/timeless_drama.png</LogoUrl>
     <Aliases>
       <string>Timeless Drama Channel</string>
     </Aliases>
@@ -3172,6 +3172,7 @@
     <Id>VSVBollywood.ro</Id>
     <Name>VSV Bollywood</Name>
     <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/vsv_bollywood.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>VSVCartoons.ro</Id>
