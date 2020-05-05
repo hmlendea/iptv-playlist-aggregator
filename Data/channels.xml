@@ -582,6 +582,9 @@
     <Name>Deutsche Welle</Name>
     <GroupId>foreign</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/deutsche_welle.png</LogoUrl>
+    <Aliases>
+      <string>DW</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiasporaTV.ro</Id>
@@ -2650,7 +2653,7 @@
   <ChannelDefinitionEntity>
     <Id>VividTV</Id>
     <IsEnabled>true</IsEnabled>
-    <Name>Vivid Red TV</Name>
+    <Name>Vivid TV</Name>
     <GroupId>porn</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
