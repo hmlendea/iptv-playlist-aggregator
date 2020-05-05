@@ -1333,6 +1333,7 @@
       <string>PL: Polsat Sport News</string>
       <string>PT: EuroSport 2</string>
       <string>Sony Turbo</string>
+      <string>StarCinema</string>
       <string>SU: Sportkanalen</string>
       <string>SU: Viasat Sport</string>
       <string>UK: Chelsea TV</string>
@@ -1468,6 +1469,18 @@
     <Name>Magic TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magic_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>MaguraMediaAction.ro</Id>
+    <Name>Măgura Media Action</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magura_media.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>MaguraMediaComedy.ro</Id>
+    <Name>Măgura Media Comedy</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magura_media.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MediaTV.md</Id>
@@ -1830,6 +1843,12 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>PCGarage.ro</Id>
+    <Name>PC Garage</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pcgarage.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>FishingHunting.ro</Id>
     <Name>Pescuit și Vânătoare TV</Name>
     <GroupId>thematic</GroupId>
@@ -1866,6 +1885,12 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>PrivateTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Private TV</Name>
+    <GroupId>porn</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Pro2.ro</Id>
     <Name>Pro 2</Name>
     <GroupId>movies</GroupId>
@@ -1891,7 +1916,7 @@
     <Id>ProCinema.ro</Id>
     <Name>Pro Cinema</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_cinema.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_cinema.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProFM.ro</Id>
@@ -1903,7 +1928,7 @@
     <Id>AcasaGold.ro</Id>
     <Name>Pro Gold</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_gold.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_gold.png</LogoUrl>
     <Aliases>
       <string>RO: Acasa Gold</string>
       <string>RO: P.Gold</string>
@@ -1925,13 +1950,13 @@
     <Id>ProTV.ro</Id>
     <Name>Pro TV</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTVChisinau.md</Id>
     <Name>Pro TV Chișinău</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_tv_chisinau.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_tv_chisinau.png</LogoUrl>
     <Aliases>
       <string>MD: Pro TV Chisinau</string>
       <string>MD: Pro TV Moldova</string>
@@ -1941,7 +1966,7 @@
     <Id>ProTVInternational.ro</Id>
     <Name>Pro TV Internațional</Name>
     <GroupId>international</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_tv_international.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_tv_international.png</LogoUrl>
     <Aliases>
       <string>RO: Pro INT</string>
       <string>RO: Pro TV INT</string>
@@ -1953,7 +1978,7 @@
     <Id>ProTVNews.ro</Id>
     <Name>Pro TV Știri</Name>
     <GroupId>news</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_tv_news.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_tv_news.png</LogoUrl>
     <Aliases>
       <string>RO: Pro TV News</string>
     </Aliases>
@@ -1962,7 +1987,7 @@
     <Id>ProX.ro</Id>
     <Name>Pro X</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_x.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_x.png</LogoUrl>
     <Aliases>
       <string>RO: P-X</string>
       <string>RO: Sport</string>
@@ -2363,6 +2388,9 @@
     <Name>THT Music</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://tntmusic.ru/static/img/logo@x2.png</LogoUrl>
+    <Aliases>
+      <string>MD: THT Music</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Tigo.ro</Id>
