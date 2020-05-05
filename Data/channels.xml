@@ -83,7 +83,7 @@
     <Id>ActualitateaTV.ro</Id>
     <Name>Actualitatea TV</Name>
     <GroupId>local-moldova</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/actualitatea-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/actualitatea_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Actualitatea</string>
       <string>RO: ATV</string>
@@ -2633,7 +2633,7 @@
     <Id>TVPrim.md</Id>
     <Name>TV Prim</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>https://televiziuneaplus.ro/wp-content/uploads/2019/04/tv_prim.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_prim.png</LogoUrl>
     <Aliases>
       <string>MD: TV Prim</string>
     </Aliases>
