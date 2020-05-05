@@ -156,7 +156,7 @@
     <Id>AntenaComedy.ro</Id>
     <Name>Antena Comedy Play</Name>
     <GroupId>entertainment</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/comedy-play.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/comedy_play.png</LogoUrl>
     <Aliases>
       <string>RO: Antena Comedy</string>
       <string>RO: Antena Play Comedy</string>
@@ -757,7 +757,7 @@
     <Id>DiscoveryScience.ro</Id>
     <Name>Discovery Science</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd41bc33b1566d8b45f0.png</LogoUrl>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/6/6d/SCI-network-logo-192x192-v2.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiscoveryShowcase.ro</Id>
@@ -1106,7 +1106,7 @@
     <Id>GoldTV.md</Id>
     <Name>Gold TV</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/gold-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/gold_tv.png</LogoUrl>
     <Aliases>
       <string>MD: Gold</string>
     </Aliases>
@@ -1203,7 +1203,7 @@
     <Id>HoraTV.ro</Id>
     <Name>Hora TV</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>https://www.horatv.ro/images/icon.ico</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hora_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>IasiTVLife.ro</Id>
@@ -1211,7 +1211,7 @@
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/iasi_tv_life.png</LogoUrl>
     <Aliases>
-      <string>RO: Iasi</string>
+      <string>RO: Iași</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1499,7 +1499,7 @@
     <Id>Moldova1.md</Id>
     <Name>Moldova 1</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Logo_Moldova_1_%282016%29.svg/1200px-Logo_Moldova_1_%282016%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/moldova1.png</LogoUrl>
     <Aliases>
       <string>MD: Moldova 1</string>
       <string>MD: Moldova M1</string>
@@ -1510,7 +1510,7 @@
     <Id>Moldova2.md</Id>
     <Name>Moldova 2</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Logo_Moldova_2_%282016%29.svg/2000px-Logo_Moldova_2_%282016%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/moldova2.png</LogoUrl>
     <Aliases>
       <string>MD: Moldova 2</string>
       <string>MD: Moldova M2</string>
@@ -1830,7 +1830,7 @@
     <Id>Pro2.ro</Id>
     <Name>Pro 2</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45ab.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_2.png</LogoUrl>
     <Aliases>
       <string>RO: Acasa</string>
       <string>RO: P.2</string>
@@ -1852,7 +1852,7 @@
     <Id>ProCinema.ro</Id>
     <Name>Pro Cinema</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_cinema.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_cinema.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProFM.ro</Id>
@@ -1864,7 +1864,7 @@
     <Id>AcasaGold.ro</Id>
     <Name>Pro Gold</Name>
     <GroupId>movies</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd40bc33b1566d8b45d4.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_gold.png</LogoUrl>
     <Aliases>
       <string>RO: Acasa Gold</string>
       <string>RO: P.Gold</string>
@@ -1886,13 +1886,13 @@
     <Id>ProTV.ro</Id>
     <Name>Pro TV</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45a7.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTVChisinau.md</Id>
     <Name>Pro TV Chișinău</Name>
     <GroupId>local-basarabia</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd47bc33b1566d8b46b8.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_tv_chisinau.png</LogoUrl>
     <Aliases>
       <string>MD: Pro TV Chisinau</string>
       <string>MD: Pro TV Moldova</string>
@@ -1902,7 +1902,7 @@
     <Id>ProTVInternational.ro</Id>
     <Name>Pro TV Internațional</Name>
     <GroupId>international</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd41bc33b1566d8b45f7.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_tv_international.png</LogoUrl>
     <Aliases>
       <string>RO: Pro INT</string>
       <string>RO: Pro TV INT</string>
@@ -1914,7 +1914,7 @@
     <Id>ProTVNews.ro</Id>
     <Name>Pro TV Știri</Name>
     <GroupId>news</GroupId>
-    <LogoUrl>https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/36/5b/4d/365b4d0f-2085-2bde-3255-4bf5408931e6/AppIcon-1x_U007emarketing-85-220-9.png/128x0w.jpg</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_tv_news.png</LogoUrl>
     <Aliases>
       <string>RO: Pro TV News</string>
     </Aliases>
@@ -1923,7 +1923,7 @@
     <Id>ProX.ro</Id>
     <Name>Pro X</Name>
     <GroupId>sport</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45b6.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/pro_x.png</LogoUrl>
     <Aliases>
       <string>RO: P-X</string>
       <string>RO: Sport</string>
@@ -2001,7 +2001,7 @@
     <Id>RealitateaPlus.ro</Id>
     <Name>Realitatea Plus</Name>
     <GroupId>news</GroupId>
-    <LogoUrl>http://itcmedia.ro/wp-content/uploads/2013/01/REALITATEA_PLUS2.jpg</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_plus.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RetroTV.ro</Id>
@@ -2155,7 +2155,7 @@
     <Id>TeleEuropaNova.ro</Id>
     <Name>TeleEuropa Nova</Name>
     <GroupId>local-banat</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/teleeuropa_nova.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telenova.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TelekomSport1.ro</Id>
