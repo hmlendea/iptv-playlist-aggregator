@@ -1196,6 +1196,7 @@
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/gurinel_tv.png</LogoUrl>
     <Aliases>
+      <string>Gurinel TV Moldova</string>
       <string>Gurinel</string>
       <string>MD: Gurinel TV</string>
       <string>RO: Gurinel TV</string>
