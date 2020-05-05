@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfChannelDefinitionEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ChannelDefinitionEntity>
+    <Id>10TV.md</Id>
+    <Name>10TV</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/10tv.png</LogoUrl>
+    <Aliases>
+      <string>MD: 10TV HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>1HD.ro</Id>
     <Name>1 HD</Name>
     <GroupId>music</GroupId>
@@ -1279,6 +1288,15 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>ITVMoldova.md</Id>
+    <Name>ITV Moldova</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/itv_moldova.png</LogoUrl>
+    <Aliases>
+      <string>MD: ITV Moldova</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>___broken</Id>
     <IsEnabled>false</IsEnabled>
     <Name>INVALID_CHANNEL</Name>
@@ -1298,6 +1316,7 @@
       <string>AL: Tring Sport 2</string>
       <string>AR: AD Sport 4</string>
       <string>BR: SporTV 3</string>
+      <string>Current Time</string>
       <string>ES: M Desportes</string>
       <string>EX-YU: Arena Sport 2 HR</string>
       <string>FR: Bein Sport Max 10</string>
@@ -1310,8 +1329,10 @@
       <string>FR: RMC Sport 3</string>
       <string>FR: RMC Sport LIVE 5</string>
       <string>GR: Cosmote Sport 3</string>
+      <string>MTV</string>
       <string>PL: Polsat Sport News</string>
       <string>PT: EuroSport 2</string>
+      <string>Sony Turbo</string>
       <string>SU: Sportkanalen</string>
       <string>SU: Viasat Sport</string>
       <string>UK: Chelsea TV</string>
@@ -1601,6 +1622,15 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>N4.md</Id>
+    <Name>N4</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/n4.png</LogoUrl>
+    <Aliases>
+      <string>MD: N4</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>NASAChannel.us</Id>
     <Name>NASA TV</Name>
     <GroupId>educational</GroupId>
@@ -1827,6 +1857,15 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/prima_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>Primul.md</Id>
+    <Name>Primul în Moldova</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/primul_in_moldova.png</LogoUrl>
+    <Aliases>
+      <string>MD: Primul în Moldova</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Pro2.ro</Id>
     <Name>Pro 2</Name>
     <GroupId>movies</GroupId>
@@ -2044,6 +2083,15 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/romania_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Romania</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>RTR.md</Id>
+    <Name>RTR Moldova</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/rtr_moldova.png</LogoUrl>
+    <Aliases>
+      <string>RO: RTS</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2311,6 +2359,12 @@
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/a/a7/%D0%A2heVoiceTV-logo.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>THTMusic.ru</Id>
+    <Name>THT Music</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://tntmusic.ru/static/img/logo@x2.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Tigo.ro</Id>
     <Name>Tigo Music</Name>
     <GroupId>music</GroupId>
@@ -2411,6 +2465,15 @@
     <Name>TV Plus Suceava</Name>
     <GroupId>local-bucovina</GroupId>
     <LogoUrl>https://televiziuneaplus.ro/wp-content/uploads/2019/04/cropped-tv-plus-regional.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVPrim.md</Id>
+    <Name>TV Prim</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://televiziuneaplus.ro/wp-content/uploads/2019/04/tv_prim.png</LogoUrl>
+    <Aliases>
+      <string>MD: TV Prim</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVSud.ro</Id>
@@ -2670,6 +2733,15 @@
     <IsEnabled>true</IsEnabled>
     <Name>X TV</Name>
     <GroupId>porn</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ZonaM.md</Id>
+    <Name>ZonaM</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/zonam.png</LogoUrl>
+    <Aliases>
+      <string>MD: ZonaM</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ZUTV.ro</Id>

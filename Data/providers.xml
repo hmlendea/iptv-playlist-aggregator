@@ -406,8 +406,8 @@
 
   <PlaylistProviderEntity>
     <Id>iptvsource-backup2</Id>
-    <IsEnabled>572</IsEnabled>
-    <Priority>52</Priority>
+    <IsEnabled>true</IsEnabled>
+    <Priority>572</Priority>
     <Name>IPTVsource Backup 2</Name>
     <UrlFormat>https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com3.m3u</UrlFormat>
   </PlaylistProviderEntity>
