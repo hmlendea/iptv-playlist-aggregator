@@ -466,6 +466,7 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/7/7f/Logo_Canal_2.png</LogoUrl>
     <Aliases>
+      <string>Canal 2 Moldova</string>
       <string>MD: Canal 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2002,6 +2003,7 @@
     <LogoUrl>https://static.iptv-epg.com/ro/NeptunTV.ro.png</LogoUrl>
     <Aliases>
       <string>RO: Neptum</string>
+      <string>RO: Neptun</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
