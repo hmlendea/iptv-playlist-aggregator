@@ -37,6 +37,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Somax", "RO: Somax TV", "Somax TV")]
         [TestCase("Travel Channel", "RO: Travel", "RO | Travel")]
         [TestCase("TVR Târgu Mureș", "RO: TVR T?rgu-Mure?", "TVR: Targu Mureș")]
+        [TestCase("TVR", null, "RO: TVR HD (1080P)")]
         [TestCase("U TV", null, "UTV")]
         [TestCase("Vivid TV", null, "Vivid TV HD(18+)")]
         [Test]
