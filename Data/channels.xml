@@ -925,6 +925,12 @@
     <GroupId>local-moldova</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>Exotica</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Exotica</Name>
+    <GroupId>porn</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>ExtremeSports.ro</Id>
     <Name>Extreme Sports</Name>
     <GroupId>sport</GroupId>
@@ -1290,9 +1296,9 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>JasminTV.com</Id>
-    <IsEnabled>false</IsEnabled>
+    <IsEnabled>true</IsEnabled>
     <Name>Jasmin TV</Name>
-    <GroupId>music</GroupId>
+    <GroupId>porn</GroupId>
     <LogoUrl>https://scontent.fomr1-1.fna.fbcdn.net/v/t1.0-9/11046972_1547016762228097_8978976372468915740_n.png?_nc_cat=109&amp;_nc_ht=scontent.fomr1-1.fna&amp;oh=8df2ed1cd1fd688ba368ce537ea6a83b&amp;oe=5D2F9A04</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1816,6 +1822,18 @@
       <string>RO: Acasa Gold</string>
       <string>RO: P.Gold</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ASTShemale</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>AST Shemale</Name>
+    <GroupId>porn</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ASTTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>AST TV</Name>
+    <GroupId>porn</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTV.ro</Id>
@@ -2559,6 +2577,18 @@
     <GroupId>radio</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>VividRedTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Vivid Red TV</Name>
+    <GroupId>porn</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>VividTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Vivid Red TV</Name>
+    <GroupId>porn</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>VoceaBasarabiei.md</Id>
     <Name>Vocea Basarabiei</Name>
     <GroupId>local-basarabia</GroupId>
@@ -2566,6 +2596,12 @@
     <Aliases>
       <string>MD: Vocea Basarabiei</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>XTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>X TV</Name>
+    <GroupId>porn</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ZUTV.ro</Id>

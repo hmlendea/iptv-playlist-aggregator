@@ -176,4 +176,11 @@
     <Name>Radio</Name>
   </GroupEntity>
 
+  <GroupEntity>
+    <Id>porn</Id>
+    <IsEnabled>false</IsEnabled>
+    <Priority>900</Priority>
+    <Name>Erotice</Name>
+  </GroupEntity>
+
 </ArrayOfGroupEntity>
