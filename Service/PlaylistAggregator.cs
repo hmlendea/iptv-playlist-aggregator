@@ -79,7 +79,7 @@ namespace IptvPlaylistAggregator.Service
                 .ToList();
             
             Playlist playlist = new Playlist();
-            IEnumerable<Channel> filteredProviderChannels = FilterProviderChannels(providerChannels, channelDefinitions);
+            IEnumerable<Channel> filteredProviderChannels = GetProvicerChannels(providerChannels, channelDefinitions);
             IEnumerable<ChannelDefinition> enabledChannelDefinitions = channelDefinitions
                 .Where(x => x.IsEnabled && groups[x.GroupId].IsEnabled);
 
@@ -87,11 +87,35 @@ namespace IptvPlaylistAggregator.Service
 
             foreach (ChannelDefinition channelDef in enabledChannelDefinitions)
             {
-                Channel matchedChannel = filteredProviderChannels
-                    .FirstOrDefault(x => channelMatcher.DoesMatch(channelDef.Name, x.Name));
+                logger.Debug(
+                    MyOperation.ChannelMatching,
+                    OperationStatus.Started,
+                    new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value));
+
+                List<Channel> matchedChannels = filteredProviderChannels
+                    .Where(x => channelMatcher.DoesMatch(channelDef.Name, x.Name))
+                    .ToList();
+                
+                if (!matchedChannels.Any())
+                {
+                    continue;
+                }
+
+                logger.Debug(
+                    MyOperation.ChannelMatching,
+                    OperationStatus.InProgress,
+                    new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value),
+                    new LogInfo(MyLogInfoKey.ChannelsCount, matchedChannels.Count));
+
+                Channel matchedChannel = matchedChannels.FirstOrDefault(x => mediaSourceChecker.IsSourcePlayableAsync(x.Url).Result);
 
                 if (matchedChannel is null)
                 {
+                    logger.Debug(
+                        MyOperation.ChannelMatching,
+                        OperationStatus.Failure,
+                        new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value));
+
                     continue;
                 }
 
@@ -104,6 +128,11 @@ namespace IptvPlaylistAggregator.Service
                 channel.Url = matchedChannel.Url;
 
                 playlist.Channels.Add(channel);
+
+                logger.Debug(
+                    MyOperation.ChannelMatching,
+                    OperationStatus.Success,
+                    new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value));
             }
 
             if (settings.CanIncludeUnmatchedChannels)
@@ -133,7 +162,7 @@ namespace IptvPlaylistAggregator.Service
             return playlistFileBuilder.BuildFile(playlist);
         }
 
-        IEnumerable<Channel> FilterProviderChannels(
+        IEnumerable<Channel> GetProvicerChannels(
             IList<Channel> channels,
             IEnumerable<ChannelDefinition> channelDefinitions)
         {
@@ -143,33 +172,19 @@ namespace IptvPlaylistAggregator.Service
                 new LogInfo(MyLogInfoKey.ChannelsCount, channels.Count()));
 
             List<Task> tasks = new List<Task>();
-            ConcurrentBag<Channel> filteredChannels = new ConcurrentBag<Channel>();
-            IEnumerable<Channel> uniqueChannels = channels
+            IEnumerable<Channel> filteredChannels = channels
                 .GroupBy(x => dnsResolver.ResolveUrl(x.Url))
-                .Select(g => g.First());
-
-            foreach (Channel channel in uniqueChannels)
-            {
-                Task task = Task.Run(async () =>
-                {
-                    bool isPlayable = await mediaSourceChecker.IsSourcePlayableAsync(channel.Url);
-
-                    if (isPlayable)
-                    {
-                        filteredChannels.Add(channel);
-                    }
-                });
-
-                tasks.Add(task);
-            }
-
-            Task.WaitAll(tasks.ToArray());
-
+                .Select(g => g.First())
+                .OrderBy(x => channels.IndexOf(x))
+                .ToList();
+            
+            Parallel.ForEach(filteredChannels, channel => channel.Name = channelMatcher.NormaliseName(channel.Name));
+            
             logger.Info(
                 MyOperation.ProviderChannelsFiltering,
                 OperationStatus.Success);
 
-            return filteredChannels.OrderBy(x => channels.IndexOf(x));
+            return filteredChannels;
         }
     }
 }
