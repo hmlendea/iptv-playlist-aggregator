@@ -157,6 +157,14 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>github-pabloangel</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>180</Priority>
+    <Name>Pablo-Angel's IPTV GitHub Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/Pablo-Angel/free/a5820225e5cd3e62de3389ebfde1ee07554e7e8b/gasca.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>iptvcat-ro-1</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>400</Priority>
