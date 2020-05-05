@@ -1548,6 +1548,12 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magura_media.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MaguraMediaReligioase.ro</Id>
+    <Name>Măgura Religioase</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magura_media.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>MediaTV.md</Id>
     <Name>Media TV Cimișlia</Name>
     <GroupId>local-basarabia</GroupId>
