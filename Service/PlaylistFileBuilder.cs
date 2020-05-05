@@ -97,8 +97,10 @@ namespace IptvPlaylistAggregator.Service
             {
                 if (line.StartsWith(EntryHeader))
                 {
+                    string[] lineSplit = line.Split(',');
+
                     Channel channel = new Channel();
-                    channel.Name = line.Split(',')[1];
+                    channel.Name = lineSplit[lineSplit.Length - 1];
 
                     playlist.Channels.Add(channel);
                 }
