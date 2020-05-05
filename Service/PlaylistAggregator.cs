@@ -59,7 +59,6 @@ namespace IptvPlaylistAggregator.Service
         {
             groups = groupRepository
                 .GetAll()
-                .Where(x => x.IsEnabled)
                 .ToServiceModels()
                 .ToDictionary(x => x.Id, x => x);
 
