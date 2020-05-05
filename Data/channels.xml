@@ -293,7 +293,7 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/orhei_tv.png</LogoUrl>
     <Aliases>
-      <string>RO: Bălți TV</string>
+      <string>MD: Bălți TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -313,6 +313,9 @@
     <Name>Bit TV</Name>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://bittv.info/wp-content/uploads/2016/02/cropped-logo1.png</LogoUrl>
+    <Aliases>
+      <string>Bit TV Pașcani</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BloombergTV.us</Id>
@@ -841,6 +844,7 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/elita_tv.png</LogoUrl>
     <Aliases>
+      <string>Elita TV Rezina</string>
       <string>MD: Elita Rezina</string>
       <string>MD: Elita TV Rezina</string>
       <string>MD: TV Elita</string>
@@ -1730,6 +1734,9 @@
     <Name>Orizont TV</Name>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/orizont_tv.md.png</LogoUrl>
+    <Aliases>
+      <string>MD: Orizont TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>OrizontTV.ro</Id>
@@ -2526,6 +2533,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/valea_prahovei_tv.png</LogoUrl>
     <Aliases>
       <string>RO: VPTV</string>
+      <string>VP HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
