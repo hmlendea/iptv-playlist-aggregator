@@ -1586,6 +1586,12 @@
     <LogoUrl>https://logonoid.com/images/mezzo-tv-logo.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MiamiTV</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Miami TV</Name>
+    <GroupId>porn</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Minimax.ro</Id>
     <Name>MiniMax</Name>
     <GroupId>kids</GroupId>
@@ -1832,6 +1838,7 @@
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nest_tv.png</LogoUrl>
     <Aliases>
+      <string>Nest TV Channel</string>
       <string>RO: NEst TV</string>
       <string>RO: NEst</string>
       <string>RO: Suceava</string>
@@ -1928,6 +1935,12 @@
     <Name>PC Garage</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pcgarage.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>PenthouseGold</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Penthouse Gold</Name>
+    <GroupId>porn</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FishingHunting.ro</Id>
@@ -2089,6 +2102,9 @@
     <Name>Profit.ro</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/profit.ro.png</LogoUrl>
+    <Aliases>
+      <string>Profit TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>PublikaTV.md</Id>
@@ -2156,6 +2172,12 @@
     <Name>Realitatea Plus</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_plus.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Redlight</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Redlight</Name>
+    <GroupId>porn</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RetroTV.ro</Id>
@@ -2298,6 +2320,12 @@
     <Name>Sundance</Name>
     <GroupId>unknown</GroupId>
     <LogoUrl>https://static.iptv-epg.com/ro/Sundance.ro.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>SuperOne.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Super One</Name>
+    <GroupId>porn</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>SuperTV.ro</Id>
@@ -2878,16 +2906,18 @@
     <GroupId>radio</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>VividRedTV</Id>
+    <Id>VividRed.pl</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Vivid Red TV</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/vivid_red.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>VividTV</Id>
+    <Id>VividFR.ca</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Vivid TV</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/vivid.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>VoceaBasarabiei.md</Id>
