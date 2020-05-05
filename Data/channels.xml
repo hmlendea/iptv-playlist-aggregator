@@ -532,6 +532,15 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>CTCMega.md</Id>
+    <Name>CTC Mega</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ctc_mega.png</LogoUrl>
+    <Aliases>
+      <string>MD: CTC Mega</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>CurierTV.ro</Id>
     <Name>Curier TV</Name>
     <GroupId>local-muntenia</GroupId>
@@ -567,6 +576,12 @@
     <Id>DeeaFM.ro</Id>
     <Name>Deea FM</Name>
     <GroupId>radio</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>DeutscheWelle.de	</Id>
+    <Name>Deutsche Welle</Name>
+    <GroupId>foreign</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/deutsche_welle.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DiasporaTV.ro</Id>
@@ -1057,6 +1072,9 @@
     <Name>Food Network</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/f/f9/Food_Network_New_Logo.png</LogoUrl>
+    <Aliases>
+      <string>Food Netwoork</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>France24.fr</Id>
@@ -1097,6 +1115,15 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/gurinel_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Gurinel TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>HDNetSciFi.ro</Id>
+    <Name>HD Net Sci-Fi</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hdnet-ro_scifi.png</LogoUrl>
+    <Aliases>
+      <string>HD NET Sci-Fi</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1417,6 +1444,16 @@
     <Name>Magic TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magic_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>MediaTV.md</Id>
+    <Name>Media TV Cimișlia</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/media_tv.png</LogoUrl>
+    <Aliases>
+      <string>Cimișlia TV</string>
+      <string>MD: Cimișlia TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Megamax.ro</Id>
@@ -2050,10 +2087,30 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>SorTV.md</Id>
+    <Name>Soroca TV</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/soroca_tv.png</LogoUrl>
+    <Aliases>
+      <string>MD: Soroca TV</string>
+      <string>Soroca TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>SperantaTV.ro</Id>
     <Name>Speranța TV</Name>
     <GroupId>religious</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/speranta_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>StudioL.md</Id>
+    <Name>Studio-L</Name>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/studio-l.png</LogoUrl>
+    <Aliases>
+      <string>MD: Studio-L</string>
+      <string>Studio-L</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Sundance.ro</Id>
