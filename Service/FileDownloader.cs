@@ -1,3 +1,4 @@
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -23,6 +24,7 @@ namespace IptvPlaylistAggregator.Service
             this.applicationSettings = applicationSettings;
 
             httpClient = new HttpClient();
+            httpClient.Timeout = TimeSpan.FromMilliseconds(3000);
             httpClient.DefaultRequestHeaders.Add(
                 "User-Agent",
                 applicationSettings.UserAgent);

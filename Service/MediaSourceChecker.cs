@@ -93,7 +93,7 @@ namespace IptvPlaylistAggregator.Service
 
         HttpWebRequest CreateWebRequest(string url)
         {
-            const int timeout = 7500;
+            const int timeout = 3000;
 
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
             request.Method = "GET";
