@@ -29,6 +29,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Digi World", "RO: Digi World FHD", "RUMANIA: DigiWorld FHD (Opt-1)")]
         [TestCase("Golf Channel", "FR: Golf Channel", "|FR| GOLF CHANNEL FHD")]
         [TestCase("HBO 3", null, "HBO 3 F_HD")]
+        [TestCase("HD Net Van Damme", "HD NET Jean Claude Van Damme", "HD NET Jean Claude van Damme")]
         [TestCase("MTV Europe", null, "RO: MTV Europe")]
         [TestCase("Pro TV", null, "PRO TV ULTRA_HD")]
         [TestCase("Publika TV", "MD: Publika", "PUBLIKA_TV_HD")]
