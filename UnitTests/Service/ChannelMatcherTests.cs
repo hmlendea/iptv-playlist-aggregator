@@ -39,7 +39,6 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Realitatea Plus", null, "Realitatea Plus")]
         [TestCase("România TV", "România TV", "RO\" Romania TV")]
         [TestCase("Somax", "RO: Somax TV", "Somax TV")]
-        [TestCase("Sundance TV", null, "RO: Sundance TV FHD [Multi-Sub]")]
         [TestCase("Sundance", "RO: Sundance TV", "RO: Sundance TV FHD [Multi-Sub]")]
         [TestCase("Travel Channel", "RO: Travel", "RO | Travel")]
         [TestCase("TV8", "MD: TV8", "TV 8 Moldova HD")]
