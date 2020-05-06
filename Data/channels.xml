@@ -917,7 +917,8 @@
   <ChannelDefinitionEntity>
     <Id>DuckTV.ro</Id>
     <Name>Duck TV</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>kids</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/duck_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>DunaTV.ro</Id>
@@ -1076,7 +1077,8 @@
   <ChannelDefinitionEntity>
     <Id>FightBox.ro</Id>
     <Name>FightBox</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>sport</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/fight_box.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FilmCafe.ro</Id>
@@ -1139,7 +1141,7 @@
   <ChannelDefinitionEntity>
     <Id>FineLiving.ro</Id>
     <Name>Fine Living</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>thematic</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/fine-living.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3058,10 +3060,10 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>TVSAT.ro</Id>
-    <Name>TVSAT</Name>
-    <GroupId>local-unknown</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/tv-sat.png</LogoUrl>
+    <Id>TVSat.ro</Id>
+    <Name>TVSat</Name>
+    <GroupId>local-muntenia</GroupId>
+    <LogoUrl>http://www.tvsatrm.ro/assets/client/images/logo.svg</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>UTV.ro</Id>
