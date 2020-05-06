@@ -145,7 +145,7 @@ namespace IptvPlaylistAggregator.Service
                     .Select(g => g.First())
                     .OrderBy(x => x.Name);
 
-                foreach (Channel unmatchedChannel in unmatchedChannels)
+                foreach (Channel unmatchedChannel in unmatchedChannels.Where(x => mediaSourceChecker.IsSourcePlayableAsync(x.Url).Result))
                 {
                     logger.Warn(MyOperation.ChannelMatching, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Channel, unmatchedChannel.Name));
 
