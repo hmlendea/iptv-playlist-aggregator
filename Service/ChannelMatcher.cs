@@ -25,7 +25,7 @@ namespace IptvPlaylistAggregator.Service
             { "RUMANIA", "Romania" },
             { "(.*) *RO$", "RO: $1" },
 
-            { "^([^R][^O].*) *Moldova$", "MD: $1" },
+            { "^((?!RO).*) *Moldova$", "MD: $1" },
             { "(.*) *\\(Moldova\\)$", "MD: $1" },
             { "(.*) *\\(Romania\\)$", "RO: $1" },
 

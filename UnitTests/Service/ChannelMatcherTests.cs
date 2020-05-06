@@ -74,6 +74,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("|ROM|: Cromtel", "CROMTEL")]
         [TestCase("|UK| CHELSEA TV (Live On Matches) HD", "UKCHELSEATV")]
         [TestCase("Canal Regional (Moldova)", "MDCANALREGIONAL")]
+        [TestCase("Jurnal TV Moldova", "MDJURNALTV")]
         [TestCase("MD: Canal Regional (Moldova)", "MDCANALREGIONAL")]
         [TestCase("RO    \" DIGI SPORT 1 HD RO", "DIGISPORT1")]
         [TestCase("RO-Animal Planet HD", "ANIMALPLANET")]
@@ -91,6 +92,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("U TV", "UTV")]
         [TestCase("US: NASA TV US", "USNASATV")]
         [TestCase("VIP|RO|: Discovery Channel FHD", "DISCOVERYCHANNEL")]
+        [TestCase("ZonaM Moldova", "MDZONAM")]
         [Test]
         public void NormaliseName_ReturnsExpectedValue(string inputValue, string expectedValue)
         {
