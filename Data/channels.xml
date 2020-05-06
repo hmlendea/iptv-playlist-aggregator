@@ -1065,7 +1065,7 @@
     <Id>Favorit.ro</Id>
     <Name>Favorit TV</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/a/ae/FavoritLogo.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/favorit_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Favorit</string>
       <string>RO: Favorti TV</string>
