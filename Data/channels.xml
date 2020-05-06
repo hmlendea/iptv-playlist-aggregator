@@ -6,7 +6,6 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/10tv.png</LogoUrl>
     <Aliases>
-      <string>10TV Moldova</string>
       <string>MD: 10TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -446,7 +445,6 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://busuioctv.md/wp-content/uploads/2018/03/cropped-Favicon-Busuioc.png</LogoUrl>
     <Aliases>
-      <string>Busuioc TV Moldova</string>
       <string>MD: Busuioc TV</string>
       <string>MD: Busuioc</string>
     </Aliases>
@@ -466,7 +464,6 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/ro/7/7f/Logo_Canal_2.png</LogoUrl>
     <Aliases>
-      <string>Canal 2 Moldova</string>
       <string>MD: Canal 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -476,7 +473,6 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/canal_3.png</LogoUrl>
     <Aliases>
-      <string>Canal 3 Moldova</string>
       <string>MD: Canal 3</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1197,7 +1193,6 @@
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/gurinel_tv.png</LogoUrl>
     <Aliases>
-      <string>Gurinel TV Moldova</string>
       <string>Gurinel</string>
       <string>MD: Gurinel TV</string>
       <string>RO: Gurinel TV</string>
@@ -1505,7 +1500,6 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/jurnal_tv.png</LogoUrl>
     <Aliases>
-      <string>Jurnal TV Moldova</string>
       <string>MD: Jurnal TV</string>
       <string>MD: Jurnal</string>
     </Aliases>
@@ -1926,7 +1920,6 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/n4.png</LogoUrl>
     <Aliases>
       <string>MD: N4</string>
-      <string>N4 Moldova</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2062,7 +2055,6 @@
     <Aliases>
       <string>MD: Noroc</string>
       <string>MD: Noroc TV</string>
-      <string>Noroc TV Moldova</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2189,7 +2181,7 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/prime.png</LogoUrl>
     <Aliases>
-      <string>Prime Moldova</string>
+      <string>MD: Prime</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2199,7 +2191,8 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/primul_in_moldova.png</LogoUrl>
     <Aliases>
       <string>MD: Primul în Moldova</string>
-      <string>Primul Moldova</string>
+      <string>MD: Primul</string>
+      <string>Primul</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2223,7 +2216,7 @@
     <Id>Acasa.md</Id>
     <IsEnabled>false</IsEnabled>
     <Name>Pro 2 Moldova</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>movies</GroupId>
     <Aliases>
       <string>MD: Acasa</string>
       <string>MD: Pro 2</string>
@@ -2330,7 +2323,6 @@
       <string>MD: Publika TV</string>
       <string>MD: Publika</string>
       <string>MD: TV Publika</string>
-      <string>Publika TV Moldova</string>
       <string>RO: TV Publika</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2469,7 +2461,6 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ru_tv.png</LogoUrl>
     <Aliases>
       <string>MD: RU TV</string>
-      <string>RU TV Moldova</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3246,7 +3237,6 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/zonam.png</LogoUrl>
     <Aliases>
       <string>MD: ZonaM</string>
-      <string>ZonaM Moldova</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
