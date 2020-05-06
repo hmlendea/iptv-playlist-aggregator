@@ -179,8 +179,6 @@ namespace IptvPlaylistAggregator.Service
                 .OrderBy(x => channels.IndexOf(x))
                 .ToList();
             
-            Parallel.ForEach(filteredChannels, channel => channel.Name = channelMatcher.NormaliseName(channel.Name));
-            
             logger.Info(
                 MyOperation.ProviderChannelsFiltering,
                 OperationStatus.Success);
