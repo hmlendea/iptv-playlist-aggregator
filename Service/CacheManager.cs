@@ -43,13 +43,27 @@ namespace IptvPlaylistAggregator.Service
             => normalisedNames.TryGetValue(name);
 
         public void StoreHostnameResolution(string hostname, string ip)
-            => hostnameResolutions.TryAdd(hostname, ip);
+        {
+            if (ip is null)
+            {
+                ip = string.Empty;
+            }
+            
+            hostnameResolutions.TryAdd(hostname, ip);
+        }
 
         public string GetHostnameResolution(string hostname)
             => hostnameResolutions.TryGetValue(hostname);
 
         public void StoreUrlResolution(string url, string ip)
-            => urlResolutions.TryAdd(url, ip);
+        {
+            if (ip is null)
+            {
+                ip = string.Empty;
+            }
+            
+            urlResolutions.TryAdd(url, ip);
+        }
 
         public string GetUrlResolution(string url)
             => urlResolutions.TryGetValue(url);
