@@ -26,24 +26,6 @@
   </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
-    <Id>hmlendea-livestreams-ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>3</Priority>
-    <DontCache>true</DontCache>
-    <Name>hmlendea's livestreams RO</Name>
-    <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/ro/playlist.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-  
-  <PlaylistProviderEntity>
-    <Id>hmlendea-livestreams-md</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>4</Priority>
-    <DontCache>true</DontCache>
-    <Name>hmlendea's livestreams MD</Name>
-    <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/md/playlist.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>hmlendea-livestreams-int</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>5</Priority>
@@ -162,6 +144,24 @@
     <Priority>180</Priority>
     <Name>Pablo-Angel's IPTV GitHub Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/Pablo-Angel/free/a5820225e5cd3e62de3389ebfde1ee07554e7e8b/gasca.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>hmlendea-livestreams-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>300</Priority>
+    <DontCache>true</DontCache>
+    <Name>hmlendea's livestreams RO</Name>
+    <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/ro/playlist.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+  
+  <PlaylistProviderEntity>
+    <Id>hmlendea-livestreams-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>301</Priority>
+    <DontCache>true</DontCache>
+    <Name>hmlendea's livestreams MD</Name>
+    <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/md/playlist.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
