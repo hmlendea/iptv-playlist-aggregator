@@ -41,7 +41,7 @@
     <IsEnabled>false</IsEnabled>
     <Name>1 Music Channel HU</Name>
     <GroupId>music</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/hu/MusicChannel.hu.png</LogoUrl>
+    <LogoUrl>https://static.epg.best/hu/MusicChannel.hu.png</LogoUrl>
     <Aliases>
       <string>HU: Music Channel</string>
       <string>RO: Music Channe HU</string>
@@ -820,7 +820,7 @@
     <Id>DiscoveryIDX.ro</Id>
     <Name>Discovery Investigation Extra</Name>
     <GroupId>educational</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/DiscoveryID.ro.png</LogoUrl>
+    <LogoUrl>https://static.epg.best/ro/DiscoveryID.ro.png</LogoUrl>
     <Aliases>
       <string>RO: Discovery ID Xtra</string>
       <string>RO: Discovery IDX</string>
@@ -1159,7 +1159,7 @@
     <Id>France24.fr</Id>
     <Name>France24</Name>
     <GroupId>foreign</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/fr/France24.fr.png</LogoUrl>
+    <LogoUrl>https://static.epg.best/fr/France24.fr.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FRBTV.ro</Id>
@@ -1995,7 +1995,7 @@
     <Id>NeptunTV.ro</Id>
     <Name>Neptun TV</Name>
     <GroupId>local-dobrogea</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/NeptunTV.ro.png</LogoUrl>
+    <LogoUrl>https://static.epg.best/ro/NeptunTV.ro.png</LogoUrl>
     <Aliases>
       <string>RO: Neptum</string>
       <string>RO: Neptun</string>
@@ -2020,7 +2020,7 @@
     <Id>NickJr.ro</Id>
     <Name>Nickelodeon Junior</Name>
     <GroupId>kids</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/NickJr.ro.png</LogoUrl>
+    <LogoUrl>https://static.epg.best/ro/NickJr.ro.png</LogoUrl>
     <Aliases>
       <string>RO: Nick Jr.</string>
       <string>RO: Nick Junior</string>
@@ -2527,7 +2527,7 @@
     <Id>Sundance.ro</Id>
     <Name>Sundance</Name>
     <GroupId>unknown</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/ro/Sundance.ro.png</LogoUrl>
+    <LogoUrl>https://static.epg.best/ro/Sundance.ro.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>SuperOne.ro</Id>
@@ -2926,7 +2926,7 @@
     <Id>TV5Monde.fr</Id>
     <Name>TV5 Monde</Name>
     <GroupId>foreign</GroupId>
-    <LogoUrl>https://static.iptv-epg.com/nl/TV5Monde.nl.png</LogoUrl>
+    <LogoUrl>https://static.epg.best/nl/TV5Monde.nl.png</LogoUrl>
     <Aliases>
       <string>INT: TV5 Monde</string>
       <string>RO: TV5 Monde Europe</string>
