@@ -13,17 +13,20 @@ namespace IptvPlaylistAggregator.Service
     {
         static readonly string[] SubstringsToStrip = new string[]
         {
-            "(backup)", "(b)", " backup", "(On-Demand)", "(New!)", "(Live On Matches)", "[Multi-Audio]", "[Multi-Sub]", "MultiSub", "www.iptvsource.com", "iptvsource.com"
+            "(Auto)", "(backup)", "(b)", " backup", "(On-Demand)", "(New!)", "(Live On Matches)", "[Multi-Audio]", "[Multi-Sub]", "MultiSub",
+            "www.iptvsource.com", "iptvsource.com"
         };
 
         static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
+            { "[\\ _-](Ultra|[FU])*_*[HMS][DQ]", "" },
+
             { "^[\\|\":-]* *([A-Z][A-Z]) *[\\|\":-] *", "$1:" },
             { "^([A-Z][A-Z]): *(.*) \\(*\\1\\)*$", "$1: $2" },
 
             { "Moldavia", "Moldova" },
             { "RUMANIA", "Romania" },
-            { "(.*) *RO$", "RO: $1" },
+            { "(.*) +RO$", "RO: $1" },
 
             { "^((?!RO).*) *Moldova$", "MD: $1" },
             { "(.*) *\\(Moldova\\)$", "MD: $1" },
@@ -39,8 +42,6 @@ namespace IptvPlaylistAggregator.Service
 
             { " HEVC$", "" },
             { " HEVC ", "" },
-            { "[\\ _](Ultra|[FU])*_*[HMS][DQ] ", "" },
-            { "[\\ _](Ultra|[FU])*_*[HMS][DQ]$", "" },
 
             { " \\(*ROM\\)*$", "" },
             { "[\\|]*ROM*[\\|:]", "RO:" },
