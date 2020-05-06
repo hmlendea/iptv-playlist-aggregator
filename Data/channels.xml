@@ -1026,6 +1026,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Exotica</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://iptv.live/images/logo/channel/smalls/ee3a3d059b0289892dd9b6466488c101.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ExtremeSports.ro</Id>
@@ -1184,6 +1185,7 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/gold_tv.png</LogoUrl>
     <Aliases>
+      <string>MD: Gold TV</string>
       <string>MD: Gold</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1401,6 +1403,7 @@
       <string>Intermedia TV</string>
       <string>Media Regional</string>
       <string>RO: Intermedia Suceava</string>
+      <string>RO: Media TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1780,12 +1783,16 @@
     <IsEnabled>true</IsEnabled>
     <Name>Miami TV</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://iptv.live/images/logo/channel/smalls/f561aaf6ef0bf14d4208bb46a4ccb3ad.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Minimax.ro</Id>
     <Name>MiniMax</Name>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/minimax.png</LogoUrl>
+    <Aliases>
+      <string>MiniMax România</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MioritaTV.ro</Id>
@@ -2147,6 +2154,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Penthouse Gold</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/penthouse.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>FishingHunting.ro</Id>
@@ -2174,6 +2182,9 @@
     <Name>Prima TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/prima_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Prima</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Prime.md</Id>
@@ -2200,6 +2211,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Private TV</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://iptv.live/images/logo/channel/smalls/7a3dd1b1de6a97b599768aa52df85a7d.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Pro2.ro</Id>
@@ -2210,6 +2222,7 @@
       <string>RO: Acasa</string>
       <string>RO: P.2</string>
       <string>RO: Pro 2 (Acasa TV)</string>
+      <string>RO: Pro TV 2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2250,12 +2263,14 @@
     <IsEnabled>true</IsEnabled>
     <Name>AST Shemale</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://www.ast.tv/img/ast-tv_logo-beta.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ASTTV</Id>
     <IsEnabled>true</IsEnabled>
     <Name>AST TV</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://www.ast.tv/img/ast-tv_logo-beta.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTV.ro</Id>
@@ -2386,6 +2401,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>Redlight</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://iptv.live/images/logo/channel/smalls/cfa3e0729768e459dd2edbea24522af1.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RetroTV.ro</Id>
@@ -2433,7 +2449,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/romania_tv.png</LogoUrl>
     <Aliases>
-      <string>RO: Romania</string>
+      <string>RO: România</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2442,7 +2458,7 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/rtr_moldova.png</LogoUrl>
     <Aliases>
-      <string>RO: RTS</string>
+      <string>MD: RTR</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2526,14 +2542,18 @@
   <ChannelDefinitionEntity>
     <Id>Sundance.ro</Id>
     <Name>Sundance</Name>
-    <GroupId>unknown</GroupId>
+    <GroupId>movies</GroupId>
     <LogoUrl>https://static.epg.best/ro/Sundance.ro.png</LogoUrl>
+    <Aliases>
+      <string>RO: Sundance TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>SuperOne.ro</Id>
     <IsEnabled>true</IsEnabled>
     <Name>Super One</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/super_one.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>SuperTV.ro</Id>
@@ -2712,6 +2732,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/televiziunea_centrala.png</LogoUrl>
     <Aliases>
       <string>MD: Televiziunea Centrală</string>
+      <string>MD: TV Centrală</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2841,7 +2862,9 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Logo_TVC21_%282011%29.svg/1920px-Logo_TVC21_%282011%29.svg.png</LogoUrl>
     <Aliases>
+      <string>MD: TVC21</string>
       <string>RO: TVC21 Moldova</string>
+      <string>RO: TVC21</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3054,7 +3077,7 @@
     <Id>TVSat.ro</Id>
     <Name>TVSat</Name>
     <GroupId>local-muntenia</GroupId>
-    <LogoUrl>http://www.tvsatrm.ro/assets/client/images/logo.svg</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvs_at.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>UTV.ro</Id>
@@ -3229,6 +3252,7 @@
     <IsEnabled>true</IsEnabled>
     <Name>X TV</Name>
     <GroupId>porn</GroupId>
+    <LogoUrl>https://iptv.live/images/logo/channel/smalls/a1d557a00a3b02b2848cf3d5a701c741.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ZonaM.md</Id>
