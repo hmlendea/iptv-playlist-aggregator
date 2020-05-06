@@ -173,6 +173,7 @@ namespace IptvPlaylistAggregator.Service
 
             List<Task> tasks = new List<Task>();
             IEnumerable<Channel> filteredChannels = channels
+                .Where(x => !string.IsNullOrWhiteSpace(dnsResolver.ResolveUrl(x.Url)))
                 .GroupBy(x => dnsResolver.ResolveUrl(x.Url))
                 .Select(g => g.First())
                 .OrderBy(x => channels.IndexOf(x))
