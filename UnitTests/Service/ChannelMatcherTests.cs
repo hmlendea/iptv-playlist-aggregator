@@ -25,6 +25,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Ardeal TV", "RO: Ardeal TV", "|RO| Ardeal TV")]
         [TestCase("Bollywood TV", "RO: BO TV", "BO TV")]
         [TestCase("Cartoon Network", "RO: Cartoon Network", "VIP|RO|: Cartoon Network")]
+        [TestCase("CineMAX 1", "RO: CineMAX", "CineMAX RO")]
         [TestCase("Digi Sport 2", "RO: Digi Sport 2", "RO: DIGI Sport 2")]
         [TestCase("Digi World", "RO: Digi World FHD", "RUMANIA: DigiWorld FHD (Opt-1)")]
         [TestCase("Golf Channel", "FR: Golf Channel", "|FR| GOLF CHANNEL FHD")]
