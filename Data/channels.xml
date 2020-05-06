@@ -869,7 +869,6 @@
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/disney_channel.png</LogoUrl>
     <Aliases>
-      <string>Disney Channel RO</string>
       <string>Disney</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2019,7 +2018,6 @@
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nickelodeon.png</LogoUrl>
     <Aliases>
-      <string>Nickelodeon RO</string>
       <string>RO: Nickolodeon</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2374,7 +2372,6 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_tv.png</LogoUrl>
     <Aliases>
-      <string>Realitatea RO</string>
       <string>Realitatea TV România</string>
       <string>Realtaea TV</string>
       <string>RO: Realitatae</string>

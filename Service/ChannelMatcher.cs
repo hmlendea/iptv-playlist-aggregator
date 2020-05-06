@@ -18,15 +18,17 @@ namespace IptvPlaylistAggregator.Service
 
         static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
-            { "(.*) *\\(Moldova\\)$", "MD: $1" },
-            { "(.*) *\\(Romania\\)$", "RO: $1" },
-
-            { "RUMANIA", "Romania" },
-            { "^[\\|\":-]* *Romania *[\\|\":-]", "RO:" },
-            
             { "^[\\|\":-]* *([A-Z][A-Z]) *[\\|\":-] *", "$1:" },
             { "^([A-Z][A-Z]): *(.*) \\(*\\1\\)*$", "$1: $2" },
 
+            { "RUMANIA", "Romania" },
+            { "(.*) *RO$", "RO: $1" },
+
+            { "(.*) *\\(Moldova\\)$", "MD: $1" },
+            { "(.*) *\\(Romania\\)$", "RO: $1" },
+
+            { "^[\\|\":-]* *Romania *[\\|\":-]", "RO:" },
+            
             { " S[0-9]-[0-9]$", "" },
             { " S[0-9]$", "" },
             { "\\(18\\+\\)", "" },
@@ -44,7 +46,7 @@ namespace IptvPlaylistAggregator.Service
 
             { "^([A-Z][A-Z]: *)*", "$1" },
             
-            { "^RO: *", "" },
+            { "^(RO: *)*", "" },
         };
 
         readonly ICacheManager cache;
