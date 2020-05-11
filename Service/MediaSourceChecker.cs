@@ -60,6 +60,13 @@ namespace IptvPlaylistAggregator.Service
 
         async Task<bool> IsPlaylistPlayableAsync(string url)
         {
+            string resolvedUrl = dnsResolver.ResolveUrl(url);
+            
+            if (string.IsNullOrWhiteSpace(resolvedUrl))
+            {
+                return false;
+            }
+
             string fileContent = await fileDownloader.TryDownloadStringAsync(url);
             Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
@@ -69,7 +76,7 @@ namespace IptvPlaylistAggregator.Service
         async Task<bool> IsStreamPlayableAsync(string url)
         {
             string resolvedUrl = dnsResolver.ResolveUrl(url);
-
+            
             if (string.IsNullOrWhiteSpace(resolvedUrl))
             {
                 return false;

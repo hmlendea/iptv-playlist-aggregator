@@ -39,7 +39,7 @@ namespace IptvPlaylistAggregator.Service
         
         public string ResolveUrl(string url)
         {
-            if (string.IsNullOrWhiteSpace(url))
+            if (!IsUrlValid(url))
             {
                 return null;
             }
@@ -69,6 +69,19 @@ namespace IptvPlaylistAggregator.Service
 
             cache.StoreUrlResolution(url, resolvedUrl);
             return resolvedUrl;
+        }
+
+        bool IsUrlValid(string url)
+        {
+            Uri uri;
+            bool isValid = Uri.TryCreate(url, UriKind.Absolute, out uri);
+
+            if (isValid && (uri.Scheme == Uri.UriSchemeHttp || uri.Scheme == Uri.UriSchemeHttps))
+            {
+                return true;
+            }
+
+            return false;
         }
 
         string TryGetHostEntry(string hostname)
