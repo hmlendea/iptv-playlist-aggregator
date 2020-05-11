@@ -82,10 +82,9 @@ namespace IptvPlaylistAggregator.Service
                 return false;
             }
 
-            HttpWebRequest request = CreateWebRequest(resolvedUrl);
-
             try
             {
+                HttpWebRequest request = CreateWebRequest(resolvedUrl);
                 HttpWebResponse response = (HttpWebResponse)(await request.GetResponseAsync());
                 
                 if (response.StatusCode == HttpStatusCode.OK)
