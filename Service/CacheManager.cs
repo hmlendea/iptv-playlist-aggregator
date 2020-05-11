@@ -66,7 +66,14 @@ namespace IptvPlaylistAggregator.Service
         }
 
         public string GetUrlResolution(string url)
-            => urlResolutions.TryGetValue(url);
+        {
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                return null;
+            }
+            
+            return urlResolutions.TryGetValue(url);
+        }
 
         public void StoreStreamStatus(MediaStreamStatus status)
             => streamStatuses.TryAdd(status.Url, status);

@@ -39,11 +39,6 @@ namespace IptvPlaylistAggregator.Service
         
         public string ResolveUrl(string url)
         {
-            if (!IsUrlValid(url))
-            {
-                return null;
-            }
-            
             string cachedResolution = cache.GetUrlResolution(url);
 
             if (!(cachedResolution is null))
@@ -51,12 +46,12 @@ namespace IptvPlaylistAggregator.Service
                 return cachedResolution;
             }
 
-            Uri uri = new Uri(url);
-
-            if (uri.Scheme != "http" && uri.Scheme != "https")
+            if (!IsUrlValid(url))
             {
                 return null;
             }
+            
+            Uri uri = new Uri(url);
 
             string ip = ResolveHostname(uri.Host);
 
