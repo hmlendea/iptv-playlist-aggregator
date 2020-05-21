@@ -920,6 +920,9 @@
     <Id>DunaTV.ro</Id>
     <Name>Duna</Name>
     <GroupId>unknown</GroupId>
+    <Aliases>
+      <string>RO: Duna TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>EEntertainment.ro</Id>
@@ -1454,7 +1457,13 @@
       <string>MTV</string>
       <string>PL: Polsat Sport News</string>
       <string>PT: EuroSport 2</string>
+      <string>RO: Sport Klub 1</string>
+      <string>RO: Sport Klub 2</string>
+      <string>RO: Sport Klub 3</string>
       <string>Sony Turbo</string>
+      <string>Sport Klub 1</string>
+      <string>Sport Klub 2</string>
+      <string>Sport Klub 3</string>
       <string>StarCinema</string>
       <string>SU: Sportkanalen</string>
       <string>SU: Viasat Sport</string>
@@ -2050,6 +2059,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nest_tv.png</LogoUrl>
     <Aliases>
       <string>Nest TV Channel</string>
+      <string>RO: NEst TV SV</string>
       <string>RO: NEst TV</string>
       <string>RO: NEst</string>
       <string>RO: Suceava</string>
@@ -2134,6 +2144,9 @@
     <Name>Paramount Channel</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/paramount_channel.png</LogoUrl>
+    <Aliases>
+      <string>RO: Paramount</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>PartenerTV.ro</Id>
@@ -2451,6 +2464,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/romania_tv.png</LogoUrl>
     <Aliases>
       <string>RO: România</string>
+      <string>RTV (România TV)</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
