@@ -21,6 +21,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             channelMatcher = new ChannelMatcher(cacheMock.Object);
         }
 
+        [TestCase("AMC", null, "RO: AMC Romania")]
         [TestCase("Antena 3", null, "Antena 3 Ultra_HD")]
         [TestCase("Ardeal TV", "RO: Ardeal TV", "|RO| Ardeal TV")]
         [TestCase("Bollywood TV", "RO: BO TV", "BO TV")]
@@ -28,6 +29,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("CineMAX 1", "RO: CineMAX", "CineMAX RO")]
         [TestCase("Digi Sport 2", "RO: Digi Sport 2", "RO: DIGI Sport 2")]
         [TestCase("Digi World", "RO: Digi World FHD", "RUMANIA: DigiWorld FHD (Opt-1)")]
+        [TestCase("Duna", "RO: Duna TV", "RO | Duna Tv")]
         [TestCase("Golf Channel", "FR: Golf Channel", "|FR| GOLF CHANNEL FHD")]
         [TestCase("HBO 3", null, "HBO 3 F_HD")]
         [TestCase("HD Net Van Damme", "HD NET Jean Claude Van Damme", "HD NET Jean Claude van Damme")]
