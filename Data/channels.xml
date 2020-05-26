@@ -105,6 +105,9 @@
     <Name>Agro TV</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://agro-tv.ro/wp-content/uploads/2018/09/favicon.png</LogoUrl>
+    <Aliases>
+      <string>RO: Agro</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AgroTV.md</Id>
@@ -220,6 +223,7 @@
     <Aliases>
       <string>RO: Antena Star</string>
       <string>RO: Antena Starts</string>
+      <string>RO: Antenna Stars</string>
       <string>RO: Stars</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1266,6 +1270,8 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/h!t_music_channel.png</LogoUrl>
     <Aliases>
       <string>RO: H!T Music</string>
+      <string>RO: Hit Ch</string>
+      <string>RO: Hit Channel</string>
       <string>RO: Hit Music</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2409,6 +2415,9 @@
     <Name>Realitatea Plus</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_plus.png</LogoUrl>
+    <Aliases>
+      <string>RO: Realitatea Plus TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Redlight</Id>
@@ -2847,6 +2856,9 @@
     <Name>Travel Mix</Name>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/travel_mix.png</LogoUrl>
+    <Aliases>
+      <string>RO: Travel Mix TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TrinitasTV.ro</Id>
