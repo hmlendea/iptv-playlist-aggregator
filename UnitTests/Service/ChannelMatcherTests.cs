@@ -21,6 +21,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             channelMatcher = new ChannelMatcher(cacheMock.Object);
         }
 
+        [TestCase("Agro TV", "RO: Agro", "Agro RO")]
         [TestCase("AMC", null, "RO: AMC Romania")]
         [TestCase("Antena 3", null, "Antena 3 Ultra_HD")]
         [TestCase("Ardeal TV", "RO: Ardeal TV", "|RO| Ardeal TV")]
@@ -41,8 +42,10 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Realitatea Plus", null, "Realitatea Plus")]
         [TestCase("România TV", "România TV", "RO\" Romania TV")]
         [TestCase("Somax", "RO: Somax TV", "Somax TV")]
+        [TestCase("Sundance", "RO: Sundance TV", "RO: Sundance TV FHD (MultiSub)")]
         [TestCase("Sundance", "RO: Sundance TV", "RO: Sundance TV FHD [Multi-Sub]")]
         [TestCase("Travel Channel", "RO: Travel", "RO | Travel")]
+        [TestCase("Travel Mix", "RO: Travel Mix TV", "Travel Mix TV RO")]
         [TestCase("TV8", "MD: TV8", "TV 8 Moldova HD")]
         [TestCase("TVC21", "MD: TVC21", "TVC 21 Moldova")]
         [TestCase("TVR Târgu Mureș", "RO: TVR T?rgu-Mure?", "TVR: Targu Mureș")]
@@ -96,11 +99,13 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("RO: U TV S1-1", "UTV")]
         [TestCase("RO.| DIGI 24", "DIGI24")]
         [TestCase("RO\" Romania TV", "ROMANIATV")]
+        [TestCase("RO| TARAF:HD", "TARAF")]
         [TestCase("RTR Moldova HD", "MDRTR")]
         [TestCase("RUMANIA: DigiWorld FHD (Opt-1)", "DIGIWORLD")]
         [TestCase("TV 8 HD (Auto)", "TV8")]
         [TestCase("TV 8 Moldova HD", "MDTV8")]
         [TestCase("TV Centrală Moldova", "MDTVCENTRALA")]
+        [TestCase("TVR 1 (Backup) RO", "TVR1")]
         [TestCase("U TV", "UTV")]
         [TestCase("US: NASA TV US", "USNASATV")]
         [TestCase("VIP|RO|: Discovery Channel FHD", "DISCOVERYCHANNEL")]
