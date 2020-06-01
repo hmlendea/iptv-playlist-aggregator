@@ -68,6 +68,9 @@
     <Name>A7 TV</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://a7tv.ro/wp-content/uploads/2017/12/logo-a7tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: A7</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AccentTV.md</Id>
@@ -347,6 +350,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/b1tv.png</LogoUrl>
     <Aliases>
+      <string>RO: B1 Channel</string>
       <string>RO: B1</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -889,6 +893,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/diva.png</LogoUrl>
     <Aliases>
       <string>RO: Diva</string>
+      <string>RO: Diva Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2013,6 +2018,9 @@
     <Name>NCN TV</Name>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ncn_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: NCN</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NeptunTV.ro</Id>
@@ -2056,6 +2064,8 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nickelodeon_toons.png</LogoUrl>
     <Aliases>
       <string>NickToons</string>
+      <string>RO: Nich Toons</string>
+      <string>RO: Nick Toons</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2327,6 +2337,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_tv_news.png</LogoUrl>
     <Aliases>
       <string>RO: Pro TV News</string>
+      <string>RO: Știrile Pro TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
