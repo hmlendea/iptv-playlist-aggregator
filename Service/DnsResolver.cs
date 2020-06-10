@@ -18,10 +18,17 @@ namespace IptvPlaylistAggregator.Service
         
         public string ResolveHostname(string hostname)
         {
-            string ip = cache.GetHostnameResolution(hostname);
+            string ip = string.Empty;
 
-            if (ip is null)
+            lock (this)
             {
+                ip = cache.GetHostnameResolution(hostname);
+
+                if (!(ip is null))
+                {
+                    return ip;
+                }
+
                 if (hostname.Any(x => char.IsLetter(x)))
                 {
                     ip = TryGetHostEntry(hostname);
@@ -60,7 +67,7 @@ namespace IptvPlaylistAggregator.Service
                 return null;
             }
 
-            string resolvedUrl = url.ReplaceFirst(uri.Host, ip).ReplaceFirst("https", "http");
+            string resolvedUrl = url.ReplaceFirst(uri.Host, ip);
 
             cache.StoreUrlResolution(url, resolvedUrl);
             return resolvedUrl;
