@@ -19,9 +19,9 @@ namespace IptvPlaylistAggregator.Service
         static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
             { "[\\(\\[]]*([Aa]uto|[Bb]ackup|[Ll]ive [Oo]n [Mm]atches|[Mm]ulti-*[Aa]udio|[Mm]ulti-*[Ss]ub|[Nn]ew!*|[Oo]n-[Dd]emand)[\\)\\]]*", "" },
-            { "[ _\\|\".:-](Ultra|[FU])*_*[HMS][DQ]", "" },
+            { "[ _\\|\\[\\(\\]\\)\".:-](Ultra|[FU])*_*[HMS][DQ]", "" },
 
-            { "^[\\|\".:-]* *([A-Z][A-Z]) *[\\|\".:-] *", "$1:" },
+            { "^[\\|\\[\\(\\]\\)\".:-]* *([A-Z][A-Z]) *[\\|\\[\\(\\]\\)\".:-] *", "$1:" },
             { "^([A-Z][A-Z]): *(.*) \\(*\\1\\)*$", "$1: $2" },
 
             { "Moldavia", "Moldova" },
@@ -31,9 +31,9 @@ namespace IptvPlaylistAggregator.Service
             { "^((?!RO).*) *Moldova$", "MD: $1" },
             { "(.*) *\\(Moldova\\)$", "MD: $1" },
             { "(.*) *\\(Romania\\)$", "RO: $1" },
-            { "^RO *[\\|\".:-] *(.*) *\\(*Romania\\)*$", "RO: $1" },
+            { "^RO *[\\|\\[\\(\\]\\)\".:-] *(.*) *\\(*Romania\\)*$", "RO: $1" },
 
-            { "^[\\|\".:-]* *Romania *[\\|\".:-]", "RO:" },
+            { "^[\\|\\[\\(\\]\\)\".:-]* *Romania *[\\|\\[\\(\\]\\)\".:-]", "RO:" },
             
             { " S[0-9]-[0-9]$", "" },
             { " S[0-9]$", "" },
@@ -45,7 +45,8 @@ namespace IptvPlaylistAggregator.Service
             { " HEVC ", "" },
 
             { " \\(*ROM\\)*$", "" },
-            { "[\\|]*ROM*[\\|:]", "RO:" },
+            { "[\\|\\()]*ROM*[\\|\\):]", "RO:" },
+            { "^Romania[n]*:", "RO:" },
             { "^[\\|]*VIP([A-Z][A-Z]):", "$1:" },
 
             { "^([A-Z][A-Z]: *)*", "$1" },
