@@ -874,6 +874,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/disney_channel.png</LogoUrl>
     <Aliases>
       <string>Disney</string>
+      <string>RO: Disny Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1306,8 +1307,9 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hbo.png</LogoUrl>
     <Aliases>
-      <string>RO: HBO</string>
+      <string>RO: HBO RO 1</string>
       <string>RO: HBO Romania</string>
+      <string>RO: HBO</string>
       <string>RO: HBOmania</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1316,12 +1318,24 @@
     <Name>HBO 2</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hbo2.png</LogoUrl>
+    <Aliases>
+      <string>RO: HBO RO 2</string>
+      <string>RO: HBO Romania 2</string>
+      <string>RO: HBO 2</string>
+      <string>RO: HBOmania 2</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HBO3.ro</Id>
     <Name>HBO 3</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hbo3.png</LogoUrl>
+    <Aliases>
+      <string>RO: HBO RO 3</string>
+      <string>RO: HBO Romania 3</string>
+      <string>RO: HBO 3</string>
+      <string>RO: HBOmania 3</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HeavyMetalTV.ro</Id>
