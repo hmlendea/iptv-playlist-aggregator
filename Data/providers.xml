@@ -115,14 +115,6 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>github-valentingif-ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>160</Priority>
-    <Name>Valentin-gif's IPTV GitHub RO Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/Valentin-gif/silver-lamp/master/page1.txt</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>gitlab-cristy-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>170</Priority>
@@ -690,6 +682,14 @@
     <Priority>681</Priority>
     <Name>Free Tux TV Moldova</Name>
     <UrlFormat>http://database.freetuxtv.net/playlists/playlist_webtv_md.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-valentingif-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>999</Priority>
+    <Name>Valentin-gif's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/Valentin-gif/silver-lamp/master/page1.txt</UrlFormat>
   </PlaylistProviderEntity>
 
 </ArrayOfPlaylistProviderEntity>
