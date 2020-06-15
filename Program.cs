@@ -24,6 +24,8 @@ namespace IptvPlaylistAggregator
 
         public static void Main(string[] args)
         {
+            Environment.SetEnvironmentVariable("DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER", "0");
+
             IConfiguration config = LoadConfiguration();
 
             applicationSettings = new ApplicationSettings();

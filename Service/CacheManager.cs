@@ -79,13 +79,45 @@ namespace IptvPlaylistAggregator.Service
             => streamStatuses.TryAdd(status.Url, status);
 
         public MediaStreamStatus GetStreamStatus(string url)
-            => streamStatuses.TryGetValue(url);
+        {
+            MediaStreamStatus cachedStatus = streamStatuses.TryGetValue(url);
+
+            if (!(cachedStatus is null))
+            {
+                return cachedStatus;
+            }
+            
+            string resolvedUrl = urlResolutions.TryGetValue(url);
+            
+            if (resolvedUrl is null)
+            {
+                return null;
+            }
+
+            return streamStatuses.TryGetValue(resolvedUrl);
+        }
         
         public void StoreWebDownload(string url, string content)
             => webDownloads.TryAdd(url, content ?? string.Empty);
         
         public string GetWebDownload(string url)
-            => webDownloads.TryGetValue(url);
+        {
+            string cachedDownload = webDownloads.TryGetValue(url);
+
+            if (!(cachedDownload is null))
+            {
+                return cachedDownload;
+            }
+            
+            string resolvedUrl = urlResolutions.TryGetValue(url);
+            
+            if (resolvedUrl is null)
+            {
+                return null;
+            }
+
+            return webDownloads.TryGetValue(resolvedUrl);
+        }
         
         public void StorePlaylist(string fileContent, Playlist playlist)
             => playlists.TryAdd(fileContent.GetHashCode(), playlist);
