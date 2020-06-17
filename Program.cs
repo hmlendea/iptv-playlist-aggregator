@@ -24,6 +24,7 @@ namespace IptvPlaylistAggregator
 
         public static void Main(string[] args)
         {
+            Environment.SetEnvironmentVariable("LD_PRELOAD", "/usr/lib/libcurl.so.3");
             Environment.SetEnvironmentVariable("DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER", "0");
 
             IConfiguration config = LoadConfiguration();
