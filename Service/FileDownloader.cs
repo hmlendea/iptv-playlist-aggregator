@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 using System.Net.Http;
 using System.Net.Security;
 using System.Threading;
@@ -80,7 +81,6 @@ namespace IptvPlaylistAggregator.Service
             HttpClientHandler handler = new HttpClientHandler();
             handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; };
 
-
             HttpClient client = new HttpClient(handler);
             client.Timeout = TimeSpan.FromMilliseconds(3000);
 
@@ -88,6 +88,11 @@ namespace IptvPlaylistAggregator.Service
             request.Headers.Add("User-Agent", applicationSettings.UserAgent);
 
             HttpResponseMessage response = await client.SendAsync(request, CancellationToken.None);
+
+            if (response.StatusCode != HttpStatusCode.OK)
+            {
+                throw new HttpRequestException($"Failed request. Status code {response.StatusCode}");
+            }
             
             return await response.Content.ReadAsStringAsync();
         }
