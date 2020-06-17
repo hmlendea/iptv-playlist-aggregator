@@ -52,7 +52,24 @@ namespace IptvPlaylistAggregator.Service
                 return null;
             }
 
-            string content = await SendGetRequest(resolvedUrl);
+            string content = null;
+
+            try
+            {
+                content = await SendGetRequest(resolvedUrl);
+            }
+            catch (HttpRequestException ex)
+            {
+                if (ex.InnerException.Message.Contains("SSL"))
+                {
+                    content = await SendGetRequest(url);
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
             cache.StoreWebDownload(url, content);
 
             return content;
@@ -61,11 +78,6 @@ namespace IptvPlaylistAggregator.Service
         async Task<string> SendGetRequest(string url)
         {
             HttpClientHandler handler = new HttpClientHandler();
-            handler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
-            handler.ServerCertificateCustomValidationCallback = (request, cert, chain, errors) =>
-            {
-                return errors == SslPolicyErrors.None;
-            };
             handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; };
 
 
