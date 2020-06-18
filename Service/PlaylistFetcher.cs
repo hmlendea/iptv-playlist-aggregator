@@ -71,7 +71,14 @@ namespace IptvPlaylistAggregator.Service
         {
             Playlist playlist = null;
 
-            for (int i = 0; i < applicationSettings.DaysToCheck; i++)
+            int daysToCheck = applicationSettings.DaysToCheck;
+
+            if (!provider.UrlFormat.Contains("{0"))
+            {
+                daysToCheck = 1;
+            }
+
+            for (int i = 0; i < daysToCheck; i++)
             {
                 DateTime date = DateTime.Now.AddDays(-i);
 
