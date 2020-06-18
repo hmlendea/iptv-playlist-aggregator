@@ -1,4 +1,5 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 using IptvPlaylistAggregator.Service.Models;
 
@@ -6,14 +7,19 @@ namespace IptvPlaylistAggregator.Service
 {
     public interface ICacheManager
     {
+        void SaveCacheToDisk();
+
         void StoreNormalisedChannelName(string name, string normalisedName);
         string GetNormalisedChannelName(string name);
 
-        void StoreHostnameResolution(string hostname, string ip);
-        string GetHostnameResolution(string hostname);
+        void StoreHost(Host host);
+        Host GetHost(string domain);
 
         void StoreUrlResolution(string url, string ip);
         string GetUrlResolution(string url);
+
+        void StoreSslCertificate(string host, X509Certificate2 certificate);
+        X509Certificate2 GetSslCertificate(string host);
 
         void StoreStreamStatus(MediaStreamStatus status);
         MediaStreamStatus GetStreamStatus(string url);
