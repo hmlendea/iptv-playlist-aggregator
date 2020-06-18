@@ -16,7 +16,7 @@ namespace IptvPlaylistAggregator.Logging
 
         public static Operation ChannelMatching => new MyOperation(nameof(ChannelMatching));
 
-        public static Operation MediaSourceCheck => new MyOperation(nameof(CacheSaving));
+        public static Operation MediaSourceCheck => new MyOperation(nameof(MediaSourceCheck));
 
         public static Operation CacheSaving => new MyOperation(nameof(CacheSaving));
     }
