@@ -70,23 +70,8 @@ namespace IptvPlaylistAggregator.Service
             {
                 urlToUse = resolvedUrl;
             }
-
-            try
-            {
-                content = await SendGetRequestAsync(urlToUse);
-            }
-            catch (HttpRequestException ex)
-            {
-                if (ex.InnerException.Message.Contains("SSL") && uri.Scheme == "http")
-                {
-                    content = await SendGetRequestAsync(url);
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            
+            content = await SendGetRequestAsync(urlToUse);
             cache.StoreWebDownload(url, content);
 
             return content;
