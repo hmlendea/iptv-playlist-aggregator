@@ -2,6 +2,7 @@ using System;
 using System.Net;
 using System.Threading.Tasks;
 
+using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service.Models;
 
@@ -16,19 +17,22 @@ namespace IptvPlaylistAggregator.Service
         readonly IDnsResolver dnsResolver;
         readonly ICacheManager cache;
         readonly ILogger logger;
+        readonly ApplicationSettings applicationSettings;
 
         public MediaSourceChecker(
             IFileDownloader fileDownloader,
             IPlaylistFileBuilder playlistFileBuilder,
             IDnsResolver dnsResolver,
             ICacheManager cache,
-            ILogger logger)
+            ILogger logger,
+            ApplicationSettings applicationSettings)
         {
             this.fileDownloader = fileDownloader;
             this.playlistFileBuilder = playlistFileBuilder;
             this.dnsResolver = dnsResolver;
             this.cache = cache;
             this.logger = logger;
+            this.applicationSettings = applicationSettings;
         }
 
         public async Task<bool> IsSourcePlayableAsync(string url)
@@ -118,6 +122,7 @@ namespace IptvPlaylistAggregator.Service
             request.Timeout = timeout;
             request.ContinueTimeout = timeout;
             request.ReadWriteTimeout = timeout;
+            request.UserAgent = applicationSettings.UserAgent;
 
             return request;
         }

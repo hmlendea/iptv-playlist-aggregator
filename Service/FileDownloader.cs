@@ -1,8 +1,5 @@
 using System;
-using System.Net;
 using System.Net.Http;
-using System.Net.Security;
-using System.Threading;
 using System.Threading.Tasks;
 
 using IptvPlaylistAggregator.Configuration;
@@ -15,6 +12,8 @@ namespace IptvPlaylistAggregator.Service
         readonly ICacheManager cache;
         readonly ApplicationSettings applicationSettings;
 
+        readonly HttpClient httpClient;
+
         public FileDownloader(
             IDnsResolver dnsResolver,
             ICacheManager cache,
@@ -23,6 +22,12 @@ namespace IptvPlaylistAggregator.Service
             this.dnsResolver = dnsResolver;
             this.cache = cache;
             this.applicationSettings = applicationSettings;
+
+            httpClient = new HttpClient();
+            httpClient.Timeout = TimeSpan.FromMilliseconds(3000);
+            httpClient.DefaultRequestHeaders.Add(
+                "User-Agent",
+                applicationSettings.UserAgent);
         }
 
         public async Task<string> TryDownloadStringAsync(string url)
@@ -36,16 +41,21 @@ namespace IptvPlaylistAggregator.Service
 
             try
             {
-                return await GetAsync(url);
+                content = await GetAsync(url);
             }
             catch
             {
                 return null;
             }
+
+            cache.StoreWebDownload(url, content);
+
+            return content;
         }
 
         async Task<string> GetAsync(string url)
         {
+            Uri uri = new Uri(url);
             string resolvedUrl = dnsResolver.ResolveUrl(url);
 
             if (string.IsNullOrWhiteSpace(resolvedUrl))
@@ -54,16 +64,22 @@ namespace IptvPlaylistAggregator.Service
             }
 
             string content = null;
+            string urlToUse = url;
+
+            if (uri.Scheme == "http")
+            {
+                urlToUse = resolvedUrl;
+            }
 
             try
             {
-                content = await SendGetRequest(resolvedUrl);
+                content = await SendGetRequestAsync(urlToUse);
             }
             catch (HttpRequestException ex)
             {
-                if (ex.InnerException.Message.Contains("SSL"))
+                if (ex.InnerException.Message.Contains("SSL") && uri.Scheme == "http")
                 {
-                    content = await SendGetRequest(url);
+                    content = await SendGetRequestAsync(url);
                 }
                 else
                 {
@@ -75,26 +91,16 @@ namespace IptvPlaylistAggregator.Service
 
             return content;
         }
-
-        async Task<string> SendGetRequest(string url)
+        
+        async Task<string> SendGetRequestAsync(string url)
         {
-            HttpClientHandler handler = new HttpClientHandler();
-            handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; };
-
-            HttpClient client = new HttpClient(handler);
-            client.Timeout = TimeSpan.FromMilliseconds(3000);
-
-            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
-            request.Headers.Add("User-Agent", applicationSettings.UserAgent);
-
-            HttpResponseMessage response = await client.SendAsync(request, CancellationToken.None);
-
-            if (response.StatusCode != HttpStatusCode.OK)
+            using (HttpResponseMessage response = await httpClient.GetAsync(url))
             {
-                throw new HttpRequestException($"Failed request. Status code {response.StatusCode}");
+                using (HttpContent content = response.Content)
+                {
+                    return await content.ReadAsStringAsync();
+                }
             }
-            
-            return await response.Content.ReadAsStringAsync();
         }
     }
 }
