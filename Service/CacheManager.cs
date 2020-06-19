@@ -47,8 +47,6 @@ namespace IptvPlaylistAggregator.Service
 
             LoadHosts();
             LoadStreamStatuses();
-
-            Console.WriteLine(streamStatuses.Count);
         }
 
         public void SaveCacheToDisk()
@@ -232,10 +230,13 @@ namespace IptvPlaylistAggregator.Service
                 streamStatus.LastCheckTime = DateTime.ParseExact(fields[1], TimestampFormat, CultureInfo.InvariantCulture);
                 streamStatus.IsAlive = bool.Parse(fields[2]);
 
-                if ((DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds <= cacheSettings.StreamStatusCacheTimeout)
+                if ((streamStatus.IsAlive == true && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamAliveStatusCacheTimeout) ||
+                    (streamStatus.IsAlive == false && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamDeadStatusCacheTimeout))
                 {
-                    streamStatuses.TryAdd(streamStatus.Url, streamStatus);
+                    continue;
                 }
+
+                streamStatuses.TryAdd(streamStatus.Url, streamStatus);
             }
         }
 

@@ -6,6 +6,8 @@ namespace IptvPlaylistAggregator.Configuration
 
         public int HostCacheTimeout { get; set; }
 
-        public int StreamStatusCacheTimeout { get; set; }
+        public int StreamAliveStatusCacheTimeout { get; set; }
+
+        public int StreamDeadStatusCacheTimeout { get; set; }
     }
 }
