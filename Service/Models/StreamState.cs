@@ -4,6 +4,7 @@ namespace IptvPlaylistAggregator.Service.Models
     {
         Alive,
         Dead,
+        Unauthorised,
         NotFound
     }
 }

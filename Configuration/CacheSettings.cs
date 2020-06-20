@@ -10,6 +10,8 @@ namespace IptvPlaylistAggregator.Configuration
 
         public int StreamDeadStatusCacheTimeout { get; set; }
 
+        public int StreamUnauthorisedStatusCacheTimeout { get; set; }
+
         public int StreamNotFoundStatusCacheTimeout { get; set; }
     }
 }

@@ -105,22 +105,26 @@ namespace IptvPlaylistAggregator.Service
 
         async Task<StreamState> GetStreamStateAsync(string url)
         {
-            try
-            {
-                HttpWebRequest request = CreateWebRequest(url);
-                HttpWebResponse response = (HttpWebResponse)(await request.GetResponseAsync());
-                
-                if (response.StatusCode == HttpStatusCode.OK)
-                {
-                    return StreamState.Alive;
-                }
-                else if (response.StatusCode == HttpStatusCode.NotFound)
-                {
-                    return StreamState.NotFound;
-                }
-            }
-            catch { }
+            HttpStatusCode statusCode = await GetHttpStatusCode(url);
 
+            if (statusCode == HttpStatusCode.OK)
+            {
+                Console.WriteLine(url + " ALIVE");
+                return StreamState.Alive;
+            }
+            
+            if (statusCode == HttpStatusCode.Unauthorized)
+            {
+                Console.WriteLine(url + " UNAUTHORISED");
+                return StreamState.Unauthorised;
+            }
+            
+            if (statusCode == HttpStatusCode.NotFound)
+            {
+                Console.WriteLine(url + " NOTFOUND");
+                return StreamState.NotFound;
+            }
+                
             return StreamState.Dead;
         }
 
@@ -146,6 +150,35 @@ namespace IptvPlaylistAggregator.Service
             status.LastCheckTime = DateTime.UtcNow;
 
             cache.StoreStreamStatus(status);
+        }
+
+        async Task<HttpStatusCode> GetHttpStatusCode(string url)
+        {
+            HttpWebRequest request = CreateWebRequest(url);
+            HttpWebResponse response = null;
+            HttpStatusCode statusCode = HttpStatusCode.RequestTimeout;
+
+            try
+            {
+                response = (await request.GetResponseAsync()) as HttpWebResponse;
+                statusCode = response.StatusCode;
+            }
+            catch (WebException ex)
+            {
+                if (ex.Status == WebExceptionStatus.ProtocolError)
+                {
+                    response = ex.Response as HttpWebResponse;
+
+                    if (response != null)
+                    {
+                        statusCode = response.StatusCode;
+                    }
+                }
+            }
+
+            response?.Close();
+
+            return statusCode;
         }
     }
 }

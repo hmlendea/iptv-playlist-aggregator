@@ -232,6 +232,7 @@ namespace IptvPlaylistAggregator.Service
 
                 if ((streamStatus.State == StreamState.Alive && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamAliveStatusCacheTimeout) ||
                     (streamStatus.State == StreamState.Dead && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamDeadStatusCacheTimeout) ||
+                    (streamStatus.State == StreamState.Unauthorised && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamUnauthorisedStatusCacheTimeout) ||
                     (streamStatus.State == StreamState.NotFound && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamNotFoundStatusCacheTimeout))
                 {
                     continue;
@@ -274,7 +275,7 @@ namespace IptvPlaylistAggregator.Service
                     TimestampFormat,
                     CultureInfo.InvariantCulture);
 
-                lines.Add($"{streamStatus.Url}{CsvFieldSeparator}{timestamp}{CsvFieldSeparator}{streamStatus.IsAlive}");
+                lines.Add($"{streamStatus.Url}{CsvFieldSeparator}{timestamp}{CsvFieldSeparator}{streamStatus.State}");
             }
 
             File.WriteAllLines(filePath, lines);
