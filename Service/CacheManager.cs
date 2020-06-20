@@ -228,10 +228,11 @@ namespace IptvPlaylistAggregator.Service
                 MediaStreamStatus streamStatus = new MediaStreamStatus();
                 streamStatus.Url = fields[0];
                 streamStatus.LastCheckTime = DateTime.ParseExact(fields[1], TimestampFormat, CultureInfo.InvariantCulture);
-                streamStatus.IsAlive = bool.Parse(fields[2]);
+                streamStatus.State = (StreamState)Enum.Parse(typeof(StreamState), fields[2]);
 
-                if ((streamStatus.IsAlive == true && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamAliveStatusCacheTimeout) ||
-                    (streamStatus.IsAlive == false && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamDeadStatusCacheTimeout))
+                if ((streamStatus.State == StreamState.Alive && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamAliveStatusCacheTimeout) ||
+                    (streamStatus.State == StreamState.Dead && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamDeadStatusCacheTimeout) ||
+                    (streamStatus.State == StreamState.NotFound && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamNotFoundStatusCacheTimeout))
                 {
                     continue;
                 }

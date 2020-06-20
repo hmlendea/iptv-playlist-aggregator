@@ -49,7 +49,7 @@ namespace IptvPlaylistAggregator.Service
 
             if (!(status is null))
             {
-                return status.IsAlive;
+                return status.State == StreamState.Alive;
             }
 
             logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Started, new LogInfo(MyLogInfoKey.Url, url));
@@ -60,22 +60,22 @@ namespace IptvPlaylistAggregator.Service
                 urlToUse = resolvedUrl;
             }
             
-            bool isAlive;
+            StreamState state;
 
             if (urlToUse.Contains(".m3u") || urlToUse.Contains(".m3u8"))
             {
-                isAlive = await IsPlaylistPlayableAsync(urlToUse);
+                state = await GetPlaylistStateAsync(urlToUse);
             }
             else if (!urlToUse.EndsWith(".ts"))
             {
-                isAlive = await IsStreamPlayableAsync(urlToUse);
+                state = await GetStreamStateAsync(urlToUse);
             }
             else
             {
-                isAlive = false;
+                state = StreamState.Dead;
             }
 
-            if (isAlive)
+            if (state == StreamState.Alive)
             {
                 logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Success, new LogInfo(MyLogInfoKey.Url, url));
             }
@@ -84,19 +84,26 @@ namespace IptvPlaylistAggregator.Service
                 logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Url, url));
             }
 
-            SaveToCache(url, isAlive);
-            return isAlive;
+            SaveToCache(url, state);
+            return state == StreamState.Alive;
         }
 
-        async Task<bool> IsPlaylistPlayableAsync(string url)
+        async Task<StreamState> GetPlaylistStateAsync(string url)
         {
             string fileContent = await fileDownloader.TryDownloadStringAsync(url);
             Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
-            return !Playlist.IsNullOrEmpty(playlist);
+            if (Playlist.IsNullOrEmpty(playlist))
+            {
+                return StreamState.Dead;
+            }
+            else
+            {
+                return StreamState.Alive;
+            }
         }
 
-        async Task<bool> IsStreamPlayableAsync(string url)
+        async Task<StreamState> GetStreamStateAsync(string url)
         {
             try
             {
@@ -105,12 +112,16 @@ namespace IptvPlaylistAggregator.Service
                 
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
-                    return true;
+                    return StreamState.Alive;
+                }
+                else if (response.StatusCode == HttpStatusCode.NotFound)
+                {
+                    return StreamState.NotFound;
                 }
             }
             catch { }
 
-            return false;
+            return StreamState.Dead;
         }
 
         HttpWebRequest CreateWebRequest(string url)
@@ -127,11 +138,11 @@ namespace IptvPlaylistAggregator.Service
             return request;
         }
 
-        void SaveToCache(string url, bool isAlive)
+        void SaveToCache(string url, StreamState state)
         {
             MediaStreamStatus status = new MediaStreamStatus();
             status.Url = url;
-            status.IsAlive = isAlive;
+            status.State = state;
             status.LastCheckTime = DateTime.UtcNow;
 
             cache.StoreStreamStatus(status);

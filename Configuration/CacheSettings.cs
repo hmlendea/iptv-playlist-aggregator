@@ -9,5 +9,7 @@ namespace IptvPlaylistAggregator.Configuration
         public int StreamAliveStatusCacheTimeout { get; set; }
 
         public int StreamDeadStatusCacheTimeout { get; set; }
+
+        public int StreamNotFoundStatusCacheTimeout { get; set; }
     }
 }
