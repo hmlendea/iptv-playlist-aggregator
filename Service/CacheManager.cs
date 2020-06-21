@@ -117,8 +117,18 @@ namespace IptvPlaylistAggregator.Service
             MediaStreamStatus streamStatus = streamStatuses.TryGetValue(url);
             
             string resolvedUrl = urlResolutions.TryGetValue(url);
+
+            if (string.IsNullOrWhiteSpace(resolvedUrl))
+            {
+                return new MediaStreamStatus()
+                {
+                    Url = url,
+                    State = StreamState.Dead,
+                    LastCheckTime = DateTime.UtcNow
+                };
+            }
             
-            if (streamStatus is null && !(resolvedUrl is null) && resolvedUrl != url)
+            if (streamStatus is null && resolvedUrl != url)
             {
                 streamStatus = streamStatuses.TryGetValue(resolvedUrl);
             }

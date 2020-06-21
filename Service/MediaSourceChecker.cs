@@ -96,7 +96,7 @@ namespace IptvPlaylistAggregator.Service
             
             if (streamState != StreamState.Alive)
             {
-                return StreamState.Dead;
+                return streamState;
             }
 
             string fileContent = await fileDownloader.TryDownloadStringAsync(url);
@@ -114,24 +114,7 @@ namespace IptvPlaylistAggregator.Service
 
         async Task<StreamState> GetStreamStateAsync(string url)
         {
-            string resolvedUrl = dnsResolver.ResolveUrl(url);
-
-            if (string.IsNullOrWhiteSpace(resolvedUrl))
-            {
-                return StreamState.NotFound;
-            }
-
-            Uri uri = new Uri(url);
-            HttpStatusCode statusCode;
-
-            if (uri.Scheme == "http")
-            {
-                statusCode = await GetHttpStatusCode(resolvedUrl);
-            }
-            else
-            {
-                statusCode = await GetHttpStatusCode(url);
-            }
+            HttpStatusCode statusCode = await GetHttpStatusCode(url);
 
             if (statusCode == HttpStatusCode.OK)
             {
@@ -196,7 +179,8 @@ namespace IptvPlaylistAggregator.Service
                     }
                 }
             }
-            
+            catch { }
+
             if (doCacheContent)
             {
                 cache.StoreWebDownload(url, content);
