@@ -51,7 +51,7 @@ namespace IptvPlaylistAggregator.Service
 
             if (!(status is null))
             {
-                return status.State == StreamState.Alive;
+                return status.IsAlive;
             }
 
             logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Started, new LogInfo(MyLogInfoKey.Url, url));

@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -78,13 +79,62 @@ namespace IptvPlaylistAggregator.Service
                 .ToList();
             
             Playlist playlist = new Playlist();
+
+            IEnumerable<Channel> channels = GetChannels(providerChannels);
+
+            foreach (Channel channel in channels)
+            {
+                playlist.Channels.Add(channel);
+            }
+
+            return playlistFileBuilder.BuildFile(playlist);
+        }
+
+        IEnumerable<Channel> GetChannels(IList<Channel> providerChannels)
+        {
             IEnumerable<Channel> filteredProviderChannels = GetProvicerChannels(providerChannels, channelDefinitions);
-            IEnumerable<ChannelDefinition> enabledChannelDefinitions = channelDefinitions
-                .Where(x => x.IsEnabled && groups[x.GroupId].IsEnabled);
 
             logger.Info(MyOperation.ChannelMatching, OperationStatus.Started);
 
-            foreach (ChannelDefinition channelDef in enabledChannelDefinitions)
+            IDictionary<string, Channel> enabledChannels = GetEnabledChannels(filteredProviderChannels).ToDictionary(x => x.Id, x => x);
+            IEnumerable<Channel> unmatchedChannels = GetUnmatchedChannels(filteredProviderChannels);
+            
+            List<Channel> channels = new List<Channel>();
+
+            foreach (ChannelDefinition channelDef in channelDefinitions)
+            {
+                if (!enabledChannels.ContainsKey(channelDef.Id))
+                {
+                    continue;
+                }
+
+                Channel channel = enabledChannels[channelDef.Id];
+                channel.Number = channels.Count + 1;
+
+                channels.Add(channel);
+            }
+            
+            foreach (Channel channel in unmatchedChannels)
+            {
+                channel.Number = channels.Count + 1;
+                channels.Add(channel);
+            }
+
+            logger.Debug(
+                MyOperation.ChannelMatching,
+                OperationStatus.Success,
+                new LogInfo(MyLogInfoKey.ChannelsCount, channels.Count.ToString()));
+            
+            return channels;
+        }
+
+        IEnumerable<Channel> GetEnabledChannels(IEnumerable<Channel> filteredProviderChannels)
+        {
+            ConcurrentBag<Channel> channels = new ConcurrentBag<Channel>();
+            IEnumerable<ChannelDefinition> enabledChannelDefinitions = channelDefinitions
+                .Where(x => x.IsEnabled && groups[x.GroupId].IsEnabled);
+
+            Parallel.ForEach(enabledChannelDefinitions, channelDef =>
             {
                 logger.Debug(
                     MyOperation.ChannelMatching,
@@ -97,7 +147,7 @@ namespace IptvPlaylistAggregator.Service
                 
                 if (!matchedChannels.Any())
                 {
-                    continue;
+                    return;
                 }
 
                 logger.Debug(
@@ -115,7 +165,7 @@ namespace IptvPlaylistAggregator.Service
                         OperationStatus.Failure,
                         new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value));
 
-                    continue;
+                    return;
                 }
 
                 Channel channel = new Channel();
@@ -123,42 +173,49 @@ namespace IptvPlaylistAggregator.Service
                 channel.Name = channelDef.Name.Value;
                 channel.Group = groups[channelDef.GroupId].Name;
                 channel.LogoUrl = channelDef.LogoUrl;
-                channel.Number = playlist.Channels.Count + 1;
                 channel.Url = matchedChannel.Url;
 
-                playlist.Channels.Add(channel);
+                channels.Add(channel);
 
                 logger.Debug(
                     MyOperation.ChannelMatching,
                     OperationStatus.Success,
                     new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value));
-            }
+            });
+            
+            return channels;
+        }
 
-            if (settings.CanIncludeUnmatchedChannels)
+        IEnumerable<Channel> GetUnmatchedChannels(IEnumerable<Channel> filteredProviderChannels)
+        {
+            ConcurrentBag<Channel> channels = new ConcurrentBag<Channel>();
+
+            if (!settings.CanIncludeUnmatchedChannels)
             {
-                logger.Info(MyOperation.ChannelMatching, OperationStatus.InProgress, $"Getting unmatched channels");
-
-                IEnumerable<Channel> unmatchedChannels = filteredProviderChannels
-                    .Where(x => channelDefinitions.All(y => !channelMatcher.DoesMatch(y.Name, x.Name)))
-                    .GroupBy(x => x.Name)
-                    .Select(g => g.First())
-                    .OrderBy(x => x.Name);
-
-                foreach (Channel unmatchedChannel in unmatchedChannels.Where(x => mediaSourceChecker.IsSourcePlayableAsync(x.Url).Result))
-                {
-                    logger.Warn(MyOperation.ChannelMatching, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Channel, unmatchedChannel.Name));
-
-                    unmatchedChannel.Number = playlist.Channels.Count + 1;
-                    playlist.Channels.Add(unmatchedChannel);
-                }
+                return channels;
             }
 
-            logger.Debug(
-                MyOperation.ChannelMatching,
-                OperationStatus.Success,
-                new LogInfo(MyLogInfoKey.ChannelsCount, playlist.Channels.Count.ToString()));
+            logger.Info(MyOperation.ChannelMatching, OperationStatus.InProgress, $"Getting unmatched channels");
 
-            return playlistFileBuilder.BuildFile(playlist);
+            IEnumerable<Channel> unmatchedChannels = filteredProviderChannels
+                .Where(x => channelDefinitions.All(y => !channelMatcher.DoesMatch(y.Name, x.Name)))
+                .GroupBy(x => x.Name)
+                .Select(g => g.First())
+                .OrderBy(x => x.Name);
+
+            Parallel.ForEach(unmatchedChannels, unmatchedChannel =>
+            {
+                if (!mediaSourceChecker.IsSourcePlayableAsync(unmatchedChannel.Url).Result)
+                {
+                    return;
+                }
+
+                logger.Warn(MyOperation.ChannelMatching, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Channel, unmatchedChannel.Name));
+
+                channels.Add(unmatchedChannel);
+            });
+
+            return channels;
         }
 
         IEnumerable<Channel> GetProvicerChannels(
