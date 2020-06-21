@@ -115,14 +115,6 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>github-marokanul-ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>160</Priority>
-    <Name>Marokanul's IPTV GitHub RO Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/marokanul/iptv/master/iptv</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>gitlab-cristy-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>170</Priority>
