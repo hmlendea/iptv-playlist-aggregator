@@ -142,10 +142,24 @@ namespace IptvPlaylistAggregator.Service
             
             if (resolvedUrl is null)
             {
-                return null;
+                return string.Empty;
             }
 
-            return webDownloads.TryGetValue(resolvedUrl);
+            cachedDownload = webDownloads.TryGetValue(resolvedUrl);
+
+            if (!(cachedDownload is null))
+            {
+                return cachedDownload;
+            }
+
+            MediaStreamStatus streamStatus = GetStreamStatus(url);
+
+            if (!(streamStatus is null) && !streamStatus.IsAlive)
+            {
+                return string.Empty;
+            }
+
+            return null;
         }
         
         public void StorePlaylist(string fileContent, Playlist playlist)
