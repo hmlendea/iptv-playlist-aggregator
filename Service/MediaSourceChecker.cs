@@ -1,5 +1,7 @@
 using System;
+using System.IO;
 using System.Net;
+using System.Text;
 using System.Threading.Tasks;
 
 using IptvPlaylistAggregator.Configuration;
@@ -81,7 +83,7 @@ namespace IptvPlaylistAggregator.Service
             }
             else
             {
-                logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Url, url));
+                logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Url, url), new LogInfo(MyLogInfoKey.StreamState, state));
             }
 
             SaveToCache(url, state);
@@ -90,6 +92,13 @@ namespace IptvPlaylistAggregator.Service
 
         async Task<StreamState> GetPlaylistStateAsync(string url)
         {
+            StreamState streamState = await GetStreamStateAsync(url);
+            
+            if (streamState != StreamState.Alive)
+            {
+                return StreamState.Dead;
+            }
+
             string fileContent = await fileDownloader.TryDownloadStringAsync(url);
             Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
@@ -109,19 +118,16 @@ namespace IptvPlaylistAggregator.Service
 
             if (statusCode == HttpStatusCode.OK)
             {
-                Console.WriteLine(url + " ALIVE");
                 return StreamState.Alive;
             }
             
             if (statusCode == HttpStatusCode.Unauthorized)
             {
-                Console.WriteLine(url + " UNAUTHORISED");
                 return StreamState.Unauthorised;
             }
             
             if (statusCode == HttpStatusCode.NotFound)
             {
-                Console.WriteLine(url + " NOTFOUND");
                 return StreamState.NotFound;
             }
                 
@@ -154,20 +160,32 @@ namespace IptvPlaylistAggregator.Service
 
         async Task<HttpStatusCode> GetHttpStatusCode(string url)
         {
-            HttpWebRequest request = CreateWebRequest(url);
-            HttpWebResponse response = null;
             HttpStatusCode statusCode = HttpStatusCode.RequestTimeout;
+            bool doCacheContent = url.Contains(".m3u") || url.Contains(".m3u8");
+            string content = string.Empty;
 
             try
             {
-                response = (await request.GetResponseAsync()) as HttpWebResponse;
-                statusCode = response.StatusCode;
+                HttpWebRequest request = CreateWebRequest(url);
+
+                using (HttpWebResponse response = (await request.GetResponseAsync()) as HttpWebResponse)
+                {
+                    statusCode = response.StatusCode;
+
+                    if (doCacheContent)
+                    {
+                        using (StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.UTF8))
+                        {
+                            content = await reader.ReadToEndAsync();
+                        }
+                    }
+                }
             }
             catch (WebException ex)
             {
                 if (ex.Status == WebExceptionStatus.ProtocolError)
                 {
-                    response = ex.Response as HttpWebResponse;
+                    HttpWebResponse response = ex.Response as HttpWebResponse;
 
                     if (response != null)
                     {
@@ -175,8 +193,11 @@ namespace IptvPlaylistAggregator.Service
                     }
                 }
             }
-
-            response?.Close();
+            
+            if (doCacheContent)
+            {
+                cache.StoreWebDownload(url, content);
+            }
 
             return statusCode;
         }

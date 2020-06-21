@@ -19,5 +19,7 @@ namespace IptvPlaylistAggregator.Logging
         public static LogInfoKey Provider => new MyLogInfoKey(nameof(Provider));
 
         public static LogInfoKey Url => new MyLogInfoKey(nameof(Url));
+
+        public static LogInfoKey StreamState => new MyLogInfoKey(nameof(StreamState));
     }
 }
