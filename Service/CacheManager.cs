@@ -302,8 +302,15 @@ namespace IptvPlaylistAggregator.Service
                 string timestamp = streamStatus.LastCheckTime.ToString(
                     TimestampFormat,
                     CultureInfo.InvariantCulture);
+                
+                string url = streamStatus.Url;
 
-                lines.Add($"{streamStatus.Url}{CsvFieldSeparator}{timestamp}{CsvFieldSeparator}{streamStatus.State}");
+                if (url.Contains(','))
+                {
+                    url = url.Split(',')[0];
+                }
+
+                lines.Add($"{url}{CsvFieldSeparator}{timestamp}{CsvFieldSeparator}{streamStatus.State}");
             }
 
             File.WriteAllLines(filePath, lines);
