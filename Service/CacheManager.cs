@@ -83,7 +83,7 @@ namespace IptvPlaylistAggregator.Service
         {
             if (string.IsNullOrWhiteSpace(url))
             {
-                return null;
+                return string.Empty;
             }
             
             return urlResolutions.TryGetValue(url);
@@ -118,7 +118,7 @@ namespace IptvPlaylistAggregator.Service
             
             string resolvedUrl = urlResolutions.TryGetValue(url);
 
-            if (string.IsNullOrWhiteSpace(resolvedUrl))
+            if (resolvedUrl == string.Empty)
             {
                 return new MediaStreamStatus()
                 {
@@ -127,10 +127,12 @@ namespace IptvPlaylistAggregator.Service
                     LastCheckTime = DateTime.UtcNow
                 };
             }
-            
-            if (streamStatus is null && resolvedUrl != url)
+            else if (!(resolvedUrl is null))
             {
-                streamStatus = streamStatuses.TryGetValue(resolvedUrl);
+                if (streamStatus is null && resolvedUrl != url)
+                {
+                    streamStatus = streamStatuses.TryGetValue(resolvedUrl);
+                }
             }
 
             return streamStatus;
@@ -150,16 +152,18 @@ namespace IptvPlaylistAggregator.Service
             
             string resolvedUrl = urlResolutions.TryGetValue(url);
             
-            if (resolvedUrl is null)
+            if (resolvedUrl == string.Empty)
             {
                 return string.Empty;
             }
-
-            cachedDownload = webDownloads.TryGetValue(resolvedUrl);
-
-            if (!(cachedDownload is null))
+            else if (!(resolvedUrl is null))
             {
-                return cachedDownload;
+                cachedDownload = webDownloads.TryGetValue(resolvedUrl);
+
+                if (!(cachedDownload is null))
+                {
+                    return cachedDownload;
+                }
             }
 
             MediaStreamStatus streamStatus = GetStreamStatus(url);
