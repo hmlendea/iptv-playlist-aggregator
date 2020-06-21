@@ -73,10 +73,7 @@ namespace IptvPlaylistAggregator
             }
             catch (AggregateException ex)
             {
-                foreach (Exception innerException in ex.InnerExceptions)
-                {
-                    logger.Fatal(Operation.Unknown, OperationStatus.Failure, innerException);
-                }
+                LogInnerExceptions(ex);
             }
             catch (Exception ex)
             {
@@ -93,6 +90,23 @@ namespace IptvPlaylistAggregator
             return new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", true, true)
                 .Build();
+        }
+
+        static void LogInnerExceptions(AggregateException exception)
+        {
+            foreach (Exception innerException in exception.InnerExceptions)
+            {
+                AggregateException innerAggregateException = innerException as AggregateException;
+
+                if (innerAggregateException is null)
+                {
+                    logger.Fatal(Operation.Unknown, OperationStatus.Failure, innerException);
+                }
+                else
+                {
+                    LogInnerExceptions(innerException as AggregateException);
+                }
+            }
         }
 
         static void SaveCacheToDisk()
