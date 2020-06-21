@@ -114,7 +114,24 @@ namespace IptvPlaylistAggregator.Service
 
         async Task<StreamState> GetStreamStateAsync(string url)
         {
-            HttpStatusCode statusCode = await GetHttpStatusCode(url);
+            string resolvedUrl = dnsResolver.ResolveUrl(url);
+
+            if (string.IsNullOrWhiteSpace(resolvedUrl))
+            {
+                return StreamState.NotFound;
+            }
+
+            Uri uri = new Uri(url);
+            HttpStatusCode statusCode;
+
+            if (uri.Scheme == "http")
+            {
+                statusCode = await GetHttpStatusCode(resolvedUrl);
+            }
+            else
+            {
+                statusCode = await GetHttpStatusCode(url);
+            }
 
             if (statusCode == HttpStatusCode.OK)
             {
@@ -132,20 +149,6 @@ namespace IptvPlaylistAggregator.Service
             }
                 
             return StreamState.Dead;
-        }
-
-        HttpWebRequest CreateWebRequest(string url)
-        {
-            const int timeout = 3000;
-
-            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
-            request.Method = "GET";
-            request.Timeout = timeout;
-            request.ContinueTimeout = timeout;
-            request.ReadWriteTimeout = timeout;
-            request.UserAgent = applicationSettings.UserAgent;
-
-            return request;
         }
 
         void SaveToCache(string url, StreamState state)
@@ -200,6 +203,20 @@ namespace IptvPlaylistAggregator.Service
             }
 
             return statusCode;
+        }
+
+        HttpWebRequest CreateWebRequest(string url)
+        {
+            const int timeout = 3000;
+
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
+            request.Method = "GET";
+            request.Timeout = timeout;
+            request.ContinueTimeout = timeout;
+            request.ReadWriteTimeout = timeout;
+            request.UserAgent = applicationSettings.UserAgent;
+
+            return request;
         }
     }
 }
