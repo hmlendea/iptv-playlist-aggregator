@@ -6,7 +6,9 @@ namespace IptvPlaylistAggregator.Service.Models
     {
         public string Url { get; set; }
 
-        public bool IsAlive { get; set; }
+        public bool IsAlive => State == StreamState.Alive;
+
+        public StreamState State { get; set; }
 
         public DateTime LastCheckTime { get; set; }
     }

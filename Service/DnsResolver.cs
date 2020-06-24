@@ -5,6 +5,8 @@ using System.Net.Sockets;
 
 using NuciExtensions;
 
+using IptvPlaylistAggregator.Service.Models;
+
 namespace IptvPlaylistAggregator.Service
 {
     public sealed class DnsResolver : IDnsResolver
@@ -18,27 +20,21 @@ namespace IptvPlaylistAggregator.Service
         
         public string ResolveHostname(string hostname)
         {
-            string ip = string.Empty;
+            string ip;
 
             lock (this)
             {
-                ip = cache.GetHostnameResolution(hostname);
+                ip = RetrieveIp(hostname);
 
-                if (!(ip is null))
+                if (hostname != ip)
                 {
-                    return ip;
-                }
+                    Host host = new Host();
+                    host.Domain = hostname;
+                    host.Ip = ip;
+                    host.ResolutionTime = DateTime.UtcNow;
 
-                if (hostname.Any(x => char.IsLetter(x)))
-                {
-                    ip = TryGetHostEntry(hostname);
+                    cache.StoreHost(host);
                 }
-                else
-                {
-                    ip = hostname;
-                }
-
-                cache.StoreHostnameResolution(hostname, ip);
             }
 
             return ip;
@@ -71,6 +67,29 @@ namespace IptvPlaylistAggregator.Service
 
             cache.StoreUrlResolution(url, resolvedUrl);
             return resolvedUrl;
+        }
+
+        string RetrieveIp(string hostname)
+        {
+            Host host = cache.GetHost(hostname);
+
+            if (!(host is null))
+            {
+                return host.Ip;
+            }
+
+            string ip;
+
+            if (hostname.Any(x => char.IsLetter(x)))
+            {
+                ip = TryGetHostEntry(hostname);
+            }
+            else
+            {
+                ip = hostname;
+            }
+
+            return ip;
         }
 
         bool IsUrlValid(string url)

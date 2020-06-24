@@ -1,8 +1,14 @@
 using System;
+using System.IO;
 using System.Net;
+using System.Text;
 using System.Threading.Tasks;
 
+using IptvPlaylistAggregator.Configuration;
+using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service.Models;
+
+using NuciLog.Core;
 
 namespace IptvPlaylistAggregator.Service
 {
@@ -12,22 +18,31 @@ namespace IptvPlaylistAggregator.Service
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly IDnsResolver dnsResolver;
         readonly ICacheManager cache;
+        readonly ILogger logger;
+        readonly ApplicationSettings applicationSettings;
 
         public MediaSourceChecker(
             IFileDownloader fileDownloader,
             IPlaylistFileBuilder playlistFileBuilder,
             IDnsResolver dnsResolver,
-            ICacheManager cache)
+            ICacheManager cache,
+            ILogger logger,
+            ApplicationSettings applicationSettings)
         {
             this.fileDownloader = fileDownloader;
             this.playlistFileBuilder = playlistFileBuilder;
             this.dnsResolver = dnsResolver;
             this.cache = cache;
+            this.logger = logger;
+            this.applicationSettings = applicationSettings;
         }
 
         public async Task<bool> IsSourcePlayableAsync(string url)
         {
-            if (string.IsNullOrWhiteSpace(url))
+            string resolvedUrl = dnsResolver.ResolveUrl(url);
+            string urlToUse = url;
+            
+            if (string.IsNullOrWhiteSpace(resolvedUrl))
             {
                 return false;
             }
@@ -38,63 +53,140 @@ namespace IptvPlaylistAggregator.Service
             {
                 return status.IsAlive;
             }
-            
-            bool isAlive;
 
-            if (url.Contains(".m3u") || url.Contains(".m3u8"))
+            logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Started, new LogInfo(MyLogInfoKey.Url, url));
+
+            Uri uri = new Uri(url);
+            if (uri.Scheme == "http")
             {
-                isAlive = await IsPlaylistPlayableAsync(url);
+                urlToUse = resolvedUrl;
             }
-            else if (!url.EndsWith(".ts"))
+            
+            StreamState state;
+
+            if (urlToUse.Contains(".m3u") || urlToUse.Contains(".m3u8"))
             {
-                isAlive = await IsStreamPlayableAsync(url);
+                state = await GetPlaylistStateAsync(urlToUse);
+            }
+            else if (!urlToUse.EndsWith(".ts"))
+            {
+                state = await GetStreamStateAsync(urlToUse);
             }
             else
             {
-                isAlive = false;
+                state = StreamState.Dead;
             }
 
-            SaveToCache(url, isAlive);
-            return isAlive;
+            if (state == StreamState.Alive)
+            {
+                logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Success, new LogInfo(MyLogInfoKey.Url, url));
+            }
+            else
+            {
+                logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Url, url), new LogInfo(MyLogInfoKey.StreamState, state));
+            }
+
+            SaveToCache(url, state);
+            return state == StreamState.Alive;
         }
 
-        async Task<bool> IsPlaylistPlayableAsync(string url)
+        async Task<StreamState> GetPlaylistStateAsync(string url)
         {
-            string resolvedUrl = dnsResolver.ResolveUrl(url);
+            StreamState streamState = await GetStreamStateAsync(url);
             
-            if (string.IsNullOrWhiteSpace(resolvedUrl))
+            if (streamState != StreamState.Alive)
             {
-                return false;
+                return streamState;
             }
 
             string fileContent = await fileDownloader.TryDownloadStringAsync(url);
             Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
-            return !Playlist.IsNullOrEmpty(playlist);
+            if (Playlist.IsNullOrEmpty(playlist))
+            {
+                return StreamState.Dead;
+            }
+            else
+            {
+                return StreamState.Alive;
+            }
         }
 
-        async Task<bool> IsStreamPlayableAsync(string url)
+        async Task<StreamState> GetStreamStateAsync(string url)
         {
-            string resolvedUrl = dnsResolver.ResolveUrl(url);
-            
-            if (string.IsNullOrWhiteSpace(resolvedUrl))
+            HttpStatusCode statusCode = await GetHttpStatusCode(url);
+
+            if (statusCode == HttpStatusCode.OK)
             {
-                return false;
+                return StreamState.Alive;
             }
+            
+            if (statusCode == HttpStatusCode.Unauthorized)
+            {
+                return StreamState.Unauthorised;
+            }
+            
+            if (statusCode == HttpStatusCode.NotFound)
+            {
+                return StreamState.NotFound;
+            }
+                
+            return StreamState.Dead;
+        }
+
+        void SaveToCache(string url, StreamState state)
+        {
+            MediaStreamStatus status = new MediaStreamStatus();
+            status.Url = url;
+            status.State = state;
+            status.LastCheckTime = DateTime.UtcNow;
+
+            cache.StoreStreamStatus(status);
+        }
+
+        async Task<HttpStatusCode> GetHttpStatusCode(string url)
+        {
+            HttpStatusCode statusCode = HttpStatusCode.RequestTimeout;
+            bool doCacheContent = url.Contains(".m3u") || url.Contains(".m3u8");
+            string content = string.Empty;
 
             try
             {
-                HttpWebRequest request = CreateWebRequest(resolvedUrl);
-                HttpWebResponse response = (HttpWebResponse)(await request.GetResponseAsync());
-                
-                if (response.StatusCode == HttpStatusCode.OK)
+                HttpWebRequest request = CreateWebRequest(url);
+
+                using (HttpWebResponse response = (await request.GetResponseAsync()) as HttpWebResponse)
                 {
-                    return true;
+                    statusCode = response.StatusCode;
+
+                    if (doCacheContent)
+                    {
+                        using (StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.UTF8))
+                        {
+                            content = await reader.ReadToEndAsync();
+                        }
+                    }
+                }
+            }
+            catch (WebException ex)
+            {
+                if (ex.Status == WebExceptionStatus.ProtocolError)
+                {
+                    HttpWebResponse response = ex.Response as HttpWebResponse;
+
+                    if (response != null)
+                    {
+                        statusCode = response.StatusCode;
+                    }
                 }
             }
             catch { }
 
-            return false;
+            if (doCacheContent)
+            {
+                cache.StoreWebDownload(url, content);
+            }
+
+            return statusCode;
         }
 
         HttpWebRequest CreateWebRequest(string url)
@@ -106,18 +198,9 @@ namespace IptvPlaylistAggregator.Service
             request.Timeout = timeout;
             request.ContinueTimeout = timeout;
             request.ReadWriteTimeout = timeout;
+            request.UserAgent = applicationSettings.UserAgent;
 
             return request;
-        }
-
-        void SaveToCache(string url, bool isAlive)
-        {
-            MediaStreamStatus status = new MediaStreamStatus();
-            status.Url = url;
-            status.IsAlive = isAlive;
-            status.LastCheckTime = DateTime.UtcNow;
-
-            cache.StoreStreamStatus(status);
         }
     }
 }

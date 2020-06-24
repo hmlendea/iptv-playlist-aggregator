@@ -11,6 +11,7 @@ using NuciLog.Core;
 
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.DataObjects;
+using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service;
 
 namespace IptvPlaylistAggregator
@@ -22,11 +23,11 @@ namespace IptvPlaylistAggregator
         static DataStoreSettings dataStoreSettings;
         static NuciLoggerSettings nuciLoggerSettings;
 
+        static ILogger logger;
+        static ICacheManager cacheManager;
+
         public static void Main(string[] args)
         {
-            Environment.SetEnvironmentVariable("LD_PRELOAD", "/usr/lib/libcurl.so.3");
-            Environment.SetEnvironmentVariable("DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER", "0");
-
             IConfiguration config = LoadConfiguration();
 
             applicationSettings = new ApplicationSettings();
@@ -58,7 +59,9 @@ namespace IptvPlaylistAggregator
                 .AddSingleton<ILogger, NuciLogger>()
                 .BuildServiceProvider();
             
-            ILogger logger = serviceProvider.GetService<ILogger>();
+            logger = serviceProvider.GetService<ILogger>();
+            cacheManager = serviceProvider.GetService<ICacheManager>();
+
             logger.Info(Operation.StartUp, OperationStatus.Success);
 
             try
@@ -70,15 +73,14 @@ namespace IptvPlaylistAggregator
             }
             catch (AggregateException ex)
             {
-                foreach (Exception innerException in ex.InnerExceptions)
-                {
-                    logger.Fatal(Operation.Unknown, OperationStatus.Failure, innerException);
-                }
+                LogInnerExceptions(ex);
             }
             catch (Exception ex)
             {
                 logger.Fatal(Operation.Unknown, OperationStatus.Failure, ex);
             }
+
+            SaveCacheToDisk();
 
             logger.Info(Operation.ShutDown, OperationStatus.Success);
         }
@@ -88,6 +90,30 @@ namespace IptvPlaylistAggregator
             return new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", true, true)
                 .Build();
+        }
+
+        static void LogInnerExceptions(AggregateException exception)
+        {
+            foreach (Exception innerException in exception.InnerExceptions)
+            {
+                AggregateException innerAggregateException = innerException as AggregateException;
+
+                if (innerAggregateException is null)
+                {
+                    logger.Fatal(Operation.Unknown, OperationStatus.Failure, innerException);
+                }
+                else
+                {
+                    LogInnerExceptions(innerException as AggregateException);
+                }
+            }
+        }
+
+        static void SaveCacheToDisk()
+        {
+            logger.Info(MyOperation.CacheSaving, OperationStatus.Started);
+            cacheManager.SaveCacheToDisk();
+            logger.Debug(MyOperation.CacheSaving, OperationStatus.Success);
         }
     }
 }

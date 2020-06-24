@@ -69,30 +69,7 @@ namespace IptvPlaylistAggregator.Service
 
         public async Task<Playlist> FetchProviderPlaylistAsync(PlaylistProvider provider)
         {
-            Playlist playlist = null;
-
-            for (int i = 0; i < applicationSettings.DaysToCheck; i++)
-            {
-                DateTime date = DateTime.Now.AddDays(-i);
-
-                playlist = LoadPlaylistFromCache(provider, date);
-                
-                if (playlist is null)
-                {
-                    string playlistFile = await DownloadPlaylistFileAsync(provider, date);
-                    playlist = playlistFileBuilder.TryParseFile(playlistFile);
-
-                    if (!Playlist.IsNullOrEmpty(playlist) && !provider.DontCache)
-                    {
-                        cache.StorePlaylistFile(provider.Id, date, playlistFile);
-                    }
-                }
-                
-                if (!(playlist is null))
-                {
-                    break;
-                }
-            }
+            Playlist playlist = await GetPlaylistAsync(provider);
 
             if (Playlist.IsNullOrEmpty(playlist))
             {
@@ -117,6 +94,60 @@ namespace IptvPlaylistAggregator.Service
                 OperationStatus.Success,
                 new LogInfo(MyLogInfoKey.Provider, provider.Name));
                 
+            return playlist;
+        }
+
+        async Task<Playlist> GetPlaylistAsync(PlaylistProvider provider)
+        {
+            Playlist playlist = await GetPlaylistForTodayAsync(provider);
+            
+            if (Playlist.IsNullOrEmpty(playlist))
+            {
+                playlist = GetPlaylistForPastDays(provider);
+            }
+
+            return playlist;
+        }
+
+        async Task<Playlist> GetPlaylistForTodayAsync(PlaylistProvider provider)
+        {
+            string playlistFile = await DownloadPlaylistFileAsync(provider, DateTime.UtcNow);
+            Playlist playlist = LoadPlaylistFromCache(provider, DateTime.UtcNow);
+
+            if (playlist is null)
+            {
+                playlist = playlistFileBuilder.TryParseFile(playlistFile);
+            }
+
+            if (!Playlist.IsNullOrEmpty(playlist) && !provider.DontCache)
+            {
+                cache.StorePlaylistFile(provider.Id, DateTime.UtcNow, playlistFile);
+            }
+
+            return playlist;
+        }
+
+        Playlist GetPlaylistForPastDays(PlaylistProvider provider)
+        {
+            if (!provider.UrlFormat.Contains("{0"))
+            {
+                return null;
+            }
+
+            Playlist playlist = null;
+
+            for (int i = 1; i < applicationSettings.DaysToCheck; i++)
+            {
+                DateTime date = DateTime.UtcNow.AddDays(-i);
+
+                playlist = LoadPlaylistFromCache(provider, date);
+
+                if (!(playlist is null))
+                {
+                    break;
+                }
+            }
+
             return playlist;
         }
 
