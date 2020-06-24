@@ -2113,6 +2113,7 @@
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/nova-tv-brasov.png</LogoUrl>
     <Aliases>
+      <string>RO: Nova Press</string>
       <string>RO: Nova TV Brasov</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2389,6 +2390,15 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>QTV.ro</Id>
+    <Name>QTV</Name>
+    <GroupId>unknown</GroupId>
+    <LogoUrl></LogoUrl>
+    <Aliases>
+      <string>RO: QTV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>RadioCluj.ro</Id>
     <Name>Radio Cluj</Name>
     <GroupId>radio</GroupId>
@@ -2458,6 +2468,12 @@
     <Name>Retro TV</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/7/7b/Retro_Music_TV_logo.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ROChannel.ro</Id>
+    <Name>RO Channel</Name>
+    <GroupId>international</GroupId>
+    <LogoUrl></LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RockTV.ro</Id>
@@ -2641,9 +2657,13 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TeleEuropaNova.ro</Id>
-    <Name>TeleEuropa Nova</Name>
+    <Name>Tele Nova</Name>
     <GroupId>local-banat</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/telenova.png</LogoUrl>
+    <Aliases>
+      <string>RO: Tele Nova Timișoara</string>
+      <string>RO: TeleEuropa Nova</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TelekomSport1.ro</Id>
