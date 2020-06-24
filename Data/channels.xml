@@ -148,6 +148,7 @@
     <GroupId>local-dobrogea</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/alpha_media.png</LogoUrl>
     <Aliases>
+      <string>RO: Alfa Media TV</string>
       <string>RO: Alfa Media</string>
       <string>RO: Alpha Media TV</string>
       <string>RO: TV Alpha Media</string>
@@ -185,6 +186,7 @@
     <Aliases>
       <string>RO: Antena Comedy</string>
       <string>RO: Antena Play Comedy</string>
+      <string>RO: Antenna Comedy</string>
       <string>RO: Comedy Play</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2609,6 +2611,9 @@
     <Name>Super TV</Name>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/super_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Super TV Argeș</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>SuperTennis.ro</Id>
