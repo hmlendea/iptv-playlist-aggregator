@@ -1217,6 +1217,18 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>HDNetAction.ro</Id>
+    <Name>HD Net Action</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hdnet.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>HDNetBollywood.ro</Id>
+    <Name>HD Net Bollywood</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hdnet.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>HDNetComedy.ro</Id>
     <Name>HD Net Comedy</Name>
     <GroupId>movies</GroupId>
@@ -1230,6 +1242,12 @@
     <Aliases>
       <string>VSV Robert de Niro</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>HDNetHorror.ro</Id>
+    <Name>HD Net Horror</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hdnet.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HDNetIUmor.ro</Id>
@@ -1246,6 +1264,12 @@
   <ChannelDefinitionEntity>
     <Id>HDNetLasFierbinti.ro</Id>
     <Name>HD Net Las Fierbinti</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hdnet.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>HDNetPremiere.ro</Id>
+    <Name>HD Net Premiere</Name>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hdnet.png</LogoUrl>
   </ChannelDefinitionEntity>
@@ -1703,6 +1727,15 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MaguraFilmeRomanesti.ro</Id>
+    <Name>Măgura Filme Românești</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magura_media.png</LogoUrl>
+    <Aliases>
+      <string>Măgura Media Filme Românești</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>MaguraHorror.ro</Id>
     <Name>Măgura Horror</Name>
     <GroupId>movies</GroupId>
@@ -1745,6 +1778,33 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magura_media.png</LogoUrl>
     <Aliases>
       <string>Măgura Media Kids</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>MaguraKungFu.ro</Id>
+    <Name>Măgura Kung Fu</Name>
+    <GroupId>movies</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magura_media.png</LogoUrl>
+    <Aliases>
+      <string>Măgura Media Kung Fu</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>MaguraManele.ro</Id>
+    <Name>Măgura Manele</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magura_media.png</LogoUrl>
+    <Aliases>
+      <string>Măgura Media Manele</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>MaguraMuzicaAscultare.ro</Id>
+    <Name>Măgura Muzică de Ascultare</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/magura_media.png</LogoUrl>
+    <Aliases>
+      <string>Măgura Muzică de Ascultare</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
