@@ -86,6 +86,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("|ROM|: Cromtel", "CROMTEL")]
         [TestCase("|UK| CHELSEA TV (Live On Matches) HD", "UKCHELSEATV")]
         [TestCase("Canal Regional (Moldova)", "MDCANALREGIONAL")]
+        [TestCase("DIGI SPORT 4 (RO)", "DIGISPORT4")]
         [TestCase("Jurnal TV Moldova", "MDJURNALTV")]
         [TestCase("MD: Canal Regional (Moldova)", "MDCANALREGIONAL")]
         [TestCase("MINIMAX ROMANIA HD", "MINIMAXROMANIA")]
@@ -102,7 +103,11 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("RO: U TV S1-1", "UTV")]
         [TestCase("RO.| DIGI 24", "DIGI24")]
         [TestCase("RO\" Romania TV", "ROMANIATV")]
+        [TestCase("RO| Antena 3 4K+", "ANTENA3")]
+        [TestCase("RO| CINEMA RO.", "CINEMARO")]
+        [TestCase("RO| Digi Life 4K+", "DIGILIFE")]
         [TestCase("RO| TARAF:HD", "TARAF")]
+        [TestCase("RO|DISOVERY_SCIENCE_HD", "DISOVERYSCIENCE")]
         [TestCase("RTR Moldova HD", "MDRTR")]
         [TestCase("RUMANIA: DigiWorld FHD (Opt-1)", "DIGIWORLD")]
         [TestCase("TV 8 HD (Auto)", "TV8")]
@@ -115,7 +120,6 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("VSV Robert de Niro HD", "VSVROBERTDENIRO")]
         [TestCase("VSV Robert de Niro", "VSVROBERTDENIRO")]
         [TestCase("ZonaM Moldova", "MDZONAM")]
-        [TestCase("DIGI SPORT 4 (RO)", "DIGISPORT4")]
         [Test]
         public void NormaliseName_ReturnsExpectedValue(string inputValue, string expectedValue)
         {
