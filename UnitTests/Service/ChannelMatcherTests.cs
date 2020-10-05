@@ -48,6 +48,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Sundance", "RO: Sundance TV", "RO: Sundance TV FHD [Multi-Sub]")]
         [TestCase("Travel Channel", "RO: Travel", "RO | Travel")]
         [TestCase("Travel Mix", "RO: Travel Mix TV", "Travel Mix TV RO")]
+        [TestCase("TV Paprika", "RO: Paprika TV", "RO TV Paprika")]
         [TestCase("TV8", "MD: TV8", "TV 8 Moldova HD")]
         [TestCase("TVC21", "MD: TVC21", "TVC 21 Moldova")]
         [TestCase("TVR Târgu Mureș", "RO: TVR T?rgu-Mure?", "TVR: Targu Mureș")]
@@ -114,6 +115,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("VSV Robert de Niro HD", "VSVROBERTDENIRO")]
         [TestCase("VSV Robert de Niro", "VSVROBERTDENIRO")]
         [TestCase("ZonaM Moldova", "MDZONAM")]
+        [TestCase("DIGI SPORT 4 (RO)", "DIGISPORT4")]
         [Test]
         public void NormaliseName_ReturnsExpectedValue(string inputValue, string expectedValue)
         {

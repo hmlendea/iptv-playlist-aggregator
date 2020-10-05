@@ -31,6 +31,7 @@ namespace IptvPlaylistAggregator.Service
             { "^((?!RO).*) *Moldova$", "MD: $1" },
             { "(.*) *\\(Moldova\\)$", "MD: $1" },
             { "(.*) *\\(Romania\\)$", "RO: $1" },
+            { "(.*) *\\((RO|MD)\\)$", "$2: $1" },
             { "^RO *[\\|\\[\\(\\]\\)\".:-] *(.*) *\\(*Romania\\)*$", "RO: $1" },
 
             { "^[\\|\\[\\(\\]\\)\".:-]* *Romania *[\\|\\[\\(\\]\\)\".:-]", "RO:" },
@@ -44,6 +45,7 @@ namespace IptvPlaylistAggregator.Service
             { " HEVC$", "" },
             { " HEVC ", "" },
 
+            { "^RO ", "RO: " },
             { " \\(*ROM\\)*$", "" },
             { "[\\|\\()]*ROM*[\\|\\):]", "RO:" },
             { "^Romania[n]*:", "RO:" },
