@@ -171,6 +171,9 @@
     <Name>Antena 1</Name>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/antena1.png</LogoUrl>
+    <Aliases>
+      <string>RO: Antenna</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Antena3.ro</Id>
@@ -944,6 +947,7 @@
     <Aliases>
       <string>RO: E!</string>
       <string>RO: Entertainment!</string>
+      <string>RO: E! Entertaiment</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1531,6 +1535,7 @@
     <GroupId>unknown</GroupId>
     <Aliases>
       <string>-----ROMANIA------</string>
+      <string>iptvcat.com</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3187,6 +3192,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_moldova.png</LogoUrl>
     <Aliases>
       <string>MD: TVR Moldova</string>
+      <string>RO: TVR Moldova</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
