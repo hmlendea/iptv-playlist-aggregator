@@ -12,12 +12,6 @@ namespace IptvPlaylistAggregator.Service
         void StoreNormalisedChannelName(string name, string normalisedName);
         string GetNormalisedChannelName(string name);
 
-        void StoreHost(Host host);
-        Host GetHost(string domain);
-
-        void StoreUrlResolution(string url, string ip);
-        string GetUrlResolution(string url);
-
         void StoreSslCertificate(string host, X509Certificate2 certificate);
         X509Certificate2 GetSslCertificate(string host);
 
