@@ -108,7 +108,7 @@
 
   <PlaylistProviderEntity>
     <Id>gitlab-cristy-ro</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>170</Priority>
     <Name>Cristy's IPTV GitLab RO Channels</Name>
     <UrlFormat>https://gitlab.com/Cristy/iptv/-/raw/master/Romania</UrlFormat>
@@ -116,7 +116,7 @@
 
   <PlaylistProviderEntity>
     <Id>gitlab-cristy-md</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>171</Priority>
     <Name>Cristy's IPTV GitLab MD Channels</Name>
     <UrlFormat>https://gitlab.com/Cristy/iptv/-/raw/master/Moldova</UrlFormat>
