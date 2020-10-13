@@ -23,6 +23,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
 
         [TestCase("Agro TV", "RO: Agro", "Agro RO")]
         [TestCase("AMC", null, "RO: AMC Romania")]
+        [TestCase("Antena 1", "RO: Antenna", "RO: Antenna HD")]
         [TestCase("Antena 3", null, "Antena 3 Ultra_HD")]
         [TestCase("Ardeal TV", "RO: Ardeal TV", "|RO| Ardeal TV")]
         [TestCase("Bollywood TV", "RO: BO TV", "BO TV")]
@@ -51,6 +52,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("TV Paprika", "RO: Paprika TV", "RO TV Paprika")]
         [TestCase("TV8", "MD: TV8", "TV 8 Moldova HD")]
         [TestCase("TVC21", "MD: TVC21", "TVC 21 Moldova")]
+        [TestCase("TVR Moldova", "RO: TVR Moldova", "RO: TVR Moldova")]
         [TestCase("TVR Târgu Mureș", "RO: TVR T?rgu-Mure?", "TVR: Targu Mureș")]
         [TestCase("TVR", null, "RO: TVR HD (1080P)")]
         [TestCase("U TV", null, "UTV")]
@@ -101,6 +103,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("RO: Nașul TV (New!)", "NASULTV")]
         [TestCase("RO: Nickelodeon (RO)", "NICKELODEON")]
         [TestCase("RO: Tele Moldova", "TELEMOLDOVA")]
+        [TestCase("RO: TVR Moldova", "TVRMOLDOVA")]
         [TestCase("RO: U TV S1-1", "UTV")]
         [TestCase("RO.| DIGI 24", "DIGI24")]
         [TestCase("RO\" Romania TV", "ROMANIATV")]
