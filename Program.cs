@@ -46,7 +46,6 @@ namespace IptvPlaylistAggregator
                 .AddSingleton(dataStoreSettings)
                 .AddSingleton(nuciLoggerSettings)
                 .AddSingleton<ICacheManager, CacheManager>()
-                .AddSingleton<IDnsResolver, DnsResolver>()
                 .AddSingleton<IFileDownloader, FileDownloader>()
                 .AddSingleton<IPlaylistAggregator, PlaylistAggregator>()
                 .AddSingleton<IPlaylistFetcher, PlaylistFetcher>()
@@ -58,6 +57,7 @@ namespace IptvPlaylistAggregator
                 .AddSingleton<IRepository<PlaylistProviderEntity>>(s => new XmlRepository<PlaylistProviderEntity>(dataStoreSettings.PlaylistProviderStorePath))
                 .AddSingleton<ILogger, NuciLogger>()
                 .BuildServiceProvider();
+
             
             logger = serviceProvider.GetService<ILogger>();
             cacheManager = serviceProvider.GetService<ICacheManager>();

@@ -8,18 +8,15 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class FileDownloader : IFileDownloader
     {
-        readonly IDnsResolver dnsResolver;
         readonly ICacheManager cache;
         readonly ApplicationSettings applicationSettings;
 
         readonly HttpClient httpClient;
 
         public FileDownloader(
-            IDnsResolver dnsResolver,
             ICacheManager cache,
             ApplicationSettings applicationSettings)
         {
-            this.dnsResolver = dnsResolver;
             this.cache = cache;
             this.applicationSettings = applicationSettings;
 
@@ -56,22 +53,13 @@ namespace IptvPlaylistAggregator.Service
         async Task<string> GetAsync(string url)
         {
             Uri uri = new Uri(url);
-            string resolvedUrl = dnsResolver.ResolveUrl(url);
 
-            if (string.IsNullOrWhiteSpace(resolvedUrl))
+            if (string.IsNullOrWhiteSpace(url))
             {
                 return null;
             }
 
-            string content = null;
-            string urlToUse = url;
-
-            if (uri.Scheme == "http")
-            {
-                urlToUse = resolvedUrl;
-            }
-            
-            content = await SendGetRequestAsync(urlToUse);
+            string content = await SendGetRequestAsync(url);
             cache.StoreWebDownload(url, content);
 
             return content;

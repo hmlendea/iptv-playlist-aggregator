@@ -20,7 +20,6 @@ namespace IptvPlaylistAggregator.Service
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly IChannelMatcher channelMatcher;
         readonly IMediaSourceChecker mediaSourceChecker;
-        readonly IDnsResolver dnsResolver;
         readonly IRepository<ChannelDefinitionEntity> channelRepository;
         readonly IRepository<GroupEntity> groupRepository;
         readonly IRepository<PlaylistProviderEntity> playlistProviderRepository;
@@ -36,7 +35,6 @@ namespace IptvPlaylistAggregator.Service
             IPlaylistFileBuilder playlistFileBuilder,
             IChannelMatcher channelMatcher,
             IMediaSourceChecker mediaSourceChecker,
-            IDnsResolver dnsResolver,
             IRepository<ChannelDefinitionEntity> channelRepository,
             IRepository<GroupEntity> groupRepository,
             IRepository<PlaylistProviderEntity> playlistProviderRepository,
@@ -47,7 +45,6 @@ namespace IptvPlaylistAggregator.Service
             this.playlistFileBuilder = playlistFileBuilder;
             this.channelMatcher = channelMatcher;
             this.mediaSourceChecker = mediaSourceChecker;
-            this.dnsResolver = dnsResolver;
             this.channelRepository = channelRepository;
             this.playlistProviderRepository = playlistProviderRepository;
             this.groupRepository = groupRepository;
@@ -229,8 +226,8 @@ namespace IptvPlaylistAggregator.Service
 
             List<Task> tasks = new List<Task>();
             IEnumerable<Channel> filteredChannels = channels
-                .Where(x => !string.IsNullOrWhiteSpace(dnsResolver.ResolveUrl(x.Url)))
-                .GroupBy(x => dnsResolver.ResolveUrl(x.Url))
+                .Where(x => !string.IsNullOrWhiteSpace(x.Url))
+                .GroupBy(x => x.Url)
                 .Select(g => g.First())
                 .OrderBy(x => channels.IndexOf(x))
                 .ToList();

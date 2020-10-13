@@ -18,14 +18,11 @@ namespace IptvPlaylistAggregator.Service
         const char CsvFieldSeparator = ',';
         const string TimestampFormat = "yyyy-MM-dd_HH-mm-ss";
         const string PlaylistFileNameFormat = "{0}_playlist_{1:yyyy-MM-dd}.m3u";
-        const string HostsFileName = "hosts.csv";
         const string StreamStatusesFileName = "stream-statuses.csv";
 
         readonly CacheSettings cacheSettings;
 
         readonly ConcurrentDictionary<string, string> normalisedNames;
-        readonly ConcurrentDictionary<string, Host> hosts;
-        readonly ConcurrentDictionary<string, string> urlResolutions;
         readonly ConcurrentDictionary<string, X509Certificate2> sslCertificates;
         readonly ConcurrentDictionary<string, MediaStreamStatus> streamStatuses;
         readonly ConcurrentDictionary<string, string> webDownloads;
@@ -36,8 +33,6 @@ namespace IptvPlaylistAggregator.Service
             this.cacheSettings = cacheSettings;
 
             normalisedNames = new ConcurrentDictionary<string, string>();
-            hosts = new ConcurrentDictionary<string, Host>();
-            urlResolutions = new ConcurrentDictionary<string, string>();
             sslCertificates = new ConcurrentDictionary<string, X509Certificate2>();
             streamStatuses = new ConcurrentDictionary<string, MediaStreamStatus>();
             webDownloads = new ConcurrentDictionary<string, string>();
@@ -45,13 +40,11 @@ namespace IptvPlaylistAggregator.Service
 
             PrepareFilesystem();
 
-            LoadHosts();
             LoadStreamStatuses();
         }
 
         public void SaveCacheToDisk()
         {
-            SaveHosts();
             SaveStreamStatuses();
         }
 
@@ -60,34 +53,6 @@ namespace IptvPlaylistAggregator.Service
 
         public string GetNormalisedChannelName(string name)
             => normalisedNames.TryGetValue(name);
-
-        public void StoreHost(Host host)
-        {
-            hosts.TryAdd(host.Domain, host);
-        }
-
-        public Host GetHost(string domain)
-            => hosts.TryGetValue(domain);
-
-        public void StoreUrlResolution(string url, string ip)
-        {
-            if (ip is null)
-            {
-                ip = string.Empty;
-            }
-            
-            urlResolutions.TryAdd(url, ip);
-        }
-
-        public string GetUrlResolution(string url)
-        {
-            if (string.IsNullOrWhiteSpace(url))
-            {
-                return string.Empty;
-            }
-            
-            return urlResolutions.TryGetValue(url);
-        }
 
         public void StoreSslCertificate(string host, X509Certificate2 certificate)
         {
@@ -116,9 +81,7 @@ namespace IptvPlaylistAggregator.Service
         {
             MediaStreamStatus streamStatus = streamStatuses.TryGetValue(url);
             
-            string resolvedUrl = urlResolutions.TryGetValue(url);
-
-            if (resolvedUrl == string.Empty)
+            if (string.IsNullOrWhiteSpace(url))
             {
                 return new MediaStreamStatus()
                 {
@@ -127,11 +90,11 @@ namespace IptvPlaylistAggregator.Service
                     LastCheckTime = DateTime.UtcNow
                 };
             }
-            else if (!(resolvedUrl is null))
+            else
             {
-                if (streamStatus is null && resolvedUrl != url)
+                if (streamStatus is null)
                 {
-                    streamStatus = streamStatuses.TryGetValue(resolvedUrl);
+                    streamStatus = streamStatuses.TryGetValue(url);
                 }
             }
 
@@ -150,15 +113,13 @@ namespace IptvPlaylistAggregator.Service
                 return cachedDownload;
             }
             
-            string resolvedUrl = urlResolutions.TryGetValue(url);
-            
-            if (resolvedUrl == string.Empty)
+            if (string.IsNullOrWhiteSpace(url))
             {
                 return string.Empty;
             }
-            else if (!(resolvedUrl is null))
+            else
             {
-                cachedDownload = webDownloads.TryGetValue(resolvedUrl);
+                cachedDownload = webDownloads.TryGetValue(url);
 
                 if (!(cachedDownload is null))
                 {
@@ -211,33 +172,6 @@ namespace IptvPlaylistAggregator.Service
             }
         }
 
-        void LoadHosts()
-        {
-            string filePath = Path.Combine(cacheSettings.CacheDirectoryPath, HostsFileName);
-
-            if (!File.Exists(filePath))
-            {
-                return;
-            }
-
-            List<string> lines = File.ReadAllLines(filePath).ToList();
-
-            foreach (string line in lines)
-            {
-                string[] fields = line.Split(CsvFieldSeparator);
-
-                Host host = new Host();
-                host.Domain = fields[0];
-                host.Ip = fields[1];
-                host.ResolutionTime = DateTime.ParseExact(fields[2], TimestampFormat, CultureInfo.InvariantCulture);
-
-                if ((DateTime.UtcNow - host.ResolutionTime).TotalSeconds <= cacheSettings.HostCacheTimeout)
-                {
-                    hosts.TryAdd(host.Domain, host);
-                }
-            }
-        }
-
         void LoadStreamStatuses()
         {
             string filePath = Path.Combine(cacheSettings.CacheDirectoryPath, StreamStatusesFileName);
@@ -268,27 +202,6 @@ namespace IptvPlaylistAggregator.Service
 
                 streamStatuses.TryAdd(streamStatus.Url, streamStatus);
             }
-        }
-
-        void SaveHosts()
-        {
-            string filePath = Path.Combine(cacheSettings.CacheDirectoryPath, HostsFileName);
-
-            List<string> lines = new List<string>();
-
-            foreach (Host host in hosts.Values
-                .OrderBy(x => x.Domain)
-                .ThenBy(x => x.Ip)
-                .ThenBy(x => x.ResolutionTime))
-            {
-                string timestamp = host.ResolutionTime.ToString(
-                    TimestampFormat,
-                    CultureInfo.InvariantCulture);
-
-                lines.Add($"{host.Domain}{CsvFieldSeparator}{host.Ip}{CsvFieldSeparator}{timestamp}");
-            }
-
-            File.WriteAllLines(filePath, lines);
         }
 
         void SaveStreamStatuses()

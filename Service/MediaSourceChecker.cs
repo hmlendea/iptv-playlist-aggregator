@@ -16,7 +16,6 @@ namespace IptvPlaylistAggregator.Service
     {
         readonly IFileDownloader fileDownloader;
         readonly IPlaylistFileBuilder playlistFileBuilder;
-        readonly IDnsResolver dnsResolver;
         readonly ICacheManager cache;
         readonly ILogger logger;
         readonly ApplicationSettings applicationSettings;
@@ -24,14 +23,12 @@ namespace IptvPlaylistAggregator.Service
         public MediaSourceChecker(
             IFileDownloader fileDownloader,
             IPlaylistFileBuilder playlistFileBuilder,
-            IDnsResolver dnsResolver,
             ICacheManager cache,
             ILogger logger,
             ApplicationSettings applicationSettings)
         {
             this.fileDownloader = fileDownloader;
             this.playlistFileBuilder = playlistFileBuilder;
-            this.dnsResolver = dnsResolver;
             this.cache = cache;
             this.logger = logger;
             this.applicationSettings = applicationSettings;
@@ -39,14 +36,6 @@ namespace IptvPlaylistAggregator.Service
 
         public async Task<bool> IsSourcePlayableAsync(string url)
         {
-            string resolvedUrl = dnsResolver.ResolveUrl(url);
-            string urlToUse = url;
-            
-            if (string.IsNullOrWhiteSpace(resolvedUrl))
-            {
-                return false;
-            }
-
             MediaStreamStatus status = cache.GetStreamStatus(url);
 
             if (!(status is null))
@@ -56,25 +45,15 @@ namespace IptvPlaylistAggregator.Service
 
             logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Started, new LogInfo(MyLogInfoKey.Url, url));
 
-            Uri uri = new Uri(url);
-            if (uri.Scheme == "http")
-            {
-                urlToUse = resolvedUrl;
-            }
-            
             StreamState state;
 
-            if (urlToUse.Contains(".m3u") || urlToUse.Contains(".m3u8"))
+            if (url.Contains(".m3u") || url.Contains(".m3u8"))
             {
-                state = await GetPlaylistStateAsync(urlToUse);
-            }
-            else if (!urlToUse.EndsWith(".ts"))
-            {
-                state = await GetStreamStateAsync(urlToUse);
+                state = await GetPlaylistStateAsync(url);
             }
             else
             {
-                state = StreamState.Dead;
+                state = await GetStreamStateAsync(url);
             }
 
             if (state == StreamState.Alive)
