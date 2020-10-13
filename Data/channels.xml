@@ -236,6 +236,18 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>AntenaStarsDirect.ro</Id>
+    <Name>Antena Stars Direct</Name>
+    <GroupId>general</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/antena_stars.png</LogoUrl>
+    <Aliases>
+      <string>RO: Antena Star Direct</string>
+      <string>RO: Antena Starts Direct</string>
+      <string>RO: Antenna Stars Direct</string>
+      <string>RO: Stars Direct</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>ApoloniaTV.ro</Id>
     <Name>Apolonia TV</Name>
     <GroupId>unknown</GroupId>
@@ -1968,6 +1980,15 @@
     <GroupId>music</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MTVClub.ro</Id>
+    <Name>MTV Club</Name>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/mtv_club.png</LogoUrl>
+    <Aliases>
+      <string>RO: Club MTV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>MTVDance.ro</Id>
     <Name>MTV Dance</Name>
     <GroupId>music</GroupId>
@@ -2538,7 +2559,10 @@
     <Id>ROChannel.ro</Id>
     <Name>RO Channel</Name>
     <GroupId>international</GroupId>
-    <LogoUrl></LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ro_channel.png</LogoUrl>
+    <Aliases>
+      <string>Diaspora TV-RO Channel</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RockTV.ro</Id>
@@ -3127,7 +3151,7 @@
     <Id>TVR1.ro</Id>
     <Name>TVR 1</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Logo_TVR_1_%282004%29.svg/150px-Logo_TVR_1_%282004%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr1.png</LogoUrl>
     <Aliases>
       <string>RO: RO TVR 1</string>
       <string>RO: TVR</string>
@@ -3137,7 +3161,7 @@
     <Id>TVR2.ro</Id>
     <Name>TVR 2</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Logo_TVR_2_%282004%29.svg/150px-Logo_TVR_2_%282004%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr2.png</LogoUrl>
     <Aliases>
       <string>RO: RO TVR 2</string>
     </Aliases>
@@ -3146,7 +3170,7 @@
     <Id>TVR3.ro</Id>
     <Name>TVR 3</Name>
     <GroupId>general</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Logo_TVR_3_%282017%29.svg/150px-Logo_TVR_3_%282017%29.svg.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr3.png</LogoUrl>
     <Aliases>
       <string>RO: RO TVR 3</string>
     </Aliases>
