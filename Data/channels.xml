@@ -2562,6 +2562,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ro_channel.png</LogoUrl>
     <Aliases>
       <string>Diaspora TV-RO Channel</string>
+      <string>RO: RO Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
