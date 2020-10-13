@@ -18,6 +18,8 @@ namespace IptvPlaylistAggregator.Service
 
         static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
+            { "\\[B\\]", "" },
+
             { "[\\(\\[]]*([Aa]uto|[Bb]ackup|[Ll]ive [Oo]n [Mm]atches|[Mm]ulti-*[Aa]udio|[Mm]ulti-*[Ss]ub|[Nn]ew!*|[Oo]n-[Dd]emand)[\\)\\]]*", "" },
             { "[ _\\|\\[\\(\\]\\)\".:-](Ultra|[FU])*_*[HMS][DQ]", "" },
             { "4[Kk]\\+*", "" },
