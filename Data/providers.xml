@@ -67,6 +67,14 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>github-cstoicescu-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>120</Priority>
+    <Name>cstoicescu's GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/cstoicescu/iptv-free-tv/master/playlist.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>github-makiptv-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>130</Priority>
@@ -95,7 +103,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>150</Priority>
     <Name>Free-IPTV's IPTV GitHub RO Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/Free-IPTV/iptv/master/channels/22_Romania.m3u</UrlFormat>
+    <UrlFormat>https://raw.githubusercontent.com/Free-IPTV/Countries/master/RO01_ROMANIA.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
