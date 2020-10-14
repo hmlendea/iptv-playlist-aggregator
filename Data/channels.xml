@@ -134,6 +134,13 @@
     <LogoUrl>http://stvron.com/canale/mari/alege-tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>AlephNews.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Aleph News</Name>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/aleph_news.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>AlfaOmegaTV.ro</Id>
     <Name>Alfa &amp; Omega</Name>
     <GroupId>religious</GroupId>
@@ -2486,6 +2493,13 @@
     <Aliases>
       <string>RO: QTV</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>QubTV.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>Qub TV</Name>
+    <GroupId>local-banat</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/qub.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>RadioCluj.ro</Id>
