@@ -13,7 +13,7 @@ namespace IptvPlaylistAggregator.Service
     {
         static readonly string[] SubstringsToStrip = new string[]
         {
-            "www.iptvsource.com", "iptvsource.com"
+            "www.iptvsource.com", "iptvsource.com", "backup"
         };
 
         static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>

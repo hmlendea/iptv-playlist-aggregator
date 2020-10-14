@@ -102,6 +102,8 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("RO: HBO HD RO", "HBO")]
         [TestCase("RO: Nașul TV (New!)", "NASULTV")]
         [TestCase("RO: Nickelodeon (RO)", "NICKELODEON")]
+        [TestCase("Ro: Pro TV backup", "PROTV")]
+        [TestCase("Ro: Romania TV backup", "ROMANIATV")]
         [TestCase("RO: Tele Moldova", "TELEMOLDOVA")]
         [TestCase("RO: TVR Moldova", "TVRMOLDOVA")]
         [TestCase("RO: U TV S1-1", "UTV")]
