@@ -221,6 +221,22 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>dailyiptvlist-list6</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>505</Priority>
+    <Name>DailyIPTVList List 6</Name>
+    <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-6.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>dailyiptvlist-list7</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>506</Priority>
+    <Name>DailyIPTVList List 7</Name>
+    <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-7.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>bestfreeiptv</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>510</Priority>
@@ -338,6 +354,22 @@
     <Priority>544</Priority>
     <Name>IPTVM3UList List 5</Name>
     <UrlFormat>https://iptvm3ulist.com/m3u/ro05_iptvm3ulist_com_{0:ddMMyy}.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>iptvm3ulist-list6</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>545</Priority>
+    <Name>IPTVM3UList List 6</Name>
+    <UrlFormat>https://iptvm3ulist.com/m3u/ro06_iptvm3ulist_com_{0:ddMMyy}.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>iptvm3ulist-list7</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>546</Priority>
+    <Name>IPTVM3UList List 7</Name>
+    <UrlFormat>https://iptvm3ulist.com/m3u/ro07_iptvm3ulist_com_{0:ddMMyy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -674,6 +706,46 @@
     <Priority>693</Priority>
     <Name>Source-IPTV Romania Backup 3</Name>
     <UrlFormat>http://www.source-iptv.com/files/ro_{0:ddMMyy}_source-iptv_com4.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-yonni55555-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>950</Priority>
+    <Name>yonni55555's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/yonni55555/RP/master/Romania.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-vb6rocod-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>960</Priority>
+    <Name>vb6rocod's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/vb6rocod/hddlinks_android/master/tv/pl/Frecvente.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-vb6rocod-ro-tvr</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>961</Priority>
+    <Name>vb6rocod's IPTV GitHub RO TVR Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/vb6rocod/hddlinks_android/master/tv/pl/TVR.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-SharyRajpoot-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>970</Priority>
+    <Name>SharyRajpoot's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/SharyRajpoot/iptv/master/channels/countries/ro.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-SharyRajpoot-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>971</Priority>
+    <Name>SharyRajpoot's IPTV GitHub MD Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/SharyRajpoot/iptv/master/channels/countries/md.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
