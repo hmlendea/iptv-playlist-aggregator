@@ -59,7 +59,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Vivid TV", null, "Vivid TV HD(18+)")]
         [TestCase("VSV De Niro", "VSV Robert de Niro", "VSV Robert de Niro HD")]
         [Test]
-        public void DoesMatch_NamesMatch_ReturnsTrue(
+        public void ChannelNamesDoMatch(
             string definedName,
             string alias,
             string providerName)
@@ -70,9 +70,10 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         }
 
         [TestCase("Cromtel", "Cmrotel", "Cmtel")]
+        [TestCase("Pro TV", null, "MD: ProTV Chisinau")]
         [TestCase("Telekom Sport 2", "RO: Telekom Sport 2", "RO: Digi Sport 2")]
         [Test]
-        public void DoesMatch_NamesDoNotMatch_ReturnsFalse(
+        public void ChannelNamesDoNotMatch(
             string definedName,
             string alias,
             string providerName)
@@ -91,6 +92,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("DIGI SPORT 4 (RO)", "DIGISPORT4")]
         [TestCase("Jurnal TV Moldova", "MDJURNALTV")]
         [TestCase("MD: Canal Regional (Moldova)", "MDCANALREGIONAL")]
+        [TestCase("MD: ProTV Chisinau", "MDPROTVCHISINAU")]
         [TestCase("MINIMAX ROMANIA HD", "MINIMAXROMANIA")]
         [TestCase("Pro TV [B] RO", "PROTV")]
         [TestCase("RO    \" DIGI SPORT 1 HD RO", "DIGISPORT1")]
