@@ -221,6 +221,22 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>dailyiptvlist-list6</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>505</Priority>
+    <Name>DailyIPTVList List 6</Name>
+    <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-6.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>dailyiptvlist-list7</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>506</Priority>
+    <Name>DailyIPTVList List 7</Name>
+    <UrlFormat>https://dailyiptvlist.com/dl/ro-m3uplaylist-{0:yyyy-MM-dd}-7.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>bestfreeiptv</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>510</Priority>
@@ -338,6 +354,22 @@
     <Priority>544</Priority>
     <Name>IPTVM3UList List 5</Name>
     <UrlFormat>https://iptvm3ulist.com/m3u/ro05_iptvm3ulist_com_{0:ddMMyy}.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>iptvm3ulist-list6</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>545</Priority>
+    <Name>IPTVM3UList List 6</Name>
+    <UrlFormat>https://iptvm3ulist.com/m3u/ro06_iptvm3ulist_com_{0:ddMMyy}.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>iptvm3ulist-list7</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>546</Priority>
+    <Name>IPTVM3UList List 7</Name>
+    <UrlFormat>https://iptvm3ulist.com/m3u/ro07_iptvm3ulist_com_{0:ddMMyy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
