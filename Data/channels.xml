@@ -422,8 +422,9 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood.png</LogoUrl>
     <Aliases>
-      <string>RO: BO</string>
+      <string>Bollywood TV Romania</string>
       <string>RO: BO TV</string>
+      <string>RO: BO</string>
       <string>RO: Bollywood TV Film</string>
       <string>RO: Bollywood TV</string>
       <string>RO: Bolywood</string>
@@ -1129,9 +1130,10 @@
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/filmnow.png</LogoUrl>
     <Aliases>
-      <string>RO: Digi Film</string>
       <string>RO: Digi Filim</string>
       <string>RO: Digi Film Now</string>
+      <string>RO: Digi Film</string>
+      <string>RO: Digi Filmi</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2461,6 +2463,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/profit.ro.png</LogoUrl>
     <Aliases>
       <string>Profit TV</string>
+      <string>Profit</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
