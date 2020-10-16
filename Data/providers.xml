@@ -124,10 +124,18 @@
 
   <PlaylistProviderEntity>
     <Id>github-pabloangel</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>180</Priority>
     <Name>Pablo-Angel's IPTV GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/Pablo-Angel/StabilePablo.m3u/master/Romania.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-gabubu112-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>181</Priority>
+    <Name>gabubu112's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/gabubu112/Romania-IPTV/master/romaniatv.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
