@@ -749,6 +749,30 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>github-ratul0547-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>972</Priority>
+    <Name>ratul0547's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/ratul0547/sturdy-iptv/main/countries/ROMANIA.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-ap-rose-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>974</Priority>
+    <Name>ap-rose's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/ap-rose/TV/master/ro.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-ap-rose-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>975</Priority>
+    <Name>ap-rose's IPTV GitHub MD Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/ap-rose/TV/master/md.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>github-Tempest0580-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>980</Priority>
