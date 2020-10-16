@@ -749,6 +749,22 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>github-Tempest0580-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>980</Priority>
+    <Name>Tempest0580's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/Tempest0580/xml/master/foreign_channels/ro.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-Tempest0580-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>981</Priority>
+    <Name>Tempest0580's IPTV GitHub MD Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/Tempest0580/xml/master/foreign_channels/md.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>github-salex777-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>998</Priority>
