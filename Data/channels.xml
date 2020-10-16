@@ -935,6 +935,12 @@
     <GroupId>unknown</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>DottoTV.ro</Id>
+    <Name>Dotto TV</Name>
+    <GroupId>local-dobrogea</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/dotto.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>DrochiaTV.md</Id>
     <Name>Drochia TV</Name>
     <GroupId>local-basarabia</GroupId>
@@ -1240,6 +1246,12 @@
       <string>MD: Gurinel TV</string>
       <string>RO: Gurinel TV</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>HD365.ro</Id>
+    <Name>HD365</Name>
+    <GroupId>local-transilvania</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hd365.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HDNetAction.ro</Id>
@@ -1870,6 +1882,15 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MDI.ro</Id>
+    <Name>MDI TV</Name>
+    <GroupId>local-oltenia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/mdi_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: MDI TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>MediaTV.md</Id>
     <Name>Media TV Cimișlia</Name>
     <GroupId>local-basarabia</GroupId>
@@ -1894,6 +1915,15 @@
     <Name>Melody Channel</Name>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/melody_channel.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Metropola.ro</Id>
+    <Name>Metropola TV</Name>
+    <GroupId>local-oltenia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/metropola.png</LogoUrl>
+    <Aliases>
+      <string>RO: Metropola</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Mezzo.hu</Id>
