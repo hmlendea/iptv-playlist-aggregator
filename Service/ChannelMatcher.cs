@@ -67,23 +67,25 @@ namespace IptvPlaylistAggregator.Service
 
         public string NormaliseName(string name, string country)
         {
-            string normalisedName = cache.GetNormalisedChannelName(name);
+            string fullName;
+
+            if (string.IsNullOrWhiteSpace(country))
+            {
+                fullName = name;
+            }
+            else
+            {
+                fullName = $"{country}: {name}";
+            }
+
+            string normalisedName = cache.GetNormalisedChannelName(fullName);
 
             if (!string.IsNullOrWhiteSpace(normalisedName))
             {
                 return normalisedName;
             }
 
-            if (string.IsNullOrWhiteSpace(country))
-            {
-                normalisedName = name;
-            }
-            else
-            {
-                normalisedName = $"{country}: {name}";
-            }
-
-            normalisedName = normalisedName.RemoveDiacritics();
+            normalisedName = fullName.RemoveDiacritics();
             normalisedName = StripChannelName(normalisedName);
             normalisedName = normalisedName.ToUpper();
 
