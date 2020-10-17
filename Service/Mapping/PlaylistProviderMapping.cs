@@ -17,6 +17,7 @@ namespace IptvPlaylistAggregator.Service.Mapping
             serviceModel.AllowCaching = dataObject.AllowCaching;
             serviceModel.Name = dataObject.Name;
             serviceModel.UrlFormat = dataObject.UrlFormat;
+            serviceModel.Country = dataObject.Country;
             serviceModel.ChannelNameOverride = dataObject.ChannelNameOverride;
 
             return serviceModel;
@@ -31,6 +32,7 @@ namespace IptvPlaylistAggregator.Service.Mapping
             dataObject.AllowCaching = serviceModel.AllowCaching;
             dataObject.Name = serviceModel.Name;
             dataObject.UrlFormat = serviceModel.UrlFormat;
+            dataObject.Country = serviceModel.Country;
             dataObject.ChannelNameOverride = serviceModel.ChannelNameOverride;
 
             return dataObject;

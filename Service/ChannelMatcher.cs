@@ -65,7 +65,7 @@ namespace IptvPlaylistAggregator.Service
             this.cache = cache;
         }
 
-        public string NormaliseName(string name)
+        public string NormaliseName(string name, string country)
         {
             string normalisedName = cache.GetNormalisedChannelName(name);
 
@@ -74,7 +74,16 @@ namespace IptvPlaylistAggregator.Service
                 return normalisedName;
             }
 
-            normalisedName = name.RemoveDiacritics();
+            if (string.IsNullOrWhiteSpace(country))
+            {
+                normalisedName = name;
+            }
+            else
+            {
+                normalisedName = $"{country}: {name}";
+            }
+
+            normalisedName = normalisedName.RemoveDiacritics();
             normalisedName = StripChannelName(normalisedName);
             normalisedName = normalisedName.ToUpper();
 
@@ -83,12 +92,12 @@ namespace IptvPlaylistAggregator.Service
             return normalisedName;
         }
 
-        public bool DoesMatch(ChannelName name1, string name2)
-            => DoChannelNamesMatch(name1.Value, name2) ||
-               name1.Aliases.Any(x => DoChannelNamesMatch(x, name2));
+        public bool DoesMatch(ChannelName name1, string name2, string country2)
+            => DoChannelNamesMatch(name1.Value, name1.Country, name2, country2) ||
+               name1.Aliases.Any(name1alias => DoChannelNamesMatch(name1alias, name1.Country, name2, country2));
 
-        bool DoChannelNamesMatch(string name1, string name2)
-            => NormaliseName(name1).Equals(NormaliseName(name2));
+        bool DoChannelNamesMatch(string name1, string country1, string name2, string country2)
+            => NormaliseName(name1, country1).Equals(NormaliseName(name2, country2));
 
         string StripChannelName(string name)
         {

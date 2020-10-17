@@ -13,7 +13,7 @@ namespace IptvPlaylistAggregator.Service.Mapping
             ChannelDefinition serviceModel = new ChannelDefinition();
             serviceModel.Id = dataObject.Id;
             serviceModel.IsEnabled = dataObject.IsEnabled;
-            serviceModel.Name = new ChannelName(dataObject.Name, dataObject.Aliases);
+            serviceModel.Name = new ChannelName(dataObject.Name, dataObject.Country, dataObject.Aliases);
             serviceModel.Country = dataObject.Country;
             serviceModel.GroupId = dataObject.GroupId;
             serviceModel.LogoUrl = dataObject.LogoUrl;

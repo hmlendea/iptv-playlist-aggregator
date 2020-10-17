@@ -22,9 +22,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         }
 
         [TestCase("Agro TV", "RO: Agro", "Agro RO")]
-        [TestCase("AMC", null, "RO: AMC Romania")]
         [TestCase("Antena 1", "RO: Antenna", "RO: Antenna HD")]
-        [TestCase("Antena 3", null, "Antena 3 Ultra_HD")]
         [TestCase("Ardeal TV", "RO: Ardeal TV", "|RO| Ardeal TV")]
         [TestCase("Bollywood TV", "RO: BO TV", "BO TV")]
         [TestCase("Cartoon Network", "RO: Cartoon Network", "VIP|RO|: Cartoon Network")]
@@ -35,16 +33,12 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Duna", "RO: Duna TV", "RO | Duna Tv")]
         [TestCase("Golf Channel", "FR: Golf Channel", "|FR| GOLF CHANNEL FHD")]
         [TestCase("H!T Music Channel", "RO: Hit", "RO | HIT")]
-        [TestCase("HBO 3", null, "HBO 3 F_HD")]
         [TestCase("HD Net Van Damme", "HD NET Jean Claude Van Damme", "HD NET Jean Claude van Damme")]
         [TestCase("Jurnal TV", "MD: Jurnal TV", "Jurnal TV Moldavia")]
         [TestCase("MegaMax", "RO: MegaMax", "RO: MegaMax-HD")]
-        [TestCase("MTV Europe", null, "RO: MTV Europe")]
         [TestCase("NCN TV", "RO: NCN", "RO: NCN HD")]
         [TestCase("Pro TV News", "RO: Pro News", "Pro News")]
-        [TestCase("Pro TV", null, "PRO TV ULTRA_HD")]
         [TestCase("Publika TV", "MD: Publika", "PUBLIKA_TV_HD")]
-        [TestCase("Realitatea Plus", null, "Realitatea Plus")]
         [TestCase("România TV", "România TV", "RO\" Romania TV")]
         [TestCase("Somax", "RO: Somax TV", "Somax TV")]
         [TestCase("Sundance", "RO: Sundance TV", "RO: Sundance TV FHD (MultiSub)")]
@@ -56,33 +50,83 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("TVC21", "MD: TVC21", "TVC 21 Moldova")]
         [TestCase("TVR Moldova", "RO: TVR Moldova", "RO: TVR Moldova")]
         [TestCase("TVR Târgu Mureș", "RO: TVR T?rgu-Mure?", "TVR: Targu Mureș")]
-        [TestCase("TVR", null, "RO: TVR HD (1080P)")]
-        [TestCase("U TV", null, "UTV")]
-        [TestCase("Vivid TV", null, "Vivid TV HD(18+)")]
         [TestCase("VSV De Niro", "VSV Robert de Niro", "VSV Robert de Niro HD")]
         [Test]
-        public void ChannelNamesDoMatch(
+        public void ChannelNamesDoMatch_WithAliasWithoutCountry(
             string definedName,
             string alias,
             string providerName)
         {
             ChannelName channelName = GetChannelName(definedName, alias);
 
-            Assert.IsTrue(channelMatcher.DoesMatch(channelName, providerName));
+            Assert.IsTrue(channelMatcher.DoesMatch(channelName, providerName, country2: null));
+        }
+
+        [TestCase("AMC", "RO: AMC Romania")]
+        [TestCase("Antena 3", "Antena 3 Ultra_HD")]
+        [TestCase("HBO 3", "HBO 3 F_HD")]
+        [TestCase("MTV Europe", "RO: MTV Europe")]
+        [TestCase("Pro TV", "PRO TV ULTRA_HD")]
+        [TestCase("Realitatea Plus", "Realitatea Plus")]
+        [TestCase("TVR", "RO: TVR HD (1080P)")]
+        [TestCase("U TV", "UTV")]
+        [TestCase("Vivid TV", "Vivid TV HD(18+)")]
+        [Test]
+        public void ChannelNamesDoMatch_WithoutAliasWithoutCountry(
+            string definedName,
+            string providerName)
+        {
+            ChannelName channelName = GetChannelName(definedName, alias: null);
+
+            Assert.IsTrue(channelMatcher.DoesMatch(channelName, providerName, country2: null));
         }
 
         [TestCase("Cromtel", "Cmrotel", "Cmtel")]
-        [TestCase("Pro TV", null, "MD: ProTV Chisinau")]
         [TestCase("Telekom Sport 2", "RO: Telekom Sport 2", "RO: Digi Sport 2")]
         [Test]
-        public void ChannelNamesDoNotMatch(
+        public void ChannelNamesDoNotMatch_WithAliasWithoutCountry(
             string definedName,
             string alias,
             string providerName)
         {
             ChannelName channelName = GetChannelName(definedName, alias);
 
-            Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName));
+            Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName, country2: null));
+        }
+
+        [TestCase("Pro TV", "MD: ProTV Chisinau")]
+        [Test]
+        public void ChannelNamesDoNotMatch_WithoutAliasWithoutCountry(
+            string definedName,
+            string providerName)
+        {
+            ChannelName channelName = GetChannelName(definedName, alias: null);
+
+            Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName, country2: null));
+        }
+
+        [TestCase(" MD| Publika", "MD", "MDPUBLIKA")]
+        [TestCase("|AR| AD SPORT 4 HEVC", "AR", "ARADSPORT4")]
+        [TestCase("|FR| GOLF CHANNELS HD", "FR", "FRGOLFCHANNELS")]
+        [TestCase("|RO| Ardeal TV", "RO", "ARDEALTV")]
+        [TestCase("|ROM|: Cromtel", "RO", "CROMTEL")]
+        [TestCase("|UK| CHELSEA TV (Live On Matches) HD", "UK", "UKCHELSEATV")]
+        [TestCase("Canal Regional (Moldova)", "MD", "MDCANALREGIONAL")]
+        [TestCase("RO | Travel", "RO", "TRAVEL")]
+        [TestCase("RO: Travel", "RO", "TRAVEL")]
+        [TestCase("Travel Mix", "RO", "TRAVELMIX")]
+        [TestCase("TV Paprika", "RO", "TVPAPRIKA")]
+        [TestCase("TV8", "MD", "MDTV8")]
+        [TestCase("TVC21", "MD", "MDTVC21")]
+        [TestCase("TVR Moldova", "MD", "MDTVR")]
+        [TestCase("TVR Târgu Mureș", "RO", "TVRTARGUMURES")]
+        [TestCase("VSV De Niro", "RO", "VSVDENIRO")]
+        [Test]
+        public void NormaliseName_WithCountry_ReturnsExpectedValue(string name, string country, string expectedNormalisedName)
+        {
+            string actualNormalisedName = channelMatcher.NormaliseName(name, country);
+            
+            Assert.That(actualNormalisedName, Is.EqualTo(expectedNormalisedName));
         }
 
         [TestCase(" MD| Publika", "MDPUBLIKA")]
@@ -103,6 +147,8 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Pro TV [B] RO", "PROTV")]
         [TestCase("PUBLIKA_TV_HD", "PUBLIKATV")]
         [TestCase("RO    \" DIGI SPORT 1 HD RO", "DIGISPORT1")]
+        [TestCase("RO | Travel", "TRAVEL")]
+        [TestCase("RO: Travel", "TRAVEL")]
         [TestCase("RO-Animal Planet HD", "ANIMALPLANET")]
         [TestCase("Ro: 1 HD", "1HD")]
         [TestCase("RO: Animal World [768p]", "ANIMALWORLD")]
@@ -138,21 +184,24 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("VSV Robert de Niro", "VSVROBERTDENIRO")]
         [TestCase("ZonaM Moldova", "MDZONAM")]
         [Test]
-        public void NormaliseName_ReturnsExpectedValue(string inputValue, string expectedValue)
+        public void NormaliseName_WithoutCountry_ReturnsExpectedValue(string inputValue, string expectedValue)
         {
-            string actualValue = channelMatcher.NormaliseName(inputValue);
+            string actualValue = channelMatcher.NormaliseName(inputValue, country: null);
             
             Assert.AreEqual(expectedValue, actualValue);
         }
 
         private ChannelName GetChannelName(string definedName, string alias)
+            => GetChannelName(definedName, country: null, alias);
+
+        private ChannelName GetChannelName(string definedName, string country, string alias)
         {
             if (alias is null)
             {
                 return new ChannelName(definedName);
             }
             
-            return new ChannelName(definedName, alias);
+            return new ChannelName(definedName, country, alias);
         }
     }
 }

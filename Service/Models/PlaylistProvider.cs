@@ -14,6 +14,8 @@ namespace IptvPlaylistAggregator.Service.Models
 
         public string UrlFormat { get; set; }
 
+        public string Country { get; set; }
+
         public string ChannelNameOverride { get; set; }
     }
 }

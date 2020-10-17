@@ -54,6 +54,14 @@ namespace IptvPlaylistAggregator.Service
                             provider.Priority,
                             playlist,
                             (key, oldValue) => playlist);
+                        
+                        if (!string.IsNullOrWhiteSpace(provider.Country))
+                        {
+                            foreach (Channel channel in playlist.Channels)
+                            {
+                                channel.Country = provider.Country;
+                            }
+                        }
                     }
                 });
 
