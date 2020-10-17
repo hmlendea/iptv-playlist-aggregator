@@ -139,7 +139,7 @@ namespace IptvPlaylistAggregator.Service
                     new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value));
 
                 List<Channel> matchedChannels = filteredProviderChannels
-                    .Where(x => channelMatcher.DoesMatch(channelDef.Name, x.Name))
+                    .Where(x => channelMatcher.DoesMatch(channelDef.Name, x.Name, x.Country))
                     .ToList();
                 
                 if (!matchedChannels.Any())
@@ -168,6 +168,7 @@ namespace IptvPlaylistAggregator.Service
                 Channel channel = new Channel();
                 channel.Id = channelDef.Id;
                 channel.Name = channelDef.Name.Value;
+                channel.Country = channelDef.Country;
                 channel.Group = groups[channelDef.GroupId].Name;
                 channel.LogoUrl = channelDef.LogoUrl;
                 channel.Url = matchedChannel.Url;
@@ -195,7 +196,7 @@ namespace IptvPlaylistAggregator.Service
             logger.Info(MyOperation.ChannelMatching, OperationStatus.InProgress, $"Getting unmatched channels");
 
             IEnumerable<Channel> unmatchedChannels = filteredProviderChannels
-                .Where(x => channelDefinitions.All(y => !channelMatcher.DoesMatch(y.Name, x.Name)))
+                .Where(x => channelDefinitions.All(y => !channelMatcher.DoesMatch(y.Name, x.Name, x.Country)))
                 .GroupBy(x => x.Name)
                 .Select(g => g.First())
                 .OrderBy(x => x.Name);

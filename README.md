@@ -103,6 +103,7 @@ ChannelDefinitionEntity fields:
  - *Id* (string): The TVG ID. If using a TVG provider within your IPTV application, make sure the channel IDs match the TVG IDs of your provider.
  - *IsEnabled* (bool): Indicates whether the final playlist will contain this channel or not. Even if enabled, if the group is disabled, the channel will still be omitted.
  - *Name* (string): The name of the channel, as displayed in your IPTV application.
+ - *Country* (string): (Optional) The country where the channel is being broadcasted. The `tvg-country` property will be populated with this value, if it exists. It will also be used uin the channel matching process.
  - *GroupId* (string): The ID of the group that this channel will be part of.
  - *LogoUrl* (string): The URL to a logo for the channel. Make sure your IPTV application supports the logo format you provide here.
  - *Aliases* (string collection): Different variants of the name of the channel, as it can appear in the provider playlists. This is the criteria used to match provider channels to this definition.
@@ -129,6 +130,7 @@ PlaylistProviderDefinitionEntity fields:
  - *Id* (string): The ID of the provider. You can put anything here, used only to distinguish between them.
  - *IsEnabled* (bool): Indicates whether this provider will be used or not.
  - *Priority* (int): The lower the value, the sooner the provider will be processed. Try to make sure the most reliable providers are processed first, as once a channel is matched with a provider, it will be ignored for all other providers after it.
- - *DontCache* (bool): (Optional) Indicates whether this provider's playlist should be cached or not. Useful when the provider updates the playlist multiple times a day. By default it's false.
+ - *AllowCaching* (bool): (Optional) Indicates whether this provider's playlist should be cached or not. Useful when the provider updates the playlist multiple times a day. By default it's true.
  - *UrlFormat* (string): The URL to the m3u playlist file of that provider. Replace the date part of the URL with a timestamp format. For example, *2019-05-19* will be replaced with *{0:yyyy-MM-dd}*. The *0* is the calendar day that is processed (today, or one of the previous ones depending on the *daysToCheck* setting)
+ - *Country* (string): (Optional) If set, the country will be used in the channel matching process.
  - *ChannelNameOverride* (string): (Optional) The channel name override for all the channels in the provider's playlist.
