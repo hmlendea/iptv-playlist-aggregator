@@ -738,10 +738,19 @@
   <PlaylistProviderEntity>
     <Id>github-hmlendea-ro-timed</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>9999999</Priority>
+    <Priority>9999998</Priority>
     <Name>hmlendea's GitHub Channels RO (Timed)</Name>
     <DontCache>true</DontCache>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/ro-timed.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-hmlendea-md-timed</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>9999999</Priority>
+    <Name>hmlendea's GitHub Channels MD (Timed)</Name>
+    <DontCache>true</DontCache>
+    <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/md-timed.m3u</UrlFormat>
   </PlaylistProviderEntity>
   
 </ArrayOfPlaylistProviderEntity>
