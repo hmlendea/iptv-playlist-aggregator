@@ -29,7 +29,7 @@
     <Id>hmlendea-livestreams-int</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>5</Priority>
-    <DontCache>true</DontCache>
+    <AllowCaching>false</AllowCaching>
     <Name>hmlendea's livestreams INT</Name>
     <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/int/playlist.m3u</UrlFormat>
   </PlaylistProviderEntity>
@@ -71,7 +71,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>120</Priority>
     <Name>cstoicescu's GitHub RO Channels</Name>
-    <DontCache>true</DontCache>
+    <AllowCaching>false</AllowCaching>
     <UrlFormat>https://raw.githubusercontent.com/cstoicescu/iptv-free-tv/master/playlist.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
@@ -143,7 +143,7 @@
     <Id>hmlendea-livestreams-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>300</Priority>
-    <DontCache>true</DontCache>
+    <AllowCaching>false</AllowCaching>
     <Name>hmlendea's livestreams RO</Name>
     <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/ro/playlist.m3u</UrlFormat>
   </PlaylistProviderEntity>
@@ -152,7 +152,7 @@
     <Id>hmlendea-livestreams-md</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>301</Priority>
-    <DontCache>true</DontCache>
+    <AllowCaching>false</AllowCaching>
     <Name>hmlendea's livestreams MD</Name>
     <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/md/playlist.m3u</UrlFormat>
   </PlaylistProviderEntity>
@@ -722,7 +722,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>998</Priority>
     <Name>Salex777-gif's IPTV GitHub RO Channels</Name>
-    <DontCache>true</DontCache>
+    <AllowCaching>false</AllowCaching>
     <UrlFormat>https://raw.githubusercontent.com/salex777/iptvX/master/i.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
@@ -731,7 +731,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>999</Priority>
     <Name>Valentin-gif's IPTV GitHub RO Channels</Name>
-    <DontCache>true</DontCache>
+    <AllowCaching>false</AllowCaching>
     <UrlFormat>https://raw.githubusercontent.com/Valentin-gif/silver-lamp/master/page1.txt</UrlFormat>
   </PlaylistProviderEntity>
 
@@ -740,7 +740,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>9999998</Priority>
     <Name>hmlendea's GitHub Channels RO (Timed)</Name>
-    <DontCache>true</DontCache>
+    <AllowCaching>false</AllowCaching>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/ro-timed.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
@@ -749,7 +749,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>9999999</Priority>
     <Name>hmlendea's GitHub Channels MD (Timed)</Name>
-    <DontCache>true</DontCache>
+    <AllowCaching>false</AllowCaching>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/md-timed.m3u</UrlFormat>
   </PlaylistProviderEntity>
   

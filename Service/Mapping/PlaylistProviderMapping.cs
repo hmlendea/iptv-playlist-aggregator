@@ -14,7 +14,7 @@ namespace IptvPlaylistAggregator.Service.Mapping
             serviceModel.Id = dataObject.Id;
             serviceModel.IsEnabled = dataObject.IsEnabled;
             serviceModel.Priority = dataObject.Priority;
-            serviceModel.DontCache = dataObject.DontCache;
+            serviceModel.AllowCaching = dataObject.AllowCaching;
             serviceModel.Name = dataObject.Name;
             serviceModel.UrlFormat = dataObject.UrlFormat;
             serviceModel.ChannelNameOverride = dataObject.ChannelNameOverride;
@@ -28,7 +28,7 @@ namespace IptvPlaylistAggregator.Service.Mapping
             dataObject.Id = serviceModel.Id;
             dataObject.IsEnabled = serviceModel.IsEnabled;
             dataObject.Priority = serviceModel.Priority;
-            dataObject.DontCache = serviceModel.DontCache;
+            dataObject.AllowCaching = serviceModel.AllowCaching;
             dataObject.Name = serviceModel.Name;
             dataObject.UrlFormat = serviceModel.UrlFormat;
             dataObject.ChannelNameOverride = serviceModel.ChannelNameOverride;

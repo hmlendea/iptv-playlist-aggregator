@@ -8,7 +8,7 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
 
         public int Priority { get; set; }
 
-        public bool DontCache { get; set; }
+        public bool AllowCaching { get; set; }
 
         public string Name { get; set; }
 
@@ -19,6 +19,7 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
         public PlaylistProviderEntity()
         {
             Priority = int.MaxValue;
+            AllowCaching = true;
         }
     }
 }

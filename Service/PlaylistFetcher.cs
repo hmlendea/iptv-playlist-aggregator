@@ -119,7 +119,7 @@ namespace IptvPlaylistAggregator.Service
                 playlist = playlistFileBuilder.TryParseFile(playlistFile);
             }
 
-            if (!Playlist.IsNullOrEmpty(playlist) && !provider.DontCache)
+            if (provider.AllowCaching && !Playlist.IsNullOrEmpty(playlist))
             {
                 cache.StorePlaylistFile(provider.Id, DateTime.UtcNow, playlistFile);
             }
@@ -153,7 +153,7 @@ namespace IptvPlaylistAggregator.Service
 
         Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
         {
-            if (provider.DontCache)
+            if (provider.AllowCaching)
             {
                 return null;
             }
