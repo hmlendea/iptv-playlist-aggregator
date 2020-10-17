@@ -71,6 +71,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>120</Priority>
     <Name>cstoicescu's GitHub RO Channels</Name>
+    <DontCache>true</DontCache>
     <UrlFormat>https://raw.githubusercontent.com/cstoicescu/iptv-free-tv/master/playlist.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
@@ -677,7 +678,7 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>github-ratul0547-md</Id>
+    <Id>github-ratul0547-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>972</Priority>
     <Name>ratul0547's IPTV GitHub RO Channels</Name>
@@ -721,6 +722,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>998</Priority>
     <Name>Salex777-gif's IPTV GitHub RO Channels</Name>
+    <DontCache>true</DontCache>
     <UrlFormat>https://raw.githubusercontent.com/salex777/iptvX/master/i.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
@@ -729,6 +731,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>999</Priority>
     <Name>Valentin-gif's IPTV GitHub RO Channels</Name>
+    <DontCache>true</DontCache>
     <UrlFormat>https://raw.githubusercontent.com/Valentin-gif/silver-lamp/master/page1.txt</UrlFormat>
   </PlaylistProviderEntity>
   
