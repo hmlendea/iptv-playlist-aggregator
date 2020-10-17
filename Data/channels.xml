@@ -1339,9 +1339,11 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/h!t_music_channel.png</LogoUrl>
     <Aliases>
       <string>RO: H!T Music</string>
+      <string>RO: H!T</string>
       <string>RO: Hit Ch</string>
       <string>RO: Hit Channel</string>
       <string>RO: Hit Music</string>
+      <string>RO: Hit</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
