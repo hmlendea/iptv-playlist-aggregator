@@ -94,15 +94,21 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName, country2: null));
         }
 
+        [TestCase("Pro TV", "MD: Pro TV")]
         [TestCase("Pro TV", "MD: ProTV Chisinau")]
         [Test]
         public void ChannelNamesDoNotMatch_WithoutAliasWithoutCountry(
             string definedName,
             string providerName)
         {
+            // Arrange
             ChannelName channelName = GetChannelName(definedName, alias: null);
 
-            Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName, country2: null));
+            // Act
+            bool isMatch = channelMatcher.DoesMatch(channelName, providerName, country2: null);
+
+            // Assert
+            Assert.That(isMatch, Is.False);
         }
 
         [TestCase(" MD| Publika", "MD", "MDPUBLIKA")]
