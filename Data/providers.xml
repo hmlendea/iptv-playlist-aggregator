@@ -18,7 +18,7 @@
     <AllowCaching>false</AllowCaching>
     <Name>hmlendea's GitHub Channels MD</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/md.m3u</UrlFormat>
-    <Country>M</Country>
+    <Country>MD</Country>
   </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
