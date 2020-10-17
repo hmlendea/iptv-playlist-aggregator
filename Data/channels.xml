@@ -1036,8 +1036,8 @@
   <ChannelDefinitionEntity>
     <Id>EuropaPlus.ro</Id>
     <Name>Europa Plus</Name>
-    <GroupId>unknown</GroupId>
-    <LogoUrl>http://stvron.com/canale/mici/europa-plus.png</LogoUrl>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/europa_plus.png</LogoUrl>
     <Aliases>
       <string>MD: Europa Plus</string>
     </Aliases>
@@ -1596,6 +1596,14 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/job_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Job</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>JohnnyBravo.ro</Id>
+    <Name>Johnny Bravo</Name>
+    <GroupId>kids</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/johnny_bravo.png</LogoUrl>
+    <Aliases>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
