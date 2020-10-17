@@ -413,6 +413,14 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>iptvsource-backup4</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>574</Priority>
+    <Name>IPTVsource Backup 4</Name>
+    <UrlFormat>https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com5.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>iptvsource-main-alt</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>570</Priority>
@@ -442,6 +450,14 @@
     <Priority>573</Priority>
     <Name>IPTVsource Backup 3 (Alternative)</Name>
     <UrlFormat>https://www.iptvsource.com/lists/ro_{0:ddMMyy}_iptvsource_com4.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>iptvsource-backup4-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>574</Priority>
+    <Name>IPTVsource Backup 4 (Alternative)</Name>
+    <UrlFormat>https://www.iptvsource.com/lists/ro_{0:ddMMyy}_iptvsource_com5.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -482,6 +498,46 @@
     <Priority>584</Priority>
     <Name>Gratis IPTV List 5</Name>
     <UrlFormat>https://gratisiptv.com/dl/ro-gratisiptvm3u-{0:yyyy-MM-dd}-5.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gratisiptv-list1-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>585</Priority>
+    <Name>Gratis IPTV List 1 (Alternative)</Name>
+    <UrlFormat>https://gratisiptv.com/m3u/ro-gratisiptvm3u-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gratisiptv-list2-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>586</Priority>
+    <Name>Gratis IPTV List 2 (Alternative)</Name>
+    <UrlFormat>https://gratisiptv.com/m3u/ro-gratisiptvm3u-{0:yyyy-MM-dd}-2.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gratisiptv-list3-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>587</Priority>
+    <Name>Gratis IPTV List 3 (Alternative)</Name>
+    <UrlFormat>https://gratisiptv.com/m3u/ro-gratisiptvm3u-{0:yyyy-MM-dd}-3.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gratisiptv-list4-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>588</Priority>
+    <Name>Gratis IPTV List 4 (Alternative)</Name>
+    <UrlFormat>https://gratisiptv.com/m3u/ro-gratisiptvm3u-{0:yyyy-MM-dd}-4.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gratisiptv-list5-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>589</Priority>
+    <Name>Gratis IPTV List 5 (Alternative)</Name>
+    <UrlFormat>https://gratisiptv.com/m3u/ro-gratisiptvm3u-{0:yyyy-MM-dd}-5.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
