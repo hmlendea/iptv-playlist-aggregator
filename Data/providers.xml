@@ -246,7 +246,7 @@
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>510</Priority>
     <Name>Best Free IPTV</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}.m3u</UrlFormat>
@@ -254,7 +254,7 @@
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv-backup1</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>511</Priority>
     <Name>Best Free IPTV Backup 1</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_1.m3u</UrlFormat>
@@ -262,7 +262,7 @@
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv-backup2</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>512</Priority>
     <Name>Best Free IPTV Backup 2</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_2.m3u</UrlFormat>
@@ -270,7 +270,7 @@
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv-backup3</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>513</Priority>
     <Name>Best Free IPTV Backup 3</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_3.m3u</UrlFormat>
@@ -278,7 +278,7 @@
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv-backup4</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>514</Priority>
     <Name>Best Free IPTV Backup 4</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_4.m3u</UrlFormat>
@@ -378,22 +378,6 @@
     <Priority>546</Priority>
     <Name>IPTVM3UList List 7</Name>
     <UrlFormat>https://iptvm3ulist.com/m3u/ro07_iptvm3ulist_com_{0:ddMMyy}.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>iptvfile</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>550</Priority>
-    <Name>IPTV File</Name>
-    <UrlFormat>https://iptvfile.com/dl/{0:MM}/ro{0:dd}.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>iptvsaga-list2</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>560</Priority>
-    <Name>IPTV Saga</Name>
-    <UrlFormat>http://www.iptvsaga.com/download/111-romanian-tv-channels-playlist-m3u-{0:MM-yy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
