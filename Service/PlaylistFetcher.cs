@@ -161,7 +161,7 @@ namespace IptvPlaylistAggregator.Service
 
         Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
         {
-            if (provider.AllowCaching)
+            if (!provider.AllowCaching)
             {
                 return null;
             }
