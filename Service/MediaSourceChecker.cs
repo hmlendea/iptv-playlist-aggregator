@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using IptvPlaylistAggregator.Configuration;
@@ -14,6 +15,9 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class MediaSourceChecker : IMediaSourceChecker
     {
+        const string YouTubeVideoUrlPattern = "^(https?\\:\\/\\/)?(www\\.youtube\\.com|youtu\\.?be)\\/.+$";
+        const string NonHttpUrlPattern = "^(?!http).*";
+
         readonly IFileDownloader fileDownloader;
         readonly IPlaylistFileBuilder playlistFileBuilder;
         readonly ICacheManager cache;
@@ -47,7 +51,11 @@ namespace IptvPlaylistAggregator.Service
 
             StreamState state;
 
-            if (url.Contains(".m3u") || url.Contains(".m3u8"))
+            if (IsUrlUnsupported(url))
+            {
+                state = StreamState.Unsupported;
+            }
+            else if (url.Contains(".m3u") || url.Contains(".m3u8"))
             {
                 state = await GetPlaylistStateAsync(url);
             }
@@ -67,6 +75,17 @@ namespace IptvPlaylistAggregator.Service
 
             SaveToCache(url, state);
             return state == StreamState.Alive;
+        }
+        
+        bool IsUrlUnsupported(string url)
+        {
+            if (Regex.IsMatch(url, YouTubeVideoUrlPattern) ||
+                Regex.IsMatch(url, NonHttpUrlPattern))
+            {
+                return true;
+            }
+
+            return false;
         }
 
         async Task<StreamState> GetPlaylistStateAsync(string url)

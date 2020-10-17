@@ -36,7 +36,7 @@
 
   <PlaylistProviderEntity>
     <Id>github-iptvorg-ro</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>100</Priority>
     <Name>IPTV org's GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/iptv-org/iptv/master/channels/ro.m3u</UrlFormat>
@@ -44,7 +44,7 @@
 
   <PlaylistProviderEntity>
     <Id>github-iptvorg-md</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>101</Priority>
     <Name>IPTV org's GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/iptv-org/iptv/master/channels/md.m3u</UrlFormat>
@@ -71,6 +71,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>120</Priority>
     <Name>cstoicescu's GitHub RO Channels</Name>
+    <DontCache>true</DontCache>
     <UrlFormat>https://raw.githubusercontent.com/cstoicescu/iptv-free-tv/master/playlist.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
@@ -246,7 +247,7 @@
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>510</Priority>
     <Name>Best Free IPTV</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}.m3u</UrlFormat>
@@ -254,7 +255,7 @@
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv-backup1</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>511</Priority>
     <Name>Best Free IPTV Backup 1</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_1.m3u</UrlFormat>
@@ -262,7 +263,7 @@
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv-backup2</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>512</Priority>
     <Name>Best Free IPTV Backup 2</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_2.m3u</UrlFormat>
@@ -270,7 +271,7 @@
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv-backup3</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>513</Priority>
     <Name>Best Free IPTV Backup 3</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_3.m3u</UrlFormat>
@@ -278,7 +279,7 @@
 
   <PlaylistProviderEntity>
     <Id>bestfreeiptv-backup4</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>514</Priority>
     <Name>Best Free IPTV Backup 4</Name>
     <UrlFormat>https://bestfreeiptv.com/dl/ro-bestfreeiptv-{0:yyyy-MM-dd}_4.m3u</UrlFormat>
@@ -381,22 +382,6 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>iptvfile</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>550</Priority>
-    <Name>IPTV File</Name>
-    <UrlFormat>https://iptvfile.com/dl/{0:MM}/ro{0:dd}.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>iptvsaga-list2</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>560</Priority>
-    <Name>IPTV Saga</Name>
-    <UrlFormat>http://www.iptvsaga.com/download/111-romanian-tv-channels-playlist-m3u-{0:MM-yy}.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>iptvsource-main</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>570</Priority>
@@ -429,6 +414,14 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>iptvsource-backup4</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>574</Priority>
+    <Name>IPTVsource Backup 4</Name>
+    <UrlFormat>https://www.iptvsource.com/dl/ro_{0:ddMMyy}_iptvsource_com5.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>iptvsource-main-alt</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>570</Priority>
@@ -458,6 +451,14 @@
     <Priority>573</Priority>
     <Name>IPTVsource Backup 3 (Alternative)</Name>
     <UrlFormat>https://www.iptvsource.com/lists/ro_{0:ddMMyy}_iptvsource_com4.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>iptvsource-backup4-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>574</Priority>
+    <Name>IPTVsource Backup 4 (Alternative)</Name>
+    <UrlFormat>https://www.iptvsource.com/lists/ro_{0:ddMMyy}_iptvsource_com5.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -501,6 +502,46 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>gratisiptv-list1-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>585</Priority>
+    <Name>Gratis IPTV List 1 (Alternative)</Name>
+    <UrlFormat>https://gratisiptv.com/m3u/ro-gratisiptvm3u-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gratisiptv-list2-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>586</Priority>
+    <Name>Gratis IPTV List 2 (Alternative)</Name>
+    <UrlFormat>https://gratisiptv.com/m3u/ro-gratisiptvm3u-{0:yyyy-MM-dd}-2.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gratisiptv-list3-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>587</Priority>
+    <Name>Gratis IPTV List 3 (Alternative)</Name>
+    <UrlFormat>https://gratisiptv.com/m3u/ro-gratisiptvm3u-{0:yyyy-MM-dd}-3.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gratisiptv-list4-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>588</Priority>
+    <Name>Gratis IPTV List 4 (Alternative)</Name>
+    <UrlFormat>https://gratisiptv.com/m3u/ro-gratisiptvm3u-{0:yyyy-MM-dd}-4.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>gratisiptv-list5-alt</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>589</Priority>
+    <Name>Gratis IPTV List 5 (Alternative)</Name>
+    <UrlFormat>https://gratisiptv.com/m3u/ro-gratisiptvm3u-{0:yyyy-MM-dd}-5.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>iptvresources-main</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>590</Priority>
@@ -514,30 +555,6 @@
     <Priority>591</Priority>
     <Name>iPTV Resources Backup</Name>
     <UrlFormat>https://iptvresources.com/iptv/ro-iptv-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>fliptv</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>600</Priority>
-    <Name>FlipTV</Name>
-    <UrlFormat>https://filiptv.net/iptv/worldwide/iptv-romania/ro-{0:dd-MM-yyyy}.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>gatachannel-link1</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>610</Priority>
-    <Name>gatachannel Link 1</Name>
-    <UrlFormat>https://gatachannel.com/iptv/Romanian-{0:dd-MM-yy}.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>gatachannel-link2</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>611</Priority>
-    <Name>gatachannel Link 2</Name>
-    <UrlFormat>http://gatachannel.com/iptv/worldwide/iptv-romania/ro-{0:dd-MM-yyyy}.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -581,91 +598,27 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>freedailyiptv-link1</Id>
+    <Id>freeiptvserver-backup5</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>230</Priority>
-    <Name>Free Daily IPTV Link 1</Name>
-    <UrlFormat>https://freedailyiptv.com/countries/RO/RO_freedailyiptv.com.m3u</UrlFormat>
+    <Priority>626</Priority>
+    <Name>Free IPTV Server Backup 5</Name>
+    <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com6.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>freedailyiptv-link2</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>631</Priority>
-    <Name>Free Daily IPTV 2</Name>
-    <UrlFormat>https://freedailyiptv.com/countries/RO/RO2_freedailyiptv.com.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>freedailyiptv-link3</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>632</Priority>
-    <Name>Free Daily IPTV Link 3</Name>
-    <UrlFormat>https://freedailyiptv.com/countries/RO/RO3_freedailyiptv.com.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>freedailyiptv-link4</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>633</Priority>
-    <Name>Free Daily IPTV Link 4</Name>
-    <UrlFormat>https://freedailyiptv.com/countries/RO/RO4_freedailyiptv.com.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>freedailyiptv-link5</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>634</Priority>
-    <Name>Free Daily IPTV Link 5</Name>
-    <UrlFormat>https://freedailyiptv.com/countries/RO/RO5_freedailyiptv.com.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>freedailyiptv-link6</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>635</Priority>
-    <Name>Free Daily IPTV Link 6</Name>
-    <UrlFormat>https://freedailyiptv.com/countries/RO/RO6_freedailyiptv.com.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>albaiaiptv</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>640</Priority>
-    <Name>Albania IPTV</Name>
-    <UrlFormat>http://albaniaiptv.info/iptv/ro-playlist-m3u-{0:dd-MM-yyyy}.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>m3uplaylist</Id>
+    <Id>m3uplaylist-list1</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>650</Priority>
-    <Name>M3UPlaylist.com</Name>
+    <Name>M3U Playlist List 1</Name>
     <UrlFormat>http://m3uplaylist.com/m3u-files/romania_iptv_{0:dd-MM-yyyy}_m3uplaylist_com_S1.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>m3uplaylist2</Id>
+    <Id>m3uplaylist-list2</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>660</Priority>
-    <Name>M3U Playlist</Name>
+    <Name>M3U Playlist List 2</Name>
     <UrlFormat>http://m3uplaylist.com/m3u-files/romania_iptv_m3uplaylist_com.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>freesourcetv-ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>670</Priority>
-    <Name>Free Source TV Romania</Name>
-    <UrlFormat>http://freesourcetv.com/m3u-files/romania_iptv_{0:dd_MM_yyyy}_freesourcetv_com.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>freesourcetv-md</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>671</Priority>
-    <Name>Free Source TV Moldova</Name>
-    <UrlFormat>http://freesourcetv.com/m3u-files/moldova_iptv_{0:dd_MM_yyyy}_freesourcetv_com.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -682,38 +635,6 @@
     <Priority>681</Priority>
     <Name>Free Tux TV Moldova</Name>
     <UrlFormat>http://database.freetuxtv.net/playlists/playlist_webtv_md.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>source-iptv-ro-main</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>690</Priority>
-    <Name>Source-IPTV Romania</Name>
-    <UrlFormat>http://www.source-iptv.com/files/ro_{0:ddMMyy}_source-iptv_com.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>source-iptv-ro-backup1</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>691</Priority>
-    <Name>Source-IPTV Romania Backup 1</Name>
-    <UrlFormat>http://www.source-iptv.com/files/ro_{0:ddMMyy}_source-iptv_com2.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>source-iptv-ro-backup2</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>692</Priority>
-    <Name>Source-IPTV Romania Backup 2</Name>
-    <UrlFormat>http://www.source-iptv.com/files/ro_{0:ddMMyy}_source-iptv_com3.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>source-iptv-ro-backup3</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>693</Priority>
-    <Name>Source-IPTV Romania Backup 3</Name>
-    <UrlFormat>http://www.source-iptv.com/files/ro_{0:ddMMyy}_source-iptv_com4.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -757,7 +678,7 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>github-ratul0547-md</Id>
+    <Id>github-ratul0547-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>972</Priority>
     <Name>ratul0547's IPTV GitHub RO Channels</Name>
@@ -801,6 +722,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>998</Priority>
     <Name>Salex777-gif's IPTV GitHub RO Channels</Name>
+    <DontCache>true</DontCache>
     <UrlFormat>https://raw.githubusercontent.com/salex777/iptvX/master/i.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
@@ -809,7 +731,26 @@
     <IsEnabled>true</IsEnabled>
     <Priority>999</Priority>
     <Name>Valentin-gif's IPTV GitHub RO Channels</Name>
+    <DontCache>true</DontCache>
     <UrlFormat>https://raw.githubusercontent.com/Valentin-gif/silver-lamp/master/page1.txt</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-hmlendea-ro-timed</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>9999998</Priority>
+    <Name>hmlendea's GitHub Channels RO (Timed)</Name>
+    <DontCache>true</DontCache>
+    <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/ro-timed.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-hmlendea-md-timed</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>9999999</Priority>
+    <Name>hmlendea's GitHub Channels MD (Timed)</Name>
+    <DontCache>true</DontCache>
+    <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/md-timed.m3u</UrlFormat>
   </PlaylistProviderEntity>
   
 </ArrayOfPlaylistProviderEntity>

@@ -34,12 +34,14 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Digi World", "RO: Digi World FHD", "RUMANIA: DigiWorld FHD (Opt-1)")]
         [TestCase("Duna", "RO: Duna TV", "RO | Duna Tv")]
         [TestCase("Golf Channel", "FR: Golf Channel", "|FR| GOLF CHANNEL FHD")]
+        [TestCase("H!T Music Channel", "RO: Hit", "RO | HIT")]
         [TestCase("HBO 3", null, "HBO 3 F_HD")]
         [TestCase("HD Net Van Damme", "HD NET Jean Claude Van Damme", "HD NET Jean Claude van Damme")]
         [TestCase("Jurnal TV", "MD: Jurnal TV", "Jurnal TV Moldavia")]
         [TestCase("MegaMax", "RO: MegaMax", "RO: MegaMax-HD")]
         [TestCase("MTV Europe", null, "RO: MTV Europe")]
         [TestCase("NCN TV", "RO: NCN", "RO: NCN HD")]
+        [TestCase("Pro TV News", "RO: Pro News", "Pro News")]
         [TestCase("Pro TV", null, "PRO TV ULTRA_HD")]
         [TestCase("Publika TV", "MD: Publika", "PUBLIKA_TV_HD")]
         [TestCase("Realitatea Plus", null, "Realitatea Plus")]
@@ -83,6 +85,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName));
         }
 
+        [TestCase(" MD| Publika", "MDPUBLIKA")]
         [TestCase("|AR| AD SPORT 4 HEVC", "ARADSPORT4")]
         [TestCase("|FR| GOLF CHANNELS HD", "FRGOLFCHANNELS")]
         [TestCase("|RO| Ardeal TV", "ARDEALTV")]
@@ -95,8 +98,10 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("MD: ProTV Chisinau", "MDPROTVCHISINAU")]
         [TestCase("MINIMAX ROMANIA HD", "MINIMAXROMANIA")]
         [TestCase("Pro TV [B] RO", "PROTV")]
+        [TestCase("PUBLIKA_TV_HD", "PUBLIKATV")]
         [TestCase("RO    \" DIGI SPORT 1 HD RO", "DIGISPORT1")]
         [TestCase("RO-Animal Planet HD", "ANIMALPLANET")]
+        [TestCase("Ro: 1 HD", "1HD")]
         [TestCase("RO: Animal World [768p]", "ANIMALWORLD")]
         [TestCase("RO: Bit TV (ROM)", "BITTV")]
         [TestCase("RO: Digi24 (România)", "DIGI24")]
