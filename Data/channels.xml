@@ -2478,6 +2478,7 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_tv_news.png</LogoUrl>
     <Aliases>
+      <string>RO: Pro News</string>
       <string>RO: Pro TV News</string>
       <string>RO: Știrile Pro TV</string>
     </Aliases>
