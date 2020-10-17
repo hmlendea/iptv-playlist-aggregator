@@ -734,5 +734,13 @@
     <DontCache>true</DontCache>
     <UrlFormat>https://raw.githubusercontent.com/Valentin-gif/silver-lamp/master/page1.txt</UrlFormat>
   </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-hmlendea-ro-timed</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>99999999999</Priority>
+    <Name>hmlendea's GitHub Channels RO (Timed)</Name>
+    <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/ro-timed.m3u</UrlFormat>
+  </PlaylistProviderEntity>
   
 </ArrayOfPlaylistProviderEntity>
