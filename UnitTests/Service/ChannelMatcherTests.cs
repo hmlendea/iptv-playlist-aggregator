@@ -40,6 +40,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("MegaMax", "RO: MegaMax", "RO: MegaMax-HD")]
         [TestCase("MTV Europe", null, "RO: MTV Europe")]
         [TestCase("NCN TV", "RO: NCN", "RO: NCN HD")]
+        [TestCase("Pro TV News", "RO: Pro News", "Pro News")]
         [TestCase("Pro TV", null, "PRO TV ULTRA_HD")]
         [TestCase("Publika TV", "MD: Publika", "PUBLIKA_TV_HD")]
         [TestCase("Realitatea Plus", null, "Realitatea Plus")]
@@ -83,6 +84,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName));
         }
 
+        [TestCase(" MD| Publika", "MDPUBLIKA")]
         [TestCase("|AR| AD SPORT 4 HEVC", "ARADSPORT4")]
         [TestCase("|FR| GOLF CHANNELS HD", "FRGOLFCHANNELS")]
         [TestCase("|RO| Ardeal TV", "ARDEALTV")]
