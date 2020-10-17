@@ -12,6 +12,8 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
 
         public string Name { get; set; }
 
+        public string Country { get; set; }
+
         public string GroupId { get; set; }
 
         public string LogoUrl { get; set; }

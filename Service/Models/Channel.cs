@@ -7,6 +7,8 @@ namespace IptvPlaylistAggregator.Service.Models
         public string Name { get; set; }
         
         public string Group { get; set; }
+        
+        public string Country { get; set; }
 
         public string LogoUrl { get; set; }
 

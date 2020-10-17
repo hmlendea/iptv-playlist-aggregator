@@ -14,6 +14,7 @@ namespace IptvPlaylistAggregator.Service.Mapping
             serviceModel.Id = dataObject.Id;
             serviceModel.IsEnabled = dataObject.IsEnabled;
             serviceModel.Name = new ChannelName(dataObject.Name, dataObject.Aliases);
+            serviceModel.Country = dataObject.Country;
             serviceModel.GroupId = dataObject.GroupId;
             serviceModel.LogoUrl = dataObject.LogoUrl;
 
@@ -26,6 +27,7 @@ namespace IptvPlaylistAggregator.Service.Mapping
             dataObject.Id = serviceModel.Id;
             dataObject.IsEnabled = serviceModel.IsEnabled;
             dataObject.Name = serviceModel.Name.Value;
+            dataObject.Country = serviceModel.Country;
             dataObject.GroupId = serviceModel.GroupId;
             dataObject.LogoUrl = serviceModel.LogoUrl;
             dataObject.Aliases = serviceModel.Name.Aliases.ToList();

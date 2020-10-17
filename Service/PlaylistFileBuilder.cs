@@ -18,6 +18,7 @@ namespace IptvPlaylistAggregator.Service
         const string TvGuideNameTagKey = "tvg-name";
         const string TvGuideIdTagKey = "tvg-id";
         const string TvGuideLogoTagKey = "tvg-logo";
+        const string TvGuideCountryTagKey = "tvg-country";
         const string TvGuideGroupTagKey = "group-title";
         const int DefaultEntryRuntime = -1;
 
@@ -136,6 +137,11 @@ namespace IptvPlaylistAggregator.Service
             if (!string.IsNullOrWhiteSpace(channel.LogoUrl))
             {
                 tvgTags += $" {TvGuideLogoTagKey}=\"{channel.LogoUrl}\"";
+            }
+
+            if (!string.IsNullOrWhiteSpace(channel.Country))
+            {
+                tvgTags += $" {TvGuideCountryTagKey}=\"{channel.Country}\"";
             }
 
             if (!string.IsNullOrWhiteSpace(channel.Group))
