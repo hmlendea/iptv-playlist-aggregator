@@ -557,30 +557,6 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>fliptv</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>600</Priority>
-    <Name>FlipTV</Name>
-    <UrlFormat>https://filiptv.net/iptv/worldwide/iptv-romania/ro-{0:dd-MM-yyyy}.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>gatachannel-link1</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>610</Priority>
-    <Name>gatachannel Link 1</Name>
-    <UrlFormat>https://gatachannel.com/iptv/Romanian-{0:dd-MM-yy}.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>gatachannel-link2</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>611</Priority>
-    <Name>gatachannel Link 2</Name>
-    <UrlFormat>http://gatachannel.com/iptv/worldwide/iptv-romania/ro-{0:dd-MM-yyyy}.m3u</UrlFormat>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>freeiptvserver</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>620</Priority>
@@ -618,6 +594,14 @@
     <Priority>625</Priority>
     <Name>Free IPTV Server Backup 4</Name>
     <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com5.m3u</UrlFormat>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>freeiptvserver-backup5</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>626</Priority>
+    <Name>Free IPTV Server Backup 5</Name>
+    <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com6.m3u</UrlFormat>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
