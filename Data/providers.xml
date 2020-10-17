@@ -36,7 +36,7 @@
 
   <PlaylistProviderEntity>
     <Id>github-iptvorg-ro</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>100</Priority>
     <Name>IPTV org's GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/iptv-org/iptv/master/channels/ro.m3u</UrlFormat>
@@ -44,7 +44,7 @@
 
   <PlaylistProviderEntity>
     <Id>github-iptvorg-md</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>101</Priority>
     <Name>IPTV org's GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/iptv-org/iptv/master/channels/md.m3u</UrlFormat>
