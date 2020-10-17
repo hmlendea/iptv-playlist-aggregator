@@ -740,6 +740,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>99999999999</Priority>
     <Name>hmlendea's GitHub Channels RO (Timed)</Name>
+    <DontCache>true</DontCache>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/ro-timed.m3u</UrlFormat>
   </PlaylistProviderEntity>
   
