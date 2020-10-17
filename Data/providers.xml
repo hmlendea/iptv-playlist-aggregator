@@ -5,6 +5,7 @@
     <Id>github-hmlendea-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>1</Priority>
+    <AllowCaching>false</AllowCaching>
     <Name>hmlendea's GitHub Channels RO</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/ro.m3u</UrlFormat>
   </PlaylistProviderEntity>
@@ -13,6 +14,7 @@
     <Id>github-hmlendea-md</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>2</Priority>
+    <AllowCaching>false</AllowCaching>
     <Name>hmlendea's GitHub Channels MD</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/md.m3u</UrlFormat>
   </PlaylistProviderEntity>
@@ -21,6 +23,7 @@
     <Id>github-hmlendea-en</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>2</Priority>
+    <AllowCaching>false</AllowCaching>
     <Name>hmlendea's GitHub Channels EN</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/en.m3u</UrlFormat>
   </PlaylistProviderEntity>
