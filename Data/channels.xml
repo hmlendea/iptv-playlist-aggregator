@@ -35,9 +35,10 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/1_music_channel.png</LogoUrl>
     <Aliases>
-      <string>RO: Music Channel</string>
       <string>RO: 1 Music Channele</string>
+      <string>RO: 1 Music</string>
       <string>RO: Music 1 Channel</string>
+      <string>RO: Music Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2435,6 +2436,7 @@
     <Aliases>
       <string>Naional TV</string>
       <string>RO: Na?ional</string>
+      <string>RO: Național</string>
       <string>RO: TV Național</string>
     </Aliases>
   </ChannelDefinitionEntity>
