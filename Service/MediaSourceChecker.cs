@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -17,6 +16,7 @@ namespace IptvPlaylistAggregator.Service
     public sealed class MediaSourceChecker : IMediaSourceChecker
     {
         const string YouTubeVideoUrlPattern = "^(https?\\:\\/\\/)?(www\\.youtube\\.com|youtu\\.?be)\\/.+$";
+        const string TinyUrlPattern = "^(https?\\:\\/\\/)?((www\\.)?tinyurl\\.com)\\/.+$";
         const string NonHttpUrlPattern = "^(?!http).*";
 
         readonly IFileDownloader fileDownloader;
@@ -81,6 +81,7 @@ namespace IptvPlaylistAggregator.Service
         bool IsUrlUnsupported(string url)
         {
             if (Regex.IsMatch(url, YouTubeVideoUrlPattern) ||
+                Regex.IsMatch(url, TinyUrlPattern) ||
                 Regex.IsMatch(url, NonHttpUrlPattern))
             {
                 return true;

@@ -43,6 +43,13 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             AssertThatSourceUrlIsNotPlayable(sourceUrl);
         }
 
+        [TestCase("https://tinyurl.com/y9k7rbje")]
+        [Test]
+        public void GivenTheSourceIsShortenedUrl_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
+        {
+            AssertThatSourceUrlIsNotPlayable(sourceUrl);
+        }
+
         [TestCase("mms://86.34.169.52:8080/")]
         [TestCase("mms://musceltvlive.muscel.ro:8080")]
         [Test]
@@ -88,13 +95,6 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("rtsp://live.trm.md:1935/live/M1Mlive")]
         [Test]
         public void GivenTheSourceIsUsingTeRtspProtocol_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
-        {
-            AssertThatSourceUrlIsNotPlayable(sourceUrl);
-        }
-
-        [TestCase("ttps://vid.hls.protv.ro/pro2n/pro2.m3u8?1")]
-        [Test]
-        public void GivenTheSourceIsUsingTeTtpsProtocol_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
         {
             AssertThatSourceUrlIsNotPlayable(sourceUrl);
         }
