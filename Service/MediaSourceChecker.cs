@@ -107,8 +107,6 @@ namespace IptvPlaylistAggregator.Service
                 return StreamState.Dead;
             }
 
-            int aliveChannelsCount = 0;
-
             foreach (Channel channel in playlist.Channels)
             {
                 string channelUrl = channel.Url;
@@ -123,16 +121,11 @@ namespace IptvPlaylistAggregator.Service
 
                 if (isPlayable)
                 {
-                    aliveChannelsCount += 1;
+                    return StreamState.Alive;
                 }
             }
-
-            if (aliveChannelsCount == 0)
-            {
-                return StreamState.Dead;
-            }
-
-            return StreamState.Alive;
+            
+            return StreamState.Dead;
         }
 
         async Task<StreamState> GetStreamStateAsync(string url)
