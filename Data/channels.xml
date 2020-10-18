@@ -2321,6 +2321,7 @@
     <Name>MTV Live</Name>
     <Country>RO</Country>
     <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/mtv_live.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MTVMusic.ro</Id>
