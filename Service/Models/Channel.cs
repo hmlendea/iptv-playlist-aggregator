@@ -14,6 +14,10 @@ namespace IptvPlaylistAggregator.Service.Models
 
         public int Number { get; set; }
 
+        public string PlaylistId { get; set; }
+        
+        public string PlaylistChannelName { get; set; }
+
         public string Url { get; set; }
     }
 }

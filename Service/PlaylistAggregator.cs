@@ -171,6 +171,8 @@ namespace IptvPlaylistAggregator.Service
                 channel.Country = channelDef.Country;
                 channel.Group = groups[channelDef.GroupId].Name;
                 channel.LogoUrl = channelDef.LogoUrl;
+                channel.PlaylistId = matchedChannel.PlaylistId;
+                channel.PlaylistChannelName = matchedChannel.PlaylistChannelName;
                 channel.Url = matchedChannel.Url;
 
                 channels.Add(channel);

@@ -20,6 +20,8 @@ namespace IptvPlaylistAggregator.Service
         const string TvGuideLogoTagKey = "tvg-logo";
         const string TvGuideCountryTagKey = "tvg-country";
         const string TvGuideGroupTagKey = "group-title";
+        const string PlaylistIdTagKey = "playlist-id";
+        const string PlaylistChannelNameTagKey = "playlist-channel-name";
         const int DefaultEntryRuntime = -1;
 
         readonly ICacheManager cache;
@@ -46,6 +48,11 @@ namespace IptvPlaylistAggregator.Service
                 if (settings.AreTvGuideTagsEnabled)
                 {
                     file += BuildTvGuideHeaderTags(channel);
+                }
+                
+                if (settings.ArePlaylistDetailsTagsEnabled)
+                {
+                    file += BuildPlaylistDetailsHeaderTags(channel);
                 }
                 
                 file +=
@@ -102,6 +109,7 @@ namespace IptvPlaylistAggregator.Service
 
                     Channel channel = new Channel();
                     channel.Name = lineSplit[lineSplit.Length - 1];
+                    channel.PlaylistChannelName = channel.Name;
 
                     playlist.Channels.Add(channel);
                 }
@@ -150,6 +158,13 @@ namespace IptvPlaylistAggregator.Service
             }
 
             return tvgTags;
+        }
+
+        string BuildPlaylistDetailsHeaderTags(Channel channel)
+        {
+            return
+                $" {PlaylistIdTagKey}=\"{channel.PlaylistId}\"" +
+                $" {PlaylistChannelNameTagKey}=\"{channel.PlaylistChannelName}\"";
         }
     }
 }

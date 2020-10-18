@@ -89,9 +89,11 @@ namespace IptvPlaylistAggregator.Service
                 return null;
             }
 
-            if (!string.IsNullOrWhiteSpace(provider.ChannelNameOverride))
+            foreach (Channel channel in playlist.Channels)
             {
-                foreach (Channel channel in playlist.Channels)
+                channel.PlaylistId = provider.Id;
+
+                if (!string.IsNullOrWhiteSpace(provider.ChannelNameOverride))
                 {
                     channel.Name = provider.ChannelNameOverride;
                 }
