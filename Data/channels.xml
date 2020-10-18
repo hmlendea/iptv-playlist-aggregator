@@ -1217,6 +1217,17 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>FagarasTV.ro</Id>
+    <Name>Făgăraș TV</Name>
+    <Country>RO</Country>
+    <GroupId>local-transilvania</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/fagaras_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Făgăraș</string>
+      <string>RO: TV Făgăraș</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Fallout76AppalachiaRadio.com</Id>
     <Name>Fallout 76 Appalachia Radio</Name>
     <Country>INT</Country>
