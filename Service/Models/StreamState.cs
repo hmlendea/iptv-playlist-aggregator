@@ -6,6 +6,7 @@ namespace IptvPlaylistAggregator.Service.Models
         Dead,
         Unauthorised,
         NotFound,
-        Unsupported
+        Unsupported,
+        Blacklisted
     }
 }

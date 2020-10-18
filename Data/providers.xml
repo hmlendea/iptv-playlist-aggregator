@@ -18,7 +18,7 @@
     <AllowCaching>false</AllowCaching>
     <Name>hmlendea's GitHub Channels MD</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/md.m3u</UrlFormat>
-    <Country>M</Country>
+    <Country>MD</Country>
   </PlaylistProviderEntity>
   
   <PlaylistProviderEntity>
@@ -74,16 +74,6 @@
     <Name>kilirushi's IPTV GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/kilirushi/m3u/master/md.m3u</UrlFormat>
     <Country>MD</Country>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>github-cstoicescu-ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>120</Priority>
-    <Name>cstoicescu's GitHub RO Channels</Name>
-    <AllowCaching>false</AllowCaching>
-    <UrlFormat>https://raw.githubusercontent.com/cstoicescu/iptv-free-tv/master/playlist.m3u</UrlFormat>
-    <Country>RO</Country>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
@@ -728,24 +718,6 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>github-vb6rocod-ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>960</Priority>
-    <Name>vb6rocod's IPTV GitHub RO Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/vb6rocod/hddlinks_android/master/tv/pl/Frecvente.m3u</UrlFormat>
-    <Country>RO</Country>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>github-vb6rocod-ro-tvr</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>961</Priority>
-    <Name>vb6rocod's IPTV GitHub RO TVR Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/vb6rocod/hddlinks_android/master/tv/pl/TVR.m3u</UrlFormat>
-    <Country>RO</Country>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>github-SharyRajpoot-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>970</Priority>
@@ -825,6 +797,34 @@
     <Name>Valentin-gif's IPTV GitHub RO Channels</Name>
     <AllowCaching>false</AllowCaching>
     <UrlFormat>https://raw.githubusercontent.com/Valentin-gif/silver-lamp/master/page1.txt</UrlFormat>
+    <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-cstoicescu-ro</Id>
+    <IsEnabled>false</IsEnabled>
+    <Priority>1000</Priority>
+    <Name>cstoicescu's GitHub RO Channels</Name>
+    <AllowCaching>false</AllowCaching>
+    <UrlFormat>https://raw.githubusercontent.com/cstoicescu/iptv-free-tv/master/playlist.m3u</UrlFormat>
+    <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-vb6rocod-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>1100</Priority>
+    <Name>vb6rocod's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/vb6rocod/hddlinks_android/master/tv/pl/Frecvente.m3u</UrlFormat>
+    <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-vb6rocod-ro-tvr</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>1101</Priority>
+    <Name>vb6rocod's IPTV GitHub RO TVR Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/vb6rocod/hddlinks_android/master/tv/pl/TVR.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 

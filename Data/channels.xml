@@ -35,9 +35,10 @@
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/1_music_channel.png</LogoUrl>
     <Aliases>
-      <string>RO: Music Channel</string>
       <string>RO: 1 Music Channele</string>
+      <string>RO: 1 Music</string>
       <string>RO: Music 1 Channel</string>
+      <string>RO: Music Channel</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -183,7 +184,7 @@
     <Name>AMC</Name>
     <Country>RO</Country>
     <GroupId>movies</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd46bc33b1566d8b4694.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/amc.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AnimalPlanet.ro</Id>
@@ -771,6 +772,17 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>DiasporaMedia.fr</Id>
+    <Name>Diaspora Media</Name>
+    <Country>MD</Country>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/diaspora_media.png</LogoUrl>
+    <Aliases>
+      <string>MD: Diaspora Media</string>
+      <string>RO: Diaspora Media</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>DiasporaTV.ro</Id>
     <Name>Diaspora TV</Name>
     <Country>RO</Country>
@@ -1214,6 +1226,17 @@
     <Aliases>
       <string>RO: Extreme Sport</string>
       <string>RO: Extreme Sports Channel</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>FagarasTV.ro</Id>
+    <Name>Făgăraș TV</Name>
+    <Country>RO</Country>
+    <GroupId>local-transilvania</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/fagaras_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Făgăraș</string>
+      <string>RO: TV Făgăraș</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1762,6 +1785,7 @@
     <Aliases>
       <string>-----ROMANIA------</string>
       <string>iptvcat.com</string>
+      <string>RO: iptvcat.com</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1857,6 +1881,17 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/linkpress_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Linkpress</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>LiraTV.es</Id>
+    <Name>Lira TV</Name>
+    <Country>ES</Country>
+    <GroupId>international</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/lira_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Lira TV</string>
+      <string>RO: Lira</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2205,7 +2240,7 @@
     <Name>Misa Senzațional TV</Name>
     <Country>RO</Country>
     <GroupId>religious</GroupId>
-    <LogoUrl>https://misatv.ro/wp-content/uploads/2018/09/MTV-Logo-Cropped2.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/misa_senzational.png</LogoUrl>
     <Aliases>
       <string>RO: Misa</string>
     </Aliases>
@@ -2309,6 +2344,7 @@
     <Name>MTV Live</Name>
     <Country>RO</Country>
     <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/mtv_live.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MTVMusic.ro</Id>
@@ -2422,6 +2458,7 @@
     <Aliases>
       <string>Naional TV</string>
       <string>RO: Na?ional</string>
+      <string>RO: Național</string>
       <string>RO: TV Național</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -3438,13 +3475,23 @@
     <GroupId>unknown</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>TVArad.ro</Id>
+    <Name>TV Arad</Name>
+    <Country>RO</Country>
+    <GroupId>local-crisana</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_arad.png</LogoUrl>
+    <Aliases>
+      <string>RO: Arad TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>TVBuzau.ro</Id>
     <Name>TV Buzău</Name>
     <Country>RO</Country>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-buzau.png</LogoUrl>
     <Aliases>
-      <string>Buzău TV</string>
+      <string>RO: Buzău TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>

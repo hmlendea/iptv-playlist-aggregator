@@ -21,8 +21,8 @@ namespace IptvPlaylistAggregator.Service
             { "\\[B\\]", "" },
 
             { "[\\(\\[]]*([Aa]uto|[Bb]ackup|[Ll]ive [Oo]n [Mm]atches|[Mm]ulti-*[Aa]udio|[Mm]ulti-*[Ss]ub|[Nn]ew!*|[Oo]n-[Dd]emand)[\\)\\]]*", "" },
-            { "([a-zA-Z0-9_ ]{3})[ _\\|\\[\\(\\]\\)\".:-](Ultra|[FU])*_*[HMS][DQ]", "$1" },
-            { "4[Kk]\\+*", "" },
+            { "([a-zA-Z0-9_ ]{4})[ _\\|\\[\\(\\]\\)\".:-](Ultra|[FU])*_*[HMS][DQ]", "$1" },
+            { "4[Kk]\\+", "" },
 
             { "^( *[\\|\\[\\(\\]\\)\".:-]* *([A-Z][A-Z]) *[\\|\\[\\(\\]\\)\".:-] *)+", "$2:" },
             { "^ *([A-Z][A-Z]): *(.*) \\(*\\1\\)*$", "$1: $2" },
@@ -67,27 +67,29 @@ namespace IptvPlaylistAggregator.Service
 
         public string NormaliseName(string name, string country)
         {
-            string normalisedName = cache.GetNormalisedChannelName(name);
+            string fullName;
+
+            if (string.IsNullOrWhiteSpace(country))
+            {
+                fullName = name;
+            }
+            else
+            {
+                fullName = $"{country}: {name}";
+            }
+
+            string normalisedName = cache.GetNormalisedChannelName(fullName);
 
             if (!string.IsNullOrWhiteSpace(normalisedName))
             {
                 return normalisedName;
             }
 
-            if (string.IsNullOrWhiteSpace(country))
-            {
-                normalisedName = name;
-            }
-            else
-            {
-                normalisedName = $"{country}: {name}";
-            }
-
-            normalisedName = normalisedName.RemoveDiacritics();
+            normalisedName = fullName.RemoveDiacritics();
             normalisedName = StripChannelName(normalisedName);
             normalisedName = normalisedName.ToUpper();
 
-            cache.StoreNormalisedChannelName(name, normalisedName);
+            cache.StoreNormalisedChannelName(fullName, normalisedName);
 
             return normalisedName;
         }

@@ -10,6 +10,8 @@ namespace IptvPlaylistAggregator.Configuration
 
         public bool AreTvGuideTagsEnabled { get; set; }
 
+        public bool ArePlaylistDetailsTagsEnabled { get; set; }
+
         public string UserAgent { get; set; }
     }
 }

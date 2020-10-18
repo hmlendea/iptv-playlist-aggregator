@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -16,7 +17,13 @@ namespace IptvPlaylistAggregator.Service
     public sealed class MediaSourceChecker : IMediaSourceChecker
     {
         const string YouTubeVideoUrlPattern = "^(https?\\:\\/\\/)?(www\\.youtube\\.com|youtu\\.?be)\\/.+$";
+        const string TinyUrlPattern = "^(https?\\:\\/\\/)?((www\\.)?tinyurl\\.com)\\/.+$";
         const string NonHttpUrlPattern = "^(?!http).*";
+
+        static readonly string[] BlacklistedSources = new string[]
+        {
+            "http://hls.protv.md/acasatv/acasatv.m3u8"
+        };
 
         readonly IFileDownloader fileDownloader;
         readonly IPlaylistFileBuilder playlistFileBuilder;
@@ -55,6 +62,10 @@ namespace IptvPlaylistAggregator.Service
             {
                 state = StreamState.Unsupported;
             }
+            else if (IsUrlBlacklisted(url))
+            {
+                state = StreamState.Blacklisted;
+            }
             else if (url.Contains(".m3u") || url.Contains(".m3u8"))
             {
                 state = await GetPlaylistStateAsync(url);
@@ -80,7 +91,23 @@ namespace IptvPlaylistAggregator.Service
         bool IsUrlUnsupported(string url)
         {
             if (Regex.IsMatch(url, YouTubeVideoUrlPattern) ||
+                Regex.IsMatch(url, TinyUrlPattern) ||
                 Regex.IsMatch(url, NonHttpUrlPattern))
+            {
+                return true;
+            }
+
+            if (url.EndsWith(".mp4") || url.Contains(".mp4?"))
+            {
+                return true;
+            }
+
+            return false;
+        }
+        
+        bool IsUrlBlacklisted(string url)
+        {
+            if (BlacklistedSources.Any(x => x.Contains(url)))
             {
                 return true;
             }
@@ -104,10 +131,26 @@ namespace IptvPlaylistAggregator.Service
             {
                 return StreamState.Dead;
             }
-            else
+
+            foreach (Channel channel in playlist.Channels)
             {
-                return StreamState.Alive;
+                string channelUrl = channel.Url;
+
+                if (!channelUrl.StartsWith("http"))
+                {
+                    // TODO: Replace this with something proper
+                    channelUrl = Path.GetDirectoryName(url).Replace(":/", "://") + "/" + channelUrl;
+                }
+
+                bool isPlayable = await IsSourcePlayableAsync(channelUrl);
+
+                if (isPlayable)
+                {
+                    return StreamState.Alive;
+                }
             }
+            
+            return StreamState.Dead;
         }
 
         async Task<StreamState> GetStreamStateAsync(string url)
@@ -189,7 +232,7 @@ namespace IptvPlaylistAggregator.Service
 
         HttpWebRequest CreateWebRequest(string url)
         {
-            const int timeout = 3000;
+            const int timeout = 10000;
 
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
             request.Method = "GET";

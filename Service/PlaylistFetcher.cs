@@ -89,9 +89,11 @@ namespace IptvPlaylistAggregator.Service
                 return null;
             }
 
-            if (!string.IsNullOrWhiteSpace(provider.ChannelNameOverride))
+            foreach (Channel channel in playlist.Channels)
             {
-                foreach (Channel channel in playlist.Channels)
+                channel.PlaylistId = provider.Id;
+
+                if (!string.IsNullOrWhiteSpace(provider.ChannelNameOverride))
                 {
                     channel.Name = provider.ChannelNameOverride;
                 }
@@ -161,7 +163,7 @@ namespace IptvPlaylistAggregator.Service
 
         Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
         {
-            if (provider.AllowCaching)
+            if (!provider.AllowCaching)
             {
                 return null;
             }
