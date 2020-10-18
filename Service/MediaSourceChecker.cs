@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -18,6 +19,11 @@ namespace IptvPlaylistAggregator.Service
         const string YouTubeVideoUrlPattern = "^(https?\\:\\/\\/)?(www\\.youtube\\.com|youtu\\.?be)\\/.+$";
         const string TinyUrlPattern = "^(https?\\:\\/\\/)?((www\\.)?tinyurl\\.com)\\/.+$";
         const string NonHttpUrlPattern = "^(?!http).*";
+
+        static readonly string[] BlacklistedSources = new string[]
+        {
+            "http://hls.protv.md/acasatv/acasatv.m3u8"
+        };
 
         readonly IFileDownloader fileDownloader;
         readonly IPlaylistFileBuilder playlistFileBuilder;
@@ -56,6 +62,10 @@ namespace IptvPlaylistAggregator.Service
             {
                 state = StreamState.Unsupported;
             }
+            else if (IsUrlBlacklisted(url))
+            {
+                state = StreamState.Blacklisted;
+            }
             else if (url.Contains(".m3u") || url.Contains(".m3u8"))
             {
                 state = await GetPlaylistStateAsync(url);
@@ -88,6 +98,16 @@ namespace IptvPlaylistAggregator.Service
             }
 
             if (url.EndsWith(".mp4") || url.Contains(".mp4?"))
+            {
+                return true;
+            }
+
+            return false;
+        }
+        
+        bool IsUrlBlacklisted(string url)
+        {
+            if (BlacklistedSources.Any(x => x.Contains(url)))
             {
                 return true;
             }
