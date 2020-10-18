@@ -183,7 +183,7 @@
     <Name>AMC</Name>
     <Country>RO</Country>
     <GroupId>movies</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd46bc33b1566d8b4694.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/amc.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AnimalPlanet.ro</Id>
