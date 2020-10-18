@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -104,6 +105,23 @@ namespace IptvPlaylistAggregator.Service
             {
                 return StreamState.Dead;
             }
+            else if (playlist.Channels.Count == 1)
+            {
+                string channelUrl = playlist.Channels.First().Url;
+
+                if (!channelUrl.StartsWith("http"))
+                {
+                    channelUrl = Path.GetDirectoryName(url).Replace(":/", "://") + "/" + channelUrl;
+                }
+
+                if (!channelUrl.Contains(".m3u") &&
+                    !channelUrl.Contains(".m3u8"))
+                {
+                    return await GetStreamStateAsync(channelUrl);
+                }
+
+                return await GetPlaylistStateAsync(channelUrl);
+            }
             else
             {
                 return StreamState.Alive;
@@ -189,7 +207,7 @@ namespace IptvPlaylistAggregator.Service
 
         HttpWebRequest CreateWebRequest(string url)
         {
-            const int timeout = 3000;
+            const int timeout = 9000;
 
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
             request.Method = "GET";
