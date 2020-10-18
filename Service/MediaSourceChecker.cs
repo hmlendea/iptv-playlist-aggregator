@@ -110,10 +110,11 @@ namespace IptvPlaylistAggregator.Service
 
             foreach (Channel channel in playlist.Channels)
             {
-                string channelUrl = playlist.Channels.First().Url;
+                string channelUrl = channel.Url;
 
                 if (!channelUrl.StartsWith("http"))
                 {
+                    // TODO: Replace this with something proper
                     channelUrl = Path.GetDirectoryName(url).Replace(":/", "://") + "/" + channelUrl;
                 }
 
