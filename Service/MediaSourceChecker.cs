@@ -105,7 +105,10 @@ namespace IptvPlaylistAggregator.Service
             {
                 return StreamState.Dead;
             }
-            else if (playlist.Channels.Count == 1)
+
+            int aliveChannelsCount = 0;
+
+            foreach (Channel channel in playlist.Channels)
             {
                 string channelUrl = playlist.Channels.First().Url;
 
@@ -114,18 +117,20 @@ namespace IptvPlaylistAggregator.Service
                     channelUrl = Path.GetDirectoryName(url).Replace(":/", "://") + "/" + channelUrl;
                 }
 
-                if (!channelUrl.Contains(".m3u") &&
-                    !channelUrl.Contains(".m3u8"))
-                {
-                    return await GetStreamStateAsync(channelUrl);
-                }
+                bool isPlayable = await IsSourcePlayableAsync(channelUrl);
 
-                return await GetPlaylistStateAsync(channelUrl);
+                if (isPlayable)
+                {
+                    aliveChannelsCount += 1;
+                }
             }
-            else
+
+            if (aliveChannelsCount == 0)
             {
-                return StreamState.Alive;
+                return StreamState.Dead;
             }
+
+            return StreamState.Alive;
         }
 
         async Task<StreamState> GetStreamStateAsync(string url)
