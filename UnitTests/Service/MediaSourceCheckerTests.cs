@@ -43,6 +43,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             AssertThatSourceUrlIsNotPlayable(sourceUrl);
         }
 
+        [TestCase("https://dotto.edvr.ro/dottotv_1603019528.mp4")]
         [TestCase("https://iptvcat.com/assets/videos/lazycat-iptvcat.com.mp4?fluxustv.m3u8")]
         [TestCase("https://iptvcat.com/assets/videos/lazycat-iptvcat.com.mp4")]
         [Test]
