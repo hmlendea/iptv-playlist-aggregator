@@ -802,7 +802,7 @@
 
   <PlaylistProviderEntity>
     <Id>github-cstoicescu-ro</Id>
-    <IsEnabled>true</IsEnabled>
+    <IsEnabled>false</IsEnabled>
     <Priority>1000</Priority>
     <Name>cstoicescu's GitHub RO Channels</Name>
     <AllowCaching>false</AllowCaching>
