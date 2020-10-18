@@ -87,6 +87,11 @@ namespace IptvPlaylistAggregator.Service
                 return true;
             }
 
+            if (url.EndsWith(".mp4") || url.Contains(".mp4?"))
+            {
+                return true;
+            }
+
             return false;
         }
 

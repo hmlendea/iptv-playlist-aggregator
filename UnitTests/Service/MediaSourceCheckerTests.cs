@@ -43,9 +43,17 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             AssertThatSourceUrlIsNotPlayable(sourceUrl);
         }
 
-        [TestCase("https://tinyurl.com/y9k7rbje")]
+        [TestCase("https://iptvcat.com/assets/videos/lazycat-iptvcat.com.mp4?fluxustv.m3u8")]
+        [TestCase("https://iptvcat.com/assets/videos/lazycat-iptvcat.com.mp4")]
         [Test]
         public void GivenTheSourceIsShortenedUrl_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
+        {
+            AssertThatSourceUrlIsNotPlayable(sourceUrl);
+        }
+
+        [TestCase("https://tinyurl.com/y9k7rbje")]
+        [Test]
+        public void GivenTheSourceIsAnMP4File_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
         {
             AssertThatSourceUrlIsNotPlayable(sourceUrl);
         }
