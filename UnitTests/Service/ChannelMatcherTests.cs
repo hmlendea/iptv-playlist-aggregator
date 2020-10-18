@@ -21,8 +21,10 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             channelMatcher = new ChannelMatcher(cacheMock.Object);
         }
 
-        [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", null)]
+        [TestCase("INVALID_CHANNEL", null, "iptvcat.com", "iptvcat.com", "RO")]
+        [TestCase("INVALID_CHANNEL", null, "iptvcat.com", "iptvcat.com", null)]
         [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", "RO")]
+        [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", null)]
         [Test]
         public void ChannelNamesDoMatch_WithAliasWithCountry(
             string definedName,
