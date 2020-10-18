@@ -21,6 +21,21 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             channelMatcher = new ChannelMatcher(cacheMock.Object);
         }
 
+        [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", null)]
+        [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", "RO")]
+        [Test]
+        public void ChannelNamesDoMatch_WithAliasWithCountry(
+            string definedName,
+            string definedCountry,
+            string alias,
+            string providerName,
+            string providerCountry)
+        {
+            ChannelName channelName = GetChannelName(definedName, definedCountry, alias);
+
+            Assert.IsTrue(channelMatcher.DoesMatch(channelName, providerName, providerCountry));
+        }
+
         [TestCase("Agro TV", "RO: Agro", "Agro RO")]
         [TestCase("Antena 1", "RO: Antenna", "RO: Antenna HD")]
         [TestCase("Ardeal TV", "RO: Ardeal TV", "|RO| Ardeal TV")]
@@ -126,6 +141,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("TVC21", "MD", "MDTVC21")]
         [TestCase("TVR Moldova", "MD", "MDTVR")]
         [TestCase("TVR Târgu Mureș", "RO", "TVRTARGUMURES")]
+        [TestCase("VP HD", "RO", "VPHD")]
         [TestCase("VSV De Niro", "RO", "VSVDENIRO")]
         [Test]
         public void NormaliseName_WithCountry_ReturnsExpectedValue(string name, string country, string expectedNormalisedName)
@@ -142,6 +158,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("|ROM|: Cromtel", "CROMTEL")]
         [TestCase("|UK| CHELSEA TV (Live On Matches) HD", "UKCHELSEATV")]
         [TestCase("Canal Regional (Moldova)", "MDCANALREGIONAL")]
+        [TestCase("Digi 4K", "DIGI4K")]
         [TestCase("DIGI SPORT 4 (RO)", "DIGISPORT4")]
         [TestCase("Jurnal TV Moldova", "MDJURNALTV")]
         [TestCase("MD: Canal Regional (Moldova)", "MDCANALREGIONAL")]
@@ -154,7 +171,6 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("PUBLIKA_TV_HD", "PUBLIKATV")]
         [TestCase("RO    \" DIGI SPORT 1 HD RO", "DIGISPORT1")]
         [TestCase("RO | Travel", "TRAVEL")]
-        [TestCase("RO: Travel", "TRAVEL")]
         [TestCase("RO-Animal Planet HD", "ANIMALPLANET")]
         [TestCase("Ro: 1 HD", "1HD")]
         [TestCase("RO: Animal World [768p]", "ANIMALWORLD")]
@@ -167,6 +183,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("Ro: Pro TV backup", "PROTV")]
         [TestCase("Ro: Romania TV backup", "ROMANIATV")]
         [TestCase("RO: Tele Moldova", "TELEMOLDOVA")]
+        [TestCase("RO: Travel", "TRAVEL")]
         [TestCase("RO: TVR Moldova", "TVRMOLDOVA")]
         [TestCase("RO: U TV S1-1", "UTV")]
         [TestCase("RO.| DIGI 24", "DIGI24")]
