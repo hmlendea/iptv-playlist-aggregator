@@ -89,7 +89,7 @@ namespace IptvPlaylistAggregator.Service
             normalisedName = StripChannelName(normalisedName);
             normalisedName = normalisedName.ToUpper();
 
-            cache.StoreNormalisedChannelName(name, normalisedName);
+            cache.StoreNormalisedChannelName(fullName, normalisedName);
 
             return normalisedName;
         }
