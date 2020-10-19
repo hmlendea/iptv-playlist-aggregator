@@ -1254,6 +1254,7 @@
     <Name>Exclusiv TV</Name>
     <Country>RO</Country>
     <GroupId>local-moldova</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/exclusiv_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Exotica</Id>
