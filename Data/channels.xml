@@ -775,7 +775,7 @@
     <GroupId>radio</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>DeutscheWelle.de	</Id>
+    <Id>DeutscheWelle.de</Id>
     <Name>Deutsche Welle</Name>
     <Country>DE</Country>
     <GroupId>foreign</GroupId>
@@ -1072,7 +1072,7 @@
     <Name>Dobrogea TV</Name>
     <Country>RO</Country>
     <GroupId>local-dobrogea</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/dobrogea_TV.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/dobrogea_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Dobrogea</string>
       <string>RO: TV Dobrogea</string>
