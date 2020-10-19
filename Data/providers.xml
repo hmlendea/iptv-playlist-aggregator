@@ -36,7 +36,7 @@
     <Priority>5</Priority>
     <AllowCaching>false</AllowCaching>
     <Name>hmlendea's livestreams INT</Name>
-    <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/int/playlist.m3u</UrlFormat>
+    <UrlFormat>http://hori-iptv.duckdns.org:3080/livestreams/int/playlist.m3u</UrlFormat>
     <Country>INT</Country>
   </PlaylistProviderEntity>
 
@@ -154,7 +154,7 @@
     <Priority>300</Priority>
     <AllowCaching>false</AllowCaching>
     <Name>hmlendea's livestreams RO</Name>
-    <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/ro/playlist.m3u</UrlFormat>
+    <UrlFormat>http://hori-iptv.duckdns.org:3080/livestreams/ro/playlist.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
   
@@ -164,7 +164,7 @@
     <Priority>301</Priority>
     <AllowCaching>false</AllowCaching>
     <Name>hmlendea's livestreams MD</Name>
-    <UrlFormat>http://hmlendea.go.ro/iptv/livestreams/md/playlist.m3u</UrlFormat>
+    <UrlFormat>http://hori-iptv.duckdns.org:3080/livestreams/md/playlist.m3u</UrlFormat>
     <Country>MD</Country>
   </PlaylistProviderEntity>
 
