@@ -67,13 +67,9 @@ namespace IptvPlaylistAggregator.Service
 
         public string NormaliseName(string name, string country)
         {
-            string fullName;
+            string fullName = name;
 
-            if (string.IsNullOrWhiteSpace(country))
-            {
-                fullName = name;
-            }
-            else
+            if (!string.IsNullOrWhiteSpace(country))
             {
                 fullName = $"{country}: {name}";
             }

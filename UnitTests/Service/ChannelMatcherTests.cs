@@ -21,6 +21,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             channelMatcher = new ChannelMatcher(cacheMock.Object);
         }
 
+        [TestCase("Diaspora Media", "MD", "MD: Diaspora Media", "MD: Diaspora Media", "MD")]
         [TestCase("INVALID_CHANNEL", null, "iptvcat.com", "iptvcat.com", "RO")]
         [TestCase("INVALID_CHANNEL", null, "iptvcat.com", "iptvcat.com", null)]
         [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", "RO")]
@@ -135,6 +136,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("|ROM|: Cromtel", "RO", "CROMTEL")]
         [TestCase("|UK| CHELSEA TV (Live On Matches) HD", "UK", "UKCHELSEATV")]
         [TestCase("Canal Regional (Moldova)", "MD", "MDCANALREGIONAL")]
+        [TestCase("MD: MD: Diaspora Media", "MD", "MDDIASPORAMEDIA")]
         [TestCase("RO | Travel", "RO", "TRAVEL")]
         [TestCase("RO: Travel", "RO", "TRAVEL")]
         [TestCase("Travel Mix", "RO", "TRAVELMIX")]
