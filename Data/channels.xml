@@ -93,6 +93,19 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>AccentTV.ro</Id>
+    <Name>Accent TV Oltenia</Name>
+    <Country>RO</Country>
+    <GroupId>local-oltenia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/accent_tv_oltenia.png</LogoUrl>
+    <Aliases>
+      <string>RO: Accent Oltenia</string>
+      <string>RO: Accent TV Oltenia</string>
+      <string>RO: Accent TV</string>
+      <string>RO: Accent</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>ActualitateaTV.ro</Id>
     <Name>Actualitatea TV</Name>
     <Country>RO</Country>
@@ -1055,6 +1068,17 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/djing_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>DobrogeaTV.ro</Id>
+    <Name>Dobrogea TV</Name>
+    <Country>RO</Country>
+    <GroupId>local-dobrogea</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/dobrogea_TV.png</LogoUrl>
+    <Aliases>
+      <string>RO: Dobrogea</string>
+      <string>RO: TV Dobrogea</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>DocuBox.pl</Id>
     <IsEnabled>false</IsEnabled>
     <Name>DocuBox</Name>
@@ -1122,6 +1146,14 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>emiTV.ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Name>emiTV</Name>
+    <Country>RO</Country>
+    <GroupId>local-muntenia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/emi_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>EpicDrama.ro</Id>
     <Name>Epic Drama</Name>
     <Country>RO</Country>
@@ -1129,6 +1161,20 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/epic_drama.png</LogoUrl>
     <Aliases>
       <string>RO: Epic</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ERCIS.ro</Id>
+    <Name>Episcopia Romano-Catolică Iași</Name>
+    <Country>RO</Country>
+    <GroupId>religious</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/ercis.png</LogoUrl>
+    <Aliases>
+      <string>RO: Episcopia Romano-Catolică de Iași</string>
+      <string>RO: Episcopia Romano-Catolică din Iași</string>
+      <string>RO: Episcopia Romano-Catolică Iași</string>
+      <string>RO: Episcopia Romano-Catolică IS</string>
+      <string>RO: ERCIS</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3345,6 +3391,17 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MariusTrifan.ro</Id>
+    <Name>Televiziunea Marius Trifan</Name>
+    <Country>RO</Country>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_marius_trifan.png</LogoUrl>
+    <Aliases>
+      <string>RO: Marius Trifan TV</string>
+      <string>RO: TV Marius Trifan</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>TezaurTV.md</Id>
     <Name>Tezaur Folc TV</Name>
     <Country>MD</Country>
@@ -3473,6 +3530,16 @@
     <Name>Trinity</Name>
     <Country>RO</Country>
     <GroupId>unknown</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TSTV.ro</Id>
+    <Name>TSTV</Name>
+    <Country>RO</Country>
+    <GroupId>thematic</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tstv.png</LogoUrl>
+    <Aliases>
+      <string>RO: TSTV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVArad.ro</Id>
@@ -3759,6 +3826,16 @@
     <Aliases>
       <string>RO: VPTV</string>
       <string>VP HD</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>VatraTV.ro</Id>
+    <Name>Vatra TV</Name>
+    <Country>RO</Country>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/vatra_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Vatra</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
