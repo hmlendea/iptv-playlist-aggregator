@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.com/hmlendea/iptv-playlist-aggregator.svg?branch=master)](https://travis-ci.com/hmlendea/iptv-playlist-aggregator)
 
+[![Support this on Patreon](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_patreon.png)](https://www.patreon.com/hmlendea) [![Donate through PayPal](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_paypal.png)](https://www.paypal.com/donate?hosted_button_id=6YVRGJHDGWGKQ)
+
 # About
 
 IPTV Playlist Aggregator is a tool for downloading IPTV playlists from multiple sources and aggregating their channels into a single playlist. It will match the duplicated channels into a single one, based on their name, and will override any channel data (such as logo, TVG ID, etc) with your own custom one.
@@ -135,3 +137,5 @@ PlaylistProviderDefinitionEntity fields:
  - *UrlFormat* (string): The URL to the m3u playlist file of that provider. Replace the date part of the URL with a timestamp format. For example, *2019-05-19* will be replaced with *{0:yyyy-MM-dd}*. The *0* is the calendar day that is processed (today, or one of the previous ones depending on the *daysToCheck* setting)
  - *Country* (string): (Optional) If set, the country will be used in the channel matching process.
  - *ChannelNameOverride* (string): (Optional) The channel name override for all the channels in the provider's playlist.
+
+[![Support this on Patreon](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_patreon.png)](https://www.patreon.com/hmlendea) [![Donate through PayPal](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_paypal.png)](https://www.paypal.com/donate?hosted_button_id=6YVRGJHDGWGKQ)
