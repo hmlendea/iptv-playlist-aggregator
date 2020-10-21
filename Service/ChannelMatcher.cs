@@ -23,6 +23,8 @@ namespace IptvPlaylistAggregator.Service
             { "[\\(\\[]]*([Aa]uto|[Bb]ackup|[Ll]ive [Oo]n [Mm]atches|[Mm]ulti-*[Aa]udio|[Mm]ulti-*[Ss]ub|[Nn]ew!*|[Oo]n-[Dd]emand)[\\)\\]]*", "" },
             { "([a-zA-Z0-9_ ]{4})[ _\\|\\[\\(\\]\\)\".:-](Ultra|[FU])*_*[HMS][DQ]", "$1" },
             { "4[Kk]\\+", "" },
+            
+            { "RO\\(L\\) *[\\|\\[\\(\\]\\)\".:-]", "RO:" },
 
             { "^( *[\\|\\[\\(\\]\\)\".:-]* *([A-Z][A-Z]) *[\\|\\[\\(\\]\\)\".:-] *)+", "$2:" },
             { "^ *([A-Z][A-Z]): *(.*) \\(*\\1\\)*$", "$1: $2" },
