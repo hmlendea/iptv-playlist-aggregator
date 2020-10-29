@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/hmlendea/iptv-playlist-aggregator.svg?branch=master)](https://travis-ci.com/hmlendea/iptv-playlist-aggregator)
 
-[![Support this on Patreon](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_patreon.png)](https://www.patreon.com/hmlendea) [![Donate through PayPal](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_paypal.png)](https://www.paypal.com/donate?hosted_button_id=6YVRGJHDGWGKQ)
+[![Support this on Patreon](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_patreon_small.png)](https://www.patreon.com/hmlendea)[![Support this on Patreon](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_paypal_small.png)](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_paypal.png)[![Donate with LiberaPay](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_liberapay_small.png)](https://liberapay.com/HMlendea/donate)
 
 # About
 
@@ -138,4 +138,4 @@ PlaylistProviderDefinitionEntity fields:
  - *Country* (string): (Optional) If set, the country will be used in the channel matching process.
  - *ChannelNameOverride* (string): (Optional) The channel name override for all the channels in the provider's playlist.
 
-[![Support this on Patreon](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_patreon.png)](https://www.patreon.com/hmlendea) [![Donate through PayPal](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_paypal.png)](https://www.paypal.com/donate?hosted_button_id=6YVRGJHDGWGKQ)
+[![Support on Patreon](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_patreon.png)](https://www.patreon.com/hmlendea)[![Donate with PayPal](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_paypal.png)](https://www.paypal.com/donate?hosted_button_id=6YVRGJHDGWGKQ)[![Donate with LiberaPay](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_liberapay.png)](https://liberapay.com/HMlendea/donate)
