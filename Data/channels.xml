@@ -607,6 +607,9 @@
     <Country>RO</Country>
     <GroupId>kids</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cartoon_network.png</LogoUrl>
+    <Aliases>
+      <string>RO: Cartoon</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CBSReality.ro</Id>
@@ -1581,6 +1584,7 @@
       <string>RO: H!T</string>
       <string>RO: Hit Ch</string>
       <string>RO: Hit Channel</string>
+      <string>RO: Hit Music Channel</string>
       <string>RO: Hit Music</string>
       <string>RO: Hit</string>
     </Aliases>
@@ -2470,6 +2474,7 @@
       <string>RO: Nat Geographic</string>
       <string>RO: NG</string>
       <string>RO: NGC</string>
+      <string>RO: NGRO</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2992,6 +2997,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_plus.png</LogoUrl>
     <Aliases>
       <string>RO: Realitatea Plus TV</string>
+      <string>RO: Realitatea TV Plus</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3825,6 +3831,7 @@
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/valea_prahovei_tv.png</LogoUrl>
     <Aliases>
+      <string>RO: VP</string>
       <string>RO: VPTV</string>
       <string>VP HD</string>
     </Aliases>
