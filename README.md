@@ -27,7 +27,7 @@ Chose one of the following methods based on which system you want this service t
 
 `dotnet publish -c Release`
 
-The output will be located in `./bin/Release/netcoreapp2.2`
+The output will be located in `./bin/Release/net5.0`
 
 ### For a different system:
 
@@ -35,9 +35,9 @@ The output will be located in `./bin/Release/netcoreapp2.2`
 
 For a list of all possible RID values, check out [the official documentation](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog).
 
-The output will be located in `./bin/Release/netcoreapp2.2/[RID]/'.
+The output will be located in `./bin/Release/net5.0/[RID]/'.
 
-If the target system will have the *.NET Core Runtime* installed, delete or ignore the `./bin/Release/netcoreapp2.2/[RID]/publish` directory.
+If the target system will have the *.NET Core Runtime* installed, delete or ignore the `./bin/Release/net5.0/[RID]/publish` directory.
 If not, use **only** the publish directory, since that one contains all the necessary libraries that the runtime would normally provide.
 
 ## Running in background as a service
