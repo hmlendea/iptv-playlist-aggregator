@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/hmlendea/iptv-playlist-aggregator.svg?branch=master)](https://travis-ci.com/hmlendea/iptv-playlist-aggregator)
+[![Build Status](https://github.com/hmlendea/iptv-playlist-aggregator/actions/workflows/dotnet.yml/badge.svg)](https://github.com/hmlendea/iptv-playlist-aggregator/actions/workflows/dotnet.yml)
 
 [![Support this on Patreon](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_patreon_small.png)](https://www.patreon.com/hmlendea)[![Support this on Patreon](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_paypal_small.png)](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_paypal.png)[![Donate with LiberaPay](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_liberapay_small.png)](https://liberapay.com/HMlendea/donate)
 
