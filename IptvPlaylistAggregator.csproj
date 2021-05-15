@@ -22,11 +22,11 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="NuciDAL" Version="1.1.1" />
-    <PackageReference Include="NuciExtensions" Version="1.4.1.1" />
-    <PackageReference Include="NuciLog" Version="1.1.0" />
-    <PackageReference Include="NuciLog.Core" Version="2.2.5" />
+    <PackageReference Include="NuciExtensions" Version="1.4.1.2" />
+    <PackageReference Include="NuciLog" Version="1.1.0.1" />
+    <PackageReference Include="NuciLog.Core" Version="2.3.1" />
   </ItemGroup>
 
   <ItemGroup>
