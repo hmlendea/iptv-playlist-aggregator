@@ -1481,6 +1481,9 @@
     <Country>RO</Country>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hd365.png</LogoUrl>
+    <Aliases>
+      <string>HD 365</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HDNetAction.ro</Id>
@@ -1835,6 +1838,7 @@
     <GroupId>unknown</GroupId>
     <Aliases>
       <string>-----ROMANIA------</string>
+      <string>*** ROMANIA - github.com/Free-IPTV</string>
       <string>iptvcat.com</string>
       <string>RO: iptvcat.com</string>
     </Aliases>
