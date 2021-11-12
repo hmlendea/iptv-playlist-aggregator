@@ -510,6 +510,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood_classic.png</LogoUrl>
     <Aliases>
       <string>RO: BO Clasic</string>
+      <string>RO: Bollywood Classic TV</string>
       <string>RO: Bollywood Classic</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -2235,6 +2236,13 @@
       <string>Cimișlia TV</string>
       <string>MD: Cimișlia TV</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Medika.ro</Id>
+    <Name>Medika</Name>
+    <Country>RO</Country>
+    <GroupId>unknown</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/medika.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Megamax.ro</Id>
