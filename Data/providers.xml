@@ -767,7 +767,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>680</Priority>
     <Name>Free Tux TV Romania (Alternative)</Name>
-    <UrlFormat>https://database.freetuxtv.net/WebStreamExport/index?format=m3u&status=2&country=ro&isp=all</UrlFormat>
+    <UrlFormat>https://database.freetuxtv.net/WebStreamExport/index?format=m3u&amp;status=2&amp;country=ro&amp;isp=all</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
@@ -785,7 +785,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>680</Priority>
     <Name>Free Tux TV Moldova (Alternative)</Name>
-    <UrlFormat>https://database.freetuxtv.net/WebStreamExport/index?format=m3u&status=2&country=md&isp=all</UrlFormat>
+    <UrlFormat>https://database.freetuxtv.net/WebStreamExport/index?format=m3u&amp;status=2&amp;country=md&amp;isp=all</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
