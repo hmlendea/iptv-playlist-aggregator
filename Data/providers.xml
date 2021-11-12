@@ -700,24 +700,6 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>iptvresources-main</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>590</Priority>
-    <Name>iPTV Resources</Name>
-    <UrlFormat>https://iptvresources.com/iptv/ro-iptv-{0:yyyy-MM-dd}.m3u</UrlFormat>
-    <Country>RO</Country>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>iptvresources-backup</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>591</Priority>
-    <Name>iPTV Resources Backup</Name>
-    <UrlFormat>https://iptvresources.com/iptv/ro-iptv-{0:yyyy-MM-dd}-1.m3u</UrlFormat>
-    <Country>RO</Country>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>freeiptvserver</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>620</Priority>
@@ -768,24 +750,6 @@
     <Priority>626</Priority>
     <Name>Free IPTV Server Backup 5</Name>
     <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com6.m3u</UrlFormat>
-    <Country>RO</Country>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>m3uplaylist-list1</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>650</Priority>
-    <Name>M3U Playlist List 1</Name>
-    <UrlFormat>http://m3uplaylist.com/m3u-files/romania_iptv_{0:dd-MM-yyyy}_m3uplaylist_com_S1.m3u</UrlFormat>
-    <Country>RO</Country>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>m3uplaylist-list2</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>660</Priority>
-    <Name>M3U Playlist List 2</Name>
-    <UrlFormat>http://m3uplaylist.com/m3u-files/romania_iptv_m3uplaylist_com.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
