@@ -18,14 +18,16 @@ namespace IptvPlaylistAggregator.Service
 
         static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
-            { "[\\(\\[]]*([Aa]uto|[Bb]|[Bb]ackup|[Ll]ive [Oo]n [Mm]atches|[Mm]ulti-*[Aa]udio|[Mm]ulti-*[Ss]ub|[Nn]ew!*|[Oo]n-[Dd]emand)[\\)\\]]*", "" },
+            { "[\\(\\[]]*([Aa]uto|[Bb]|[Bb]ackup|[Ll]ive [Oo]n [Mm]atches|[Mm]atch[ -]*[Tt]ime|[Mm]ulti-*[Aa]udio|[Mm]ulti-*[Ss]ub|[Nn]ew!*|[Oo]n-[Dd]emand)[\\)\\]]*", "" },
             { "(.)[ \\.:_\\-\\|\\[\\(\\]\\)\"]+(Ultra|Full|[FU])*[_-]*[HMS][DQ]", "$1" },
             { "4[Kk]\\+", "" },
+
+            { "^(.+)\\s+VIP\\s+([A-Z][A-Z])\\s*$", "$2: $1" },
             
             { "RO\\(L\\) *[\\|\\[\\(\\]\\)\".:-]", "RO:" },
 
             { "^( *[\\|\\[\\(\\]\\)\".:-]* *([A-Z][A-Z]) *[\\|\\[\\(\\]\\)\".:-] *)+", "$2:" },
-            { "^ *([A-Z][A-Z]): *(.*) \\(*\\1\\)*$", "$1: $2" },
+            { "^\\s*([A-Z][A-Z]): *(.*) \\(*\\1\\)*$", "$1: $2" },
 
             { "Moldavia", "Moldova" },
             { "RUMANIA", "Romania" },
@@ -47,7 +49,7 @@ namespace IptvPlaylistAggregator.Service
             { " HEVC$", "" },
             { " HEVC ", "" },
 
-            { "^ *RO ", "RO: " },
+            { "^\\s*RO ", "RO: " },
             { " \\(*ROM\\)*$", "" },
             { " *[\\|\\()]*ROM*[\\|\\):]", "RO:" },
             { "^Romania[n]*:", "RO:" },
