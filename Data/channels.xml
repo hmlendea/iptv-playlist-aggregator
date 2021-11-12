@@ -612,6 +612,12 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>CBNFamily.ro</Id>
+    <Name>CBN Family</Name>
+    <Country>RO</Country>
+    <GroupId>unknown</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>CBSReality.ro</Id>
     <Name>CBS Reality</Name>
     <Country>RO</Country>
