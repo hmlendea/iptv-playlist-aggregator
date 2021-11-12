@@ -18,14 +18,20 @@ namespace IptvPlaylistAggregator.Service
 
         static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
-            { "[\\(\\[]]*([Aa]uto|[Bb]|[Bb]ackup|[Ll]ive [Oo]n [Mm]atches|[Mm]ulti-*[Aa]udio|[Mm]ulti-*[Ss]ub|[Nn]ew!*|[Oo]n-[Dd]emand)[\\)\\]]*", "" },
+            { "^\\s+", "" },
+            { "\\s+$", "" },
+            { "&amp;", "&" },
+
+            { "[\\(\\[]]*([Aa]uto|[Bb]|[Bb]ackup|[Ll]ive [Oo]n [Mm]atches|[Mm]atch[ -]*[Tt]ime|[Mm]ulti-*[Aa]udio|[Mm]ulti-*[Ss]ub|[Nn]ew!*|[Oo]n-[Dd]emand)[\\)\\]]*", "" },
             { "(.)[ \\.:_\\-\\|\\[\\(\\]\\)\"]+(Ultra|Full|[FU])*[_-]*[HMS][DQ]", "$1" },
             { "4[Kk]\\+", "" },
+
+            { "^(.+)\\s+VIP\\s+([A-Z][A-Z])\\s*$", "$2: $1" },
             
             { "RO\\(L\\) *[\\|\\[\\(\\]\\)\".:-]", "RO:" },
 
-            { "^( *[\\|\\[\\(\\]\\)\".:-]* *([A-Z][A-Z]) *[\\|\\[\\(\\]\\)\".:-] *)+", "$2:" },
-            { "^ *([A-Z][A-Z]): *(.*) \\(*\\1\\)*$", "$1: $2" },
+            { "^([\\|\\[\\(\\]\\)\".:-]* *([A-Z][A-Z]) *[\\|\\[\\(\\]\\)\".:-] *)+", "$2:" },
+            { "^([A-Z][A-Z]): *(.*) \\(*\\1\\)*$", "$1: $2" },
 
             { "Moldavia", "Moldova" },
             { "RUMANIA", "Romania" },
@@ -47,13 +53,13 @@ namespace IptvPlaylistAggregator.Service
             { " HEVC$", "" },
             { " HEVC ", "" },
 
-            { "^ *RO ", "RO: " },
+            { "^RO ", "RO: " },
             { " \\(*ROM\\)*$", "" },
             { " *[\\|\\()]*ROM*[\\|\\):]", "RO:" },
             { "^Romania[n]*:", "RO:" },
-            { "^ *[\\|]*VIP *([A-Z][A-Z]):", "$1:" },
+            { "^[\\|]*VIP *([A-Z][A-Z]):", "$1:" },
 
-            { "^ *([A-Z][A-Z]: *)*", "$1" },
+            { "^([A-Z][A-Z]: *)*", "$1" },
             
             { "^(RO: *)*", "" },
         };
@@ -95,7 +101,7 @@ namespace IptvPlaylistAggregator.Service
                name1.Aliases.Any(name1alias => DoChannelNamesMatch(name1alias, name1.Country, name2, country2));
 
         bool DoChannelNamesMatch(string name1, string country1, string name2, string country2)
-            => NormaliseName(name1, country1).Equals(NormaliseName(name2, country2));
+            => name1.Equals(name2) || NormaliseName(name1, country1).Equals(NormaliseName(name2, country2));
 
         string StripChannelName(string name)
         {

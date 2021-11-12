@@ -510,6 +510,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bollywood_classic.png</LogoUrl>
     <Aliases>
       <string>RO: BO Clasic</string>
+      <string>RO: Bollywood Classic TV</string>
       <string>RO: Bollywood Classic</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -610,6 +611,12 @@
     <Aliases>
       <string>RO: Cartoon</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>CBNFamily.ro</Id>
+    <Name>CBN Family</Name>
+    <Country>RO</Country>
+    <GroupId>unknown</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>CBSReality.ro</Id>
@@ -1481,6 +1488,9 @@
     <Country>RO</Country>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hd365.png</LogoUrl>
+    <Aliases>
+      <string>HD 365</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HDNetAction.ro</Id>
@@ -1835,6 +1845,7 @@
     <GroupId>unknown</GroupId>
     <Aliases>
       <string>-----ROMANIA------</string>
+      <string>*** ROMANIA - github.com/Free-IPTV</string>
       <string>iptvcat.com</string>
       <string>RO: iptvcat.com</string>
     </Aliases>
@@ -2225,6 +2236,13 @@
       <string>Cimișlia TV</string>
       <string>MD: Cimișlia TV</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Medika.ro</Id>
+    <Name>Medika</Name>
+    <Country>RO</Country>
+    <GroupId>unknown</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/medika.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Megamax.ro</Id>
