@@ -218,7 +218,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>620</Priority>
     <Name>Free IPTV Server</Name>
-    <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com.m3u</UrlFormat>
+    <UrlFormat>https://freeiptvserver.info/dl/ro_{0:ddMMyy}_iptvsource_com.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
@@ -227,7 +227,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>621</Priority>
     <Name>Free IPTV Server Backup 1</Name>
-    <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com2.m3u</UrlFormat>
+    <UrlFormat>https://freeiptvserver.info/dl/ro_{0:ddMMyy}_iptvsource_com2.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
@@ -236,7 +236,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>623</Priority>
     <Name>Free IPTV Server Backup 2</Name>
-    <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com3.m3u</UrlFormat>
+    <UrlFormat>https://freeiptvserver.info/dl/ro_{0:ddMMyy}_iptvsource_com3.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
@@ -245,7 +245,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>624</Priority>
     <Name>Free IPTV Server Backup 3</Name>
-    <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com4.m3u</UrlFormat>
+    <UrlFormat>https://freeiptvserver.info/dl/ro_{0:ddMMyy}_iptvsource_com4.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
@@ -254,7 +254,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>625</Priority>
     <Name>Free IPTV Server Backup 4</Name>
-    <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com5.m3u</UrlFormat>
+    <UrlFormat>https://freeiptvserver.info/dl/ro_{0:ddMMyy}_iptvsource_com5.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
@@ -263,7 +263,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>626</Priority>
     <Name>Free IPTV Server Backup 5</Name>
-    <UrlFormat>https://freeiptvserver.com/dl/ro_{0:ddMMyy}_iptvsource_com6.m3u</UrlFormat>
+    <UrlFormat>https://freeiptvserver.info/dl/ro_{0:ddMMyy}_iptvsource_com6.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
@@ -375,15 +375,6 @@
     <Priority>1100</Priority>
     <Name>vb6rocod's IPTV GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/vb6rocod/hddlinks_android/master/tv/pl/Frecvente.m3u</UrlFormat>
-    <Country>RO</Country>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>github-vb6rocod-ro-tvr</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>1101</Priority>
-    <Name>vb6rocod's IPTV GitHub RO TVR Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/vb6rocod/hddlinks_android/master/tv/pl/TVR.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
