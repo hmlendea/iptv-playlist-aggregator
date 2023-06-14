@@ -2790,11 +2790,11 @@
     <LogoUrl>https://iptv.live/images/logo/channel/smalls/7a3dd1b1de6a97b599768aa52df85a7d.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>Pro2.ro</Id>
-    <Name>Pro 2</Name>
+    <Id>Acasa.ro</Id>
+    <Name>Acasă</Name>
     <Country>RO</Country>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_2.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/acasa.png</LogoUrl>
     <Aliases>
       <string>RO: Acasa</string>
       <string>RO: P.2</string>
@@ -2830,10 +2830,10 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AcasaGold.ro</Id>
-    <Name>Pro Gold</Name>
+    <Name>Acasă Gold</Name>
     <Country>RO</Country>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_gold.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/acasa_gold.png</LogoUrl>
     <Aliases>
       <string>RO: Acasa Gold</string>
       <string>RO: P.Gold</string>
