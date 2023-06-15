@@ -603,6 +603,13 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>CardioTV.ro</Id>
+    <Name>Cardio TV</Name>
+    <Country>RO</Country>
+    <GroupId>thematic</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cardio_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>CartoonNetwork.ro</Id>
     <Name>Cartoon Network</Name>
     <Country>RO</Country>
@@ -1737,7 +1744,17 @@
     <Name>Impact TV</Name>
     <Country>RO</Country>
     <GroupId>music</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/impact-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/impact_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Impact TV Manele</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ImpactTVDance.ro</Id>
+    <Name>Impact TV Dance</Name>
+    <Country>RO</Country>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/impact_tv_dance.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>IneditTV.ro</Id>
@@ -1930,6 +1947,16 @@
   <ChannelDefinitionEntity>
     <Id>KanalD.ro</Id>
     <Name>Kanal D</Name>
+    <Country>RO</Country>
+    <GroupId>general</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/kanal_d.png</LogoUrl>
+    <Aliases>
+      <string>RO: Canal D</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>KanalD2.ro</Id>
+    <Name>Kanal D2</Name>
     <Country>RO</Country>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/kanal_d.png</LogoUrl>
@@ -2372,6 +2399,13 @@
     <Country>MD</Country>
     <GroupId>sport</GroupId>
     <LogoUrl>http://live-tv.me/wp-content/uploads/2014/08/MOLDOVA-SPORT-TV.gif</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>MoldovaTV.ro</Id>
+    <Name>Moldova TV</Name>
+    <Country>RO</Country>
+    <GroupId>local-moldova</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/moldova_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MoozDance.ro</Id>
@@ -2819,6 +2853,13 @@
     <LogoUrl>https://iptv.live/images/logo/channel/smalls/7a3dd1b1de6a97b599768aa52df85a7d.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>PrivescEU.ro</Id>
+    <Name>Privesc EU</Name>
+    <Country>RO</Country>
+    <GroupId>general</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/privesc_eu.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Acasa.ro</Id>
     <Name>Acasă</Name>
     <Country>RO</Country>
@@ -2885,6 +2926,18 @@
     <LogoUrl>https://www.ast.tv/img/ast-tv_logo-beta.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>ProArena.ro</Id>
+    <Name>Pro Arena</Name>
+    <Country>RO</Country>
+    <GroupId>sport</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_arena.png</LogoUrl>
+    <Aliases>
+      <string>RO: P-X</string>
+      <string>RO: Sport</string>
+      <string>RO: Sport.RO</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>ProTV.ro</Id>
     <Name>Pro TV</Name>
     <Country>RO</Country>
@@ -2925,18 +2978,6 @@
       <string>RO: Pro News</string>
       <string>RO: Pro TV News</string>
       <string>RO: Știrile Pro TV</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>ProX.ro</Id>
-    <Name>Pro X</Name>
-    <Country>RO</Country>
-    <GroupId>sport</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_x.png</LogoUrl>
-    <Aliases>
-      <string>RO: P-X</string>
-      <string>RO: Sport</string>
-      <string>RO: Sport.RO</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
