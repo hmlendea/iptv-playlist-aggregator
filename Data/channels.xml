@@ -3062,6 +3062,40 @@
     <GroupId>radio</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>RealitateaPlus.ro</Id>
+    <Name>Realitatea Plus</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_plus.png</LogoUrl>
+    <Aliases>
+      <string>RO: Realitatea Plus TV</string>
+      <string>RO: Realitatea TV Plus</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>RealitateaSportiva.ro</Id>
+    <Name>Realitatea Sportivă</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_sportiva.png</LogoUrl>
+    <Aliases>
+      <string>Realitatea Sport</string>
+      <string>Realitatea TV Sport</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>RealitateaStar.ro</Id>
+    <Name>Realitatea Star</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_star.png</LogoUrl>
+    <Aliases>
+      <string>Realitatea Stars</string>
+      <string>Realitatea TV Star</string>
+      <string>Realitatea TV Stars</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>RealitateaTV.ro</Id>
     <Name>Realitatea</Name>
     <Country>RO</Country>
@@ -3075,17 +3109,6 @@
       <string>RO: Realitatea TV</string>
       <string>RO: Realite</string>
       <string>RO: Realtaea</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>RealitateaPlus.ro</Id>
-    <Name>Realitatea Plus</Name>
-    <Country>RO</Country>
-    <GroupId>news</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_plus.png</LogoUrl>
-    <Aliases>
-      <string>RO: Realitatea Plus TV</string>
-      <string>RO: Realitatea TV Plus</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
