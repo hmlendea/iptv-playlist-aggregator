@@ -1,0 +1,48 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.6.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6C08895A-A364-4051-9BF5-5F35FCDD07AC}") = "IptvPlaylistAggregator", "IptvPlaylistAggregator\IptvPlaylistAggregator.csproj", "{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}"
+EndProject
+Project("{6C08895A-A364-4051-9BF5-5F35FCDD07AC}") = "IptvPlaylistAggregator.UnitTests", "IptvPlaylistAggregator.UnitTests\IptvPlaylistAggregator.UnitTests.csproj", "{70DDC29A-AE81-4069-9714-B8F1F1B7A831}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Debug|x64.Build.0 = Debug|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Debug|x86.Build.0 = Debug|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Release|x64.ActiveCfg = Release|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Release|x64.Build.0 = Release|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{9BF6E191-B3C4-4772-B28C-F6F86CFE60CA}.Release|x86.Build.0 = Release|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Debug|x64.Build.0 = Debug|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Debug|x86.Build.0 = Debug|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Release|x64.ActiveCfg = Release|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Release|x64.Build.0 = Release|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Release|x86.ActiveCfg = Release|Any CPU
+		{70DDC29A-AE81-4069-9714-B8F1F1B7A831}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
