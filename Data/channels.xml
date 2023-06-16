@@ -603,6 +603,13 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>CardioTV.ro</Id>
+    <Name>Cardio TV</Name>
+    <Country>RO</Country>
+    <GroupId>thematic</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cardio_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>CartoonNetwork.ro</Id>
     <Name>Cartoon Network</Name>
     <Country>RO</Country>
@@ -684,7 +691,7 @@
     <Name>Columna TV</Name>
     <Country>RO</Country>
     <GroupId>local-muntenia</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/columna-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/columna_tv.png</LogoUrl>
     <Aliases>
       <string>Columna TV Târgoviște</string>
       <string>Columna</string>
@@ -1275,6 +1282,18 @@
     <LogoUrl>https://iptv.live/images/logo/channel/smalls/ee3a3d059b0289892dd9b6466488c101.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>Exploris.ro</Id>
+    <Name>Exploris</Name>
+    <Country>RO</Country>
+    <GroupId>thematic</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/exploris.png</LogoUrl>
+    <Aliases>
+      <string>RO: Exploris</string>
+      <string>RO: TV Sud Est Exploris</string>
+      <string>TV SE Exploris</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>ExtremeSports.ro</Id>
     <Name>Extreme Sports</Name>
     <Country>RO</Country>
@@ -1680,6 +1699,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>HITS360.ro</Id>
+    <Name>HITS 360</Name>
+    <Country>RO</Country>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hits360.png</LogoUrl>
+    <Aliases>
+      <string>RO: HITS 360</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>HoraTV.ro</Id>
     <Name>Hora TV</Name>
     <Country>RO</Country>
@@ -1715,7 +1744,17 @@
     <Name>Impact TV</Name>
     <Country>RO</Country>
     <GroupId>music</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/impact-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/impact_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Impact TV Manele</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ImpactTVDance.ro</Id>
+    <Name>Impact TV Dance</Name>
+    <Country>RO</Country>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/impact_tv_dance.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>IneditTV.ro</Id>
@@ -1757,6 +1796,13 @@
     <Country>RO</Country>
     <GroupId>local-maramures</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/informatia_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>InfoTVRomania.ro</Id>
+    <Name>Info TV România</Name>
+    <Country>RO</Country>
+    <GroupId>general</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/trace_urban.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Intermedia.ro</Id>
@@ -1901,6 +1947,16 @@
   <ChannelDefinitionEntity>
     <Id>KanalD.ro</Id>
     <Name>Kanal D</Name>
+    <Country>RO</Country>
+    <GroupId>general</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/kanal_d.png</LogoUrl>
+    <Aliases>
+      <string>RO: Canal D</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>KanalD2.ro</Id>
+    <Name>Kanal D2</Name>
     <Country>RO</Country>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/kanal_d.png</LogoUrl>
@@ -2345,6 +2401,13 @@
     <LogoUrl>http://live-tv.me/wp-content/uploads/2014/08/MOLDOVA-SPORT-TV.gif</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MoldovaTV.ro</Id>
+    <Name>Moldova TV</Name>
+    <Country>RO</Country>
+    <GroupId>local-moldova</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/moldova_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>MoozDance.ro</Id>
     <Name>Mooz Dance</Name>
     <Country>RO</Country>
@@ -2437,7 +2500,7 @@
     <Name>Muscel TV</Name>
     <Country>RO</Country>
     <GroupId>local-muntenia</GroupId>
-    <LogoUrl>http://musceltv.ro/site/wp-content/uploads/2016/05/microsigla-frontala.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/muscel_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Muscel</string>
     </Aliases>
@@ -2790,11 +2853,18 @@
     <LogoUrl>https://iptv.live/images/logo/channel/smalls/7a3dd1b1de6a97b599768aa52df85a7d.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>Pro2.ro</Id>
-    <Name>Pro 2</Name>
+    <Id>PrivescEU.ro</Id>
+    <Name>Privesc EU</Name>
+    <Country>RO</Country>
+    <GroupId>general</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/privesc_eu.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Acasa.ro</Id>
+    <Name>Acasă</Name>
     <Country>RO</Country>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_2.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/acasa.png</LogoUrl>
     <Aliases>
       <string>RO: Acasa</string>
       <string>RO: P.2</string>
@@ -2830,10 +2900,10 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AcasaGold.ro</Id>
-    <Name>Pro Gold</Name>
+    <Name>Acasă Gold</Name>
     <Country>RO</Country>
     <GroupId>movies</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_gold.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/acasa_gold.png</LogoUrl>
     <Aliases>
       <string>RO: Acasa Gold</string>
       <string>RO: P.Gold</string>
@@ -2854,6 +2924,18 @@
     <Country>INT</Country>
     <GroupId>porn</GroupId>
     <LogoUrl>https://www.ast.tv/img/ast-tv_logo-beta.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>ProArena.ro</Id>
+    <Name>Pro Arena</Name>
+    <Country>RO</Country>
+    <GroupId>sport</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_arena.png</LogoUrl>
+    <Aliases>
+      <string>RO: P-X</string>
+      <string>RO: Sport</string>
+      <string>RO: Sport.RO</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ProTV.ro</Id>
@@ -2896,18 +2978,6 @@
       <string>RO: Pro News</string>
       <string>RO: Pro TV News</string>
       <string>RO: Știrile Pro TV</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>ProX.ro</Id>
-    <Name>Pro X</Name>
-    <Country>RO</Country>
-    <GroupId>sport</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/pro_x.png</LogoUrl>
-    <Aliases>
-      <string>RO: P-X</string>
-      <string>RO: Sport</string>
-      <string>RO: Sport.RO</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2992,6 +3062,40 @@
     <GroupId>radio</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>RealitateaPlus.ro</Id>
+    <Name>Realitatea Plus</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_plus.png</LogoUrl>
+    <Aliases>
+      <string>RO: Realitatea Plus TV</string>
+      <string>RO: Realitatea TV Plus</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>RealitateaSportiva.ro</Id>
+    <Name>Realitatea Sportivă</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_sportiva.png</LogoUrl>
+    <Aliases>
+      <string>Realitatea Sport</string>
+      <string>Realitatea TV Sport</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>RealitateaStar.ro</Id>
+    <Name>Realitatea Star</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_star.png</LogoUrl>
+    <Aliases>
+      <string>Realitatea Stars</string>
+      <string>Realitatea TV Star</string>
+      <string>Realitatea TV Stars</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>RealitateaTV.ro</Id>
     <Name>Realitatea</Name>
     <Country>RO</Country>
@@ -3005,17 +3109,6 @@
       <string>RO: Realitatea TV</string>
       <string>RO: Realite</string>
       <string>RO: Realtaea</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>RealitateaPlus.ro</Id>
-    <Name>Realitatea Plus</Name>
-    <Country>RO</Country>
-    <GroupId>news</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/realitatea_plus.png</LogoUrl>
-    <Aliases>
-      <string>RO: Realitatea Plus TV</string>
-      <string>RO: Realitatea TV Plus</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3428,7 +3521,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TezaurTV.md</Id>
-    <Name>Tezaur Folc TV</Name>
+    <Name>Tezaur TV</Name>
     <Country>MD</Country>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tezaur_folc_tv.png</LogoUrl>
@@ -3444,7 +3537,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TezaurTV.ro</Id>
-    <Name>Tezaur TV</Name>
+    <Name>Televiziunea Tezaur</Name>
     <Country>RO</Country>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tezaur_tv.png</LogoUrl>
@@ -3505,6 +3598,13 @@
     <Country>RO</Country>
     <GroupId>movies</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tnt.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TraceUrbanHD.ro</Id>
+    <Name>Trace Urban</Name>
+    <Country>RO</Country>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/trace_urban.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TraditiiTV.ro</Id>
@@ -3769,6 +3869,13 @@
     <Country>RO</Country>
     <GroupId>local-oltenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_craiova.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVRCultural.ro</Id>
+    <Name>TVR Cultural</Name>
+    <Country>RO</Country>
+    <GroupId>thematic</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_cultural.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVRIasi.ro</Id>
