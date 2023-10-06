@@ -534,6 +534,9 @@
     <Country>RO</Country>
     <GroupId>local-bucovina</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/bucovina_tv.png</LogoUrl>
+    <Aliases>
+      <string>MD: Bucovina TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>BucurestiTV.ro</Id>
@@ -1208,6 +1211,7 @@
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://www.tvsatmediagroup.ro/images/15063296804206_SIGLA%20EST%20TV.png</LogoUrl>
     <Aliases>
+      <string>RO: EST TV Neamt</string>
       <string>RO: EST TV Neamț</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1803,6 +1807,10 @@
     <Country>RO</Country>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/trace_urban.png</LogoUrl>
+    <Aliases>
+      <string>RO: Info TV</string>
+      <string>RO: Info TV România</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Intermedia.ro</Id>
@@ -1814,6 +1822,7 @@
       <string>Intermedia TV</string>
       <string>Media Regional</string>
       <string>RO: Intermedia Suceava</string>
+      <string>RO: Intermedia TV</string>
       <string>RO: Media TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -1962,6 +1971,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/kanal_d.png</LogoUrl>
     <Aliases>
       <string>RO: Canal D</string>
+      <string>RO: KANAL D2</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2858,6 +2868,9 @@
     <Country>RO</Country>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/privesc_eu.png</LogoUrl>
+    <Aliases>
+      <string>RO: Privesc EU</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Acasa.ro</Id>
@@ -3081,6 +3094,7 @@
     <Aliases>
       <string>Realitatea Sport</string>
       <string>Realitatea TV Sport</string>
+      <string>RO: Realitatea Sportivă</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3093,6 +3107,7 @@
       <string>Realitatea Stars</string>
       <string>Realitatea TV Star</string>
       <string>Realitatea TV Stars</string>
+      <string>RO: Realitatea Star</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3605,6 +3620,10 @@
     <Country>RO</Country>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/trace_urban.png</LogoUrl>
+    <Aliases>
+      <string>RO: Trace Urban TV</string>
+      <string>RO: Trace Urban</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TraditiiTV.ro</Id>
@@ -3736,6 +3755,9 @@
     <Country>RO</Country>
     <GroupId>local-bucovina</GroupId>
     <LogoUrl>https://televiziuneaplus.ro/wp-content/uploads/2019/04/cropped-tv-plus-regional.png</LogoUrl>
+    <Aliases>
+      <string>Romania: TVPlus Suceava</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVPrim.md</Id>
@@ -3764,6 +3786,7 @@
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/tv-sud-est.png</LogoUrl>
     <Aliases>
+      <string>RO: TV SE</string>
       <string>RO: TV Sud Est TVSAT</string>
       <string>TV SE</string>
     </Aliases>
@@ -3941,6 +3964,9 @@
     <Country>RO</Country>
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvs_at.png</LogoUrl>
+    <Aliases>
+      <string>Romania: TVSat</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>UTV.ro</Id>
@@ -3956,6 +3982,7 @@
     <GroupId>local-muntenia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/valea_prahovei_tv.png</LogoUrl>
     <Aliases>
+      <string>RO: VP TV</string>
       <string>RO: VP</string>
       <string>RO: VPTV</string>
       <string>VP HD</string>
