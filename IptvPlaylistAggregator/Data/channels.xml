@@ -1213,6 +1213,7 @@
     <Aliases>
       <string>RO: EST TV Neamt</string>
       <string>RO: EST TV Neamț</string>
+      <string>Romania: EST TV Neamt</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1513,6 +1514,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hd365.png</LogoUrl>
     <Aliases>
       <string>HD 365</string>
+      <string>RO: HD 365</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -1824,6 +1826,7 @@
       <string>RO: Intermedia Suceava</string>
       <string>RO: Intermedia TV</string>
       <string>RO: Media TV</string>
+      <string>Romania: Intermedia TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3788,6 +3791,7 @@
     <Aliases>
       <string>RO: TV SE</string>
       <string>RO: TV Sud Est TVSAT</string>
+      <string>Romania: TV SE</string>
       <string>TV SE</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -3985,6 +3989,7 @@
       <string>RO: VP TV</string>
       <string>RO: VP</string>
       <string>RO: VPTV</string>
+      <string>Romania: VP TV</string>
       <string>VP HD</string>
     </Aliases>
   </ChannelDefinitionEntity>
