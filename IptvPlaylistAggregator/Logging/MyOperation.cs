@@ -4,11 +4,7 @@ namespace IptvPlaylistAggregator.Logging
 {
     public sealed class MyOperation : Operation
     {
-        MyOperation(string name)
-            : base(name)
-        {
-            
-        }
+        private MyOperation(string name) : base(name) { }
 
         public static Operation PlaylistFetching => new MyOperation(nameof(PlaylistFetching));
 

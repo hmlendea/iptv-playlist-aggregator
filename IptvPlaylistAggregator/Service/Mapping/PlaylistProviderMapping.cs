@@ -6,50 +6,36 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service.Mapping
 {
-    static class PlaylistProviderMapping
+    internal static class PlaylistProviderMapping
     {
-        internal static PlaylistProvider ToServiceModel(this PlaylistProviderEntity dataObject)
+        internal static PlaylistProvider ToServiceModel(this PlaylistProviderEntity dataObject) => new()
         {
-            PlaylistProvider serviceModel = new PlaylistProvider();
-            serviceModel.Id = dataObject.Id;
-            serviceModel.IsEnabled = dataObject.IsEnabled;
-            serviceModel.Priority = dataObject.Priority;
-            serviceModel.AllowCaching = dataObject.AllowCaching;
-            serviceModel.Name = dataObject.Name;
-            serviceModel.UrlFormat = dataObject.UrlFormat;
-            serviceModel.Country = dataObject.Country;
-            serviceModel.ChannelNameOverride = dataObject.ChannelNameOverride;
+            Id = dataObject.Id,
+            IsEnabled = dataObject.IsEnabled,
+            Priority = dataObject.Priority,
+            AllowCaching = dataObject.AllowCaching,
+            Name = dataObject.Name,
+            UrlFormat = dataObject.UrlFormat,
+            Country = dataObject.Country,
+            ChannelNameOverride = dataObject.ChannelNameOverride
+        };
 
-            return serviceModel;
-        }
-
-        internal static PlaylistProviderEntity ToDataObject(this PlaylistProvider serviceModel)
+        internal static PlaylistProviderEntity ToDataObject(this PlaylistProvider serviceModel) => new()
         {
-            PlaylistProviderEntity dataObject = new PlaylistProviderEntity();
-            dataObject.Id = serviceModel.Id;
-            dataObject.IsEnabled = serviceModel.IsEnabled;
-            dataObject.Priority = serviceModel.Priority;
-            dataObject.AllowCaching = serviceModel.AllowCaching;
-            dataObject.Name = serviceModel.Name;
-            dataObject.UrlFormat = serviceModel.UrlFormat;
-            dataObject.Country = serviceModel.Country;
-            dataObject.ChannelNameOverride = serviceModel.ChannelNameOverride;
-
-            return dataObject;
-        }
+            Id = serviceModel.Id,
+            IsEnabled = serviceModel.IsEnabled,
+            Priority = serviceModel.Priority,
+            AllowCaching = serviceModel.AllowCaching,
+            Name = serviceModel.Name,
+            UrlFormat = serviceModel.UrlFormat,
+            Country = serviceModel.Country,
+            ChannelNameOverride = serviceModel.ChannelNameOverride
+        };
 
         internal static IEnumerable<PlaylistProvider> ToServiceModels(this IEnumerable<PlaylistProviderEntity> dataObjects)
-        {
-            IEnumerable<PlaylistProvider> serviceModels = dataObjects.Select(dataObject => dataObject.ToServiceModel());
-
-            return serviceModels;
-        }
+            => dataObjects.Select(dataObject => dataObject.ToServiceModel());
 
         internal static IEnumerable<PlaylistProviderEntity> ToEntities(this IEnumerable<PlaylistProvider> serviceModels)
-        {
-            IEnumerable<PlaylistProviderEntity> dataObjects = serviceModels.Select(serviceModel => serviceModel.ToDataObject());
-
-            return dataObjects;
-        }
+            => serviceModels.Select(serviceModel => serviceModel.ToDataObject());
     }
 }

@@ -18,13 +18,13 @@ namespace IptvPlaylistAggregator
 {
     public class Program
     {
-        static ApplicationSettings applicationSettings;
-        static CacheSettings cacheSettings;
-        static DataStoreSettings dataStoreSettings;
-        static NuciLoggerSettings nuciLoggerSettings;
+        private static ApplicationSettings applicationSettings;
+        private static CacheSettings cacheSettings;
+        private static DataStoreSettings dataStoreSettings;
+        private static NuciLoggerSettings nuciLoggerSettings;
 
-        static ILogger logger;
-        static ICacheManager cacheManager;
+        private static ILogger logger;
+        private static ICacheManager cacheManager;
 
         public static void Main(string[] args)
         {
@@ -58,7 +58,7 @@ namespace IptvPlaylistAggregator
                 .AddSingleton<ILogger, NuciLogger>()
                 .BuildServiceProvider();
 
-            
+
             logger = serviceProvider.GetService<ILogger>();
             cacheManager = serviceProvider.GetService<ICacheManager>();
 
@@ -84,21 +84,17 @@ namespace IptvPlaylistAggregator
 
             logger.Info(Operation.ShutDown, OperationStatus.Success);
         }
-        
-        static IConfiguration LoadConfiguration()
-        {
-            return new ConfigurationBuilder()
+
+        private static IConfiguration LoadConfiguration()
+            => new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", true, true)
                 .Build();
-        }
 
-        static void LogInnerExceptions(AggregateException exception)
+        private static void LogInnerExceptions(AggregateException exception)
         {
             foreach (Exception innerException in exception.InnerExceptions)
             {
-                AggregateException innerAggregateException = innerException as AggregateException;
-
-                if (innerAggregateException is null)
+                if (innerException is not AggregateException)
                 {
                     logger.Fatal(Operation.Unknown, OperationStatus.Failure, innerException);
                 }
@@ -109,7 +105,7 @@ namespace IptvPlaylistAggregator
             }
         }
 
-        static void SaveCacheToDisk()
+        private static void SaveCacheToDisk()
         {
             logger.Info(MyOperation.CacheSaving, OperationStatus.Started);
             cacheManager.SaveCacheToDisk();

@@ -6,7 +6,7 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
     public sealed class ChannelDefinitionEntity : EntityBase
     {
-        const string UnknownGroupPlaceholder = "unknown";
+        private const string UnknownGroupPlaceholder = "unknown";
 
         public bool IsEnabled { get; set; }
 

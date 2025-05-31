@@ -1,34 +1,32 @@
-using NUnit.Framework;
-
 using Moq;
+using NuciLog.Core;
+using NUnit.Framework;
 
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.Service;
 
-using NuciLog.Core;
-
-namespace IptvPlaylistAggregator.UnitTests.Service.Models
+namespace IptvPlaylistAggregator.UnitTests.Service
 {
     public sealed class MediaSourceCheckerTests
     {
-        Mock<IFileDownloader> fileDownloaderMock;
-        Mock<IPlaylistFileBuilder> playlistFileBuilderMock;
-        Mock<ICacheManager> cacheMock;
-        Mock<ILogger> loggerMock;
-        ApplicationSettings applicationSettings;
+        private Mock<IFileDownloader> fileDownloaderMock;
+        private Mock<IPlaylistFileBuilder> playlistFileBuilderMock;
+        private Mock<ICacheManager> cacheMock;
+        private Mock<ILogger> loggerMock;
+        private ApplicationSettings applicationSettings;
 
-        IMediaSourceChecker mediaSourceChecker;
+        private MediaSourceChecker mediaSourceChecker;
 
         [SetUp]
         public void SetUp()
         {
-            fileDownloaderMock = new Mock<IFileDownloader>();
-            playlistFileBuilderMock = new Mock<IPlaylistFileBuilder>();
-            cacheMock = new Mock<ICacheManager>();
-            loggerMock = new Mock<ILogger>();
-            applicationSettings = new ApplicationSettings();
+            fileDownloaderMock = new();
+            playlistFileBuilderMock = new();
+            cacheMock = new();
+            loggerMock = new();
+            applicationSettings = new();
 
-            mediaSourceChecker = new MediaSourceChecker(
+            mediaSourceChecker = new(
                 fileDownloaderMock.Object,
                 playlistFileBuilderMock.Object,
                 cacheMock.Object,
@@ -39,42 +37,31 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("https://www.youtube.com/watch?v=fxFIgBld95E")]
         [Test]
         public void GivenTheSourceIsYouTubeVideo_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
-        {
-            AssertThatSourceUrlIsNotPlayable(sourceUrl);
-        }
+            => AssertThatSourceUrlIsNotPlayable(sourceUrl);
 
         [TestCase("https://dotto.edvr.ro/dottotv_1603019528.mp4")]
         [TestCase("https://iptvcat.com/assets/videos/lazycat-iptvcat.com.mp4?fluxustv.m3u8")]
         [TestCase("https://iptvcat.com/assets/videos/lazycat-iptvcat.com.mp4")]
         [Test]
         public void GivenTheSourceIsShortenedUrl_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
-        {
-            AssertThatSourceUrlIsNotPlayable(sourceUrl);
-        }
+            => AssertThatSourceUrlIsNotPlayable(sourceUrl);
 
         [TestCase("https://tinyurl.com/y9k7rbje")]
         [Test]
         public void GivenTheSourceIsAnMP4File_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
-        {
-            AssertThatSourceUrlIsNotPlayable(sourceUrl);
-        }
+            => AssertThatSourceUrlIsNotPlayable(sourceUrl);
 
         [TestCase("mms://86.34.169.52:8080/")]
         [TestCase("mms://musceltvlive.muscel.ro:8080")]
         [Test]
         public void GivenTheSourceIsUsingTeMmsProtocol_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
-        {
-            AssertThatSourceUrlIsNotPlayable(sourceUrl);
-        }
-
+            => AssertThatSourceUrlIsNotPlayable(sourceUrl);
 
         [TestCase("mmsh://82.137.6.58:1234/")]
         [TestCase("mmsh://musceltvlive.muscel.ro:8080")]
         [Test]
         public void GivenTheSourceIsUsingTeMmshProtocol_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
-        {
-            AssertThatSourceUrlIsNotPlayable(sourceUrl);
-        }
+            => AssertThatSourceUrlIsNotPlayable(sourceUrl);
 
         [TestCase("rtmp://212.0.209.209:1935/live/_definst_mp4:Moldova")]
         [TestCase("rtmp://81.18.66.155/live/banat-tv")]
@@ -93,9 +80,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("rtmp://v1.arya.ro:1935/live/ptv1.flv")]
         [Test]
         public void GivenTheSourceIsUsingTeRtmpProtocol_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
-        {
-            AssertThatSourceUrlIsNotPlayable(sourceUrl);
-        }
+            => AssertThatSourceUrlIsNotPlayable(sourceUrl);
 
         [TestCase("rtsp://195.64.178.23/somax")]
         [TestCase("rtsp://195.64.178.23/telem")]
@@ -104,17 +89,9 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         [TestCase("rtsp://live.trm.md:1935/live/M1Mlive")]
         [Test]
         public void GivenTheSourceIsUsingTeRtspProtocol_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
-        {
-            AssertThatSourceUrlIsNotPlayable(sourceUrl);
-        }
+            => AssertThatSourceUrlIsNotPlayable(sourceUrl);
 
-        void AssertThatSourceUrlIsNotPlayable(string sourceUrl)
-        {
-            // Act
-            bool sourceIsPlayale = mediaSourceChecker.IsSourcePlayableAsync(sourceUrl).Result;
-
-            // Assert
-            Assert.That(sourceIsPlayale, Is.False);
-        }
+        private void AssertThatSourceUrlIsNotPlayable(string sourceUrl)
+            => Assert.That(!mediaSourceChecker.IsSourcePlayableAsync(sourceUrl).Result);
     }
 }

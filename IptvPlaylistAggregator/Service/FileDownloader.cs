@@ -8,20 +8,20 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class FileDownloader : IFileDownloader
     {
-        readonly ICacheManager cache;
-        readonly ApplicationSettings applicationSettings;
-
-        readonly HttpClient httpClient;
+        private readonly ICacheManager cache;
+        private readonly HttpClient httpClient;
 
         public FileDownloader(
             ICacheManager cache,
             ApplicationSettings applicationSettings)
         {
             this.cache = cache;
-            this.applicationSettings = applicationSettings;
 
-            httpClient = new HttpClient();
-            httpClient.Timeout = TimeSpan.FromMilliseconds(3000);
+            httpClient = new HttpClient
+            {
+                Timeout = TimeSpan.FromMilliseconds(3000)
+            };
+
             httpClient.DefaultRequestHeaders.Add(
                 "User-Agent",
                 applicationSettings.UserAgent);
@@ -31,7 +31,7 @@ namespace IptvPlaylistAggregator.Service
         {
             string content = cache.GetWebDownload(url);
 
-            if (!(content is null))
+            if (content is not null)
             {
                 return content;
             }
@@ -50,10 +50,8 @@ namespace IptvPlaylistAggregator.Service
             return content;
         }
 
-        async Task<string> GetAsync(string url)
+        private async Task<string> GetAsync(string url)
         {
-            Uri uri = new Uri(url);
-
             if (string.IsNullOrWhiteSpace(url))
             {
                 return null;
@@ -64,16 +62,13 @@ namespace IptvPlaylistAggregator.Service
 
             return content;
         }
-        
-        async Task<string> SendGetRequestAsync(string url)
+
+        private async Task<string> SendGetRequestAsync(string url)
         {
-            using (HttpResponseMessage response = await httpClient.GetAsync(url))
-            {
-                using (HttpContent content = response.Content)
-                {
-                    return await content.ReadAsStringAsync();
-                }
-            }
+            using HttpResponseMessage response = await httpClient.GetAsync(url);
+            using HttpContent content = response.Content;
+
+            return await content.ReadAsStringAsync();
         }
     }
 }

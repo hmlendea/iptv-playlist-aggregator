@@ -7,33 +7,27 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service
 {
-    public sealed class PlaylistFileBuilder : IPlaylistFileBuilder
+    public sealed class PlaylistFileBuilder(
+        ICacheManager cache,
+        ApplicationSettings settings) : IPlaylistFileBuilder
     {
-        const string FileHeader = "#EXTM3U";
-        const string EntryHeader = "#EXTINF";
-        const string EntryHeaderExtendedInfo = "#EXT-X-STREAM-INF";
-        const string EntryHeaderSeparator = ":";
-        const string EntryValuesSeparator = ",";
-        const string TvGuideChannelNumberTagKey = "tvg-chno";
-        const string TvGuideNameTagKey = "tvg-name";
-        const string TvGuideIdTagKey = "tvg-id";
-        const string TvGuideLogoTagKey = "tvg-logo";
-        const string TvGuideCountryTagKey = "tvg-country";
-        const string TvGuideGroupTagKey = "group-title";
-        const string PlaylistIdTagKey = "playlist-id";
-        const string PlaylistChannelNameTagKey = "playlist-channel-name";
-        const int DefaultEntryRuntime = -1;
+        private const string FileHeader = "#EXTM3U";
+        private const string EntryHeader = "#EXTINF";
+        private const string EntryHeaderExtendedInfo = "#EXT-X-STREAM-INF";
+        private const string EntryHeaderSeparator = ":";
+        private const string EntryValuesSeparator = ",";
+        private const string TvGuideChannelNumberTagKey = "tvg-chno";
+        private const string TvGuideNameTagKey = "tvg-name";
+        private const string TvGuideIdTagKey = "tvg-id";
+        private const string TvGuideLogoTagKey = "tvg-logo";
+        private const string TvGuideCountryTagKey = "tvg-country";
+        private const string TvGuideGroupTagKey = "group-title";
+        private const string PlaylistIdTagKey = "playlist-id";
+        private const string PlaylistChannelNameTagKey = "playlist-channel-name";
+        private const int DefaultEntryRuntime = -1;
 
-        readonly ICacheManager cache;
-        readonly ApplicationSettings settings;
-
-        public PlaylistFileBuilder(
-            ICacheManager cache,
-            ApplicationSettings settings)
-        {
-            this.cache = cache;
-            this.settings = settings;
-        }
+        private readonly ICacheManager cache = cache;
+        private readonly ApplicationSettings settings = settings;
 
         public string BuildFile(Playlist playlist)
         {
@@ -41,20 +35,20 @@ namespace IptvPlaylistAggregator.Service
 
             foreach (Channel channel in playlist.Channels)
             {
-                file += 
+                file +=
                     $"{EntryHeader}{EntryHeaderSeparator}" +
                     $"{DefaultEntryRuntime}";
-                
+
                 if (settings.AreTvGuideTagsEnabled)
                 {
                     file += BuildTvGuideHeaderTags(channel);
                 }
-                
+
                 if (settings.ArePlaylistDetailsTagsEnabled)
                 {
                     file += BuildPlaylistDetailsHeaderTags(channel);
                 }
-                
+
                 file +=
                     $"{EntryValuesSeparator}{channel.Name}{Environment.NewLine}" +
                     $"{channel.Url}{Environment.NewLine}";
@@ -84,7 +78,7 @@ namespace IptvPlaylistAggregator.Service
         {
             Playlist playlist = cache.GetPlaylist(content);
 
-            if (!(playlist is null))
+            if (playlist is not null)
             {
                 return playlist;
             }
@@ -107,20 +101,22 @@ namespace IptvPlaylistAggregator.Service
                 {
                     string[] lineSplit = line.Split(',');
 
-                    Channel channel = new Channel();
-                    channel.Name = lineSplit[lineSplit.Length - 1];
+                    Channel channel = new()
+                    {
+                        Name = lineSplit[lineSplit.Length - 1]
+                    };
                     channel.PlaylistChannelName = channel.Name;
 
                     playlist.Channels.Add(channel);
                 }
                 else if (line.StartsWith(EntryHeaderExtendedInfo))
                 {
-                    Channel channel = new Channel();
+                    Channel channel = new();
                     // TODO: Where should I take the name from ???
 
                     playlist.Channels.Add(channel);
                 }
-                else if (line.StartsWith("#"))
+                else if (line.StartsWith('#'))
                 {
                     continue;
                 }
@@ -135,13 +131,13 @@ namespace IptvPlaylistAggregator.Service
             return playlist;
         }
 
-        string BuildTvGuideHeaderTags(Channel channel)
+        private static string BuildTvGuideHeaderTags(Channel channel)
         {
             string tvgTags =
                 $" {TvGuideChannelNumberTagKey}=\"{channel.Number}\"" +
                 $" {TvGuideIdTagKey}=\"{channel.Id}\"" +
                 $" {TvGuideNameTagKey}=\"{channel.Name}\"";
-                
+
             if (!string.IsNullOrWhiteSpace(channel.LogoUrl))
             {
                 tvgTags += $" {TvGuideLogoTagKey}=\"{channel.LogoUrl}\"";
@@ -160,11 +156,8 @@ namespace IptvPlaylistAggregator.Service
             return tvgTags;
         }
 
-        string BuildPlaylistDetailsHeaderTags(Channel channel)
-        {
-            return
-                $" {PlaylistIdTagKey}=\"{channel.PlaylistId}\"" +
-                $" {PlaylistChannelNameTagKey}=\"{channel.PlaylistChannelName}\"";
-        }
+        private static string BuildPlaylistDetailsHeaderTags(Channel channel)
+            => $" {PlaylistIdTagKey}=\"{channel.PlaylistId}\"" +
+               $" {PlaylistChannelNameTagKey}=\"{channel.PlaylistChannelName}\"";
     }
 }

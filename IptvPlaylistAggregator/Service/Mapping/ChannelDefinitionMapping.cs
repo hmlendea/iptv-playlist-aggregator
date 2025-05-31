@@ -6,47 +6,33 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service.Mapping
 {
-    static class ChannelDefinitionMapping
+    internal static class ChannelDefinitionMapping
     {
-        internal static ChannelDefinition ToServiceModel(this ChannelDefinitionEntity dataObject)
+        internal static ChannelDefinition ToServiceModel(this ChannelDefinitionEntity dataObject) => new()
         {
-            ChannelDefinition serviceModel = new ChannelDefinition();
-            serviceModel.Id = dataObject.Id;
-            serviceModel.IsEnabled = dataObject.IsEnabled;
-            serviceModel.Name = new ChannelName(dataObject.Name, dataObject.Country, dataObject.Aliases);
-            serviceModel.Country = dataObject.Country;
-            serviceModel.GroupId = dataObject.GroupId;
-            serviceModel.LogoUrl = dataObject.LogoUrl;
+            Id = dataObject.Id,
+            IsEnabled = dataObject.IsEnabled,
+            Name = new(dataObject.Name, dataObject.Country, dataObject.Aliases),
+            Country = dataObject.Country,
+            GroupId = dataObject.GroupId,
+            LogoUrl = dataObject.LogoUrl
+        };
 
-            return serviceModel;
-        }
-
-        internal static ChannelDefinitionEntity ToDataObject(this ChannelDefinition serviceModel)
+        internal static ChannelDefinitionEntity ToDataObject(this ChannelDefinition serviceModel) => new()
         {
-            ChannelDefinitionEntity dataObject = new ChannelDefinitionEntity();
-            dataObject.Id = serviceModel.Id;
-            dataObject.IsEnabled = serviceModel.IsEnabled;
-            dataObject.Name = serviceModel.Name.Value;
-            dataObject.Country = serviceModel.Country;
-            dataObject.GroupId = serviceModel.GroupId;
-            dataObject.LogoUrl = serviceModel.LogoUrl;
-            dataObject.Aliases = serviceModel.Name.Aliases.ToList();
-
-            return dataObject;
-        }
+            Id = serviceModel.Id,
+            IsEnabled = serviceModel.IsEnabled,
+            Name = serviceModel.Name.Value,
+            Country = serviceModel.Country,
+            GroupId = serviceModel.GroupId,
+            LogoUrl = serviceModel.LogoUrl,
+            Aliases = serviceModel.Name.Aliases.ToList()
+        };
 
         internal static IEnumerable<ChannelDefinition> ToServiceModels(this IEnumerable<ChannelDefinitionEntity> dataObjects)
-        {
-            IEnumerable<ChannelDefinition> serviceModels = dataObjects.Select(dataObject => dataObject.ToServiceModel());
-
-            return serviceModels;
-        }
+            => dataObjects.Select(dataObject => dataObject.ToServiceModel());
 
         internal static IEnumerable<ChannelDefinitionEntity> ToEntities(this IEnumerable<ChannelDefinition> serviceModels)
-        {
-            IEnumerable<ChannelDefinitionEntity> dataObjects = serviceModels.Select(serviceModel => serviceModel.ToDataObject());
-
-            return dataObjects;
-        }
+            => serviceModels.Select(serviceModel => serviceModel.ToDataObject());
     }
 }

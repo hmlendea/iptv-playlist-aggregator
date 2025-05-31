@@ -5,13 +5,13 @@ using Moq;
 using IptvPlaylistAggregator.Service;
 using IptvPlaylistAggregator.Service.Models;
 
-namespace IptvPlaylistAggregator.UnitTests.Service.Models
+namespace IptvPlaylistAggregator.UnitTests.Service
 {
     public sealed class ChannelMatcherTests
     {
-        Mock<ICacheManager> cacheMock;
+        private Mock<ICacheManager> cacheMock;
 
-        IChannelMatcher channelMatcher;
+        private IChannelMatcher channelMatcher;
 
         [SetUp]
         public void SetUp()
@@ -250,7 +250,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         private ChannelName GetChannelName(string definedName, string alias)
             => GetChannelName(definedName, country: null, alias);
 
-        private ChannelName GetChannelName(string definedName, string country, string alias)
+        private static ChannelName GetChannelName(string definedName, string country, string alias)
         {
             if (alias is null)
             {
