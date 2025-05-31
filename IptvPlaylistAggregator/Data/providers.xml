@@ -58,24 +58,6 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>github-makiptv-ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>130</Priority>
-    <Name>mak-iptv's GitHub RO Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/mak-iptv/iptv/master/channels/ro.m3u</UrlFormat>
-    <Country>RO</Country>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
-    <Id>github-freeiptv-ro</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>150</Priority>
-    <Name>Free-IPTV's IPTV GitHub RO Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/Free-IPTV/Countries/master/RO01_ROMANIA.m3u</UrlFormat>
-    <Country>RO</Country>
-  </PlaylistProviderEntity>
-
-  <PlaylistProviderEntity>
     <Id>freetuxtv-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>680</Priority>
