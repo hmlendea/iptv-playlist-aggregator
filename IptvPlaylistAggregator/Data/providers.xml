@@ -26,7 +26,7 @@
     <IsEnabled>false</IsEnabled>
     <Priority>100</Priority>
     <Name>IPTV org's GitHub RO Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/iptv-org/iptv/master/channels/ro.m3u</UrlFormat>
+    <UrlFormat>https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/ro.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
@@ -35,7 +35,7 @@
     <IsEnabled>false</IsEnabled>
     <Priority>101</Priority>
     <Name>IPTV org's GitHub MD Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/iptv-org/iptv/master/channels/md.m3u</UrlFormat>
+    <UrlFormat>https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/md.m3u</UrlFormat>
     <Country>MD</Country>
   </PlaylistProviderEntity>
 
@@ -44,7 +44,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>110</Priority>
     <Name>kilirushi's IPTV GitHub RO Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/kilirushi/m3u/master/ro.m3u</UrlFormat>
+    <UrlFormat>https://raw.githubusercontent.com/kilirushi/iptv/refs/heads/master/ro.m3u</UrlFormat>
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
@@ -53,7 +53,7 @@
     <IsEnabled>true</IsEnabled>
     <Priority>111</Priority>
     <Name>kilirushi's IPTV GitHub MD Channels</Name>
-    <UrlFormat>https://raw.githubusercontent.com/kilirushi/m3u/master/md.m3u</UrlFormat>
+    <UrlFormat>https://raw.githubusercontent.com/kilirushi/iptv/refs/heads/master/md.m3u</UrlFormat>
     <Country>MD</Country>
   </PlaylistProviderEntity>
 
