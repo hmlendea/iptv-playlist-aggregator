@@ -40,9 +40,45 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
-    <Id>github-kilirushi-ro</Id>
+    <Id>github-freetv-ro</Id>
+    <IsEnabled>false</IsEnabled>
+    <Priority>102</Priority>
+    <Name>Free-'s GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_romania.m3u8</UrlFormat>
+    <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-freetv-md</Id>
+    <IsEnabled>false</IsEnabled>
+    <Priority>103</Priority>
+    <Name>Free-'s GitHub MD Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_moldova.m3u8</UrlFormat>
+    <Country>MD</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-chzw2025-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>110</Priority>
+    <Name>chzw2025's IPTV GitHub RO Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/chzw2025/iptv2025/refs/heads/master/streams/ro.m3u</UrlFormat>
+    <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-chzw2025-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>111</Priority>
+    <Name>chzw2025's IPTV GitHub MD Channels</Name>
+    <UrlFormat>https://raw.githubusercontent.com/chzw2025/iptv2025/refs/heads/master/streams/md.m3u</UrlFormat>
+    <Country>MD</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-kilirushi-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>112</Priority>
     <Name>kilirushi's IPTV GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/kilirushi/iptv/refs/heads/master/ro.m3u</UrlFormat>
     <Country>RO</Country>
@@ -51,7 +87,7 @@
   <PlaylistProviderEntity>
     <Id>github-kilirushi-md</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>111</Priority>
+    <Priority>113</Priority>
     <Name>kilirushi's IPTV GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/kilirushi/iptv/refs/heads/master/md.m3u</UrlFormat>
     <Country>MD</Country>
