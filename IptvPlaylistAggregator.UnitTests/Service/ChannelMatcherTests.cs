@@ -36,7 +36,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         {
             ChannelName channelName = GetChannelName(definedName, definedCountry, alias);
 
-            Assert.IsTrue(channelMatcher.DoesMatch(channelName, providerName, providerCountry));
+            Assert.That(channelMatcher.DoesMatch(channelName, providerName, providerCountry));
         }
 
         [TestCase("Agro TV", "RO: Agro", "Agro RO")]
@@ -83,7 +83,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         {
             ChannelName channelName = GetChannelName(definedName, alias);
 
-            Assert.IsTrue(channelMatcher.DoesMatch(channelName, providerName, country2: null));
+            Assert.That(channelMatcher.DoesMatch(channelName, providerName, country2: null));
         }
 
         [TestCase("AMC", "RO: AMC Romania")]
@@ -104,7 +104,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         {
             ChannelName channelName = GetChannelName(definedName, alias: null);
 
-            Assert.IsTrue(channelMatcher.DoesMatch(channelName, providerName, country2: null));
+            Assert.That(channelMatcher.DoesMatch(channelName, providerName, country2: null));
         }
 
         [TestCase("Cromtel", "Cmrotel", "Cmtel")]
@@ -117,7 +117,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         {
             ChannelName channelName = GetChannelName(definedName, alias);
 
-            Assert.IsFalse(channelMatcher.DoesMatch(channelName, providerName, country2: null));
+            Assert.That(!channelMatcher.DoesMatch(channelName, providerName, country2: null));
         }
 
         [TestCase("Pro TV", "MD: Pro TV")]
@@ -166,7 +166,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         public void NormaliseName_WithCountry_ReturnsExpectedValue(string name, string country, string expectedNormalisedName)
         {
             string actualNormalisedName = channelMatcher.NormaliseName(name, country);
-            
+
             Assert.That(actualNormalisedName, Is.EqualTo(expectedNormalisedName));
         }
 
@@ -243,8 +243,8 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
         public void NormaliseName_WithoutCountry_ReturnsExpectedValue(string inputValue, string expectedValue)
         {
             string actualValue = channelMatcher.NormaliseName(inputValue, country: null);
-            
-            Assert.AreEqual(expectedValue, actualValue);
+
+            Assert.That(expectedValue, Is.EqualTo(actualValue));
         }
 
         private ChannelName GetChannelName(string definedName, string alias)
@@ -256,7 +256,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service.Models
             {
                 return new ChannelName(definedName);
             }
-            
+
             return new ChannelName(definedName, country, alias);
         }
     }
