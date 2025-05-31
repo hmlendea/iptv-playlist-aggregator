@@ -800,7 +800,7 @@
     <Name>Credo TV</Name>
     <Country>RO</Country>
     <GroupId>religious</GroupId>
-    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/5/56/Banner-credo-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/credo_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Cromtel.ro</Id>
@@ -830,7 +830,7 @@
     <Name>Curier TV</Name>
     <Country>RO</Country>
     <GroupId>local-muntenia</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/curier-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/curier_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Curier Arges</string>
     </Aliases>
@@ -980,7 +980,7 @@
     <Name>Digi24</Name>
     <Country>RO</Country>
     <GroupId>news</GroupId>
-    <LogoUrl>https://www.flux24.ro/wp-content/uploads/2014/12/digi_24_ro_hd.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/digi24.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Digi4K.ro</Id>
@@ -2055,7 +2055,7 @@
     <Name>Kapital TV</Name>
     <Country>RO</Country>
     <GroupId>general</GroupId>
-    <LogoUrl>http://www.kapitaltv.ro/wp-content/uploads/2016/10/logo-ktv-1.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/kapital_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Kaptial TV</string>
       <string>RO: Kaptial</string>
@@ -2817,7 +2817,7 @@
     <Name>Nova TV</Name>
     <Country>RO</Country>
     <GroupId>local-transilvania</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/nova-tv-brasov.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nova_tv.png</LogoUrl>
     <Aliases>
       <string>RO: Nova Press</string>
       <string>RO: Nova TV Brasov</string>
@@ -3669,7 +3669,7 @@
     <Name>TeleM Botoșani</Name>
     <Country>RO</Country>
     <GroupId>local-moldova</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/tele-m-botosani.png</LogoUrl>
+    <LogoUrl>https://telembotosani.ro/wp-content/uploads/2025/05/sigla-mare-e1746699657999.png</LogoUrl>
     <Aliases>
       <string>RO: TeleMoldova Botoșani</string>
     </Aliases>
@@ -3921,7 +3921,7 @@
     <Name>TV Buzău</Name>
     <Country>RO</Country>
     <GroupId>local-muntenia</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/tv-buzau.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_buzau.png</LogoUrl>
     <Aliases>
       <string>RO: Buzău TV</string>
     </Aliases>
@@ -3975,7 +3975,7 @@
     <Name>TV Plus Suceava</Name>
     <Country>RO</Country>
     <GroupId>local-bucovina</GroupId>
-    <LogoUrl>https://televiziuneaplus.ro/wp-content/uploads/2019/04/cropped-tv-plus-regional.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_plus_suceava.png</LogoUrl>
     <Aliases>
       <string>Romania: TVPlus Suceava</string>
     </Aliases>
@@ -4005,7 +4005,7 @@
     <Name>TV SudEst</Name>
     <Country>RO</Country>
     <GroupId>local-muntenia</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/tv-sud-est.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_sudest.png</LogoUrl>
     <Aliases>
       <string>RO: TV SE</string>
       <string>RO: TV Sud Est TVSAT</string>
