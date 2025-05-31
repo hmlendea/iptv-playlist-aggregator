@@ -8,10 +8,7 @@ namespace IptvPlaylistAggregator.Service.Models
 
         public bool IsEmpty => Channels is null || Channels.Count == 0;
 
-        public Playlist()
-        {
-            this.Channels = new List<Channel>();
-        }
+        public Playlist() => Channels = [];
 
         public static bool IsNullOrEmpty(Playlist playlist)
             => playlist is null || playlist.IsEmpty;

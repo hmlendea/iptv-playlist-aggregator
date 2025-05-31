@@ -6,42 +6,28 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service.Mapping
 {
-    static class GroupMapping
+    internal static class GroupMapping
     {
-        internal static Group ToServiceModel(this GroupEntity dataObject)
+        internal static Group ToServiceModel(this GroupEntity dataObject) => new()
         {
-            Group serviceModel = new Group();
-            serviceModel.Id = dataObject.Id;
-            serviceModel.IsEnabled = dataObject.IsEnabled;
-            serviceModel.Name = dataObject.Name;
-            serviceModel.Priority = dataObject.Priority;
+            Id = dataObject.Id,
+            IsEnabled = dataObject.IsEnabled,
+            Name = dataObject.Name,
+            Priority = dataObject.Priority
+        };
 
-            return serviceModel;
-        }
-
-        internal static GroupEntity ToDataObject(this Group serviceModel)
+        internal static GroupEntity ToDataObject(this Group serviceModel) => new()
         {
-            GroupEntity dataObject = new GroupEntity();
-            dataObject.Id = serviceModel.Id;
-            dataObject.IsEnabled = serviceModel.IsEnabled;
-            dataObject.Name = serviceModel.Name;
-            dataObject.Priority = serviceModel.Priority;
-
-            return dataObject;
-        }
+            Id = serviceModel.Id,
+            IsEnabled = serviceModel.IsEnabled,
+            Name = serviceModel.Name,
+            Priority = serviceModel.Priority
+        };
 
         internal static IEnumerable<Group> ToServiceModels(this IEnumerable<GroupEntity> dataObjects)
-        {
-            IEnumerable<Group> serviceModels = dataObjects.Select(dataObject => dataObject.ToServiceModel());
-
-            return serviceModels;
-        }
+            => dataObjects.Select(dataObject => dataObject.ToServiceModel());
 
         internal static IEnumerable<GroupEntity> ToEntities(this IEnumerable<Group> serviceModels)
-        {
-            IEnumerable<GroupEntity> dataObjects = serviceModels.Select(serviceModel => serviceModel.ToDataObject());
-
-            return dataObjects;
-        }
+            => serviceModels.Select(serviceModel => serviceModel.ToDataObject());
     }
 }

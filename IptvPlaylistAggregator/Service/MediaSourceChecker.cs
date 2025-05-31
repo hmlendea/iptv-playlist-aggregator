@@ -14,42 +14,33 @@ using NuciLog.Core;
 
 namespace IptvPlaylistAggregator.Service
 {
-    public sealed class MediaSourceChecker : IMediaSourceChecker
+    public sealed class MediaSourceChecker(
+        IFileDownloader fileDownloader,
+        IPlaylistFileBuilder playlistFileBuilder,
+        ICacheManager cache,
+        ILogger logger,
+        ApplicationSettings applicationSettings) : IMediaSourceChecker
     {
-        const string YouTubeVideoUrlPattern = "^(https?\\:\\/\\/)?(www\\.youtube\\.com|youtu\\.?be)\\/.+$";
-        const string TinyUrlPattern = "^(https?\\:\\/\\/)?((www\\.)?tinyurl\\.com)\\/.+$";
-        const string NonHttpUrlPattern = "^(?!http).*";
+        private const string YouTubeVideoUrlPattern = "^(https?\\:\\/\\/)?(www\\.youtube\\.com|youtu\\.?be)\\/.+$";
+        private const string TinyUrlPattern = "^(https?\\:\\/\\/)?((www\\.)?tinyurl\\.com)\\/.+$";
+        private const string NonHttpUrlPattern = "^(?!http).*";
 
-        static readonly string[] BlacklistedSources = new string[]
-        {
+        private static readonly string[] BlacklistedSources =
+        [
             "http://hls.protv.md/acasatv/acasatv.m3u8"
-        };
+        ];
 
-        readonly IFileDownloader fileDownloader;
-        readonly IPlaylistFileBuilder playlistFileBuilder;
-        readonly ICacheManager cache;
-        readonly ILogger logger;
-        readonly ApplicationSettings applicationSettings;
-
-        public MediaSourceChecker(
-            IFileDownloader fileDownloader,
-            IPlaylistFileBuilder playlistFileBuilder,
-            ICacheManager cache,
-            ILogger logger,
-            ApplicationSettings applicationSettings)
-        {
-            this.fileDownloader = fileDownloader;
-            this.playlistFileBuilder = playlistFileBuilder;
-            this.cache = cache;
-            this.logger = logger;
-            this.applicationSettings = applicationSettings;
-        }
+        private readonly IFileDownloader fileDownloader = fileDownloader;
+        private readonly IPlaylistFileBuilder playlistFileBuilder = playlistFileBuilder;
+        private readonly ICacheManager cache = cache;
+        private readonly ILogger logger = logger;
+        private readonly ApplicationSettings applicationSettings = applicationSettings;
 
         public async Task<bool> IsSourcePlayableAsync(string url)
         {
             MediaStreamStatus status = cache.GetStreamStatus(url);
 
-            if (!(status is null))
+            if (status is not null)
             {
                 return status.IsAlive;
             }
@@ -87,8 +78,8 @@ namespace IptvPlaylistAggregator.Service
             SaveToCache(url, state);
             return state == StreamState.Alive;
         }
-        
-        bool IsUrlUnsupported(string url)
+
+        private static bool IsUrlUnsupported(string url)
         {
             if (Regex.IsMatch(url, YouTubeVideoUrlPattern) ||
                 Regex.IsMatch(url, TinyUrlPattern) ||
@@ -104,8 +95,8 @@ namespace IptvPlaylistAggregator.Service
 
             return false;
         }
-        
-        bool IsUrlBlacklisted(string url)
+
+        private static bool IsUrlBlacklisted(string url)
         {
             if (BlacklistedSources.Any(x => x.Contains(url)))
             {
@@ -115,10 +106,10 @@ namespace IptvPlaylistAggregator.Service
             return false;
         }
 
-        async Task<StreamState> GetPlaylistStateAsync(string url)
+        private async Task<StreamState> GetPlaylistStateAsync(string url)
         {
             StreamState streamState = await GetStreamStateAsync(url);
-            
+
             if (streamState != StreamState.Alive)
             {
                 return streamState;
@@ -149,11 +140,11 @@ namespace IptvPlaylistAggregator.Service
                     return StreamState.Alive;
                 }
             }
-            
+
             return StreamState.Dead;
         }
 
-        async Task<StreamState> GetStreamStateAsync(string url)
+        private async Task<StreamState> GetStreamStateAsync(string url)
         {
             HttpStatusCode statusCode = await GetHttpStatusCode(url);
 
@@ -161,31 +152,29 @@ namespace IptvPlaylistAggregator.Service
             {
                 return StreamState.Alive;
             }
-            
+
             if (statusCode == HttpStatusCode.Unauthorized)
             {
                 return StreamState.Unauthorised;
             }
-            
+
             if (statusCode == HttpStatusCode.NotFound)
             {
                 return StreamState.NotFound;
             }
-                
+
             return StreamState.Dead;
         }
 
-        void SaveToCache(string url, StreamState state)
-        {
-            MediaStreamStatus status = new MediaStreamStatus();
-            status.Url = url;
-            status.State = state;
-            status.LastCheckTime = DateTime.UtcNow;
+        private void SaveToCache(string url, StreamState state)
+            => cache.StoreStreamStatus(new()
+            {
+                Url = url,
+                State = state,
+                LastCheckTime = DateTime.UtcNow
+            });
 
-            cache.StoreStreamStatus(status);
-        }
-
-        async Task<HttpStatusCode> GetHttpStatusCode(string url)
+        private async Task<HttpStatusCode> GetHttpStatusCode(string url)
         {
             HttpStatusCode statusCode = HttpStatusCode.RequestTimeout;
             bool doCacheContent = url.Contains(".m3u") || url.Contains(".m3u8");
@@ -195,29 +184,21 @@ namespace IptvPlaylistAggregator.Service
             {
                 HttpWebRequest request = CreateWebRequest(url);
 
-                using (HttpWebResponse response = (await request.GetResponseAsync()) as HttpWebResponse)
-                {
-                    statusCode = response.StatusCode;
+                using HttpWebResponse response = (await request.GetResponseAsync()) as HttpWebResponse;
+                statusCode = response.StatusCode;
 
-                    if (doCacheContent)
-                    {
-                        using (StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.UTF8))
-                        {
-                            content = await reader.ReadToEndAsync();
-                        }
-                    }
+                if (doCacheContent)
+                {
+                    using StreamReader reader = new(response.GetResponseStream(), Encoding.UTF8);
+                    content = await reader.ReadToEndAsync();
                 }
             }
             catch (WebException ex)
             {
-                if (ex.Status == WebExceptionStatus.ProtocolError)
+                if (ex.Status is WebExceptionStatus.ProtocolError &&
+                    ex.Response is HttpWebResponse response)
                 {
-                    HttpWebResponse response = ex.Response as HttpWebResponse;
-
-                    if (response != null)
-                    {
-                        statusCode = response.StatusCode;
-                    }
+                    statusCode = response.StatusCode;
                 }
             }
             catch { }
@@ -230,11 +211,11 @@ namespace IptvPlaylistAggregator.Service
             return statusCode;
         }
 
-        HttpWebRequest CreateWebRequest(string url)
+        private HttpWebRequest CreateWebRequest(string url)
         {
             const int timeout = 10000;
 
-            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
+            HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
             request.Method = "GET";
             request.Timeout = timeout;
             request.ContinueTimeout = timeout;

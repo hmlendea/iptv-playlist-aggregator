@@ -9,14 +9,14 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service
 {
-    public sealed class ChannelMatcher : IChannelMatcher
+    public sealed class ChannelMatcher(ICacheManager cache) : IChannelMatcher
     {
-        static readonly string[] SubstringsToStrip = new string[]
-        {
+        private static readonly string[] SubstringsToStrip =
+        [
             "www.iptvsource.com", "iptvsource.com", "backup"
-        };
+        ];
 
-        static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
+        private static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
             { "^\\s+", "" },
             { "\\s+$", "" },
@@ -27,7 +27,7 @@ namespace IptvPlaylistAggregator.Service
             { "4[Kk]\\+", "" },
 
             { "^(.+)\\s+VIP\\s+([A-Z][A-Z])\\s*$", "$2: $1" },
-            
+
             { "RO\\(L\\) *[\\|\\[\\(\\]\\)\".:-]", "RO:" },
 
             { "^([\\|\\[\\(\\]\\)\".:-]* *([A-Z][A-Z]) *[\\|\\[\\(\\]\\)\".:-] *)+", "$2:" },
@@ -43,7 +43,7 @@ namespace IptvPlaylistAggregator.Service
             { "^RO *[\\|\\[\\(\\]\\)\".:-] *(.*) *\\(*Romania\\)*$", "RO: $1" },
 
             { "^[\\|\\[\\(\\]\\)\".:-]* *Romania *[\\|\\[\\(\\]\\)\".:-]", "RO:" },
-            
+
             { " S[0-9]-[0-9]$", "" },
             { " S[0-9]$", "" },
             { "\\(18\\+\\)", "" },
@@ -60,16 +60,11 @@ namespace IptvPlaylistAggregator.Service
             { "^[\\|]*VIP *([A-Z][A-Z]):", "$1:" },
 
             { "^([A-Z][A-Z]: *)*", "$1" },
-            
+
             { "^(RO: *)*", "" },
         };
 
-        readonly ICacheManager cache;
-
-        public ChannelMatcher(ICacheManager cache)
-        {
-            this.cache = cache;
-        }
+        private readonly ICacheManager cache = cache;
 
         public string NormaliseName(string name, string country)
         {
@@ -100,16 +95,16 @@ namespace IptvPlaylistAggregator.Service
             => DoChannelNamesMatch(name1.Value, name1.Country, name2, country2) ||
                name1.Aliases.Any(name1alias => DoChannelNamesMatch(name1alias, name1.Country, name2, country2));
 
-        bool DoChannelNamesMatch(string name1, string country1, string name2, string country2)
+        private bool DoChannelNamesMatch(string name1, string country1, string name2, string country2)
             => name1.Equals(name2) || NormaliseName(name1, country1).Equals(NormaliseName(name2, country2));
 
-        string StripChannelName(string name)
+        private static string StripChannelName(string name)
         {
             const string allowedChars =
                 "abcdefghijklmnopqrstuvwxyz" +
                 "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
                 "0123456789";
-            
+
             string strippedName = name;
 
             foreach (string substringToStrip in SubstringsToStrip)

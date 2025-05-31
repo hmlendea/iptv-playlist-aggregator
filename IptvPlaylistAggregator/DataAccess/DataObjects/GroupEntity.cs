@@ -9,10 +9,7 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
         public string Name { get; set; }
 
         public int Priority { get; set; }
-        
-        public GroupEntity()
-        {
-            Priority = int.MaxValue;
-        }
+
+        public GroupEntity() => Priority = int.MaxValue;
     }
 }
