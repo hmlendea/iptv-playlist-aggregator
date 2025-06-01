@@ -37,13 +37,6 @@
   </GroupEntity>
 
   <GroupEntity>
-    <Id>health</Id>
-    <IsEnabled>true</IsEnabled>
-    <Priority>17</Priority>
-    <Name>Sănătate</Name>
-  </GroupEntity>
-
-  <GroupEntity>
     <Id>thematic</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>20</Priority>

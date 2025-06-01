@@ -2446,7 +2446,7 @@
     <Id>MediCOOL.ro</Id>
     <Name>MediCOOL</Name>
     <Country>RO</Country>
-    <GroupId>health</GroupId>
+    <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/medicool.png</LogoUrl>
     <Aliases>
       <string>MediCOOL TV</string>
