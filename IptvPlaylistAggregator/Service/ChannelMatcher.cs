@@ -25,6 +25,9 @@ namespace IptvPlaylistAggregator.Service
             { "[\\(\\[]]*([Aa]uto|[Bb]|[Bb]ackup|[Ll]ive [Oo]n [Mm]atches|[Mm]atch[ -]*[Tt]ime|[Mm]ulti-*[Aa]udio|[Mm]ulti-*[Ss]ub|[Nn]ew!*|[Oo]n-[Dd]emand)[\\)\\]]*", "" },
             { "(.)[ \\.:_\\-\\|\\[\\(\\]\\)\"]+(Ultra|Full|[FU])*[_-]*[HMS][DQ]", "$1" },
             { "4[Kk]\\+", "" },
+            { "\\((406|480|540|576|720|1080|2160)p\\)", "" },
+
+            { "\\[Not 24/7\\]", "" },
 
             { "^(.+)\\s+VIP\\s+([A-Z][A-Z])\\s*$", "$2: $1" },
 

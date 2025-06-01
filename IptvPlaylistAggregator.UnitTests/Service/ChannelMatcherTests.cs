@@ -89,6 +89,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [TestCase("AMC", "RO: AMC Romania")]
         [TestCase("Antena 3", "Antena 3 Ultra_HD")]
         [TestCase("Elita TV", "Elita TV")]
+        [TestCase("Exploris", "Exploris (576p) [Not 24/7]")]
         [TestCase("HBO 3", "HBO 3 F_HD")]
         [TestCase("MTV Europe", "RO: MTV Europe")]
         [TestCase("Pro TV", "PRO TV ULTRA_HD")]
