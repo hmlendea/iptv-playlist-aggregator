@@ -2855,7 +2855,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>NovaTV.ro</Id>
-    <Name>Nova TV</Name>
+    <Name>Nova TV Brașov</Name>
     <Country>RO</Country>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nova_tv.png</LogoUrl>
