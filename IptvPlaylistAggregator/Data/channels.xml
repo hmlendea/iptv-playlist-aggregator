@@ -222,6 +222,9 @@
     <Country>RO</Country>
     <GroupId>news</GroupId>
     <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45ac.png</LogoUrl>
+    <Aliases>
+      <string>Antena 3 CNN</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AntenaComedy.ro</Id>
@@ -269,6 +272,9 @@
     <Name>Antena Satelor</Name>
     <Country>RO</Country>
     <GroupId>radio</GroupId>
+    <Aliases>
+      <string>Radio Antena Satelor</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AntenaSport.ro</Id>
@@ -1557,6 +1563,14 @@
     <GroupId>unknown</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>GoldFM.md</Id>
+    <Name>Gold FM</Name>
+    <Country>RO</Country>
+    <GroupId>radio</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/gold_fm.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>GoldTV.md</Id>
     <Name>Gold TV</Name>
     <Country>MD</Country>
@@ -1936,6 +1950,7 @@
       <string>AR: AD Sport 4</string>
       <string>BR: SporTV 3</string>
       <string>Current Time</string>
+      <string>Duina Sinema</string>
       <string>ES: M Desportes</string>
       <string>EURO TV</string>
       <string>EX-YU: Arena Sport 2 HR</string>
@@ -3198,6 +3213,13 @@
     <GroupId>radio</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>RadioRomaniaMuzical.ro</Id>
+    <Name>Radio România Muzical</Name>
+    <Country>RO</Country>
+    <GroupId>radio</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/radio_romania_muzical.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>RapsodiaTV.ro</Id>
     <Name>Rapsodia TV</Name>
     <Country>RO</Country>
@@ -3309,6 +3331,18 @@
     <Country>RO</Country>
     <GroupId>music</GroupId>
     <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/7/7b/Retro_Music_TV_logo.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Rlive.md</Id>
+    <Name>Rlive</Name>
+    <Country>MD</Country>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/rlive.png</LogoUrl>
+    <Aliases>
+      <string>MD: Moldova 1</string>
+      <string>MD: Moldova M1</string>
+      <string>Moldova 1 Mobile</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ROChannel.ro</Id>
