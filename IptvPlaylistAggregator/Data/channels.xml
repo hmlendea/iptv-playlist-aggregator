@@ -2872,8 +2872,13 @@
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/nova_tv.png</LogoUrl>
     <Aliases>
+      <string>Nova Press</string>
+      <string>Nova TV Brașov</string>
+      <string>Nova TV</string>
+      <string>RO: Nova Press TV</string>
       <string>RO: Nova Press</string>
       <string>RO: Nova TV Brasov</string>
+      <string>RO: Nova TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
