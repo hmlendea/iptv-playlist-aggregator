@@ -2545,6 +2545,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MoinestiTV.ro</Id>
+    <Name>Moinești TV</Name>
+    <Country>RO</Country>
+    <GroupId>local-moldova</GroupId>
+    <LogoUrl>https://moinestifm.ro/images/moinesti_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Moinești TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Moldova1.md</Id>
     <Name>Moldova 1</Name>
     <Country>MD</Country>
