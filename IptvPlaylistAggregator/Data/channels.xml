@@ -251,16 +251,18 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AntenaCook.ro</Id>
-    <Name>Antena Cook&amp;Play</Name>
+    <Name>Hello Taste</Name>
     <Country>RO</Country>
     <GroupId>entertainment</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cook_and_play.png</LogoUrl>
     <Aliases>
+      <string>RO: Antena Cook &amp; Play</string>
       <string>RO: Antena Cook and Play</string>
       <string>RO: Antena Cook</string>
       <string>RO: Antena Play Cook</string>
       <string>RO: Cook &amp; Play</string>
       <string>RO: Cook and Play</string>
+      <string>RO: Hello Taste</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
