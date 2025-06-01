@@ -2206,10 +2206,10 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>M9TV.ro</Id>
-    <Name>Hunedoara 1</Name>
+    <Name>M9 TV</Name>
     <Country>RO</Country>
     <GroupId>local-transilvania</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hunedoara_1.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/m9_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MagicFM.ro</Id>
