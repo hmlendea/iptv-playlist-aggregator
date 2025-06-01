@@ -2887,7 +2887,7 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ObservatorNews.ro</Id>
-    <Name>Antena 1</Name>
+    <Name>Observator News</Name>
     <Country>RO</Country>
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/observator_news.png</LogoUrl>
