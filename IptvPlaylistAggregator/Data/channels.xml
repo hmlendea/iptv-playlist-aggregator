@@ -205,6 +205,9 @@
     <Country>RO</Country>
     <GroupId>religious</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/angelus_tv.png</LogoUrl>
+    <Aliases>
+      <string>RO: Angelus TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AnimalPlanet.ro</Id>
@@ -1820,6 +1823,9 @@
     <Country>RO</Country>
     <GroupId>local-transilvania</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hunedoara_1.png</LogoUrl>
+    <Aliases>
+      <string>RO: Hunedoara 1</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>IasiTVLife.ro</Id>
