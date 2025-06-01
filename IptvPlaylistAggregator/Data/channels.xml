@@ -200,6 +200,13 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/amc.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>AngelusTV.ro</Id>
+    <Name>Angelus TV</Name>
+    <Country>RO</Country>
+    <GroupId>religious</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/angelus_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>AnimalPlanet.ro</Id>
     <Name>Animal Planet</Name>
     <Country>RO</Country>
@@ -1569,7 +1576,6 @@
     <GroupId>radio</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/gold_fm.png</LogoUrl>
   </ChannelDefinitionEntity>
-  </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>GoldTV.md</Id>
     <Name>Gold TV</Name>
@@ -1807,6 +1813,13 @@
     <Country>RO</Country>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hora_tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Hunedoara1TV.ro</Id>
+    <Name>Hunedoara 1</Name>
+    <Country>RO</Country>
+    <GroupId>local-transilvania</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hunedoara_1.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>IasiTVLife.ro</Id>
@@ -2184,6 +2197,13 @@
     <Country>INT</Country>
     <GroupId>thematic</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/loungev.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>M9TV.ro</Id>
+    <Name>Hunedoara 1</Name>
+    <Country>RO</Country>
+    <GroupId>local-transilvania</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/hunedoara_1.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MagicFM.ro</Id>
@@ -3356,6 +3376,13 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>RockFM.ro</Id>
+    <Name>Rock FM</Name>
+    <Country>RO</Country>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/rock_fm.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>RockTV.ro</Id>
     <Name>Rock TV</Name>
     <Country>RO</Country>
@@ -3944,6 +3971,13 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>TV1SM.ro</Id>
+    <Name>TV1 Satu Mare</Name>
+    <Country>RO</Country>
+    <GroupId>local-maramures</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv1_satu_mare.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>TVArad.ro</Id>
     <Name>TV Arad</Name>
     <Country>RO</Country>
@@ -3995,6 +4029,13 @@
       <string>RO: CNS TV</string>
       <string>RO: CNS</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVN.md</Id>
+    <Name>TV-Nord</Name>
+    <Country>RO</Country>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_nord.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVPaprika.ro</Id>
