@@ -3795,7 +3795,7 @@
     <Id>Telestar1.ro</Id>
     <Name>Telestar1</Name>
     <Country>RO</Country>
-    <GroupId>foreign</GroupId>
+    <GroupId>international</GroupId>
     <LogoUrl>http://stvron.com/canale/mari/telestar-1.png</LogoUrl>
     <Aliases>
       <string>RO: Telestar TV</string>
