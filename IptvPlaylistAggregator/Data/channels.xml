@@ -4264,6 +4264,13 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tvr_cultural.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>TVRFolclor.ro</Id>
+    <Name>TVR Folclor</Name>
+    <Country>RO</Country>
+    <GroupId>music</GroupId>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TVR_Folclor_Logo_2023.svg/1920px-TVR_Folclor_Logo_2023.svg.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>TVRIasi.ro</Id>
     <Name>TVR Iași</Name>
     <Country>RO</Country>
@@ -4274,6 +4281,13 @@
       <string>RO: TVR Ia</string>
       <string>RO: TVR Isasi</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVRInfo.ro</Id>
+    <Name>TVR Info</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/TVR_Info_Logo_2022.svg/1920px-TVR_Info_Logo_2022.svg.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVRInternational.ro</Id>
@@ -4310,6 +4324,13 @@
       <string>RO: TVR Tg Mures</string>
       <string>RO: TVR Tîrgu-Mureș</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TVRSport.ro</Id>
+    <Name>TVR Sport</Name>
+    <Country>RO</Country>
+    <GroupId>sport</GroupId>
+    <LogoUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/TVR_Sport_Logo_2023.svg/1920px-TVR_Sport_Logo_2023.svg.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVRTimisoara.ro</Id>
