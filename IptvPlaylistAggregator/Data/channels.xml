@@ -3066,10 +3066,11 @@
   <ChannelDefinitionEntity>
     <Id>PrivescEU.ro</Id>
     <Name>Privesc EU</Name>
-    <Country>RO</Country>
+    <Country>MD</Country>
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/privesc_eu.png</LogoUrl>
     <Aliases>
+      <string>MD: Privesc EU</string>
       <string>RO: Privesc EU</string>
     </Aliases>
   </ChannelDefinitionEntity>
