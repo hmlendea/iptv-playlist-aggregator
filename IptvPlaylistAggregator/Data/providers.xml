@@ -2,9 +2,19 @@
 <ArrayOfPlaylistProviderEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
   <PlaylistProviderEntity>
-    <Id>github-hmlendea-ro</Id>
+    <Id>github-hmlendea-ro-indev</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>1</Priority>
+    <AllowCaching>false</AllowCaching>
+    <Name>hmlendea's GitHub Channels RO (In-development version)</Name>
+    <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/refs/heads/ro/md.m3u</UrlFormat>
+    <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>github-hmlendea-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>2</Priority>
     <AllowCaching>false</AllowCaching>
     <Name>hmlendea's GitHub Channels RO</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/ro.m3u</UrlFormat>
@@ -12,9 +22,20 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>github-hmlendea-md-indev</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>3</Priority>
+    <AllowCaching>false</AllowCaching>
+    <Name>hmlendea's GitHub Channels MD (In-development version)</Name>
+    <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/refs/heads/md/md.m3u</UrlFormat>
+    <Country>MD</Country>
+  </PlaylistProviderEntity>
+
+
+  <PlaylistProviderEntity>
     <Id>github-hmlendea-md</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>2</Priority>
+    <Priority>4</Priority>
     <AllowCaching>false</AllowCaching>
     <Name>hmlendea's GitHub Channels MD</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/md.m3u</UrlFormat>

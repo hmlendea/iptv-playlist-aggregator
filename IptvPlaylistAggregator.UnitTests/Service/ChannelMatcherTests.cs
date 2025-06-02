@@ -253,6 +253,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [TestCase("TV 8 Moldova              HD", "MDTV8")]
         [TestCase("TV Centrală Moldova", "MDTVCENTRALA")]
         [TestCase("TVR 1 (Backup) RO", "TVR1")]
+        [TestCase("TVR Info (1080p) [Geo-blocked]", "TVRINFO")]
         [TestCase("TVR2 [B] RO", "TVR2")]
         [TestCase("U TV", "UTV")]
         [TestCase("US: NASA TV US", "USNASATV")]
