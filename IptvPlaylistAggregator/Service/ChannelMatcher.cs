@@ -28,6 +28,7 @@ namespace IptvPlaylistAggregator.Service
             { "\\((406|480|540|576|720|1080|2160)p\\)", "" },
 
             { "\\[Not 24/7\\]", "" },
+            { "\\[Geo-blocked\\]", "" },
 
             { "^(.+)\\s+VIP\\s+([A-Z][A-Z])\\s*$", "$2: $1" },
 
