@@ -150,10 +150,13 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AlbaCarolina.ro</Id>
-    <Name>Alba Carolina TV</Name>
+    <Name>Carolina TV</Name>
     <Country>RO</Country>
     <GroupId>local-transilvania</GroupId>
-    <LogoUrl>https://www.albacarolinatv.ro/wp-content/uploads/2018/05/alba-carolina-tv-logo250.png</LogoUrl>
+    <LogoUrl>https://www.carolinatv.ro/wp-content/uploads/2025/05/1w_carolina-tv-logo250.png</LogoUrl>
+    <Aliases>
+      <string>Alba Carolina TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AlegeTV.ro</Id>
