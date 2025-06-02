@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -106,16 +107,16 @@ namespace IptvPlaylistAggregator.Service
             return false;
         }
 
-        private async Task<StreamState> GetPlaylistStateAsync(string url)
+        private async Task<StreamState> GetPlaylistStateAsync(string playlistUrl)
         {
-            StreamState streamState = await GetStreamStateAsync(url);
+            StreamState streamState = await GetStreamStateAsync(playlistUrl);
 
             if (streamState != StreamState.Alive)
             {
                 return streamState;
             }
 
-            string fileContent = await fileDownloader.TryDownloadStringAsync(url);
+            string fileContent = await fileDownloader.TryDownloadStringAsync(playlistUrl);
             Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
 
             if (Playlist.IsNullOrEmpty(playlist))
@@ -125,19 +126,28 @@ namespace IptvPlaylistAggregator.Service
 
             foreach (Channel channel in playlist.Channels)
             {
-                string channelUrl = channel.Url;
+                List<string> channelUrlsToCheck = [];
 
-                if (!channelUrl.StartsWith("http"))
+                if (channel.Url.StartsWith("http"))
                 {
-                    // TODO: Replace this with something proper
-                    channelUrl = Path.GetDirectoryName(url).Replace(":/", "://") + "/" + channelUrl;
+                    channelUrlsToCheck.Add(channel.Url);
+                }
+                else
+                {
+                    Uri uri = new(playlistUrl);
+
+                    channelUrlsToCheck.Add(Path.GetDirectoryName(playlistUrl).Replace(":/", "://") + "/" + channel.Url);
+                    channelUrlsToCheck.Add($"{uri.Scheme}://{uri.Host}/{channel.Url}");
                 }
 
-                bool isPlayable = await IsSourcePlayableAsync(channelUrl);
-
-                if (isPlayable)
+                foreach (string channelUrl in channelUrlsToCheck)
                 {
-                    return StreamState.Alive;
+                    bool isPlayable = await IsSourcePlayableAsync(channelUrl);
+
+                    if (isPlayable)
+                    {
+                        return StreamState.Alive;
+                    }
                 }
             }
 
