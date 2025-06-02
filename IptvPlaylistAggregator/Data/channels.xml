@@ -3195,6 +3195,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>Profi24.ro</Id>
+    <Name>Profi 24</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/profi24.png</LogoUrl>
+    <Aliases>
+      <string>RO: Profi 24 TV</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>Profit.ro</Id>
     <Name>Profit.ro</Name>
     <Country>RO</Country>
