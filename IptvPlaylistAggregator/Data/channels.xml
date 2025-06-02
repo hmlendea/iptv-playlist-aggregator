@@ -3384,14 +3384,17 @@
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Rlive.md</Id>
-    <Name>Rlive</Name>
+    <Name>Realitatea Live</Name>
     <Country>MD</Country>
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/rlive.png</LogoUrl>
     <Aliases>
-      <string>MD: Moldova 1</string>
-      <string>MD: Moldova M1</string>
-      <string>Moldova 1 Mobile</string>
+      <string>MD: Realitatea Live</string>
+      <string>MD: Realitatea TV</string>
+      <string>MD: Rlive TV</string>
+      <string>Realitatea Live</string>
+      <string>Realitatea TV</string>
+      <string>Rlive TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
