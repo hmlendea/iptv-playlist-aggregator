@@ -22,8 +22,12 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [TestCase("Diaspora Media", "MD", "MD: Diaspora Media", "MD: Diaspora Media", "MD")]
+        [TestCase("FOREIGN_CHANNEL", null, "M D Dunia Sinema", "Dunia Sinema (1080p)", "MD")]
         [TestCase("INVALID_CHANNEL", null, "iptvcat.com", "iptvcat.com", "RO")]
         [TestCase("INVALID_CHANNEL", null, "iptvcat.com", "iptvcat.com", null)]
+        [TestCase("Moldova TV", "RO", "RO: M D Moldova TV", "Moldova TV (576p) [Not 24/7]", "MD")]
+        [TestCase("Privesc EU", "MD", "Privesc.EU TV", "Privesc.Eu TV (2160p)", "MD")]
+        [TestCase("Soroca TV", "MD", "MD: Sor TV", "Sor TV (720p)", "MD")]
         [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", "RO")]
         [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", null)]
         [Test]
@@ -35,6 +39,19 @@ namespace IptvPlaylistAggregator.UnitTests.Service
             string providerCountry)
         {
             ChannelName channelName = GetChannelName(definedName, definedCountry, alias);
+
+            Assert.That(channelMatcher.DoesMatch(channelName, providerName, providerCountry));
+        }
+
+        [TestCase("TeleM Botoșani", "RO", "TeleM Botosani (540p) [Not 24/7]", "RO")]
+        [Test]
+        public void ChannelNamesDoMatch_WithoutAliasWithCountry(
+            string definedName,
+            string definedCountry,
+            string providerName,
+            string providerCountry)
+        {
+            ChannelName channelName = GetChannelName(definedName, definedCountry, null);
 
             Assert.That(channelMatcher.DoesMatch(channelName, providerName, providerCountry));
         }
@@ -150,6 +167,10 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [TestCase("Crime &amp; Investigation RO", "RO", "CRIMEINVESTIGATION")]
         [TestCase("iConcert FHD RO", "RO", "ICONCERT")]
         [TestCase("MD: MD: Diaspora Media", "MD", "MDDIASPORAMEDIA")]
+        [TestCase("MD: Moldova TV", "RO", "MOLDOVATV")]
+        [TestCase("RO: M D Moldova TV", "RO", "MDMOLDOVATV")]
+        [TestCase("Moldova TV (576p) [Not 24/7]", "MD", "MDMOLDOVATV")]
+        [TestCase("Moldova TV", "RO", "MOLDOVATV")]
         [TestCase("RO | Travel", "RO", "TRAVEL")]
         [TestCase("RO: Travel", "RO", "TRAVEL")]
         [TestCase("RO(L): TELEKOM SPORT 1 FHD", "RO", "TELEKOMSPORT1")]
