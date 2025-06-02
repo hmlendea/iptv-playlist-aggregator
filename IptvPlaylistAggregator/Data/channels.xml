@@ -1315,6 +1315,17 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>eteatru.ro</Id>
+    <Name>eteatru</Name>
+    <Country>RO</Country>
+    <GroupId>radio</GroupId>
+    <LogoUrl>https://www.eteatru.ro/images/eteatru-logo.png</LogoUrl>
+    <Aliases>
+      <string>eteatru.ro</string>
+      <string>RO: eteatru.ro</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>EtnicTV.ro</Id>
     <Name>Etnic TV</Name>
     <Country>RO</Country>
