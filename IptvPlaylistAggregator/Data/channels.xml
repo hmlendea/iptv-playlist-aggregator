@@ -1945,7 +1945,7 @@
     <Name>Intermedia</Name>
     <Country>RO</Country>
     <GroupId>local-bucovina</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/intermedia-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/intermedia.png</LogoUrl>
     <Aliases>
       <string>Intermedia TV</string>
       <string>Media Regional</string>
