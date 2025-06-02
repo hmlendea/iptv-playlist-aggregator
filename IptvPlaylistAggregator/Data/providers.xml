@@ -115,6 +115,16 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>hmlendea-livestreams-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>300</Priority>
+    <AllowCaching>false</AllowCaching>
+    <Name>hmlendea's livestreams RO</Name>
+    <UrlFormat>https://www.nucilandia.ro/iptv/livestreams/ro/playlist.m3u</UrlFormat>
+    <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>freetuxtv-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>680</Priority>
