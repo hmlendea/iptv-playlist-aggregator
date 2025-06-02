@@ -1347,6 +1347,13 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>Euronews.ro</Id>
+    <Name>Euronews</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/euronews.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>EuropaFM.ro</Id>
     <Name>Europa FM</Name>
     <Country>RO</Country>
@@ -1634,6 +1641,7 @@
     <Aliases>
       <string>HD 365</string>
       <string>RO: HD 365</string>
+      <string>RO: HD 365 TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2499,6 +2507,13 @@
     <Country>INT</Country>
     <GroupId>music</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/melody_channel.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>MeteoTV.ro</Id>
+    <Name>Meteo TV</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/meteo_tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Metropola.ro</Id>
@@ -4035,6 +4050,13 @@
     <Aliases>
       <string>RO: TSTV</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TuDecizi.ro</Id>
+    <Name>Tu Decizi</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/euronews.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TV1SM.ro</Id>
