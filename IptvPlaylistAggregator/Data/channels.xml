@@ -3084,7 +3084,7 @@
     <Id>PrivescEU.ro</Id>
     <Name>Privesc EU</Name>
     <Country>MD</Country>
-    <GroupId>general</GroupId>
+    <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/privesc_eu.png</LogoUrl>
     <Aliases>
       <string>MD: Privesc EU</string>
