@@ -1979,6 +1979,7 @@
       <string>BR: SporTV 3</string>
       <string>Current Time</string>
       <string>Duina Sinema</string>
+      <string>Dunia Sinema</string>
       <string>ES: M Desportes</string>
       <string>EURO TV</string>
       <string>EX-YU: Arena Sport 2 HR</string>
@@ -2597,6 +2598,10 @@
     <Country>RO</Country>
     <GroupId>local-moldova</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/moldova_tv.png</LogoUrl>
+    <Aliases>
+      <string>MD: Moldova TV</string>
+      <string>RO: M D Moldova TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>MoozDance.ro</Id>
@@ -3071,6 +3076,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/privesc_eu.png</LogoUrl>
     <Aliases>
       <string>MD: Privesc EU</string>
+      <string>Privesc.EU TV</string>
       <string>RO: Privesc EU</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -3576,6 +3582,7 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/soroca_tv.png</LogoUrl>
     <Aliases>
+      <string>MD: Sor TV</string>
       <string>MD: Soroca TV</string>
       <string>Soroca TV</string>
     </Aliases>
