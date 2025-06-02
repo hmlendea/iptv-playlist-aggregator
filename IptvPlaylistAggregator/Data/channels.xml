@@ -231,10 +231,17 @@
     <Name>Antena 3</Name>
     <Country>RO</Country>
     <GroupId>news</GroupId>
-    <LogoUrl>http://storage.alltvplay.com/images/channels/57d2bd3fbc33b1566d8b45ac.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/antena3.png</LogoUrl>
     <Aliases>
       <string>Antena 3 CNN</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Antena3Constanta.ro</Id>
+    <Name>Antena 3 Constanța</Name>
+    <Country>RO</Country>
+    <GroupId>local-dobrogea</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/antena3_constanta.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>AntenaComedy.ro</Id>
