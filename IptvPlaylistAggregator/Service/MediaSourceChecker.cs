@@ -109,6 +109,11 @@ namespace IptvPlaylistAggregator.Service
 
         private async Task<StreamState> GetPlaylistStateAsync(string playlistUrl)
         {
+            if (playlistUrl.Contains("googlevideo"))
+            {
+                return StreamState.Alive;
+            }
+
             StreamState streamState = await GetStreamStateAsync(playlistUrl);
 
             if (streamState != StreamState.Alive)
