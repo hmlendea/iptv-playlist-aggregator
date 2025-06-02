@@ -22,13 +22,14 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [TestCase("Diaspora Media", "MD", "MD: Diaspora Media", "MD: Diaspora Media", "MD")]
+        [TestCase("FOREIGN_CHANNEL", null, "M D Dunia Sinema", "Dunia Sinema (1080p)", "MD")]
         [TestCase("INVALID_CHANNEL", null, "iptvcat.com", "iptvcat.com", "RO")]
         [TestCase("INVALID_CHANNEL", null, "iptvcat.com", "iptvcat.com", null)]
+        [TestCase("Moldova TV", "RO", "RO: M D Moldova TV", "Moldova TV (576p) [Not 24/7]", "MD")]
         [TestCase("Privesc EU", "MD", "Privesc.EU TV", "Privesc.Eu TV (2160p)", "MD")]
         [TestCase("Soroca TV", "MD", "MD: Sor TV", "Sor TV (720p)", "MD")]
         [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", "RO")]
         [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", null)]
-        [TestCase("Moldova TV", "RO", "RO: M D Moldova TV", "Moldova TV (576p) [Not 24/7]", "MD")]
         [Test]
         public void ChannelNamesDoMatch_WithAliasWithCountry(
             string definedName,
