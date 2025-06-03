@@ -2967,6 +2967,15 @@
     <GroupId>foreign</GroupId>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>OneFM.ro</Id>
+    <Name>One FM</Name>
+    <Country>RO</Country>
+    <GroupId>radio</GroupId>
+    <Aliases>
+      <string>RO: OneFM Romania</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>onetv</Id>
     <Name>One TV</Name>
     <Country>RO</Country>
@@ -4064,6 +4073,17 @@
     <Country>RO</Country>
     <GroupId>local-maramures</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv1_satu_mare.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TV6.md</Id>
+    <Name>TV6 Moldova</Name>
+    <Country>MD</Country>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv6_moldova.png</LogoUrl>
+    <Aliases>
+      <string>MD: TV6</string>
+      <string>MD: TV6 Moldova</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVArad.ro</Id>
