@@ -260,22 +260,6 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>AntenaCook.ro</Id>
-    <Name>Hello Taste</Name>
-    <Country>RO</Country>
-    <GroupId>entertainment</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cook_and_play.png</LogoUrl>
-    <Aliases>
-      <string>RO: Antena Cook &amp; Play</string>
-      <string>RO: Antena Cook and Play</string>
-      <string>RO: Antena Cook</string>
-      <string>RO: Antena Play Cook</string>
-      <string>RO: Cook &amp; Play</string>
-      <string>RO: Cook and Play</string>
-      <string>RO: Hello Taste</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>AntenaInternational.ro</Id>
     <Name>Antena Internațional</Name>
     <Country>RO</Country>
@@ -1440,26 +1424,6 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>Fallout76AppalachiaRadio.com</Id>
-    <Name>Fallout 76 Appalachia Radio</Name>
-    <Country>INT</Country>
-    <GroupId>radio</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/fallout_76_appalachia_radio.png</LogoUrl>
-    <Aliases>
-      <string>INT: Fallout 76 Appalachia Radio</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>FalloutRadio.com</Id>
-    <Name>Fallout Radio</Name>
-    <Country>INT</Country>
-    <GroupId>radio</GroupId>
-    <LogoUrl>https://www.freepnglogos.com/uploads/fallout-4-logo/fallout-high-resolution-logo-13.png</LogoUrl>
-    <Aliases>
-      <string>INT: Fallout Radio</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>FashionTV.ro</Id>
     <Name>Fashion TV</Name>
     <Country>RO</Country>
@@ -1818,6 +1782,22 @@
     <Country>RO</Country>
     <GroupId>music</GroupId>
     <LogoUrl>https://png2.kisspng.com/sh/1a311527bd4f8133545f3b46d99b1000/L0KzQYm3VcI5N6Fmg5H0aYP2gLBuTfNiap1qReZubHX5ecTwjB4uf5ZngeV4ZHWwhLnsTfZzaZ9wReVxb4ewdrr5hgR3NZlqeehELX3ohLLzTcVjOJNnUdY9OUS3RbKATsUyO2k1UKg5MUW1R4WCVcEzPGc1T6U3cH7q/kisspng-cable-television-webisode-the-frank-show-firetv-heavy-metal-5b0bb9d49445a7.5138086015274951246073.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>HelloTaste.ro</Id>
+    <Name>Hello Taste</Name>
+    <Country>RO</Country>
+    <GroupId>entertainment</GroupId>
+    <LogoUrl>https://cdn.hellotaste.ro/wp-content/themes/hellotaste/img/favicons/android-chrome-256x256.png</LogoUrl>
+    <Aliases>
+      <string>RO: Antena Cook &amp; Play</string>
+      <string>RO: Antena Cook and Play</string>
+      <string>RO: Antena Cook</string>
+      <string>RO: Antena Play Cook</string>
+      <string>RO: Cook &amp; Play</string>
+      <string>RO: Cook and Play</string>
+      <string>RO: Hello Taste</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HistoryChannel.ro</Id>
@@ -2509,6 +2489,16 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/melody_channel.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MeteoRomaniaBucurestiWebcam.ro</Id>
+    <Name>Meteo București</Name>
+    <Country>RO</Country>
+    <GroupId>local-muntenia</GroupId>
+    <LogoUrl>https://i.imgur.com/B9YOYXw.jpeg</LogoUrl>
+    <Aliases>
+      <string>RO: Meteo România București Webcam</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>MeteoTV.ro</Id>
     <Name>Meteo TV</Name>
     <Country>RO</Country>
@@ -2957,6 +2947,16 @@
       <string>RO: Observator News</string>
       <string>Romania: Observator News TV</string>
       <string>Romania: Observator News</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>OldWorldRadio.com</Id>
+    <Name>Old World Radio</Name>
+    <Country>INT</Country>
+    <GroupId>radio</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/old_world_radio.png</LogoUrl>
+    <Aliases>
+      <string>INT: Fallout Radio</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -4056,7 +4056,7 @@
     <Name>Tu Decizi</Name>
     <Country>RO</Country>
     <GroupId>news</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/euronews.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tu_decizi.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TV1SM.ro</Id>
@@ -4161,7 +4161,7 @@
     <Name>TV Sud</Name>
     <Country>RO</Country>
     <GroupId>local-oltenia</GroupId>
-    <LogoUrl>http://www.tvsud.ro/wp-content/uploads/logo/logo-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_sud.png</LogoUrl>
     <Aliases>
       <string>RO: TV Sud Gorj</string>
     </Aliases>
@@ -4599,6 +4599,13 @@
     <Aliases>
       <string>MD: ZonaM</string>
     </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>Z-TV.ro</Id>
+    <Name>Z-TV</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/z-tv.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>ZUTV.ro</Id>
