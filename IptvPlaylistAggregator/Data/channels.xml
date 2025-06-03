@@ -260,22 +260,6 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>AntenaCook.ro</Id>
-    <Name>Hello Taste</Name>
-    <Country>RO</Country>
-    <GroupId>entertainment</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/cook_and_play.png</LogoUrl>
-    <Aliases>
-      <string>RO: Antena Cook &amp; Play</string>
-      <string>RO: Antena Cook and Play</string>
-      <string>RO: Antena Cook</string>
-      <string>RO: Antena Play Cook</string>
-      <string>RO: Cook &amp; Play</string>
-      <string>RO: Cook and Play</string>
-      <string>RO: Hello Taste</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>AntenaInternational.ro</Id>
     <Name>Antena Internațional</Name>
     <Country>RO</Country>
@@ -1818,6 +1802,22 @@
     <Country>RO</Country>
     <GroupId>music</GroupId>
     <LogoUrl>https://png2.kisspng.com/sh/1a311527bd4f8133545f3b46d99b1000/L0KzQYm3VcI5N6Fmg5H0aYP2gLBuTfNiap1qReZubHX5ecTwjB4uf5ZngeV4ZHWwhLnsTfZzaZ9wReVxb4ewdrr5hgR3NZlqeehELX3ohLLzTcVjOJNnUdY9OUS3RbKATsUyO2k1UKg5MUW1R4WCVcEzPGc1T6U3cH7q/kisspng-cable-television-webisode-the-frank-show-firetv-heavy-metal-5b0bb9d49445a7.5138086015274951246073.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>HelloTaste.ro</Id>
+    <Name>Hello Taste</Name>
+    <Country>RO</Country>
+    <GroupId>entertainment</GroupId>
+    <LogoUrl>https://cdn.hellotaste.ro/wp-content/themes/hellotaste/img/favicons/android-chrome-256x256.png</LogoUrl>
+    <Aliases>
+      <string>RO: Antena Cook &amp; Play</string>
+      <string>RO: Antena Cook and Play</string>
+      <string>RO: Antena Cook</string>
+      <string>RO: Antena Play Cook</string>
+      <string>RO: Cook &amp; Play</string>
+      <string>RO: Cook and Play</string>
+      <string>RO: Hello Taste</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>HistoryChannel.ro</Id>
