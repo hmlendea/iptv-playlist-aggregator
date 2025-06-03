@@ -61,6 +61,15 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>github-iptvorg-romanian-language</Id>
+    <IsEnabled>false</IsEnabled>
+    <Priority>102</Priority>
+    <Name>IPTV org's GitHub Romanian Language Channels</Name>
+    <UrlFormat>https://iptv-org.github.io/iptv/languages/ron.m3u</UrlFormat>
+    <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>github-freetv-ro</Id>
     <IsEnabled>false</IsEnabled>
     <Priority>102</Priority>
