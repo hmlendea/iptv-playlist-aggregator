@@ -2509,6 +2509,16 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/melody_channel.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>MeteoRomaniaBucurestiWebcam.ro</Id>
+    <Name>Meteo București</Name>
+    <Country>RO</Country>
+    <GroupId>local-muntenia</GroupId>
+    <LogoUrl>https://i.imgur.com/B9YOYXw.jpeg</LogoUrl>
+    <Aliases>
+      <string>RO: Meteo România București Webcam</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>MeteoTV.ro</Id>
     <Name>Meteo TV</Name>
     <Country>RO</Country>
