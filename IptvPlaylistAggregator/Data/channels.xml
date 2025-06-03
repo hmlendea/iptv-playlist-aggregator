@@ -3585,10 +3585,8 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/smart_tv.png</LogoUrl>
     <Aliases>
-      <string>RO: Sangeorz TV</string>
-      <string>RO: Sangeorz</string>
-      <string>RO: Sîngeorz</string>
-      <string>RO: STV</string>
+      <string>RO: Aleph Smart TV</string>
+      <string>RO: Smart TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
