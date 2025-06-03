@@ -1572,6 +1572,10 @@
     <Country>RO</Country>
     <GroupId>radio</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/gold_fm.png</LogoUrl>
+    <Aliases>
+      <string>RO: Gold FM</string>
+      <string>RO: Radio Gold FM</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>GoldTV.md</Id>
@@ -2957,6 +2961,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/old_world_radio.png</LogoUrl>
     <Aliases>
       <string>INT: Fallout Radio</string>
+      <string>INT: Old World Radio</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
