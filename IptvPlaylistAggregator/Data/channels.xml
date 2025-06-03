@@ -1424,26 +1424,6 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>Fallout76AppalachiaRadio.com</Id>
-    <Name>Fallout 76 Appalachia Radio</Name>
-    <Country>INT</Country>
-    <GroupId>radio</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/fallout_76_appalachia_radio.png</LogoUrl>
-    <Aliases>
-      <string>INT: Fallout 76 Appalachia Radio</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>FalloutRadio.com</Id>
-    <Name>Fallout Radio</Name>
-    <Country>INT</Country>
-    <GroupId>radio</GroupId>
-    <LogoUrl>https://www.freepnglogos.com/uploads/fallout-4-logo/fallout-high-resolution-logo-13.png</LogoUrl>
-    <Aliases>
-      <string>INT: Fallout Radio</string>
-    </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>FashionTV.ro</Id>
     <Name>Fashion TV</Name>
     <Country>RO</Country>
@@ -2970,6 +2950,16 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>OldWorldRadio.com</Id>
+    <Name>Old World Radio</Name>
+    <Country>INT</Country>
+    <GroupId>radio</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/old_world_radio.png</LogoUrl>
+    <Aliases>
+      <string>INT: Fallout Radio</string>
+    </Aliases>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>ONAir.unknown</Id>
     <IsEnabled>false</IsEnabled>
     <Name>ON Air</Name>
@@ -4171,7 +4161,7 @@
     <Name>TV Sud</Name>
     <Country>RO</Country>
     <GroupId>local-oltenia</GroupId>
-    <LogoUrl>http://www.tvsud.ro/wp-content/uploads/logo/logo-tv.png</LogoUrl>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv_sud.png</LogoUrl>
     <Aliases>
       <string>RO: TV Sud Gorj</string>
     </Aliases>
