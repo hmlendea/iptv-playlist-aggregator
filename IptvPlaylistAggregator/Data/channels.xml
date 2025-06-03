@@ -2976,6 +2976,7 @@
     <Name>One FM</Name>
     <Country>RO</Country>
     <GroupId>radio</GroupId>
+    <LogoUrl>https://www.onefm.ro/img/onefm-logo.png</LogoUrl>
     <Aliases>
       <string>RO: OneFM Romania</string>
     </Aliases>
