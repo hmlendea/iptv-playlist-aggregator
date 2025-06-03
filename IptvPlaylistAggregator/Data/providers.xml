@@ -169,4 +169,24 @@
     <Country>RO</Country>
   </PlaylistProviderEntity>
 
+  <PlaylistProviderEntity>
+    <Id>hmlendea-livestreams-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>5001</Priority>
+    <AllowCaching>false</AllowCaching>
+    <Name>hmlendea's livestreams MD</Name>
+    <UrlFormat>https://www.nucilandia.ro/iptv/livestreams/md/playlist.m3u</UrlFormat>
+    <Country>MD</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>hmlendea-livestreams-int</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>5002</Priority>
+    <AllowCaching>false</AllowCaching>
+    <Name>hmlendea's livestreams INT</Name>
+    <UrlFormat>https://www.nucilandia.ro/iptv/livestreams/int/playlist.m3u</UrlFormat>
+    <Country>INT</Country>
+  </PlaylistProviderEntity>
+
 </ArrayOfPlaylistProviderEntity>
