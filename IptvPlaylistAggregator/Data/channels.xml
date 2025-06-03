@@ -3371,6 +3371,8 @@
     <Aliases>
       <string>RO: Realitatea Plus TV</string>
       <string>RO: Realitatea TV Plus</string>
+      <string>RO: Tu Decizi</string>
+      <string>Tu Decizi</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3976,7 +3978,7 @@
     <Name>TL+ Maramureș</Name>
     <Country>RO</Country>
     <GroupId>local-maramures</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/tl-plus-maramures.png</LogoUrl>
+    <LogoUrl>https://plustv.ro/images/sigla-mica.png</LogoUrl>
     <Aliases>
       <string>RO: TL Plus</string>
     </Aliases>
@@ -4065,13 +4067,6 @@
     <Aliases>
       <string>RO: TSTV</string>
     </Aliases>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
-    <Id>TuDecizi.ro</Id>
-    <Name>Tu Decizi</Name>
-    <Country>RO</Country>
-    <GroupId>news</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tu_decizi.png</LogoUrl>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TV1SM.ro</Id>
