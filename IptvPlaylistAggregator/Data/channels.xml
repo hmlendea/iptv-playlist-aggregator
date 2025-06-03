@@ -4601,6 +4601,13 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
+    <Id>Z-TV.ro</Id>
+    <Name>Z-TV</Name>
+    <Country>RO</Country>
+    <GroupId>news</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/z-tv.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
     <Id>ZUTV.ro</Id>
     <Name>ZU TV</Name>
     <Country>RO</Country>
