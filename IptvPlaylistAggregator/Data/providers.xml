@@ -61,6 +61,15 @@
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
+    <Id>github-iptvorg-romanian-language</Id>
+    <IsEnabled>false</IsEnabled>
+    <Priority>102</Priority>
+    <Name>IPTV org's GitHub Romanian Language Channels</Name>
+    <UrlFormat>https://iptv-org.github.io/iptv/languages/ron.m3u</UrlFormat>
+    <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
     <Id>github-freetv-ro</Id>
     <IsEnabled>false</IsEnabled>
     <Priority>102</Priority>
@@ -126,7 +135,7 @@
   <PlaylistProviderEntity>
     <Id>freetuxtv-ro-alt</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>680</Priority>
+    <Priority>681</Priority>
     <Name>Free Tux TV Romania (Alternative)</Name>
     <UrlFormat>https://database.freetuxtv.net/WebStreamExport/index?format=m3u&amp;status=2&amp;country=ro&amp;isp=all</UrlFormat>
     <Country>RO</Country>
@@ -135,7 +144,7 @@
   <PlaylistProviderEntity>
     <Id>freetuxtv-md</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>681</Priority>
+    <Priority>682</Priority>
     <Name>Free Tux TV Moldova</Name>
     <UrlFormat>http://database.freetuxtv.net/playlists/playlist_webtv_md.m3u</UrlFormat>
     <Country>MD</Country>
@@ -144,10 +153,28 @@
   <PlaylistProviderEntity>
     <Id>freetuxtv-md-alt</Id>
     <IsEnabled>true</IsEnabled>
-    <Priority>680</Priority>
+    <Priority>683</Priority>
     <Name>Free Tux TV Moldova (Alternative)</Name>
     <UrlFormat>https://database.freetuxtv.net/WebStreamExport/index?format=m3u&amp;status=2&amp;country=md&amp;isp=all</UrlFormat>
     <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>royiptv-ro</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>690</Priority>
+    <Name>RoyIPTV TV Romania</Name>
+    <UrlFormat>https://m3u.royiptv.com/channels/country/ro.m3u</UrlFormat>
+    <Country>RO</Country>
+  </PlaylistProviderEntity>
+
+  <PlaylistProviderEntity>
+    <Id>royiptv-md</Id>
+    <IsEnabled>true</IsEnabled>
+    <Priority>691</Priority>
+    <Name>RoyIPTV TV Moldova</Name>
+    <UrlFormat>https://m3u.royiptv.com/channels/country/md.m3u</UrlFormat>
+    <Country>MD</Country>
   </PlaylistProviderEntity>
 
   <PlaylistProviderEntity>
