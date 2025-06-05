@@ -1572,6 +1572,10 @@
     <Country>RO</Country>
     <GroupId>radio</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/gold_fm.png</LogoUrl>
+    <Aliases>
+      <string>RO: Gold FM</string>
+      <string>RO: Radio Gold FM</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>GoldTV.md</Id>
@@ -2957,6 +2961,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/radio-logos/master/logos/old_world_radio.png</LogoUrl>
     <Aliases>
       <string>INT: Fallout Radio</string>
+      <string>INT: Old World Radio</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -2965,6 +2970,16 @@
     <Name>ON Air</Name>
     <Country></Country>
     <GroupId>foreign</GroupId>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>OneFM.ro</Id>
+    <Name>One FM</Name>
+    <Country>RO</Country>
+    <GroupId>radio</GroupId>
+    <LogoUrl>https://www.onefm.ro/img/onefm-logo.png</LogoUrl>
+    <Aliases>
+      <string>RO: OneFM Romania</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>onetv</Id>
@@ -3356,6 +3371,8 @@
     <Aliases>
       <string>RO: Realitatea Plus TV</string>
       <string>RO: Realitatea TV Plus</string>
+      <string>RO: Tu Decizi</string>
+      <string>Tu Decizi</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3416,8 +3433,8 @@
     <Aliases>
       <string>Republika NEWS TV</string>
       <string>Republika NEWS</string>
+      <string>RO: Ploiești TV</string>
       <string>RO: Republika NEWS TV</string>
-      <string>RO: Republika NEWS</string>
       <string>Romania: Republika NEWS TV</string>
       <string>Romania: Republika NEWS</string>
     </Aliases>
@@ -3509,6 +3526,7 @@
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/romania_tv.png</LogoUrl>
     <Aliases>
       <string>RO: România</string>
+      <string>RO: România TV</string>
       <string>RTV (România TV)</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -3568,10 +3586,8 @@
     <GroupId>news</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/smart_tv.png</LogoUrl>
     <Aliases>
-      <string>RO: Sangeorz TV</string>
-      <string>RO: Sangeorz</string>
-      <string>RO: Sîngeorz</string>
-      <string>RO: STV</string>
+      <string>RO: Aleph Smart TV</string>
+      <string>RO: Smart TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -3961,7 +3977,7 @@
     <Name>TL+ Maramureș</Name>
     <Country>RO</Country>
     <GroupId>local-maramures</GroupId>
-    <LogoUrl>http://stvron.com/canale/mari/tl-plus-maramures.png</LogoUrl>
+    <LogoUrl>https://plustv.ro/images/sigla-mica.png</LogoUrl>
     <Aliases>
       <string>RO: TL Plus</string>
     </Aliases>
@@ -4052,18 +4068,22 @@
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
-    <Id>TuDecizi.ro</Id>
-    <Name>Tu Decizi</Name>
-    <Country>RO</Country>
-    <GroupId>news</GroupId>
-    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tu_decizi.png</LogoUrl>
-  </ChannelDefinitionEntity>
-  <ChannelDefinitionEntity>
     <Id>TV1SM.ro</Id>
     <Name>TV1 Satu Mare</Name>
     <Country>RO</Country>
     <GroupId>local-maramures</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv1_satu_mare.png</LogoUrl>
+  </ChannelDefinitionEntity>
+  <ChannelDefinitionEntity>
+    <Id>TV6.md</Id>
+    <Name>TV6 Moldova</Name>
+    <Country>MD</Country>
+    <GroupId>local-basarabia</GroupId>
+    <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/tv6_moldova.png</LogoUrl>
+    <Aliases>
+      <string>MD: TV6</string>
+      <string>MD: TV6 Moldova</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>TVArad.ro</Id>
