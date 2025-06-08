@@ -1428,6 +1428,9 @@
     <Name>Fashion TV</Name>
     <Country>RO</Country>
     <GroupId>unknown</GroupId>
+    <Aliases>
+      <string>RO: Fashion TV</string>
+    </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
     <Id>Favorit.ro</Id>
@@ -2087,6 +2090,7 @@
     <GroupId>general</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/kanal_d.png</LogoUrl>
     <Aliases>
+      <string>Kanal D Romania</string>
       <string>RO: Canal D</string>
     </Aliases>
   </ChannelDefinitionEntity>
@@ -4355,6 +4359,7 @@
     <Aliases>
       <string>MD: TVR Moldova</string>
       <string>RO: TVR Moldova</string>
+      <string>TVR Moldova</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
@@ -4506,7 +4511,9 @@
     <GroupId>local-basarabia</GroupId>
     <LogoUrl>https://raw.githubusercontent.com/hmlendea/tv-logos/master/logos/vocea_basarabiei.png</LogoUrl>
     <Aliases>
+      <string>MD: Vocea Basarabiei TV</string>
       <string>MD: Vocea Basarabiei</string>
+      <string>Vocea Basarabiei TV</string>
     </Aliases>
   </ChannelDefinitionEntity>
   <ChannelDefinitionEntity>
