@@ -2141,8 +2141,10 @@
     <Aliases>
       <string>Light Channel TV</string>
       <string>Light Channel</string>
+      <string>LightChannel.ro</string>
       <string>RO: Light Channel TV</string>
       <string>RO: Light Channel</string>
+      <string>RO: LightChannel.ro</string>
       <string>Romania: Light Channel TV</string>
       <string>Romania: Light Channel</string>
     </Aliases>
@@ -3437,6 +3439,8 @@
     <Aliases>
       <string>Republika NEWS TV</string>
       <string>Republika NEWS</string>
+      <string>Ploiesti TV</string>
+      <string>RO: Ploiești TV</string>
       <string>RO: Ploiești TV</string>
       <string>RO: Republika NEWS TV</string>
       <string>Romania: Republika NEWS TV</string>
