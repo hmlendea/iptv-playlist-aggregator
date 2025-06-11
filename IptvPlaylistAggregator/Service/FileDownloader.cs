@@ -1,8 +1,7 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-
-using IptvPlaylistAggregator.Configuration;
+using NuciWeb.HTTP;
 
 namespace IptvPlaylistAggregator.Service
 {
@@ -11,20 +10,12 @@ namespace IptvPlaylistAggregator.Service
         private readonly ICacheManager cache;
         private readonly HttpClient httpClient;
 
-        public FileDownloader(
-            ICacheManager cache,
-            ApplicationSettings applicationSettings)
+        public FileDownloader(ICacheManager cache)
         {
             this.cache = cache;
 
-            httpClient = new HttpClient
-            {
-                Timeout = TimeSpan.FromMilliseconds(3000)
-            };
-
-            httpClient.DefaultRequestHeaders.Add(
-                "User-Agent",
-                applicationSettings.UserAgent);
+            httpClient = HttpClientCreator.Create();
+            httpClient.Timeout = TimeSpan.FromSeconds(3);
         }
 
         public async Task<string> TryDownloadStringAsync(string url)

@@ -12,6 +12,7 @@ using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service.Models;
 
 using NuciLog.Core;
+using NuciWeb.HTTP;
 
 namespace IptvPlaylistAggregator.Service
 {
@@ -235,7 +236,7 @@ namespace IptvPlaylistAggregator.Service
             request.Timeout = timeout;
             request.ContinueTimeout = timeout;
             request.ReadWriteTimeout = timeout;
-            request.UserAgent = applicationSettings.UserAgent;
+            request.UserAgent = new UserAgentFetcher().GetUserAgent().Result;
 
             return request;
         }
