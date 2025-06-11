@@ -92,7 +92,6 @@ The settings are stored in the `appsettings.json` file in the root directory.
  - *canIncludeUnmatchedChannels*: Boolean value indicating whether provider channels that were not able to be matched with the data in the channelStorePath file should be included in the output file (in the Unknown category) or not at all
  - *areTvGuideTagsEnabled*: Boolean value indicating whether TV Guide tags (logo URLs, groups, TVG IDs, channel numbers, etc) should be included in the output file or not
  - *arePlaylistDetailsTagsEnabled*: Boolean value indicating whether playlist details (playlist ID, the playlist's original channel name) should be included in the output file or not
- - *userAgent*: String value indicating the UserAgent that should be used when performing HTTP operations
 
 ### Channel data
 

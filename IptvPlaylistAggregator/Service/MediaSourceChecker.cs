@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Text;
+using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -12,6 +12,7 @@ using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service.Models;
 
 using NuciLog.Core;
+using NuciWeb.HTTP;
 
 namespace IptvPlaylistAggregator.Service
 {
@@ -26,16 +27,14 @@ namespace IptvPlaylistAggregator.Service
         private const string TinyUrlPattern = "^(https?\\:\\/\\/)?((www\\.)?tinyurl\\.com)\\/.+$";
         private const string NonHttpUrlPattern = "^(?!http).*";
 
-        private static readonly string[] BlacklistedSources =
-        [
-            "http://hls.protv.md/acasatv/acasatv.m3u8"
-        ];
+        private static readonly string[] BlacklistedSources = [ "http://hls.protv.md/acasatv/acasatv.m3u8" ];
 
         private readonly IFileDownloader fileDownloader = fileDownloader;
         private readonly IPlaylistFileBuilder playlistFileBuilder = playlistFileBuilder;
         private readonly ICacheManager cache = cache;
         private readonly ILogger logger = logger;
         private readonly ApplicationSettings applicationSettings = applicationSettings;
+        private readonly HttpClient httpClient = HttpClientCreator.Create();
 
         public async Task<bool> IsSourcePlayableAsync(string url)
         {
@@ -197,15 +196,12 @@ namespace IptvPlaylistAggregator.Service
 
             try
             {
-                HttpWebRequest request = CreateWebRequest(url);
-
-                using HttpWebResponse response = (await request.GetResponseAsync()) as HttpWebResponse;
+                using var response = await httpClient.GetAsync(url);
                 statusCode = response.StatusCode;
 
                 if (doCacheContent)
                 {
-                    using StreamReader reader = new(response.GetResponseStream(), Encoding.UTF8);
-                    content = await reader.ReadToEndAsync();
+                    content = await response.Content.ReadAsStringAsync();
                 }
             }
             catch (WebException ex)
@@ -224,20 +220,6 @@ namespace IptvPlaylistAggregator.Service
             }
 
             return statusCode;
-        }
-
-        private HttpWebRequest CreateWebRequest(string url)
-        {
-            const int timeout = 10000;
-
-            HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
-            request.Method = "GET";
-            request.Timeout = timeout;
-            request.ContinueTimeout = timeout;
-            request.ReadWriteTimeout = timeout;
-            request.UserAgent = applicationSettings.UserAgent;
-
-            return request;
         }
     }
 }
