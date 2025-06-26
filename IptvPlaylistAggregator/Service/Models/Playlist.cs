@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using NuciExtensions;
 
 namespace IptvPlaylistAggregator.Service.Models
 {
@@ -6,7 +7,7 @@ namespace IptvPlaylistAggregator.Service.Models
     {
         public IList<Channel> Channels;
 
-        public bool IsEmpty => Channels is null || Channels.Count == 0;
+        public bool IsEmpty => EnumerableExt.IsNullOrEmpty(Channels);
 
         public Playlist() => Channels = [];
 

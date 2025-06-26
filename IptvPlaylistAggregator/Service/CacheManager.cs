@@ -184,13 +184,13 @@ namespace IptvPlaylistAggregator.Service
                 {
                     Url = fields[0],
                     LastCheckTime = DateTime.ParseExact(fields[1], TimestampFormat, CultureInfo.InvariantCulture),
-                    State = (StreamState)Enum.Parse(typeof(StreamState), fields[2])
+                    State = Enum.Parse<StreamState>(fields[2])
                 };
 
-                if ((streamStatus.State == StreamState.Alive && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamAliveStatusCacheTimeout) ||
-                    (streamStatus.State == StreamState.Dead && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamDeadStatusCacheTimeout) ||
-                    (streamStatus.State == StreamState.Unauthorised && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamUnauthorisedStatusCacheTimeout) ||
-                    (streamStatus.State == StreamState.NotFound && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamNotFoundStatusCacheTimeout))
+                if ((streamStatus.State.Equals(StreamState.Alive) && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamAliveStatusCacheTimeout) ||
+                    (streamStatus.State.Equals(StreamState.Dead) && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamDeadStatusCacheTimeout) ||
+                    (streamStatus.State.Equals(StreamState.Unauthorised) && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamUnauthorisedStatusCacheTimeout) ||
+                    (streamStatus.State.Equals(StreamState.NotFound) && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamNotFoundStatusCacheTimeout))
                 {
                     continue;
                 }

@@ -11,10 +11,7 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class ChannelMatcher(ICacheManager cache) : IChannelMatcher
     {
-        private static readonly string[] SubstringsToStrip =
-        [
-            "www.iptvsource.com", "iptvsource.com", "backup"
-        ];
+        private static readonly string[] SubstringsToStrip = [ "www.iptvsource.com", "iptvsource.com", "backup" ];
 
         private static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {

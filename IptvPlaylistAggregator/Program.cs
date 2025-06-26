@@ -58,7 +58,6 @@ namespace IptvPlaylistAggregator
                 .AddSingleton<ILogger, NuciLogger>()
                 .BuildServiceProvider();
 
-
             logger = serviceProvider.GetService<ILogger>();
             cacheManager = serviceProvider.GetService<ICacheManager>();
 

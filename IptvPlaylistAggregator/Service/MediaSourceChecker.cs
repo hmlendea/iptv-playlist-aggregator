@@ -66,7 +66,7 @@ namespace IptvPlaylistAggregator.Service
                 state = await GetStreamStateAsync(url);
             }
 
-            if (state == StreamState.Alive)
+            if (state.Equals(StreamState.Alive))
             {
                 logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Success, new LogInfo(MyLogInfoKey.Url, url));
             }
@@ -76,7 +76,7 @@ namespace IptvPlaylistAggregator.Service
             }
 
             SaveToCache(url, state);
-            return state == StreamState.Alive;
+            return state.Equals(StreamState.Alive);
         }
 
         private static bool IsUrlUnsupported(string url)
@@ -162,17 +162,17 @@ namespace IptvPlaylistAggregator.Service
         {
             HttpStatusCode statusCode = await GetHttpStatusCode(url);
 
-            if (statusCode == HttpStatusCode.OK)
+            if (statusCode.Equals(HttpStatusCode.OK))
             {
                 return StreamState.Alive;
             }
 
-            if (statusCode == HttpStatusCode.Unauthorized)
+            if (statusCode.Equals(HttpStatusCode.Unauthorized))
             {
                 return StreamState.Unauthorised;
             }
 
-            if (statusCode == HttpStatusCode.NotFound)
+            if (statusCode.Equals(HttpStatusCode.NotFound))
             {
                 return StreamState.NotFound;
             }
