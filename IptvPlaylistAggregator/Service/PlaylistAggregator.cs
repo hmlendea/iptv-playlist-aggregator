@@ -19,22 +19,12 @@ namespace IptvPlaylistAggregator.Service
         IPlaylistFileBuilder playlistFileBuilder,
         IChannelMatcher channelMatcher,
         IMediaSourceChecker mediaSourceChecker,
-        IRepository<ChannelDefinitionEntity> channelRepository,
-        IRepository<GroupEntity> groupRepository,
-        IRepository<PlaylistProviderEntity> playlistProviderRepository,
+        IFileRepository<ChannelDefinitionEntity> channelRepository,
+        IFileRepository<GroupEntity> groupRepository,
+        IFileRepository<PlaylistProviderEntity> playlistProviderRepository,
         ApplicationSettings settings,
         ILogger logger) : IPlaylistAggregator
     {
-        private readonly IPlaylistFetcher playlistFetcher = playlistFetcher;
-        private readonly IPlaylistFileBuilder playlistFileBuilder = playlistFileBuilder;
-        private readonly IChannelMatcher channelMatcher = channelMatcher;
-        private readonly IMediaSourceChecker mediaSourceChecker = mediaSourceChecker;
-        private readonly IRepository<ChannelDefinitionEntity> channelRepository = channelRepository;
-        private readonly IRepository<GroupEntity> groupRepository = groupRepository;
-        private readonly IRepository<PlaylistProviderEntity> playlistProviderRepository = playlistProviderRepository;
-        private readonly ApplicationSettings settings = settings;
-        private readonly ILogger logger = logger;
-
         private IEnumerable<ChannelDefinition> channelDefinitions;
         private IEnumerable<PlaylistProvider> playlistProviders;
         private IDictionary<string, Group> groups;
