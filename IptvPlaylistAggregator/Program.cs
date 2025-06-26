@@ -8,6 +8,7 @@ using NuciDAL.Repositories;
 using NuciLog;
 using NuciLog.Configuration;
 using NuciLog.Core;
+using NuciWeb.HTTP;
 
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.DataAccess.DataObjects;
@@ -62,6 +63,12 @@ namespace IptvPlaylistAggregator
             cacheManager = serviceProvider.GetService<ICacheManager>();
 
             logger.Info(Operation.StartUp, OperationStatus.Success);
+
+            if (!NetworkUtils.HasInternetAccess())
+            {
+                logger.Fatal(Operation.StartUp, OperationStatus.Failure, "No internet access detected. Please check the network connection.");
+                return;
+            }
 
             try
             {
