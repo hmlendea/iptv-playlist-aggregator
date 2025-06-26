@@ -52,9 +52,9 @@ namespace IptvPlaylistAggregator
                 .AddSingleton<IPlaylistFileBuilder, PlaylistFileBuilder>()
                 .AddSingleton<IChannelMatcher, ChannelMatcher>()
                 .AddSingleton<IMediaSourceChecker, MediaSourceChecker>()
-                .AddSingleton<IRepository<ChannelDefinitionEntity>>(s => new XmlRepository<ChannelDefinitionEntity>(dataStoreSettings.ChannelStorePath))
-                .AddSingleton<IRepository<GroupEntity>>(s => new XmlRepository<GroupEntity>(dataStoreSettings.GroupStorePath))
-                .AddSingleton<IRepository<PlaylistProviderEntity>>(s => new XmlRepository<PlaylistProviderEntity>(dataStoreSettings.PlaylistProviderStorePath))
+                .AddSingleton<IFileRepository<ChannelDefinitionEntity>>(s => new XmlRepository<ChannelDefinitionEntity>(dataStoreSettings.ChannelStorePath))
+                .AddSingleton<IFileRepository<GroupEntity>>(s => new XmlRepository<GroupEntity>(dataStoreSettings.GroupStorePath))
+                .AddSingleton<IFileRepository<PlaylistProviderEntity>>(s => new XmlRepository<PlaylistProviderEntity>(dataStoreSettings.PlaylistProviderStorePath))
                 .AddSingleton<ILogger, NuciLogger>()
                 .BuildServiceProvider();
 
