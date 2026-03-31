@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 
 using NuciExtensions;
@@ -12,6 +13,8 @@ namespace IptvPlaylistAggregator.Service
     public sealed class ChannelMatcher(ICacheManager cache) : IChannelMatcher
     {
         private static readonly string[] SubstringsToStrip = [ "www.iptvsource.com", "iptvsource.com", "backup" ];
+
+        private static readonly RegexOptions RegexReplacementOptions = RegexOptions.IgnoreCase | RegexOptions.Compiled;
 
         private static readonly IDictionary<string, string> TextReplacements = new Dictionary<string, string>
         {
@@ -65,6 +68,11 @@ namespace IptvPlaylistAggregator.Service
             { "^(RO: *)*", "" },
         };
 
+        private static readonly (Regex Pattern, string Replacement)[] CompiledTextReplacements =
+            TextReplacements
+                .Select(entry => (new Regex(entry.Key, RegexReplacementOptions), entry.Value))
+                .ToArray();
+
         private readonly ICacheManager cache = cache;
 
         public string NormaliseName(string name, string country)
@@ -101,11 +109,6 @@ namespace IptvPlaylistAggregator.Service
 
         private static string StripChannelName(string name)
         {
-            const string allowedChars =
-                "abcdefghijklmnopqrstuvwxyz" +
-                "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
-                "0123456789";
-
             string strippedName = name;
 
             foreach (string substringToStrip in SubstringsToStrip)
@@ -113,26 +116,27 @@ namespace IptvPlaylistAggregator.Service
                 strippedName = strippedName.Replace(substringToStrip, "", true, CultureInfo.InvariantCulture);
             }
 
-            foreach (string pattern in TextReplacements.Keys)
+            foreach ((Regex pattern, string replacement) in CompiledTextReplacements)
             {
-                strippedName = Regex.Replace(
-                    strippedName,
-                    pattern,
-                    TextReplacements[pattern],
-                    RegexOptions.IgnoreCase);
+                strippedName = pattern.Replace(strippedName, replacement);
             }
 
-            string finalString = string.Empty;
+            StringBuilder finalString = new(strippedName.Length);
 
             foreach (char c in strippedName)
             {
-                if (allowedChars.Contains(c))
+                if (IsAsciiLetterOrDigit(c))
                 {
-                    finalString += c;
+                    finalString.Append(c);
                 }
             }
 
-            return finalString;
+            return finalString.ToString();
         }
+
+        private static bool IsAsciiLetterOrDigit(char c)
+            => (c >= 'a' && c <= 'z') ||
+               (c >= 'A' && c <= 'Z') ||
+               (c >= '0' && c <= '9');
     }
 }

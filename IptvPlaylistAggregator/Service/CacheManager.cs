@@ -174,7 +174,7 @@ namespace IptvPlaylistAggregator.Service
                 return;
             }
 
-            List<string> lines = File.ReadAllLines(filePath).ToList();
+            List<string> lines = [.. File.ReadAllLines(filePath)];
 
             foreach (string line in lines)
             {

@@ -26,7 +26,7 @@ namespace IptvPlaylistAggregator.Service.Mapping
             Country = serviceModel.Country,
             GroupId = serviceModel.GroupId,
             LogoUrl = serviceModel.LogoUrl,
-            Aliases = serviceModel.Name.Aliases.ToList()
+            Aliases = [.. serviceModel.Name.Aliases]
         };
 
         internal static IEnumerable<ChannelDefinition> ToServiceModels(this IEnumerable<ChannelDefinitionEntity> dataObjects)
