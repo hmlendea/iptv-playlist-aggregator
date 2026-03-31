@@ -1,67 +1,163 @@
 [![Donate](https://img.shields.io/badge/-%E2%99%A5%20Donate-%23ff69b4)](https://hmlendea.go.ro/fund.html) [![Build Status](https://github.com/hmlendea/iptv-playlist-aggregator/actions/workflows/dotnet.yml/badge.svg)](https://github.com/hmlendea/iptv-playlist-aggregator/actions/workflows/dotnet.yml) [![Latest GitHub release](https://img.shields.io/github/v/release/hmlendea/iptv-playlist-aggregator)](https://github.com/hmlendea/iptv-playlist-aggregator/releases/latest)
 
-# About
+# IPTV Playlist Aggregator
 
-IPTV Playlist Aggregator is a tool for downloading IPTV playlists from multiple sources and aggregating their channels into a single playlist. It will match the duplicated channels into a single one, based on their name, and will override any channel data (such as logo, TVG ID, etc) with your own custom one.
+IPTV Playlist Aggregator is a .NET console application that downloads playlists from multiple providers and merges them into a single curated M3U file.
 
-Example use case:
-Run as a background service on a Raspberry Pi, to periodically output the playlist to an HTTP server, from where it can be directly accessed by the IPTV application via URL.
+It is designed for users who want one stable playlist, with their own channel metadata and grouping rules, even when source playlists are noisy or inconsistent.
 
-# Contributions
+## What It Does
 
-Feel free to fork and implement any change you consider useful, and open a pull request so that I can review it and merge into the master branch here.
+- Downloads M3U playlists from multiple providers.
+- Matches provider channels against your channel definitions (including aliases).
+- Keeps one playable stream per configured channel.
+- Writes a final unified M3U playlist to a configurable path.
+- Optionally includes unmatched channels under an unknown grouping.
+- Supports provider/date-based playlist URLs.
+- Caches downloaded and parsed data to reduce repeated work.
 
-Rules:
- - Make sure that anything you implement workson any OS supported by .NET Core
- - Make sure that your code is formatted correctly and it respects the basic C# coding and naming standards
+## How Aggregation Works
 
-# Instructions
+1. Load groups, channel definitions, and providers from XML files.
+2. Fetch enabled providers and parse their playlists.
+3. Remove duplicate stream URLs.
+4. Match each configured channel against provider channel names (and optional country context).
+5. Keep the first playable media source for each matched channel.
+6. Optionally append unmatched playable channels.
+7. Generate a single output M3U file.
 
-## Compiling
+## Project Structure
 
-Firstly you need to make sure you have the .NET Core SDK installed and up to date.
+- `IptvPlaylistAggregator/`: main app
+- `IptvPlaylistAggregator/Data/`: sample data files (`channels.xml`, `groups.xml`, `providers.xml`)
+- `IptvPlaylistAggregator/Service/`: aggregation, matching, fetch, and M3U build logic
+- `IptvPlaylistAggregator.UnitTests/`: unit tests
 
-Chose one of the following methods based on which system you want this service to be running on, and run the command inside of the source directory (where the .csproj is)
+## Requirements
 
-### For the current system:
+- .NET SDK 10.0+
+- Internet access (required at runtime to fetch source playlists)
 
-`dotnet publish -c Release`
+## Quick Start
 
-The output will be located in `./bin/Release/net5.0`
+From the repository root:
 
-### For a different system:
-
-`dotnet publish -c Release -r [RID]`
-
-For a list of all possible RID values, check out [the official documentation](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog).
-
-The output will be located in `./bin/Release/net5.0/[RID]/'.
-
-If the target system will have the *.NET Core Runtime* installed, delete or ignore the `./bin/Release/net5.0/[RID]/publish` directory.
-If not, use **only** the publish directory, since that one contains all the necessary libraries that the runtime would normally provide.
-
-## Running in background as a service
-
-**Note:** The following instructions only apply for *Linux* distributions using *systemd*.
-
-Create the following service file: /lib/systemd/system/iptv-playlist-aggregator.service
+```bash
+dotnet restore
+dotnet build IptvPlaylistAggregator.sln
+dotnet run --project IptvPlaylistAggregator/IptvPlaylistAggregator.csproj
 ```
+
+By default, the output playlist is written to `result.m3u` (configured in `appsettings.json`).
+
+## Build and Publish
+
+### Publish for current OS/architecture
+
+```bash
+dotnet publish IptvPlaylistAggregator/IptvPlaylistAggregator.csproj -c Release
+```
+
+### Publish for a specific runtime
+
+```bash
+dotnet publish IptvPlaylistAggregator/IptvPlaylistAggregator.csproj -c Release -r <RID>
+```
+
+Example RIDs: `linux-x64`, `linux-arm64`, `win-x64`.
+
+## Configuration
+
+Runtime settings are loaded from `IptvPlaylistAggregator/appsettings.json`.
+
+### `applicationSettings`
+
+- `outputPlaylistPath`: where the merged M3U file is written
+- `daysToCheck`: number of days to look back for dated provider URLs
+- `canIncludeUnmatchedChannels`: include channels not matched to your definitions
+- `areTvGuideTagsEnabled`: include TV guide tags in `#EXTINF`
+- `arePlaylistDetailsTagsEnabled`: include source playlist metadata tags
+
+### `cacheSettings`
+
+- `cacheDirectoryPath`: cache folder path
+- `hostCacheTimeout`: cache timeout for host checks
+- `streamAliveStatusCacheTimeout`: timeout for alive stream status cache
+- `streamDeadStatusCacheTimeout`: timeout for dead stream status cache
+- `streamUnauthorisedStatusCacheTimeout`: timeout for unauthorized stream status cache
+- `streamNotFoundStatusCacheTimeout`: timeout for not-found stream status cache
+
+### `dataStoreSettings`
+
+- `channelStorePath`: XML path for channel definitions
+- `groupStorePath`: XML path for groups
+- `playlistProviderStorePath`: XML path for providers
+
+## Data Files
+
+All data stores are XML arrays of entities.
+
+### Channels (`channels.xml`)
+
+Entity: `ChannelDefinitionEntity`
+
+- `Id` (string): channel identifier, also used as TVG ID in output
+- `IsEnabled` (bool): include/exclude channel
+- `Name` (string): final display name
+- `Country` (string, optional): country metadata and matching hint
+- `GroupId` (string): group reference
+- `LogoUrl` (string, optional): logo URL
+- `Aliases` (string list): accepted source name variants for matching
+
+### Groups (`groups.xml`)
+
+Entity: `GroupEntity`
+
+- `Id` (string): group identifier
+- `IsEnabled` (bool): include/exclude group
+- `Name` (string): display name
+- `Priority` (int): sort order (lower appears first)
+
+### Providers (`providers.xml`)
+
+Entity: `PlaylistProviderEntity`
+
+- `Id` (string): provider identifier
+- `IsEnabled` (bool): enable/disable provider
+- `Priority` (int): provider processing order (lower is earlier)
+- `AllowCaching` (bool): enable playlist caching for this provider
+- `Name` (string): provider display name
+- `UrlFormat` (string): provider URL, optionally with date placeholder
+- `Country` (string, optional): provider country hint
+- `ChannelNameOverride` (string, optional): force all channels from provider to this name
+
+Date placeholder example in `UrlFormat`:
+
+```text
+https://example.com/playlists/{0:yyyy-MM-dd}.m3u
+```
+
+## Run as a Linux systemd Service
+
+The app is a console executable, so it can be scheduled with a systemd timer.
+
+Create `/etc/systemd/system/iptv-playlist-aggregator.service`:
+
+```ini
 [Unit]
 Description=IPTV Playlist Aggregator
 
 [Service]
-WorkingDirectory=[ABSOLUTE_PATH_TO_SERVICE_DIRECTORY]
-ExecStart=[ABSOLUTE_PATH_TO_SERVICE_DIRECTORY]/IptvPlaylistAggregator
-User=[YOUR_USERNAME]
-
-[Install]
-WantedBy=multi-user.target
+WorkingDirectory=/absolute/path/to/IptvPlaylistAggregator
+ExecStart=/absolute/path/to/IptvPlaylistAggregator/IptvPlaylistAggregator
+User=your-user
 ```
 
-Create the following timer file: /lib/systemd/system/iptv-playlist-aggregator.timer
-```
+Create `/etc/systemd/system/iptv-playlist-aggregator.timer`:
+
+```ini
 [Unit]
-Description=Periodically aggregates an IPTV M3U playlist
+Description=Periodically aggregate IPTV playlists
 
 [Timer]
 OnBootSec=5min
@@ -71,66 +167,33 @@ OnUnitActiveSec=50min
 WantedBy=timers.target
 ```
 
-Values that you might want to change:
- - *OnBootSec*: the delay before the service is started after the OS is booted
- - *OnUnitActiveSec*: how often the service will be triggered
+Enable and start:
 
-In the above example, the service will start 5 minutes after boot, and then again once every 50 minutes.
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now iptv-playlist-aggregator.timer
+```
 
-## Configuration
+## Development
 
-### Settings
+Run tests:
 
-The settings are stored in the `appsettings.json` file in the root directory.
+```bash
+dotnet test IptvPlaylistAggregator.UnitTests/IptvPlaylistAggregator.UnitTests.csproj
+```
 
- - *channelStorePath*: The file where all your channel data is stored
- - *groupStorePath*: The file where all your group data is stored
- - *playlistProviderStorePath*: The file where all the playlist provider URLs are stored
- - *outputPlaylistPath*: The location where the output playlist will be written. Can be used to write directly to an http server
- - *cacheDirectoryPath*: The directory where all the cache files will be written. Leave as default unless you specifically require to move it
- - *daysToCheck*: How far in the past to go for each playlist. If today's playlist is not found (sometimes the providers skip some days) then the service will move on to the previous day, again and again until one is found or the daysToCheck limit is reached.
- - *canIncludeUnmatchedChannels*: Boolean value indicating whether provider channels that were not able to be matched with the data in the channelStorePath file should be included in the output file (in the Unknown category) or not at all
- - *areTvGuideTagsEnabled*: Boolean value indicating whether TV Guide tags (logo URLs, groups, TVG IDs, channel numbers, etc) should be included in the output file or not
- - *arePlaylistDetailsTagsEnabled*: Boolean value indicating whether playlist details (playlist ID, the playlist's original channel name) should be included in the output file or not
+## Target Framework
 
-### Channel data
+The project currently targets `.NET 10.0`.
 
-The channel data file is an XML file, whose name and location is configred in `appsetting.json` by the *channelStorePath* value.
+## Contributing
 
-The file needs to be .NET serializable as an array of ChannelDefinitionEntity objects.
+Contributions are welcome. Please keep changes cross-platform and consistent with existing C# coding style.
 
-ChannelDefinitionEntity fields:
- - *Id* (string): The TVG ID. If using a TVG provider within your IPTV application, make sure the channel IDs match the TVG IDs of your provider.
- - *IsEnabled* (bool): Indicates whether the final playlist will contain this channel or not. Even if enabled, if the group is disabled, the channel will still be omitted.
- - *Name* (string): The name of the channel, as displayed in your IPTV application.
- - *Country* (string): (Optional) The country where the channel is being broadcasted. The `tvg-country` property will be populated with this value, if it exists. It will also be used uin the channel matching process.
- - *GroupId* (string): The ID of the group that this channel will be part of.
- - *LogoUrl* (string): The URL to a logo for the channel. Make sure your IPTV application supports the logo format you provide here.
- - *Aliases* (string collection): Different variants of the name of the channel, as it can appear in the provider playlists. This is the criteria used to match provider channels to this definition.
+## Legal Notice
 
-### Group data
+This software aggregates playlist sources. You are responsible for ensuring your usage complies with local laws and content licensing requirements.
 
-The group data file is an XML file, whose name and location is configred in `appsetting.json` by the *groupStorePath* value.
+## License
 
-The file needs to be .NET serializable as an array of GroupEntity objects.
-
-GroupEntity fields:
- - *Id* (string): Used for matching channels to this group
- - *IsEnabled* (bool): Indicates whether the final playlist will contain channels in this group or not
- - *Priority* (int): The order of the group, starting from 1. The lowest value means that the group will appear first in your IPTV application. The playlist will also have its channels sorted based on their group's priority
- - *Name* (string): The name of the group, as displayed in your IPTV application.
-
-### Providers data
-
-The providers data file is an XML file, whose name and location is configred in `appsetting.json` by the *playlistProviderStorePath* value.
-
-The file needs to be .NET serializable as an array of PlaylistProviderDefinitionEntity objects.
-
-PlaylistProviderDefinitionEntity fields:
- - *Id* (string): The ID of the provider. You can put anything here, used only to distinguish between them.
- - *IsEnabled* (bool): Indicates whether this provider will be used or not.
- - *Priority* (int): The lower the value, the sooner the provider will be processed. Try to make sure the most reliable providers are processed first, as once a channel is matched with a provider, it will be ignored for all other providers after it.
- - *AllowCaching* (bool): (Optional) Indicates whether this provider's playlist should be cached or not. Useful when the provider updates the playlist multiple times a day. By default it's true.
- - *UrlFormat* (string): The URL to the m3u playlist file of that provider. Replace the date part of the URL with a timestamp format. For example, *2019-05-19* will be replaced with *{0:yyyy-MM-dd}*. The *0* is the calendar day that is processed (today, or one of the previous ones depending on the *daysToCheck* setting)
- - *Country* (string): (Optional) If set, the country will be used in the channel matching process.
- - *ChannelNameOverride* (string): (Optional) The channel name override for all the channels in the provider's playlist.
+This project is licensed under the `GNU General Public License v3.0` or later. See [LICENSE](./LICENSE) for details.
