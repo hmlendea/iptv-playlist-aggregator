@@ -31,35 +31,47 @@ namespace IptvPlaylistAggregator.Service
 
             logger.Info(MyOperation.PlaylistFetching, OperationStatus.Started, "Fetching provider playlists");
 
-            List<Task> tasks = [];
+            List<Task<Playlist>> tasks = providers is ICollection<PlaylistProvider> providerCollection
+                ? new List<Task<Playlist>>(providerCollection.Count)
+                : [];
+
+            List<PlaylistProvider> taskProviders = providers is ICollection<PlaylistProvider> providerCollectionForMapping
+                ? new List<PlaylistProvider>(providerCollectionForMapping.Count)
+                : [];
 
             foreach (PlaylistProvider provider in providers)
             {
-                Task task = Task.Run(async () =>
-                {
-                    Playlist playlist = await FetchProviderPlaylistAsync(provider);
-
-                    if (!Playlist.IsNullOrEmpty(playlist))
-                    {
-                        playlists.AddOrUpdate(
-                            provider.Priority,
-                            playlist,
-                            (key, oldValue) => playlist);
-
-                        if (!string.IsNullOrWhiteSpace(provider.Country))
-                        {
-                            foreach (Channel channel in playlist.Channels)
-                            {
-                                channel.Country = provider.Country;
-                            }
-                        }
-                    }
-                });
-
-                tasks.Add(task);
+                tasks.Add(FetchProviderPlaylistAsync(provider));
+                taskProviders.Add(provider);
             }
 
-            Task.WaitAll(tasks.ToArray());
+            Task.WaitAll([.. tasks]);
+
+            for (int i = 0; i < tasks.Count; i++)
+            {
+                PlaylistProvider provider = taskProviders[i];
+                Playlist playlist = tasks[i].Result;
+
+                if (Playlist.IsNullOrEmpty(playlist))
+                {
+                    continue;
+                }
+
+                playlists.AddOrUpdate(
+                    provider.Priority,
+                    playlist,
+                    (key, oldValue) => playlist);
+
+                string country = provider.Country;
+
+                if (!string.IsNullOrWhiteSpace(country))
+                {
+                    foreach (Channel channel in playlist.Channels)
+                    {
+                        channel.Country = country;
+                    }
+                }
+            }
 
             return playlists
                 .OrderBy(x => x.Key)
@@ -80,13 +92,16 @@ namespace IptvPlaylistAggregator.Service
                 return null;
             }
 
+            string channelNameOverride = provider.ChannelNameOverride;
+            bool hasChannelNameOverride = !string.IsNullOrWhiteSpace(channelNameOverride);
+
             foreach (Channel channel in playlist.Channels)
             {
                 channel.PlaylistId = provider.Id;
 
-                if (!string.IsNullOrWhiteSpace(provider.ChannelNameOverride))
+                if (hasChannelNameOverride)
                 {
-                    channel.Name = provider.ChannelNameOverride;
+                    channel.Name = channelNameOverride;
                 }
             }
 

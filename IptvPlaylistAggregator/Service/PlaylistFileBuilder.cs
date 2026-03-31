@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.Service.Models;
@@ -31,30 +32,35 @@ namespace IptvPlaylistAggregator.Service
 
         public string BuildFile(Playlist playlist)
         {
-            string file = FileHeader + Environment.NewLine;
+            StringBuilder fileBuilder = new();
+            fileBuilder.Append(FileHeader).Append(Environment.NewLine);
 
             foreach (Channel channel in playlist.Channels)
             {
-                file +=
-                    $"{EntryHeader}{EntryHeaderSeparator}" +
-                    $"{DefaultEntryRuntime}";
+                fileBuilder
+                    .Append(EntryHeader)
+                    .Append(EntryHeaderSeparator)
+                    .Append(DefaultEntryRuntime);
 
                 if (settings.AreTvGuideTagsEnabled)
                 {
-                    file += BuildTvGuideHeaderTags(channel);
+                    fileBuilder.Append(BuildTvGuideHeaderTags(channel));
                 }
 
                 if (settings.ArePlaylistDetailsTagsEnabled)
                 {
-                    file += BuildPlaylistDetailsHeaderTags(channel);
+                    fileBuilder.Append(BuildPlaylistDetailsHeaderTags(channel));
                 }
 
-                file +=
-                    $"{EntryValuesSeparator}{channel.Name}{Environment.NewLine}" +
-                    $"{channel.Url}{Environment.NewLine}";
+                fileBuilder
+                    .Append(EntryValuesSeparator)
+                    .Append(channel.Name)
+                    .Append(Environment.NewLine)
+                    .Append(channel.Url)
+                    .Append(Environment.NewLine);
             }
 
-            return file;
+            return fileBuilder.ToString();
         }
 
         public Playlist TryParseFile(string file)
@@ -133,27 +139,55 @@ namespace IptvPlaylistAggregator.Service
 
         private static string BuildTvGuideHeaderTags(Channel channel)
         {
-            string tvgTags =
-                $" {TvGuideChannelNumberTagKey}=\"{channel.Number}\"" +
-                $" {TvGuideIdTagKey}=\"{channel.Id}\"" +
-                $" {TvGuideNameTagKey}=\"{channel.Name}\"";
+            StringBuilder tvgTagsBuilder = new();
+            tvgTagsBuilder
+                .Append(' ')
+                .Append(TvGuideChannelNumberTagKey)
+                .Append("=\"")
+                .Append(channel.Number)
+                .Append('"')
+                .Append(' ')
+                .Append(TvGuideIdTagKey)
+                .Append("=\"")
+                .Append(channel.Id)
+                .Append('"')
+                .Append(' ')
+                .Append(TvGuideNameTagKey)
+                .Append("=\"")
+                .Append(channel.Name)
+                .Append('"');
 
             if (!string.IsNullOrWhiteSpace(channel.LogoUrl))
             {
-                tvgTags += $" {TvGuideLogoTagKey}=\"{channel.LogoUrl}\"";
+                tvgTagsBuilder
+                    .Append(' ')
+                    .Append(TvGuideLogoTagKey)
+                    .Append("=\"")
+                    .Append(channel.LogoUrl)
+                    .Append('"');
             }
 
             if (!string.IsNullOrWhiteSpace(channel.Country))
             {
-                tvgTags += $" {TvGuideCountryTagKey}=\"{channel.Country}\"";
+                tvgTagsBuilder
+                    .Append(' ')
+                    .Append(TvGuideCountryTagKey)
+                    .Append("=\"")
+                    .Append(channel.Country)
+                    .Append('"');
             }
 
             if (!string.IsNullOrWhiteSpace(channel.Group))
             {
-                tvgTags += $" {TvGuideGroupTagKey}=\"{channel.Group}\"";
+                tvgTagsBuilder
+                    .Append(' ')
+                    .Append(TvGuideGroupTagKey)
+                    .Append("=\"")
+                    .Append(channel.Group)
+                    .Append('"');
             }
 
-            return tvgTags;
+            return tvgTagsBuilder.ToString();
         }
 
         private static string BuildPlaylistDetailsHeaderTags(Channel channel)

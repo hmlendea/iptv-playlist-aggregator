@@ -47,10 +47,9 @@ namespace IptvPlaylistAggregator.Service
                 .Where(x => x.IsEnabled)
                 .ToServiceModels();
 
-            IList<Channel> providerChannels = playlistFetcher
+            IList<Channel> providerChannels = [.. playlistFetcher
                 .FetchProviderPlaylists(playlistProviders)
-                .SelectMany(x => x.Channels)
-                .ToList();
+                .SelectMany(x => x.Channels)];
 
             Playlist playlist = new();
 
@@ -77,12 +76,11 @@ namespace IptvPlaylistAggregator.Service
 
             foreach (ChannelDefinition channelDef in channelDefinitions)
             {
-                if (!enabledChannels.ContainsKey(channelDef.Id))
+                if (!enabledChannels.TryGetValue(channelDef.Id, out Channel channel))
                 {
                     continue;
                 }
 
-                Channel channel = enabledChannels[channelDef.Id];
                 channel.Number = channels.Count + 1;
 
                 channels.Add(channel);
@@ -115,9 +113,7 @@ namespace IptvPlaylistAggregator.Service
                     OperationStatus.Started,
                     new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value));
 
-                List<Channel> matchedChannels = filteredProviderChannels
-                    .Where(x => channelMatcher.DoesMatch(channelDef.Name, x.Name, x.Country))
-                    .ToList();
+                List<Channel> matchedChannels = [.. filteredProviderChannels.Where(x => channelMatcher.DoesMatch(channelDef.Name, x.Name, x.Country))];
 
                 if (!matchedChannels.Any())
                 {
@@ -205,13 +201,21 @@ namespace IptvPlaylistAggregator.Service
                 OperationStatus.Started,
                 new LogInfo(MyLogInfoKey.ChannelsCount, channels.Count));
 
-            List<Task> tasks = [];
-            IEnumerable<Channel> filteredChannels = channels
-                .Where(x => !string.IsNullOrWhiteSpace(x.Url))
-                .GroupBy(x => x.Url)
-                .Select(g => g.First())
-                .OrderBy(x => channels.IndexOf(x))
-                .ToList();
+            List<Channel> filteredChannels = [];
+            HashSet<string> seenUrls = [];
+
+            foreach (Channel channel in channels)
+            {
+                if (string.IsNullOrWhiteSpace(channel.Url))
+                {
+                    continue;
+                }
+
+                if (seenUrls.Add(channel.Url))
+                {
+                    filteredChannels.Add(channel);
+                }
+            }
 
             logger.Info(
                 MyOperation.ProviderChannelsFiltering,

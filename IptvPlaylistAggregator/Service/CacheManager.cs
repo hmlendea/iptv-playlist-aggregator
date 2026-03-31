@@ -3,7 +3,6 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
 using NuciExtensions;
@@ -174,9 +173,7 @@ namespace IptvPlaylistAggregator.Service
                 return;
             }
 
-            List<string> lines = File.ReadAllLines(filePath).ToList();
-
-            foreach (string line in lines)
+            foreach (string line in File.ReadAllLines(filePath))
             {
                 string[] fields = line.Split(CsvFieldSeparator);
 
@@ -213,9 +210,11 @@ namespace IptvPlaylistAggregator.Service
 
                 string url = streamStatus.Url;
 
-                if (url.Contains(','))
+                int separatorIndex = url.IndexOf(CsvFieldSeparator);
+
+                if (separatorIndex >= 0)
                 {
-                    url = url.Split(',')[0];
+                    url = url[..separatorIndex];
                 }
 
                 lines.Add($"{url}{CsvFieldSeparator}{timestamp}{CsvFieldSeparator}{streamStatus.State}");
