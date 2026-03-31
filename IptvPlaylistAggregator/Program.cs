@@ -22,30 +22,27 @@ namespace IptvPlaylistAggregator
         private static ApplicationSettings applicationSettings;
         private static CacheSettings cacheSettings;
         private static DataStoreSettings dataStoreSettings;
-        private static NuciLoggerSettings nuciLoggerSettings;
 
         private static ILogger logger;
         private static ICacheManager cacheManager;
 
         public static void Main(string[] args)
         {
-            IConfiguration config = LoadConfiguration();
+            IConfiguration configuration = LoadConfiguration();
 
             applicationSettings = new ApplicationSettings();
             cacheSettings = new CacheSettings();
             dataStoreSettings = new DataStoreSettings();
-            nuciLoggerSettings = new NuciLoggerSettings();
 
-            config.Bind(nameof(ApplicationSettings), applicationSettings);
-            config.Bind(nameof(CacheSettings), cacheSettings);
-            config.Bind(nameof(DataStoreSettings), dataStoreSettings);
-            config.Bind(nameof(NuciLoggerSettings), nuciLoggerSettings);
+            configuration.Bind(nameof(ApplicationSettings), applicationSettings);
+            configuration.Bind(nameof(CacheSettings), cacheSettings);
+            configuration.Bind(nameof(DataStoreSettings), dataStoreSettings);
 
             IServiceProvider serviceProvider = new ServiceCollection()
                 .AddSingleton(applicationSettings)
                 .AddSingleton(cacheSettings)
                 .AddSingleton(dataStoreSettings)
-                .AddSingleton(nuciLoggerSettings)
+                .AddNuciLoggerSettings(configuration)
                 .AddSingleton<ICacheManager, CacheManager>()
                 .AddSingleton<IFileDownloader, FileDownloader>()
                 .AddSingleton<IPlaylistAggregator, PlaylistAggregator>()
