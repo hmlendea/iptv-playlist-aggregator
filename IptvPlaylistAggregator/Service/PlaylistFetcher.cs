@@ -59,7 +59,7 @@ namespace IptvPlaylistAggregator.Service
                 tasks.Add(task);
             }
 
-            Task.WaitAll(tasks.ToArray());
+            Task.WaitAll([.. tasks]);
 
             return playlists
                 .OrderBy(x => x.Key)
