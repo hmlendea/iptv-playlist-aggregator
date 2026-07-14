@@ -1,14 +1,4 @@
-using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using NuciLog.Core;
-
-using IptvPlaylistAggregator.Configuration;
-using IptvPlaylistAggregator.Logging;
-using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service
 {
@@ -174,4 +164,3 @@ namespace IptvPlaylistAggregator.Service
             => await fileDownloader.TryDownloadStringAsync(string.Format(provider.UrlFormat, date));
     }
 }
-

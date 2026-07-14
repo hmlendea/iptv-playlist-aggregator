@@ -1,7 +1,3 @@
-using NUnit.Framework;
-
-using IptvPlaylistAggregator.Service.Models;
-
 namespace IptvPlaylistAggregator.UnitTests.Service
 {
     [TestFixture]
@@ -82,4 +78,3 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
     }
 }
-

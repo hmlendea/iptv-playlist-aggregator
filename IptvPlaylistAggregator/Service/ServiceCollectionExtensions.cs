@@ -1,10 +1,3 @@
-using Microsoft.Extensions.DependencyInjection;
-
-using NuciDAL.Repositories;
-
-using IptvPlaylistAggregator.Configuration;
-using IptvPlaylistAggregator.DataAccess.DataObjects;
-
 namespace IptvPlaylistAggregator.Service
 {
     internal static class ServiceCollectionExtensions

@@ -1,13 +1,5 @@
-using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
-
-using NuciExtensions;
-
-using IptvPlaylistAggregator.Configuration;
-using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service
 {
@@ -192,4 +184,3 @@ namespace IptvPlaylistAggregator.Service
         }
     }
 }
-

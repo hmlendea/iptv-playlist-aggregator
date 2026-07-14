@@ -1,9 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-
-using IptvPlaylistAggregator.DataAccess.DataObjects;
-using IptvPlaylistAggregator.Service.Models;
-
 namespace IptvPlaylistAggregator.Service.Mapping
 {
     internal static class PlaylistProviderMappingExtensions

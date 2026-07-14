@@ -1,17 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-
-using IptvPlaylistAggregator.Logging;
-using IptvPlaylistAggregator.Service.Models;
-
-using NuciLog.Core;
-using NuciWeb.HTTP;
 
 namespace IptvPlaylistAggregator.Service
 {
@@ -214,4 +202,3 @@ namespace IptvPlaylistAggregator.Service
         }
     }
 }
-

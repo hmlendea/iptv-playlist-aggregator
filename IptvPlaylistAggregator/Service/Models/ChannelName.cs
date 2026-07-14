@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace IptvPlaylistAggregator.Service.Models
 {
     public sealed class ChannelName(string name, string country, IEnumerable<string> aliases)

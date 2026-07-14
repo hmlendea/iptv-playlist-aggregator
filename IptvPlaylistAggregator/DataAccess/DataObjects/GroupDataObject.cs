@@ -1,5 +1,3 @@
-using NuciDAL.DataObjects;
-
 namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
     public sealed class GroupDataObject : EntityBase
