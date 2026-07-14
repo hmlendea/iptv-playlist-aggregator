@@ -6,7 +6,7 @@ namespace IptvPlaylistAggregator.Configuration
 
         public int DaysToCheck { get; set; }
 
-        public bool CanIncludeUnmatchedChannels { get; set; }
+        public bool AreUnmatchedChannelsIncluded { get; set; }
 
         public bool AreTvGuideTagsEnabled { get; set; }
 

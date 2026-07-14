@@ -1,6 +1,6 @@
 namespace IptvPlaylistAggregator.Service.Models
 {
-    public class PlaylistProvider
+    public sealed class PlaylistProvider
     {
         public string Id { get; set; }
 
@@ -8,7 +8,7 @@ namespace IptvPlaylistAggregator.Service.Models
 
         public int Priority { get; set; }
 
-        public bool AllowCaching { get; set; }
+        public bool IsCachingEnabled { get; set; }
 
         public string Name { get; set; }
 

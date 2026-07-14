@@ -4,8 +4,6 @@ namespace IptvPlaylistAggregator.Logging
 {
     public sealed class MyLogInfoKey : LogInfoKey
     {
-        private MyLogInfoKey(string name) : base(name) { }
-
         public static LogInfoKey Channel => new MyLogInfoKey(nameof(Channel));
 
         public static LogInfoKey ChannelsCount => new MyLogInfoKey(nameof(ChannelsCount));
@@ -17,5 +15,9 @@ namespace IptvPlaylistAggregator.Logging
         public static LogInfoKey Url => new MyLogInfoKey(nameof(Url));
 
         public static LogInfoKey StreamState => new MyLogInfoKey(nameof(StreamState));
+
+        private MyLogInfoKey(string name) : base(name)
+        {
+        }
     }
 }

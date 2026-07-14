@@ -1,14 +1,17 @@
+using System.Xml.Serialization;
+
 using NuciDAL.DataObjects;
 
 namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
-    public class PlaylistProviderEntity : EntityBase
+    public sealed class PlaylistProviderDataObject : EntityBase
     {
         public bool IsEnabled { get; set; }
 
         public int Priority { get; set; }
 
-        public bool AllowCaching { get; set; }
+        [XmlElement("AllowCaching")]
+        public bool IsCachingEnabled { get; set; }
 
         public string Name { get; set; }
 
@@ -18,10 +21,10 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
 
         public string ChannelNameOverride { get; set; }
 
-        public PlaylistProviderEntity()
+        public PlaylistProviderDataObject()
         {
             Priority = int.MaxValue;
-            AllowCaching = true;
+            IsCachingEnabled = true;
         }
     }
 }

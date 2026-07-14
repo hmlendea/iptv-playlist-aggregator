@@ -7,12 +7,12 @@ using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-using IptvPlaylistAggregator.Configuration;
+using NuciLog.Core;
+
+using NuciWeb.HTTP;
+
 using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service.Models;
-
-using NuciLog.Core;
-using NuciWeb.HTTP;
 
 namespace IptvPlaylistAggregator.Service
 {
@@ -20,22 +20,8 @@ namespace IptvPlaylistAggregator.Service
         IFileDownloader fileDownloader,
         IPlaylistFileBuilder playlistFileBuilder,
         ICacheManager cache,
-        ILogger logger,
-        ApplicationSettings applicationSettings) : IMediaSourceChecker
+        ILogger logger) : IMediaSourceChecker
     {
-        private const string YouTubeVideoUrlPattern = "^(https?\\:\\/\\/)?(www\\.youtube\\.com|youtu\\.?be)\\/.+$";
-        private const string TinyUrlPattern = "^(https?\\:\\/\\/)?((www\\.)?tinyurl\\.com)\\/.+$";
-        private const string NonHttpUrlPattern = "^(?!http).*";
-
-        private static readonly string[] BlacklistedSources = [ "http://hls.protv.md/acasatv/acasatv.m3u8" ];
-
-        private readonly IFileDownloader fileDownloader = fileDownloader;
-        private readonly IPlaylistFileBuilder playlistFileBuilder = playlistFileBuilder;
-        private readonly ICacheManager cache = cache;
-        private readonly ILogger logger = logger;
-        private readonly ApplicationSettings applicationSettings = applicationSettings;
-        private readonly HttpClient httpClient = HttpClientCreator.Create();
-
         public async Task<bool> IsSourcePlayableAsync(string url)
         {
             MediaStreamStatus status = cache.GetStreamStatus(url);
@@ -66,18 +52,31 @@ namespace IptvPlaylistAggregator.Service
                 state = await GetStreamStateAsync(url);
             }
 
-            if (state.Equals(StreamState.Alive))
+            if (state == StreamState.Alive)
             {
                 logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Success, new LogInfo(MyLogInfoKey.Url, url));
             }
             else
             {
-                logger.Verbose(MyOperation.MediaSourceCheck, OperationStatus.Failure, new LogInfo(MyLogInfoKey.Url, url), new LogInfo(MyLogInfoKey.StreamState, state));
+                logger.Verbose(
+                    MyOperation.MediaSourceCheck,
+                    OperationStatus.Failure,
+                    new LogInfo(MyLogInfoKey.Url, url),
+                    new LogInfo(MyLogInfoKey.StreamState, state));
             }
 
             SaveToCache(url, state);
-            return state.Equals(StreamState.Alive);
+
+            return state == StreamState.Alive;
         }
+
+        private static string YouTubeVideoUrlPattern => "^(https?\\:\\/\\/)?(www\\.youtube\\.com|youtu\\.?be)\\/.+$";
+        private static string TinyUrlPattern => "^(https?\\:\\/\\/)?((www\\.)?tinyurl\\.com)\\/.+$";
+        private static string NonHttpUrlPattern => "^(?!http).*";
+
+        private static IEnumerable<string> BlacklistedSources => [ "http://hls.protv.md/acasatv/acasatv.m3u8" ];
+
+        private readonly HttpClient httpClient = HttpClientCreator.Create();
 
         private static bool IsUrlUnsupported(string url)
         {
@@ -97,14 +96,7 @@ namespace IptvPlaylistAggregator.Service
         }
 
         private static bool IsUrlBlacklisted(string url)
-        {
-            if (BlacklistedSources.Any(x => x.Contains(url)))
-            {
-                return true;
-            }
-
-            return false;
-        }
+            => BlacklistedSources.Any(blacklistedSource => blacklistedSource.Contains(url));
 
         private async Task<StreamState> GetPlaylistStateAsync(string playlistUrl)
         {
@@ -162,17 +154,17 @@ namespace IptvPlaylistAggregator.Service
         {
             HttpStatusCode statusCode = await GetHttpStatusCode(url);
 
-            if (statusCode.Equals(HttpStatusCode.OK))
+            if (statusCode == HttpStatusCode.OK)
             {
                 return StreamState.Alive;
             }
 
-            if (statusCode.Equals(HttpStatusCode.Unauthorized))
+            if (statusCode == HttpStatusCode.Unauthorized)
             {
                 return StreamState.Unauthorised;
             }
 
-            if (statusCode.Equals(HttpStatusCode.NotFound))
+            if (statusCode == HttpStatusCode.NotFound)
             {
                 return StreamState.NotFound;
             }
@@ -191,30 +183,30 @@ namespace IptvPlaylistAggregator.Service
         private async Task<HttpStatusCode> GetHttpStatusCode(string url)
         {
             HttpStatusCode statusCode = HttpStatusCode.RequestTimeout;
-            bool doCacheContent = url.Contains(".m3u") || url.Contains(".m3u8");
+            bool isPlaylistUrl = url.Contains(".m3u") || url.Contains(".m3u8");
             string content = string.Empty;
 
             try
             {
-                using var response = await httpClient.GetAsync(url);
+                using HttpResponseMessage response = await httpClient.GetAsync(url);
                 statusCode = response.StatusCode;
 
-                if (doCacheContent)
+                if (isPlaylistUrl)
                 {
                     content = await response.Content.ReadAsStringAsync();
                 }
             }
-            catch (WebException ex)
+            catch (WebException webException)
             {
-                if (ex.Status is WebExceptionStatus.ProtocolError &&
-                    ex.Response is HttpWebResponse response)
+                if (webException.Status is WebExceptionStatus.ProtocolError &&
+                    webException.Response is HttpWebResponse httpWebResponse)
                 {
-                    statusCode = response.StatusCode;
+                    statusCode = httpWebResponse.StatusCode;
                 }
             }
             catch { }
 
-            if (doCacheContent)
+            if (isPlaylistUrl)
             {
                 cache.StoreWebDownload(url, content);
             }

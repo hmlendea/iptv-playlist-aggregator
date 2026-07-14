@@ -3,7 +3,6 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Security.Cryptography.X509Certificates;
 
 using NuciExtensions;
 
@@ -12,36 +11,8 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service
 {
-    public sealed class CacheManager : ICacheManager
+    public sealed class CacheManager(CacheSettings cacheSettings) : ICacheManager
     {
-        private const char CsvFieldSeparator = ',';
-        private const string TimestampFormat = "yyyy-MM-dd_HH-mm-ss";
-        private const string PlaylistFileNameFormat = "{0}_playlist_{1:yyyy-MM-dd}.m3u";
-        private const string StreamStatusesFileName = "stream-statuses.csv";
-
-        private readonly CacheSettings cacheSettings;
-
-        private readonly ConcurrentDictionary<string, string> normalisedNames;
-        private readonly ConcurrentDictionary<string, X509Certificate2> sslCertificates;
-        private readonly ConcurrentDictionary<string, MediaStreamStatus> streamStatuses;
-        private readonly ConcurrentDictionary<string, string> webDownloads;
-        private readonly ConcurrentDictionary<int, Playlist> playlists;
-
-        public CacheManager(CacheSettings cacheSettings)
-        {
-            this.cacheSettings = cacheSettings;
-
-            normalisedNames = new ConcurrentDictionary<string, string>();
-            sslCertificates = new ConcurrentDictionary<string, X509Certificate2>();
-            streamStatuses = new ConcurrentDictionary<string, MediaStreamStatus>();
-            webDownloads = new ConcurrentDictionary<string, string>();
-            playlists = new ConcurrentDictionary<int, Playlist>();
-
-            PrepareFilesystem();
-
-            LoadStreamStatuses();
-        }
-
         public void SaveCacheToDisk()
             => SaveStreamStatuses();
 
@@ -51,46 +22,22 @@ namespace IptvPlaylistAggregator.Service
         public string GetNormalisedChannelName(string name)
             => normalisedNames.TryGetValue(name);
 
-        public void StoreSslCertificate(string host, X509Certificate2 certificate)
-        {
-            if (!string.IsNullOrWhiteSpace(host) && certificate is not null)
-            {
-                sslCertificates.TryAdd(host, certificate);
-            }
-        }
-
-        public X509Certificate2 GetSslCertificate(string host)
-        {
-            if (string.IsNullOrWhiteSpace(host))
-            {
-                return null;
-            }
-
-            return sslCertificates.TryGetValue(host);
-        }
-
         public void StoreStreamStatus(MediaStreamStatus streamStatus)
             => streamStatuses.TryAdd(streamStatus.Url, streamStatus);
 
         public MediaStreamStatus GetStreamStatus(string url)
         {
-            MediaStreamStatus streamStatus = streamStatuses.TryGetValue(url);
-
             if (string.IsNullOrWhiteSpace(url))
             {
-                return new MediaStreamStatus()
+                return new()
                 {
                     Url = url,
                     State = StreamState.Dead,
                     LastCheckTime = DateTime.UtcNow
                 };
             }
-            else
-            {
-                streamStatus ??= streamStatuses.TryGetValue(url);
-            }
 
-            return streamStatus;
+            return streamStatuses.TryGetValue(url);
         }
 
         public void StoreWebDownload(string url, string content)
@@ -98,25 +45,16 @@ namespace IptvPlaylistAggregator.Service
 
         public string GetWebDownload(string url)
         {
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                return string.Empty;
+            }
+
             string cachedDownload = webDownloads.TryGetValue(url);
 
             if (cachedDownload is not null)
             {
                 return cachedDownload;
-            }
-
-            if (string.IsNullOrWhiteSpace(url))
-            {
-                return string.Empty;
-            }
-            else
-            {
-                cachedDownload = webDownloads.TryGetValue(url);
-
-                if (cachedDownload is not null)
-                {
-                    return cachedDownload;
-                }
             }
 
             MediaStreamStatus streamStatus = GetStreamStatus(url);
@@ -156,21 +94,28 @@ namespace IptvPlaylistAggregator.Service
             return null;
         }
 
-        private void PrepareFilesystem()
-        {
-            if (!Directory.Exists(cacheSettings.CacheDirectoryPath))
-            {
-                Directory.CreateDirectory(cacheSettings.CacheDirectoryPath);
-            }
-        }
+        private static char CsvFieldSeparator => ',';
+        private static string TimestampFormat => "yyyy-MM-dd_HH-mm-ss";
+        private static string PlaylistFileNameFormat => "{0}_playlist_{1:yyyy-MM-dd}.m3u";
+        private static string StreamStatusesFileName => "stream-statuses.csv";
 
-        private void LoadStreamStatuses()
+        private readonly ConcurrentDictionary<string, string> normalisedNames = new();
+        private readonly ConcurrentDictionary<string, MediaStreamStatus> streamStatuses =
+            InitialiseStreamStatuses(cacheSettings);
+        private readonly ConcurrentDictionary<string, string> webDownloads = new();
+        private readonly ConcurrentDictionary<int, Playlist> playlists = new();
+
+        private static ConcurrentDictionary<string, MediaStreamStatus> InitialiseStreamStatuses(
+            CacheSettings settings)
         {
-            string filePath = Path.Combine(cacheSettings.CacheDirectoryPath, StreamStatusesFileName);
+            EnsureCacheDirectoryExists(settings);
+
+            ConcurrentDictionary<string, MediaStreamStatus> statuses = new();
+            string filePath = Path.Combine(settings.CacheDirectoryPath, StreamStatusesFileName);
 
             if (!File.Exists(filePath))
             {
-                return;
+                return statuses;
             }
 
             foreach (string line in File.ReadAllLines(filePath))
@@ -180,19 +125,42 @@ namespace IptvPlaylistAggregator.Service
                 MediaStreamStatus streamStatus = new()
                 {
                     Url = fields[0],
-                    LastCheckTime = DateTime.ParseExact(fields[1], TimestampFormat, CultureInfo.InvariantCulture),
+                    LastCheckTime = DateTime.ParseExact(
+                        fields[1],
+                        TimestampFormat,
+                        CultureInfo.InvariantCulture),
                     State = Enum.Parse<StreamState>(fields[2])
                 };
 
-                if ((streamStatus.State.Equals(StreamState.Alive) && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamAliveStatusCacheTimeout) ||
-                    (streamStatus.State.Equals(StreamState.Dead) && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamDeadStatusCacheTimeout) ||
-                    (streamStatus.State.Equals(StreamState.Unauthorised) && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamUnauthorisedStatusCacheTimeout) ||
-                    (streamStatus.State.Equals(StreamState.NotFound) && (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamNotFoundStatusCacheTimeout))
+                double elapsedSeconds =
+                    (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds;
+
+                bool isExpired =
+                    (streamStatus.State == StreamState.Alive &&
+                        elapsedSeconds > settings.StreamAliveStatusCacheTimeout) ||
+                    (streamStatus.State == StreamState.Dead &&
+                        elapsedSeconds > settings.StreamDeadStatusCacheTimeout) ||
+                    (streamStatus.State == StreamState.Unauthorised &&
+                        elapsedSeconds > settings.StreamUnauthorisedStatusCacheTimeout) ||
+                    (streamStatus.State == StreamState.NotFound &&
+                        elapsedSeconds > settings.StreamNotFoundStatusCacheTimeout);
+
+                if (isExpired)
                 {
                     continue;
                 }
 
-                streamStatuses.TryAdd(streamStatus.Url, streamStatus);
+                statuses.TryAdd(streamStatus.Url, streamStatus);
+            }
+
+            return statuses;
+        }
+
+        private static void EnsureCacheDirectoryExists(CacheSettings settings)
+        {
+            if (!Directory.Exists(settings.CacheDirectoryPath))
+            {
+                Directory.CreateDirectory(settings.CacheDirectoryPath);
             }
         }
 

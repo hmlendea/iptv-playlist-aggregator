@@ -4,8 +4,6 @@ namespace IptvPlaylistAggregator.Logging
 {
     public sealed class MyOperation : Operation
     {
-        private MyOperation(string name) : base(name) { }
-
         public static Operation PlaylistFetching => new MyOperation(nameof(PlaylistFetching));
 
         public static Operation ProviderChannelsFiltering => new MyOperation(nameof(ProviderChannelsFiltering));
@@ -15,5 +13,9 @@ namespace IptvPlaylistAggregator.Logging
         public static Operation MediaSourceCheck => new MyOperation(nameof(MediaSourceCheck));
 
         public static Operation CacheSaving => new MyOperation(nameof(CacheSaving));
+
+        private MyOperation(string name) : base(name)
+        {
+        }
     }
 }

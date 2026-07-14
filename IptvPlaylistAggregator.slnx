@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="IptvPlaylistAggregator/IptvPlaylistAggregator.csproj" />
+  <Project Path="IptvPlaylistAggregator.UnitTests/IptvPlaylistAggregator.UnitTests.csproj" />
+</Solution>

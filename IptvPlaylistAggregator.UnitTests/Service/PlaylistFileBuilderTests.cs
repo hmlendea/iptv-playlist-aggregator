@@ -1,6 +1,7 @@
 using System;
 
 using Moq;
+
 using NUnit.Framework;
 
 using IptvPlaylistAggregator.Configuration;
@@ -9,6 +10,7 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.UnitTests.Service
 {
+    [TestFixture]
     public sealed class PlaylistFileBuilderTests
     {
         private Mock<ICacheManager> cacheMock;
@@ -25,8 +27,10 @@ namespace IptvPlaylistAggregator.UnitTests.Service
             playlistFileBuilder = new PlaylistFileBuilder(cacheMock.Object, applicationSettings);
         }
 
+        // -- TryParseFile ------
+
         [Test]
-        public void TryParseFile_GivenNullContent_ThenNullIsReturned()
+        public void GivenNullContent_WhenTryParsingFile_ThenNullIsReturned()
         {
             Playlist result = playlistFileBuilder.TryParseFile(null);
 
@@ -34,7 +38,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void TryParseFile_GivenEmptyContent_ThenNullIsReturned()
+        public void GivenEmptyContent_WhenTryParsingFile_ThenNullIsReturned()
         {
             Playlist result = playlistFileBuilder.TryParseFile(string.Empty);
 
@@ -42,7 +46,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void TryParseFile_GivenWhitespaceContent_ThenNullIsReturned()
+        public void GivenWhitespaceContent_WhenTryParsingFile_ThenNullIsReturned()
         {
             Playlist result = playlistFileBuilder.TryParseFile("   ");
 
@@ -50,7 +54,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void TryParseFile_GivenUrlLineBeforeExtinfHeader_ThenNullIsReturned()
+        public void GivenUrlLineBeforeExtinfHeader_WhenTryParsingFile_ThenNullIsReturned()
         {
             string content = "http://test.nucilandia.ro/stream1\n#EXTINF:-1,Sport TV\nhttp://test.nucilandia.ro/stream2";
 
@@ -60,7 +64,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void TryParseFile_GivenValidContent_ThenPlaylistIsReturned()
+        public void GivenValidContent_WhenTryParsingFile_ThenPlaylistIsReturned()
         {
             string content = "#EXTM3U\n#EXTINF:-1,Sport TV\nhttp://test.nucilandia.ro/stream1";
 
@@ -69,28 +73,24 @@ namespace IptvPlaylistAggregator.UnitTests.Service
             Assert.That(result, Is.Not.Null);
         }
 
-        [Test]
-        public void ParseFile_GivenNullContent_ThenArgumentNullExceptionIsThrown()
-        {
-            Assert.Throws<ArgumentNullException>(() => playlistFileBuilder.ParseFile(null));
-        }
+        // -- ParseFile ------
 
         [Test]
-        public void ParseFile_GivenEmptyContent_ThenArgumentNullExceptionIsThrown()
-        {
-            Assert.Throws<ArgumentNullException>(() => playlistFileBuilder.ParseFile(string.Empty));
-        }
+        public void GivenNullContent_WhenParsingFile_ThenArgumentNullExceptionIsThrown()
+            => Assert.Throws<ArgumentNullException>(() => playlistFileBuilder.ParseFile(null));
 
         [Test]
-        public void ParseFile_GivenWhitespaceContent_ThenArgumentNullExceptionIsThrown()
-        {
-            Assert.Throws<ArgumentNullException>(() => playlistFileBuilder.ParseFile("   "));
-        }
+        public void GivenEmptyContent_WhenParsingFile_ThenArgumentNullExceptionIsThrown()
+            => Assert.Throws<ArgumentNullException>(() => playlistFileBuilder.ParseFile(string.Empty));
+
+        [Test]
+        public void GivenWhitespaceContent_WhenParsingFile_ThenArgumentNullExceptionIsThrown()
+            => Assert.Throws<ArgumentNullException>(() => playlistFileBuilder.ParseFile("   "));
 
         [TestCase("#EXTM3U\n#EXTINF:-1,Sport TV\nhttp://test.nucilandia.ro/stream1\n", "Sport TV", "http://test.nucilandia.ro/stream1")]
         [TestCase("#EXTM3U\r\n#EXTINF:-1,Sport TV\r\nhttp://test.nucilandia.ro/stream1\r\n", "Sport TV", "http://test.nucilandia.ro/stream1")]
         [Test]
-        public void ParseFile_GivenValidSingleChannelContent_ThenChannelIsParsedCorrectly(
+        public void GivenValidSingleChannelContent_WhenParsingFile_ThenChannelIsParsedCorrectly(
             string content,
             string expectedChannelName,
             string expectedUrl)
@@ -104,7 +104,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void ParseFile_GivenValidSingleChannelContent_ThenPlaylistChannelNameMatchesChannelName()
+        public void GivenValidSingleChannelContent_WhenParsingFile_ThenPlaylistChannelNameMatchesChannelName()
         {
             string content = "#EXTM3U\n#EXTINF:-1,Sport TV\nhttp://test.nucilandia.ro/stream1";
 
@@ -114,7 +114,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void ParseFile_GivenMultipleChannels_ThenAllChannelsAreParsed()
+        public void GivenMultipleChannels_WhenParsingFile_ThenAllChannelsAreParsed()
         {
             string content = string.Join("\n",
                 "#EXTM3U",
@@ -133,7 +133,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void ParseFile_GivenCommentLines_ThenCommentLinesAreIgnored()
+        public void GivenCommentLines_WhenParsingFile_ThenCommentLinesAreIgnored()
         {
             string content = string.Join("\n",
                 "#EXTM3U",
@@ -147,7 +147,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void ParseFile_GivenExtXStreamInfLine_ThenChannelIsAddedWithNullNameAndCorrectUrl()
+        public void GivenExtXStreamInfLine_WhenParsingFile_ThenChannelIsAddedWithNullNameAndCorrectUrl()
         {
             string content = string.Join("\n",
                 "#EXTM3U",
@@ -162,7 +162,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void ParseFile_GivenCachedPlaylist_ThenCachedPlaylistIsReturned()
+        public void GivenCachedPlaylist_WhenParsingFile_ThenCachedPlaylistIsReturned()
         {
             string content = "#EXTM3U\n#EXTINF:-1,Sport TV\nhttp://test.nucilandia.ro/stream1";
             Playlist cachedPlaylist = new();
@@ -175,7 +175,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void ParseFile_GivenCachedPlaylist_ThenPlaylistIsNotReprocessed()
+        public void GivenCachedPlaylist_WhenParsingFile_ThenPlaylistIsNotReprocessed()
         {
             string content = "#EXTM3U\n#EXTINF:-1,Sport TV\nhttp://test.nucilandia.ro/stream1";
             Playlist cachedPlaylist = new();
@@ -190,7 +190,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void ParseFile_WhenNotCached_ThenResultIsStoredInCache()
+        public void GivenUncachedPlaylist_WhenParsingFile_ThenResultIsStoredInCache()
         {
             string content = "#EXTM3U\n#EXTINF:-1,Sport TV\nhttp://test.nucilandia.ro/stream1";
 
@@ -201,8 +201,10 @@ namespace IptvPlaylistAggregator.UnitTests.Service
                 Times.Once);
         }
 
+        // -- BuildFile ------
+
         [Test]
-        public void BuildFile_GivenEmptyPlaylist_ThenOnlyFileHeaderIsReturned()
+        public void GivenEmptyPlaylist_WhenBuildingFile_ThenOnlyFileHeaderIsReturned()
         {
             Playlist playlist = new();
 
@@ -212,7 +214,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenSingleChannelWithNoTagsEnabled_ThenChannelIsInCorrectFormat()
+        public void GivenSingleChannelWithNoTagsEnabled_WhenBuildingFile_ThenChannelIsInCorrectFormat()
         {
             applicationSettings.AreTvGuideTagsEnabled = false;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -231,7 +233,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenMultipleChannels_ThenAllChannelsArePresent()
+        public void GivenMultipleChannels_WhenBuildingFile_ThenAllChannelsArePresent()
         {
             applicationSettings.AreTvGuideTagsEnabled = false;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -249,7 +251,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenTvGuideTagsEnabled_ThenChannelNumberAndNameTagsAreIncluded()
+        public void GivenTvGuideTagsEnabled_WhenBuildingFile_ThenChannelNumberAndNameTagsAreIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = true;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -264,7 +266,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenTvGuideTagsEnabledAndChannelHasId_ThenTvGuideIdTagIsIncluded()
+        public void GivenTvGuideTagsEnabledAndChannelHasId_WhenBuildingFile_ThenTvGuideIdTagIsIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = true;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -283,7 +285,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenTvGuideTagsEnabledAndChannelHasLogoUrl_ThenTvGuideLogoTagIsIncluded()
+        public void GivenTvGuideTagsEnabledAndChannelHasLogoUrl_WhenBuildingFile_ThenTvGuideLogoTagIsIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = true;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -302,7 +304,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenTvGuideTagsEnabledAndChannelHasNoLogoUrl_ThenTvGuideLogoTagIsNotIncluded()
+        public void GivenTvGuideTagsEnabledAndChannelHasNoLogoUrl_WhenBuildingFile_ThenTvGuideLogoTagIsNotIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = true;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -316,7 +318,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenTvGuideTagsEnabledAndChannelHasCountry_ThenTvGuideCountryTagIsIncluded()
+        public void GivenTvGuideTagsEnabledAndChannelHasCountry_WhenBuildingFile_ThenTvGuideCountryTagIsIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = true;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -330,7 +332,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenTvGuideTagsEnabledAndChannelHasNoCountry_ThenTvGuideCountryTagIsNotIncluded()
+        public void GivenTvGuideTagsEnabledAndChannelHasNoCountry_WhenBuildingFile_ThenTvGuideCountryTagIsNotIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = true;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -344,7 +346,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenTvGuideTagsEnabledAndChannelHasGroup_ThenTvGuideGroupTagIsIncluded()
+        public void GivenTvGuideTagsEnabledAndChannelHasGroup_WhenBuildingFile_ThenTvGuideGroupTagIsIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = true;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -358,7 +360,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenTvGuideTagsEnabledAndChannelHasNoGroup_ThenTvGuideGroupTagIsNotIncluded()
+        public void GivenTvGuideTagsEnabledAndChannelHasNoGroup_WhenBuildingFile_ThenTvGuideGroupTagIsNotIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = true;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -372,7 +374,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenPlaylistDetailsTagsEnabled_ThenPlaylistIdAndChannelNameTagsAreIncluded()
+        public void GivenPlaylistDetailsTagsEnabled_WhenBuildingFile_ThenPlaylistIdAndChannelNameTagsAreIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = false;
             applicationSettings.ArePlaylistDetailsTagsEnabled = true;
@@ -393,7 +395,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenTvGuideTagsDisabled_ThenTvGuideTagsAreNotIncluded()
+        public void GivenTvGuideTagsDisabled_WhenBuildingFile_ThenTvGuideTagsAreNotIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = false;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;
@@ -408,7 +410,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void BuildFile_GivenPlaylistDetailsTagsDisabled_ThenPlaylistTagsAreNotIncluded()
+        public void GivenPlaylistDetailsTagsDisabled_WhenBuildingFile_ThenPlaylistTagsAreNotIncluded()
         {
             applicationSettings.AreTvGuideTagsEnabled = false;
             applicationSettings.ArePlaylistDetailsTagsEnabled = false;

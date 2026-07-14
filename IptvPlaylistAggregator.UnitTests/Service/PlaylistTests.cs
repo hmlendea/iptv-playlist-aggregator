@@ -4,24 +4,25 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.UnitTests.Service
 {
+    [TestFixture]
     public sealed class PlaylistTests
     {
-        [Test]
-        public void IsNullOrEmpty_GivenNull_ThenTrueIsReturned()
-        {
-            Assert.That(Playlist.IsNullOrEmpty(null), Is.True);
-        }
+        // -- IsNullOrEmpty ------
 
         [Test]
-        public void IsNullOrEmpty_GivenEmptyPlaylist_ThenTrueIsReturned()
+        public void GivenNullPlaylist_WhenCheckingIfNullOrEmpty_ThenTrueIsReturned()
+            => Assert.That(Playlist.IsNullOrEmpty(null));
+
+        [Test]
+        public void GivenEmptyPlaylist_WhenCheckingIfNullOrEmpty_ThenTrueIsReturned()
         {
             Playlist playlist = new();
 
-            Assert.That(Playlist.IsNullOrEmpty(playlist), Is.True);
+            Assert.That(Playlist.IsNullOrEmpty(playlist));
         }
 
         [Test]
-        public void IsNullOrEmpty_GivenPlaylistWithChannels_ThenFalseIsReturned()
+        public void GivenPlaylistWithOneChannel_WhenCheckingIfNullOrEmpty_ThenFalseIsReturned()
         {
             Playlist playlist = new();
             playlist.Channels.Add(new Channel());
@@ -30,7 +31,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void IsNullOrEmpty_GivenPlaylistWithMultipleChannels_ThenFalseIsReturned()
+        public void GivenPlaylistWithMultipleChannels_WhenCheckingIfNullOrEmpty_ThenFalseIsReturned()
         {
             Playlist playlist = new();
             playlist.Channels.Add(new Channel());
@@ -39,16 +40,18 @@ namespace IptvPlaylistAggregator.UnitTests.Service
             Assert.That(Playlist.IsNullOrEmpty(playlist), Is.False);
         }
 
+        // -- IsEmpty ------
+
         [Test]
-        public void IsEmpty_GivenEmptyPlaylist_ThenTrueIsReturned()
+        public void GivenEmptyPlaylist_WhenCheckingIfEmpty_ThenTrueIsReturned()
         {
             Playlist playlist = new();
 
-            Assert.That(playlist.IsEmpty, Is.True);
+            Assert.That(playlist.IsEmpty);
         }
 
         [Test]
-        public void IsEmpty_GivenPlaylistWithSingleChannel_ThenFalseIsReturned()
+        public void GivenPlaylistWithOneChannel_WhenCheckingIfEmpty_ThenFalseIsReturned()
         {
             Playlist playlist = new();
             playlist.Channels.Add(new Channel());
@@ -57,7 +60,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void IsEmpty_GivenPlaylistWithMultipleChannels_ThenFalseIsReturned()
+        public void GivenPlaylistWithMultipleChannels_WhenCheckingIfEmpty_ThenFalseIsReturned()
         {
             Playlist playlist = new();
             playlist.Channels.Add(new Channel());
@@ -67,11 +70,11 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void IsEmpty_AfterAddingChannel_ThenFalseIsReturned()
+        public void GivenEmptyPlaylistAfterAddingChannel_WhenCheckingIfEmpty_ThenFalseIsReturned()
         {
             Playlist playlist = new();
 
-            Assert.That(playlist.IsEmpty, Is.True);
+            Assert.That(playlist.IsEmpty);
 
             playlist.Channels.Add(new Channel());
 
