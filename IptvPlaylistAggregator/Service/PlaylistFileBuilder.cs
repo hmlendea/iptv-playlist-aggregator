@@ -12,21 +12,6 @@ namespace IptvPlaylistAggregator.Service
         ICacheManager cache,
         ApplicationSettings settings) : IPlaylistFileBuilder
     {
-        private static string FileHeader => "#EXTM3U";
-        private static string EntryHeader => "#EXTINF";
-        private static string EntryHeaderExtendedInfo => "#EXT-X-STREAM-INF";
-        private static string EntryHeaderSeparator => ":";
-        private static string EntryValuesSeparator => ",";
-        private static string TvGuideChannelNumberTagKey => "tvg-chno";
-        private static string TvGuideNameTagKey => "tvg-name";
-        private static string TvGuideIdTagKey => "tvg-id";
-        private static string TvGuideLogoTagKey => "tvg-logo";
-        private static string TvGuideCountryTagKey => "tvg-country";
-        private static string TvGuideGroupTagKey => "group-title";
-        private static string PlaylistIdTagKey => "playlist-id";
-        private static string PlaylistChannelNameTagKey => "playlist-channel-name";
-        private static int DefaultEntryRuntime => -1;
-
         public string BuildFile(Playlist playlist)
         {
             StringBuilder fileBuilder = new();
@@ -102,13 +87,14 @@ namespace IptvPlaylistAggregator.Service
             {
                 if (line.StartsWith(EntryHeader))
                 {
-                    string[] lineSplit = line.Split(',');
+                    string[] lineParts = line.Split(EntryValuesSeparator);
+                    string channelName = lineParts[^1];
 
                     Channel channel = new()
                     {
-                        Name = lineSplit[lineSplit.Length - 1]
+                        Name = channelName,
+                        PlaylistChannelName = channelName
                     };
-                    channel.PlaylistChannelName = channel.Name;
 
                     playlist.Channels.Add(channel);
                 }
@@ -132,6 +118,21 @@ namespace IptvPlaylistAggregator.Service
 
             return playlist;
         }
+
+        private static string FileHeader => "#EXTM3U";
+        private static string EntryHeader => "#EXTINF";
+        private static string EntryHeaderExtendedInfo => "#EXT-X-STREAM-INF";
+        private static string EntryHeaderSeparator => ":";
+        private static char EntryValuesSeparator => ',';
+        private static string TvGuideChannelNumberTagKey => "tvg-chno";
+        private static string TvGuideNameTagKey => "tvg-name";
+        private static string TvGuideIdTagKey => "tvg-id";
+        private static string TvGuideLogoTagKey => "tvg-logo";
+        private static string TvGuideCountryTagKey => "tvg-country";
+        private static string TvGuideGroupTagKey => "group-title";
+        private static string PlaylistIdTagKey => "playlist-id";
+        private static string PlaylistChannelNameTagKey => "playlist-channel-name";
+        private static int DefaultEntryRuntime => -1;
 
         private static string BuildTvGuideHeaderTags(Channel channel)
         {
@@ -191,4 +192,3 @@ namespace IptvPlaylistAggregator.Service
                $" {PlaylistChannelNameTagKey}=\"{channel.PlaylistChannelName}\"";
     }
 }
-

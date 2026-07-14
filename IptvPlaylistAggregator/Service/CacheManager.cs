@@ -13,17 +13,6 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class CacheManager(CacheSettings cacheSettings) : ICacheManager
     {
-        private static char CsvFieldSeparator => ',';
-        private static string TimestampFormat => "yyyy-MM-dd_HH-mm-ss";
-        private static string PlaylistFileNameFormat => "{0}_playlist_{1:yyyy-MM-dd}.m3u";
-        private static string StreamStatusesFileName => "stream-statuses.csv";
-
-        private readonly ConcurrentDictionary<string, string> normalisedNames = new();
-        private readonly ConcurrentDictionary<string, MediaStreamStatus> streamStatuses =
-            InitialiseStreamStatuses(cacheSettings);
-        private readonly ConcurrentDictionary<string, string> webDownloads = new();
-        private readonly ConcurrentDictionary<int, Playlist> playlists = new();
-
         public void SaveCacheToDisk()
             => SaveStreamStatuses();
 
@@ -104,6 +93,17 @@ namespace IptvPlaylistAggregator.Service
 
             return null;
         }
+
+        private static char CsvFieldSeparator => ',';
+        private static string TimestampFormat => "yyyy-MM-dd_HH-mm-ss";
+        private static string PlaylistFileNameFormat => "{0}_playlist_{1:yyyy-MM-dd}.m3u";
+        private static string StreamStatusesFileName => "stream-statuses.csv";
+
+        private readonly ConcurrentDictionary<string, string> normalisedNames = new();
+        private readonly ConcurrentDictionary<string, MediaStreamStatus> streamStatuses =
+            InitialiseStreamStatuses(cacheSettings);
+        private readonly ConcurrentDictionary<string, string> webDownloads = new();
+        private readonly ConcurrentDictionary<int, Playlist> playlists = new();
 
         private static ConcurrentDictionary<string, MediaStreamStatus> InitialiseStreamStatuses(
             CacheSettings settings)

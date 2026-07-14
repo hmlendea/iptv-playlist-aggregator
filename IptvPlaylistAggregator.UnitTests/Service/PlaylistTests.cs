@@ -11,14 +11,14 @@ namespace IptvPlaylistAggregator.UnitTests.Service
 
         [Test]
         public void GivenNullPlaylist_WhenCheckingIfNullOrEmpty_ThenTrueIsReturned()
-            => Assert.That(Playlist.IsNullOrEmpty(null), Is.True);
+            => Assert.That(Playlist.IsNullOrEmpty(null));
 
         [Test]
         public void GivenEmptyPlaylist_WhenCheckingIfNullOrEmpty_ThenTrueIsReturned()
         {
             Playlist playlist = new();
 
-            Assert.That(Playlist.IsNullOrEmpty(playlist), Is.True);
+            Assert.That(Playlist.IsNullOrEmpty(playlist));
         }
 
         [Test]
@@ -47,7 +47,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         {
             Playlist playlist = new();
 
-            Assert.That(playlist.IsEmpty, Is.True);
+            Assert.That(playlist.IsEmpty);
         }
 
         [Test]
@@ -74,7 +74,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         {
             Playlist playlist = new();
 
-            Assert.That(playlist.IsEmpty, Is.True);
+            Assert.That(playlist.IsEmpty);
 
             playlist.Channels.Add(new Channel());
 

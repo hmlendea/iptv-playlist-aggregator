@@ -1,6 +1,7 @@
 using System;
 
 using Moq;
+
 using NUnit.Framework;
 
 using IptvPlaylistAggregator.Configuration;

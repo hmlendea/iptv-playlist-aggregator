@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using NuciDAL.Repositories;
+
 using NuciLog.Core;
 
 using IptvPlaylistAggregator.Configuration;
@@ -25,10 +26,6 @@ namespace IptvPlaylistAggregator.Service
         ApplicationSettings settings,
         ILogger logger) : IPlaylistAggregator
     {
-        private IEnumerable<ChannelDefinition> channelDefinitions;
-        private IEnumerable<PlaylistProvider> playlistProviders;
-        private IDictionary<string, Group> groups;
-
         public string GatherPlaylist()
         {
             groups = groupRepository
@@ -62,6 +59,10 @@ namespace IptvPlaylistAggregator.Service
 
             return playlistFileBuilder.BuildFile(playlist);
         }
+
+        private IEnumerable<ChannelDefinition> channelDefinitions;
+        private IEnumerable<PlaylistProvider> playlistProviders;
+        private IDictionary<string, Group> groups;
 
         private IEnumerable<Channel> GetChannels(IEnumerable<Channel> providerChannels)
         {

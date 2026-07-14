@@ -12,6 +12,35 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class ChannelMatcher(ICacheManager cache) : IChannelMatcher
     {
+        public string NormaliseName(string name, string country)
+        {
+            string fullName = name;
+
+            if (!string.IsNullOrWhiteSpace(country))
+            {
+                fullName = $"{country}: {name}";
+            }
+
+            string normalisedName = cache.GetNormalisedChannelName(fullName);
+
+            if (!string.IsNullOrWhiteSpace(normalisedName))
+            {
+                return normalisedName;
+            }
+
+            normalisedName = fullName.RemoveDiacritics();
+            normalisedName = StripChannelName(normalisedName);
+            normalisedName = normalisedName.ToUpper();
+
+            cache.StoreNormalisedChannelName(fullName, normalisedName);
+
+            return normalisedName;
+        }
+
+        public bool DoesMatch(ChannelName name1, string name2, string country2)
+            => DoChannelNamesMatch(name1.Value, name1.Country, name2, country2) ||
+               name1.Aliases.Any(name1alias => DoChannelNamesMatch(name1alias, name1.Country, name2, country2));
+
         private static readonly string[] SubstringsToStrip = [ "www.iptvsource.com", "iptvsource.com", "backup" ];
 
         private static readonly RegexOptions RegexReplacementOptions = RegexOptions.IgnoreCase | RegexOptions.Compiled;
@@ -70,35 +99,6 @@ namespace IptvPlaylistAggregator.Service
 
         private static readonly (Regex Pattern, string Replacement)[] CompiledTextReplacements =
             [.. TextReplacements.Select(entry => (new Regex(entry.Key, RegexReplacementOptions), entry.Value))];
-
-        public string NormaliseName(string name, string country)
-        {
-            string fullName = name;
-
-            if (!string.IsNullOrWhiteSpace(country))
-            {
-                fullName = $"{country}: {name}";
-            }
-
-            string normalisedName = cache.GetNormalisedChannelName(fullName);
-
-            if (!string.IsNullOrWhiteSpace(normalisedName))
-            {
-                return normalisedName;
-            }
-
-            normalisedName = fullName.RemoveDiacritics();
-            normalisedName = StripChannelName(normalisedName);
-            normalisedName = normalisedName.ToUpper();
-
-            cache.StoreNormalisedChannelName(fullName, normalisedName);
-
-            return normalisedName;
-        }
-
-        public bool DoesMatch(ChannelName name1, string name2, string country2)
-            => DoChannelNamesMatch(name1.Value, name1.Country, name2, country2) ||
-               name1.Aliases.Any(name1alias => DoChannelNamesMatch(name1alias, name1.Country, name2, country2));
 
         private bool DoChannelNamesMatch(string name1, string country1, string name2, string country2)
             => string.Equals(name1, name2) ||

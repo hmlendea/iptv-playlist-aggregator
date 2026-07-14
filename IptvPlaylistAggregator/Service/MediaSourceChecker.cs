@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using NuciLog.Core;
+
 using NuciWeb.HTTP;
 
 using IptvPlaylistAggregator.Logging;
@@ -21,14 +22,6 @@ namespace IptvPlaylistAggregator.Service
         ICacheManager cache,
         ILogger logger) : IMediaSourceChecker
     {
-        private static string YouTubeVideoUrlPattern => "^(https?\\:\\/\\/)?(www\\.youtube\\.com|youtu\\.?be)\\/.+$";
-        private static string TinyUrlPattern => "^(https?\\:\\/\\/)?((www\\.)?tinyurl\\.com)\\/.+$";
-        private static string NonHttpUrlPattern => "^(?!http).*";
-
-        private static IEnumerable<string> BlacklistedSources => [ "http://hls.protv.md/acasatv/acasatv.m3u8" ];
-
-        private readonly HttpClient httpClient = HttpClientCreator.Create();
-
         public async Task<bool> IsSourcePlayableAsync(string url)
         {
             MediaStreamStatus status = cache.GetStreamStatus(url);
@@ -76,6 +69,14 @@ namespace IptvPlaylistAggregator.Service
 
             return state == StreamState.Alive;
         }
+
+        private static string YouTubeVideoUrlPattern => "^(https?\\:\\/\\/)?(www\\.youtube\\.com|youtu\\.?be)\\/.+$";
+        private static string TinyUrlPattern => "^(https?\\:\\/\\/)?((www\\.)?tinyurl\\.com)\\/.+$";
+        private static string NonHttpUrlPattern => "^(?!http).*";
+
+        private static IEnumerable<string> BlacklistedSources => [ "http://hls.protv.md/acasatv/acasatv.m3u8" ];
+
+        private readonly HttpClient httpClient = HttpClientCreator.Create();
 
         private static bool IsUrlUnsupported(string url)
         {

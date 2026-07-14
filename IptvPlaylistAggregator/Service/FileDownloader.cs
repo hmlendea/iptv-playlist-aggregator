@@ -8,8 +8,6 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class FileDownloader(ICacheManager cache) : IFileDownloader
     {
-        private readonly HttpClient httpClient = CreateHttpClient();
-
         public async Task<string> TryDownloadStringAsync(string url)
         {
             string content = cache.GetWebDownload(url);
@@ -33,6 +31,8 @@ namespace IptvPlaylistAggregator.Service
             return content;
         }
 
+        private readonly HttpClient httpClient = CreateHttpClient();
+
         private async Task<string> SendGetRequestAsync(string url)
         {
             if (string.IsNullOrWhiteSpace(url))
@@ -55,4 +55,3 @@ namespace IptvPlaylistAggregator.Service
         }
     }
 }
-

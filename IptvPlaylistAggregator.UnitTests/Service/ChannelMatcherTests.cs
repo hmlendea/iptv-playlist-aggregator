@@ -1,6 +1,6 @@
-using NUnit.Framework;
-
 using Moq;
+
+using NUnit.Framework;
 
 using IptvPlaylistAggregator.Service;
 using IptvPlaylistAggregator.Service.Models;

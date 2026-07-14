@@ -1,5 +1,7 @@
 using Moq;
+
 using NuciLog.Core;
+
 using NUnit.Framework;
 
 using IptvPlaylistAggregator.Service;

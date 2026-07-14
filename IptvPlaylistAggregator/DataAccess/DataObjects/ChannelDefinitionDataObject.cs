@@ -6,8 +6,6 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
     public sealed class ChannelDefinitionDataObject : EntityBase
     {
-        private static string UnknownGroupPlaceholder => "unknown";
-
         public bool IsEnabled { get; set; }
 
         public string Name { get; set; }
@@ -25,5 +23,7 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
             IsEnabled = true;
             GroupId = UnknownGroupPlaceholder;
         }
+
+        private static string UnknownGroupPlaceholder => "unknown";
     }
 }
