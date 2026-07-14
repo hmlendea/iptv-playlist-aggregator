@@ -8,7 +8,7 @@ namespace IptvPlaylistAggregator.Service.Mapping
 {
     internal static class ChannelDefinitionMappingExtensions
     {
-        internal static ChannelDefinition ToDomainModel(this ChannelDefinitionEntity dataObject) => new()
+        internal static ChannelDefinition ToDomainModel(this ChannelDefinitionDataObject dataObject) => new()
         {
             Id = dataObject.Id,
             IsEnabled = dataObject.IsEnabled,
@@ -18,21 +18,23 @@ namespace IptvPlaylistAggregator.Service.Mapping
             LogoUrl = dataObject.LogoUrl
         };
 
-        internal static ChannelDefinitionEntity ToDataObject(this ChannelDefinition serviceModel) => new()
+        internal static ChannelDefinitionDataObject ToDataObject(this ChannelDefinition channelDefinition) => new()
         {
-            Id = serviceModel.Id,
-            IsEnabled = serviceModel.IsEnabled,
-            Name = serviceModel.Name.Value,
-            Country = serviceModel.Country,
-            GroupId = serviceModel.GroupId,
-            LogoUrl = serviceModel.LogoUrl,
-            Aliases = [.. serviceModel.Name.Aliases]
+            Id = channelDefinition.Id,
+            IsEnabled = channelDefinition.IsEnabled,
+            Name = channelDefinition.Name.Value,
+            Country = channelDefinition.Country,
+            GroupId = channelDefinition.GroupId,
+            LogoUrl = channelDefinition.LogoUrl,
+            Aliases = [.. channelDefinition.Name.Aliases]
         };
 
-        internal static IEnumerable<ChannelDefinition> ToDomainModels(this IEnumerable<ChannelDefinitionEntity> dataObjects)
+        internal static IEnumerable<ChannelDefinition> ToDomainModels(
+            this IEnumerable<ChannelDefinitionDataObject> dataObjects)
             => dataObjects.Select(dataObject => dataObject.ToDomainModel());
 
-        internal static IEnumerable<ChannelDefinitionEntity> ToDataObjects(this IEnumerable<ChannelDefinition> serviceModels)
-            => serviceModels.Select(serviceModel => serviceModel.ToDataObject());
+        internal static IEnumerable<ChannelDefinitionDataObject> ToDataObjects(
+            this IEnumerable<ChannelDefinition> channelDefinitions)
+            => channelDefinitions.Select(channelDefinition => channelDefinition.ToDataObject());
     }
 }

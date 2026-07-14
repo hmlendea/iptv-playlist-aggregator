@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfPlaylistProviderEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ArrayOfPlaylistProviderDataObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-hmlendea-ro-indev</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>1</Priority>
@@ -9,9 +9,9 @@
     <Name>hmlendea's GitHub Channels RO (In-development version)</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/refs/heads/ro/md.m3u</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-hmlendea-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>2</Priority>
@@ -19,9 +19,9 @@
     <Name>hmlendea's GitHub Channels RO</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/ro.m3u</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-hmlendea-md-indev</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>3</Priority>
@@ -29,10 +29,10 @@
     <Name>hmlendea's GitHub Channels MD (In-development version)</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/refs/heads/md/md.m3u</UrlFormat>
     <Country>MD</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-hmlendea-md</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>4</Priority>
@@ -40,153 +40,153 @@
     <Name>hmlendea's GitHub Channels MD</Name>
     <UrlFormat>https://raw.githubusercontent.com/hmlendea/iptv-playlist/master/md.m3u</UrlFormat>
     <Country>MD</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-iptvorg-ro</Id>
     <IsEnabled>false</IsEnabled>
     <Priority>100</Priority>
     <Name>IPTV org's GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/ro.m3u</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-iptvorg-md</Id>
     <IsEnabled>false</IsEnabled>
     <Priority>101</Priority>
     <Name>IPTV org's GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/md.m3u</UrlFormat>
     <Country>MD</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-iptvorg-romanian-language</Id>
     <IsEnabled>false</IsEnabled>
     <Priority>102</Priority>
     <Name>IPTV org's GitHub Romanian Language Channels</Name>
     <UrlFormat>https://iptv-org.github.io/iptv/languages/ron.m3u</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-freetv-ro</Id>
     <IsEnabled>false</IsEnabled>
     <Priority>102</Priority>
     <Name>Free-'s GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_romania.m3u8</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-freetv-md</Id>
     <IsEnabled>false</IsEnabled>
     <Priority>103</Priority>
     <Name>Free-'s GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_moldova.m3u8</UrlFormat>
     <Country>MD</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-chzw2025-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>110</Priority>
     <Name>chzw2025's IPTV GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/chzw2025/iptv2025/refs/heads/master/streams/ro.m3u</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-chzw2025-md</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>111</Priority>
     <Name>chzw2025's IPTV GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/chzw2025/iptv2025/refs/heads/master/streams/md.m3u</UrlFormat>
     <Country>MD</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-kilirushi-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>112</Priority>
     <Name>kilirushi's IPTV GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/kilirushi/iptv/refs/heads/master/ro.m3u</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-kilirushi-md</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>113</Priority>
     <Name>kilirushi's IPTV GitHub MD Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/kilirushi/iptv/refs/heads/master/md.m3u</UrlFormat>
     <Country>MD</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>freetuxtv-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>680</Priority>
     <Name>Free Tux TV Romania</Name>
     <UrlFormat>http://database.freetuxtv.net/playlists/playlist_webtv_ro.m3u</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>freetuxtv-ro-alt</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>681</Priority>
     <Name>Free Tux TV Romania (Alternative)</Name>
     <UrlFormat>https://database.freetuxtv.net/WebStreamExport/index?format=m3u&amp;status=2&amp;country=ro&amp;isp=all</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>freetuxtv-md</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>682</Priority>
     <Name>Free Tux TV Moldova</Name>
     <UrlFormat>http://database.freetuxtv.net/playlists/playlist_webtv_md.m3u</UrlFormat>
     <Country>MD</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>freetuxtv-md-alt</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>683</Priority>
     <Name>Free Tux TV Moldova (Alternative)</Name>
     <UrlFormat>https://database.freetuxtv.net/WebStreamExport/index?format=m3u&amp;status=2&amp;country=md&amp;isp=all</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>royiptv-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>690</Priority>
     <Name>RoyIPTV TV Romania</Name>
     <UrlFormat>https://m3u.royiptv.com/channels/country/ro.m3u</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>royiptv-md</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>691</Priority>
     <Name>RoyIPTV TV Moldova</Name>
     <UrlFormat>https://m3u.royiptv.com/channels/country/md.m3u</UrlFormat>
     <Country>MD</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>github-vb6rocod-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>1100</Priority>
     <Name>vb6rocod's IPTV GitHub RO Channels</Name>
     <UrlFormat>https://raw.githubusercontent.com/vb6rocod/hddlinks_android/master/tv/pl/Frecvente.m3u</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>hmlendea-livestreams-ro</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>5000</Priority>
@@ -194,9 +194,9 @@
     <Name>hmlendea's livestreams RO</Name>
     <UrlFormat>https://www.nucilandia.ro/iptv/livestreams/ro/playlist.m3u</UrlFormat>
     <Country>RO</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>hmlendea-livestreams-md</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>5001</Priority>
@@ -204,9 +204,9 @@
     <Name>hmlendea's livestreams MD</Name>
     <UrlFormat>https://www.nucilandia.ro/iptv/livestreams/md/playlist.m3u</UrlFormat>
     <Country>MD</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-  <PlaylistProviderEntity>
+  <PlaylistProviderDataObject>
     <Id>hmlendea-livestreams-int</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>5002</Priority>
@@ -214,6 +214,6 @@
     <Name>hmlendea's livestreams INT</Name>
     <UrlFormat>https://www.nucilandia.ro/iptv/livestreams/int/playlist.m3u</UrlFormat>
     <Country>INT</Country>
-  </PlaylistProviderEntity>
+  </PlaylistProviderDataObject>
 
-</ArrayOfPlaylistProviderEntity>
+</ArrayOfPlaylistProviderDataObject>

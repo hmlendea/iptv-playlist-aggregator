@@ -8,7 +8,7 @@ namespace IptvPlaylistAggregator.Service.Models
 
         public int Priority { get; set; }
 
-        public bool AllowCaching { get; set; }
+        public bool IsCachingEnabled { get; set; }
 
         public string Name { get; set; }
 

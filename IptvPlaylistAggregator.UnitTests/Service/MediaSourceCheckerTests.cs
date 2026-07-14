@@ -10,12 +10,12 @@ namespace IptvPlaylistAggregator.UnitTests.Service
     [TestFixture]
     public sealed class MediaSourceCheckerTests
     {
-        Mock<IFileDownloader> fileDownloaderMock;
-        Mock<IPlaylistFileBuilder> playlistFileBuilderMock;
-        Mock<ICacheManager> cacheMock;
-        Mock<ILogger> loggerMock;
+        private Mock<IFileDownloader> fileDownloaderMock;
+        private Mock<IPlaylistFileBuilder> playlistFileBuilderMock;
+        private Mock<ICacheManager> cacheMock;
+        private Mock<ILogger> loggerMock;
 
-        MediaSourceChecker mediaSourceChecker;
+        private MediaSourceChecker mediaSourceChecker;
 
         [SetUp]
         public void SetUp()
@@ -107,7 +107,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
 
             bool result = mediaSourceChecker.IsSourcePlayableAsync(sourceUrl).Result;
 
-            Assert.That(result, Is.True);
+            Assert.That(result);
         }
 
         [TestCase(StreamState.Dead)]

@@ -19,9 +19,9 @@ namespace IptvPlaylistAggregator.Service
         IPlaylistFileBuilder playlistFileBuilder,
         IChannelMatcher channelMatcher,
         IMediaSourceChecker mediaSourceChecker,
-        IFileRepository<ChannelDefinitionEntity> channelRepository,
-        IFileRepository<GroupEntity> groupRepository,
-        IFileRepository<PlaylistProviderEntity> playlistProviderRepository,
+        IFileRepository<ChannelDefinitionDataObject> channelRepository,
+        IFileRepository<GroupDataObject> groupRepository,
+        IFileRepository<PlaylistProviderDataObject> playlistProviderRepository,
         ApplicationSettings settings,
         ILogger logger) : IPlaylistAggregator
     {
@@ -75,9 +75,9 @@ namespace IptvPlaylistAggregator.Service
 
             List<Channel> channels = [];
 
-            foreach (ChannelDefinition channelDef in channelDefinitions)
+            foreach (ChannelDefinition channelDefinition in channelDefinitions)
             {
-                if (!enabledChannels.TryGetValue(channelDef.Id, out Channel channel))
+                if (!enabledChannels.TryGetValue(channelDefinition.Id, out Channel channel))
                 {
                     continue;
                 }
@@ -105,17 +105,22 @@ namespace IptvPlaylistAggregator.Service
         {
             ConcurrentBag<Channel> channels = [];
             IEnumerable<ChannelDefinition> enabledChannelDefinitions = channelDefinitions
-                .Where(channelDef => channelDef.IsEnabled && groups[channelDef.GroupId].IsEnabled);
+                .Where(channelDefinition =>
+                    channelDefinition.IsEnabled &&
+                    groups[channelDefinition.GroupId].IsEnabled);
 
-            Parallel.ForEach(enabledChannelDefinitions, channelDef =>
+            Parallel.ForEach(enabledChannelDefinitions, channelDefinition =>
             {
                 logger.Debug(
                     MyOperation.ChannelMatching,
                     OperationStatus.Started,
-                    new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value));
+                    new LogInfo(MyLogInfoKey.Channel, channelDefinition.Name.Value));
 
                 List<Channel> matchedChannels = [.. filteredProviderChannels
-                    .Where(channel => channelMatcher.DoesMatch(channelDef.Name, channel.Name, channel.Country))];
+                    .Where(channel => channelMatcher.DoesMatch(
+                        channelDefinition.Name,
+                        channel.Name,
+                        channel.Country))];
 
                 if (!matchedChannels.Any())
                 {
@@ -125,7 +130,7 @@ namespace IptvPlaylistAggregator.Service
                 logger.Debug(
                     MyOperation.ChannelMatching,
                     OperationStatus.InProgress,
-                    new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value),
+                    new LogInfo(MyLogInfoKey.Channel, channelDefinition.Name.Value),
                     new LogInfo(MyLogInfoKey.ChannelsCount, matchedChannels.Count.ToString()));
 
                 Channel matchedChannel = matchedChannels
@@ -136,18 +141,18 @@ namespace IptvPlaylistAggregator.Service
                     logger.Debug(
                         MyOperation.ChannelMatching,
                         OperationStatus.Failure,
-                        new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value));
+                        new LogInfo(MyLogInfoKey.Channel, channelDefinition.Name.Value));
 
                     return;
                 }
 
                 Channel resolvedChannel = new()
                 {
-                    Id = channelDef.Id,
-                    Name = channelDef.Name.Value,
-                    Country = channelDef.Country,
-                    Group = groups[channelDef.GroupId].Name,
-                    LogoUrl = channelDef.LogoUrl,
+                    Id = channelDefinition.Id,
+                    Name = channelDefinition.Name.Value,
+                    Country = channelDefinition.Country,
+                    Group = groups[channelDefinition.GroupId].Name,
+                    LogoUrl = channelDefinition.LogoUrl,
                     PlaylistId = matchedChannel.PlaylistId,
                     PlaylistChannelName = matchedChannel.PlaylistChannelName,
                     Url = matchedChannel.Url
@@ -158,7 +163,7 @@ namespace IptvPlaylistAggregator.Service
                 logger.Debug(
                     MyOperation.ChannelMatching,
                     OperationStatus.Success,
-                    new LogInfo(MyLogInfoKey.Channel, channelDef.Name.Value));
+                    new LogInfo(MyLogInfoKey.Channel, channelDefinition.Name.Value));
             });
 
             return channels;
@@ -168,7 +173,7 @@ namespace IptvPlaylistAggregator.Service
         {
             ConcurrentBag<Channel> channels = [];
 
-            if (!settings.CanIncludeUnmatchedChannels)
+            if (!settings.AreUnmatchedChannelsIncluded)
             {
                 return channels;
             }
@@ -177,7 +182,10 @@ namespace IptvPlaylistAggregator.Service
 
             IEnumerable<Channel> unmatchedChannels = filteredProviderChannels
                 .Where(channel => channelDefinitions.All(
-                    channelDef => !channelMatcher.DoesMatch(channelDef.Name, channel.Name, channel.Country)))
+                    channelDefinition => !channelMatcher.DoesMatch(
+                        channelDefinition.Name,
+                        channel.Name,
+                        channel.Country)))
                 .GroupBy(channel => channel.Name)
                 .Select(group => group.First())
                 .OrderBy(channel => channel.Name);

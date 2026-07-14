@@ -8,34 +8,37 @@ namespace IptvPlaylistAggregator.Service.Mapping
 {
     internal static class PlaylistProviderMappingExtensions
     {
-        internal static PlaylistProvider ToDomainModel(this PlaylistProviderEntity dataObject) => new()
+        internal static PlaylistProvider ToDomainModel(this PlaylistProviderDataObject dataObject) => new()
         {
             Id = dataObject.Id,
             IsEnabled = dataObject.IsEnabled,
             Priority = dataObject.Priority,
-            AllowCaching = dataObject.AllowCaching,
+            IsCachingEnabled = dataObject.IsCachingEnabled,
             Name = dataObject.Name,
             UrlFormat = dataObject.UrlFormat,
             Country = dataObject.Country,
             ChannelNameOverride = dataObject.ChannelNameOverride
         };
 
-        internal static PlaylistProviderEntity ToDataObject(this PlaylistProvider serviceModel) => new()
+        internal static PlaylistProviderDataObject ToDataObject(
+            this PlaylistProvider playlistProvider) => new()
         {
-            Id = serviceModel.Id,
-            IsEnabled = serviceModel.IsEnabled,
-            Priority = serviceModel.Priority,
-            AllowCaching = serviceModel.AllowCaching,
-            Name = serviceModel.Name,
-            UrlFormat = serviceModel.UrlFormat,
-            Country = serviceModel.Country,
-            ChannelNameOverride = serviceModel.ChannelNameOverride
+            Id = playlistProvider.Id,
+            IsEnabled = playlistProvider.IsEnabled,
+            Priority = playlistProvider.Priority,
+            IsCachingEnabled = playlistProvider.IsCachingEnabled,
+            Name = playlistProvider.Name,
+            UrlFormat = playlistProvider.UrlFormat,
+            Country = playlistProvider.Country,
+            ChannelNameOverride = playlistProvider.ChannelNameOverride
         };
 
-        internal static IEnumerable<PlaylistProvider> ToDomainModels(this IEnumerable<PlaylistProviderEntity> dataObjects)
+        internal static IEnumerable<PlaylistProvider> ToDomainModels(
+            this IEnumerable<PlaylistProviderDataObject> dataObjects)
             => dataObjects.Select(dataObject => dataObject.ToDomainModel());
 
-        internal static IEnumerable<PlaylistProviderEntity> ToDataObjects(this IEnumerable<PlaylistProvider> serviceModels)
-            => serviceModels.Select(serviceModel => serviceModel.ToDataObject());
+        internal static IEnumerable<PlaylistProviderDataObject> ToDataObjects(
+            this IEnumerable<PlaylistProvider> playlistProviders)
+            => playlistProviders.Select(playlistProvider => playlistProvider.ToDataObject());
     }
 }

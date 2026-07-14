@@ -4,7 +4,7 @@ using NuciDAL.DataObjects;
 
 namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
-    public sealed class ChannelDefinitionEntity : EntityBase
+    public sealed class ChannelDefinitionDataObject : EntityBase
     {
         private static string UnknownGroupPlaceholder => "unknown";
 
@@ -20,7 +20,7 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
 
         public List<string> Aliases { get; set; }
 
-        public ChannelDefinitionEntity()
+        public ChannelDefinitionDataObject()
         {
             IsEnabled = true;
             GroupId = UnknownGroupPlaceholder;

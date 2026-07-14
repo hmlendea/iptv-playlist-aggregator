@@ -1,186 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfGroupEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ArrayOfGroupDataObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>general</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>1</Priority>
     <Name>Generale</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>news</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>4</Priority>
     <Name>Știri</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>entertainment</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>7</Priority>
     <Name>Divertisment</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>movies</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>10</Priority>
     <Name>Filme</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>educational</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>15</Priority>
     <Name>Documentare</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>thematic</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>20</Priority>
     <Name>Tematice</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>sport</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>25</Priority>
     <Name>Sport</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>international</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>30</Priority>
     <Name>Internaționale</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-crisana</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>31</Priority>
     <Name>Locale (Crișana)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-transilvania</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>32</Priority>
     <Name>Locale (Transilvania)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-maramures</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>33</Priority>
     <Name>Locale (Maramureș)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-banat</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>34</Priority>
     <Name>Locale (Banat)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-muntenia</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>35</Priority>
     <Name>Locale (Muntenia)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-oltenia</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>36</Priority>
     <Name>Locale (Oltenia)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-dobrogea</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>37</Priority>
     <Name>Locale (Dobrogea)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-bucovina</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>38</Priority>
     <Name>Locale (Bucovina)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-moldova</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>39</Priority>
     <Name>Locale (Moldova)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-basarabia</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>40</Priority>
     <Name>Locale (Basarabia)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>local-unknown</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>41</Priority>
     <Name>Locale (???)</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>unknown</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>45</Priority>
     <Name>Necunoscute</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>kids</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>60</Priority>
     <Name>Copii</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>religious</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>70</Priority>
     <Name>Religioase</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>foreign</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>80</Priority>
     <Name>Străine</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>music</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>90</Priority>
     <Name>Muzică</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>radio</Id>
     <IsEnabled>true</IsEnabled>
     <Priority>100</Priority>
     <Name>Radio</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-  <GroupEntity>
+  <GroupDataObject>
     <Id>porn</Id>
     <IsEnabled>false</IsEnabled>
     <Priority>900</Priority>
     <Name>Erotice</Name>
-  </GroupEntity>
+  </GroupDataObject>
 
-</ArrayOfGroupEntity>
+</ArrayOfGroupDataObject>

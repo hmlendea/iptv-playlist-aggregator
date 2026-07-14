@@ -21,14 +21,14 @@ namespace IptvPlaylistAggregator.Service
                 .AddSingleton<IPlaylistFileBuilder, PlaylistFileBuilder>()
                 .AddSingleton<IChannelMatcher, ChannelMatcher>()
                 .AddSingleton<IMediaSourceChecker, MediaSourceChecker>()
-                .AddSingleton<IFileRepository<ChannelDefinitionEntity>>(
-                    serviceProvider => new XmlRepository<ChannelDefinitionEntity>(
+                .AddSingleton<IFileRepository<ChannelDefinitionDataObject>>(
+                    serviceProvider => new XmlRepository<ChannelDefinitionDataObject>(
                         dataStoreSettings.ChannelStorePath))
-                .AddSingleton<IFileRepository<GroupEntity>>(
-                    serviceProvider => new XmlRepository<GroupEntity>(
+                .AddSingleton<IFileRepository<GroupDataObject>>(
+                    serviceProvider => new XmlRepository<GroupDataObject>(
                         dataStoreSettings.GroupStorePath))
-                .AddSingleton<IFileRepository<PlaylistProviderEntity>>(
-                    serviceProvider => new XmlRepository<PlaylistProviderEntity>(
+                .AddSingleton<IFileRepository<PlaylistProviderDataObject>>(
+                    serviceProvider => new XmlRepository<PlaylistProviderDataObject>(
                         dataStoreSettings.PlaylistProviderStorePath));
 
             return services;

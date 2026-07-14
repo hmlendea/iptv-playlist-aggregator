@@ -101,7 +101,8 @@ namespace IptvPlaylistAggregator.Service
                name1.Aliases.Any(name1alias => DoChannelNamesMatch(name1alias, name1.Country, name2, country2));
 
         private bool DoChannelNamesMatch(string name1, string country1, string name2, string country2)
-            => name1.Equals(name2) || NormaliseName(name1, country1).Equals(NormaliseName(name2, country2));
+            => string.Equals(name1, name2) ||
+               string.Equals(NormaliseName(name1, country1), NormaliseName(name2, country2));
 
         private static string StripChannelName(string name)
         {

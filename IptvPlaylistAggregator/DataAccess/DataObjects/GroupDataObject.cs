@@ -2,7 +2,7 @@ using NuciDAL.DataObjects;
 
 namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
-    public sealed class GroupEntity : EntityBase
+    public sealed class GroupDataObject : EntityBase
     {
         public bool IsEnabled { get; set; }
 
@@ -10,6 +10,6 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
 
         public int Priority { get; set; }
 
-        public GroupEntity() => Priority = int.MaxValue;
+        public GroupDataObject() => Priority = int.MaxValue;
     }
 }

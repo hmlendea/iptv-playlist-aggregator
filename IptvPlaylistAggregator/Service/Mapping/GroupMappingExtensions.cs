@@ -8,7 +8,7 @@ namespace IptvPlaylistAggregator.Service.Mapping
 {
     internal static class GroupMappingExtensions
     {
-        internal static Group ToDomainModel(this GroupEntity dataObject) => new()
+        internal static Group ToDomainModel(this GroupDataObject dataObject) => new()
         {
             Id = dataObject.Id,
             IsEnabled = dataObject.IsEnabled,
@@ -16,18 +16,18 @@ namespace IptvPlaylistAggregator.Service.Mapping
             Priority = dataObject.Priority
         };
 
-        internal static GroupEntity ToDataObject(this Group serviceModel) => new()
+        internal static GroupDataObject ToDataObject(this Group group) => new()
         {
-            Id = serviceModel.Id,
-            IsEnabled = serviceModel.IsEnabled,
-            Name = serviceModel.Name,
-            Priority = serviceModel.Priority
+            Id = group.Id,
+            IsEnabled = group.IsEnabled,
+            Name = group.Name,
+            Priority = group.Priority
         };
 
-        internal static IEnumerable<Group> ToDomainModels(this IEnumerable<GroupEntity> dataObjects)
+        internal static IEnumerable<Group> ToDomainModels(this IEnumerable<GroupDataObject> dataObjects)
             => dataObjects.Select(dataObject => dataObject.ToDomainModel());
 
-        internal static IEnumerable<GroupEntity> ToDataObjects(this IEnumerable<Group> serviceModels)
-            => serviceModels.Select(serviceModel => serviceModel.ToDataObject());
+        internal static IEnumerable<GroupDataObject> ToDataObjects(this IEnumerable<Group> groups)
+            => groups.Select(group => group.ToDataObject());
     }
 }

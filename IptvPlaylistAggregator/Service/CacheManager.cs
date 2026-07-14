@@ -11,32 +11,18 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service
 {
-    public sealed class CacheManager : ICacheManager
+    public sealed class CacheManager(CacheSettings cacheSettings) : ICacheManager
     {
         private static char CsvFieldSeparator => ',';
         private static string TimestampFormat => "yyyy-MM-dd_HH-mm-ss";
         private static string PlaylistFileNameFormat => "{0}_playlist_{1:yyyy-MM-dd}.m3u";
         private static string StreamStatusesFileName => "stream-statuses.csv";
 
-        private readonly CacheSettings cacheSettings;
-
-        private readonly ConcurrentDictionary<string, string> normalisedNames;
-        private readonly ConcurrentDictionary<string, MediaStreamStatus> streamStatuses;
-        private readonly ConcurrentDictionary<string, string> webDownloads;
-        private readonly ConcurrentDictionary<int, Playlist> playlists;
-
-        public CacheManager(CacheSettings cacheSettings)
-        {
-            this.cacheSettings = cacheSettings;
-
-            normalisedNames = new();
-            streamStatuses = new();
-            webDownloads = new();
-            playlists = new();
-
-            PrepareFilesystem();
-            LoadStreamStatuses();
-        }
+        private readonly ConcurrentDictionary<string, string> normalisedNames = new();
+        private readonly ConcurrentDictionary<string, MediaStreamStatus> streamStatuses =
+            InitialiseStreamStatuses(cacheSettings);
+        private readonly ConcurrentDictionary<string, string> webDownloads = new();
+        private readonly ConcurrentDictionary<int, Playlist> playlists = new();
 
         public void SaveCacheToDisk()
             => SaveStreamStatuses();
@@ -119,21 +105,17 @@ namespace IptvPlaylistAggregator.Service
             return null;
         }
 
-        private void PrepareFilesystem()
+        private static ConcurrentDictionary<string, MediaStreamStatus> InitialiseStreamStatuses(
+            CacheSettings settings)
         {
-            if (!Directory.Exists(cacheSettings.CacheDirectoryPath))
-            {
-                Directory.CreateDirectory(cacheSettings.CacheDirectoryPath);
-            }
-        }
+            EnsureCacheDirectoryExists(settings);
 
-        private void LoadStreamStatuses()
-        {
-            string filePath = Path.Combine(cacheSettings.CacheDirectoryPath, StreamStatusesFileName);
+            ConcurrentDictionary<string, MediaStreamStatus> statuses = new();
+            string filePath = Path.Combine(settings.CacheDirectoryPath, StreamStatusesFileName);
 
             if (!File.Exists(filePath))
             {
-                return;
+                return statuses;
             }
 
             foreach (string line in File.ReadAllLines(filePath))
@@ -150,22 +132,35 @@ namespace IptvPlaylistAggregator.Service
                     State = Enum.Parse<StreamState>(fields[2])
                 };
 
+                double elapsedSeconds =
+                    (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds;
+
                 bool isExpired =
                     (streamStatus.State == StreamState.Alive &&
-                        (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamAliveStatusCacheTimeout) ||
+                        elapsedSeconds > settings.StreamAliveStatusCacheTimeout) ||
                     (streamStatus.State == StreamState.Dead &&
-                        (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamDeadStatusCacheTimeout) ||
+                        elapsedSeconds > settings.StreamDeadStatusCacheTimeout) ||
                     (streamStatus.State == StreamState.Unauthorised &&
-                        (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamUnauthorisedStatusCacheTimeout) ||
+                        elapsedSeconds > settings.StreamUnauthorisedStatusCacheTimeout) ||
                     (streamStatus.State == StreamState.NotFound &&
-                        (DateTime.UtcNow - streamStatus.LastCheckTime).TotalSeconds > cacheSettings.StreamNotFoundStatusCacheTimeout);
+                        elapsedSeconds > settings.StreamNotFoundStatusCacheTimeout);
 
                 if (isExpired)
                 {
                     continue;
                 }
 
-                streamStatuses.TryAdd(streamStatus.Url, streamStatus);
+                statuses.TryAdd(streamStatus.Url, streamStatus);
+            }
+
+            return statuses;
+        }
+
+        private static void EnsureCacheDirectoryExists(CacheSettings settings)
+        {
+            if (!Directory.Exists(settings.CacheDirectoryPath))
+            {
+                Directory.CreateDirectory(settings.CacheDirectoryPath);
             }
         }
 

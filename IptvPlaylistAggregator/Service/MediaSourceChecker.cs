@@ -182,7 +182,7 @@ namespace IptvPlaylistAggregator.Service
         private async Task<HttpStatusCode> GetHttpStatusCode(string url)
         {
             HttpStatusCode statusCode = HttpStatusCode.RequestTimeout;
-            bool doCacheContent = url.Contains(".m3u") || url.Contains(".m3u8");
+            bool isPlaylistUrl = url.Contains(".m3u") || url.Contains(".m3u8");
             string content = string.Empty;
 
             try
@@ -190,7 +190,7 @@ namespace IptvPlaylistAggregator.Service
                 using HttpResponseMessage response = await httpClient.GetAsync(url);
                 statusCode = response.StatusCode;
 
-                if (doCacheContent)
+                if (isPlaylistUrl)
                 {
                     content = await response.Content.ReadAsStringAsync();
                 }
@@ -205,7 +205,7 @@ namespace IptvPlaylistAggregator.Service
             }
             catch { }
 
-            if (doCacheContent)
+            if (isPlaylistUrl)
             {
                 cache.StoreWebDownload(url, content);
             }

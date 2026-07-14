@@ -121,7 +121,7 @@ namespace IptvPlaylistAggregator.Service
 
             playlist ??= playlistFileBuilder.TryParseFile(playlistFile);
 
-            if (provider.AllowCaching && !Playlist.IsNullOrEmpty(playlist))
+            if (provider.IsCachingEnabled && !Playlist.IsNullOrEmpty(playlist))
             {
                 cache.StorePlaylistFile(provider.Id, DateTime.UtcNow, playlistFile);
             }
@@ -155,7 +155,7 @@ namespace IptvPlaylistAggregator.Service
 
         private Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
         {
-            if (!provider.AllowCaching)
+            if (!provider.IsCachingEnabled)
             {
                 return null;
             }
