@@ -2,7 +2,7 @@ using NuciDAL.DataObjects;
 
 namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
-    public class PlaylistProviderEntity : EntityBase
+    public sealed class PlaylistProviderEntity : EntityBase
     {
         public bool IsEnabled { get; set; }
 

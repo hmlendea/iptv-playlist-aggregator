@@ -1,22 +1,14 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+
 using NuciWeb.HTTP;
 
 namespace IptvPlaylistAggregator.Service
 {
-    public sealed class FileDownloader : IFileDownloader
+    public sealed class FileDownloader(ICacheManager cache) : IFileDownloader
     {
-        private readonly ICacheManager cache;
-        private readonly HttpClient httpClient;
-
-        public FileDownloader(ICacheManager cache)
-        {
-            this.cache = cache;
-
-            httpClient = HttpClientCreator.Create();
-            httpClient.Timeout = TimeSpan.FromSeconds(3);
-        }
+        private readonly HttpClient httpClient = CreateHttpClient();
 
         public async Task<string> TryDownloadStringAsync(string url)
         {
@@ -29,7 +21,7 @@ namespace IptvPlaylistAggregator.Service
 
             try
             {
-                content = await GetAsync(url);
+                content = await SendGetRequestAsync(url);
             }
             catch
             {
@@ -41,25 +33,26 @@ namespace IptvPlaylistAggregator.Service
             return content;
         }
 
-        private async Task<string> GetAsync(string url)
+        private async Task<string> SendGetRequestAsync(string url)
         {
             if (string.IsNullOrWhiteSpace(url))
             {
                 return null;
             }
 
-            string content = await SendGetRequestAsync(url);
-            cache.StoreWebDownload(url, content);
+            using HttpResponseMessage response = await httpClient.GetAsync(url);
+            using HttpContent responseContent = response.Content;
 
-            return content;
+            return await responseContent.ReadAsStringAsync();
         }
 
-        private async Task<string> SendGetRequestAsync(string url)
+        private static HttpClient CreateHttpClient()
         {
-            using HttpResponseMessage response = await httpClient.GetAsync(url);
-            using HttpContent content = response.Content;
+            HttpClient client = HttpClientCreator.Create();
+            client.Timeout = TimeSpan.FromSeconds(3);
 
-            return await content.ReadAsStringAsync();
+            return client;
         }
     }
 }
+

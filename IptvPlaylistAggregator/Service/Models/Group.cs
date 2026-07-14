@@ -1,6 +1,6 @@
 namespace IptvPlaylistAggregator.Service.Models
 {
-    public class Group
+    public sealed class Group
     {
         public string Id { get; set; }
 

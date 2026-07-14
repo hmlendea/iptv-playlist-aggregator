@@ -6,9 +6,9 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service.Mapping
 {
-    internal static class ChannelDefinitionMapping
+    internal static class ChannelDefinitionMappingExtensions
     {
-        internal static ChannelDefinition ToServiceModel(this ChannelDefinitionEntity dataObject) => new()
+        internal static ChannelDefinition ToDomainModel(this ChannelDefinitionEntity dataObject) => new()
         {
             Id = dataObject.Id,
             IsEnabled = dataObject.IsEnabled,
@@ -29,10 +29,10 @@ namespace IptvPlaylistAggregator.Service.Mapping
             Aliases = [.. serviceModel.Name.Aliases]
         };
 
-        internal static IEnumerable<ChannelDefinition> ToServiceModels(this IEnumerable<ChannelDefinitionEntity> dataObjects)
-            => dataObjects.Select(dataObject => dataObject.ToServiceModel());
+        internal static IEnumerable<ChannelDefinition> ToDomainModels(this IEnumerable<ChannelDefinitionEntity> dataObjects)
+            => dataObjects.Select(dataObject => dataObject.ToDomainModel());
 
-        internal static IEnumerable<ChannelDefinitionEntity> ToEntities(this IEnumerable<ChannelDefinition> serviceModels)
+        internal static IEnumerable<ChannelDefinitionEntity> ToDataObjects(this IEnumerable<ChannelDefinition> serviceModels)
             => serviceModels.Select(serviceModel => serviceModel.ToDataObject());
     }
 }

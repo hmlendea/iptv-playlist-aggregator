@@ -1,5 +1,4 @@
 using System;
-using System.Security.Cryptography.X509Certificates;
 
 using IptvPlaylistAggregator.Service.Models;
 
@@ -11,9 +10,6 @@ namespace IptvPlaylistAggregator.Service
 
         void StoreNormalisedChannelName(string name, string normalisedName);
         string GetNormalisedChannelName(string name);
-
-        void StoreSslCertificate(string host, X509Certificate2 certificate);
-        X509Certificate2 GetSslCertificate(string host);
 
         void StoreStreamStatus(MediaStreamStatus status);
         MediaStreamStatus GetStreamStatus(string url);

@@ -7,6 +7,7 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.UnitTests.Service
 {
+    [TestFixture]
     public sealed class ChannelMatcherTests
     {
         private Mock<ICacheManager> cacheMock;
@@ -21,6 +22,8 @@ namespace IptvPlaylistAggregator.UnitTests.Service
             channelMatcher = new ChannelMatcher(cacheMock.Object);
         }
 
+        // -- DoesMatch ------
+
         [TestCase("Diaspora Media", "MD", "MD: Diaspora Media", "MD: Diaspora Media", "MD")]
         [TestCase("FOREIGN_CHANNEL", null, "M D Dunia Sinema", "Dunia Sinema (1080p)", "MD")]
         [TestCase("INVALID_CHANNEL", null, "iptvcat.com", "iptvcat.com", "RO")]
@@ -32,7 +35,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [TestCase("Valea Prahovei TV", "RO", "VP HD", "VP HD", null)]
         [TestCase("Vocea Basarabiei", "MD", "MD: Vocea Basarabiei TV", "Vocea Basarabiei TV (720p) [Not 24/7]", "MD")]
         [Test]
-        public void ChannelNamesDoMatch_WithAliasWithCountry(
+        public void GivenChannelNameHasAliasWithCountry_WhenCheckingIfNamesMatch_ThenTrueIsReturned(
             string definedName,
             string definedCountry,
             string alias,
@@ -46,7 +49,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
 
         [TestCase("TeleM Botoșani", "RO", "TeleM Botosani (540p) [Not 24/7]", "RO")]
         [Test]
-        public void ChannelNamesDoMatch_WithoutAliasWithCountry(
+        public void GivenChannelNameHasNoAliasButHasCountry_WhenCheckingIfNamesMatch_ThenTrueIsReturned(
             string definedName,
             string definedCountry,
             string providerName,
@@ -94,7 +97,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [TestCase("TVR Târgu Mureș", "RO: TVR T?rgu-Mure?", "TVR: Targu Mureș")]
         [TestCase("VSV De Niro", "VSV Robert de Niro", "VSV Robert de Niro HD")]
         [Test]
-        public void ChannelNamesDoMatch_WithAliasWithoutCountry(
+        public void GivenChannelNameHasAliasWithoutCountry_WhenCheckingIfNamesMatch_ThenTrueIsReturned(
             string definedName,
             string alias,
             string providerName)
@@ -117,7 +120,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [TestCase("U TV", "UTV")]
         [TestCase("Vivid TV", "Vivid TV HD(18+)")]
         [Test]
-        public void ChannelNamesDoMatch_WithoutAliasWithoutCountry(
+        public void GivenChannelNameHasNoAliasAndNoCountry_WhenCheckingIfNamesMatch_ThenTrueIsReturned(
             string definedName,
             string providerName)
         {
@@ -129,32 +132,33 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [TestCase("Cromtel", "Cmrotel", "Cmtel")]
         [TestCase("Telekom Sport 2", "RO: Telekom Sport 2", "RO: Digi Sport 2")]
         [Test]
-        public void ChannelNamesDoNotMatch_WithAliasWithoutCountry(
+        public void GivenChannelNameHasNonMatchingAlias_WhenCheckingIfNamesMatch_ThenFalseIsReturned(
             string definedName,
             string alias,
             string providerName)
         {
             ChannelName channelName = GetChannelName(definedName, alias);
 
-            Assert.That(!channelMatcher.DoesMatch(channelName, providerName, country2: null));
+            Assert.That(
+                channelMatcher.DoesMatch(channelName, providerName, country2: null),
+                Is.False);
         }
 
         [TestCase("Pro TV", "MD: Pro TV")]
         [TestCase("Pro TV", "MD: ProTV Chisinau")]
         [Test]
-        public void ChannelNamesDoNotMatch_WithoutAliasWithoutCountry(
+        public void GivenChannelNameHasNoAliasAndProviderHasDifferentCountryPrefix_WhenCheckingIfNamesMatch_ThenFalseIsReturned(
             string definedName,
             string providerName)
         {
-            // Arrange
             ChannelName channelName = GetChannelName(definedName, alias: null);
 
-            // Act
             bool isMatch = channelMatcher.DoesMatch(channelName, providerName, country2: null);
 
-            // Assert
             Assert.That(isMatch, Is.False);
         }
+
+        // -- NormaliseName ------
 
         [TestCase(" MD| Publika", "MD", "MDPUBLIKA")]
         [TestCase("|AR| AD SPORT 4 HEVC", "AR", "ARADSPORT4")]
@@ -187,7 +191,10 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [TestCase("VP HD", "RO", "VP")]
         [TestCase("VSV De Niro", "RO", "VSVDENIRO")]
         [Test]
-        public void NormaliseName_WithCountry_ReturnsExpectedValue(string name, string country, string expectedNormalisedName)
+        public void GivenChannelNameWithCountry_WhenNormalisingName_ThenExpectedValueIsReturned(
+            string name,
+            string country,
+            string expectedNormalisedName)
         {
             string actualNormalisedName = channelMatcher.NormaliseName(name, country);
 
@@ -268,7 +275,9 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [TestCase("VSV Robert de Niro", "VSVROBERTDENIRO")]
         [TestCase("ZonaM Moldova", "MDZONAM")]
         [Test]
-        public void NormaliseName_WithoutCountry_ReturnsExpectedValue(string inputValue, string expectedValue)
+        public void GivenChannelNameWithoutCountry_WhenNormalisingName_ThenExpectedValueIsReturned(
+            string inputValue,
+            string expectedValue)
         {
             string actualValue = channelMatcher.NormaliseName(inputValue, country: null);
 
@@ -276,7 +285,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void NormaliseName_WhenCacheContainsNormalisedName_ThenCachedValueIsReturned()
+        public void GivenNormalisedNameInCache_WhenNormalisingName_ThenCachedValueIsReturned()
         {
             cacheMock.Setup(cache => cache.GetNormalisedChannelName("RO: Sport TV")).Returns("SPORTSPC");
 
@@ -286,7 +295,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void NormaliseName_WhenCacheContainsNormalisedName_ThenStoreIsNotCalled()
+        public void GivenNormalisedNameInCache_WhenNormalisingName_ThenStoreIsNotCalled()
         {
             cacheMock.Setup(cache => cache.GetNormalisedChannelName("RO: Sport TV")).Returns("SPORTSPC");
 
@@ -298,7 +307,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void NormaliseName_WhenCacheDoesNotContainNormalisedName_ThenResultIsStoredInCache()
+        public void GivenNormalisedNameNotInCache_WhenNormalisingName_ThenResultIsStoredInCache()
         {
             cacheMock.Setup(cache => cache.GetNormalisedChannelName(It.IsAny<string>())).Returns((string)null);
 
@@ -312,7 +321,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         }
 
         [Test]
-        public void NormaliseName_WhenCacheDoesNotContainNormalisedNameWithoutCountry_ThenResultIsStoredInCache()
+        public void GivenNormalisedNameNotInCacheAndNoCountry_WhenNormalisingName_ThenResultIsStoredInCache()
         {
             cacheMock.Setup(cache => cache.GetNormalisedChannelName(It.IsAny<string>())).Returns((string)null);
 

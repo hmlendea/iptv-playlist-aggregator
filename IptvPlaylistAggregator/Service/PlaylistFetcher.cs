@@ -19,25 +19,14 @@ namespace IptvPlaylistAggregator.Service
         ApplicationSettings applicationSettings,
         ILogger logger) : IPlaylistFetcher
     {
-        private readonly IFileDownloader fileDownloader = fileDownloader;
-        private readonly IPlaylistFileBuilder playlistFileBuilder = playlistFileBuilder;
-        private readonly ICacheManager cache = cache;
-        private readonly ApplicationSettings applicationSettings = applicationSettings;
-        private readonly ILogger logger = logger;
-
         public IEnumerable<Playlist> FetchProviderPlaylists(IEnumerable<PlaylistProvider> providers)
         {
             ConcurrentDictionary<int, Playlist> playlists = new();
 
             logger.Info(MyOperation.PlaylistFetching, OperationStatus.Started, "Fetching provider playlists");
 
-            List<Task<Playlist>> tasks = providers is ICollection<PlaylistProvider> providerCollection
-                ? new List<Task<Playlist>>(providerCollection.Count)
-                : [];
-
-            List<PlaylistProvider> taskProviders = providers is ICollection<PlaylistProvider> providerCollectionForMapping
-                ? new List<PlaylistProvider>(providerCollectionForMapping.Count)
-                : [];
+            List<Task<Playlist>> tasks = [];
+            List<PlaylistProvider> taskProviders = [];
 
             foreach (PlaylistProvider provider in providers)
             {
@@ -74,8 +63,8 @@ namespace IptvPlaylistAggregator.Service
             }
 
             return playlists
-                .OrderBy(x => x.Key)
-                .Select(x => x.Value);
+                .OrderBy(entry => entry.Key)
+                .Select(entry => entry.Value);
         }
 
         public async Task<Playlist> FetchProviderPlaylistAsync(PlaylistProvider provider)
@@ -185,3 +174,4 @@ namespace IptvPlaylistAggregator.Service
             => await fileDownloader.TryDownloadStringAsync(string.Format(provider.UrlFormat, date));
     }
 }
+

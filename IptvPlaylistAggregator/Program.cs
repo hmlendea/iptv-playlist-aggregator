@@ -4,14 +4,12 @@ using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using NuciDAL.Repositories;
 using NuciLog;
 using NuciLog.Configuration;
 using NuciLog.Core;
 using NuciWeb.HTTP;
 
 using IptvPlaylistAggregator.Configuration;
-using IptvPlaylistAggregator.DataAccess.DataObjects;
 using IptvPlaylistAggregator.Logging;
 using IptvPlaylistAggregator.Service;
 
@@ -43,16 +41,7 @@ namespace IptvPlaylistAggregator
                 .AddSingleton(cacheSettings)
                 .AddSingleton(dataStoreSettings)
                 .AddNuciLoggerSettings(configuration)
-                .AddSingleton<ICacheManager, CacheManager>()
-                .AddSingleton<IFileDownloader, FileDownloader>()
-                .AddSingleton<IPlaylistAggregator, PlaylistAggregator>()
-                .AddSingleton<IPlaylistFetcher, PlaylistFetcher>()
-                .AddSingleton<IPlaylistFileBuilder, PlaylistFileBuilder>()
-                .AddSingleton<IChannelMatcher, ChannelMatcher>()
-                .AddSingleton<IMediaSourceChecker, MediaSourceChecker>()
-                .AddSingleton<IFileRepository<ChannelDefinitionEntity>>(s => new XmlRepository<ChannelDefinitionEntity>(dataStoreSettings.ChannelStorePath))
-                .AddSingleton<IFileRepository<GroupEntity>>(s => new XmlRepository<GroupEntity>(dataStoreSettings.GroupStorePath))
-                .AddSingleton<IFileRepository<PlaylistProviderEntity>>(s => new XmlRepository<PlaylistProviderEntity>(dataStoreSettings.PlaylistProviderStorePath))
+                .AddIptvServices(dataStoreSettings)
                 .AddSingleton<ILogger, NuciLogger>()
                 .BuildServiceProvider();
 
@@ -74,13 +63,13 @@ namespace IptvPlaylistAggregator
                 string playlistFile = aggregator.GatherPlaylist();
                 File.WriteAllText(applicationSettings.OutputPlaylistPath, playlistFile);
             }
-            catch (AggregateException ex)
+            catch (AggregateException aggregateException)
             {
-                LogInnerExceptions(ex);
+                LogInnerExceptions(aggregateException);
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
-                logger.Fatal(Operation.Unknown, OperationStatus.Failure, ex);
+                logger.Fatal(Operation.Unknown, OperationStatus.Failure, exception);
             }
 
             SaveCacheToDisk();
@@ -116,3 +105,4 @@ namespace IptvPlaylistAggregator
         }
     }
 }
+

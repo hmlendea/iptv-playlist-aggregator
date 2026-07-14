@@ -69,11 +69,7 @@ namespace IptvPlaylistAggregator.Service
         };
 
         private static readonly (Regex Pattern, string Replacement)[] CompiledTextReplacements =
-            TextReplacements
-                .Select(entry => (new Regex(entry.Key, RegexReplacementOptions), entry.Value))
-                .ToArray();
-
-        private readonly ICacheManager cache = cache;
+            [.. TextReplacements.Select(entry => (new Regex(entry.Key, RegexReplacementOptions), entry.Value))];
 
         public string NormaliseName(string name, string country)
         {

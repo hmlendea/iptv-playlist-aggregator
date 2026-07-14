@@ -6,9 +6,9 @@ using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service.Mapping
 {
-    internal static class GroupMapping
+    internal static class GroupMappingExtensions
     {
-        internal static Group ToServiceModel(this GroupEntity dataObject) => new()
+        internal static Group ToDomainModel(this GroupEntity dataObject) => new()
         {
             Id = dataObject.Id,
             IsEnabled = dataObject.IsEnabled,
@@ -24,10 +24,10 @@ namespace IptvPlaylistAggregator.Service.Mapping
             Priority = serviceModel.Priority
         };
 
-        internal static IEnumerable<Group> ToServiceModels(this IEnumerable<GroupEntity> dataObjects)
-            => dataObjects.Select(dataObject => dataObject.ToServiceModel());
+        internal static IEnumerable<Group> ToDomainModels(this IEnumerable<GroupEntity> dataObjects)
+            => dataObjects.Select(dataObject => dataObject.ToDomainModel());
 
-        internal static IEnumerable<GroupEntity> ToEntities(this IEnumerable<Group> serviceModels)
+        internal static IEnumerable<GroupEntity> ToDataObjects(this IEnumerable<Group> serviceModels)
             => serviceModels.Select(serviceModel => serviceModel.ToDataObject());
     }
 }
