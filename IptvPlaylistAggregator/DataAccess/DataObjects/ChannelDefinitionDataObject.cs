@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+
+using NuciDAL.DataObjects;
+
 namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
     public sealed class ChannelDefinitionDataObject : EntityBase

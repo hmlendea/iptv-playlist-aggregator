@@ -1,5 +1,7 @@
 using System.Xml.Serialization;
 
+using NuciDAL.DataObjects;
+
 namespace IptvPlaylistAggregator.DataAccess.DataObjects
 {
     public sealed class PlaylistProviderDataObject : EntityBase

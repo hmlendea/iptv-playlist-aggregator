@@ -1,3 +1,10 @@
+using Moq;
+using NuciLog.Core;
+using NUnit.Framework;
+
+using IptvPlaylistAggregator.Service;
+using IptvPlaylistAggregator.Service.Models;
+
 namespace IptvPlaylistAggregator.UnitTests.Service
 {
     [TestFixture]

@@ -1,4 +1,19 @@
-﻿namespace IptvPlaylistAggregator
+﻿using System;
+using System.IO;
+
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
+using NuciLog;
+using NuciLog.Configuration;
+using NuciLog.Core;
+using NuciWeb.HTTP;
+
+using IptvPlaylistAggregator.Configuration;
+using IptvPlaylistAggregator.Logging;
+using IptvPlaylistAggregator.Service;
+
+namespace IptvPlaylistAggregator
 {
     public class Program
     {

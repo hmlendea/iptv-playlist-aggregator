@@ -1,4 +1,16 @@
 using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+using NuciDAL.Repositories;
+using NuciLog.Core;
+
+using IptvPlaylistAggregator.Configuration;
+using IptvPlaylistAggregator.DataAccess.DataObjects;
+using IptvPlaylistAggregator.Logging;
+using IptvPlaylistAggregator.Service.Mapping;
+using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.Service
 {
