@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 using IptvPlaylistAggregator.Configuration;
 using IptvPlaylistAggregator.Service;
+using IptvPlaylistAggregator.Service.Models;
 
 namespace IptvPlaylistAggregator.UnitTests.Service
 {
@@ -90,6 +91,45 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [Test]
         public void GivenTheSourceIsUsingTeRtspProtocol_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
             => AssertThatSourceUrlIsNotPlayable(sourceUrl);
+
+        [TestCase("http://hls.protv.md/acasatv/acasatv.m3u8")]
+        [Test]
+        public void GivenTheSourceIsBlacklisted_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(string sourceUrl)
+            => AssertThatSourceUrlIsNotPlayable(sourceUrl);
+
+        [Test]
+        public void GivenTheSourceHasAliveStatusInCache_WhenCheckingThatItIsPlayable_ThenTrueIsReturned()
+        {
+            string sourceUrl = "http://test.nucilandia.ro/stream1";
+
+            cacheMock
+                .Setup(cache => cache.GetStreamStatus(sourceUrl))
+                .Returns(new MediaStreamStatus { State = StreamState.Alive });
+
+            bool result = mediaSourceChecker.IsSourcePlayableAsync(sourceUrl).Result;
+
+            Assert.That(result, Is.True);
+        }
+
+        [TestCase(StreamState.Dead)]
+        [TestCase(StreamState.NotFound)]
+        [TestCase(StreamState.Unauthorised)]
+        [TestCase(StreamState.Unsupported)]
+        [TestCase(StreamState.Blacklisted)]
+        [Test]
+        public void GivenTheSourceHasNonAliveStatusInCache_WhenCheckingThatItIsPlayable_ThenFalseIsReturned(
+            StreamState cachedState)
+        {
+            string sourceUrl = "http://test.nucilandia.ro/stream1";
+
+            cacheMock
+                .Setup(cache => cache.GetStreamStatus(sourceUrl))
+                .Returns(new MediaStreamStatus { State = cachedState });
+
+            bool result = mediaSourceChecker.IsSourcePlayableAsync(sourceUrl).Result;
+
+            Assert.That(result, Is.False);
+        }
 
         private void AssertThatSourceUrlIsNotPlayable(string sourceUrl)
             => Assert.That(!mediaSourceChecker.IsSourcePlayableAsync(sourceUrl).Result);

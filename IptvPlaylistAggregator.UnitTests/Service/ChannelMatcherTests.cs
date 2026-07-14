@@ -275,6 +275,56 @@ namespace IptvPlaylistAggregator.UnitTests.Service
             Assert.That(expectedValue, Is.EqualTo(actualValue));
         }
 
+        [Test]
+        public void NormaliseName_WhenCacheContainsNormalisedName_ThenCachedValueIsReturned()
+        {
+            cacheMock.Setup(cache => cache.GetNormalisedChannelName("RO: Sport TV")).Returns("SPORTSPC");
+
+            string result = channelMatcher.NormaliseName("Sport TV", "RO");
+
+            Assert.That(result, Is.EqualTo("SPORTSPC"));
+        }
+
+        [Test]
+        public void NormaliseName_WhenCacheContainsNormalisedName_ThenStoreIsNotCalled()
+        {
+            cacheMock.Setup(cache => cache.GetNormalisedChannelName("RO: Sport TV")).Returns("SPORTSPC");
+
+            channelMatcher.NormaliseName("Sport TV", "RO");
+
+            cacheMock.Verify(
+                cache => cache.StoreNormalisedChannelName(It.IsAny<string>(), It.IsAny<string>()),
+                Times.Never);
+        }
+
+        [Test]
+        public void NormaliseName_WhenCacheDoesNotContainNormalisedName_ThenResultIsStoredInCache()
+        {
+            cacheMock.Setup(cache => cache.GetNormalisedChannelName(It.IsAny<string>())).Returns((string)null);
+
+            channelMatcher.NormaliseName("Sport TV", "RO");
+
+            cacheMock.Verify(
+                cache => cache.StoreNormalisedChannelName(
+                    It.Is<string>(key => key == "RO: Sport TV"),
+                    It.IsAny<string>()),
+                Times.Once);
+        }
+
+        [Test]
+        public void NormaliseName_WhenCacheDoesNotContainNormalisedNameWithoutCountry_ThenResultIsStoredInCache()
+        {
+            cacheMock.Setup(cache => cache.GetNormalisedChannelName(It.IsAny<string>())).Returns((string)null);
+
+            channelMatcher.NormaliseName("Sport TV", null);
+
+            cacheMock.Verify(
+                cache => cache.StoreNormalisedChannelName(
+                    It.Is<string>(key => key == "Sport TV"),
+                    It.IsAny<string>()),
+                Times.Once);
+        }
+
         private ChannelName GetChannelName(string definedName, string alias)
             => GetChannelName(definedName, country: null, alias);
 
