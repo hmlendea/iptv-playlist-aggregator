@@ -9,7 +9,7 @@ IPTV Playlist Aggregator is a .NET console application that downloads playlists 
 
 It is designed for users who want one stable playlist, with their own channel metadata and grouping rules, even when source playlists are noisy or inconsistent.
 
-## Features
+## ✨ Features
 
 - Downloads M3U playlists from multiple configurable providers.
 - Matches provider channels against your channel definitions (including aliases).
@@ -19,7 +19,19 @@ It is designed for users who want one stable playlist, with their own channel me
 - Supports provider/date-based playlist URLs.
 - Caches downloaded and parsed data to reduce repeated work.
 
-## How Aggregation Works
+## 🚀 Usage
+
+1. Populate `channels.xml`, `groups.xml`, and `providers.xml` in the `Data/` directory with your channel definitions, groups, and provider URLs.
+2. Adjust `appsettings.json` to configure the output path and any other settings (see the Configuration section).
+3. Run the application:
+
+```bash
+dotnet run --project IptvPlaylistAggregator/IptvPlaylistAggregator.csproj
+```
+
+The merged playlist is written to the path configured in `outputPlaylistPath` (default: `result.m3u`).
+
+## 🔄 How Aggregation Works
 
 1. Load groups, channel definitions, and providers from XML files.
 2. Fetch enabled providers and parse their playlists.
@@ -29,7 +41,7 @@ It is designed for users who want one stable playlist, with their own channel me
 6. Optionally append unmatched playable channels.
 7. Generate a single output M3U file.
 
-## Configuration
+## ⚙️ Configuration
 
 All settings are loaded from `appsettings.json`. The following keys are recognised:
 
@@ -52,7 +64,7 @@ All settings are loaded from `appsettings.json`. The following keys are recognis
 | `dataStoreSettings` | `groupStorePath` | XML file path for groups |
 | `dataStoreSettings` | `playlistProviderStorePath` | XML file path for providers |
 
-## Data Files
+## 📁 Data Files
 
 All data stores are XML arrays of entities.
 
@@ -96,7 +108,7 @@ Date placeholder example in `UrlFormat`:
 https://example.com/playlists/{0:yyyy-MM-dd}.m3u
 ```
 
-## Development
+## 🛠️ Development
 
 ### Requirements
 
@@ -125,6 +137,20 @@ By default, the output playlist is written to `result.m3u` (configured in `appse
 dotnet test IptvPlaylistAggregator.slnx
 ```
 
+### Dependencies
+
+| Package | Purpose |
+|---------|--------|
+| `Microsoft.Extensions.Configuration` | Configuration reading infrastructure |
+| `Microsoft.Extensions.Configuration.Binder` | Strongly-typed configuration binding |
+| `Microsoft.Extensions.Configuration.Json` | JSON configuration provider |
+| `Microsoft.Extensions.DependencyInjection` | Dependency injection container |
+| `NuciDAL` | Data access layer utilities for XML repositories |
+| `NuciExtensions` | General-purpose extension methods |
+| `NuciLog` | Structured file and console logging |
+| `NuciLog.Core` | Core logging abstractions |
+| `NuciWeb.HTTP` | HTTP client utilities for fetching remote playlists |
+
 ### Release
 
 The repository includes `release.sh`, which delegates to the upstream deployment script used by the project maintainer.
@@ -137,7 +163,7 @@ This script downloads and executes an external release helper from `https://raw.
 
 **Note:** Piping into `bash` is an intensely controversial topic. Please review any external scripts before running them in your environment!
 
-## Run as a Linux systemd service
+## 🖥️ Run as a Linux systemd service
 
 The app is a console executable, so it can be scheduled with a systemd timer.
 
@@ -174,7 +200,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now iptv-playlist-aggregator.timer
 ```
 
-## Project Structure
+## 🗂️ Project Structure
 
 The solution contains the following projects:
 
@@ -193,21 +219,7 @@ Key directories inside `IptvPlaylistAggregator/`:
 | `Service/Mapping/` | Extensions for mapping data objects to domain models |
 | `Service/Models/` | Domain model classes |
 
-### Dependencies
-
-| Package | Purpose |
-|---------|---------|
-| `Microsoft.Extensions.Configuration` | Configuration reading infrastructure |
-| `Microsoft.Extensions.Configuration.Binder` | Strongly-typed configuration binding |
-| `Microsoft.Extensions.Configuration.Json` | JSON configuration provider |
-| `Microsoft.Extensions.DependencyInjection` | Dependency injection container |
-| `NuciDAL` | Data access layer utilities for XML repositories |
-| `NuciExtensions` | General-purpose extension methods |
-| `NuciLog` | Structured file and console logging |
-| `NuciLog.Core` | Core logging abstractions |
-| `NuciWeb.HTTP` | HTTP client utilities for fetching remote playlists |
-
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome. Please:
 - Keep changes cross-platform
@@ -215,15 +227,17 @@ Contributions are welcome. Please:
 - Update documentation when behaviour changes
 - Add unit tests for any new or changed functionality
 
-## Support
+## 💬 Support
+
+Found a bug or have a suggestion? [Open an issue](https://github.com/hmlendea/iptv-playlist-aggregator/issues)!
 
 If you find this project useful, consider [funding it](https://hmlendea.go.ro/funding) or giving a ⭐️ on GitHub!
 
-## Legal Notice
+## ⚖️ Legal Notice
 
 This software aggregates playlist sources. You are responsible for ensuring your usage complies with local laws and content licensing requirements.
 
-## License
+## 📄 License
 
 Licensed under the `GNU General Public License v3.0` or later.
 See [LICENSE](./LICENSE) for details.
