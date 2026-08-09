@@ -76,13 +76,17 @@ namespace IptvPlaylistAggregator.Service
 
         private static IEnumerable<string> BlacklistedSources => [ "http://hls.protv.md/acasatv/acasatv.m3u8" ];
 
+        private static readonly Regex YouTubeVideoRegex = new(YouTubeVideoUrlPattern, RegexOptions.Compiled);
+        private static readonly Regex TinyUrlRegex = new(TinyUrlPattern, RegexOptions.Compiled);
+        private static readonly Regex NonHttpUrlRegex = new(NonHttpUrlPattern, RegexOptions.Compiled);
+
         private readonly HttpClient httpClient = HttpClientCreator.Create();
 
         private static bool IsUrlUnsupported(string url)
         {
-            if (Regex.IsMatch(url, YouTubeVideoUrlPattern) ||
-                Regex.IsMatch(url, TinyUrlPattern) ||
-                Regex.IsMatch(url, NonHttpUrlPattern))
+            if (YouTubeVideoRegex.IsMatch(url) ||
+                TinyUrlRegex.IsMatch(url) ||
+                NonHttpUrlRegex.IsMatch(url))
             {
                 return true;
             }
@@ -120,27 +124,36 @@ namespace IptvPlaylistAggregator.Service
                 return StreamState.Dead;
             }
 
+            Uri uri = new(playlistUrl);
+            string playlistDirectoryUrl = Path
+                .GetDirectoryName(playlistUrl)
+                .Replace(":/", "://");
+
             foreach (Channel channel in playlist.Channels)
             {
-                List<string> channelUrlsToCheck = [];
-
                 if (channel.Url.StartsWith("http"))
                 {
-                    channelUrlsToCheck.Add(channel.Url);
+                    bool isPrimaryUrlPlayable = await IsSourcePlayableAsync(channel.Url);
+
+                    if (isPrimaryUrlPlayable)
+                    {
+                        return StreamState.Alive;
+                    }
                 }
                 else
                 {
-                    Uri uri = new(playlistUrl);
+                    string channelUrlFromDirectory = playlistDirectoryUrl + "/" + channel.Url;
+                    bool isDirectoryUrlPlayable = await IsSourcePlayableAsync(channelUrlFromDirectory);
 
-                    channelUrlsToCheck.Add(Path.GetDirectoryName(playlistUrl).Replace(":/", "://") + "/" + channel.Url);
-                    channelUrlsToCheck.Add($"{uri.Scheme}://{uri.Host}/{channel.Url}");
-                }
+                    if (isDirectoryUrlPlayable)
+                    {
+                        return StreamState.Alive;
+                    }
 
-                foreach (string channelUrl in channelUrlsToCheck)
-                {
-                    bool isPlayable = await IsSourcePlayableAsync(channelUrl);
+                    string channelUrlFromHostRoot = $"{uri.Scheme}://{uri.Host}/{channel.Url}";
+                    bool isHostRootUrlPlayable = await IsSourcePlayableAsync(channelUrlFromHostRoot);
 
-                    if (isPlayable)
+                    if (isHostRootUrlPlayable)
                     {
                         return StreamState.Alive;
                     }
