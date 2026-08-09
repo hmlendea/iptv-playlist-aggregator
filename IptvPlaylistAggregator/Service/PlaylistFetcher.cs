@@ -22,23 +22,22 @@ namespace IptvPlaylistAggregator.Service
         public IEnumerable<Playlist> FetchProviderPlaylists(IEnumerable<PlaylistProvider> providers)
         {
             ConcurrentDictionary<int, Playlist> playlists = new();
+            List<PlaylistProvider> providerList = [.. providers];
 
             logger.Info(MyOperation.PlaylistFetching, OperationStatus.Started, "Fetching provider playlists");
 
-            List<Task<Playlist>> tasks = [];
-            List<PlaylistProvider> taskProviders = [];
+            List<Task<Playlist>> tasks = new(providerList.Count);
 
-            foreach (PlaylistProvider provider in providers)
+            foreach (PlaylistProvider provider in providerList)
             {
                 tasks.Add(FetchProviderPlaylistAsync(provider));
-                taskProviders.Add(provider);
             }
 
             Task.WaitAll([.. tasks]);
 
             for (int i = 0; i < tasks.Count; i++)
             {
-                PlaylistProvider provider = taskProviders[i];
+                PlaylistProvider provider = providerList[i];
                 Playlist playlist = tasks[i].Result;
 
                 if (Playlist.IsNullOrEmpty(playlist))
@@ -116,14 +115,15 @@ namespace IptvPlaylistAggregator.Service
 
         private async Task<Playlist> GetPlaylistForTodayAsync(PlaylistProvider provider)
         {
-            string playlistFile = await DownloadPlaylistFileAsync(provider, DateTime.UtcNow);
-            Playlist playlist = LoadPlaylistFromCache(provider, DateTime.UtcNow);
+            DateTime currentDate = DateTime.UtcNow;
+            string playlistFile = await DownloadPlaylistFileAsync(provider, currentDate);
+            Playlist playlist = LoadPlaylistFromCache(provider, currentDate);
 
             playlist ??= playlistFileBuilder.TryParseFile(playlistFile);
 
             if (provider.IsCachingEnabled && !Playlist.IsNullOrEmpty(playlist))
             {
-                cache.StorePlaylistFile(provider.Id, DateTime.UtcNow, playlistFile);
+                cache.StorePlaylistFile(provider.Id, currentDate, playlistFile);
             }
 
             return playlist;
@@ -137,10 +137,11 @@ namespace IptvPlaylistAggregator.Service
             }
 
             Playlist playlist = null;
+            DateTime currentDate = DateTime.UtcNow;
 
             for (int i = 1; i < applicationSettings.DaysToCheck; i++)
             {
-                DateTime date = DateTime.UtcNow.AddDays(-i);
+                DateTime date = currentDate.AddDays(-i);
 
                 playlist = LoadPlaylistFromCache(provider, date);
 

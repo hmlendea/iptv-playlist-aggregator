@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -14,7 +15,9 @@ namespace IptvPlaylistAggregator.Service
     {
         public string BuildFile(Playlist playlist)
         {
-            StringBuilder fileBuilder = new();
+            int initialCapacity = FileHeader.Length + Environment.NewLine.Length +
+                                  (playlist.Channels.Count * BaseChannelEntryCapacity);
+            StringBuilder fileBuilder = new(initialCapacity);
             fileBuilder.Append(FileHeader).Append(Environment.NewLine);
 
             foreach (Channel channel in playlist.Channels)
@@ -78,40 +81,44 @@ namespace IptvPlaylistAggregator.Service
                 throw new ArgumentNullException(nameof(content));
             }
 
-            IEnumerable<string> lines = content
-                .Replace("\r", "")
-                .Split('\n')
-                .Where(line => !string.IsNullOrWhiteSpace(line));
+            using StringReader contentReader = new(content);
+            string line = contentReader.ReadLine();
+            Channel latestChannel = null;
 
-            foreach (string line in lines)
+            while (line is not null)
             {
-                if (line.StartsWith(EntryHeader))
+                if (!string.IsNullOrWhiteSpace(line))
                 {
-                    string[] lineParts = line.Split(EntryValuesSeparator);
-                    string channelName = lineParts[^1];
-
-                    Channel channel = new()
+                    if (line.StartsWith(EntryHeader))
                     {
-                        Name = channelName,
-                        PlaylistChannelName = channelName
-                    };
+                        string channelName = GetChannelNameFromEntryHeader(line);
 
-                    playlist.Channels.Add(channel);
-                }
-                else if (line.StartsWith(EntryHeaderExtendedInfo))
-                {
-                    Channel channel = new();
+                        latestChannel = new()
+                        {
+                            Name = channelName,
+                            PlaylistChannelName = channelName
+                        };
 
-                    playlist.Channels.Add(channel);
+                        playlist.Channels.Add(latestChannel);
+                    }
+                    else if (line.StartsWith(EntryHeaderExtendedInfo))
+                    {
+                        latestChannel = new();
+
+                        playlist.Channels.Add(latestChannel);
+                    }
+                    else if (!line.StartsWith('#'))
+                    {
+                        if (latestChannel is null)
+                        {
+                            throw new InvalidOperationException("Playlist entry header is missing before a URL line.");
+                        }
+
+                        latestChannel.Url = line;
+                    }
                 }
-                else if (line.StartsWith('#'))
-                {
-                    continue;
-                }
-                else
-                {
-                    playlist.Channels.Last().Url = line;
-                }
+
+                line = contentReader.ReadLine();
             }
 
             cache.StorePlaylist(content, playlist);
@@ -133,6 +140,19 @@ namespace IptvPlaylistAggregator.Service
         private static string PlaylistIdTagKey => "playlist-id";
         private static string PlaylistChannelNameTagKey => "playlist-channel-name";
         private static int DefaultEntryRuntime => -1;
+        private static int BaseChannelEntryCapacity => 96;
+
+        private static string GetChannelNameFromEntryHeader(string entryHeaderLine)
+        {
+            int channelNameStartIndex = entryHeaderLine.LastIndexOf(EntryValuesSeparator);
+
+            if (channelNameStartIndex < 0)
+            {
+                return string.Empty;
+            }
+
+            return entryHeaderLine[(channelNameStartIndex + 1)..];
+        }
 
         private static string BuildTvGuideHeaderTags(Channel channel)
         {

@@ -68,10 +68,24 @@ namespace IptvPlaylistAggregator.Service
         }
 
         public void StorePlaylist(string fileContent, Playlist playlist)
-            => playlists.TryAdd(fileContent.GetHashCode(), playlist);
+        {
+            if (fileContent is null || playlist is null)
+            {
+                return;
+            }
+
+            playlists.TryAdd(fileContent, playlist);
+        }
 
         public Playlist GetPlaylist(string fileContent)
-            => playlists.TryGetValue(fileContent.GetHashCode());
+        {
+            if (fileContent is null)
+            {
+                return null;
+            }
+
+            return playlists.TryGetValue(fileContent);
+        }
 
         public void StorePlaylistFile(string providerId, DateTime date, string content)
         {
@@ -103,7 +117,7 @@ namespace IptvPlaylistAggregator.Service
         private readonly ConcurrentDictionary<string, MediaStreamStatus> streamStatuses =
             InitialiseStreamStatuses(cacheSettings);
         private readonly ConcurrentDictionary<string, string> webDownloads = new();
-        private readonly ConcurrentDictionary<int, Playlist> playlists = new();
+        private readonly ConcurrentDictionary<string, Playlist> playlists = new();
 
         private static ConcurrentDictionary<string, MediaStreamStatus> InitialiseStreamStatuses(
             CacheSettings settings)

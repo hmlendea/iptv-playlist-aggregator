@@ -33,44 +33,50 @@ namespace IptvPlaylistAggregator.Service
                 .ToDomainModels()
                 .ToDictionary(group => group.Id, group => group);
 
-            channelDefinitions = channelRepository
+            channelDefinitions = [.. channelRepository
                 .GetAll()
                 .OrderBy(channelDefinition => groups[channelDefinition.GroupId].Priority)
                 .ThenBy(channelDefinition => channelDefinition.Name)
-                .ToDomainModels();
+                .ToDomainModels()];
 
             playlistProviders = playlistProviderRepository
                 .GetAll()
                 .Where(provider => provider.IsEnabled)
                 .ToDomainModels();
 
-            IEnumerable<Channel> providerChannels = playlistFetcher
+            List<Channel> providerChannels = [.. playlistFetcher
                 .FetchProviderPlaylists(playlistProviders)
-                .SelectMany(playlist => playlist.Channels);
+                .SelectMany(playlist => playlist.Channels)];
 
             Playlist playlist = new();
 
-            IEnumerable<Channel> channels = GetChannels(providerChannels);
+            List<ChannelDefinition> enabledChannelDefinitions = [.. channelDefinitions
+                .Where(channelDefinition =>
+                    channelDefinition.IsEnabled &&
+                    groups[channelDefinition.GroupId].IsEnabled)];
 
-            foreach (Channel channel in channels)
-            {
-                playlist.Channels.Add(channel);
-            }
+            IEnumerable<Channel> channels = GetChannels(providerChannels, enabledChannelDefinitions);
+
+            playlist.Channels.AddRange(channels);
 
             return playlistFileBuilder.BuildFile(playlist);
         }
 
-        private IEnumerable<ChannelDefinition> channelDefinitions;
+        private IReadOnlyList<ChannelDefinition> channelDefinitions;
         private IEnumerable<PlaylistProvider> playlistProviders;
         private IDictionary<string, Group> groups;
 
-        private IEnumerable<Channel> GetChannels(IEnumerable<Channel> providerChannels)
+        private IEnumerable<Channel> GetChannels(
+            IReadOnlyList<Channel> providerChannels,
+            IReadOnlyList<ChannelDefinition> enabledChannelDefinitions)
         {
-            IEnumerable<Channel> filteredProviderChannels = GetProviderChannels(providerChannels);
+            IReadOnlyList<Channel> filteredProviderChannels = GetProviderChannels(providerChannels);
 
             logger.Info(MyOperation.ChannelMatching, OperationStatus.Started);
 
-            IDictionary<string, Channel> enabledChannels = GetEnabledChannels(filteredProviderChannels)
+            IDictionary<string, Channel> enabledChannels = GetEnabledChannels(
+                    filteredProviderChannels,
+                    enabledChannelDefinitions)
                 .ToDictionary(channel => channel.Id, channel => channel);
             IEnumerable<Channel> unmatchedChannels = GetUnmatchedChannels(filteredProviderChannels);
 
@@ -102,13 +108,11 @@ namespace IptvPlaylistAggregator.Service
             return channels;
         }
 
-        private IEnumerable<Channel> GetEnabledChannels(IEnumerable<Channel> filteredProviderChannels)
+        private IEnumerable<Channel> GetEnabledChannels(
+            IReadOnlyList<Channel> filteredProviderChannels,
+            IReadOnlyList<ChannelDefinition> enabledChannelDefinitions)
         {
             ConcurrentBag<Channel> channels = [];
-            IEnumerable<ChannelDefinition> enabledChannelDefinitions = channelDefinitions
-                .Where(channelDefinition =>
-                    channelDefinition.IsEnabled &&
-                    groups[channelDefinition.GroupId].IsEnabled);
 
             Parallel.ForEach(enabledChannelDefinitions, channelDefinition =>
             {
@@ -170,7 +174,7 @@ namespace IptvPlaylistAggregator.Service
             return channels;
         }
 
-        private IEnumerable<Channel> GetUnmatchedChannels(IEnumerable<Channel> filteredProviderChannels)
+        private IEnumerable<Channel> GetUnmatchedChannels(IReadOnlyList<Channel> filteredProviderChannels)
         {
             ConcurrentBag<Channel> channels = [];
 
@@ -209,16 +213,16 @@ namespace IptvPlaylistAggregator.Service
             return channels;
         }
 
-        private IEnumerable<Channel> GetProviderChannels(IEnumerable<Channel> channels)
+        private IReadOnlyList<Channel> GetProviderChannels(IReadOnlyList<Channel> channels)
         {
             logger.Info(
                 MyOperation.ProviderChannelsFiltering,
                 OperationStatus.Started,
-                new LogInfo(MyLogInfoKey.ChannelsCount, channels.Count().ToString()));
+                new LogInfo(MyLogInfoKey.ChannelsCount, channels.Count.ToString()));
 
-            IEnumerable<Channel> filteredChannels = channels
+            IReadOnlyList<Channel> filteredChannels = [.. channels
                 .Where(channel => !string.IsNullOrWhiteSpace(channel.Url))
-                .DistinctBy(channel => channel.Url);
+                .DistinctBy(channel => channel.Url)];
 
             logger.Info(
                 MyOperation.ProviderChannelsFiltering,
