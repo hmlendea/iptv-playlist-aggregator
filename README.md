@@ -5,151 +5,111 @@
 
 # IPTV Playlist Aggregator
 
-IPTV Playlist Aggregator is a .NET console application that downloads playlists from multiple providers and merges them into a single curated M3U file.
+IPTV Playlist Aggregator is a .NET console application that retrieves playlists from multiple providers and aggregates them into one curated M3U output.
 
-It is designed for users who want one stable playlist, with their own channel metadata and grouping rules, even when source playlists are noisy or inconsistent.
+## 📑 Table of Contents
 
-## ✨ Features
+- [Capabilities](#-capabilities)
+- [Usage](#-usage)
+- [Known Limitations](#-known-limitations)
+- [System Requirements](#-system-requirements)
+- [Installation](#-installation)
+  - [CLI Installation](#cli-installation)
+- [Configuration](#-configuration)
+- [Development](#-development)
+  - [Requirements](#requirements)
+  - [Setup](#setup)
+  - [Build](#build)
+  - [Run](#run)
+  - [Test](#test)
+  - [Release](#release)
+  - [Dependencies](#dependencies)
+- [Project Structure](#-project-structure)
+- [Contributing](#-contributing)
+- [Supporting the Project](#-supporting-the-project)
+- [License](#-license)
 
-- Downloads M3U playlists from multiple configurable providers.
-- Matches provider channels against your channel definitions (including aliases).
-- Keeps one playable stream per configured channel.
-- Writes a final unified M3U playlist to a configurable path.
-- Optionally includes unmatched channels.
-- Supports provider/date-based playlist URLs.
-- Caches downloaded and parsed data to reduce repeated work.
+## ✨ Capabilities
+
+- Retrieves M3U playlists from multiple configurable providers.
+- Matches provider channels against configured channel definitions and aliases.
 
 ## 🚀 Usage
 
-1. Populate `channels.xml`, `groups.xml`, and `providers.xml` in the `Data/` directory with your channel definitions, groups, and provider URLs.
-2. Adjust `appsettings.json` to configure the output path and any other settings (see the Configuration section).
-3. Run the application:
-
 ```bash
-dotnet run --project IptvPlaylistAggregator/IptvPlaylistAggregator.csproj
+dotnet run --project IptvPlaylistAggregator
 ```
 
-The merged playlist is written to the path configured in `outputPlaylistPath` (default: `result.m3u`).
+Before running, adjust data files in `IptvPlaylistAggregator/Data/` and revise settings in `IptvPlaylistAggregator/appsettings.json`.
 
-## 🔄 How Aggregation Works
+## ⚠️ Known Limitations
 
-1. Load groups, channel definitions, and providers from XML files.
-2. Fetch enabled providers and parse their playlists.
-3. Remove duplicate stream URLs.
-4. Match each configured channel against provider channel names (and optional country context).
-5. Keep the first playable media source for each matched channel.
-6. Optionally append unmatched playable channels.
-7. Generate a single output M3U file.
+- Playlist retrieval and stream validation require internet access.
+
+## 🖥️ System Requirements
+
+- **OS:** Linux, macOS, Windows.
+- **RAM:** 256 MB minimum.
+- .NET 10.0 runtime.
+
+## 📦 Installation
+
+[![Obtain it from GitHub](https://raw.githubusercontent.com/hmlendea/readme-assets/master/badges/stores/github.png)](https://github.com/hmlendea/iptv-playlist-aggregator/releases)
+
+### CLI Installation
+
+Download the archive for your platform from the latest GitHub release and execute the extracted binary.
 
 ## ⚙️ Configuration
 
-All settings are loaded from `appsettings.json`. The following keys are recognised:
+All settings are loaded from the configuration file. The subsequent keys are recognised:
 
 | Section | Key | Description |
 |---------|-----|-------------|
-| `nuciLoggerSettings` | `logFilePath` | Path of the log file |
-| `nuciLoggerSettings` | `isFileOutputEnabled` | Whether to write logs to file |
-| `nuciLoggerSettings` | `minimumLevel` | Minimum log level to record |
-| `applicationSettings` | `outputPlaylistPath` | Path where the merged M3U file is written |
-| `applicationSettings` | `daysToCheck` | Number of days to look back for dated provider URLs |
-| `applicationSettings` | `areUnmatchedChannelsIncluded` | Whether to include channels not matched to your definitions |
-| `applicationSettings` | `areTvGuideTagsEnabled` | Whether to include TV guide tags in `#EXTINF` |
-| `applicationSettings` | `arePlaylistDetailsTagsEnabled` | Whether to include source playlist metadata tags |
-| `cacheSettings` | `cacheDirectoryPath` | Cache folder path |
-| `cacheSettings` | `streamAliveStatusCacheTimeout` | Cache timeout in seconds for alive stream status |
-| `cacheSettings` | `streamDeadStatusCacheTimeout` | Cache timeout in seconds for dead stream status |
-| `cacheSettings` | `streamUnauthorisedStatusCacheTimeout` | Cache timeout in seconds for unauthorised stream status |
-| `cacheSettings` | `streamNotFoundStatusCacheTimeout` | Cache timeout in seconds for not-found stream status |
-| `dataStoreSettings` | `channelStorePath` | XML file path for channel definitions |
-| `dataStoreSettings` | `groupStorePath` | XML file path for groups |
-| `dataStoreSettings` | `playlistProviderStorePath` | XML file path for providers |
-
-## 📁 Data Files
-
-All data stores are XML arrays of entities.
-
-### Channels (`channels.xml`)
-
-Entity: `ChannelDefinitionEntity`
-
-- `Id` (string): channel identifier, also used as TVG ID in output
-- `IsEnabled` (bool): include/exclude channel
-- `Name` (string): final display name
-- `Country` (string, optional): country metadata and matching hint
-- `GroupId` (string): group reference
-- `LogoUrl` (string, optional): logo URL
-- `Aliases` (string list): accepted source name variants for matching
-
-### Groups (`groups.xml`)
-
-Entity: `GroupEntity`
-
-- `Id` (string): group identifier
-- `IsEnabled` (bool): include/exclude group
-- `Name` (string): display name
-- `Priority` (int): sort order (lower appears first)
-
-### Providers (`providers.xml`)
-
-Entity: `PlaylistProviderEntity`
-
-- `Id` (string): provider identifier
-- `IsEnabled` (bool): enable/disable provider
-- `Priority` (int): provider processing order (lower is earlier)
-- `AllowCaching` (bool): enable playlist caching for this provider
-- `Name` (string): provider display name
-- `UrlFormat` (string): provider URL, optionally with a date placeholder
-- `Country` (string, optional): provider country hint
-- `ChannelNameOverride` (string, optional): force all channels from this provider to a fixed name
-
-Date placeholder example in `UrlFormat`:
-
-```text
-https://example.com/playlists/{0:yyyy-MM-dd}.m3u
-```
+| `nuciLoggerSettings` | `logFilePath` | Path for the application log file. |
+| `nuciLoggerSettings` | `isFileOutputEnabled` | Enables or disables file logging. |
+| `nuciLoggerSettings` | `minimumLevel` | Minimum severity level written to logs. |
+| `applicationSettings` | `outputPlaylistPath` | Output path for the aggregated M3U playlist. |
+| `applicationSettings` | `daysToCheck` | Number of days checked for date-based provider URLs. |
+| `applicationSettings` | `areUnmatchedChannelsIncluded` | Includes unmatched channels in the output when enabled. |
+| `applicationSettings` | `areTvGuideTagsEnabled` | Enables TV guide tags in output entries. |
+| `applicationSettings` | `arePlaylistDetailsTagsEnabled` | Enables source playlist detail tags in output entries. |
+| `cacheSettings` | `cacheDirectoryPath` | Directory used for cached data. |
+| `cacheSettings` | `streamAliveStatusCacheTimeout` | Cache timeout in seconds for alive stream checks. |
+| `cacheSettings` | `streamDeadStatusCacheTimeout` | Cache timeout in seconds for dead stream checks. |
+| `cacheSettings` | `streamUnauthorisedStatusCacheTimeout` | Cache timeout in seconds for unauthorised stream checks. |
+| `cacheSettings` | `streamNotFoundStatusCacheTimeout` | Cache timeout in seconds for not-found stream checks. |
+| `dataStoreSettings` | `channelStorePath` | XML path for channel definitions. |
+| `dataStoreSettings` | `groupStorePath` | XML path for group definitions. |
+| `dataStoreSettings` | `playlistProviderStorePath` | XML path for playlist provider definitions. |
 
 ## 🛠️ Development
 
 ### Requirements
 
-- [.NET 10.0 SDK](https://dotnet.microsoft.com/download)
-- Internet access (required at runtime to fetch source playlists)
+- [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
+
+### Setup
 
 All NuGet dependencies are restored automatically by `dotnet restore`.
 
 ### Build
 
 ```bash
-dotnet build IptvPlaylistAggregator.slnx
+dotnet build IptvPlaylistAggregator
 ```
 
 ### Run
 
 ```bash
-dotnet run --project IptvPlaylistAggregator/IptvPlaylistAggregator.csproj
+dotnet run --project IptvPlaylistAggregator
 ```
-
-By default, the output playlist is written to `result.m3u` (configured in `appsettings.json`).
 
 ### Test
 
 ```bash
 dotnet test IptvPlaylistAggregator.slnx
 ```
-
-### Dependencies
-
-| Package | Purpose |
-|---------|--------|
-| `Microsoft.Extensions.Configuration` | Configuration reading infrastructure |
-| `Microsoft.Extensions.Configuration.Binder` | Strongly-typed configuration binding |
-| `Microsoft.Extensions.Configuration.Json` | JSON configuration provider |
-| `Microsoft.Extensions.DependencyInjection` | Dependency injection container |
-| `NuciDAL` | Data access layer utilities for XML repositories |
-| `NuciExtensions` | General-purpose extension methods |
-| `NuciLog` | Structured file and console logging |
-| `NuciLog.Core` | Core logging abstractions |
-| `NuciWeb.HTTP` | HTTP client utilities for fetching remote playlists |
 
 ### Release
 
@@ -163,81 +123,57 @@ This script downloads and executes an external release helper from `https://raw.
 
 **Note:** Piping into `bash` is an intensely controversial topic. Please review any external scripts before running them in your environment!
 
-## 🖥️ Run as a Linux systemd service
+### Dependencies
 
-The app is a console executable, so it can be scheduled with a systemd timer.
-
-Create `/etc/systemd/system/iptv-playlist-aggregator.service`:
-
-```ini
-[Unit]
-Description=IPTV Playlist Aggregator
-
-[Service]
-WorkingDirectory=/absolute/path/to/IptvPlaylistAggregator
-ExecStart=/absolute/path/to/IptvPlaylistAggregator/IptvPlaylistAggregator
-User=your-user
-```
-
-Create `/etc/systemd/system/iptv-playlist-aggregator.timer`:
-
-```ini
-[Unit]
-Description=Periodically aggregate IPTV playlists
-
-[Timer]
-OnBootSec=5min
-OnUnitActiveSec=50min
-
-[Install]
-WantedBy=timers.target
-```
-
-Enable and start:
-
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable --now iptv-playlist-aggregator.timer
-```
+| Package | Purpose |
+|---------|---------|
+| `Microsoft.Extensions.Configuration` | Configuration loading infrastructure. |
+| `Microsoft.Extensions.Configuration.Binder` | Strongly typed configuration binding. |
+| `Microsoft.Extensions.Configuration.Json` | JSON configuration provider. |
+| `Microsoft.Extensions.DependencyInjection` | Dependency injection container. |
+| `NuciDAL` | XML data access primitives. |
+| `NuciExtensions` | General utility extensions. |
+| `NuciLog` | Logging implementation. |
+| `NuciLog.Core` | Core logging abstractions. |
+| `NuciWeb.HTTP` | HTTP retrieval utilities for remote playlists. |
 
 ## 🗂️ Project Structure
 
-The solution contains the following projects:
+The solution contains the subsequent projects:
 
-- `IptvPlaylistAggregator`: main console application
-- `IptvPlaylistAggregator.UnitTests`: unit tests
+- `IptvPlaylistAggregator`: Main console application.
+- `IptvPlaylistAggregator.UnitTests`: Unit test suite.
 
-Key directories inside `IptvPlaylistAggregator/`:
+The key directories inside `IptvPlaylistAggregator/` are:
 
 | Directory | Purpose |
 |-----------|---------|
-| `Configuration/` | Settings classes for dependency injection |
-| `Data/` | Sample data files (`channels.xml`, `groups.xml`, `providers.xml`) |
-| `DataAccess/` | XML data objects and repository mapping |
-| `Logging/` | Structured logging keys and operations |
-| `Service/` | Aggregation, matching, fetch, and M3U build logic |
-| `Service/Mapping/` | Extensions for mapping data objects to domain models |
-| `Service/Models/` | Domain model classes |
+| `Configuration/` | Application, cache, and datastore settings models. |
+| `Data/` | XML source files for channels, groups, and providers. |
+| `DataAccess/` | Data objects used for XML persistence. |
+| `Logging/` | Logging operation and contextual keys. |
+| `Service/` | Aggregation, validation, matching, and output generation services. |
 
 ## 🤝 Contributing
 
-Contributions are welcome. Please:
-- Keep changes cross-platform
-- Keep pull requests focused and consistent with the existing code style
-- Update documentation when behaviour changes
+You are welcome to submit any suggestion, feedback, or modification to this project.
+
+When doing so, please:
+- Maintain cross-platform compatibility
+- Maintain the pull requests as focused and consistent with the existing code style
+- Revise the documentation when behaviour changes
+- Properly test all changes, including edge cases and error conditions
 - Add unit tests for any new or changed functionality
 
-## 💬 Support
+## 💝 Supporting the Project
 
-Found a bug or have a suggestion? [Open an issue](https://github.com/hmlendea/iptv-playlist-aggregator/issues)!
+Discovered a problem or have a suggestion? [Open an issue](https://github.com/hmlendea/iptv-playlist-aggregator/issues)!
 
-If you find this project useful, consider [funding it](https://hmlendea.go.ro/funding) or giving a ⭐️ on GitHub!
+If you find this project useful, consider [funding it](https://hmlendea.go.ro/funding) or starring ⭐️ it on GitHub!
 
-## ⚖️ Legal Notice
-
-This software aggregates playlist sources. You are responsible for ensuring your usage complies with local laws and content licensing requirements.
+[![Donate](https://raw.githubusercontent.com/hmlendea/readme-assets/master/donate_generic.png)](https://hmlendea.go.ro/funding)
 
 ## 📄 License
 
-Licensed under the `GNU General Public License v3.0` or later.
-See [LICENSE](./LICENSE) for details.
+This project is being distributed under the `GNU General Public License v3.0` or later.
+See [LICENSE](./LICENSE) for further information.
