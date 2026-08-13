@@ -9,14 +9,15 @@ IPTV Playlist Aggregator is a .NET console application that retrieves playlists 
 
 ## 📑 Table of Contents
 
-- [Capabilities](#-capabilities)
-- [Usage](#-usage)
-- [Known Limitations](#-known-limitations)
-- [System Requirements](#-system-requirements)
-- [Installation](#-installation)
+- [Table of Contents](#table-of-contents)
+- [Capabilities](#capabilities)
+- [Usage](#usage)
+- [Known Limitations](#known-limitations)
+- [System Requirements](#system-requirements)
+- [Installation](#installation)
   - [CLI Installation](#cli-installation)
-- [Configuration](#-configuration)
-- [Development](#-development)
+- [Configuration](#configuration)
+- [Development](#development)
   - [Requirements](#requirements)
   - [Setup](#setup)
   - [Build](#build)
@@ -24,10 +25,11 @@ IPTV Playlist Aggregator is a .NET console application that retrieves playlists 
   - [Test](#test)
   - [Release](#release)
   - [Dependencies](#dependencies)
-- [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
-- [Supporting the Project](#-supporting-the-project)
-- [License](#-license)
+- [Project Structure](#project-structure)
+- [Architecture](#architecture)
+- [Contributing](#contributing)
+- [Supporting the Project](#supporting-the-project)
+- [License](#license)
 
 ## ✨ Capabilities
 
@@ -45,6 +47,9 @@ Before running, adjust data files in `IptvPlaylistAggregator/Data/` and revise s
 ## ⚠️ Known Limitations
 
 - Playlist retrieval and stream validation require internet access.
+- Enabled providers must have unique priorities; a later playlist replaces an earlier playlist with the same priority.
+- One process should own a cache directory at a time because cache files have no cross-process coordination.
+- Stream-status URLs containing commas are truncated when the CSV cache is serialised.
 
 ## 🖥️ System Requirements
 
@@ -116,7 +121,7 @@ dotnet test IptvPlaylistAggregator.slnx
 The repository includes `release.sh`, which delegates to the upstream deployment script used by the project maintainer.
 
 ```bash
-bash ./release.sh 1.0.0
+bash ./release.sh 2.13.2
 ```
 
 This script downloads and executes an external release helper from `https://raw.githubusercontent.com/hmlendea/deployment-scripts/master/release/dotnet/10.0.sh`.
@@ -135,17 +140,15 @@ This script downloads and executes an external release helper from `https://raw.
 | `NuciExtensions` | General utility extensions. |
 | `NuciLog` | Logging implementation. |
 | `NuciLog.Core` | Core logging abstractions. |
-| `NuciWeb.HTTP` | HTTP retrieval utilities for remote playlists. |
+| `NuciWeb.HTTP` | HTTP client construction and connectivity checks. |
 
 ## 🗂️ Project Structure
 
 The solution contains the subsequent projects:
-
 - `IptvPlaylistAggregator`: Main console application.
 - `IptvPlaylistAggregator.UnitTests`: Unit test suite.
 
 The key directories inside `IptvPlaylistAggregator/` are:
-
 | Directory | Purpose |
 |-----------|---------|
 | `Configuration/` | Application, cache, and datastore settings models. |
@@ -154,6 +157,10 @@ The key directories inside `IptvPlaylistAggregator/` are:
 | `Logging/` | Logging operation and contextual keys. |
 | `Service/` | Aggregation, validation, matching, and output generation services. |
 
+## 🏗️ Architecture
+
+See [ARCHITECTURE.md](./ARCHITECTURE.md) for a structural synopsis and component interactions.
+
 ## 🤝 Contributing
 
 You are welcome to submit any suggestion, feedback, or modification to this project.
@@ -161,6 +168,7 @@ You are welcome to submit any suggestion, feedback, or modification to this proj
 When doing so, please:
 - Maintain cross-platform compatibility
 - Maintain the pull requests as focused and consistent with the existing code style
+- Maintain your branch up-to-date with `master`
 - Revise the documentation when behaviour changes
 - Properly test all changes, including edge cases and error conditions
 - Add unit tests for any new or changed functionality
