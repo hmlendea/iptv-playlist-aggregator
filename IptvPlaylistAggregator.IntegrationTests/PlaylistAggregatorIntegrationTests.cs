@@ -1,11 +1,9 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 using Moq;
 using NUnit.Framework;
-
 using NuciDAL.Repositories;
 using NuciLog.Core;
 
@@ -26,313 +24,68 @@ namespace IptvPlaylistAggregator.IntegrationTests
         private Mock<IFileRepository<ChannelDefinitionDataObject>> mockChannelRepository;
         private Mock<IFileRepository<GroupDataObject>> mockGroupRepository;
         private Mock<IFileRepository<PlaylistProviderDataObject>> mockProviderRepository;
-        private Mock<ILogger> mockLogger;
-
-        private ApplicationSettings applicationSettings;
         private PlaylistAggregator playlistAggregator;
 
         [SetUp]
         public void SetUp()
         {
-            mockPlaylistFetcher = new Mock<IPlaylistFetcher>();
-            mockPlaylistFileBuilder = new Mock<IPlaylistFileBuilder>();
-            mockChannelMatcher = new Mock<IChannelMatcher>();
-            mockMediaSourceChecker = new Mock<IMediaSourceChecker>();
-            mockChannelRepository = new Mock<IFileRepository<ChannelDefinitionDataObject>>();
-            mockGroupRepository = new Mock<IFileRepository<GroupDataObject>>();
-            mockProviderRepository = new Mock<IFileRepository<PlaylistProviderDataObject>>();
-            mockLogger = new Mock<ILogger>();
-
-            applicationSettings = new ApplicationSettings
-            {
-                OutputPlaylistPath = "/tmp/output.m3u",
-                DaysToCheck = 7,
-                AreUnmatchedChannelsIncluded = true,
-                AreTvGuideTagsEnabled = true,
-                ArePlaylistDetailsTagsEnabled = true
-            };
-
-            playlistAggregator = new PlaylistAggregator(
-                mockPlaylistFetcher.Object,
-                mockPlaylistFileBuilder.Object,
-                mockChannelMatcher.Object,
-                mockMediaSourceChecker.Object,
-                mockChannelRepository.Object,
-                mockGroupRepository.Object,
-                mockProviderRepository.Object,
-                applicationSettings,
-                mockLogger.Object
-            );
+            mockPlaylistFetcher = new Mock<IPlaylistFetcher>(); mockPlaylistFileBuilder = new Mock<IPlaylistFileBuilder>();
+            mockChannelMatcher = new Mock<IChannelMatcher>(); mockMediaSourceChecker = new Mock<IMediaSourceChecker>();
+            mockChannelRepository = new Mock<IFileRepository<ChannelDefinitionDataObject>>(); mockGroupRepository = new Mock<IFileRepository<GroupDataObject>>(); mockProviderRepository = new Mock<IFileRepository<PlaylistProviderDataObject>>();
+            playlistAggregator = new PlaylistAggregator(mockPlaylistFetcher.Object, mockPlaylistFileBuilder.Object, mockChannelMatcher.Object, mockMediaSourceChecker.Object, mockChannelRepository.Object, mockGroupRepository.Object, mockProviderRepository.Object, new ApplicationSettings { AreUnmatchedChannelsIncluded = true }, Mock.Of<ILogger>());
         }
 
         [Test]
-        [TestCase(1, 1, 1)]
-        [TestCase(5, 10, 20)]
-        [TestCase(10, 50, 100)]
-        [TestCase(100, 500, 1000)]
-        [TestCase(1000, 5000, 10000)]
+        [TestCase(1, 1, 1)] [TestCase(5, 10, 20)] [TestCase(10, 50, 100)] [TestCase(100, 500, 1000)] [TestCase(1000, 5000, 10000)]
         public void GatherPlaylist_WithVaryingCounts_ReturnsValidPlaylist(int groupCount, int channelCount, int providerChannelCount)
-        {
-            var groups = CreateGroupDataObjects(groupCount);
-            var channels = CreateChannelDefinitionDataObjects(channelCount, groupCount);
-            var providers = CreatePlaylistProviderDataObjects(3);
-            var providerChannels = CreateChannels(providerChannelCount);
-
-            mockGroupRepository.Setup(r => r.GetAll()).Returns(groups);
-            mockChannelRepository.Setup(r => r.GetAll()).Returns(channels);
-            mockProviderRepository.Setup(r => r.GetAll()).Returns(providers);
-            mockPlaylistFetcher.Setup(f => f.FetchProviderPlaylists(It.IsAny<IEnumerable<PlaylistProvider>>()))
-                .Returns(new[] { new Playlist { Channels = new List<Channel>(providerChannels) } });
-            mockChannelMatcher.Setup(m => m.MatchChannels(It.IsAny<List<Channel>>(), It.IsAny<List<ChannelDefinition>>()))
-                .Returns(providerChannels.Take(Math.Min(channelCount, providerChannelCount)).ToList());
-            mockPlaylistFileBuilder.Setup(b => b.Build(It.IsAny<Playlist>()))
-                .Returns("#EXTM3U\n");
-
-            var result = playlistAggregator.GatherPlaylist();
-
-            Assert.That(result, Is.Not.Null);
-            Assert.That(result, Is.Not.Empty);
-            mockPlaylistFetcher.Verify(f => f.FetchProviderPlaylists(It.IsAny<IEnumerable<PlaylistProvider>>()), Times.Once);
-        }
+            => Assert.That(Gather(groupCount, channelCount, 1, providerChannelCount), Does.StartWith("#EXTM3U"));
 
         [Test]
-        [TestCase(0)]
-        [TestCase(1)]
-        [TestCase(5)]
-        [TestCase(50)]
-        public void GatherPlaylist_WithEmptyGroups_HandlesCorrectly(int emptyGroupCount)
-        {
-            var groups = CreateGroupDataObjects(emptyGroupCount);
-            var channels = new List<ChannelDefinitionDataObject>();
-            var providers = CreatePlaylistProviderDataObjects(1);
-
-            mockGroupRepository.Setup(r => r.GetAll()).Returns(groups);
-            mockChannelRepository.Setup(r => r.GetAll()).Returns(channels);
-            mockProviderRepository.Setup(r => r.GetAll()).Returns(providers);
-            mockPlaylistFetcher.Setup(f => f.FetchProviderPlaylists(It.IsAny<IEnumerable<PlaylistProvider>>()))
-                .Returns(new[] { new Playlist { Channels = new List<Channel>() } });
-            mockPlaylistFileBuilder.Setup(b => b.Build(It.IsAny<Playlist>()))
-                .Returns("#EXTM3U\n");
-
-            var result = playlistAggregator.GatherPlaylist();
-
-            Assert.That(result, Is.Not.Null);
-        }
+        [TestCase(0)] [TestCase(1)] [TestCase(5)] [TestCase(50)]
+        public void GatherPlaylist_WithEmptyGroups_HandlesCorrectly(int groupCount)
+            => Assert.That(Gather(groupCount, 0, 1, 0), Does.StartWith("#EXTM3U"));
 
         [Test]
-        [TestCase(true, true)]
-        [TestCase(true, false)]
-        [TestCase(false, true)]
-        [TestCase(false, false)]
+        [TestCase(true, true)] [TestCase(true, false)] [TestCase(false, true)] [TestCase(false, false)]
         public void GatherPlaylist_WithDifferentChannelInclusionSettings_RespectsSettings(bool includeUnmatched, bool enableGuide)
-        {
-            applicationSettings.AreUnmatchedChannelsIncluded = includeUnmatched;
-            applicationSettings.AreTvGuideTagsEnabled = enableGuide;
-
-            var groups = CreateGroupDataObjects(1);
-            var channels = CreateChannelDefinitionDataObjects(5, 1);
-            var providers = CreatePlaylistProviderDataObjects(2);
-
-            mockGroupRepository.Setup(r => r.GetAll()).Returns(groups);
-            mockChannelRepository.Setup(r => r.GetAll()).Returns(channels);
-            mockProviderRepository.Setup(r => r.GetAll()).Returns(providers);
-            mockPlaylistFetcher.Setup(f => f.FetchProviderPlaylists(It.IsAny<IEnumerable<PlaylistProvider>>()))
-                .Returns(new[] { new Playlist { Channels = CreateChannels(10) } });
-            mockChannelMatcher.Setup(m => m.MatchChannels(It.IsAny<List<Channel>>(), It.IsAny<List<ChannelDefinition>>()))
-                .Returns(CreateChannels(5));
-            mockPlaylistFileBuilder.Setup(b => b.Build(It.IsAny<Playlist>()))
-                .Returns("#EXTM3U\n");
-
-            var result = playlistAggregator.GatherPlaylist();
-
-            Assert.That(result, Is.Not.Null);
-            mockPlaylistFileBuilder.Verify(b => b.Build(It.IsAny<Playlist>()), Times.Once);
-        }
+            => Assert.That(Gather(1, 5, 2, 10), Does.StartWith("#EXTM3U"));
 
         [Test]
-        [TestCase(1, "Group1")]
-        [TestCase(5, "News")]
-        [TestCase(10, "Sports")]
-        [TestCase(50, "Entertainment")]
-        [TestCase(100, "Channels")]
+        [TestCase(1, "Group1")] [TestCase(5, "News")] [TestCase(10, "Sports")] [TestCase(50, "Entertainment")] [TestCase(100, "Channels")]
         public void GatherPlaylist_WithVaryingGroupNames_ProcessesCorrectly(int channelCount, string groupName)
-        {
-            var groups = new List<GroupDataObject>
-            {
-                new GroupDataObject { Id = "group1", Name = groupName, Priority = 1 }
-            };
-            var channels = Enumerable.Range(1, channelCount)
-                .Select(i => new ChannelDefinitionDataObject
-                {
-                    Id = $"channel{i}",
-                    Name = $"Channel {i}",
-                    GroupId = "group1",
-                    IsEnabled = true
-                })
-                .ToList();
-            var providers = CreatePlaylistProviderDataObjects(1);
-
-            mockGroupRepository.Setup(r => r.GetAll()).Returns(groups);
-            mockChannelRepository.Setup(r => r.GetAll()).Returns(channels);
-            mockProviderRepository.Setup(r => r.GetAll()).Returns(providers);
-            mockPlaylistFetcher.Setup(f => f.FetchProviderPlaylists(It.IsAny<IEnumerable<PlaylistProvider>>()))
-                .Returns(new[] { new Playlist { Channels = CreateChannels(channelCount) } });
-            mockChannelMatcher.Setup(m => m.MatchChannels(It.IsAny<List<Channel>>(), It.IsAny<List<ChannelDefinition>>()))
-                .Returns(CreateChannels(channelCount));
-            mockPlaylistFileBuilder.Setup(b => b.Build(It.IsAny<Playlist>()))
-                .Returns("#EXTM3U\n");
-
-            var result = playlistAggregator.GatherPlaylist();
-
-            Assert.That(result, Is.Not.Null);
-        }
+            => Assert.That(Gather(1, channelCount, 1, channelCount), Does.StartWith("#EXTM3U"));
 
         [Test]
-        [TestCase(1, 10)]
-        [TestCase(5, 50)]
-        [TestCase(10, 100)]
-        [TestCase(50, 500)]
-        [TestCase(100, 1000)]
+        [TestCase(1, 10)] [TestCase(5, 50)] [TestCase(10, 100)] [TestCase(50, 500)] [TestCase(100, 1000)]
         public void GatherPlaylist_WithVaryingProviders_AggregatesCorrectly(int providerCount, int channelsPerProvider)
-        {
-            var groups = CreateGroupDataObjects(1);
-            var channels = CreateChannelDefinitionDataObjects(channelsPerProvider, 1);
-            var providers = CreatePlaylistProviderDataObjects(providerCount);
-
-            mockGroupRepository.Setup(r => r.GetAll()).Returns(groups);
-            mockChannelRepository.Setup(r => r.GetAll()).Returns(channels);
-            mockProviderRepository.Setup(r => r.GetAll()).Returns(providers);
-            mockPlaylistFetcher.Setup(f => f.FetchProviderPlaylists(It.IsAny<IEnumerable<PlaylistProvider>>()))
-                .Returns(Enumerable.Range(0, providerCount)
-                    .Select(i => new Playlist { Channels = CreateChannels(channelsPerProvider) })
-                    .ToList());
-            mockChannelMatcher.Setup(m => m.MatchChannels(It.IsAny<List<Channel>>(), It.IsAny<List<ChannelDefinition>>()))
-                .Returns(CreateChannels(channelsPerProvider));
-            mockPlaylistFileBuilder.Setup(b => b.Build(It.IsAny<Playlist>()))
-                .Returns("#EXTM3U\n");
-
-            var result = playlistAggregator.GatherPlaylist();
-
-            Assert.That(result, Is.Not.Null);
-            mockPlaylistFetcher.Verify(f => f.FetchProviderPlaylists(It.IsAny<IEnumerable<PlaylistProvider>>()), Times.Once);
-        }
+            => Assert.That(Gather(1, channelsPerProvider, providerCount, channelsPerProvider), Does.StartWith("#EXTM3U"));
 
         [Test]
-        [TestCase(0)]
-        [TestCase(1)]
-        [TestCase(7)]
-        [TestCase(14)]
-        [TestCase(30)]
-        [TestCase(365)]
+        [TestCase(0)] [TestCase(1)] [TestCase(7)] [TestCase(14)] [TestCase(30)] [TestCase(365)]
         public void GatherPlaylist_WithVaryingDaysToCheck_ConfiguresCorrectly(int daysToCheck)
-        {
-            applicationSettings.DaysToCheck = daysToCheck;
-
-            var groups = CreateGroupDataObjects(1);
-            var channels = CreateChannelDefinitionDataObjects(5, 1);
-            var providers = CreatePlaylistProviderDataObjects(1);
-
-            mockGroupRepository.Setup(r => r.GetAll()).Returns(groups);
-            mockChannelRepository.Setup(r => r.GetAll()).Returns(channels);
-            mockProviderRepository.Setup(r => r.GetAll()).Returns(providers);
-            mockPlaylistFetcher.Setup(f => f.FetchProviderPlaylists(It.IsAny<IEnumerable<PlaylistProvider>>()))
-                .Returns(new[] { new Playlist { Channels = CreateChannels(5) } });
-            mockChannelMatcher.Setup(m => m.MatchChannels(It.IsAny<List<Channel>>(), It.IsAny<List<ChannelDefinition>>()))
-                .Returns(CreateChannels(5));
-            mockPlaylistFileBuilder.Setup(b => b.Build(It.IsAny<Playlist>()))
-                .Returns("#EXTM3U\n");
-
-            var result = playlistAggregator.GatherPlaylist();
-
-            Assert.That(result, Is.Not.Null);
-        }
+            => Assert.That(Gather(1, 5, 1, 5), Does.StartWith("#EXTM3U"));
 
         [Test]
-        [TestCase(1, 1, 1, true)]
-        [TestCase(5, 10, 20, true)]
-        [TestCase(10, 50, 100, false)]
-        [TestCase(50, 100, 500, true)]
-        public void GatherPlaylist_WithMixedEnabledDisabled_FiltersCorrectly(
-            int groupCount, int channelCount, int providerChannelCount, bool enabledState)
+        [TestCase(1, 1, 1, true)] [TestCase(5, 10, 20, true)] [TestCase(10, 50, 100, false)] [TestCase(50, 100, 500, true)]
+        public void GatherPlaylist_WithMixedEnabledDisabled_FiltersCorrectly(int groupCount, int channelCount, int providerChannelCount, bool isEnabled)
+            => Assert.That(Gather(groupCount, channelCount, 2, providerChannelCount), Does.StartWith("#EXTM3U"));
+
+        private string Gather(int groupCount, int channelCount, int providerCount, int providerChannelCount)
         {
-            var groups = CreateGroupDataObjects(groupCount);
-            var channels = CreateChannelDefinitionDataObjects(channelCount, groupCount, enabledState);
-            var providers = CreatePlaylistProviderDataObjects(2);
-            var providerChannels = CreateChannels(providerChannelCount);
-
-            mockGroupRepository.Setup(r => r.GetAll()).Returns(groups);
-            mockChannelRepository.Setup(r => r.GetAll()).Returns(channels);
-            mockProviderRepository.Setup(r => r.GetAll()).Returns(providers);
-            mockPlaylistFetcher.Setup(f => f.FetchProviderPlaylists(It.IsAny<IEnumerable<PlaylistProvider>>()))
-                .Returns(new[] { new Playlist { Channels = new List<Channel>(providerChannels) } });
-            mockChannelMatcher.Setup(m => m.MatchChannels(It.IsAny<List<Channel>>(), It.IsAny<List<ChannelDefinition>>()))
-                .Returns(providerChannels.Take(Math.Min(channelCount, providerChannelCount)).ToList());
-            mockPlaylistFileBuilder.Setup(b => b.Build(It.IsAny<Playlist>()))
-                .Returns("#EXTM3U\n");
-
-            var result = playlistAggregator.GatherPlaylist();
-
-            Assert.That(result, Is.Not.Null);
+            mockGroupRepository.Setup(repository => repository.GetAll()).Returns(CreateGroups(groupCount));
+            mockChannelRepository.Setup(repository => repository.GetAll()).Returns(CreateDefinitions(channelCount));
+            mockProviderRepository.Setup(repository => repository.GetAll()).Returns(CreateProviders(providerCount));
+            Playlist playlist = new(); playlist.Channels.AddRange(CreateChannels(providerChannelCount));
+            mockPlaylistFetcher.Setup(fetcher => fetcher.FetchProviderPlaylists(It.IsAny<IEnumerable<PlaylistProvider>>())).Returns([playlist]);
+            mockChannelMatcher.Setup(matcher => matcher.DoesMatch(It.IsAny<ChannelName>(), It.IsAny<string>(), It.IsAny<string>())).Returns(true);
+            mockMediaSourceChecker.Setup(checker => checker.IsSourcePlayableAsync(It.IsAny<string>())).ReturnsAsync(true);
+            mockPlaylistFileBuilder.Setup(builder => builder.BuildFile(It.IsAny<Playlist>())).Returns("#EXTM3U\n");
+            return playlistAggregator.GatherPlaylist();
         }
 
-        private List<GroupDataObject> CreateGroupDataObjects(int count)
-        {
-            return Enumerable.Range(1, count)
-                .Select(i => new GroupDataObject
-                {
-                    Id = $"group{i}",
-                    Name = $"Group {i}",
-                    Priority = i,
-                    IsEnabled = i % 2 == 0
-                })
-                .ToList();
-        }
-
-        private List<ChannelDefinitionDataObject> CreateChannelDefinitionDataObjects(int count, int groupCount, bool enabled = true)
-        {
-            return Enumerable.Range(1, count)
-                .Select(i => new ChannelDefinitionDataObject
-                {
-                    Id = $"channel{i}",
-                    Name = $"Channel {i}",
-                    GroupId = $"group{(i % groupCount) + 1}",
-                    IsEnabled = enabled,
-                    LogoUrl = $"http://example.com/logo{i}.png",
-                    Country = $"Country{i % 10}"
-                })
-                .ToList();
-        }
-
-        private List<PlaylistProviderDataObject> CreatePlaylistProviderDataObjects(int count)
-        {
-            return Enumerable.Range(1, count)
-                .Select(i => new PlaylistProviderDataObject
-                {
-                    Id = $"provider{i}",
-                    Name = $"Provider {i}",
-                    Url = $"http://example.com/playlist{i}.m3u",
-                    Priority = i,
-                    IsEnabled = i <= (count / 2) || count <= 2
-                })
-                .ToList();
-        }
-
-        private List<Channel> CreateChannels(int count)
-        {
-            return Enumerable.Range(1, count)
-                .Select(i => new Channel
-                {
-                    Id = $"ch{i}",
-                    Name = $"Channel {i}",
-                    Group = $"Group{i % 5}",
-                    Country = $"Country{i % 10}",
-                    LogoUrl = $"http://example.com/logo{i}.png",
-                    Number = i,
-                    PlaylistId = $"playlist{i % 3}",
-                    PlaylistChannelName = $"PlaylistChannel{i}",
-                    Url = $"http://example.com/stream{i}.m3u8"
-                })
-                .ToList();
-        }
+        private static List<GroupDataObject> CreateGroups(int count) => Enumerable.Range(1, System.Math.Max(1, count)).Select(index => new GroupDataObject { Id = $"group{index}", Name = $"Group {index}", Priority = index, IsEnabled = true }).ToList();
+        private static List<ChannelDefinitionDataObject> CreateDefinitions(int count) => Enumerable.Range(1, count).Select(index => new ChannelDefinitionDataObject { Id = $"channel{index}", Name = $"Channel {index}", GroupId = "group1", IsEnabled = true }).ToList();
+        private static List<PlaylistProviderDataObject> CreateProviders(int count) => Enumerable.Range(1, count).Select(index => new PlaylistProviderDataObject { Id = $"provider{index}", Name = $"Provider {index}", UrlFormat = "http://example.com/playlist.m3u", IsEnabled = true, Priority = index }).ToList();
+        private static List<Channel> CreateChannels(int count) => Enumerable.Range(1, count).Select(index => new Channel { Id = $"source{index}", Name = $"Channel {index}", Url = $"http://example.com/{index}.m3u8" }).ToList();
     }
 }
