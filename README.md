@@ -148,6 +148,7 @@ This script downloads and executes an external release helper from `https://raw.
 The solution contains the subsequent projects:
 - `IptvPlaylistAggregator`: Main console application.
 - `IptvPlaylistAggregator.UnitTests`: Unit test suite.
+- `IptvPlaylistAggregator.IntegrationTests`: Mock-driven integration-style test sources; the project currently builds but is not marked as a test project.
 
 The key directories inside `IptvPlaylistAggregator/` are:
 | Directory | Purpose |
@@ -161,6 +162,8 @@ The key directories inside `IptvPlaylistAggregator/` are:
 ## 🏗️ Architecture
 
 See [ARCHITECTURE.md](./ARCHITECTURE.md) for a structural synopsis and component interactions.
+
+See [docs/README.md](./docs/README.md) for detailed runtime, data, selection, playlist, testing, and maintenance documentation.
 
 ## 🤝 Contributing
 
