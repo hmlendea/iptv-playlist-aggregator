@@ -26,7 +26,7 @@ namespace IptvPlaylistAggregator.Service
 
             logger.Info(MyOperation.PlaylistFetching, OperationStatus.Started, "Fetching provider playlists");
 
-            List<Task<Playlist>> tasks = new(providerList.Count);
+            List<Task<Playlist?>> tasks = new(providerList.Count);
 
             foreach (PlaylistProvider provider in providerList)
             {
@@ -35,26 +35,28 @@ namespace IptvPlaylistAggregator.Service
 
             Task.WaitAll([.. tasks]);
 
-            for (int i = 0; i < tasks.Count; i++)
+            for (int index = 0; index < tasks.Count; index++)
             {
-                PlaylistProvider provider = providerList[i];
-                Playlist playlist = tasks[i].Result;
+                PlaylistProvider provider = providerList[index];
+                Playlist? playlist = tasks[index].Result;
 
                 if (Playlist.IsNullOrEmpty(playlist))
                 {
                     continue;
                 }
 
+                Playlist fetchedPlaylist = playlist;
+
                 playlists.AddOrUpdate(
                     provider.Priority,
-                    playlist,
-                    (key, oldValue) => playlist);
+                    fetchedPlaylist,
+                    (key, oldValue) => fetchedPlaylist);
 
                 string country = provider.Country;
 
                 if (!string.IsNullOrWhiteSpace(country))
                 {
-                    foreach (Channel channel in playlist.Channels)
+                    foreach (Channel channel in fetchedPlaylist.Channels)
                     {
                         channel.Country = country;
                     }
@@ -66,9 +68,9 @@ namespace IptvPlaylistAggregator.Service
                 .Select(entry => entry.Value);
         }
 
-        public async Task<Playlist> FetchProviderPlaylistAsync(PlaylistProvider provider)
+        public async Task<Playlist?> FetchProviderPlaylistAsync(PlaylistProvider provider)
         {
-            Playlist playlist = await GetPlaylistAsync(provider);
+            Playlist? playlist = await GetPlaylistAsync(provider);
 
             if (Playlist.IsNullOrEmpty(playlist))
             {
@@ -80,10 +82,12 @@ namespace IptvPlaylistAggregator.Service
                 return null;
             }
 
+            Playlist fetchedPlaylist = playlist;
+
             string channelNameOverride = provider.ChannelNameOverride;
             bool hasChannelNameOverride = !string.IsNullOrWhiteSpace(channelNameOverride);
 
-            foreach (Channel channel in playlist.Channels)
+            foreach (Channel channel in fetchedPlaylist.Channels)
             {
                 channel.PlaylistId = provider.Id;
 
@@ -98,12 +102,12 @@ namespace IptvPlaylistAggregator.Service
                 OperationStatus.Success,
                 new LogInfo(MyLogInfoKey.Provider, provider.Name));
 
-            return playlist;
+            return fetchedPlaylist;
         }
 
-        private async Task<Playlist> GetPlaylistAsync(PlaylistProvider provider)
+        private async Task<Playlist?> GetPlaylistAsync(PlaylistProvider provider)
         {
-            Playlist playlist = await GetPlaylistForTodayAsync(provider);
+            Playlist? playlist = await GetPlaylistForTodayAsync(provider);
 
             if (Playlist.IsNullOrEmpty(playlist))
             {
@@ -113,35 +117,35 @@ namespace IptvPlaylistAggregator.Service
             return playlist;
         }
 
-        private async Task<Playlist> GetPlaylistForTodayAsync(PlaylistProvider provider)
+        private async Task<Playlist?> GetPlaylistForTodayAsync(PlaylistProvider provider)
         {
             DateTime currentDate = DateTime.UtcNow;
-            string playlistFile = await DownloadPlaylistFileAsync(provider, currentDate);
-            Playlist playlist = LoadPlaylistFromCache(provider, currentDate);
+            string? playlistFile = await DownloadPlaylistFileAsync(provider, currentDate);
+            Playlist? playlist = LoadPlaylistFromCache(provider, currentDate);
 
-            playlist ??= playlistFileBuilder.TryParseFile(playlistFile);
+            playlist ??= playlistFileBuilder.TryParseFile(playlistFile ?? string.Empty);
 
             if (provider.IsCachingEnabled && !Playlist.IsNullOrEmpty(playlist))
             {
-                cache.StorePlaylistFile(provider.Id, currentDate, playlistFile);
+                cache.StorePlaylistFile(provider.Id, currentDate, playlistFile ?? string.Empty);
             }
 
             return playlist;
         }
 
-        private Playlist GetPlaylistForPastDays(PlaylistProvider provider)
+        private Playlist? GetPlaylistForPastDays(PlaylistProvider provider)
         {
             if (!provider.UrlFormat.Contains("{0"))
             {
                 return null;
             }
 
-            Playlist playlist = null;
+            Playlist? playlist = null;
             DateTime currentDate = DateTime.UtcNow;
 
-            for (int i = 1; i < applicationSettings.DaysToCheck; i++)
+            for (int index = 1; index < applicationSettings.DaysToCheck; index++)
             {
-                DateTime date = currentDate.AddDays(-i);
+                DateTime date = currentDate.AddDays(-index);
 
                 playlist = LoadPlaylistFromCache(provider, date);
 
@@ -154,14 +158,14 @@ namespace IptvPlaylistAggregator.Service
             return playlist;
         }
 
-        private Playlist LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
+        private Playlist? LoadPlaylistFromCache(PlaylistProvider provider, DateTime date)
         {
             if (!provider.IsCachingEnabled)
             {
                 return null;
             }
 
-            string content = cache.GetPlaylistFile(provider.Id, date);
+            string? content = cache.GetPlaylistFile(provider.Id, date);
 
             if (string.IsNullOrWhiteSpace(content))
             {
@@ -171,7 +175,7 @@ namespace IptvPlaylistAggregator.Service
             return playlistFileBuilder.TryParseFile(content);
         }
 
-        private async Task<string> DownloadPlaylistFileAsync(PlaylistProvider provider, DateTime date)
+        private async Task<string?> DownloadPlaylistFileAsync(PlaylistProvider provider, DateTime date)
             => await fileDownloader.TryDownloadStringAsync(string.Format(provider.UrlFormat, date));
     }
 }

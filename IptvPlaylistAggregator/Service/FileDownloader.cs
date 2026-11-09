@@ -8,9 +8,9 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class FileDownloader(ICacheManager cache) : IFileDownloader
     {
-        public async Task<string> TryDownloadStringAsync(string url)
+        public async Task<string?> TryDownloadStringAsync(string url)
         {
-            string content = cache.GetWebDownload(url);
+            string? content = cache.GetWebDownload(url);
 
             if (content is not null)
             {
@@ -26,14 +26,14 @@ namespace IptvPlaylistAggregator.Service
                 return null;
             }
 
-            cache.StoreWebDownload(url, content);
+            cache.StoreWebDownload(url, content ?? string.Empty);
 
             return content;
         }
 
         private readonly HttpClient httpClient = CreateHttpClient();
 
-        private async Task<string> SendGetRequestAsync(string url)
+        private async Task<string?> SendGetRequestAsync(string url)
         {
             if (string.IsNullOrWhiteSpace(url))
             {

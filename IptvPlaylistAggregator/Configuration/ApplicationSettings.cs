@@ -2,7 +2,7 @@ namespace IptvPlaylistAggregator.Configuration
 {
     public sealed class ApplicationSettings
     {
-        public string OutputPlaylistPath { get; set; }
+        public string OutputPlaylistPath { get; set; } = string.Empty;
 
         public int DaysToCheck { get; set; }
 

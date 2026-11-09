@@ -20,26 +20,27 @@ namespace IptvPlaylistAggregator.Service
         IPlaylistFileBuilder playlistFileBuilder,
         IChannelMatcher channelMatcher,
         IMediaSourceChecker mediaSourceChecker,
-        IFileRepository<ChannelDefinitionDataObject> channelRepository,
-        IFileRepository<GroupDataObject> groupRepository,
-        IFileRepository<PlaylistProviderDataObject> playlistProviderRepository,
+        ReferenceDataRepositories repositories,
         ApplicationSettings settings,
         ILogger logger) : IPlaylistAggregator
     {
         public string GatherPlaylist()
         {
-            groups = groupRepository
+            groups = repositories
+                .Groups
                 .GetAll()
                 .ToDomainModels()
                 .ToDictionary(group => group.Id, group => group);
 
-            channelDefinitions = [.. channelRepository
+            channelDefinitions = [.. repositories
+                .Channels
                 .GetAll()
                 .OrderBy(channelDefinition => groups[channelDefinition.GroupId].Priority)
                 .ThenBy(channelDefinition => channelDefinition.Name)
                 .ToDomainModels()];
 
-            playlistProviders = playlistProviderRepository
+            playlistProviders = repositories
+                .PlaylistProviders
                 .GetAll()
                 .Where(provider => provider.IsEnabled)
                 .ToDomainModels();
@@ -62,9 +63,9 @@ namespace IptvPlaylistAggregator.Service
             return playlistFileBuilder.BuildFile(playlist);
         }
 
-        private IReadOnlyList<ChannelDefinition> channelDefinitions;
-        private IEnumerable<PlaylistProvider> playlistProviders;
-        private IDictionary<string, Group> groups;
+        private IReadOnlyList<ChannelDefinition> channelDefinitions = [];
+        private IEnumerable<PlaylistProvider> playlistProviders = [];
+        private IDictionary<string, Group> groups = new Dictionary<string, Group>();
 
         private IEnumerable<Channel> GetChannels(
             IReadOnlyList<Channel> providerChannels,
@@ -84,7 +85,7 @@ namespace IptvPlaylistAggregator.Service
 
             foreach (ChannelDefinition channelDefinition in channelDefinitions)
             {
-                if (!enabledChannels.TryGetValue(channelDefinition.Id, out Channel channel))
+                if (!enabledChannels.TryGetValue(channelDefinition.Id, out Channel? channel))
                 {
                     continue;
                 }
@@ -138,7 +139,7 @@ namespace IptvPlaylistAggregator.Service
                     new LogInfo(MyLogInfoKey.Channel, channelDefinition.Name.Value),
                     new LogInfo(MyLogInfoKey.ChannelsCount, matchedChannels.Count.ToString()));
 
-                Channel matchedChannel = matchedChannels
+                Channel? matchedChannel = matchedChannels
                     .FirstOrDefault(channel => mediaSourceChecker.IsSourcePlayableAsync(channel.Url).Result);
 
                 if (matchedChannel is null)

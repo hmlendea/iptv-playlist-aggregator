@@ -23,10 +23,10 @@ namespace IptvPlaylistAggregator.Service.Mapping
             Id = channelDefinition.Id,
             IsEnabled = channelDefinition.IsEnabled,
             Name = channelDefinition.Name.Value,
-            Country = channelDefinition.Country,
+            Country = channelDefinition.Country ?? string.Empty,
             GroupId = channelDefinition.GroupId,
             LogoUrl = channelDefinition.LogoUrl,
-            Aliases = [.. channelDefinition.Name.Aliases]
+            Aliases = channelDefinition.Name.Aliases.ToList()
         };
 
         internal static IEnumerable<ChannelDefinition> ToDomainModels(

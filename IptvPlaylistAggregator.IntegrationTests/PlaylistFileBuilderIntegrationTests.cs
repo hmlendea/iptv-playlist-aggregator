@@ -14,8 +14,8 @@ namespace IptvPlaylistAggregator.IntegrationTests
     [TestFixture]
     public class PlaylistFileBuilderIntegrationTests
     {
-        private Mock<ICacheManager> mockCacheManager;
-        private PlaylistFileBuilder playlistFileBuilder;
+        private Mock<ICacheManager> mockCacheManager = new();
+        private PlaylistFileBuilder playlistFileBuilder = null!;
 
         [SetUp]
         public void SetUp()
@@ -74,7 +74,7 @@ namespace IptvPlaylistAggregator.IntegrationTests
         [TestCase("")] [TestCase("#EXTM3U")] [TestCase("#EXTM3U\n")]
         public void TryParseFile_WithMinimalM3u_ReturnsExpectedResult(string file)
         {
-            Playlist playlist = playlistFileBuilder.TryParseFile(file);
+            Playlist? playlist = playlistFileBuilder.TryParseFile(file);
             Assert.That(playlist is null || playlist.IsEmpty);
         }
 

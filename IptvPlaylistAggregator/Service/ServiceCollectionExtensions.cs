@@ -29,7 +29,8 @@ namespace IptvPlaylistAggregator.Service
                         dataStoreSettings.GroupStorePath))
                 .AddSingleton<IFileRepository<PlaylistProviderDataObject>>(
                     serviceProvider => new XmlRepository<PlaylistProviderDataObject>(
-                        dataStoreSettings.PlaylistProviderStorePath));
+                        dataStoreSettings.PlaylistProviderStorePath))
+                .AddSingleton<ReferenceDataRepositories>();
 
             return services;
         }

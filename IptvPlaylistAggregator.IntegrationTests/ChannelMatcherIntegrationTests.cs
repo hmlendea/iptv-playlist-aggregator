@@ -12,8 +12,8 @@ namespace IptvPlaylistAggregator.IntegrationTests
     [TestFixture]
     public class ChannelMatcherIntegrationTests
     {
-        private Mock<ICacheManager> mockCacheManager;
-        private ChannelMatcher channelMatcher;
+        private Mock<ICacheManager> mockCacheManager = new();
+        private ChannelMatcher channelMatcher = null!;
 
         [SetUp]
         public void SetUp()
@@ -44,16 +44,20 @@ namespace IptvPlaylistAggregator.IntegrationTests
             => Assert.That(CountMatches(channelCount, definitionCount), Is.Zero);
 
         [Test]
-        [TestCase("BBC One", "BBC One")] [TestCase("BBC Two", "BBC Two")] [TestCase("ITV", "ITV")]
-        [TestCase("BBC One", "BBC 1")] [TestCase("BBC Two", "BBC 2")] [TestCase("Sky News", "Sky News HD")]
-        [TestCase("Channel 4", "Channel Four")] [TestCase("E!", "E Entertainment")]
-        [TestCase("BBC One & Family", "BBC One & Family")] [TestCase("Channel 4 (HD)", "Channel 4 (HD)")]
-        [TestCase("Sky Sports 1 [HD]", "Sky Sports 1 [HD]")]
-        [TestCase("CHANNEL", "channel")] [TestCase("BBC ONE", "bbc one")] [TestCase("Sky Sports", "sky sports")] [TestCase("HBO MAX", "hbo max")]
-        public void DoesMatch_WithEquivalentOrSimilarNames_EvaluatesCorrectly(string firstName, string secondName)
+        [TestCase("BBC One", "BBC One", true)] [TestCase("BBC Two", "BBC Two", true)] [TestCase("ITV", "ITV", true)]
+        [TestCase("BBC One", "BBC 1", false)] [TestCase("BBC Two", "BBC 2", false)] [TestCase("Sky News", "Sky News HD", true)]
+        [TestCase("Channel 4", "Channel Four", false)] [TestCase("E!", "E Entertainment", false)]
+        [TestCase("BBC One & Family", "BBC One & Family", true)] [TestCase("Channel 4 (HD)", "Channel 4 (HD)", true)]
+        [TestCase("Sky Sports 1 [HD]", "Sky Sports 1 [HD]", true)]
+        [TestCase("CHANNEL", "channel", true)] [TestCase("BBC ONE", "bbc one", true)] [TestCase("Sky Sports", "sky sports", true)] [TestCase("HBO MAX", "hbo max", true)]
+        public void DoesMatch_WithEquivalentOrSimilarNames_EvaluatesCorrectly(
+            string firstName,
+            string secondName,
+            bool isMatchExpected)
         {
             bool doesMatch = channelMatcher.DoesMatch(new ChannelName(firstName), secondName, string.Empty);
-            Assert.That(doesMatch, Is.EqualTo(string.Equals(firstName, secondName, System.StringComparison.OrdinalIgnoreCase)));
+
+            Assert.That(doesMatch, Is.EqualTo(isMatchExpected));
         }
 
         [Test]

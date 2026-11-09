@@ -17,14 +17,14 @@ namespace IptvPlaylistAggregator.IntegrationTests
     [TestFixture]
     public class EndToEndIntegrationTests
     {
-        private Mock<IPlaylistFetcher> mockPlaylistFetcher;
-        private Mock<IPlaylistFileBuilder> mockPlaylistFileBuilder;
-        private Mock<IChannelMatcher> mockChannelMatcher;
-        private Mock<IMediaSourceChecker> mockMediaSourceChecker;
-        private Mock<IFileRepository<ChannelDefinitionDataObject>> mockChannelRepository;
-        private Mock<IFileRepository<GroupDataObject>> mockGroupRepository;
-        private Mock<IFileRepository<PlaylistProviderDataObject>> mockProviderRepository;
-        private PlaylistAggregator playlistAggregator;
+        private Mock<IPlaylistFetcher> mockPlaylistFetcher = new();
+        private Mock<IPlaylistFileBuilder> mockPlaylistFileBuilder = new();
+        private Mock<IChannelMatcher> mockChannelMatcher = new();
+        private Mock<IMediaSourceChecker> mockMediaSourceChecker = new();
+        private Mock<IFileRepository<ChannelDefinitionDataObject>> mockChannelRepository = new();
+        private Mock<IFileRepository<GroupDataObject>> mockGroupRepository = new();
+        private Mock<IFileRepository<PlaylistProviderDataObject>> mockProviderRepository = new();
+        private PlaylistAggregator playlistAggregator = null!;
 
         [SetUp]
         public void SetUp()
@@ -32,7 +32,17 @@ namespace IptvPlaylistAggregator.IntegrationTests
             mockPlaylistFetcher = new Mock<IPlaylistFetcher>(); mockPlaylistFileBuilder = new Mock<IPlaylistFileBuilder>();
             mockChannelMatcher = new Mock<IChannelMatcher>(); mockMediaSourceChecker = new Mock<IMediaSourceChecker>();
             mockChannelRepository = new Mock<IFileRepository<ChannelDefinitionDataObject>>(); mockGroupRepository = new Mock<IFileRepository<GroupDataObject>>(); mockProviderRepository = new Mock<IFileRepository<PlaylistProviderDataObject>>();
-            playlistAggregator = new PlaylistAggregator(mockPlaylistFetcher.Object, mockPlaylistFileBuilder.Object, mockChannelMatcher.Object, mockMediaSourceChecker.Object, mockChannelRepository.Object, mockGroupRepository.Object, mockProviderRepository.Object, new ApplicationSettings { AreUnmatchedChannelsIncluded = true }, Mock.Of<ILogger>());
+            playlistAggregator = new PlaylistAggregator(
+                mockPlaylistFetcher.Object,
+                mockPlaylistFileBuilder.Object,
+                mockChannelMatcher.Object,
+                mockMediaSourceChecker.Object,
+                new ReferenceDataRepositories(
+                    mockChannelRepository.Object,
+                    mockGroupRepository.Object,
+                    mockProviderRepository.Object),
+                new ApplicationSettings { AreUnmatchedChannelsIncluded = true },
+                Mock.Of<ILogger>());
         }
 
         [Test]

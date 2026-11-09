@@ -12,7 +12,7 @@ namespace IptvPlaylistAggregator.Service
 {
     public sealed class ChannelMatcher(ICacheManager cache) : IChannelMatcher
     {
-        public string NormaliseName(string name, string country)
+        public string NormaliseName(string name, string? country)
         {
             string fullName = name;
 
@@ -21,7 +21,7 @@ namespace IptvPlaylistAggregator.Service
                 fullName = $"{country}: {name}";
             }
 
-            string normalisedName = cache.GetNormalisedChannelName(fullName);
+            string? normalisedName = cache.GetNormalisedChannelName(fullName);
 
             if (!string.IsNullOrWhiteSpace(normalisedName))
             {
@@ -37,7 +37,7 @@ namespace IptvPlaylistAggregator.Service
             return normalisedName;
         }
 
-        public bool DoesMatch(ChannelName name1, string name2, string country2)
+        public bool DoesMatch(ChannelName name1, string name2, string? country2)
             => DoChannelNamesMatch(name1.Value, name1.Country, name2, country2) ||
                name1.Aliases.Any(name1alias => DoChannelNamesMatch(name1alias, name1.Country, name2, country2));
 
@@ -97,10 +97,12 @@ namespace IptvPlaylistAggregator.Service
             { "^(RO: *)*", "" },
         };
 
-        private static readonly (Regex Pattern, string Replacement)[] CompiledTextReplacements =
-            [.. TextReplacements.Select(entry => (new Regex(entry.Key, RegexReplacementOptions), entry.Value))];
+        private static readonly TextReplacement[] CompiledTextReplacements =
+            [.. TextReplacements.Select(entry => new TextReplacement(
+                new Regex(entry.Key, RegexReplacementOptions),
+                entry.Value))];
 
-        private bool DoChannelNamesMatch(string name1, string country1, string name2, string country2)
+        private bool DoChannelNamesMatch(string name1, string? country1, string name2, string? country2)
             => string.Equals(name1, name2) ||
                string.Equals(NormaliseName(name1, country1), NormaliseName(name2, country2));
 
@@ -113,27 +115,27 @@ namespace IptvPlaylistAggregator.Service
                 strippedName = strippedName.Replace(substringToStrip, "", true, CultureInfo.InvariantCulture);
             }
 
-            foreach ((Regex pattern, string replacement) in CompiledTextReplacements)
+            foreach (TextReplacement textReplacement in CompiledTextReplacements)
             {
-                strippedName = pattern.Replace(strippedName, replacement);
+                strippedName = textReplacement.Pattern.Replace(strippedName, textReplacement.Replacement);
             }
 
             StringBuilder finalString = new(strippedName.Length);
 
-            foreach (char c in strippedName)
+            foreach (char character in strippedName)
             {
-                if (IsAsciiLetterOrDigit(c))
+                if (IsAsciiLetterOrDigit(character))
                 {
-                    finalString.Append(c);
+                    finalString.Append(character);
                 }
             }
 
             return finalString.ToString();
         }
 
-        private static bool IsAsciiLetterOrDigit(char c)
-            => (c >= 'a' && c <= 'z') ||
-               (c >= 'A' && c <= 'Z') ||
-               (c >= '0' && c <= '9');
+        private static bool IsAsciiLetterOrDigit(char character)
+            => (character >= 'a' && character <= 'z') ||
+               (character >= 'A' && character <= 'Z') ||
+               (character >= '0' && character <= '9');
     }
 }

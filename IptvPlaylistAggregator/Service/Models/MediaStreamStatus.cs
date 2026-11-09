@@ -4,7 +4,7 @@ namespace IptvPlaylistAggregator.Service.Models
 {
     public sealed class MediaStreamStatus
     {
-        public string Url { get; set; }
+        public string Url { get; set; } = string.Empty;
 
         public bool IsAlive => State is StreamState.Alive;
 

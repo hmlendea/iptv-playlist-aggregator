@@ -15,22 +15,15 @@ using IptvPlaylistAggregator.Service;
 
 namespace IptvPlaylistAggregator
 {
-    public class Program
+    public sealed class Program
     {
-        private static ApplicationSettings applicationSettings;
-        private static CacheSettings cacheSettings;
-        private static DataStoreSettings dataStoreSettings;
-
-        private static ILogger logger;
-        private static ICacheManager cacheManager;
-
         public static void Main(string[] args)
         {
             IConfiguration configuration = LoadConfiguration();
 
-            applicationSettings = new ApplicationSettings();
-            cacheSettings = new CacheSettings();
-            dataStoreSettings = new DataStoreSettings();
+            ApplicationSettings applicationSettings = new();
+            CacheSettings cacheSettings = new();
+            DataStoreSettings dataStoreSettings = new();
 
             configuration.Bind(nameof(ApplicationSettings), applicationSettings);
             configuration.Bind(nameof(CacheSettings), cacheSettings);
@@ -45,8 +38,8 @@ namespace IptvPlaylistAggregator
                 .AddSingleton<ILogger, NuciLogger>()
                 .BuildServiceProvider();
 
-            logger = serviceProvider.GetService<ILogger>();
-            cacheManager = serviceProvider.GetService<ICacheManager>();
+            ILogger logger = serviceProvider.GetRequiredService<ILogger>();
+            ICacheManager cacheManager = serviceProvider.GetRequiredService<ICacheManager>();
 
             logger.Info(Operation.StartUp, OperationStatus.Success);
 
@@ -58,21 +51,21 @@ namespace IptvPlaylistAggregator
 
             try
             {
-                IPlaylistAggregator aggregator = serviceProvider.GetService<IPlaylistAggregator>();
+                IPlaylistAggregator aggregator = serviceProvider.GetRequiredService<IPlaylistAggregator>();
 
                 string playlistFile = aggregator.GatherPlaylist();
                 File.WriteAllText(applicationSettings.OutputPlaylistPath, playlistFile);
             }
             catch (AggregateException aggregateException)
             {
-                LogInnerExceptions(aggregateException);
+                LogInnerExceptions(logger, aggregateException);
             }
             catch (Exception exception)
             {
                 logger.Fatal(Operation.Unknown, OperationStatus.Failure, exception);
             }
 
-            SaveCacheToDisk();
+            SaveCacheToDisk(logger, cacheManager);
 
             logger.Info(Operation.ShutDown, OperationStatus.Success);
         }
@@ -82,22 +75,22 @@ namespace IptvPlaylistAggregator
                 .AddJsonFile("appsettings.json", true, true)
                 .Build();
 
-        private static void LogInnerExceptions(AggregateException exception)
+        private static void LogInnerExceptions(ILogger logger, AggregateException exception)
         {
             foreach (Exception innerException in exception.InnerExceptions)
             {
-                if (innerException is not AggregateException)
+                if (innerException is AggregateException aggregateInnerException)
                 {
-                    logger.Fatal(Operation.Unknown, OperationStatus.Failure, innerException);
+                    LogInnerExceptions(logger, aggregateInnerException);
                 }
                 else
                 {
-                    LogInnerExceptions(innerException as AggregateException);
+                    logger.Fatal(Operation.Unknown, OperationStatus.Failure, innerException);
                 }
             }
         }
 
-        private static void SaveCacheToDisk()
+        private static void SaveCacheToDisk(ILogger logger, ICacheManager cacheManager)
         {
             logger.Info(MyOperation.CacheSaving, OperationStatus.Started);
             cacheManager.SaveCacheToDisk();

@@ -10,9 +10,9 @@ namespace IptvPlaylistAggregator.UnitTests.Service
     [TestFixture]
     public sealed class ChannelMatcherTests
     {
-        private Mock<ICacheManager> cacheMock;
+        private Mock<ICacheManager> cacheMock = new();
 
-        private IChannelMatcher channelMatcher;
+        private IChannelMatcher channelMatcher = null!;
 
         [SetUp]
         public void SetUp()
@@ -309,7 +309,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [Test]
         public void GivenNormalisedNameNotInCache_WhenNormalisingName_ThenResultIsStoredInCache()
         {
-            cacheMock.Setup(cache => cache.GetNormalisedChannelName(It.IsAny<string>())).Returns((string)null);
+            cacheMock.Setup(cache => cache.GetNormalisedChannelName(It.IsAny<string>())).Returns((string?)null);
 
             channelMatcher.NormaliseName("Sport TV", "RO");
 
@@ -323,9 +323,9 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [Test]
         public void GivenNormalisedNameNotInCacheAndNoCountry_WhenNormalisingName_ThenResultIsStoredInCache()
         {
-            cacheMock.Setup(cache => cache.GetNormalisedChannelName(It.IsAny<string>())).Returns((string)null);
+            cacheMock.Setup(cache => cache.GetNormalisedChannelName(It.IsAny<string>())).Returns((string?)null);
 
-            channelMatcher.NormaliseName("Sport TV", null);
+            channelMatcher.NormaliseName("Sport TV", country: null);
 
             cacheMock.Verify(
                 cache => cache.StoreNormalisedChannelName(
@@ -334,17 +334,17 @@ namespace IptvPlaylistAggregator.UnitTests.Service
                 Times.Once);
         }
 
-        private ChannelName GetChannelName(string definedName, string alias)
+        private static ChannelName GetChannelName(string definedName, string? alias)
             => GetChannelName(definedName, country: null, alias);
 
-        private static ChannelName GetChannelName(string definedName, string country, string alias)
+        private static ChannelName GetChannelName(string definedName, string? country, string? alias)
         {
             if (alias is null)
             {
-                return new ChannelName(definedName);
+                return new ChannelName(definedName, country);
             }
 
-            return new ChannelName(definedName, country, alias);
+            return new ChannelName(definedName, country, [alias]);
         }
     }
 }

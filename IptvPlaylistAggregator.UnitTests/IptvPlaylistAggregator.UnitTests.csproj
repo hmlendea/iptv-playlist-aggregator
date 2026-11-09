@@ -5,6 +5,7 @@
     <RootNamespace>IptvPlaylistAggregator.UnitTests</RootNamespace>
     <ImplicitUsings>disable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <ExcludeFromCodeCoverage>true</ExcludeFromCodeCoverage>

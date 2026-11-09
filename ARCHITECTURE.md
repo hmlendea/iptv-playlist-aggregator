@@ -156,7 +156,7 @@ The principal runtime sequence is:
 | Component | Responsibility | Principal Dependencies | Lifetime or Ownership |
 |-----------|----------------|------------------------|-----------------------|
 | `Program` | Configuration, composition, connectivity gate, output write, top-level exception handling, and cache persistence | Configuration, dependency injection, `IPlaylistAggregator`, `ICacheManager`, `ILogger` | One process invocation; owns startup and shutdown |
-| `PlaylistAggregator` | Coordinates the complete aggregation pipeline and output ordering | XML repositories, `IPlaylistFetcher`, `IChannelMatcher`, `IMediaSourceChecker`, `IPlaylistFileBuilder`, settings, logger | Process singleton; owns the application workflow |
+| `PlaylistAggregator` | Coordinates the complete aggregation pipeline and output ordering | Reference-data repositories, `IPlaylistFetcher`, `IChannelMatcher`, `IMediaSourceChecker`, `IPlaylistFileBuilder`, settings, logger | Process singleton; owns the application workflow |
 | `PlaylistFetcher` | Retrieves enabled provider playlists concurrently, applies provider metadata, and manages dated playlist fallback | `IFileDownloader`, `IPlaylistFileBuilder`, `ICacheManager`, settings, logger | Process singleton; owns provider retrieval |
 | `FileDownloader` | Retrieves remote text using a reusable HTTP client and an in-memory response cache | `ICacheManager`, `NuciWeb.HTTP` | Process singleton; owns HTTP retrieval resources |
 | `PlaylistFileBuilder` | Parses M3U text into domain models and serialises domain models into M3U output | `ICacheManager`, settings | Process singleton; owns M3U parsing and serialisation |
@@ -357,7 +357,16 @@ The application is deployed as one finite `net10.0` console process with its run
 - M3U parsing and serialisation;
 - playlist model behaviour.
 
-Service interfaces permit network, cache, repository, and logger dependencies to be replaced by mocks. The suite does not currently provide an end-to-end test that exercises genuine XML files, remote HTTP endpoints, and file output together. Cache persistence, provider orchestration, composition, and deployment artefacts also lack dedicated integration coverage. The test project explicitly excludes itself from code-coverage collection.
+Service interfaces permit network, cache, repository, and logger dependencies to be replaced by mocks. The suite does not currently provide an end-to-end test that exercises genuine XML files, remote HTTP endpoints, and file output together. The unit-test project explicitly excludes itself from code-coverage collection.
+
+`IptvPlaylistAggregator.IntegrationTests` uses NUnit and Moq and is a discovered test project. Its fixtures exercise mock-driven service interaction shapes, cache construction against a temporary directory, provider fetching, aggregation orchestration, and end-to-end-shaped flows with every collaborator mocked. It does not contact remote endpoints.
+
+`IptvPlaylistAggregator.ArchitectureTests` uses NUnit, ArchUnit.NET, and Roslyn to enforce the contracts in this document and the repository coding conventions:
+- `LayerDependencyTests` loads the compiled production assembly once and asserts the namespace dependency matrix, the prohibition on infrastructure libraries in the domain and application layers, slice acyclicity, and non-vacuous layer selection.
+- `SourceFileConventionTests` analyses the staged production sources for one type per file with a matching filename stem, block namespaces that match the folder path, braced control-flow bodies, explicit types, no ternaries, tuples, `ref`, `params`, optional parameters, regions, `#nullable enable`, or nested types, the seven-parameter limit, four-space indentation, a single trailing newline, and no consecutive blank lines.
+- `ProjectFileConventionTests` reads the staged project and solution metadata to enforce the .NET 10 target framework, disabled implicit usings, latest language version, enabled nullable references, alphabetically ordered package references, explicit test-project flags, and the SDK-style solution layout.
+
+The architecture project stages the checked sources and project files beneath its output directory during a build, so every check reads deterministic metadata rather than relying on the current directory or the host file-system layout. Test assemblies are excluded from the production dependency rules. All three test projects explicitly exclude themselves from code-coverage collection.
 
 [.github/workflows/dotnet.yml](.github/workflows/dotnet.yml) restores dependencies, compiles the solution, and executes the tests on Ubuntu for pushes and pull requests to `master`.
 
@@ -427,6 +436,8 @@ Input extensions must retain explicit failure semantics, while output extensions
 | XML data objects | [IptvPlaylistAggregator/DataAccess/DataObjects/](IptvPlaylistAggregator/DataAccess/DataObjects/) |
 | Runtime configuration | [IptvPlaylistAggregator/appsettings.json](IptvPlaylistAggregator/appsettings.json) |
 | Reference data | [IptvPlaylistAggregator/Data/](IptvPlaylistAggregator/Data/) |
+| Architecture tests | [IptvPlaylistAggregator.ArchitectureTests/](IptvPlaylistAggregator.ArchitectureTests/) |
+| Integration tests | [IptvPlaylistAggregator.IntegrationTests/](IptvPlaylistAggregator.IntegrationTests/) |
 | Unit tests | [IptvPlaylistAggregator.UnitTests/Service/](IptvPlaylistAggregator.UnitTests/Service/) |
 | Continuous integration | [.github/workflows/dotnet.yml](.github/workflows/dotnet.yml) |
 | Release wrapper | [release.sh](release.sh) |
