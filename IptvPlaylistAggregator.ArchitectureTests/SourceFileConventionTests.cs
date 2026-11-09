@@ -2,9 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Text.RegularExpressions;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -21,8 +18,6 @@ namespace IptvPlaylistAggregator.ArchitectureTests
     [TestFixture]
     public sealed class SourceFileConventionTests
     {
-        private const int MaximumConditionalLineLength = 72;
-        private const int MaximumSignatureLineLength = 96;
         private const int MaximumParameterCount = 7;
         private const int IndentationWidth = 4;
 
@@ -112,6 +107,26 @@ namespace IptvPlaylistAggregator.ArchitectureTests
                     namespaceName,
                     Is.EqualTo(expectedNamespace),
                     $"The file '{file.RelativePath}' declares namespace '{namespaceName}' but its path implies '{expectedNamespace}'.");
+            }
+        }
+
+        [Test]
+        public void GivenProductionSources_WhenParsedWithLatestLanguageVersion_ThenNoPreviewSyntaxIsRequired()
+        {
+            foreach (ArchitectureSourceFile file in ArchitectureSourceRepository.ProductionFiles)
+            {
+                SyntaxTree tree = CSharpSyntaxTree.ParseText(
+                    File.ReadAllText(file.FullPath),
+                    new CSharpParseOptions(LanguageVersion.Latest),
+                    path: file.FullPath);
+
+                IReadOnlyList<Diagnostic> errors = [.. tree.GetDiagnostics()
+                    .Where(diagnostic => diagnostic.Severity == DiagnosticSeverity.Error)];
+
+                Assert.That(
+                    errors,
+                    Is.Empty,
+                    $"Production source '{file.RelativePath}' requires unsupported or preview syntax: {string.Join("; ", errors.Select(error => error.GetMessage()))}");
             }
         }
 
