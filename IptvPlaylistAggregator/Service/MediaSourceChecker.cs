@@ -24,7 +24,7 @@ namespace IptvPlaylistAggregator.Service
     {
         public async Task<bool> IsSourcePlayableAsync(string url)
         {
-            MediaStreamStatus status = cache.GetStreamStatus(url);
+            MediaStreamStatus? status = cache.GetStreamStatus(url);
 
             if (status is not null)
             {
@@ -116,8 +116,8 @@ namespace IptvPlaylistAggregator.Service
                 return streamState;
             }
 
-            string fileContent = await fileDownloader.TryDownloadStringAsync(playlistUrl);
-            Playlist playlist = playlistFileBuilder.TryParseFile(fileContent);
+            string? fileContent = await fileDownloader.TryDownloadStringAsync(playlistUrl);
+            Playlist? playlist = playlistFileBuilder.TryParseFile(fileContent ?? string.Empty);
 
             if (Playlist.IsNullOrEmpty(playlist))
             {
@@ -126,8 +126,9 @@ namespace IptvPlaylistAggregator.Service
 
             Uri uri = new(playlistUrl);
             string playlistDirectoryUrl = Path
-                .GetDirectoryName(playlistUrl)
+                .GetDirectoryName(playlistUrl)!
                 .Replace(":/", "://");
+            string channelDirectoryUrl = playlistDirectoryUrl;
 
             foreach (Channel channel in playlist.Channels)
             {

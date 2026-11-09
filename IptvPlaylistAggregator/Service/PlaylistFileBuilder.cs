@@ -46,7 +46,7 @@ namespace IptvPlaylistAggregator.Service
             return fileBuilder.ToString();
         }
 
-        public Playlist TryParseFile(string file)
+        public Playlist? TryParseFile(string? file)
         {
             if (string.IsNullOrWhiteSpace(file))
             {
@@ -63,16 +63,16 @@ namespace IptvPlaylistAggregator.Service
             }
         }
 
-        public Playlist ParseFile(string content)
+        public Playlist ParseFile(string? content)
         {
-            Playlist playlist = cache.GetPlaylist(content);
+            Playlist? cachedPlaylist = cache.GetPlaylist(content);
 
-            if (playlist is not null)
+            if (cachedPlaylist is not null)
             {
-                return playlist;
+                return cachedPlaylist;
             }
 
-            playlist = new Playlist();
+            Playlist playlist = new();
 
             if (string.IsNullOrWhiteSpace(content))
             {
@@ -80,8 +80,8 @@ namespace IptvPlaylistAggregator.Service
             }
 
             using StringReader contentReader = new(content);
-            string line = contentReader.ReadLine();
-            Channel latestChannel = null;
+            string? line = contentReader.ReadLine();
+            Channel? latestChannel = null;
 
             while (line is not null)
             {

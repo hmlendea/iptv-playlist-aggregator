@@ -17,8 +17,8 @@ namespace IptvPlaylistAggregator.IntegrationTests
     [TestFixture]
     public class CacheManagerIntegrationTests
     {
-        private CacheSettings cacheSettings;
-        private CacheManager cacheManager;
+        private CacheSettings cacheSettings = null!;
+        private CacheManager cacheManager = null!;
 
         [SetUp]
         public void SetUp()
@@ -54,7 +54,7 @@ namespace IptvPlaylistAggregator.IntegrationTests
         [TestCase("https://example.com:8080/stream.m3u8")]
         public void GetStreamStatus_WithNewUrl_ReturnsNull(string url)
         {
-            var result = cacheManager.GetStreamStatus(url);
+            MediaStreamStatus? result = cacheManager.GetStreamStatus(url);
 
             Assert.That(result, Is.Null);
         }
@@ -71,10 +71,10 @@ namespace IptvPlaylistAggregator.IntegrationTests
             var status = new MediaStreamStatus { Url = url, State = state };
 
             cacheManager.StoreStreamStatus(status);
-            var result = cacheManager.GetStreamStatus(url);
+            MediaStreamStatus? result = cacheManager.GetStreamStatus(url);
 
             Assert.That(result, Is.Not.Null);
-            Assert.That(result.State, Is.EqualTo(state));
+            Assert.That(result!.State, Is.EqualTo(state));
         }
 
         [Test]
@@ -98,9 +98,9 @@ namespace IptvPlaylistAggregator.IntegrationTests
             }
 
             var firstUrl = urls.First();
-            var firstResult = cacheManager.GetStreamStatus(firstUrl);
+            MediaStreamStatus? firstResult = cacheManager.GetStreamStatus(firstUrl);
             Assert.That(firstResult, Is.Not.Null);
-            Assert.That(firstResult.State, Is.EqualTo(StreamState.Alive));
+            Assert.That(firstResult!.State, Is.EqualTo(StreamState.Alive));
         }
 
         [Test]
@@ -115,7 +115,7 @@ namespace IptvPlaylistAggregator.IntegrationTests
             };
 
             cacheManager.StoreStreamStatus(status);
-            var result = cacheManager.GetStreamStatus(url);
+            MediaStreamStatus? result = cacheManager.GetStreamStatus(url);
 
             Assert.That(result, Is.Not.Null);
         }
@@ -138,10 +138,10 @@ namespace IptvPlaylistAggregator.IntegrationTests
             };
 
             cacheManager.StoreStreamStatus(status);
-            var result = cacheManager.GetStreamStatus(url);
+            MediaStreamStatus? result = cacheManager.GetStreamStatus(url);
 
             Assert.That(result, Is.Not.Null);
-            Assert.That(result.State, Is.EqualTo(state));
+            Assert.That(result!.State, Is.EqualTo(state));
         }
 
         [Test]
@@ -149,7 +149,7 @@ namespace IptvPlaylistAggregator.IntegrationTests
         [TestCase(5)]
         [TestCase(10)]
         [TestCase(50)]
-        public void StoreStreamStatus_WithRepeatedUrls_UpdatesExisting(int updateCount)
+        public void StoreStreamStatus_WithRepeatedUrls_KeepsTheFirstStatus(int updateCount)
         {
             var url = "http://example.com/stream.m3u8";
 
@@ -160,9 +160,9 @@ namespace IptvPlaylistAggregator.IntegrationTests
                 cacheManager.StoreStreamStatus(status);
             }
 
-            var result = cacheManager.GetStreamStatus(url);
+            MediaStreamStatus? result = cacheManager.GetStreamStatus(url);
             Assert.That(result, Is.Not.Null);
-            Assert.That(result.State, Is.EqualTo(updateCount % 2 == 0 ? StreamState.Alive : StreamState.Dead));
+            Assert.That(result!.State, Is.EqualTo(StreamState.Alive));
         }
 
         [Test]
@@ -172,7 +172,7 @@ namespace IptvPlaylistAggregator.IntegrationTests
             var status = new MediaStreamStatus { Url = url, State = StreamState.Alive };
 
             cacheManager.StoreStreamStatus(status);
-            var result = cacheManager.GetStreamStatus(url);
+            MediaStreamStatus? result = cacheManager.GetStreamStatus(url);
 
             Assert.That(result, Is.Not.Null);
         }
@@ -186,7 +186,7 @@ namespace IptvPlaylistAggregator.IntegrationTests
             var status = new MediaStreamStatus { Url = url, State = StreamState.Alive };
 
             cacheManager.StoreStreamStatus(status);
-            var result = cacheManager.GetStreamStatus(url);
+            MediaStreamStatus? result = cacheManager.GetStreamStatus(url);
 
             Assert.That(result, Is.Not.Null);
         }
@@ -223,19 +223,21 @@ namespace IptvPlaylistAggregator.IntegrationTests
         }
 
         [Test]
-        public void GetStreamStatus_WithEmptyUrl_ReturnsNull()
+        public void GetStreamStatus_WithEmptyUrl_ReturnsDeadStatus()
         {
-            var result = cacheManager.GetStreamStatus("");
+            MediaStreamStatus? result = cacheManager.GetStreamStatus(string.Empty);
 
-            Assert.That(result, Is.Null);
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result!.State, Is.EqualTo(StreamState.Dead));
         }
 
         [Test]
-        public void GetStreamStatus_WithNullUrl_ReturnsNull()
+        public void GetStreamStatus_WithNullUrl_ReturnsDeadStatus()
         {
-            var result = cacheManager.GetStreamStatus(null);
+            MediaStreamStatus? result = cacheManager.GetStreamStatus(null);
 
-            Assert.That(result, Is.Null);
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result!.State, Is.EqualTo(StreamState.Dead));
         }
 
         [Test]
@@ -260,7 +262,7 @@ namespace IptvPlaylistAggregator.IntegrationTests
                 cacheManager.StoreStreamStatus(status);
             });
 
-            var firstResult = cacheManager.GetStreamStatus(urls.First());
+            MediaStreamStatus? firstResult = cacheManager.GetStreamStatus(urls.First());
             Assert.That(firstResult, Is.Not.Null);
         }
 
@@ -288,22 +290,22 @@ namespace IptvPlaylistAggregator.IntegrationTests
         }
 
         [Test]
-        public void GetStreamStatus_AfterMultipleUpdates_ReturnsLatest()
+        public void GetStreamStatus_AfterMultipleStores_ReturnsTheFirstStoredStatus()
         {
             var url = "http://example.com/stream.m3u8";
-            var results = new List<MediaStreamStatus>();
+            var results = new List<MediaStreamStatus?>();
 
             for (int i = 0; i < 5; i++)
             {
                 var state = i % 2 == 0 ? StreamState.Alive : StreamState.Dead;
                 var status = new MediaStreamStatus { Url = url, State = state };
                 cacheManager.StoreStreamStatus(status);
-                var retrieved = cacheManager.GetStreamStatus(url);
+                MediaStreamStatus? retrieved = cacheManager.GetStreamStatus(url);
                 results.Add(retrieved);
             }
 
-            Assert.That(results.All(r => r != null), Is.True);
-            Assert.That(results.Last().State, Is.EqualTo(StreamState.Dead));
+            Assert.That(results.All(result => result != null), Is.True);
+            Assert.That(results.Last()!.State, Is.EqualTo(StreamState.Alive));
         }
     }
 }

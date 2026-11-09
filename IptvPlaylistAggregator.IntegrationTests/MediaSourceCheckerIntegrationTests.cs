@@ -14,10 +14,10 @@ namespace IptvPlaylistAggregator.IntegrationTests
     [TestFixture]
     public class MediaSourceCheckerIntegrationTests
     {
-        private Mock<IFileDownloader> mockFileDownloader;
-        private Mock<IPlaylistFileBuilder> mockPlaylistFileBuilder;
-        private Mock<ICacheManager> mockCacheManager;
-        private MediaSourceChecker mediaSourceChecker;
+        private Mock<IFileDownloader> mockFileDownloader = new();
+        private Mock<IPlaylistFileBuilder> mockPlaylistFileBuilder = new();
+        private Mock<ICacheManager> mockCacheManager = new();
+        private MediaSourceChecker mediaSourceChecker = null!;
 
         [SetUp]
         public void SetUp()

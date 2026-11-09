@@ -13,10 +13,10 @@ namespace IptvPlaylistAggregator.UnitTests.Service
     [TestFixture]
     public sealed class PlaylistFileBuilderTests
     {
-        private Mock<ICacheManager> cacheMock;
-        private ApplicationSettings applicationSettings;
+        private Mock<ICacheManager> cacheMock = new();
+        private ApplicationSettings applicationSettings = new();
 
-        private PlaylistFileBuilder playlistFileBuilder;
+        private PlaylistFileBuilder playlistFileBuilder = null!;
 
         [SetUp]
         public void SetUp()
@@ -32,7 +32,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [Test]
         public void GivenNullContent_WhenTryParsingFile_ThenNullIsReturned()
         {
-            Playlist result = playlistFileBuilder.TryParseFile(null);
+            Playlist? result = playlistFileBuilder.TryParseFile(null);
 
             Assert.That(result, Is.Null);
         }
@@ -40,7 +40,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [Test]
         public void GivenEmptyContent_WhenTryParsingFile_ThenNullIsReturned()
         {
-            Playlist result = playlistFileBuilder.TryParseFile(string.Empty);
+            Playlist? result = playlistFileBuilder.TryParseFile(string.Empty);
 
             Assert.That(result, Is.Null);
         }
@@ -48,7 +48,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         [Test]
         public void GivenWhitespaceContent_WhenTryParsingFile_ThenNullIsReturned()
         {
-            Playlist result = playlistFileBuilder.TryParseFile("   ");
+            Playlist? result = playlistFileBuilder.TryParseFile("   ");
 
             Assert.That(result, Is.Null);
         }
@@ -58,7 +58,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         {
             string content = "http://test.nucilandia.ro/stream1\n#EXTINF:-1,Sport TV\nhttp://test.nucilandia.ro/stream2";
 
-            Playlist result = playlistFileBuilder.TryParseFile(content);
+            Playlist? result = playlistFileBuilder.TryParseFile(content);
 
             Assert.That(result, Is.Null);
         }
@@ -68,7 +68,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
         {
             string content = "#EXTM3U\n#EXTINF:-1,Sport TV\nhttp://test.nucilandia.ro/stream1";
 
-            Playlist result = playlistFileBuilder.TryParseFile(content);
+            Playlist? result = playlistFileBuilder.TryParseFile(content);
 
             Assert.That(result, Is.Not.Null);
         }
@@ -157,7 +157,7 @@ namespace IptvPlaylistAggregator.UnitTests.Service
             Playlist result = playlistFileBuilder.ParseFile(content);
 
             Assert.That(result.Channels, Has.Count.EqualTo(1));
-            Assert.That(result.Channels[0].Name, Is.Null);
+            Assert.That(result.Channels[0].Name, Is.Empty);
             Assert.That(result.Channels[0].Url, Is.EqualTo("http://test.nucilandia.ro/stream1"));
         }
 

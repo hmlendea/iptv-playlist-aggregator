@@ -12,12 +12,12 @@ namespace IptvPlaylistAggregator.UnitTests.Service
     [TestFixture]
     public sealed class MediaSourceCheckerTests
     {
-        private Mock<IFileDownloader> fileDownloaderMock;
-        private Mock<IPlaylistFileBuilder> playlistFileBuilderMock;
-        private Mock<ICacheManager> cacheMock;
-        private Mock<ILogger> loggerMock;
+        private Mock<IFileDownloader> fileDownloaderMock = new();
+        private Mock<IPlaylistFileBuilder> playlistFileBuilderMock = new();
+        private Mock<ICacheManager> cacheMock = new();
+        private Mock<ILogger> loggerMock = new();
 
-        private MediaSourceChecker mediaSourceChecker;
+        private MediaSourceChecker mediaSourceChecker = null!;
 
         [SetUp]
         public void SetUp()

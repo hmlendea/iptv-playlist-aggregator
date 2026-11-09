@@ -4,6 +4,6 @@ namespace IptvPlaylistAggregator.Service
 {
     public interface IFileDownloader
     {
-        Task<string> TryDownloadStringAsync(string url);
+        Task<string?> TryDownloadStringAsync(string url);
     }
 }

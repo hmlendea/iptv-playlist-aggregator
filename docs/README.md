@@ -17,8 +17,9 @@ This directory is the implementation-grounded knowledge base for IPTV Playlist A
 - [Application services](../IptvPlaylistAggregator/Service/): orchestration, fetching, matching, validation, caching, and M3U handling.
 - [Domain models](../IptvPlaylistAggregator/Service/Models/): in-memory records exchanged between services.
 - [Reference data](../IptvPlaylistAggregator/Data/): curated channels, groups, and providers.
-- [Unit tests](../IptvPlaylistAggregator.UnitTests/Service/): deterministic service and model tests.
+- [Architecture tests](../IptvPlaylistAggregator.ArchitectureTests/): layer dependency, source convention, and project and solution checks enforced with ArchUnit.NET and Roslyn.
 - [Integration tests](../IptvPlaylistAggregator.IntegrationTests/): service-scale tests using mocks and temporary cache state.
+- [Unit tests](../IptvPlaylistAggregator.UnitTests/Service/): deterministic service and model tests.
 
 ## Verified Baseline
 

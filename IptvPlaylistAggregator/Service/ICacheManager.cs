@@ -9,18 +9,18 @@ namespace IptvPlaylistAggregator.Service
         void SaveCacheToDisk();
 
         void StoreNormalisedChannelName(string name, string normalisedName);
-        string GetNormalisedChannelName(string name);
+        string? GetNormalisedChannelName(string name);
 
         void StoreStreamStatus(MediaStreamStatus status);
-        MediaStreamStatus GetStreamStatus(string url);
+        MediaStreamStatus? GetStreamStatus(string? url);
 
         void StoreWebDownload(string url, string content);
-        string GetWebDownload(string url);
+        string? GetWebDownload(string url);
 
         void StorePlaylist(string fileContent, Playlist playlist);
-        Playlist GetPlaylist(string fileContent);
+        Playlist? GetPlaylist(string? fileContent);
 
         void StorePlaylistFile(string name, DateTime date, string content);
-        string GetPlaylistFile(string name, DateTime date);
+        string? GetPlaylistFile(string name, DateTime date);
     }
 }

@@ -9,6 +9,6 @@ namespace IptvPlaylistAggregator.Service
     {
         IEnumerable<Playlist> FetchProviderPlaylists(IEnumerable<PlaylistProvider> providers);
 
-        Task<Playlist> FetchProviderPlaylistAsync(PlaylistProvider provider);
+        Task<Playlist?> FetchProviderPlaylistAsync(PlaylistProvider provider);
     }
 }

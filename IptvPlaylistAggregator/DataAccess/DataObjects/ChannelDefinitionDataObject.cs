@@ -8,15 +8,15 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
     {
         public bool IsEnabled { get; set; }
 
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
-        public string Country { get; set; }
+        public string Country { get; set; } = string.Empty;
 
-        public string GroupId { get; set; }
+        public string GroupId { get; set; } = string.Empty;
 
-        public string LogoUrl { get; set; }
+        public string LogoUrl { get; set; } = string.Empty;
 
-        public List<string> Aliases { get; set; }
+        public List<string> Aliases { get; set; } = [];
 
         public ChannelDefinitionDataObject()
         {

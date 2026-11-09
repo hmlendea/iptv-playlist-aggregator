@@ -149,7 +149,8 @@ This script downloads and executes an external release helper from `https://raw.
 The solution contains the subsequent projects:
 - `IptvPlaylistAggregator`: Main console application.
 - `IptvPlaylistAggregator.UnitTests`: Unit test suite.
-- `IptvPlaylistAggregator.IntegrationTests`: Mock-driven integration-style test sources; the project currently builds but is not marked as a test project.
+- `IptvPlaylistAggregator.IntegrationTests`: Mock-driven integration-style test suite using temporary cache state.
+- `IptvPlaylistAggregator.ArchitectureTests`: ArchUnit.NET and Roslyn checks for layer dependencies, source conventions, and project and solution layout.
 
 The key directories inside `IptvPlaylistAggregator/` are:
 | Directory | Purpose |

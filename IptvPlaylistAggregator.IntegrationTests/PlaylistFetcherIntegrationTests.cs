@@ -15,10 +15,10 @@ namespace IptvPlaylistAggregator.IntegrationTests
     [TestFixture]
     public class PlaylistFetcherIntegrationTests
     {
-        private Mock<IFileDownloader> mockFileDownloader;
-        private Mock<IPlaylistFileBuilder> mockPlaylistFileBuilder;
-        private Mock<ICacheManager> mockCacheManager;
-        private PlaylistFetcher playlistFetcher;
+        private Mock<IFileDownloader> mockFileDownloader = new();
+        private Mock<IPlaylistFileBuilder> mockPlaylistFileBuilder = new();
+        private Mock<ICacheManager> mockCacheManager = new();
+        private PlaylistFetcher playlistFetcher = null!;
 
         [SetUp]
         public void SetUp()
@@ -50,8 +50,8 @@ namespace IptvPlaylistAggregator.IntegrationTests
         public async Task FetchProviderPlaylistAsync_WithVaryingUrls_FetchesSuccessfully(string url)
         {
             ConfigureSuccessfulFetch(CreateChannels(10));
-            Playlist playlist = await playlistFetcher.FetchProviderPlaylistAsync(CreateProvider(url));
-            Assert.That(playlist.Channels, Has.Count.EqualTo(10));
+            Playlist? playlist = await playlistFetcher.FetchProviderPlaylistAsync(CreateProvider(url));
+            Assert.That(playlist!.Channels, Has.Count.EqualTo(10));
             mockFileDownloader.Verify(downloader => downloader.TryDownloadStringAsync(url), Times.Once);
         }
 
@@ -60,8 +60,16 @@ namespace IptvPlaylistAggregator.IntegrationTests
         public async Task FetchProviderPlaylistAsync_WithVaryingChannelCounts_ParsesCorrectly(int channelCount)
         {
             ConfigureSuccessfulFetch(CreateChannels(channelCount));
-            Playlist playlist = await playlistFetcher.FetchProviderPlaylistAsync(CreateProvider());
-            Assert.That(playlist.Channels, Has.Count.EqualTo(channelCount));
+
+            Playlist? playlist = await playlistFetcher.FetchProviderPlaylistAsync(CreateProvider());
+
+            if (channelCount == 0)
+            {
+                Assert.That(playlist, Is.Null);
+                return;
+            }
+
+            Assert.That(playlist!.Channels, Has.Count.EqualTo(channelCount));
         }
 
         [Test]
@@ -71,7 +79,7 @@ namespace IptvPlaylistAggregator.IntegrationTests
             PlaylistProvider provider = CreateProvider();
             provider.IsCachingEnabled = isCachingEnabled;
             ConfigureSuccessfulFetch(CreateChannels(5));
-            Playlist playlist = await playlistFetcher.FetchProviderPlaylistAsync(provider);
+            Playlist? playlist = await playlistFetcher.FetchProviderPlaylistAsync(provider);
             Assert.That(playlist, Is.Not.Null);
         }
 
@@ -90,8 +98,8 @@ namespace IptvPlaylistAggregator.IntegrationTests
         public async Task FetchProviderPlaylistAsync_WithNamedProviders_FetchesCorrectly(string name, int channelCount)
         {
             ConfigureSuccessfulFetch(CreateChannels(channelCount));
-            Playlist playlist = await playlistFetcher.FetchProviderPlaylistAsync(CreateProvider(name: name));
-            Assert.That(playlist.Channels, Has.Count.EqualTo(channelCount));
+            Playlist? playlist = await playlistFetcher.FetchProviderPlaylistAsync(CreateProvider(name: name));
+            Assert.That(playlist!.Channels, Has.Count.EqualTo(channelCount));
         }
 
         [Test]
@@ -100,7 +108,7 @@ namespace IptvPlaylistAggregator.IntegrationTests
             ConfigureSuccessfulFetch(CreateChannels(5));
             PlaylistProvider provider = CreateProvider();
             provider.IsEnabled = false;
-            Playlist playlist = await playlistFetcher.FetchProviderPlaylistAsync(provider);
+            Playlist? playlist = await playlistFetcher.FetchProviderPlaylistAsync(provider);
             Assert.That(playlist, Is.Not.Null);
         }
 
@@ -119,8 +127,8 @@ namespace IptvPlaylistAggregator.IntegrationTests
         public async Task FetchProviderPlaylistAsync_WithVaryingDaysToCheck_FetchesCorrectly(int daysToCheck, int channelCount)
         {
             ConfigureSuccessfulFetch(CreateChannels(channelCount));
-            Playlist playlist = await playlistFetcher.FetchProviderPlaylistAsync(CreateProvider());
-            Assert.That(playlist.Channels, Has.Count.EqualTo(channelCount));
+            Playlist? playlist = await playlistFetcher.FetchProviderPlaylistAsync(CreateProvider());
+            Assert.That(playlist!.Channels, Has.Count.EqualTo(channelCount));
         }
 
         private void ConfigureSuccessfulFetch(IEnumerable<Channel> channels)

@@ -13,13 +13,13 @@ namespace IptvPlaylistAggregator.DataAccess.DataObjects
         [XmlElement("AllowCaching")]
         public bool IsCachingEnabled { get; set; }
 
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
-        public string UrlFormat { get; set; }
+        public string UrlFormat { get; set; } = string.Empty;
 
-        public string Country { get; set; }
+        public string Country { get; set; } = string.Empty;
 
-        public string ChannelNameOverride { get; set; }
+        public string ChannelNameOverride { get; set; } = string.Empty;
 
         public PlaylistProviderDataObject()
         {

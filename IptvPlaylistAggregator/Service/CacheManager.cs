@@ -19,19 +19,19 @@ namespace IptvPlaylistAggregator.Service
         public void StoreNormalisedChannelName(string name, string normalisedName)
             => normalisedNames.TryAdd(name, normalisedName);
 
-        public string GetNormalisedChannelName(string name)
+        public string? GetNormalisedChannelName(string name)
             => normalisedNames.TryGetValue(name);
 
         public void StoreStreamStatus(MediaStreamStatus streamStatus)
             => streamStatuses.TryAdd(streamStatus.Url, streamStatus);
 
-        public MediaStreamStatus GetStreamStatus(string url)
+        public MediaStreamStatus? GetStreamStatus(string? url)
         {
             if (string.IsNullOrWhiteSpace(url))
             {
                 return new()
                 {
-                    Url = url,
+                    Url = url ?? string.Empty,
                     State = StreamState.Dead,
                     LastCheckTime = DateTime.UtcNow
                 };
@@ -41,9 +41,9 @@ namespace IptvPlaylistAggregator.Service
         }
 
         public void StoreWebDownload(string url, string content)
-            => webDownloads.TryAdd(url, content ?? string.Empty);
+            => webDownloads.TryAdd(url, content);
 
-        public string GetWebDownload(string url)
+        public string? GetWebDownload(string url)
         {
             if (string.IsNullOrWhiteSpace(url))
             {
@@ -57,7 +57,7 @@ namespace IptvPlaylistAggregator.Service
                 return cachedDownload;
             }
 
-            MediaStreamStatus streamStatus = GetStreamStatus(url);
+            MediaStreamStatus? streamStatus = GetStreamStatus(url);
 
             if (streamStatus is not null && !streamStatus.IsAlive)
             {
@@ -77,7 +77,7 @@ namespace IptvPlaylistAggregator.Service
             playlists.TryAdd(fileContent, playlist);
         }
 
-        public Playlist GetPlaylist(string fileContent)
+        public Playlist? GetPlaylist(string? fileContent)
         {
             if (fileContent is null)
             {
@@ -95,7 +95,7 @@ namespace IptvPlaylistAggregator.Service
             File.WriteAllText(filePath, content);
         }
 
-        public string GetPlaylistFile(string providerId, DateTime date)
+        public string? GetPlaylistFile(string providerId, DateTime date)
         {
             string fileName = string.Format(PlaylistFileNameFormat, providerId, date);
             string filePath = Path.Combine(cacheSettings.CacheDirectoryPath, fileName);
