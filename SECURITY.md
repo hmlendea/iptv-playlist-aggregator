@@ -55,6 +55,15 @@ This project follows coordinated disclosure:
 3. Public disclosure is published after a fix, mitigation, or agreed risk decision is available.
 4. Credit is attributed in accordance with reporter preference and project policy.
 
+## 🔍 Automated Security Scanning
+
+This repository runs automated security scans on every push and pull request to `master`, and on a weekly schedule. The scan includes:
+
+- **Dependency vulnerability scanning** via `dotnet list package --vulnerable --include-transitive`
+- **CodeQL static analysis** for C# code
+
+Results are published to the [Security](https://github.com/hmlendea/iptv-playlist-aggregator/security) tab and the [Actions](https://github.com/hmlendea/iptv-playlist-aggregator/actions/workflows/security.yml) workflow page.
+
 ## 🧾 Safe Harbour
 
 If your research is conducted in good faith, confined to authorised scope, and disclosed responsibly, the maintainers will not pursue action for policy-compliant activity.
