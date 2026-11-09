@@ -36,6 +36,8 @@ dotnet test IptvPlaylistAggregator.slnx
 
 The CI workflow in [.github/workflows/dotnet.yml](../.github/workflows/dotnet.yml) runs restore, build, and test on Ubuntu for pushes and pull requests targeting `master`. It uses .NET 10.x.
 
+Automated security scanning is configured in [.github/workflows/security.yml](../.github/workflows/security.yml), running dependency vulnerability checks and CodeQL analysis for pushes and pull requests targeting `master`, as well as on a weekly schedule.
+
 Run the application manually with:
 
 ```bash

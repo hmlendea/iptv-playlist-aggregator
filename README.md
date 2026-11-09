@@ -1,6 +1,7 @@
 [![Donate](https://img.shields.io/badge/-%E2%99%A5%20Donate-%23ff69b4)](https://hmlendea.go.ro/funding)
 [![Latest Release](https://img.shields.io/github/v/release/hmlendea/iptv-playlist-aggregator)](https://github.com/hmlendea/iptv-playlist-aggregator/releases/latest)
 [![Build Status](https://github.com/hmlendea/iptv-playlist-aggregator/actions/workflows/dotnet.yml/badge.svg)](https://github.com/hmlendea/iptv-playlist-aggregator/actions/workflows/dotnet.yml)
+[![Security Scan](https://github.com/hmlendea/iptv-playlist-aggregator/actions/workflows/security.yml/badge.svg)](https://github.com/hmlendea/iptv-playlist-aggregator/actions/workflows/security.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://gnu.org/licenses/gpl-3.0)
 
 # IPTV Playlist Aggregator
