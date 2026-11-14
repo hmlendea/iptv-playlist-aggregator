@@ -337,7 +337,6 @@ The application is deployed as one finite `net10.0` console process with its run
 | Scaling | Parallel work occurs within one process without explicit bounds | Additional processes do not share memory and must not concurrently own one cache directory |
 | Shutdown and recovery | Cache persistence and shutdown logging follow handled aggregation failures but not the early connectivity return | Interrupted runs can retain previous output or omit recent cache state; logs and artefacts provide the recovery evidence |
 | Continuous integration | GitHub Actions restores, compiles, and tests on Ubuntu for pushes and pull requests to `master` | Automated verification covers one operating system and depends upon the declared .NET 10 setup action |
-| Release | [release.sh](release.sh) downloads and executes an external .NET 10 release helper | Release packaging requires network access and explicit review of the remote script as a supply-chain boundary |
 
 ## 🛡️ Compatibility Contracts
 
@@ -446,7 +445,6 @@ Input extensions must retain explicit failure semantics, while output extensions
 | Continuous integration | [.github/workflows/dotnet.yml](.github/workflows/dotnet.yml) |
 | Security scanning | [.github/workflows/security.yml](.github/workflows/security.yml) |
 | Release publishing | [.github/workflows/github-release.yml](.github/workflows/github-release.yml) |
-| Release wrapper | [release.sh](release.sh) |
 
 ## 📚 Related Documentation
 

@@ -121,17 +121,7 @@ dotnet test IptvPlaylistAggregator.slnx
 
 ### Release
 
-The repository includes `release.sh`, which delegates to the upstream deployment script used by the project maintainer.
-
-```bash
-bash ./release.sh 2.13.2
-```
-
-This script downloads and executes an external release helper from `https://raw.githubusercontent.com/hmlendea/deployment-scripts/master/release/dotnet/10.0.sh`.
-
-Publishing a GitHub release triggers [.github/workflows/github-release.yml](.github/workflows/github-release.yml), which builds the self-contained per-runtime artefacts through the same helper and attaches them to that release.
-
-**Note:** Piping into `bash` is an intensely controversial topic. Please review any external scripts before running them in your environment!
+Publish a release on GitHub; [.github/workflows/github-release.yml](.github/workflows/github-release.yml) builds the self-contained per-runtime release artefacts and attaches them to the release.
 
 ### Dependencies
 
