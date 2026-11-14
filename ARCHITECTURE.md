@@ -370,6 +370,10 @@ The architecture project stages the checked sources and project files beneath it
 
 [.github/workflows/dotnet.yml](.github/workflows/dotnet.yml) restores dependencies, compiles the solution, and executes the tests on Ubuntu for pushes and pull requests to `master`.
 
+[.github/workflows/security.yml](.github/workflows/security.yml) runs automated security scanning on pushes and pull requests to `master`, and on a weekly schedule. It restores dependencies, checks for vulnerable packages with `dotnet list package --vulnerable --include-transitive`, builds the solution, and performs CodeQL analysis for C#, publishing results to GitHub Code Scanning.
+
+[.github/workflows/github-release.yml](.github/workflows/github-release.yml) runs when a release is published. It derives the .NET version from the primary project file and the version from the release tag, builds the self-contained per-runtime artefacts through the shared release script, and attaches them to the published GitHub release.
+
 Execute the principal automated verification with:
 
 ```bash
@@ -440,6 +444,8 @@ Input extensions must retain explicit failure semantics, while output extensions
 | Integration tests | [IptvPlaylistAggregator.IntegrationTests/](IptvPlaylistAggregator.IntegrationTests/) |
 | Unit tests | [IptvPlaylistAggregator.UnitTests/Service/](IptvPlaylistAggregator.UnitTests/Service/) |
 | Continuous integration | [.github/workflows/dotnet.yml](.github/workflows/dotnet.yml) |
+| Security scanning | [.github/workflows/security.yml](.github/workflows/security.yml) |
+| Release publishing | [.github/workflows/github-release.yml](.github/workflows/github-release.yml) |
 | Release wrapper | [release.sh](release.sh) |
 
 ## 📚 Related Documentation

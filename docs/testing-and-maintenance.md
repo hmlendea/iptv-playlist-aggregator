@@ -42,6 +42,8 @@ The CI workflow in [.github/workflows/dotnet.yml](../.github/workflows/dotnet.ym
 
 Automated security scanning is configured in [.github/workflows/security.yml](../.github/workflows/security.yml), running dependency vulnerability checks and CodeQL analysis for pushes and pull requests targeting `master`, as well as on a weekly schedule.
 
+Release publishing is configured in [.github/workflows/github-release.yml](../.github/workflows/github-release.yml), triggered when a release is published. It derives the .NET version from the primary project file and the version from the release tag, builds the self-contained per-runtime artefacts through the shared release script, and attaches them to the published GitHub release.
+
 Run the application manually with:
 
 ```bash
