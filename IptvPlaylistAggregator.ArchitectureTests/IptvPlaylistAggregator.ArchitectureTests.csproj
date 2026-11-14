@@ -12,10 +12,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
-    <PackageReference Include="NUnit" Version="4.6.1" />
-    <PackageReference Include="NUnit3TestAdapter" Version="6.3.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.12.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.12.0" />
+    <PackageReference Include="NUnit" Version="5.0.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="6.3.1" />
     <PackageReference Include="TngTech.ArchUnitNET" Version="0.13.5" />
     <PackageReference Include="TngTech.ArchUnitNET.NUnit" Version="0.13.5" />
   </ItemGroup>
@@ -25,16 +25,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ArchitectureSource Include="..\IptvPlaylistAggregator\**\*.cs"
-                        Exclude="$(DefaultItemExcludes);../IptvPlaylistAggregator/bin/**;../IptvPlaylistAggregator/obj/**">
+    <ArchitectureSource Include="..\IptvPlaylistAggregator\**\*.cs" Exclude="$(DefaultItemExcludes);../IptvPlaylistAggregator/bin/**;../IptvPlaylistAggregator/obj/**">
       <ArchitectureSourceProject>IptvPlaylistAggregator</ArchitectureSourceProject>
     </ArchitectureSource>
-    <ArchitectureSource Include="..\IptvPlaylistAggregator.UnitTests\**\*.cs"
-                        Exclude="$(DefaultItemExcludes);../IptvPlaylistAggregator.UnitTests/bin/**;../IptvPlaylistAggregator.UnitTests/obj/**">
+    <ArchitectureSource Include="..\IptvPlaylistAggregator.UnitTests\**\*.cs" Exclude="$(DefaultItemExcludes);../IptvPlaylistAggregator.UnitTests/bin/**;../IptvPlaylistAggregator.UnitTests/obj/**">
       <ArchitectureSourceProject>IptvPlaylistAggregator.UnitTests</ArchitectureSourceProject>
     </ArchitectureSource>
-    <ArchitectureSource Include="..\IptvPlaylistAggregator.IntegrationTests\**\*.cs"
-                        Exclude="$(DefaultItemExcludes);../IptvPlaylistAggregator.IntegrationTests/bin/**;../IptvPlaylistAggregator.IntegrationTests/obj/**">
+    <ArchitectureSource Include="..\IptvPlaylistAggregator.IntegrationTests\**\*.cs" Exclude="$(DefaultItemExcludes);../IptvPlaylistAggregator.IntegrationTests/bin/**;../IptvPlaylistAggregator.IntegrationTests/obj/**">
       <ArchitectureSourceProject>IptvPlaylistAggregator.IntegrationTests</ArchitectureSourceProject>
     </ArchitectureSource>
   </ItemGroup>
@@ -60,15 +57,9 @@
       <ArchitectureSourcesDirectory>$(TargetDir)ArchitectureSources</ArchitectureSourcesDirectory>
     </PropertyGroup>
     <RemoveDir Directories="$(ArchitectureSourcesDirectory)" />
-    <Copy SourceFiles="@(ArchitectureSource)"
-          DestinationFiles="@(ArchitectureSource->'$(ArchitectureSourcesDirectory)/%(ArchitectureSourceProject)/%(RecursiveDir)%(Filename)%(Extension)')"
-          SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(ArchitectureProjectFile)"
-          DestinationFiles="@(ArchitectureProjectFile->'$(ArchitectureSourcesDirectory)/Projects/%(ArchitectureProjectName).csproj')"
-          SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(ArchitectureSolutionFile)"
-          DestinationFiles="@(ArchitectureSolutionFile->'$(ArchitectureSourcesDirectory)/Projects/%(Filename)%(Extension)')"
-          SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(ArchitectureSource)" DestinationFiles="@(ArchitectureSource->'$(ArchitectureSourcesDirectory)/%(ArchitectureSourceProject)/%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(ArchitectureProjectFile)" DestinationFiles="@(ArchitectureProjectFile->'$(ArchitectureSourcesDirectory)/Projects/%(ArchitectureProjectName).csproj')" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(ArchitectureSolutionFile)" DestinationFiles="@(ArchitectureSolutionFile->'$(ArchitectureSourcesDirectory)/Projects/%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
   </Target>
 
 </Project>
