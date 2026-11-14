@@ -26,6 +26,7 @@ IPTV Playlist Aggregator is a .NET console application that retrieves playlists 
   - [Test](#test)
   - [Release](#release)
   - [Dependencies](#dependencies)
+- [GitHub Actions](#github-actions)
 - [Project Structure](#project-structure)
 - [Architecture](#architecture)
 - [Contributing](#contributing)
@@ -120,15 +121,7 @@ dotnet test IptvPlaylistAggregator.slnx
 
 ### Release
 
-The repository includes `release.sh`, which delegates to the upstream deployment script used by the project maintainer.
-
-```bash
-bash ./release.sh 2.13.2
-```
-
-This script downloads and executes an external release helper from `https://raw.githubusercontent.com/hmlendea/deployment-scripts/master/release/dotnet/10.0.sh`.
-
-**Note:** Piping into `bash` is an intensely controversial topic. Please review any external scripts before running them in your environment!
+Publish a release on GitHub; [.github/workflows/github-release.yml](.github/workflows/github-release.yml) builds the self-contained per-runtime release artefacts and attaches them to the release.
 
 ### Dependencies
 
@@ -143,6 +136,14 @@ This script downloads and executes an external release helper from `https://raw.
 | `NuciLog` | Logging implementation. |
 | `NuciLog.Core` | Core logging abstractions. |
 | `NuciWeb.HTTP` | HTTP client construction and connectivity checks. |
+
+## ⚙️ GitHub Actions
+
+| Workflow | Purpose | What it does |
+|----------|---------|--------------|
+| [ .NET ](https://github.com/hmlendea/iptv-playlist-aggregator/blob/master/.github/workflows/dotnet.yml) | Validates the solution | Restores dependencies, compiles the solution, and executes the tests on Ubuntu for pushes and pull requests to `master`. |
+| [ GitHub Release ](https://github.com/hmlendea/iptv-playlist-aggregator/blob/master/.github/workflows/github-release.yml) | Publishes release assets | Builds the self-contained archives for every supported runtime through the shared release script and attaches them to the published GitHub release. |
+| [ Security ](https://github.com/hmlendea/iptv-playlist-aggregator/blob/master/.github/workflows/security.yml) | Automated security scanning | Checks dependencies for known vulnerabilities and runs CodeQL static analysis for C# on pushes and pull requests to `master`, and on a weekly schedule. |
 
 ## 🗂️ Project Structure
 

@@ -1,0 +1,62 @@
+name: GitHub Release
+
+on:
+  release:
+    types: [ published ]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build and publish
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v7
+      with:
+        fetch-depth: 0
+
+    - name: Determine the .NET version
+      id: dotnet
+      run: |
+        TARGET_FRAMEWORK="$(sed -n 's|.*<TargetFramework>\(.*\)</TargetFramework>.*|\1|p' IptvPlaylistAggregator/IptvPlaylistAggregator.csproj | head -n 1)"
+
+        if [[ -z "${TARGET_FRAMEWORK}" ]]; then
+          echo 'ERROR: Could not determine the target framework from IptvPlaylistAggregator/IptvPlaylistAggregator.csproj.' >&2
+          exit 1
+        fi
+
+        DOTNET_VERSION="${TARGET_FRAMEWORK#net}"
+        echo "version=${DOTNET_VERSION}" >> "$GITHUB_OUTPUT"
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: ${{ steps.dotnet.outputs.version }}.x
+
+    - name: Extract the version from the GitHub tag
+      id: version
+      run: |
+        VERSION="${{ github.event.release.tag_name }}"
+        VERSION="${VERSION#v}"
+        echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
+    - name: Normalise the origin remote URL
+      run: git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}.git"
+
+    - name: Build the release artefacts
+      env:
+        DOTNET_VERSION: ${{ steps.dotnet.outputs.version }}
+        RELEASE_VERSION: ${{ steps.version.outputs.version }}
+      run: |
+        RELEASE_SCRIPT_URL="https://raw.githubusercontent.com/hmlendea/dotnet-release-scripts/refs/heads/master/dotnet/${DOTNET_VERSION}.sh"
+        wget --quiet -O - "${RELEASE_SCRIPT_URL}" | bash /dev/stdin "${RELEASE_VERSION}"
+
+    - name: Publish the release assets
+      uses: softprops/action-gh-release@v2
+      with:
+        files: IptvPlaylistAggregator/bin/Release/iptv-playlist-aggregator_*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
